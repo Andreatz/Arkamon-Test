@@ -65,12 +65,11 @@ import {
   type ArkamonBattleAnimation,
 } from '@/components/arkamon/arkamonAnimationManifest'
 import { prepareArkamonAnimationPlayback } from '@/components/arkamon/preloadArkamonAnimations'
+import { createBattleDamageReveal } from '@/components/battle/battleVisualSequence'
 import {
-  createBattleAnimationPlayback,
-  createBattleDamageReveal,
-  createBattleVisualSequence,
-  planBattleAnimationPlayback,
-} from '@/components/battle/battleVisualSequence'
+  createBattlePresentationDirector,
+  type BattleDirectorPhase,
+} from '@/components/battle/battlePresentationDirector'
 import {
   MoveVfx,
   type MoveVfxEvent,
@@ -190,6 +189,7 @@ export function BattagliaScene() {
   const [impactPulse, setImpactPulse] = useState<ImpactPulseDisplay | null>(null)
   const impactPulseIdRef = useRef(0)
   const [moveVfx, setMoveVfx] = useState<MoveVfxEvent | null>(null)
+  const [presentationPhase, setPresentationPhase] = useState<BattleDirectorPhase | 'idle'>('idle')
   const moveVfxIdRef = useRef(0)
   const moveVfxCallbacksRef = useRef<{
     id: number
@@ -564,6 +564,10 @@ export function BattagliaScene() {
       callback()
     }, getAnimationDuration(delayMs))
     feedbackTimersRef.current.add(timer)
+    return () => {
+      window.clearTimeout(timer)
+      feedbackTimersRef.current.delete(timer)
+    }
   }
 
   const playSpriteAction = (side: 'A' | 'B', animation: 'attack' | 'hit', requestMs: number) => {
@@ -662,70 +666,66 @@ export function BattagliaScene() {
     const targetAsset = target ? getArkamonAnimationAsset(target.specieId, targetView, 'hit') : undefined
     const dedicatedAttack = !!attackAsset
     const dedicatedHit = !!targetAsset
-    setHeldHitReactions(targetSide && dedicatedHit ? { [targetSide]: true } : {})
-    const plan = planBattleAnimationPlayback(
-      attackAsset ? (attackAsset.releaseFrame ?? 0) / attackAsset.fps * 1000 : 0,
-      dedicatedHit && targetAsset ? (targetAsset.reactionFrame ?? 0) / targetAsset.fps * 1000 : 0,
-      getMoveVfxImpactDelayMs(move), reducedMotion
-    )
     const effectId = ++moveVfxIdRef.current
-    const sequence = createBattleVisualSequence({
-      waitForAttacker: dedicatedAttack,
-      waitForTarget: !!targetAsset,
-      onRelease: () => mostraVfxMossa(move, side, effectId, {
-        onStart: () => playback.vfxStart(),
-        onImpact: () => sequence.impact(),
-        onComplete: () => sequence.vfxComplete(),
-      }, targetSide ? 'opponent' : 'self'),
+
+    // The director owns cue ordering; this React scene only binds actual media
+    // elements, VFX callbacks, and the existing gameplay/dice completion.
+    const director = createBattlePresentationDirector({
+      dedicatedAttack,
+      dedicatedHit,
+      attackReleaseMs: attackAsset ? (attackAsset.releaseFrame ?? 0) / attackAsset.fps * 1000 : 0,
+      hitReactionMs: targetAsset ? (targetAsset.reactionFrame ?? 0) / targetAsset.fps * 1000 : 0,
+      vfxImpactMs: getMoveVfxImpactDelayMs(move),
+      reducedMotion,
+      schedule: scheduleFeedbackTimer,
+      startVfx: ({ onStarted, onImpact: notifyImpact, onFinished }) => {
+        mostraVfxMossa(move, side, effectId, {
+          onStart: onStarted,
+          onImpact: notifyImpact,
+          onComplete: onFinished,
+        }, targetSide ? 'opponent' : 'self')
+      },
+      startAttack: ({ onStarted, onRelease, onFinished }) => {
+        if (dedicatedAttack) {
+          spriteStartWaitersRef.current[side] = { animation: 'attack', onStart: onStarted }
+          spriteCueWaitersRef.current[side] = { onRelease }
+          spriteCompletionWaitersRef.current[side] = { animation: 'attack', onComplete: onFinished }
+        }
+        playSpriteAction(side, 'attack', 450)
+      },
+      startHit: ({ onStarted, onFinished }) => {
+        if (!targetSide) return
+        spriteStartWaitersRef.current[targetSide] = { animation: 'hit', onStart: onStarted }
+        spriteCompletionWaitersRef.current[targetSide] = { animation: 'hit', onComplete: onFinished }
+        playSpriteAction(targetSide, 'hit', 240)
+      },
       onImpact: () => {
         setHeldHitReactions({})
         onImpact()
       },
       onComplete: () => {
-        playback.cancel()
-        if (activePlaybackRef.current === active) activePlaybackRef.current = null
+        if (activePlaybackRef.current === director) activePlaybackRef.current = null
         onComplete()
       },
-    })
-    const playback = createBattleAnimationPlayback({
-      plan,
-      dedicatedAttack,
-      dedicatedHit,
-      schedule: scheduleFeedbackTimer,
-      startAttack: () => {
-        if (dedicatedAttack) {
-          spriteStartWaitersRef.current[side] = { animation: 'attack', onStart: () => playback.attackerStart() }
-          spriteCueWaitersRef.current[side] = { onRelease: () => playback.release() }
-          spriteCompletionWaitersRef.current[side] = {
-            animation: 'attack', onComplete: () => {
-              playback.release()
-              sequence.attackerComplete()
-            },
-          }
-        }
-        playSpriteAction(side, 'attack', 450)
+      onPhase: (phase) => {
+        // A former battle may cancel during a new action. It cannot replace the
+        // new director's phase or affect its checkpoints.
+        if (activePlaybackRef.current === director && phase !== 'cancelled') setPresentationPhase(phase)
       },
-      startHit: () => {
-        if (!targetSide) return
-        spriteStartWaitersRef.current[targetSide] = { animation: 'hit', onStart: () => playback.targetStart() }
-        spriteCompletionWaitersRef.current[targetSide] = { animation: 'hit', onComplete: () => {
-          playback.targetStart()
-          sequence.targetComplete()
-        } }
-        playSpriteAction(targetSide, 'hit', 240)
-      },
-      onRelease: () => sequence.release(),
     })
-    const active = { cancel: () => { playback.cancel(); sequence.cancel() } }
     activePlaybackRef.current?.cancel()
-    activePlaybackRef.current = active
-    // All resources are ready before either clip's native clock can start.
+    activePlaybackRef.current = director
+    setPresentationPhase('preparing')
+    setHeldHitReactions(targetSide && dedicatedHit ? { [targetSide]: true } : {})
+
+    // If a page cannot preload, let the existing player and VFX fallback
+    // mechanisms run rather than leaving a battle permanently busy.
     void Promise.all([
       prepareArkamonAnimationPlayback(attacker.specieId, attackerView, 'attack'),
       target ? prepareArkamonAnimationPlayback(target.specieId, targetView, 'hit') : Promise.resolve(),
       prepareMoveVfxPlayback(move, effectId),
-    ]).then(() => {
-      if (activePlaybackRef.current === active) playback.start()
+    ]).catch(() => undefined).then(() => {
+      if (activePlaybackRef.current === director) director.start()
     })
   }
 
@@ -1476,6 +1476,7 @@ export function BattagliaScene() {
       data-battle-layout-root
       className="battle-stage w-full h-full relative overflow-hidden"
       data-battle-impact-held={presentationPaused}
+      data-battle-director-phase={presentationPhase}
       data-battle-assets-ready={assetReadiness.ready}
       data-battle-decoded-vfx-bytes={assetReadiness.metrics.images.decodedBytes}
       data-battle-decoded-native-bytes={assetReadiness.metrics.pages.decodedBytes}
