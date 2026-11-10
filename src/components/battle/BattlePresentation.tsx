@@ -67,7 +67,7 @@ export function ImpactPulseOverlay({
   pulse: ImpactPulseDisplay
   layout: AdminBattleLayout
 }) {
-  const { reducedMotion } = useGameMotionPreferences()
+  const { reducedMotion, speed } = useGameMotionPreferences()
   // The cue is dispatched by the VFX layer's impact callback, not by a
   // separate guessed offset. Rendering this component cannot affect damage.
   const layers = planBattleImpactComposition(pulse.choreography ?? 'projectile', pulse.strength, reducedMotion)
@@ -91,8 +91,8 @@ export function ImpactPulseOverlay({
           animate={{ opacity: [0, layer.peakOpacity, 0], scale: [layer.startScale, 1, layer.endScale] }}
           exit={{ opacity: 0 }}
           transition={{
-            duration: layer.durationMs / 1000,
-            delay: layer.delayMs / 1000,
+            duration: layer.durationMs / 1000 / speed,
+            delay: layer.delayMs / 1000 / speed,
             ease: 'easeOut',
             times: [0, 0.22, 1],
           }}
