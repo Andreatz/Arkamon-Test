@@ -1,0 +1,80 @@
+/* One chrome and one authored player selector across all real game tools. */
+.pu-shell.pu-live-shell{display:flex;flex-direction:column;gap:0;height:100%;min-height:0;padding:12px 24px;background:linear-gradient(130deg,#132333,#08101e)}
+.pu-live-shell>.pu-topbar{display:flex;align-items:center;flex:none;gap:20px;background:none;border:0;border-bottom:1px solid #51617155;border-radius:0;padding:0 0 8px;min-height:60px}
+.pu-live-shell>.pu-topbar>.rpg-frame,.pu-live-shell>.pu-nav>.rpg-frame,.pu-live-shell .pu-nav-button>.rpg-frame{display:none}
+.pu-live-shell .pu-brand img{width:140px;height:40px;object-fit:contain}
+.pu-live-shell .pu-brand small{font-size:10px;letter-spacing:1.5px}
+.pu-live-shell .pu-header-meta{font-size:16px;gap:10px}
+.pu-live-shell .pu-header-meta small{font-size:12px}
+.pu-live-shell .pu-player-switch{display:flex;align-items:center;justify-content:center;gap:8px;flex:1;min-width:0;max-width:620px;margin-left:auto}
+.pu-live-shell .pu-player-option{--player-command-height:56px;flex:none;min-width:0;width:calc(var(--player-command-height) * 880 / 210);max-width:calc(50% - 4px);height:var(--player-command-height);min-height:44px;aspect-ratio:auto;padding:0;font-size:16px;line-height:1.05}
+.pu-live-shell .pu-player-option>span{gap:0;inset:0 16%;max-width:calc(var(--player-command-height) * 880 / 210 * .68);margin:auto;text-align:center}
+.pu-live-shell .pu-player-option>span>span:last-child{min-width:0;overflow-wrap:anywhere}
+.pu-live-shell .pu-player-option .pu-creature-portrait,.pu-live-shell .pu-player-option .pu-kit-icon{display:none}
+.pu-live-shell .pu-currency{font-size:20px}
+.pu-live-shell .pu-currency strong{font-size:23px}
+.pu-live-shell .pu-currency>div>span{font-size:12px}
+.pu-live-shell>.pu-nav{flex:none;margin:6px 0 10px;padding:3px;min-height:48px;background:#0d1926;border:1px solid #2a3c4c;border-radius:7px;gap:4px}
+.pu-live-shell .pu-nav-button{font-size:17px;padding:7px 10px;min-height:40px;border-radius:4px;background:transparent}
+.pu-live-shell .pu-nav-button.is-active{background:#d7bd99;color:#1b232d}
+.pu-live-shell:is([data-player-ui-screen=squadra],[data-player-ui-screen=borsa])>.pu-page-head{display:none}
+.pu-live-shell>.pu-content{flex:1;min-height:0;width:100%;margin:0 auto;overflow:visible;padding:0 4px}
+.pu-live-shell>.pu-page-head{flex:none;min-height:48px;padding:0 4px 8px}
+.pu-live-shell>.pu-page-head h1,.pu-live-shell>.pu-page-head h2{font-size:28px;margin:0}
+.pu-live-shell>.pu-page-head .pu-kicker{font-size:12px}
+.pu-live-shell>.pu-page-head p{font-size:14px;margin:3px 0}
+.pu-live-shell .pu-player-context{padding:4px 8px}
+.pu-live-shell .pu-player-context small{font-size:12px}
+.pu-live-shell .pu-player-context strong{font-size:17px}
+.pu-live-shell>.pu-footer{flex:none;margin-top:8px;padding-top:6px;min-height:50px;align-items:center;font-size:14px;gap:14px}
+.pu-shell.pu-live-shell .pu-footer>.pu-resume-command{width:240px;max-width:100%;height:54px;aspect-ratio:auto;flex:none;min-height:44px;font-size:16px}
+.pu-live-shell .pu-keyboard-hint{font-size:13px}
+.pu-live-shell .pu-present-control{gap:8px;font-size:12px}
+.pu-live-shell .pu-present-control button{font-size:13px;min-height:36px;padding:5px 9px}
+.pu-live-shell .pu-present-hint{font-size:11px}
+@media(min-width:1100px){
+ .player-ui-dialog>div:last-child{flex:1;min-height:0}
+ .pu-live-shell>.pu-content-auxiliary{padding:10px 16px;min-height:0}
+}
+@media(min-width:1100px) and (max-height:820px){
+ .pu-shell.pu-live-shell{padding:7px 18px}
+ .pu-live-shell>.pu-topbar{min-height:52px;padding-bottom:3px;gap:12px}
+ .pu-live-shell .pu-brand img{width:120px;height:34px}
+ .pu-live-shell .pu-brand small{font-size:9px}
+ .pu-live-shell .pu-player-option{--player-command-height:48px;font-size:14px}
+ .pu-live-shell .pu-currency strong{font-size:20px}
+ .pu-live-shell>.pu-nav{margin:4px 0 6px;min-height:44px}
+ .pu-live-shell .pu-nav-button{font-size:15px;min-height:36px;padding:5px 8px}
+ .pu-live-shell>.pu-footer{margin-top:5px;min-height:46px;padding-top:4px}
+ .pu-shell.pu-live-shell .pu-footer>.pu-resume-command{width:210px;height:46px;font-size:14px}
+ .pu-live-shell .pu-present-hint{display:none}
+}
+@media(max-width:900px){
+ .pu-shell.pu-live-shell{padding:12px;height:auto;min-height:100%}
+ .pu-live-shell>.pu-content{flex:none;overflow:visible;padding:0}
+ .pu-live-shell>.pu-topbar{gap:10px;padding:0 0 12px;flex-wrap:wrap}
+ .pu-live-shell .pu-brand img{width:105px;height:36px}
+ .pu-live-shell .pu-brand small{display:none}
+ .pu-live-shell .pu-header-meta{width:auto;margin-left:auto;font-size:13px}
+ .pu-live-shell .pu-currency{font-size:17px;margin-left:auto}
+ .pu-live-shell .pu-currency strong{font-size:20px}
+ .pu-live-shell .pu-player-switch{width:100%;order:4;max-width:none}
+ .pu-live-shell .pu-player-option{--player-command-height:54px;flex:1;font-size:14px}
+ .pu-live-shell .pu-player-option .pu-creature-portrait,.pu-live-shell .pu-player-option .pu-kit-icon{display:none}
+ .pu-live-shell>.pu-nav{display:flex;flex-wrap:nowrap;overflow-x:auto;max-width:100%;min-height:52px}
+ .pu-live-shell .pu-nav-button{font-size:14px;flex:none;padding:8px 12px}
+ .pu-live-shell>.pu-page-head{flex-wrap:wrap}
+ .pu-live-shell>.pu-footer{flex-wrap:wrap;gap:10px;font-size:13px}
+ .pu-shell.pu-live-shell .pu-footer>.pu-resume-command{width:230px;margin-left:auto;font-size:16px}
+}
+/* Very short windows use the document flow so their footer cannot cover
+   commands. Standard desktop/fullscreen viewports retain the fitted layout. */
+@media(min-width:901px) and (max-height:699px){
+ .pu-shell.pu-live-shell{height:auto;min-height:100%}
+ .pu-shell.pu-live-shell>.pu-content{flex:none;height:auto;min-height:0}
+ .pu-shell.pu-live-shell>.pu-content>:is(.pu-screen,.pu-bag-screen,.pu-dex-screen,.pu-store-screen,.pu-menu-layout,.pu-register-screen,.pu-race-screen){height:auto;min-height:0}
+ .pu-shell.pu-live-shell :is(.pu-team-layout,.pu-deposit-layout,.pu-analysis-layout,.pu-dex-layout,.pu-bag-layout,.pu-store-layout,.pu-menu-layout,.pu-menu-grid){height:auto;flex:none}
+ .pu-shell.pu-live-shell .pu-bag-dedicated .pu-live-bag-inventory{container-type:inline-size}
+ .pu-shell.pu-live-shell .pu-bag-dedicated .pu-live-bag-inventory-art{width:100%;max-width:600px}
+ .pu-shell.pu-live-shell>.pu-footer{position:relative;flex:none}
+}

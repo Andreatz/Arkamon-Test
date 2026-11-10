@@ -1,0 +1,92 @@
+/* Supplied package artwork is always contained at its authored aspect ratio.
+   Variable sized containers retain their CSS fill and use small intact ornaments. */
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-brand > .pu-provided-logo { display:block; width:110px; height:64px; max-height:100%; object-fit:contain; }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-brand { width:116px; }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-kit-icon-provided { position:relative; display:inline-flex; align-items:center; justify-content:center; }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] :is(.pu-store-screen,.pu-bag-screen) .pu-kit-icon-provided::before,
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] :is(.pu-store-screen,.pu-bag-screen) .pu-kit-icon-provided::after { content:none!important; }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-kit-icon-provided > .provided-artwork { width:100%; height:100%; object-fit:contain; }
+/* Legacy concept styles suppress button decoration. Aurora restores only its own authored layers. */
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] :is(.pu-nav-button,.pu-resume-command,.pu-live-bag-category,.pu-reference-store-categories>button,.pu-reference-purchase,.pu-dex-row,.pu-box-slot,.pu-dex-hero)::before,
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-actions>.studio-command::before { display:block!important; }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"][data-player-ui-screen="arkadex"] .ref-screen-title {
+  position:relative; isolation:isolate; align-self:center; height:58px; padding-left:23px; gap:10px; font-size:36px;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"][data-player-ui-screen="arkadex"] .ref-screen-title::before {
+  content:""; position:absolute; inset:0 auto 0 0; width:242px; z-index:-1; pointer-events:none;
+  background:var(--provided-header-empty) left center / contain no-repeat;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"][data-player-ui-screen="arkadex"] .ref-screen-title > .pu-kit-icon { width:29px; height:34px; }
+
+/* Intact corner artwork stays the same size regardless of the panel's dimensions. */
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] :is(.ref-trainer-card,.pu-dex-index,.pu-dex-detail,.pu-deposit-detail,.pu-reference-team-dossier,.pu-store-catalog,.pu-store-detail,.pu-live-bag-inventory-art,.pu-live-bag-detail)::after {
+  content:""; position:absolute; inset:5px auto auto 5px; width:29px; height:30px; border:0; border-radius:0;
+  background:var(--provided-corner-gold) center / contain no-repeat; opacity:.9; pointer-events:none; z-index:2;
+}
+
+/* Common actions share the authored empty button, with live HTML labels. */
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] :is(.pu-nav-button,.pu-resume-command,.pu-team-actions>.pu-button) {
+  position:relative; isolation:isolate; background:transparent!important; border:0!important; box-shadow:none;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] :is(.pu-nav-button,.pu-resume-command,.pu-team-actions>.pu-button)::before {
+  content:""; position:absolute; inset:0; z-index:-1; pointer-events:none;
+  background:var(--provided-button-normal) center / contain no-repeat;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] :is(.pu-nav-button.is-active,.pu-resume-command)::before { background-image:var(--provided-button-selected); }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-nav-button { font-size:14px; padding:7px 3px; }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-nav-button .pu-kit-icon { width:18px; height:20px; }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-footer>.pu-resume-command { font-size:14px; padding:7px 10px; }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-footer>.pu-resume-command::before { background-image:var(--provided-purchase-button-active); }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] :is(.pu-nav-button,.pu-team-actions>.pu-button):hover:enabled::before { background-image:var(--provided-button-hover); }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] :is(.pu-nav-button,.pu-team-actions>.pu-button):disabled::before { background-image:var(--provided-button-disabled); }
+
+/* Category tabs have their own artwork, not the generic action frame. */
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] :is(.pu-reference-store-categories>button,.pu-live-bag-category) {
+  position:relative; isolation:isolate; background:transparent!important; border:0!important; border-radius:0; box-shadow:none; padding:7px 9px;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] :is(.pu-reference-store-categories>button,.pu-live-bag-category)::before {
+  content:""; position:absolute; inset:0; z-index:-1; pointer-events:none; background:var(--provided-tab-middle) center / contain no-repeat;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] :is(.pu-reference-store-categories>button,.pu-live-bag-category)[aria-pressed="true"]::before { background-image:var(--provided-tab-active); }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-bag-dedicated .pu-live-bag-category,
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-bag-dedicated .pu-live-bag-category[aria-pressed="true"] { background:transparent!important; border:0!important; box-shadow:none; }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] :is(.pu-reference-store-categories>button,.pu-live-bag-category) .pu-kit-icon { width:24px; height:24px; flex:none; margin-right:5px; vertical-align:middle; }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-live-bag-category>span { display:flex; align-items:center; justify-content:center; gap:4px; }
+
+/* Quantity controls retain the real +/- and paper display geometry. */
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-artwork-button:has(.pu-provided-control) { padding:0; background:transparent!important; border:0!important; box-shadow:none; }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-provided-control { width:100%; height:100%; }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-store-dedicated .pu-shop-quantity > input {
+  width:79px; height:48px; background-color:transparent!important; background-image:var(--provided-quantity-field)!important;
+  background-position:center!important; background-size:contain!important; background-repeat:no-repeat!important; border:0; box-shadow:none; border-radius:0; padding:4px 12px; appearance:textfield;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-shop-quantity > input::-webkit-inner-spin-button { appearance:none; }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-store-dedicated .pu-store-actions > .studio-command.pu-reference-purchase {
+  position:relative; isolation:isolate; background:transparent!important; border:0!important; box-shadow:none; padding-inline:28px; min-height:48px;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-store-actions > .pu-reference-purchase::before {
+  content:""; position:absolute; inset:0; z-index:-1; pointer-events:none; background:var(--provided-purchase-button-active) center / contain no-repeat;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-store-actions > .pu-reference-purchase:disabled::before { background-image:var(--provided-purchase-button); }
+
+/* Inventory art is centered within a real slot; the count and caption remain separate. */
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-bag-dedicated .pu-live-bag-slot { position:relative; isolation:isolate; width:clamp(64px,9dvh,90px); height:clamp(64px,9dvh,90px); min-height:0; flex:none; border:0!important; background:transparent!important; box-shadow:none; }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-bag-dedicated .pu-live-bag-slot > .pu-provided-slot-frame {
+  position:absolute; inset:0; width:100%; height:100%; max-width:100%; transform:none; visibility:visible!important; z-index:-1;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-bag-dedicated .pu-live-bag-slot > .pu-kit-icon-provided { position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); width:65%; height:74%; margin:0; }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-bag-dedicated .pu-live-bag-illustration > .pu-kit-icon { width:160px; height:min(22dvh,195px); }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-bag-dedicated .pu-live-bag-quantity { z-index:1; }
+
+@media (min-width:901px) and (max-height:820px) {
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-brand { width:90px; }
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-brand>.pu-provided-logo { width:88px; height:52px; }
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-bag-dedicated .pu-live-bag-illustration > .pu-kit-icon { height:110px; }
+}
+@media (max-width:900px) {
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-brand { width:74px; }
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-brand>.pu-provided-logo { width:74px; height:45px; }
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] :is(.pu-reference-store-categories>button,.pu-live-bag-category) .pu-kit-icon { width:18px; height:22px; margin:0; }
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"][data-player-ui-screen="arkadex"] .ref-screen-title { height:46px; font-size:27px; padding-left:18px; }
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"][data-player-ui-screen="arkadex"] .ref-screen-title::before { width:192px; }
+}

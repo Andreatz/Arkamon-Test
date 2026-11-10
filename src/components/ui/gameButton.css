@@ -1,0 +1,42 @@
+:where(.game-button) { position: relative; }
+
+.game-button {
+  isolation: isolate;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-width: 0;
+  padding: 10px 20px;
+  border: 0;
+  background: none;
+  color: var(--arka-text);
+  font-weight: 700;
+  cursor: pointer;
+  transition: filter var(--transition-fast), transform var(--transition-fast);
+}
+
+.game-button-frame {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  box-sizing: border-box;
+  border: 11px solid transparent;
+  border-left-width: 18px;
+  border-right-width: 18px;
+  border-image-repeat: stretch;
+  pointer-events: none;
+}
+
+.game-button:hover:enabled { filter: brightness(1.12); }
+.game-button:active:enabled { transform: scale(var(--arka-button-scale, .95)); }
+.game-button:focus-visible { outline: 3px solid var(--arka-text); outline-offset: 3px; }
+.game-button:disabled { cursor: not-allowed; opacity: .45; }
+.game-button--activity { flex-direction: column; }
+
+@media (prefers-reduced-motion: reduce) {
+  .game-button { transition: none; }
+  .game-button:active:enabled { transform: none; }
+}
+/* Same outer targets, new Scuro/Blu art. End caps keep a fixed local scale. */
+.game-button-frame.rpg-frame-command,.game-button-frame.rpg-frame-selected{inset:0;border-width:10px 23px;border-image-slice:70 160 fill}

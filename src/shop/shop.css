@@ -1,0 +1,29 @@
+.arka-store { display: grid; gap: .9rem; color: var(--arka-text); }
+.arka-store p { font-size: .86rem; line-height: 1.5; }
+.arka-store-heading, .arka-store-item-title { display: flex; align-items: center; gap: .65rem; }
+.arka-store-heading { justify-content: space-between; flex-wrap: wrap; }
+.arka-store-heading h3 { font-size: 1.15rem; font-weight: 700; }
+.arka-store-heading strong, .arka-store-item-title strong { white-space: nowrap; color: var(--arka-accent); }
+.arka-store-note, .arka-store-heading p, .arka-store-item small, .arka-store-checkout span { color: var(--arka-text-muted); }
+.arka-store-catalog { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); gap: .65rem; }
+.arka-store-item { display: grid; gap: .55rem; padding: .8rem; border: 1px solid var(--arka-border); border-radius: .65rem; background: var(--arka-bg); }
+.arka-store-item-title h4 { font-weight: 700; flex: 1; }
+.arka-store-item-title > span { font-size: 1.5rem; }
+.arka-store-item-controls { display: flex; align-items: end; justify-content: space-between; gap: .6rem; }
+.arka-store-item-controls label { display: grid; gap: .25rem; max-width: 9rem; font-size: .75rem; }
+.arka-store input { width: 100%; min-width: 0; min-height: 40px; border: 1px solid var(--arka-border); border-radius: .45rem; background: var(--arka-bg); color: var(--arka-text); padding: .45rem; }
+.arka-store-checkout { display: grid; gap: .6rem; border-top: 1px solid var(--arka-border); padding-top: .8rem; }
+.arka-store-checkout > p:first-child { display: grid; gap: .2rem; }
+.arka-store-actions { display: flex; flex-wrap: wrap; gap: .6rem; }
+.arka-store-actions button { flex: 1; min-height: 44px; }
+.arka-store-warning { color: var(--arka-text); font-weight: 600; }
+.arka-store-result { min-height: 1.2rem; }
+.arka-store :is(input,button):focus-visible { outline: 2px solid var(--arka-accent); outline-offset: 3px; }
+.arka-store button:disabled, .arka-store input:disabled { opacity: .55; cursor: not-allowed; }
+.arka-item-bag { display: grid; gap: .85rem; color: var(--arka-text); }
+.arka-item-bag p { font-size: .86rem; line-height: 1.5; }
+.arka-item-bag-heading { font-size: 1rem; font-weight: 700; }
+.arka-item-target { display: grid; gap: .4rem; font-size: .84rem; }
+.arka-item-target select { width: 100%; min-width: 0; min-height: 44px; border: 1px solid var(--arka-border); border-radius: .5rem; background: var(--arka-bg); color: var(--arka-text); padding: .55rem; }
+.arka-item-bag button:disabled { opacity: .55; cursor: not-allowed; }
+.arka-item-bag :is(select,button):focus-visible { outline: 2px solid var(--arka-accent); outline-offset: 3px; }

@@ -1,0 +1,6162 @@
+{
+  "source": "Moveset.xlsx · Sheet1 + integrazione utente per ID 256",
+  "sourceSha256": "9bda6499c74197db03a2d39ad7f1ab07b619ffa2ef765c5ddbf75537409ca7fb",
+  "moves": [
+    {
+      "sourceMoveId": 1,
+      "gameMoveId": 1,
+      "name": "Soffio",
+      "type": "Normale",
+      "element": "Normale",
+      "tier": "light",
+      "arkamon": [
+        {
+          "id": 1,
+          "name": "Vyrath"
+        }
+      ],
+      "sourceCells": [
+        "E2"
+      ],
+      "assetId": "moveset:001",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 2,
+      "gameMoveId": 2,
+      "name": "Assalto",
+      "type": "Normale",
+      "element": "Normale",
+      "tier": "medium",
+      "arkamon": [
+        {
+          "id": 2,
+          "name": "Vyrath"
+        }
+      ],
+      "sourceCells": [
+        "E3"
+      ],
+      "assetId": "moveset:002",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 3,
+      "gameMoveId": 3,
+      "name": "Impatto verticale",
+      "type": "Normale",
+      "element": "Normale",
+      "tier": "medium",
+      "arkamon": [
+        {
+          "id": 3,
+          "name": "Vyrath"
+        }
+      ],
+      "sourceCells": [
+        "E4"
+      ],
+      "assetId": "moveset:003",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 4,
+      "gameMoveId": 4,
+      "name": "Carica ossidrica",
+      "type": "Normale",
+      "element": "Normale",
+      "tier": "heavy",
+      "arkamon": [
+        {
+          "id": 4,
+          "name": "Vyrath"
+        }
+      ],
+      "sourceCells": [
+        "E5"
+      ],
+      "assetId": "moveset:004",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 5,
+      "gameMoveId": 5,
+      "name": "Voltaggio",
+      "type": "Elettro",
+      "element": "Elettro",
+      "tier": "light",
+      "arkamon": [
+        {
+          "id": 86,
+          "name": "Teslat"
+        }
+      ],
+      "sourceCells": [
+        "E87"
+      ],
+      "assetId": "moveset:005",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 6,
+      "gameMoveId": 6,
+      "name": "Alta tensione",
+      "type": "Elettro",
+      "element": "Elettro",
+      "tier": "medium",
+      "arkamon": [
+        {
+          "id": 87,
+          "name": "Teslat"
+        }
+      ],
+      "sourceCells": [
+        "E88"
+      ],
+      "assetId": "moveset:006",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 7,
+      "gameMoveId": 7,
+      "name": "Stormo di fulmini",
+      "type": "Elettro",
+      "element": "Elettro",
+      "tier": "heavy",
+      "arkamon": [
+        {
+          "id": 88,
+          "name": "Teslat"
+        }
+      ],
+      "sourceCells": [
+        "E89"
+      ],
+      "assetId": "moveset:007",
+      "anchor": "center",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 8,
+      "gameMoveId": 8,
+      "name": "Nevischio",
+      "type": "Acqua",
+      "element": "Acqua",
+      "tier": "light",
+      "arkamon": [
+        {
+          "id": 71,
+          "name": "Blizzaquil"
+        }
+      ],
+      "sourceCells": [
+        "E72"
+      ],
+      "assetId": "moveset:008",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 9,
+      "gameMoveId": 9,
+      "name": "Valanga",
+      "type": "Acqua",
+      "element": "Acqua",
+      "tier": "medium",
+      "arkamon": [
+        {
+          "id": 72,
+          "name": "Blizzaquil"
+        }
+      ],
+      "sourceCells": [
+        "E73"
+      ],
+      "assetId": "moveset:009",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 10,
+      "gameMoveId": 10,
+      "name": "Tormenta glaciale",
+      "type": "Acqua",
+      "element": "Acqua",
+      "tier": "heavy",
+      "arkamon": [
+        {
+          "id": 73,
+          "name": "Blizzaquil"
+        }
+      ],
+      "sourceCells": [
+        "E74"
+      ],
+      "assetId": "moveset:010",
+      "anchor": "center",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 11,
+      "gameMoveId": 11,
+      "name": "Lapillo",
+      "type": "Terra",
+      "element": "Terra",
+      "tier": "light",
+      "arkamon": [
+        {
+          "id": 16,
+          "name": "Clastoom"
+        }
+      ],
+      "sourceCells": [
+        "E17"
+      ],
+      "assetId": "moveset:011",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 12,
+      "gameMoveId": 12,
+      "name": "Roccia fusa",
+      "type": "Terra",
+      "element": "Terra",
+      "tier": "medium",
+      "arkamon": [
+        {
+          "id": 17,
+          "name": "Clastoom"
+        }
+      ],
+      "sourceCells": [
+        "E18"
+      ],
+      "assetId": "moveset:012",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 13,
+      "gameMoveId": 13,
+      "name": "Cratere",
+      "type": "Terra",
+      "element": "Terra",
+      "tier": "heavy",
+      "arkamon": [
+        {
+          "id": 18,
+          "name": "Clastoom"
+        }
+      ],
+      "sourceCells": [
+        "E19"
+      ],
+      "assetId": "moveset:013",
+      "anchor": "center",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 14,
+      "gameMoveId": 14,
+      "name": "Conduttore",
+      "type": "Elettro",
+      "element": "Elettro",
+      "tier": "light",
+      "arkamon": [
+        {
+          "id": 26,
+          "name": "Ampereel"
+        }
+      ],
+      "sourceCells": [
+        "E27"
+      ],
+      "assetId": "moveset:014",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 15,
+      "gameMoveId": 15,
+      "name": "Circuito chiuso",
+      "type": "Elettro",
+      "element": "Elettro",
+      "tier": "medium",
+      "arkamon": [
+        {
+          "id": 27,
+          "name": "Ampereel"
+        }
+      ],
+      "sourceCells": [
+        "E28"
+      ],
+      "assetId": "moveset:015",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 16,
+      "gameMoveId": 16,
+      "name": "Sprint",
+      "type": "Normale",
+      "element": "Normale",
+      "tier": "light",
+      "arkamon": [
+        {
+          "id": 42,
+          "name": "Felvex"
+        }
+      ],
+      "sourceCells": [
+        "E43"
+      ],
+      "assetId": "moveset:016",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 17,
+      "gameMoveId": 17,
+      "name": "Scatto",
+      "type": "Normale",
+      "element": "Normale",
+      "tier": "medium",
+      "arkamon": [
+        {
+          "id": 43,
+          "name": "Felvex"
+        }
+      ],
+      "sourceCells": [
+        "E44"
+      ],
+      "assetId": "moveset:017",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 18,
+      "gameMoveId": 18,
+      "name": "Elettroscontro",
+      "type": "Elettro",
+      "element": "Elettro",
+      "tier": "light",
+      "arkamon": [
+        {
+          "id": 24,
+          "name": "Grimbolt"
+        }
+      ],
+      "sourceCells": [
+        "E25"
+      ],
+      "assetId": "moveset:018",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 19,
+      "gameMoveId": 19,
+      "name": "Elettrocarica",
+      "type": "Elettro",
+      "element": "Elettro",
+      "tier": "medium",
+      "arkamon": [
+        {
+          "id": 25,
+          "name": "Grimbolt"
+        }
+      ],
+      "sourceCells": [
+        "E26"
+      ],
+      "assetId": "moveset:019",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 20,
+      "gameMoveId": 20,
+      "name": "Spruzzo",
+      "type": "Acqua",
+      "element": "Acqua",
+      "tier": "light",
+      "arkamon": [
+        {
+          "id": 56,
+          "name": "Deephion"
+        }
+      ],
+      "sourceCells": [
+        "E57"
+      ],
+      "assetId": "moveset:020",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 21,
+      "gameMoveId": 21,
+      "name": "Alta marea",
+      "type": "Acqua",
+      "element": "Acqua",
+      "tier": "medium",
+      "arkamon": [
+        {
+          "id": 57,
+          "name": "Deephion"
+        }
+      ],
+      "sourceCells": [
+        "E58"
+      ],
+      "assetId": "moveset:021",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 22,
+      "gameMoveId": 22,
+      "name": "Spavento",
+      "type": "Psico",
+      "element": "Psico",
+      "tier": "light",
+      "arkamon": [
+        {
+          "id": 67,
+          "name": "Fearstraw"
+        }
+      ],
+      "sourceCells": [
+        "E68"
+      ],
+      "assetId": "moveset:022",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 23,
+      "gameMoveId": 23,
+      "name": "Terrore",
+      "type": "Psico",
+      "element": "Psico",
+      "tier": "medium",
+      "arkamon": [
+        {
+          "id": 68,
+          "name": "Fearstraw"
+        }
+      ],
+      "sourceCells": [
+        "E69"
+      ],
+      "assetId": "moveset:023",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 24,
+      "gameMoveId": 24,
+      "name": "Paradosso",
+      "type": "Psico",
+      "element": "Psico",
+      "tier": "medium",
+      "arkamon": [
+        {
+          "id": 21,
+          "name": "Shrody"
+        }
+      ],
+      "sourceCells": [
+        "E22"
+      ],
+      "assetId": "moveset:024",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 25,
+      "gameMoveId": 25,
+      "name": "Ultimo sangue",
+      "type": "Normale",
+      "element": "Normale",
+      "tier": "heavy",
+      "arkamon": [
+        {
+          "id": 66,
+          "name": "Hoppiox"
+        }
+      ],
+      "sourceCells": [
+        "E67"
+      ],
+      "assetId": "moveset:025",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 26,
+      "gameMoveId": 26,
+      "name": "Arrembaggio",
+      "type": "Acqua",
+      "element": "Acqua",
+      "tier": "heavy",
+      "arkamon": [
+        {
+          "id": 82,
+          "name": "Reliskull"
+        }
+      ],
+      "sourceCells": [
+        "E83"
+      ],
+      "assetId": "moveset:026",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 27,
+      "gameMoveId": 27,
+      "name": "Onda anomala",
+      "type": "Acqua",
+      "element": "Acqua",
+      "tier": "heavy",
+      "arkamon": [
+        {
+          "id": 61,
+          "name": "Wailoom"
+        }
+      ],
+      "sourceCells": [
+        "E62"
+      ],
+      "assetId": "moveset:027",
+      "anchor": "center",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 28,
+      "gameMoveId": 28,
+      "name": "Zampata",
+      "type": "Oscurità",
+      "element": "Oscurità",
+      "tier": "light",
+      "arkamon": [
+        {
+          "id": 5,
+          "name": "Darklaw"
+        }
+      ],
+      "sourceCells": [
+        "E6"
+      ],
+      "assetId": "moveset:028",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 29,
+      "gameMoveId": 29,
+      "name": "Colpo felpato",
+      "type": "Oscurità",
+      "element": "Oscurità",
+      "tier": "medium",
+      "arkamon": [
+        {
+          "id": 6,
+          "name": "Darklaw"
+        }
+      ],
+      "sourceCells": [
+        "E7"
+      ],
+      "assetId": "moveset:029",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 30,
+      "gameMoveId": 30,
+      "name": "Artigli del terrore",
+      "type": "Oscurità",
+      "element": "Oscurità",
+      "tier": "medium",
+      "arkamon": [
+        {
+          "id": 7,
+          "name": "Darklaw"
+        }
+      ],
+      "sourceCells": [
+        "E8"
+      ],
+      "assetId": "moveset:030",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 31,
+      "gameMoveId": 31,
+      "name": "Abisso tenebroso",
+      "type": "Oscurità",
+      "element": "Oscurità",
+      "tier": "heavy",
+      "arkamon": [
+        {
+          "id": 8,
+          "name": "Darklaw"
+        }
+      ],
+      "sourceCells": [
+        "E9"
+      ],
+      "assetId": "moveset:031",
+      "anchor": "center",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 32,
+      "gameMoveId": 32,
+      "name": "Alito incandescente",
+      "type": "Fuoco",
+      "element": "Fuoco",
+      "tier": "light",
+      "arkamon": [
+        {
+          "id": 92,
+          "name": "Pyrodil"
+        }
+      ],
+      "sourceCells": [
+        "E93"
+      ],
+      "assetId": "moveset:032",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 33,
+      "gameMoveId": 33,
+      "name": "Sbuffo magmatico",
+      "type": "Fuoco",
+      "element": "Fuoco",
+      "tier": "medium",
+      "arkamon": [
+        {
+          "id": 93,
+          "name": "Pyrodil"
+        }
+      ],
+      "sourceCells": [
+        "E94"
+      ],
+      "assetId": "moveset:033",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 34,
+      "gameMoveId": 34,
+      "name": "Soffio lavico",
+      "type": "Fuoco",
+      "element": "Fuoco",
+      "tier": "heavy",
+      "arkamon": [
+        {
+          "id": 94,
+          "name": "Pyrodil"
+        }
+      ],
+      "sourceCells": [
+        "E95"
+      ],
+      "assetId": "moveset:034",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 35,
+      "gameMoveId": 35,
+      "name": "Mani brucianti",
+      "type": "Fuoco",
+      "element": "Fuoco",
+      "tier": "light",
+      "arkamon": [
+        {
+          "id": 74,
+          "name": "Impise"
+        }
+      ],
+      "sourceCells": [
+        "E75"
+      ],
+      "assetId": "moveset:035",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 36,
+      "gameMoveId": 36,
+      "name": "Palla di fuoco",
+      "type": "Fuoco",
+      "element": "Fuoco",
+      "tier": "medium",
+      "arkamon": [
+        {
+          "id": 75,
+          "name": "Impise"
+        }
+      ],
+      "sourceCells": [
+        "E76"
+      ],
+      "assetId": "moveset:036",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 37,
+      "gameMoveId": 37,
+      "name": "Ardemonio",
+      "type": "Fuoco",
+      "element": "Fuoco",
+      "tier": "heavy",
+      "arkamon": [
+        {
+          "id": 76,
+          "name": "Impise"
+        }
+      ],
+      "sourceCells": [
+        "E77"
+      ],
+      "assetId": "moveset:037",
+      "anchor": "center",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 38,
+      "gameMoveId": 38,
+      "name": "Scossa",
+      "type": "Elettro",
+      "element": "Elettro",
+      "tier": "light",
+      "arkamon": [
+        {
+          "id": 36,
+          "name": "Chimzap"
+        }
+      ],
+      "sourceCells": [
+        "E37"
+      ],
+      "assetId": "moveset:038",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 39,
+      "gameMoveId": 39,
+      "name": "Lampo",
+      "type": "Elettro",
+      "element": "Elettro",
+      "tier": "medium",
+      "arkamon": [
+        {
+          "id": 37,
+          "name": "Chimzap"
+        }
+      ],
+      "sourceCells": [
+        "E38"
+      ],
+      "assetId": "moveset:039",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 40,
+      "gameMoveId": 40,
+      "name": "Lotta tonante",
+      "type": "Elettro",
+      "element": "Elettro",
+      "tier": "heavy",
+      "arkamon": [
+        {
+          "id": 38,
+          "name": "Chimzap"
+        }
+      ],
+      "sourceCells": [
+        "E39"
+      ],
+      "assetId": "moveset:040",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 41,
+      "gameMoveId": 41,
+      "name": "Fioritura",
+      "type": "Erba",
+      "element": "Erba",
+      "tier": "light",
+      "arkamon": [
+        {
+          "id": 28,
+          "name": "Silvard"
+        }
+      ],
+      "sourceCells": [
+        "E29"
+      ],
+      "assetId": "moveset:041",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 42,
+      "gameMoveId": 42,
+      "name": "Florilegio letale",
+      "type": "Erba",
+      "element": "Erba",
+      "tier": "medium",
+      "arkamon": [
+        {
+          "id": 29,
+          "name": "Silvard"
+        }
+      ],
+      "sourceCells": [
+        "E30"
+      ],
+      "assetId": "moveset:042",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 43,
+      "gameMoveId": 43,
+      "name": "Controllo mentale",
+      "type": "Psico",
+      "element": "Psico",
+      "tier": "light",
+      "arkamon": [
+        {
+          "id": 84,
+          "name": "Psycroak"
+        }
+      ],
+      "sourceCells": [
+        "E85"
+      ],
+      "assetId": "moveset:043",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 44,
+      "gameMoveId": 44,
+      "name": "Collasso nervoso",
+      "type": "Psico",
+      "element": "Psico",
+      "tier": "medium",
+      "arkamon": [
+        {
+          "id": 85,
+          "name": "Psycroak"
+        }
+      ],
+      "sourceCells": [
+        "E86"
+      ],
+      "assetId": "moveset:044",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 45,
+      "gameMoveId": 45,
+      "name": "Urlo straziante",
+      "type": "Oscurità",
+      "element": "Oscurità",
+      "tier": "light",
+      "arkamon": [
+        {
+          "id": 45,
+          "name": "Spectron"
+        }
+      ],
+      "sourceCells": [
+        "E46"
+      ],
+      "assetId": "moveset:045",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 46,
+      "gameMoveId": 46,
+      "name": "Materia oscura",
+      "type": "Oscurità",
+      "element": "Oscurità",
+      "tier": "heavy",
+      "arkamon": [
+        {
+          "id": 46,
+          "name": "Spectron"
+        }
+      ],
+      "sourceCells": [
+        "E47"
+      ],
+      "assetId": "moveset:046",
+      "anchor": "center",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 47,
+      "gameMoveId": 47,
+      "name": "Spazzata",
+      "type": "Oscurità",
+      "element": "Oscurità",
+      "tier": "light",
+      "arkamon": [
+        {
+          "id": 101,
+          "name": "Xesar"
+        }
+      ],
+      "sourceCells": [
+        "E102"
+      ],
+      "assetId": "moveset:047",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 48,
+      "gameMoveId": 48,
+      "name": "Falcidiata",
+      "type": "Oscurità",
+      "element": "Oscurità",
+      "tier": "medium",
+      "arkamon": [
+        {
+          "id": 102,
+          "name": "Xesar"
+        }
+      ],
+      "sourceCells": [
+        "E103"
+      ],
+      "assetId": "moveset:048",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 49,
+      "gameMoveId": 49,
+      "name": "Inumidire",
+      "type": "Acqua",
+      "element": "Acqua",
+      "tier": "light",
+      "arkamon": [
+        {
+          "id": 69,
+          "name": "Lickard"
+        }
+      ],
+      "sourceCells": [
+        "E70"
+      ],
+      "assetId": "moveset:049",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 50,
+      "gameMoveId": 50,
+      "name": "Attacco fradicio",
+      "type": "Acqua",
+      "element": "Acqua",
+      "tier": "medium",
+      "arkamon": [
+        {
+          "id": 70,
+          "name": "Lickard"
+        }
+      ],
+      "sourceCells": [
+        "E71"
+      ],
+      "assetId": "moveset:050",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 51,
+      "gameMoveId": 51,
+      "name": "Tempesta magnetica",
+      "type": "Elettro",
+      "element": "Elettro",
+      "tier": "heavy",
+      "arkamon": [
+        {
+          "id": 22,
+          "name": "Voltrake"
+        }
+      ],
+      "sourceCells": [
+        "E23"
+      ],
+      "assetId": "moveset:051",
+      "anchor": "center",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 52,
+      "gameMoveId": 52,
+      "name": "Temporale",
+      "type": "Elettro",
+      "element": "Elettro",
+      "tier": "medium",
+      "arkamon": [
+        {
+          "id": 23,
+          "name": "Sparkly"
+        }
+      ],
+      "sourceCells": [
+        "E24"
+      ],
+      "assetId": "moveset:052",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 53,
+      "gameMoveId": 53,
+      "name": "Angoscia",
+      "type": "Psico",
+      "element": "Psico",
+      "tier": "medium",
+      "arkamon": [
+        {
+          "id": 83,
+          "name": "Cerebron"
+        }
+      ],
+      "sourceCells": [
+        "E84"
+      ],
+      "assetId": "moveset:053",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 54,
+      "gameMoveId": 54,
+      "name": "Avanzata",
+      "type": "Normale",
+      "element": "Normale",
+      "tier": "light",
+      "arkamon": [
+        {
+          "id": 65,
+          "name": "Piox"
+        }
+      ],
+      "sourceCells": [
+        "E66"
+      ],
+      "assetId": "moveset:054",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 55,
+      "gameMoveId": 55,
+      "name": "Sussurro",
+      "type": "Psico",
+      "element": "Psico",
+      "tier": "light",
+      "arkamon": [
+        {
+          "id": 9,
+          "name": "Felyss"
+        }
+      ],
+      "sourceCells": [
+        "E10"
+      ],
+      "assetId": "moveset:055",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 56,
+      "gameMoveId": 56,
+      "name": "Sesto senso",
+      "type": "Psico",
+      "element": "Psico",
+      "tier": "medium",
+      "arkamon": [
+        {
+          "id": 10,
+          "name": "Felyss"
+        }
+      ],
+      "sourceCells": [
+        "E11"
+      ],
+      "assetId": "moveset:056",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 57,
+      "gameMoveId": 57,
+      "name": "Intreccio mentale",
+      "type": "Psico",
+      "element": "Psico",
+      "tier": "medium",
+      "arkamon": [
+        {
+          "id": 11,
+          "name": "Felyss"
+        }
+      ],
+      "sourceCells": [
+        "E12"
+      ],
+      "assetId": "moveset:057",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 58,
+      "gameMoveId": 58,
+      "name": "Occhio universale",
+      "type": "Psico",
+      "element": "Psico",
+      "tier": "heavy",
+      "arkamon": [
+        {
+          "id": 12,
+          "name": "Felyss"
+        }
+      ],
+      "sourceCells": [
+        "E13"
+      ],
+      "assetId": "moveset:058",
+      "anchor": "center",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 59,
+      "gameMoveId": 59,
+      "name": "Assorbilinfa",
+      "type": "Erba",
+      "element": "Erba",
+      "tier": "light",
+      "arkamon": [
+        {
+          "id": 95,
+          "name": "Beestrix"
+        }
+      ],
+      "sourceCells": [
+        "E96"
+      ],
+      "assetId": "moveset:059",
+      "anchor": "self",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 60,
+      "gameMoveId": 60,
+      "name": "Avanguardia",
+      "type": "Erba",
+      "element": "Erba",
+      "tier": "medium",
+      "arkamon": [
+        {
+          "id": 96,
+          "name": "Beestrix"
+        }
+      ],
+      "sourceCells": [
+        "E97"
+      ],
+      "assetId": "moveset:060",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 61,
+      "gameMoveId": 61,
+      "name": "Sciame operaio",
+      "type": "Erba",
+      "element": "Erba",
+      "tier": "heavy",
+      "arkamon": [
+        {
+          "id": 97,
+          "name": "Beestrix"
+        }
+      ],
+      "sourceCells": [
+        "E98"
+      ],
+      "assetId": "moveset:061",
+      "anchor": "center",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 62,
+      "gameMoveId": 62,
+      "name": "Manto d'ombra",
+      "type": "Oscurità",
+      "element": "Oscurità",
+      "tier": "light",
+      "arkamon": [
+        {
+          "id": 79,
+          "name": "Cellgon"
+        }
+      ],
+      "sourceCells": [
+        "E80"
+      ],
+      "assetId": "moveset:062",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 63,
+      "gameMoveId": 63,
+      "name": "Buio pesto",
+      "type": "Oscurità",
+      "element": "Oscurità",
+      "tier": "medium",
+      "arkamon": [
+        {
+          "id": 80,
+          "name": "Cellgon"
+        }
+      ],
+      "sourceCells": [
+        "E81"
+      ],
+      "assetId": "moveset:063",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 64,
+      "gameMoveId": 64,
+      "name": "Fiamma nera",
+      "type": "Oscurità",
+      "element": "Oscurità",
+      "tier": "heavy",
+      "arkamon": [
+        {
+          "id": 81,
+          "name": "Cellgon"
+        }
+      ],
+      "sourceCells": [
+        "E82"
+      ],
+      "assetId": "moveset:064",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 65,
+      "gameMoveId": 65,
+      "name": "Foglia caduca",
+      "type": "Erba",
+      "element": "Erba",
+      "tier": "light",
+      "arkamon": [
+        {
+          "id": 52,
+          "name": "Leafrex"
+        }
+      ],
+      "sourceCells": [
+        "E53"
+      ],
+      "assetId": "moveset:065",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 66,
+      "gameMoveId": 66,
+      "name": "Risveglio verde",
+      "type": "Erba",
+      "element": "Erba",
+      "tier": "medium",
+      "arkamon": [
+        {
+          "id": 53,
+          "name": "Leafrex"
+        }
+      ],
+      "sourceCells": [
+        "E54"
+      ],
+      "assetId": "moveset:066",
+      "anchor": "self",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 67,
+      "gameMoveId": 67,
+      "name": "Forza della natura",
+      "type": "Erba",
+      "element": "Erba",
+      "tier": "heavy",
+      "arkamon": [
+        {
+          "id": 54,
+          "name": "Leafrex"
+        }
+      ],
+      "sourceCells": [
+        "E55"
+      ],
+      "assetId": "moveset:067",
+      "anchor": "center",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 68,
+      "gameMoveId": 68,
+      "name": "Luna storta",
+      "type": "Oscurità",
+      "element": "Oscurità",
+      "tier": "light",
+      "arkamon": [
+        {
+          "id": 30,
+          "name": "Eclyps"
+        }
+      ],
+      "sourceCells": [
+        "E31"
+      ],
+      "assetId": "moveset:068",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 69,
+      "gameMoveId": 69,
+      "name": "Luna rossa",
+      "type": "Oscurità",
+      "element": "Oscurità",
+      "tier": "medium",
+      "arkamon": [
+        {
+          "id": 31,
+          "name": "Eclyps"
+        }
+      ],
+      "sourceCells": [
+        "E32"
+      ],
+      "assetId": "moveset:069",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 70,
+      "gameMoveId": 70,
+      "name": "Puntura anestetica",
+      "type": "Erba",
+      "element": "Erba",
+      "tier": "light",
+      "arkamon": [
+        {
+          "id": 105,
+          "name": "Zoorian"
+        }
+      ],
+      "sourceCells": [
+        "E106"
+      ],
+      "assetId": "moveset:070",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 71,
+      "gameMoveId": 71,
+      "name": "Sete di sangue",
+      "type": "Erba",
+      "element": "Erba",
+      "tier": "medium",
+      "arkamon": [
+        {
+          "id": 106,
+          "name": "Zoorian"
+        }
+      ],
+      "sourceCells": [
+        "E107"
+      ],
+      "assetId": "moveset:071",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 72,
+      "gameMoveId": 72,
+      "name": "Predigestione",
+      "type": "Erba",
+      "element": "Erba",
+      "tier": "light",
+      "arkamon": [
+        {
+          "id": 47,
+          "name": "Weedrug"
+        }
+      ],
+      "sourceCells": [
+        "E48"
+      ],
+      "assetId": "moveset:072",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 73,
+      "gameMoveId": 73,
+      "name": "Divoramento",
+      "type": "Erba",
+      "element": "Erba",
+      "tier": "medium",
+      "arkamon": [
+        {
+          "id": 48,
+          "name": "Weedrug"
+        }
+      ],
+      "sourceCells": [
+        "E49"
+      ],
+      "assetId": "moveset:073",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 74,
+      "gameMoveId": 74,
+      "name": "Cerino",
+      "type": "Fuoco",
+      "element": "Fuoco",
+      "tier": "light",
+      "arkamon": [
+        {
+          "id": 32,
+          "name": "Blazion"
+        }
+      ],
+      "sourceCells": [
+        "E33"
+      ],
+      "assetId": "moveset:074",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 75,
+      "gameMoveId": 75,
+      "name": "Cimitero di fiamme",
+      "type": "Fuoco",
+      "element": "Fuoco",
+      "tier": "heavy",
+      "arkamon": [
+        {
+          "id": 33,
+          "name": "Blazion"
+        }
+      ],
+      "sourceCells": [
+        "E34"
+      ],
+      "assetId": "moveset:075",
+      "anchor": "center",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 76,
+      "gameMoveId": 76,
+      "name": "Scossa d'assestamento",
+      "type": "Terra",
+      "element": "Terra",
+      "tier": "light",
+      "arkamon": [
+        {
+          "id": 103,
+          "name": "Boomrock"
+        }
+      ],
+      "sourceCells": [
+        "E104"
+      ],
+      "assetId": "moveset:076",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 77,
+      "gameMoveId": 77,
+      "name": "Canyon",
+      "type": "Terra",
+      "element": "Terra",
+      "tier": "medium",
+      "arkamon": [
+        {
+          "id": 104,
+          "name": "Boomrock"
+        }
+      ],
+      "sourceCells": [
+        "E105"
+      ],
+      "assetId": "moveset:077",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 78,
+      "gameMoveId": 78,
+      "name": "Rivolta",
+      "type": "Oscurità",
+      "element": "Oscurità",
+      "tier": "heavy",
+      "arkamon": [
+        {
+          "id": 44,
+          "name": "Felvex"
+        }
+      ],
+      "sourceCells": [
+        "E45"
+      ],
+      "assetId": "moveset:078",
+      "anchor": "center",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 79,
+      "gameMoveId": 79,
+      "name": "Guerriglia",
+      "type": "Normale",
+      "element": "Normale",
+      "tier": "light",
+      "arkamon": [
+        {
+          "id": 64,
+          "name": "Hopz"
+        }
+      ],
+      "sourceCells": [
+        "E65"
+      ],
+      "assetId": "moveset:079",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 80,
+      "gameMoveId": 80,
+      "name": "Fangospruzzo",
+      "type": "Terra",
+      "element": "Terra",
+      "tier": "light",
+      "arkamon": [
+        {
+          "id": 20,
+          "name": "Handipus"
+        }
+      ],
+      "sourceCells": [
+        "E21"
+      ],
+      "assetId": "moveset:080",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 81,
+      "gameMoveId": 81,
+      "name": "Fornace",
+      "type": "Fuoco",
+      "element": "Fuoco",
+      "tier": "medium",
+      "arkamon": [
+        {
+          "id": 77,
+          "name": "Ignitor"
+        }
+      ],
+      "sourceCells": [
+        "E78"
+      ],
+      "assetId": "moveset:081",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 82,
+      "gameMoveId": 82,
+      "name": "Sotterrare",
+      "type": "Terra",
+      "element": "Terra",
+      "tier": "light",
+      "arkamon": [
+        {
+          "id": 13,
+          "name": "Wormaren"
+        }
+      ],
+      "sourceCells": [
+        "E14"
+      ],
+      "assetId": "moveset:082",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 83,
+      "gameMoveId": 83,
+      "name": "Sepoltura",
+      "type": "Terra",
+      "element": "Terra",
+      "tier": "medium",
+      "arkamon": [
+        {
+          "id": 14,
+          "name": "Wormaren"
+        }
+      ],
+      "sourceCells": [
+        "E15"
+      ],
+      "assetId": "moveset:083",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 84,
+      "gameMoveId": 84,
+      "name": "Emersione",
+      "type": "Terra",
+      "element": "Terra",
+      "tier": "heavy",
+      "arkamon": [
+        {
+          "id": 15,
+          "name": "Wormaren"
+        }
+      ],
+      "sourceCells": [
+        "E16"
+      ],
+      "assetId": "moveset:084",
+      "anchor": "center",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 85,
+      "gameMoveId": 85,
+      "name": "Area 51",
+      "type": "Normale",
+      "element": "Normale",
+      "tier": "light",
+      "arkamon": [
+        {
+          "id": 39,
+          "name": "RS-219"
+        }
+      ],
+      "sourceCells": [
+        "E40"
+      ],
+      "assetId": "moveset:085",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 86,
+      "gameMoveId": 86,
+      "name": "Viaggio temporale",
+      "type": "Normale",
+      "element": "Normale",
+      "tier": "medium",
+      "arkamon": [
+        {
+          "id": 40,
+          "name": "RS-219"
+        }
+      ],
+      "sourceCells": [
+        "E41"
+      ],
+      "assetId": "moveset:086",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 87,
+      "gameMoveId": 87,
+      "name": "Ritorno al futuro",
+      "type": "Normale",
+      "element": "Normale",
+      "tier": "heavy",
+      "arkamon": [
+        {
+          "id": 41,
+          "name": "RS-219"
+        }
+      ],
+      "sourceCells": [
+        "E42"
+      ],
+      "assetId": "moveset:087",
+      "anchor": "center",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 88,
+      "gameMoveId": 88,
+      "name": "Occhiolino",
+      "type": "Psico",
+      "element": "Psico",
+      "tier": "light",
+      "arkamon": [
+        {
+          "id": 89,
+          "name": "Espeiry"
+        }
+      ],
+      "sourceCells": [
+        "E90"
+      ],
+      "assetId": "moveset:088",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 89,
+      "gameMoveId": 89,
+      "name": "Pressione spirituale",
+      "type": "Psico",
+      "element": "Psico",
+      "tier": "medium",
+      "arkamon": [
+        {
+          "id": 90,
+          "name": "Espeiry"
+        }
+      ],
+      "sourceCells": [
+        "E91"
+      ],
+      "assetId": "moveset:089",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 90,
+      "gameMoveId": 90,
+      "name": "Assorbianima",
+      "type": "Psico",
+      "element": "Psico",
+      "tier": "heavy",
+      "arkamon": [
+        {
+          "id": 91,
+          "name": "Espeiry"
+        }
+      ],
+      "sourceCells": [
+        "E92"
+      ],
+      "assetId": "moveset:090",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 91,
+      "gameMoveId": 91,
+      "name": "Immersione",
+      "type": "Acqua",
+      "element": "Acqua",
+      "tier": "light",
+      "arkamon": [
+        {
+          "id": 58,
+          "name": "Shabyss"
+        }
+      ],
+      "sourceCells": [
+        "E59"
+      ],
+      "assetId": "moveset:091",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 92,
+      "gameMoveId": 92,
+      "name": "Affondare",
+      "type": "Acqua",
+      "element": "Acqua",
+      "tier": "medium",
+      "arkamon": [
+        {
+          "id": 59,
+          "name": "Shabyss"
+        }
+      ],
+      "sourceCells": [
+        "E60"
+      ],
+      "assetId": "moveset:092",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 93,
+      "gameMoveId": 93,
+      "name": "Morte dagli abissi",
+      "type": "Acqua",
+      "element": "Acqua",
+      "tier": "heavy",
+      "arkamon": [
+        {
+          "id": 60,
+          "name": "Shabyss"
+        }
+      ],
+      "sourceCells": [
+        "E61"
+      ],
+      "assetId": "moveset:093",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 94,
+      "gameMoveId": 94,
+      "name": "Getto del peso",
+      "type": "Terra",
+      "element": "Terra",
+      "tier": "light",
+      "arkamon": [
+        {
+          "id": 34,
+          "name": "Crawgoyle"
+        }
+      ],
+      "sourceCells": [
+        "E35"
+      ],
+      "assetId": "moveset:094",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 95,
+      "gameMoveId": 95,
+      "name": "Bombardamento",
+      "type": "Terra",
+      "element": "Terra",
+      "tier": "medium",
+      "arkamon": [
+        {
+          "id": 35,
+          "name": "Crawgoyle"
+        }
+      ],
+      "sourceCells": [
+        "E36"
+      ],
+      "assetId": "moveset:095",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 96,
+      "gameMoveId": 96,
+      "name": "Gufata",
+      "type": "Normale",
+      "element": "Normale",
+      "tier": "light",
+      "arkamon": [
+        {
+          "id": 99,
+          "name": "Ervys"
+        }
+      ],
+      "sourceCells": [
+        "E100"
+      ],
+      "assetId": "moveset:096",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 97,
+      "gameMoveId": 97,
+      "name": "Picchiata fatale",
+      "type": "Normale",
+      "element": "Normale",
+      "tier": "medium",
+      "arkamon": [
+        {
+          "id": 100,
+          "name": "Ervys"
+        }
+      ],
+      "sourceCells": [
+        "E101"
+      ],
+      "assetId": "moveset:097",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 98,
+      "gameMoveId": 98,
+      "name": "Fiammella",
+      "type": "Fuoco",
+      "element": "Fuoco",
+      "tier": "light",
+      "arkamon": [
+        {
+          "id": 49,
+          "name": "Constrix"
+        }
+      ],
+      "sourceCells": [
+        "E50"
+      ],
+      "assetId": "moveset:098",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 99,
+      "gameMoveId": 99,
+      "name": "Spirale ardente",
+      "type": "Fuoco",
+      "element": "Fuoco",
+      "tier": "medium",
+      "arkamon": [
+        {
+          "id": 50,
+          "name": "Constrix"
+        }
+      ],
+      "sourceCells": [
+        "E51"
+      ],
+      "assetId": "moveset:099",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 100,
+      "gameMoveId": 100,
+      "name": "Testata bassa",
+      "type": "Normale",
+      "element": "Normale",
+      "tier": "light",
+      "arkamon": [
+        {
+          "id": 62,
+          "name": "Fluffet"
+        }
+      ],
+      "sourceCells": [
+        "E63"
+      ],
+      "assetId": "moveset:100",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 101,
+      "gameMoveId": 101,
+      "name": "Lana magica",
+      "type": "Normale",
+      "element": "Normale",
+      "tier": "medium",
+      "arkamon": [
+        {
+          "id": 63,
+          "name": "Fluffet"
+        }
+      ],
+      "sourceCells": [
+        "E64"
+      ],
+      "assetId": "moveset:101",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 102,
+      "gameMoveId": 102,
+      "name": "Funerale del deserto",
+      "type": "Terra",
+      "element": "Terra",
+      "tier": "medium",
+      "arkamon": [
+        {
+          "id": 19,
+          "name": "Colussand"
+        }
+      ],
+      "sourceCells": [
+        "E20"
+      ],
+      "assetId": "moveset:102",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 103,
+      "gameMoveId": 103,
+      "name": "Sbuffo lavico",
+      "type": "Fuoco",
+      "element": "Fuoco",
+      "tier": "heavy",
+      "arkamon": [
+        {
+          "id": 51,
+          "name": "Goliash"
+        }
+      ],
+      "sourceCells": [
+        "E52"
+      ],
+      "assetId": "moveset:103",
+      "anchor": "center",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 104,
+      "gameMoveId": 104,
+      "name": "Sradicamento",
+      "type": "Erba",
+      "element": "Erba",
+      "tier": "medium",
+      "arkamon": [
+        {
+          "id": 78,
+          "name": "Trippix"
+        }
+      ],
+      "sourceCells": [
+        "E79"
+      ],
+      "assetId": "moveset:104",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 105,
+      "gameMoveId": 105,
+      "name": "Jumpscare",
+      "type": "Oscurità",
+      "element": "Oscurità",
+      "tier": "heavy",
+      "arkamon": [
+        {
+          "id": 55,
+          "name": "Peek-a-buu"
+        }
+      ],
+      "sourceCells": [
+        "E56"
+      ],
+      "assetId": "moveset:105",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 106,
+      "gameMoveId": 106,
+      "name": "Legnata",
+      "type": "Erba",
+      "element": "Erba",
+      "tier": "medium",
+      "arkamon": [
+        {
+          "id": 98,
+          "name": "Grooty"
+        }
+      ],
+      "sourceCells": [
+        "E99"
+      ],
+      "assetId": "moveset:106",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 107,
+      "gameMoveId": 109,
+      "name": "Sguardo glaciale",
+      "type": "Psico",
+      "element": "Psico",
+      "tier": "heavy",
+      "arkamon": [
+        {
+          "id": 109,
+          "name": "Oniros"
+        }
+      ],
+      "sourceCells": [
+        "E110"
+      ],
+      "assetId": "moveset:107",
+      "anchor": "center",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 108,
+      "gameMoveId": 110,
+      "name": "Ordine sovrano",
+      "type": "Oscurità",
+      "element": "Oscurità",
+      "tier": "heavy",
+      "arkamon": [
+        {
+          "id": 110,
+          "name": "Voider"
+        }
+      ],
+      "sourceCells": [
+        "E111"
+      ],
+      "assetId": "moveset:108",
+      "anchor": "center",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 109,
+      "gameMoveId": 107,
+      "name": "Vortice divino",
+      "type": "Acqua",
+      "element": "Acqua",
+      "tier": "heavy",
+      "arkamon": [
+        {
+          "id": 107,
+          "name": "Ao-shin"
+        }
+      ],
+      "sourceCells": [
+        "E108"
+      ],
+      "assetId": "moveset:109",
+      "anchor": "center",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 110,
+      "gameMoveId": 108,
+      "name": "Fiamma celestiale",
+      "type": "Fuoco",
+      "element": "Fuoco",
+      "tier": "heavy",
+      "arkamon": [
+        {
+          "id": 108,
+          "name": "Aka-shin"
+        }
+      ],
+      "sourceCells": [
+        "E109"
+      ],
+      "assetId": "moveset:110",
+      "anchor": "center",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 111,
+      "gameMoveId": 111,
+      "name": "Brezza Profumata",
+      "type": "Erba",
+      "element": "Erba",
+      "tier": "light",
+      "arkamon": [
+        {
+          "id": 1,
+          "name": "Vyrath"
+        }
+      ],
+      "sourceCells": [
+        "H2"
+      ],
+      "assetId": "moveset:111",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 112,
+      "gameMoveId": 112,
+      "name": "Vento Silvano",
+      "type": "Erba",
+      "element": "Erba",
+      "tier": "medium",
+      "arkamon": [
+        {
+          "id": 2,
+          "name": "Vyrath"
+        }
+      ],
+      "sourceCells": [
+        "H3"
+      ],
+      "assetId": "moveset:112",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 113,
+      "gameMoveId": 113,
+      "name": "Maestrale Boschivo",
+      "type": "Erba",
+      "element": "Erba",
+      "tier": "medium",
+      "arkamon": [
+        {
+          "id": 3,
+          "name": "Vyrath"
+        }
+      ],
+      "sourceCells": [
+        "H4"
+      ],
+      "assetId": "moveset:113",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 114,
+      "gameMoveId": 114,
+      "name": "Tempesta di Fiori",
+      "type": "Erba",
+      "element": "Erba",
+      "tier": "heavy",
+      "arkamon": [
+        {
+          "id": 4,
+          "name": "Vyrath"
+        }
+      ],
+      "sourceCells": [
+        "H5"
+      ],
+      "assetId": "moveset:114",
+      "anchor": "center",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 115,
+      "gameMoveId": 115,
+      "name": "Ciuffo Verde",
+      "type": "Erba",
+      "element": "Erba",
+      "tier": "light",
+      "arkamon": [
+        {
+          "id": 86,
+          "name": "Teslat"
+        }
+      ],
+      "sourceCells": [
+        "H87"
+      ],
+      "assetId": "moveset:115",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 116,
+      "gameMoveId": 116,
+      "name": "Mazzetto Erboso",
+      "type": "Erba",
+      "element": "Erba",
+      "tier": "medium",
+      "arkamon": [
+        {
+          "id": 87,
+          "name": "Teslat"
+        }
+      ],
+      "sourceCells": [
+        "H88"
+      ],
+      "assetId": "moveset:116",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 117,
+      "gameMoveId": 117,
+      "name": "Cespuglio Rigoglioso",
+      "type": "Erba",
+      "element": "Erba",
+      "tier": "heavy",
+      "arkamon": [
+        {
+          "id": 88,
+          "name": "Teslat"
+        }
+      ],
+      "sourceCells": [
+        "H89"
+      ],
+      "assetId": "moveset:117",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 118,
+      "gameMoveId": 118,
+      "name": "Penna Arcobaleno",
+      "type": "Psico",
+      "element": "Psico",
+      "tier": "light",
+      "arkamon": [
+        {
+          "id": 71,
+          "name": "Blizzaquil"
+        }
+      ],
+      "sourceCells": [
+        "H72"
+      ],
+      "assetId": "moveset:118",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 119,
+      "gameMoveId": 119,
+      "name": "Ali Elusive",
+      "type": "Psico",
+      "element": "Psico",
+      "tier": "medium",
+      "arkamon": [
+        {
+          "id": 72,
+          "name": "Blizzaquil"
+        }
+      ],
+      "sourceCells": [
+        "H73"
+      ],
+      "assetId": "moveset:119",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 120,
+      "gameMoveId": 120,
+      "name": "Piumaggio Illusorio",
+      "type": "Psico",
+      "element": "Psico",
+      "tier": "heavy",
+      "arkamon": [
+        {
+          "id": 73,
+          "name": "Blizzaquil"
+        }
+      ],
+      "sourceCells": [
+        "H74"
+      ],
+      "assetId": "moveset:120",
+      "anchor": "center",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 121,
+      "gameMoveId": 121,
+      "name": "Bollobrace",
+      "type": "Fuoco",
+      "element": "Fuoco",
+      "tier": "light",
+      "arkamon": [
+        {
+          "id": 16,
+          "name": "Clastoom"
+        }
+      ],
+      "sourceCells": [
+        "H17"
+      ],
+      "assetId": "moveset:121",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 122,
+      "gameMoveId": 122,
+      "name": "Fauci incandescenti",
+      "type": "Fuoco",
+      "element": "Fuoco",
+      "tier": "medium",
+      "arkamon": [
+        {
+          "id": 17,
+          "name": "Clastoom"
+        }
+      ],
+      "sourceCells": [
+        "H18"
+      ],
+      "assetId": "moveset:122",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 123,
+      "gameMoveId": 123,
+      "name": "Detonazione lavica",
+      "type": "Fuoco",
+      "element": "Fuoco",
+      "tier": "heavy",
+      "arkamon": [
+        {
+          "id": 18,
+          "name": "Clastoom"
+        }
+      ],
+      "sourceCells": [
+        "H19"
+      ],
+      "assetId": "moveset:123",
+      "anchor": "center",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 124,
+      "gameMoveId": 124,
+      "name": "Cerchio Ondoso",
+      "type": "Acqua",
+      "element": "Acqua",
+      "tier": "light",
+      "arkamon": [
+        {
+          "id": 26,
+          "name": "Ampereel"
+        }
+      ],
+      "sourceCells": [
+        "H27"
+      ],
+      "assetId": "moveset:124",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 125,
+      "gameMoveId": 125,
+      "name": "Spirale Acquatica",
+      "type": "Acqua",
+      "element": "Acqua",
+      "tier": "medium",
+      "arkamon": [
+        {
+          "id": 27,
+          "name": "Ampereel"
+        }
+      ],
+      "sourceCells": [
+        "H28"
+      ],
+      "assetId": "moveset:125",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 126,
+      "gameMoveId": 126,
+      "name": "Polverone",
+      "type": "Terra",
+      "element": "Terra",
+      "tier": "light",
+      "arkamon": [
+        {
+          "id": 42,
+          "name": "Felvex"
+        }
+      ],
+      "sourceCells": [
+        "H43"
+      ],
+      "assetId": "moveset:126",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 127,
+      "gameMoveId": 127,
+      "name": "Marcia del deserto",
+      "type": "Terra",
+      "element": "Terra",
+      "tier": "medium",
+      "arkamon": [
+        {
+          "id": 43,
+          "name": "Felvex"
+        }
+      ],
+      "sourceCells": [
+        "H44"
+      ],
+      "assetId": "moveset:127",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 128,
+      "gameMoveId": 128,
+      "name": "Ringhio Ribelle",
+      "type": "Normale",
+      "element": "Normale",
+      "tier": "light",
+      "arkamon": [
+        {
+          "id": 24,
+          "name": "Grimbolt"
+        }
+      ],
+      "sourceCells": [
+        "H25"
+      ],
+      "assetId": "moveset:128",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 129,
+      "gameMoveId": 129,
+      "name": "Colpo Rabbioso",
+      "type": "Normale",
+      "element": "Normale",
+      "tier": "medium",
+      "arkamon": [
+        {
+          "id": 25,
+          "name": "Grimbolt"
+        }
+      ],
+      "sourceCells": [
+        "H26"
+      ],
+      "assetId": "moveset:129",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 130,
+      "gameMoveId": 130,
+      "name": "Pinna Rotante",
+      "type": "Normale",
+      "element": "Normale",
+      "tier": "light",
+      "arkamon": [
+        {
+          "id": 56,
+          "name": "Deephion"
+        }
+      ],
+      "sourceCells": [
+        "H57"
+      ],
+      "assetId": "moveset:130",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 131,
+      "gameMoveId": 131,
+      "name": "Danza dei Fondali",
+      "type": "Normale",
+      "element": "Normale",
+      "tier": "medium",
+      "arkamon": [
+        {
+          "id": 57,
+          "name": "Deephion"
+        }
+      ],
+      "sourceCells": [
+        "H58"
+      ],
+      "assetId": "moveset:131",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 132,
+      "gameMoveId": 132,
+      "name": "Terrore del Fienile",
+      "type": "Terra",
+      "element": "Terra",
+      "tier": "light",
+      "arkamon": [
+        {
+          "id": 67,
+          "name": "Fearstraw"
+        }
+      ],
+      "sourceCells": [
+        "H68"
+      ],
+      "assetId": "moveset:132",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 133,
+      "gameMoveId": 133,
+      "name": "Spauracchio Contadino",
+      "type": "Terra",
+      "element": "Terra",
+      "tier": "medium",
+      "arkamon": [
+        {
+          "id": 68,
+          "name": "Fearstraw"
+        }
+      ],
+      "sourceCells": [
+        "H69"
+      ],
+      "assetId": "moveset:133",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 134,
+      "gameMoveId": 134,
+      "name": "Foglia Quantica",
+      "type": "Erba",
+      "element": "Erba",
+      "tier": "medium",
+      "arkamon": [
+        {
+          "id": 21,
+          "name": "Shrody"
+        }
+      ],
+      "sourceCells": [
+        "H22"
+      ],
+      "assetId": "moveset:134",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 135,
+      "gameMoveId": 135,
+      "name": "Incendio a Staffetta",
+      "type": "Fuoco",
+      "element": "Fuoco",
+      "tier": "heavy",
+      "arkamon": [
+        {
+          "id": 66,
+          "name": "Hoppiox"
+        }
+      ],
+      "sourceCells": [
+        "H67"
+      ],
+      "assetId": "moveset:135",
+      "anchor": "center",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 136,
+      "gameMoveId": 136,
+      "name": "Maremoto Sotterraneo",
+      "type": "Terra",
+      "element": "Terra",
+      "tier": "heavy",
+      "arkamon": [
+        {
+          "id": 82,
+          "name": "Reliskull"
+        }
+      ],
+      "sourceCells": [
+        "H83"
+      ],
+      "assetId": "moveset:136",
+      "anchor": "center",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 137,
+      "gameMoveId": 137,
+      "name": "Sbattimuso",
+      "type": "Normale",
+      "element": "Normale",
+      "tier": "heavy",
+      "arkamon": [
+        {
+          "id": 61,
+          "name": "Wailoom"
+        }
+      ],
+      "sourceCells": [
+        "H62"
+      ],
+      "assetId": "moveset:137",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 138,
+      "gameMoveId": 138,
+      "name": "Dardo di Fiamma",
+      "type": "Fuoco",
+      "element": "Fuoco",
+      "tier": "light",
+      "arkamon": [
+        {
+          "id": 5,
+          "name": "Darklaw"
+        }
+      ],
+      "sourceCells": [
+        "H6"
+      ],
+      "assetId": "moveset:138",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 139,
+      "gameMoveId": 139,
+      "name": "Pioggia di Scintille",
+      "type": "Fuoco",
+      "element": "Fuoco",
+      "tier": "medium",
+      "arkamon": [
+        {
+          "id": 6,
+          "name": "Darklaw"
+        }
+      ],
+      "sourceCells": [
+        "H7"
+      ],
+      "assetId": "moveset:139",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 140,
+      "gameMoveId": 140,
+      "name": "Furia Fuliggine",
+      "type": "Fuoco",
+      "element": "Fuoco",
+      "tier": "medium",
+      "arkamon": [
+        {
+          "id": 7,
+          "name": "Darklaw"
+        }
+      ],
+      "sourceCells": [
+        "H8"
+      ],
+      "assetId": "moveset:140",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 141,
+      "gameMoveId": 141,
+      "name": "Mantello di Carbone",
+      "type": "Fuoco",
+      "element": "Fuoco",
+      "tier": "heavy",
+      "arkamon": [
+        {
+          "id": 8,
+          "name": "Darklaw"
+        }
+      ],
+      "sourceCells": [
+        "H9"
+      ],
+      "assetId": "moveset:141",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 142,
+      "gameMoveId": 142,
+      "name": "Sguardo Minaccioso",
+      "type": "Oscurità",
+      "element": "Oscurità",
+      "tier": "light",
+      "arkamon": [
+        {
+          "id": 92,
+          "name": "Pyrodil"
+        }
+      ],
+      "sourceCells": [
+        "H93"
+      ],
+      "assetId": "moveset:142",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 143,
+      "gameMoveId": 143,
+      "name": "Ombra Rossa",
+      "type": "Oscurità",
+      "element": "Oscurità",
+      "tier": "medium",
+      "arkamon": [
+        {
+          "id": 93,
+          "name": "Pyrodil"
+        }
+      ],
+      "sourceCells": [
+        "H94"
+      ],
+      "assetId": "moveset:143",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 144,
+      "gameMoveId": 144,
+      "name": "Piaga delle Tenebre",
+      "type": "Oscurità",
+      "element": "Oscurità",
+      "tier": "heavy",
+      "arkamon": [
+        {
+          "id": 94,
+          "name": "Pyrodil"
+        }
+      ],
+      "sourceCells": [
+        "H95"
+      ],
+      "assetId": "moveset:144",
+      "anchor": "center",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 145,
+      "gameMoveId": 145,
+      "name": "Lancio di Libri",
+      "type": "Normale",
+      "element": "Normale",
+      "tier": "light",
+      "arkamon": [
+        {
+          "id": 74,
+          "name": "Impise"
+        }
+      ],
+      "sourceCells": [
+        "H75"
+      ],
+      "assetId": "moveset:145",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 146,
+      "gameMoveId": 146,
+      "name": "Pugno Saggio",
+      "type": "Normale",
+      "element": "Normale",
+      "tier": "medium",
+      "arkamon": [
+        {
+          "id": 75,
+          "name": "Impise"
+        }
+      ],
+      "sourceCells": [
+        "H76"
+      ],
+      "assetId": "moveset:146",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 147,
+      "gameMoveId": 147,
+      "name": "Conoscenza Antica",
+      "type": "Normale",
+      "element": "Normale",
+      "tier": "heavy",
+      "arkamon": [
+        {
+          "id": 76,
+          "name": "Impise"
+        }
+      ],
+      "sourceCells": [
+        "H77"
+      ],
+      "assetId": "moveset:147",
+      "anchor": "center",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 148,
+      "gameMoveId": 148,
+      "name": "Salto Idroelettrico",
+      "type": "Acqua",
+      "element": "Acqua",
+      "tier": "light",
+      "arkamon": [
+        {
+          "id": 36,
+          "name": "Chimzap"
+        }
+      ],
+      "sourceCells": [
+        "H37"
+      ],
+      "assetId": "moveset:148",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 149,
+      "gameMoveId": 149,
+      "name": "Cascata Elettrificata",
+      "type": "Acqua",
+      "element": "Acqua",
+      "tier": "medium",
+      "arkamon": [
+        {
+          "id": 37,
+          "name": "Chimzap"
+        }
+      ],
+      "sourceCells": [
+        "H38"
+      ],
+      "assetId": "moveset:149",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 150,
+      "gameMoveId": 150,
+      "name": "Idroscarica",
+      "type": "Acqua",
+      "element": "Acqua",
+      "tier": "heavy",
+      "arkamon": [
+        {
+          "id": 38,
+          "name": "Chimzap"
+        }
+      ],
+      "sourceCells": [
+        "H39"
+      ],
+      "assetId": "moveset:150",
+      "anchor": "center",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 151,
+      "gameMoveId": 151,
+      "name": "Scatto veloce",
+      "type": "Normale",
+      "element": "Normale",
+      "tier": "light",
+      "arkamon": [
+        {
+          "id": 28,
+          "name": "Silvard"
+        }
+      ],
+      "sourceCells": [
+        "H29"
+      ],
+      "assetId": "moveset:151",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 152,
+      "gameMoveId": 152,
+      "name": "Corsa inarrestabile",
+      "type": "Normale",
+      "element": "Normale",
+      "tier": "medium",
+      "arkamon": [
+        {
+          "id": 29,
+          "name": "Silvard"
+        }
+      ],
+      "sourceCells": [
+        "H30"
+      ],
+      "assetId": "moveset:152",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 153,
+      "gameMoveId": 153,
+      "name": "Respiro profondo",
+      "type": "Normale",
+      "element": "Normale",
+      "tier": "light",
+      "arkamon": [
+        {
+          "id": 84,
+          "name": "Psycroak"
+        }
+      ],
+      "sourceCells": [
+        "H85"
+      ],
+      "assetId": "moveset:153",
+      "anchor": "self",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 154,
+      "gameMoveId": 154,
+      "name": "Tocco di pace",
+      "type": "Normale",
+      "element": "Normale",
+      "tier": "medium",
+      "arkamon": [
+        {
+          "id": 85,
+          "name": "Psycroak"
+        }
+      ],
+      "sourceCells": [
+        "H86"
+      ],
+      "assetId": "moveset:154",
+      "anchor": "self",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 155,
+      "gameMoveId": 155,
+      "name": "Volo Furtivo",
+      "type": "Normale",
+      "element": "Normale",
+      "tier": "light",
+      "arkamon": [
+        {
+          "id": 45,
+          "name": "Spectron"
+        }
+      ],
+      "sourceCells": [
+        "H46"
+      ],
+      "assetId": "moveset:155",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 156,
+      "gameMoveId": 156,
+      "name": "Sferzata Celata",
+      "type": "Normale",
+      "element": "Normale",
+      "tier": "heavy",
+      "arkamon": [
+        {
+          "id": 46,
+          "name": "Spectron"
+        }
+      ],
+      "sourceCells": [
+        "H47"
+      ],
+      "assetId": "moveset:156",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 157,
+      "gameMoveId": 157,
+      "name": "Fendente Ombraverde",
+      "type": "Erba",
+      "element": "Erba",
+      "tier": "light",
+      "arkamon": [
+        {
+          "id": 101,
+          "name": "Xesar"
+        }
+      ],
+      "sourceCells": [
+        "H102"
+      ],
+      "assetId": "moveset:157",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 158,
+      "gameMoveId": 158,
+      "name": "Lama Sanguisuga",
+      "type": "Erba",
+      "element": "Erba",
+      "tier": "medium",
+      "arkamon": [
+        {
+          "id": 102,
+          "name": "Xesar"
+        }
+      ],
+      "sourceCells": [
+        "H103"
+      ],
+      "assetId": "moveset:158",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 159,
+      "gameMoveId": 159,
+      "name": "Leccata Fangosa",
+      "type": "Terra",
+      "element": "Terra",
+      "tier": "light",
+      "arkamon": [
+        {
+          "id": 69,
+          "name": "Lickard"
+        }
+      ],
+      "sourceCells": [
+        "H70"
+      ],
+      "assetId": "moveset:159",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 160,
+      "gameMoveId": 160,
+      "name": "Baratro Melmoso",
+      "type": "Terra",
+      "element": "Terra",
+      "tier": "medium",
+      "arkamon": [
+        {
+          "id": 70,
+          "name": "Lickard"
+        }
+      ],
+      "sourceCells": [
+        "H71"
+      ],
+      "assetId": "moveset:160",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 161,
+      "gameMoveId": 161,
+      "name": "Richiamo del Bosco",
+      "type": "Erba",
+      "element": "Erba",
+      "tier": "heavy",
+      "arkamon": [
+        {
+          "id": 22,
+          "name": "Voltrake"
+        }
+      ],
+      "sourceCells": [
+        "H23"
+      ],
+      "assetId": "moveset:161",
+      "anchor": "center",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 162,
+      "gameMoveId": 162,
+      "name": "Trappola Saltellante",
+      "type": "Erba",
+      "element": "Erba",
+      "tier": "medium",
+      "arkamon": [
+        {
+          "id": 23,
+          "name": "Sparkly"
+        }
+      ],
+      "sourceCells": [
+        "H24"
+      ],
+      "assetId": "moveset:162",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 163,
+      "gameMoveId": 163,
+      "name": "Assalto Marziano",
+      "type": "Normale",
+      "element": "Normale",
+      "tier": "medium",
+      "arkamon": [
+        {
+          "id": 83,
+          "name": "Cerebron"
+        }
+      ],
+      "sourceCells": [
+        "H84"
+      ],
+      "assetId": "moveset:163",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 164,
+      "gameMoveId": 164,
+      "name": "Canto del Crepuscolo",
+      "type": "Oscurità",
+      "element": "Oscurità",
+      "tier": "light",
+      "arkamon": [
+        {
+          "id": 65,
+          "name": "Piox"
+        }
+      ],
+      "sourceCells": [
+        "H66"
+      ],
+      "assetId": "moveset:164",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 165,
+      "gameMoveId": 165,
+      "name": "Tocco Ghiacciato",
+      "type": "Acqua",
+      "element": "Acqua",
+      "tier": "light",
+      "arkamon": [
+        {
+          "id": 9,
+          "name": "Felyss"
+        }
+      ],
+      "sourceCells": [
+        "H10"
+      ],
+      "assetId": "moveset:165",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 166,
+      "gameMoveId": 166,
+      "name": "Squarcio Glaciale",
+      "type": "Acqua",
+      "element": "Acqua",
+      "tier": "medium",
+      "arkamon": [
+        {
+          "id": 10,
+          "name": "Felyss"
+        }
+      ],
+      "sourceCells": [
+        "H11"
+      ],
+      "assetId": "moveset:166",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 167,
+      "gameMoveId": 167,
+      "name": "Fredda Illusione",
+      "type": "Acqua",
+      "element": "Acqua",
+      "tier": "medium",
+      "arkamon": [
+        {
+          "id": 11,
+          "name": "Felyss"
+        }
+      ],
+      "sourceCells": [
+        "H12"
+      ],
+      "assetId": "moveset:167",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 168,
+      "gameMoveId": 168,
+      "name": "Bora Eterea",
+      "type": "Acqua",
+      "element": "Acqua",
+      "tier": "heavy",
+      "arkamon": [
+        {
+          "id": 12,
+          "name": "Felyss"
+        }
+      ],
+      "sourceCells": [
+        "H13"
+      ],
+      "assetId": "moveset:168",
+      "anchor": "center",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 169,
+      "gameMoveId": 169,
+      "name": "Ronzio Psichico",
+      "type": "Psico",
+      "element": "Psico",
+      "tier": "light",
+      "arkamon": [
+        {
+          "id": 95,
+          "name": "Beestrix"
+        }
+      ],
+      "sourceCells": [
+        "H96"
+      ],
+      "assetId": "moveset:169",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 170,
+      "gameMoveId": 170,
+      "name": "Sciame Mentale",
+      "type": "Psico",
+      "element": "Psico",
+      "tier": "medium",
+      "arkamon": [
+        {
+          "id": 96,
+          "name": "Beestrix"
+        }
+      ],
+      "sourceCells": [
+        "H97"
+      ],
+      "assetId": "moveset:170",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 171,
+      "gameMoveId": 171,
+      "name": "Organizzazione Psionica",
+      "type": "Psico",
+      "element": "Psico",
+      "tier": "heavy",
+      "arkamon": [
+        {
+          "id": 97,
+          "name": "Beestrix"
+        }
+      ],
+      "sourceCells": [
+        "H98"
+      ],
+      "assetId": "moveset:171",
+      "anchor": "center",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 172,
+      "gameMoveId": 172,
+      "name": "Aspirafuoco",
+      "type": "Fuoco",
+      "element": "Fuoco",
+      "tier": "light",
+      "arkamon": [
+        {
+          "id": 79,
+          "name": "Cellgon"
+        }
+      ],
+      "sourceCells": [
+        "H80"
+      ],
+      "assetId": "moveset:172",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 173,
+      "gameMoveId": 173,
+      "name": "Aura Incandescente",
+      "type": "Fuoco",
+      "element": "Fuoco",
+      "tier": "medium",
+      "arkamon": [
+        {
+          "id": 80,
+          "name": "Cellgon"
+        }
+      ],
+      "sourceCells": [
+        "H81"
+      ],
+      "assetId": "moveset:173",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 174,
+      "gameMoveId": 174,
+      "name": "Cannone Infernale",
+      "type": "Fuoco",
+      "element": "Fuoco",
+      "tier": "heavy",
+      "arkamon": [
+        {
+          "id": 81,
+          "name": "Cellgon"
+        }
+      ],
+      "sourceCells": [
+        "H82"
+      ],
+      "assetId": "moveset:174",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 175,
+      "gameMoveId": 175,
+      "name": "Spruzzata di Foglie",
+      "type": "Acqua",
+      "element": "Acqua",
+      "tier": "light",
+      "arkamon": [
+        {
+          "id": 52,
+          "name": "Leafrex"
+        }
+      ],
+      "sourceCells": [
+        "H53"
+      ],
+      "assetId": "moveset:175",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 176,
+      "gameMoveId": 176,
+      "name": "Spirale Umida",
+      "type": "Acqua",
+      "element": "Acqua",
+      "tier": "medium",
+      "arkamon": [
+        {
+          "id": 53,
+          "name": "Leafrex"
+        }
+      ],
+      "sourceCells": [
+        "H54"
+      ],
+      "assetId": "moveset:176",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 177,
+      "gameMoveId": 177,
+      "name": "Alluvione di Germogli",
+      "type": "Acqua",
+      "element": "Acqua",
+      "tier": "heavy",
+      "arkamon": [
+        {
+          "id": 54,
+          "name": "Leafrex"
+        }
+      ],
+      "sourceCells": [
+        "H55"
+      ],
+      "assetId": "moveset:177",
+      "anchor": "center",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 178,
+      "gameMoveId": 178,
+      "name": "Scintilla Lunare",
+      "type": "Fuoco",
+      "element": "Fuoco",
+      "tier": "light",
+      "arkamon": [
+        {
+          "id": 30,
+          "name": "Eclyps"
+        }
+      ],
+      "sourceCells": [
+        "H31"
+      ],
+      "assetId": "moveset:178",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 179,
+      "gameMoveId": 179,
+      "name": "Eclissi Infuocata",
+      "type": "Fuoco",
+      "element": "Fuoco",
+      "tier": "medium",
+      "arkamon": [
+        {
+          "id": 31,
+          "name": "Eclyps"
+        }
+      ],
+      "sourceCells": [
+        "H32"
+      ],
+      "assetId": "moveset:179",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 180,
+      "gameMoveId": 180,
+      "name": "Puntura veloce",
+      "type": "Normale",
+      "element": "Normale",
+      "tier": "light",
+      "arkamon": [
+        {
+          "id": 105,
+          "name": "Zoorian"
+        }
+      ],
+      "sourceCells": [
+        "H106"
+      ],
+      "assetId": "moveset:180",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 181,
+      "gameMoveId": 181,
+      "name": "Danza del pungiglione",
+      "type": "Normale",
+      "element": "Normale",
+      "tier": "medium",
+      "arkamon": [
+        {
+          "id": 106,
+          "name": "Zoorian"
+        }
+      ],
+      "sourceCells": [
+        "H107"
+      ],
+      "assetId": "moveset:181",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 182,
+      "gameMoveId": 182,
+      "name": "Colpo di Liana",
+      "type": "Normale",
+      "element": "Normale",
+      "tier": "light",
+      "arkamon": [
+        {
+          "id": 47,
+          "name": "Weedrug"
+        }
+      ],
+      "sourceCells": [
+        "H48"
+      ],
+      "assetId": "moveset:182",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 183,
+      "gameMoveId": 183,
+      "name": "Agguato Silvestre",
+      "type": "Normale",
+      "element": "Normale",
+      "tier": "medium",
+      "arkamon": [
+        {
+          "id": 48,
+          "name": "Weedrug"
+        }
+      ],
+      "sourceCells": [
+        "H49"
+      ],
+      "assetId": "moveset:183",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 184,
+      "gameMoveId": 184,
+      "name": "Ruggito fulminante",
+      "type": "Elettro",
+      "element": "Elettro",
+      "tier": "light",
+      "arkamon": [
+        {
+          "id": 32,
+          "name": "Blazion"
+        }
+      ],
+      "sourceCells": [
+        "H33"
+      ],
+      "assetId": "moveset:184",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 185,
+      "gameMoveId": 185,
+      "name": "Tuono regale",
+      "type": "Elettro",
+      "element": "Elettro",
+      "tier": "heavy",
+      "arkamon": [
+        {
+          "id": 33,
+          "name": "Blazion"
+        }
+      ],
+      "sourceCells": [
+        "H34"
+      ],
+      "assetId": "moveset:185",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 186,
+      "gameMoveId": 186,
+      "name": "Braciere Profondo",
+      "type": "Fuoco",
+      "element": "Fuoco",
+      "tier": "light",
+      "arkamon": [
+        {
+          "id": 103,
+          "name": "Boomrock"
+        }
+      ],
+      "sourceCells": [
+        "H104"
+      ],
+      "assetId": "moveset:186",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 187,
+      "gameMoveId": 187,
+      "name": "Fiamma Sotterranea",
+      "type": "Fuoco",
+      "element": "Fuoco",
+      "tier": "medium",
+      "arkamon": [
+        {
+          "id": 104,
+          "name": "Boomrock"
+        }
+      ],
+      "sourceCells": [
+        "H105"
+      ],
+      "assetId": "moveset:187",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 188,
+      "gameMoveId": 188,
+      "name": "Pulviscolo Ionizzate",
+      "type": "Elettro",
+      "element": "Elettro",
+      "tier": "heavy",
+      "arkamon": [
+        {
+          "id": 44,
+          "name": "Felvex"
+        }
+      ],
+      "sourceCells": [
+        "H45"
+      ],
+      "assetId": "moveset:188",
+      "anchor": "center",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 189,
+      "gameMoveId": 189,
+      "name": "Gemma Smeraldina",
+      "type": "Erba",
+      "element": "Erba",
+      "tier": "light",
+      "arkamon": [
+        {
+          "id": 64,
+          "name": "Hopz"
+        }
+      ],
+      "sourceCells": [
+        "H65"
+      ],
+      "assetId": "moveset:189",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 190,
+      "gameMoveId": 190,
+      "name": "Abbraccio Traballante",
+      "type": "Erba",
+      "element": "Erba",
+      "tier": "light",
+      "arkamon": [
+        {
+          "id": 20,
+          "name": "Handipus"
+        }
+      ],
+      "sourceCells": [
+        "H21"
+      ],
+      "assetId": "moveset:190",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 191,
+      "gameMoveId": 191,
+      "name": "Surriscaldamento",
+      "type": "Elettro",
+      "element": "Elettro",
+      "tier": "medium",
+      "arkamon": [
+        {
+          "id": 77,
+          "name": "Ignitor"
+        }
+      ],
+      "sourceCells": [
+        "H78"
+      ],
+      "assetId": "moveset:191",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 192,
+      "gameMoveId": 192,
+      "name": "Scottatura",
+      "type": "Fuoco",
+      "element": "Fuoco",
+      "tier": "light",
+      "arkamon": [
+        {
+          "id": 13,
+          "name": "Wormaren"
+        }
+      ],
+      "sourceCells": [
+        "H14"
+      ],
+      "assetId": "moveset:192",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 193,
+      "gameMoveId": 193,
+      "name": "Sabbia Ardente",
+      "type": "Fuoco",
+      "element": "Fuoco",
+      "tier": "medium",
+      "arkamon": [
+        {
+          "id": 14,
+          "name": "Wormaren"
+        }
+      ],
+      "sourceCells": [
+        "H15"
+      ],
+      "assetId": "moveset:193",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 194,
+      "gameMoveId": 194,
+      "name": "Tornado di Fuoco e Sabbia",
+      "type": "Fuoco",
+      "element": "Fuoco",
+      "tier": "heavy",
+      "arkamon": [
+        {
+          "id": 15,
+          "name": "Wormaren"
+        }
+      ],
+      "sourceCells": [
+        "H16"
+      ],
+      "assetId": "moveset:194",
+      "anchor": "center",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 195,
+      "gameMoveId": 195,
+      "name": "Bruciatura Laser",
+      "type": "Fuoco",
+      "element": "Fuoco",
+      "tier": "light",
+      "arkamon": [
+        {
+          "id": 39,
+          "name": "RS-219"
+        }
+      ],
+      "sourceCells": [
+        "H40"
+      ],
+      "assetId": "moveset:195",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 196,
+      "gameMoveId": 196,
+      "name": "Fiamma Futuristica",
+      "type": "Fuoco",
+      "element": "Fuoco",
+      "tier": "medium",
+      "arkamon": [
+        {
+          "id": 40,
+          "name": "RS-219"
+        }
+      ],
+      "sourceCells": [
+        "H41"
+      ],
+      "assetId": "moveset:196",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 197,
+      "gameMoveId": 197,
+      "name": "Scarica Pulsar",
+      "type": "Fuoco",
+      "element": "Fuoco",
+      "tier": "heavy",
+      "arkamon": [
+        {
+          "id": 41,
+          "name": "RS-219"
+        }
+      ],
+      "sourceCells": [
+        "H42"
+      ],
+      "assetId": "moveset:197",
+      "anchor": "center",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 198,
+      "gameMoveId": 198,
+      "name": "Polvere Ardente",
+      "type": "Fuoco",
+      "element": "Fuoco",
+      "tier": "light",
+      "arkamon": [
+        {
+          "id": 89,
+          "name": "Espeiry"
+        }
+      ],
+      "sourceCells": [
+        "H90"
+      ],
+      "assetId": "moveset:198",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 199,
+      "gameMoveId": 199,
+      "name": "Sfolgorio Magico",
+      "type": "Fuoco",
+      "element": "Fuoco",
+      "tier": "medium",
+      "arkamon": [
+        {
+          "id": 90,
+          "name": "Espeiry"
+        }
+      ],
+      "sourceCells": [
+        "H91"
+      ],
+      "assetId": "moveset:199",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 200,
+      "gameMoveId": 200,
+      "name": "Turbinio di Fuochi Fatui",
+      "type": "Fuoco",
+      "element": "Fuoco",
+      "tier": "heavy",
+      "arkamon": [
+        {
+          "id": 91,
+          "name": "Espeiry"
+        }
+      ],
+      "sourceCells": [
+        "H92"
+      ],
+      "assetId": "moveset:200",
+      "anchor": "center",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 201,
+      "gameMoveId": 201,
+      "name": "Nuotata Inquietante",
+      "type": "Oscurità",
+      "element": "Oscurità",
+      "tier": "light",
+      "arkamon": [
+        {
+          "id": 58,
+          "name": "Shabyss"
+        }
+      ],
+      "sourceCells": [
+        "H59"
+      ],
+      "assetId": "moveset:201",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 202,
+      "gameMoveId": 202,
+      "name": "Squalo Ombra",
+      "type": "Oscurità",
+      "element": "Oscurità",
+      "tier": "medium",
+      "arkamon": [
+        {
+          "id": 59,
+          "name": "Shabyss"
+        }
+      ],
+      "sourceCells": [
+        "H60"
+      ],
+      "assetId": "moveset:202",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 203,
+      "gameMoveId": 203,
+      "name": "Fauci dell'abisso",
+      "type": "Oscurità",
+      "element": "Oscurità",
+      "tier": "heavy",
+      "arkamon": [
+        {
+          "id": 60,
+          "name": "Shabyss"
+        }
+      ],
+      "sourceCells": [
+        "H61"
+      ],
+      "assetId": "moveset:203",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 204,
+      "gameMoveId": 204,
+      "name": "Eco del Guardiano",
+      "type": "Oscurità",
+      "element": "Oscurità",
+      "tier": "light",
+      "arkamon": [
+        {
+          "id": 34,
+          "name": "Crawgoyle"
+        }
+      ],
+      "sourceCells": [
+        "H35"
+      ],
+      "assetId": "moveset:204",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 205,
+      "gameMoveId": 205,
+      "name": "Presenza Custode",
+      "type": "Oscurità",
+      "element": "Oscurità",
+      "tier": "medium",
+      "arkamon": [
+        {
+          "id": 35,
+          "name": "Crawgoyle"
+        }
+      ],
+      "sourceCells": [
+        "H36"
+      ],
+      "assetId": "moveset:205",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 206,
+      "gameMoveId": 206,
+      "name": "Fumo Inquieto",
+      "type": "Fuoco",
+      "element": "Fuoco",
+      "tier": "light",
+      "arkamon": [
+        {
+          "id": 99,
+          "name": "Ervys"
+        }
+      ],
+      "sourceCells": [
+        "H100"
+      ],
+      "assetId": "moveset:206",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 207,
+      "gameMoveId": 207,
+      "name": "Fiamma a 270°",
+      "type": "Fuoco",
+      "element": "Fuoco",
+      "tier": "medium",
+      "arkamon": [
+        {
+          "id": 100,
+          "name": "Ervys"
+        }
+      ],
+      "sourceCells": [
+        "H101"
+      ],
+      "assetId": "moveset:207",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 208,
+      "gameMoveId": 208,
+      "name": "Morsa Terrigena",
+      "type": "Terra",
+      "element": "Terra",
+      "tier": "light",
+      "arkamon": [
+        {
+          "id": 49,
+          "name": "Constrix"
+        }
+      ],
+      "sourceCells": [
+        "H50"
+      ],
+      "assetId": "moveset:208",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 209,
+      "gameMoveId": 209,
+      "name": "Soffocaterra",
+      "type": "Terra",
+      "element": "Terra",
+      "tier": "medium",
+      "arkamon": [
+        {
+          "id": 50,
+          "name": "Constrix"
+        }
+      ],
+      "sourceCells": [
+        "H51"
+      ],
+      "assetId": "moveset:209",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 210,
+      "gameMoveId": 210,
+      "name": "Battito Terrestre",
+      "type": "Terra",
+      "element": "Terra",
+      "tier": "light",
+      "arkamon": [
+        {
+          "id": 62,
+          "name": "Fluffet"
+        }
+      ],
+      "sourceCells": [
+        "H63"
+      ],
+      "assetId": "moveset:210",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 211,
+      "gameMoveId": 211,
+      "name": "Zoccolata Fangosa",
+      "type": "Terra",
+      "element": "Terra",
+      "tier": "medium",
+      "arkamon": [
+        {
+          "id": 63,
+          "name": "Fluffet"
+        }
+      ],
+      "sourceCells": [
+        "H64"
+      ],
+      "assetId": "moveset:211",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 212,
+      "gameMoveId": 212,
+      "name": "Scontro Colossale",
+      "type": "Normale",
+      "element": "Normale",
+      "tier": "medium",
+      "arkamon": [
+        {
+          "id": 19,
+          "name": "Colussand"
+        }
+      ],
+      "sourceCells": [
+        "H20"
+      ],
+      "assetId": "moveset:212",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 213,
+      "gameMoveId": 213,
+      "name": "Movimento Continentale",
+      "type": "Normale",
+      "element": "Normale",
+      "tier": "heavy",
+      "arkamon": [
+        {
+          "id": 51,
+          "name": "Goliash"
+        }
+      ],
+      "sourceCells": [
+        "H52"
+      ],
+      "assetId": "moveset:213",
+      "anchor": "center",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 214,
+      "gameMoveId": 214,
+      "name": "Passo Furtivo",
+      "type": "Oscurità",
+      "element": "Oscurità",
+      "tier": "medium",
+      "arkamon": [
+        {
+          "id": 78,
+          "name": "Trippix"
+        }
+      ],
+      "sourceCells": [
+        "H79"
+      ],
+      "assetId": "moveset:214",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 215,
+      "gameMoveId": 215,
+      "name": "Cucù Settete",
+      "type": "Normale",
+      "element": "Normale",
+      "tier": "heavy",
+      "arkamon": [
+        {
+          "id": 55,
+          "name": "Peek-a-buu"
+        }
+      ],
+      "sourceCells": [
+        "H56"
+      ],
+      "assetId": "moveset:215",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 216,
+      "gameMoveId": 216,
+      "name": "Rugiada Mattutina",
+      "type": "Acqua",
+      "element": "Acqua",
+      "tier": "medium",
+      "arkamon": [
+        {
+          "id": 98,
+          "name": "Grooty"
+        }
+      ],
+      "sourceCells": [
+        "H99"
+      ],
+      "assetId": "moveset:216",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 217,
+      "gameMoveId": 217,
+      "name": "Boro Breath",
+      "type": "Normale",
+      "element": "Normale",
+      "tier": "heavy",
+      "arkamon": [
+        {
+          "id": 109,
+          "name": "Oniros"
+        }
+      ],
+      "sourceCells": [
+        "H110"
+      ],
+      "assetId": "moveset:217",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 218,
+      "gameMoveId": 218,
+      "name": "Boro Breath",
+      "type": "Normale",
+      "element": "Normale",
+      "tier": "heavy",
+      "arkamon": [
+        {
+          "id": 110,
+          "name": "Voider"
+        }
+      ],
+      "sourceCells": [
+        "H111"
+      ],
+      "assetId": "moveset:218",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 219,
+      "gameMoveId": 219,
+      "name": "Visione Musiva",
+      "type": "Normale",
+      "element": "Normale",
+      "tier": "heavy",
+      "arkamon": [
+        {
+          "id": 107,
+          "name": "Ao-shin"
+        }
+      ],
+      "sourceCells": [
+        "H108"
+      ],
+      "assetId": "moveset:219",
+      "anchor": "center",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 220,
+      "gameMoveId": 220,
+      "name": "Ordine Imperiale",
+      "type": "Normale",
+      "element": "Normale",
+      "tier": "heavy",
+      "arkamon": [
+        {
+          "id": 108,
+          "name": "Aka-shin"
+        }
+      ],
+      "sourceCells": [
+        "H109"
+      ],
+      "assetId": "moveset:220",
+      "anchor": "center",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 221,
+      "gameMoveId": null,
+      "name": "Furia Ionica",
+      "type": "Status (Paralisi)",
+      "element": "Normale",
+      "tier": "status",
+      "arkamon": [
+        {
+          "id": 3,
+          "name": "Vyrath"
+        },
+        {
+          "id": 4,
+          "name": "Vyrath"
+        }
+      ],
+      "sourceCells": [
+        "K4",
+        "K5"
+      ],
+      "assetId": "moveset:221",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 222,
+      "gameMoveId": null,
+      "name": "Colpo Cibernetico",
+      "type": "Status (Danno Fisso)",
+      "element": "Elettro",
+      "tier": "status",
+      "arkamon": [
+        {
+          "id": 87,
+          "name": "Teslat"
+        },
+        {
+          "id": 88,
+          "name": "Teslat"
+        }
+      ],
+      "sourceCells": [
+        "K88",
+        "K89"
+      ],
+      "assetId": "moveset:222",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 223,
+      "gameMoveId": null,
+      "name": "Scheggia Gelida",
+      "type": "Status (Danno Fisso)",
+      "element": "Acqua",
+      "tier": "status",
+      "arkamon": [
+        {
+          "id": 72,
+          "name": "Blizzaquil"
+        },
+        {
+          "id": 73,
+          "name": "Blizzaquil"
+        }
+      ],
+      "sourceCells": [
+        "K73",
+        "K74"
+      ],
+      "assetId": "moveset:223",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 224,
+      "gameMoveId": null,
+      "name": "Flusso Vitale",
+      "type": "Status (Recupero Alto HP)",
+      "element": "Terra",
+      "tier": "status",
+      "arkamon": [
+        {
+          "id": 17,
+          "name": "Clastoom"
+        },
+        {
+          "id": 18,
+          "name": "Clastoom"
+        }
+      ],
+      "sourceCells": [
+        "K18",
+        "K19"
+      ],
+      "assetId": "moveset:224",
+      "anchor": "self",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 225,
+      "gameMoveId": null,
+      "name": "Impatto Voltaico",
+      "type": "Status (Paralisi)",
+      "element": "Elettro",
+      "tier": "status",
+      "arkamon": [
+        {
+          "id": 27,
+          "name": "Ampereel"
+        }
+      ],
+      "sourceCells": [
+        "K28"
+      ],
+      "assetId": "moveset:225",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 226,
+      "gameMoveId": null,
+      "name": "Calma Piatta",
+      "type": "Status (Sonno)",
+      "element": "Normale",
+      "tier": "status",
+      "arkamon": [
+        {
+          "id": 43,
+          "name": "Felvex"
+        },
+        {
+          "id": 44,
+          "name": "Felvex"
+        }
+      ],
+      "sourceCells": [
+        "K44",
+        "K45"
+      ],
+      "assetId": "moveset:226",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 227,
+      "gameMoveId": null,
+      "name": "Impatto Statico",
+      "type": "Status (Paralisi)",
+      "element": "Elettro",
+      "tier": "status",
+      "arkamon": [
+        {
+          "id": 25,
+          "name": "Grimbolt"
+        }
+      ],
+      "sourceCells": [
+        "K26"
+      ],
+      "assetId": "moveset:227",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 228,
+      "gameMoveId": null,
+      "name": "Illusione Sincronica",
+      "type": "Status (Confusione)",
+      "element": "Acqua",
+      "tier": "status",
+      "arkamon": [
+        {
+          "id": 57,
+          "name": "Deephion"
+        }
+      ],
+      "sourceCells": [
+        "K58"
+      ],
+      "assetId": "moveset:228",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 229,
+      "gameMoveId": null,
+      "name": "Fuga Mentale",
+      "type": "Status (Confusione)",
+      "element": "Psico",
+      "tier": "status",
+      "arkamon": [
+        {
+          "id": 68,
+          "name": "Fearstraw"
+        }
+      ],
+      "sourceCells": [
+        "K69"
+      ],
+      "assetId": "moveset:229",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 230,
+      "gameMoveId": null,
+      "name": "Barriera elettrica",
+      "type": "Status (Paralisi)",
+      "element": "Psico",
+      "tier": "status",
+      "arkamon": [
+        {
+          "id": 21,
+          "name": "Shrody"
+        }
+      ],
+      "sourceCells": [
+        "K22"
+      ],
+      "assetId": "moveset:230",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 231,
+      "gameMoveId": null,
+      "name": "Tocco Risanante",
+      "type": "Status (Cura Status e Recupero Basso HP)",
+      "element": "Normale",
+      "tier": "status",
+      "arkamon": [
+        {
+          "id": 66,
+          "name": "Hoppiox"
+        }
+      ],
+      "sourceCells": [
+        "K67"
+      ],
+      "assetId": "moveset:231",
+      "anchor": "self",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 232,
+      "gameMoveId": null,
+      "name": "Soffio Purificante",
+      "type": "Status (Cura Status e Recupero Basso HP)",
+      "element": "Acqua",
+      "tier": "status",
+      "arkamon": [
+        {
+          "id": 82,
+          "name": "Reliskull"
+        }
+      ],
+      "sourceCells": [
+        "K83"
+      ],
+      "assetId": "moveset:232",
+      "anchor": "self",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 233,
+      "gameMoveId": null,
+      "name": "Acqua Curativa",
+      "type": "Status (Recupero Alto HP)",
+      "element": "Acqua",
+      "tier": "status",
+      "arkamon": [
+        {
+          "id": 61,
+          "name": "Wailoom"
+        }
+      ],
+      "sourceCells": [
+        "K62"
+      ],
+      "assetId": "moveset:233",
+      "anchor": "self",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 234,
+      "gameMoveId": null,
+      "name": "Ombra del Riposo",
+      "type": "Status (Sonno)",
+      "element": "Oscurità",
+      "tier": "status",
+      "arkamon": [
+        {
+          "id": 7,
+          "name": "Darklaw"
+        },
+        {
+          "id": 8,
+          "name": "Darklaw"
+        }
+      ],
+      "sourceCells": [
+        "K8",
+        "K9"
+      ],
+      "assetId": "moveset:234",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 235,
+      "gameMoveId": null,
+      "name": "Morso Ardente",
+      "type": "Status (Danno Fisso)",
+      "element": "Fuoco",
+      "tier": "status",
+      "arkamon": [
+        {
+          "id": 93,
+          "name": "Pyrodil"
+        },
+        {
+          "id": 94,
+          "name": "Pyrodil"
+        }
+      ],
+      "sourceCells": [
+        "K94",
+        "K95"
+      ],
+      "assetId": "moveset:235",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 236,
+      "gameMoveId": null,
+      "name": "Caos Psichico",
+      "type": "Status (Confusione)",
+      "element": "Fuoco",
+      "tier": "status",
+      "arkamon": [
+        {
+          "id": 75,
+          "name": "Impise"
+        },
+        {
+          "id": 76,
+          "name": "Impise"
+        }
+      ],
+      "sourceCells": [
+        "K76",
+        "K77"
+      ],
+      "assetId": "moveset:236",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 237,
+      "gameMoveId": null,
+      "name": "Battito Animale",
+      "type": "Status (Recupero Alto HP)",
+      "element": "Elettro",
+      "tier": "status",
+      "arkamon": [
+        {
+          "id": 37,
+          "name": "Chimzap"
+        },
+        {
+          "id": 38,
+          "name": "Chimzap"
+        }
+      ],
+      "sourceCells": [
+        "K38",
+        "K39"
+      ],
+      "assetId": "moveset:237",
+      "anchor": "self",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 238,
+      "gameMoveId": null,
+      "name": "Rilascio Cinetico",
+      "type": "Status (Cura Paralisi)",
+      "element": "Erba",
+      "tier": "status",
+      "arkamon": [
+        {
+          "id": 29,
+          "name": "Silvard"
+        }
+      ],
+      "sourceCells": [
+        "K30"
+      ],
+      "assetId": "moveset:238",
+      "anchor": "self",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 239,
+      "gameMoveId": null,
+      "name": "Scioglimento Muscolare",
+      "type": "Status (Cura Paralisi)",
+      "element": "Psico",
+      "tier": "status",
+      "arkamon": [
+        {
+          "id": 85,
+          "name": "Psycroak"
+        }
+      ],
+      "sourceCells": [
+        "K86"
+      ],
+      "assetId": "moveset:239",
+      "anchor": "self",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 240,
+      "gameMoveId": null,
+      "name": "Disperdi Tensione",
+      "type": "Status (Cura Paralisi)",
+      "element": "Oscurità",
+      "tier": "status",
+      "arkamon": [
+        {
+          "id": 46,
+          "name": "Spectron"
+        }
+      ],
+      "sourceCells": [
+        "K47"
+      ],
+      "assetId": "moveset:240",
+      "anchor": "self",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 241,
+      "gameMoveId": null,
+      "name": "Abbraccio Curativo",
+      "type": "Status (Cura Status e Recupero Basso HP)",
+      "element": "Oscurità",
+      "tier": "status",
+      "arkamon": [
+        {
+          "id": 102,
+          "name": "Xesar"
+        }
+      ],
+      "sourceCells": [
+        "K103"
+      ],
+      "assetId": "moveset:241",
+      "anchor": "self",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 242,
+      "gameMoveId": null,
+      "name": "Papille Paralizzanti",
+      "type": "Status (Paralisi)",
+      "element": "Acqua",
+      "tier": "status",
+      "arkamon": [
+        {
+          "id": 70,
+          "name": "Lickard"
+        }
+      ],
+      "sourceCells": [
+        "K71"
+      ],
+      "assetId": "moveset:242",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 243,
+      "gameMoveId": null,
+      "name": "Siero Corrosivo",
+      "type": "Status (Veleno)",
+      "element": "Elettro",
+      "tier": "status",
+      "arkamon": [
+        {
+          "id": 22,
+          "name": "Voltrake"
+        }
+      ],
+      "sourceCells": [
+        "K23"
+      ],
+      "assetId": "moveset:243",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 244,
+      "gameMoveId": null,
+      "name": "Rilascio Elettrico",
+      "type": "Status (Cura Paralisi)",
+      "element": "Elettro",
+      "tier": "status",
+      "arkamon": [
+        {
+          "id": 23,
+          "name": "Sparkly"
+        }
+      ],
+      "sourceCells": [
+        "K24"
+      ],
+      "assetId": "moveset:244",
+      "anchor": "self",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 245,
+      "gameMoveId": null,
+      "name": "Fine della Stasi",
+      "type": "Status (Cura Paralisi)",
+      "element": "Psico",
+      "tier": "status",
+      "arkamon": [
+        {
+          "id": 83,
+          "name": "Cerebron"
+        }
+      ],
+      "sourceCells": [
+        "K84"
+      ],
+      "assetId": "moveset:245",
+      "anchor": "self",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 246,
+      "gameMoveId": null,
+      "name": "Defibrillazione",
+      "type": "Status (Cura Paralisi)",
+      "element": "Normale",
+      "tier": "status",
+      "arkamon": [
+        {
+          "id": 65,
+          "name": "Piox"
+        }
+      ],
+      "sourceCells": [
+        "K66"
+      ],
+      "assetId": "moveset:246",
+      "anchor": "self",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 247,
+      "gameMoveId": null,
+      "name": "Sguardo Ipnotico",
+      "type": "Status (Confusione)",
+      "element": "Psico",
+      "tier": "status",
+      "arkamon": [
+        {
+          "id": 11,
+          "name": "Felyss"
+        },
+        {
+          "id": 12,
+          "name": "Felyss"
+        }
+      ],
+      "sourceCells": [
+        "K12",
+        "K13"
+      ],
+      "assetId": "moveset:247",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 248,
+      "gameMoveId": null,
+      "name": "Iniezione Velenosa",
+      "type": "Status (Veleno)",
+      "element": "Erba",
+      "tier": "status",
+      "arkamon": [
+        {
+          "id": 96,
+          "name": "Beestrix"
+        },
+        {
+          "id": 97,
+          "name": "Beestrix"
+        }
+      ],
+      "sourceCells": [
+        "K97",
+        "K98"
+      ],
+      "assetId": "moveset:248",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 249,
+      "gameMoveId": null,
+      "name": "Impatto Genetico",
+      "type": "Status (Danno Fisso)",
+      "element": "Oscurità",
+      "tier": "status",
+      "arkamon": [
+        {
+          "id": 80,
+          "name": "Cellgon"
+        },
+        {
+          "id": 81,
+          "name": "Cellgon"
+        }
+      ],
+      "sourceCells": [
+        "K81",
+        "K82"
+      ],
+      "assetId": "moveset:249",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 250,
+      "gameMoveId": null,
+      "name": "Soffio della Foresta",
+      "type": "Status (Recupero Alto HP)",
+      "element": "Erba",
+      "tier": "status",
+      "arkamon": [
+        {
+          "id": 53,
+          "name": "Leafrex"
+        },
+        {
+          "id": 54,
+          "name": "Leafrex"
+        }
+      ],
+      "sourceCells": [
+        "K54",
+        "K55"
+      ],
+      "assetId": "moveset:250",
+      "anchor": "self",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 251,
+      "gameMoveId": null,
+      "name": "Sonno stellato",
+      "type": "Status (Sonno)",
+      "element": "Oscurità",
+      "tier": "status",
+      "arkamon": [
+        {
+          "id": 31,
+          "name": "Eclyps"
+        }
+      ],
+      "sourceCells": [
+        "K32"
+      ],
+      "assetId": "moveset:251",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 252,
+      "gameMoveId": null,
+      "name": "Goccia Tossica",
+      "type": "Status (Veleno)",
+      "element": "Erba",
+      "tier": "status",
+      "arkamon": [
+        {
+          "id": 106,
+          "name": "Zoorian"
+        }
+      ],
+      "sourceCells": [
+        "K107"
+      ],
+      "assetId": "moveset:252",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 253,
+      "gameMoveId": null,
+      "name": "Folgorazione",
+      "type": "Status (Paralisi)",
+      "element": "Erba",
+      "tier": "status",
+      "arkamon": [
+        {
+          "id": 48,
+          "name": "Weedrug"
+        }
+      ],
+      "sourceCells": [
+        "K49"
+      ],
+      "assetId": "moveset:253",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 254,
+      "gameMoveId": null,
+      "name": "Gargantua",
+      "type": "Status (Sonno)",
+      "element": "Fuoco",
+      "tier": "status",
+      "arkamon": [
+        {
+          "id": 33,
+          "name": "Blazion"
+        }
+      ],
+      "sourceCells": [
+        "K34"
+      ],
+      "assetId": "moveset:254",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 255,
+      "gameMoveId": null,
+      "name": "Lento Recupero",
+      "type": "Status (Recupero Alto HP)",
+      "element": "Terra",
+      "tier": "status",
+      "arkamon": [
+        {
+          "id": 104,
+          "name": "Boomrock"
+        }
+      ],
+      "sourceCells": [
+        "K105"
+      ],
+      "assetId": "moveset:255",
+      "anchor": "self",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 256,
+      "gameMoveId": null,
+      "name": "Stasi Elettrica",
+      "type": "Status (Paralisi)",
+      "element": "Oscurità",
+      "tier": "status",
+      "arkamon": [
+        {
+          "id": 44,
+          "name": "Felvex"
+        }
+      ],
+      "sourceCells": [],
+      "assetId": "moveset:256",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 257,
+      "gameMoveId": null,
+      "name": "Palmo del Risveglio",
+      "type": "Status (Cura Paralisi)",
+      "element": "Normale",
+      "tier": "status",
+      "arkamon": [
+        {
+          "id": 64,
+          "name": "Hopz"
+        }
+      ],
+      "sourceCells": [
+        "K65"
+      ],
+      "assetId": "moveset:257",
+      "anchor": "self",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 258,
+      "gameMoveId": null,
+      "name": "Vento del Disordine",
+      "type": "Status (Confusione)",
+      "element": "Terra",
+      "tier": "status",
+      "arkamon": [
+        {
+          "id": 20,
+          "name": "Handipus"
+        }
+      ],
+      "sourceCells": [
+        "K21"
+      ],
+      "assetId": "moveset:258",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 259,
+      "gameMoveId": null,
+      "name": "Barriera Psichica",
+      "type": "Status (Confusione)",
+      "element": "Fuoco",
+      "tier": "status",
+      "arkamon": [
+        {
+          "id": 77,
+          "name": "Ignitor"
+        }
+      ],
+      "sourceCells": [
+        "K78"
+      ],
+      "assetId": "moveset:259",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 260,
+      "gameMoveId": null,
+      "name": "RInnovo Neurostatico",
+      "type": "Status (Cura Paralisi)",
+      "element": "Terra",
+      "tier": "status",
+      "arkamon": [
+        {
+          "id": 14,
+          "name": "Wormaren"
+        },
+        {
+          "id": 15,
+          "name": "Wormaren"
+        }
+      ],
+      "sourceCells": [
+        "K15",
+        "K16"
+      ],
+      "assetId": "moveset:260",
+      "anchor": "self",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 261,
+      "gameMoveId": null,
+      "name": "Dono del Tempo",
+      "type": "Status (Danno Fisso)",
+      "element": "Normale",
+      "tier": "status",
+      "arkamon": [
+        {
+          "id": 40,
+          "name": "RS-219"
+        },
+        {
+          "id": 41,
+          "name": "RS-219"
+        }
+      ],
+      "sourceCells": [
+        "K41",
+        "K42"
+      ],
+      "assetId": "moveset:261",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 262,
+      "gameMoveId": null,
+      "name": "Sospiro Fiabesco",
+      "type": "Status (Sonno)",
+      "element": "Psico",
+      "tier": "status",
+      "arkamon": [
+        {
+          "id": 90,
+          "name": "Espeiry"
+        },
+        {
+          "id": 91,
+          "name": "Espeiry"
+        }
+      ],
+      "sourceCells": [
+        "K91",
+        "K92"
+      ],
+      "assetId": "moveset:262",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 263,
+      "gameMoveId": null,
+      "name": "Rugiada Curativa",
+      "type": "Status (Cura Status e Recupero Basso HP)",
+      "element": "Acqua",
+      "tier": "status",
+      "arkamon": [
+        {
+          "id": 59,
+          "name": "Shabyss"
+        },
+        {
+          "id": 60,
+          "name": "Shabyss"
+        }
+      ],
+      "sourceCells": [
+        "K60",
+        "K61"
+      ],
+      "assetId": "moveset:263",
+      "anchor": "self",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 264,
+      "gameMoveId": null,
+      "name": "Reset Corporeo",
+      "type": "Status (Cura Paralisi)",
+      "element": "Terra",
+      "tier": "status",
+      "arkamon": [
+        {
+          "id": 35,
+          "name": "Crawgoyle"
+        }
+      ],
+      "sourceCells": [
+        "K36"
+      ],
+      "assetId": "moveset:264",
+      "anchor": "self",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 265,
+      "gameMoveId": null,
+      "name": "Onde Rilassanti",
+      "type": "Status (Sonno)",
+      "element": "Normale",
+      "tier": "status",
+      "arkamon": [
+        {
+          "id": 100,
+          "name": "Ervys"
+        }
+      ],
+      "sourceCells": [
+        "K101"
+      ],
+      "assetId": "moveset:265",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 266,
+      "gameMoveId": null,
+      "name": "Aura Velenosa",
+      "type": "Status (Veleno)",
+      "element": "Fuoco",
+      "tier": "status",
+      "arkamon": [
+        {
+          "id": 50,
+          "name": "Constrix"
+        }
+      ],
+      "sourceCells": [
+        "K51"
+      ],
+      "assetId": "moveset:266",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 267,
+      "gameMoveId": null,
+      "name": "Ristoro Completo",
+      "type": "Status (Recupero Alto HP)",
+      "element": "Normale",
+      "tier": "status",
+      "arkamon": [
+        {
+          "id": 63,
+          "name": "Fluffet"
+        }
+      ],
+      "sourceCells": [
+        "K64"
+      ],
+      "assetId": "moveset:267",
+      "anchor": "self",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 268,
+      "gameMoveId": null,
+      "name": "Melodia Sfasata",
+      "type": "Status (Confusione)",
+      "element": "Terra",
+      "tier": "status",
+      "arkamon": [
+        {
+          "id": 19,
+          "name": "Colussand"
+        }
+      ],
+      "sourceCells": [
+        "K20"
+      ],
+      "assetId": "moveset:268",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 269,
+      "gameMoveId": null,
+      "name": "Spirito della Fuoco",
+      "type": "Status (Recupero Alto HP)",
+      "element": "Fuoco",
+      "tier": "status",
+      "arkamon": [
+        {
+          "id": 51,
+          "name": "Goliash"
+        }
+      ],
+      "sourceCells": [
+        "K52"
+      ],
+      "assetId": "moveset:269",
+      "anchor": "self",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 270,
+      "gameMoveId": null,
+      "name": "Catene rigide",
+      "type": "Status (Paralisi)",
+      "element": "Erba",
+      "tier": "status",
+      "arkamon": [
+        {
+          "id": 78,
+          "name": "Trippix"
+        }
+      ],
+      "sourceCells": [
+        "K79"
+      ],
+      "assetId": "moveset:270",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 271,
+      "gameMoveId": null,
+      "name": "Torpore Artico",
+      "type": "Status (Paralisi)",
+      "element": "Oscurità",
+      "tier": "status",
+      "arkamon": [
+        {
+          "id": 55,
+          "name": "Peek-a-buu"
+        }
+      ],
+      "sourceCells": [
+        "K56"
+      ],
+      "assetId": "moveset:271",
+      "anchor": "target",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 272,
+      "gameMoveId": null,
+      "name": "Linfa Ristoratrice",
+      "type": "Status (Recupero Alto HP)",
+      "element": "Erba",
+      "tier": "status",
+      "arkamon": [
+        {
+          "id": 98,
+          "name": "Grooty"
+        }
+      ],
+      "sourceCells": [
+        "K99"
+      ],
+      "assetId": "moveset:272",
+      "anchor": "self",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 273,
+      "gameMoveId": null,
+      "name": "Comando draconico",
+      "type": "Status (Immunità da Status)",
+      "element": "Normale",
+      "tier": "status",
+      "arkamon": [
+        {
+          "id": 107,
+          "name": "Ao-shin"
+        }
+      ],
+      "sourceCells": [
+        "K108"
+      ],
+      "assetId": "moveset:273",
+      "anchor": "self",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 274,
+      "gameMoveId": null,
+      "name": "Comando draconico",
+      "type": "Status (Immunità da Status)",
+      "element": "Normale",
+      "tier": "status",
+      "arkamon": [
+        {
+          "id": 108,
+          "name": "Aka-shin"
+        }
+      ],
+      "sourceCells": [
+        "K109"
+      ],
+      "assetId": "moveset:274",
+      "anchor": "self",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 275,
+      "gameMoveId": null,
+      "name": "Imposizione oculare",
+      "type": "Status (Immunità da Status)",
+      "element": "Psico",
+      "tier": "status",
+      "arkamon": [
+        {
+          "id": 109,
+          "name": "Oniros"
+        }
+      ],
+      "sourceCells": [
+        "K110"
+      ],
+      "assetId": "moveset:275",
+      "anchor": "self",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    },
+    {
+      "sourceMoveId": 276,
+      "gameMoveId": null,
+      "name": "Ordine galattico",
+      "type": "Status (Immunità da Status)",
+      "element": "Oscurità",
+      "tier": "status",
+      "arkamon": [
+        {
+          "id": 110,
+          "name": "Voider"
+        }
+      ],
+      "sourceCells": [
+        "K111"
+      ],
+      "assetId": "moveset:276",
+      "anchor": "self",
+      "scale": 1,
+      "review": "proposed",
+      "notes": "VFX individuale generato per questa mossa. QA tecnica e revisione visiva statica registrate; calibrazione a scala 1 proposta, da verificare in battaglia. Nessuna conferma utente sul nuovo asset."
+    }
+  ],
+  "assetSource": "276 VFX individuali generati · snapshot 2026-10-02T14:46:43+00:00"
+}

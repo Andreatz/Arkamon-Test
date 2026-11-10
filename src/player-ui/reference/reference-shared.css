@@ -1,0 +1,134 @@
+/* Reference direction: midnight enamel, fine gold inlays and cyan focus light.
+   Frames are responsive CSS geometry, never stretched artwork. */
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] {
+  --ref-gold: #dfbb7b;
+  --ref-gold-dim: #95764e;
+  --ref-cyan: #72edff;
+  --ref-ink: #fff0d7;
+  --ref-muted: #b9cadd;
+  --ref-panel: linear-gradient(135deg,#0d2c47f5,#06192cf5 60%,#102e45f5);
+  --ui-bg: #041120;
+  --ui-surface: #081d31ed;
+  --ui-surface-raised: #102c43;
+  --ui-text: #f8efdf;
+  --ui-muted: #bacbd9;
+  --ui-line: #a78b5e;
+  --ui-accent: #e2bf82;
+  --ui-accent-ink: #07192c;
+  --ui-accent-soft: #4ccbe528;
+  --ui-radius: 10px;
+  --ui-display-font: Georgia,'Times New Roman',serif;
+  --ui-body-font: Georgia,'Times New Roman',serif;
+  --ui-shadow: 0 6px 22px #0006;
+  --ui-hero-glow: radial-gradient(ellipse,#1675a833,transparent 66%);
+  display: grid;
+  grid-template-columns: minmax(0,1fr);
+  grid-template-rows: 76px minmax(0,1fr) 46px;
+  grid-template-areas: 'header' 'content' 'footer';
+  gap: 12px;
+  padding: 0 20px 12px;
+  position: relative;
+  background: #06182b;
+  isolation: isolate;
+  overflow: hidden;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"]::before {
+  content: ''; position: absolute; inset: 0; z-index: -2;
+  background-image: var(--pu-background); background-size: cover; background-position: center;
+  opacity: .8;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"]::after {
+  content: ''; position: absolute; inset: 0; z-index: -1; pointer-events: none;
+  background: linear-gradient(90deg,#031124bb,transparent 35%,#03112455),linear-gradient(#03112433,#03112488);
+  box-shadow: inset 0 0 100px #021021b0;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"]>.pu-topbar {
+  display: flex; gap: 16px; min-height: 0; padding: 8px 2px 10px;
+  background: linear-gradient(100deg,#04172df5,#071b30ba 65%,#071b3090);
+  border-bottom: 1px solid var(--ref-gold); box-shadow: 0 3px 0 #082843aa;
+  margin: 0 -20px; padding-left: 22px; padding-right: 22px;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-brand {min-width:0;flex:none;width:104px}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-brand>img {display:block;width:100%;height:50px;object-fit:contain}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-wordmark {display:none}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .ref-screen-title {display:flex;gap:16px;align-items:center;font:clamp(25px,3.1vw,44px)/1 Georgia,serif;color:var(--ref-ink);white-space:nowrap;text-shadow:0 2px 3px #0007;flex:1}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .ref-screen-title>.pu-kit-icon {width:40px;height:40px;color:var(--ref-gold)}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-header-meta {display:none}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-player-switch {margin:0;gap:7px}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-player-option {min-width:130px;min-height:44px;border-radius:6px;font:600 15px Georgia,serif;padding:5px 12px}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-player-option>.pu-creature-portrait {display:block;width:32px;height:32px;margin:0}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-currency {min-width:120px;padding-left:12px;border-left:1px solid #b18f5855}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-currency>.pu-kit-icon {width:30px;height:30px;color:var(--ref-gold)}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-currency strong {font:27px/1 Georgia,serif;color:var(--ref-ink)}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-currency>div>span {display:none}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"]>.pu-nav {position:absolute;left:22px;bottom:12px;right:235px;z-index:3;gap:3px;min-height:40px;display:flex;align-items:center}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-nav-button {font:14px Georgia,serif;min-height:38px;padding:7px 8px;border-radius:5px;flex:1}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"]>.pu-footer {display:flex;align-items:center;justify-content:flex-end;padding:5px 0 0;min-height:0;border-top:1px solid var(--ref-gold-dim);gap:10px}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-footer>span {display:none}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-present-control {display:flex;flex:none;gap:4px}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-present-control :is(.pu-present-hint,.pu-present-label) {display:none}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-present-symbol {display:inline;font-size:18px}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-present-control button {width:36px;height:36px;min-height:36px;padding:4px;border-color:var(--ref-gold-dim);color:var(--ref-ink);background:#0b253d}
+@media(min-width:901px) {
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"]>.pu-nav {right:330px}
+}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-footer>.pu-resume-command {font:16px Georgia,serif;min-height:38px;padding:8px 18px;min-width:195px;margin:0}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"]>.pu-content {overflow:hidden;position:relative;min-height:0}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] :is(.pu-panel,.pu-detail-panel,.pu-live-bag-detail,.pu-team-tactics,.pu-content-auxiliary) {
+  background:var(--ref-panel);border:1px solid var(--ref-gold-dim);border-radius:12px;padding:16px;box-shadow:inset 0 0 0 3px #071c2c,inset 0 0 0 4px #b48f4c60,0 8px 20px #0005;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] :is(.studio-command,.pu-button,.arka-button) {
+  color:var(--ui-text);background:linear-gradient(180deg,#143d5c,#061b30 80%)!important;border:1px solid #b99b68!important;
+  border-radius:7px;min-height:40px;font:600 16px/1.2 Georgia,serif;padding:8px 14px;
+  box-shadow:inset 0 0 0 2px #0a243b,inset 0 0 0 3px #69a4bd22,0 2px 5px #0005;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] :is(.pu-button.is-active,.studio-command[data-selected=true],.studio-command[aria-pressed=true],.pu-nav-button.is-active) {
+  background:radial-gradient(ellipse at 50% 105%,#0aadc4aa,transparent 70%),linear-gradient(#164f78,#07314d)!important;
+  color:#fff7e9!important;border-color:#79f0ff!important;
+  box-shadow:inset 0 0 0 2px #136e8c,inset 0 0 10px #69f2ff66,0 0 10px #35dfff60;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] :is(.studio-command,.pu-button,.arka-button):hover:enabled:not(.is-active):not([data-selected=true]):not([aria-pressed=true]) {background:linear-gradient(#155779,#092d47)!important;border-color:#80e8f7!important;color:#fff4dc}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] :is(button,input,select,a):focus-visible {outline:2px solid #a0f4ff;outline-offset:3px;box-shadow:0 0 15px #45dcff99}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-kit-icon {border:0;background:none;color:inherit;width:24px;height:24px;display:inline-flex;align-items:center;justify-content:center}
+.ref-line-icon {width:100%;height:100%;display:block}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-kit-icon-glyph {border:0}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-type {border-radius:30px;padding:4px 11px;color:#f4e7ca;background:#0a1d2c;border-color:#b89a65;font:15px Georgia,serif;gap:6px}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-type>.pu-kit-icon {width:20px;height:20px;color:#83dcec}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-health progress {height:11px;border:1px solid #c3cfad;box-shadow:0 0 0 2px #031323;border-radius:5px;background:#071a28}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-health progress::-webkit-progress-value {background:linear-gradient(90deg,#52be64,#b6f267);border-radius:3px}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-health progress::-moz-progress-bar {background:linear-gradient(90deg,#52be64,#b6f267)}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-health[data-health=low] progress::-webkit-progress-value {background:#f1b854}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-health>span {font:14px Georgia,serif;color:#e2e8ed}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] :is(input:not([type=checkbox]):not([type=range]),select) {min-height:36px;background:#061a2d;border:1px solid #7294b3;border-radius:6px;font:15px/1.2 Georgia,serif;color:#edf4fc;padding:7px 10px}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] select option {background:#0b2339;color:#f8efdf}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-kicker {font:10px/1.3 Arial,sans-serif;color:var(--ref-gold);letter-spacing:1.4px}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-content-auxiliary {overflow:auto;padding:24px}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-screen-heading h1 {font-size:30px}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-count {font:14px Georgia,serif;border-color:#a38c62;background:#071b2de6}
+/* The host dialog is also part of the interface, including its portalled header. */
+.player-ui-dialog:has([data-ui-concept="aurora"]) {border:0!important;border-radius:0!important;background:#06172b!important}
+.player-ui-dialog:has([data-ui-concept="aurora"])>header {display:none!important}
+.player-ui-dialog:has([data-ui-concept="aurora"])>div {padding:0!important;overflow:hidden!important}
+@media (max-height:820px) and (min-width:901px) {
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] {grid-template-rows:64px minmax(0,1fr) 42px;gap:9px;padding:0 14px 8px}
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"]>.pu-topbar {margin:0 -14px;padding:6px 16px}
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .ref-screen-title {font-size:32px}
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-brand {width:86px}
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"]>.pu-nav {bottom:8px;left:14px}
+}
+@media(max-width:900px) {
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] {display:flex!important;padding:0 12px 12px;gap:12px;height:auto;min-height:100dvh;overflow:visible}
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"]>.pu-topbar {margin:0 -12px;padding:12px;gap:10px;flex-wrap:wrap}
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .ref-screen-title {font-size:27px;min-width:180px}
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .ref-screen-title>.pu-kit-icon {width:25px;height:25px}
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-brand {width:65px}
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-player-switch {flex:1 1 100%;order:3;width:100%;min-width:0}
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-player-option {min-width:0;min-height:40px;font-size:13px;flex:1}
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-currency {order:4;min-width:0;padding-left:6px}
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-currency strong {font-size:20px}
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"]>.pu-nav {position:static;order:1;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));width:100%;padding:0}
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-nav-button {font-size:13px}
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"]>.pu-content {order:2;overflow:visible;flex:none}
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"]>.pu-footer {order:3;min-height:50px}
+}
+@media(prefers-reduced-motion:reduce) {html .pu-shell.pu-live-shell[data-ui-concept="aurora"] *{animation:none!important;transition:none!important}}

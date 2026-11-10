@@ -1,0 +1,6665 @@
+{
+  "schemaVersion": 1,
+  "entries": [
+    {
+      "id": 1,
+      "status": "game-data-present",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/1.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            438,
+            85,
+            1737,
+            1954
+          ],
+          "bytes": 1564261,
+          "sha256": "2c9ed5fa0693021e9460e41b3bd40b63c8edab5067a8a13c360248ecd5a31641"
+        },
+        "back": {
+          "source": "/sprites/back_sprites/1.png",
+          "width": 1024,
+          "height": 1024,
+          "alphaBounds": [
+            142,
+            50,
+            789,
+            960
+          ],
+          "bytes": 589436,
+          "sha256": "2831fc5161114626ff5114c90178662ed9c4fcfc789893bc9e38d11416bb6a9c"
+        },
+        "small": {
+          "source": "/sprites/small_sprites/Sprite Small 1.png",
+          "width": 517,
+          "height": 596,
+          "alphaBounds": [
+            0,
+            0,
+            517,
+            596
+          ],
+          "bytes": 317729,
+          "sha256": "c46b6ca39db78134eb439d0cfd509de77c43c32ae69484a0447d2eba5b0062a6"
+        }
+      }
+    },
+    {
+      "id": 2,
+      "status": "game-data-present",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/2.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            86,
+            104,
+            1943,
+            1918
+          ],
+          "bytes": 1837216,
+          "sha256": "dfa0e171133c6ee0e6be470155efb0cd8ca9f76bc3ea65cc7fc80e565f7a23b0"
+        },
+        "back": {
+          "source": "/sprites/back_sprites/2.png",
+          "width": 1024,
+          "height": 1024,
+          "alphaBounds": [
+            26,
+            6,
+            1005,
+            976
+          ],
+          "bytes": 1445889,
+          "sha256": "e1503f592cbce6119b80a188c0eda5a3b47e14e339053a2f3d1357bc4db160cc"
+        },
+        "small": {
+          "source": "/sprites/small_sprites/Sprite Small 2.png",
+          "width": 604,
+          "height": 613,
+          "alphaBounds": [
+            0,
+            0,
+            604,
+            613
+          ],
+          "bytes": 375521,
+          "sha256": "d6a3e23f972bf726d04d916897fc582425d5585633bcf92b776b7afe15b82e9d"
+        }
+      }
+    },
+    {
+      "id": 3,
+      "status": "game-data-present",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/3.png",
+          "width": 2400,
+          "height": 1792,
+          "alphaBounds": [
+            98,
+            98,
+            2385,
+            1712
+          ],
+          "bytes": 2087257,
+          "sha256": "866336a3a1c1b575737afe2a370bd46d1c095a25727d43a208c4bf96cb715167"
+        },
+        "back": {
+          "source": "/sprites/back_sprites/3.png",
+          "width": 979,
+          "height": 598,
+          "alphaBounds": [
+            0,
+            0,
+            979,
+            598
+          ],
+          "bytes": 470449,
+          "sha256": "2daeb003e6fa78816dac61033556b10d7dc550cb92ab927a991290a83b30cdc5"
+        },
+        "small": {
+          "source": "/sprites/small_sprites/Sprite Small 3.png",
+          "width": 614,
+          "height": 614,
+          "alphaBounds": [
+            0,
+            46,
+            614,
+            614
+          ],
+          "bytes": 362202,
+          "sha256": "500ac9d5804745188032e49540237e78235ed1cc29256d1c2c678fd020c4fc22"
+        }
+      }
+    },
+    {
+      "id": 4,
+      "status": "game-data-present",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/4.png",
+          "width": 2400,
+          "height": 1792,
+          "alphaBounds": [
+            442,
+            13,
+            2265,
+            1758
+          ],
+          "bytes": 2876906,
+          "sha256": "12bf92e7126eee8d6ba07ee3df82dc8acccec7d0185c77d28d3bffa685aade50"
+        },
+        "back": {
+          "source": "/sprites/back_sprites/4.png",
+          "width": 1024,
+          "height": 1024,
+          "alphaBounds": [
+            60,
+            99,
+            941,
+            968
+          ],
+          "bytes": 813093,
+          "sha256": "6cac13c60ee342f17de50833f279307c0d916b6f406fc713231f792ff973e4e3"
+        },
+        "small": {
+          "source": "/sprites/small_sprites/Sprite Small 4.png",
+          "width": 614,
+          "height": 614,
+          "alphaBounds": [
+            67,
+            12,
+            614,
+            614
+          ],
+          "bytes": 443459,
+          "sha256": "d9d8f7614128063c4023c36401aea7916db41e9191b21a29a5dbb44b86c0e3bc"
+        }
+      }
+    },
+    {
+      "id": 5,
+      "status": "game-data-present",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/5.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            294,
+            82,
+            1767,
+            1956
+          ],
+          "bytes": 1680402,
+          "sha256": "1d1656f41cc67c5e4d0663926ebff7eee6cdfd5a2b29091010fd1cdef49cdf40"
+        },
+        "back": {
+          "source": "/sprites/back_sprites/5.png",
+          "width": 832,
+          "height": 1248,
+          "alphaBounds": [
+            33,
+            246,
+            753,
+            1002
+          ],
+          "bytes": 354253,
+          "sha256": "0d1bfee51cde37f775e1c70ab19532eabc911a4f0c1a597b458d29c0a1cfb511"
+        },
+        "small": {
+          "source": "/sprites/small_sprites/Sprite Small 5.png",
+          "width": 614,
+          "height": 614,
+          "alphaBounds": [
+            61,
+            23,
+            596,
+            614
+          ],
+          "bytes": 251137,
+          "sha256": "647aaf72d366fcd35f1510be4044e88cc7cf2e9aa917ca6b31d15a585e006b6b"
+        }
+      }
+    },
+    {
+      "id": 6,
+      "status": "game-data-present",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/6.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            149,
+            0,
+            1927,
+            1973
+          ],
+          "bytes": 1970496,
+          "sha256": "33ef607b8a6470a92a9713c072c390ff1c4cbf07e8bfeca2746893214b21474d"
+        },
+        "back": {
+          "source": "/sprites/back_sprites/6.png",
+          "width": 1024,
+          "height": 1024,
+          "alphaBounds": [
+            149,
+            60,
+            832,
+            954
+          ],
+          "bytes": 427079,
+          "sha256": "1d12e9a8b23a5d00f54608ad642dea294ef7cf2e34d9fe2cfceb3ad651ecfca2"
+        },
+        "small": {
+          "source": "/sprites/small_sprites/Sprite Small 6.png",
+          "width": 614,
+          "height": 614,
+          "alphaBounds": [
+            12,
+            0,
+            614,
+            614
+          ],
+          "bytes": 258287,
+          "sha256": "b5926d047a3a0cda396095fbdd8d325202d424cc687b93d625f925c7cee135fa"
+        }
+      }
+    },
+    {
+      "id": 7,
+      "status": "game-data-present",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/7.png",
+          "width": 1792,
+          "height": 2400,
+          "alphaBounds": [
+            75,
+            1,
+            1683,
+            2400
+          ],
+          "bytes": 2426126,
+          "sha256": "2d787796322ef637ec972673f07ec619eb8308000e2089dcda464375cc0711d4"
+        },
+        "back": {
+          "source": "/sprites/back_sprites/7.png",
+          "width": 832,
+          "height": 1248,
+          "alphaBounds": [
+            90,
+            145,
+            740,
+            1105
+          ],
+          "bytes": 663286,
+          "sha256": "67e418e37281434fe72021e71230d644b99565807f1d7ca7c97edf038189684f"
+        },
+        "small": {
+          "source": "/sprites/small_sprites/Sprite Small 7.png",
+          "width": 614,
+          "height": 614,
+          "alphaBounds": [
+            19,
+            0,
+            614,
+            614
+          ],
+          "bytes": 356531,
+          "sha256": "ac97483ee3309c8801eb033458a287ec73e7890dcd7f7056ed3610d057084006"
+        }
+      }
+    },
+    {
+      "id": 8,
+      "status": "game-data-present",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/8.png",
+          "width": 1792,
+          "height": 2400,
+          "alphaBounds": [
+            205,
+            0,
+            1719,
+            2400
+          ],
+          "bytes": 1912587,
+          "sha256": "919c0d2775fb06316243e9b5b3c19049a31af516387b80d06823655611c6cd8e"
+        },
+        "back": {
+          "source": "/sprites/back_sprites/8.png",
+          "width": 832,
+          "height": 1248,
+          "alphaBounds": [
+            17,
+            53,
+            719,
+            1189
+          ],
+          "bytes": 610809,
+          "sha256": "1593e230db60d709eb89b1e1da9eb69bb6130c6d8810da870abc0d58a1b7299a"
+        },
+        "small": {
+          "source": "/sprites/small_sprites/Sprite Small 8.png",
+          "width": 614,
+          "height": 614,
+          "alphaBounds": [
+            60,
+            0,
+            610,
+            614
+          ],
+          "bytes": 343556,
+          "sha256": "cceeeae82e26ad5a646ed6975d866789d464c4e916f2655aeafcd678927c8d23"
+        }
+      }
+    },
+    {
+      "id": 9,
+      "status": "game-data-present",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/9.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            194,
+            216,
+            1860,
+            1833
+          ],
+          "bytes": 1803086,
+          "sha256": "0288580e64a8c494f0d7de72681cbc92de66761aa2cc1a0f7f89750d73a8b4c1"
+        },
+        "back": {
+          "source": "/sprites/back_sprites/9.png",
+          "width": 1024,
+          "height": 1024,
+          "alphaBounds": [
+            104,
+            126,
+            905,
+            904
+          ],
+          "bytes": 478070,
+          "sha256": "cbb86f99762be752228c656677f7429e1dcb7602d4579815380c58521b6aed93"
+        },
+        "small": {
+          "source": "/sprites/small_sprites/Sprite Small 9.png",
+          "width": 614,
+          "height": 614,
+          "alphaBounds": [
+            75,
+            95,
+            540,
+            545
+          ],
+          "bytes": 242777,
+          "sha256": "65647ef66820fc6c940e699bd10d605c8def221014957c02b8d7fbe1a063b3eb"
+        }
+      }
+    },
+    {
+      "id": 10,
+      "status": "game-data-present",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/10.png",
+          "width": 1437,
+          "height": 1095,
+          "alphaBounds": [
+            0,
+            8,
+            1423,
+            1095
+          ],
+          "bytes": 1498116,
+          "sha256": "11d77f9bc26c8999e34935bf206b0c06418439601de9c5743ea44ee1b2dddd9b"
+        },
+        "back": {
+          "source": "/sprites/back_sprites/10.png",
+          "width": 1024,
+          "height": 1024,
+          "alphaBounds": [
+            49,
+            131,
+            926,
+            904
+          ],
+          "bytes": 661476,
+          "sha256": "a7340b9ecfff6a6b1203b95669c74f095cdd276b21ec2edd30e5ef143efac7fa"
+        },
+        "small": {
+          "source": "/sprites/small_sprites/Sprite Small 10.png",
+          "width": 614,
+          "height": 614,
+          "alphaBounds": [
+            0,
+            33,
+            614,
+            614
+          ],
+          "bytes": 318666,
+          "sha256": "3f041453e404fbd1cebcf15b088fb13372d4226fffb2fd051e6b40390b90542c"
+        }
+      }
+    },
+    {
+      "id": 11,
+      "status": "game-data-present",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/11.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            122,
+            26,
+            1888,
+            2011
+          ],
+          "bytes": 2414371,
+          "sha256": "0cd97ecceb66da7c05d4577cb162a817e111f73205faa0d4dc4739e98ed57bae"
+        },
+        "back": {
+          "source": "/sprites/back_sprites/11.png",
+          "width": 1024,
+          "height": 1024,
+          "alphaBounds": [
+            127,
+            67,
+            919,
+            955
+          ],
+          "bytes": 633445,
+          "sha256": "b965d2ee3c149800c41768efe4345328f68ce555ead9f1b4e057423055d0c325"
+        },
+        "small": {
+          "source": "/sprites/small_sprites/Sprite Small 11.png",
+          "width": 614,
+          "height": 614,
+          "alphaBounds": [
+            0,
+            0,
+            614,
+            614
+          ],
+          "bytes": 339817,
+          "sha256": "a7c0d6cf5d8b1a11d02aadb3143d540e03fe77f772d5eee0fe447ea2a897ea39"
+        }
+      }
+    },
+    {
+      "id": 12,
+      "status": "game-data-present",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/12.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            200,
+            136,
+            1912,
+            1994
+          ],
+          "bytes": 1632284,
+          "sha256": "6ac35a3f325d85592fd232b099b87c08a2debf0be23f07085f7c2b729242690e"
+        },
+        "back": {
+          "source": "/sprites/back_sprites/12.png",
+          "width": 1024,
+          "height": 1024,
+          "alphaBounds": [
+            71,
+            84,
+            922,
+            996
+          ],
+          "bytes": 535695,
+          "sha256": "4a6af8b7003fc4f213a7c6d827f928a2a4469dfec08ea3a7b5137b9111807239"
+        },
+        "small": {
+          "source": "/sprites/small_sprites/Sprite Small 12.png",
+          "width": 614,
+          "height": 614,
+          "alphaBounds": [
+            10,
+            18,
+            614,
+            614
+          ],
+          "bytes": 298771,
+          "sha256": "120d01b7db14e1c9dba68a54e0cb18ed0176d3c5e62ae56984636c572b2944ee"
+        }
+      }
+    },
+    {
+      "id": 13,
+      "status": "game-data-present",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/13.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            186,
+            113,
+            1936,
+            1827
+          ],
+          "bytes": 2900081,
+          "sha256": "9a3c02f93afa4f2a0521fe2dec89fd65657d9bfec73fe1df9724109b542a6b01"
+        },
+        "back": {
+          "source": "/sprites/back_sprites/13.png",
+          "width": 1248,
+          "height": 832,
+          "alphaBounds": [
+            277,
+            44,
+            981,
+            728
+          ],
+          "bytes": 622299,
+          "sha256": "802d60642f3667cbb8aaa5978d1253659d7bc2dc0b98e6330bb685596f8cd75c"
+        },
+        "small": {
+          "source": "/sprites/small_sprites/Sprite Small 13.png",
+          "width": 614,
+          "height": 614,
+          "alphaBounds": [
+            28,
+            14,
+            614,
+            614
+          ],
+          "bytes": 528072,
+          "sha256": "51731240b8089c5d81fb63225facc17319d73557912ddbc28f4f334b81a300e3"
+        }
+      }
+    },
+    {
+      "id": 14,
+      "status": "game-data-present",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/14.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            167,
+            117,
+            1912,
+            1962
+          ],
+          "bytes": 2855556,
+          "sha256": "ba418704c643c61cae5bdeac48b2497db15bfe56bb044ecf7feda119fc1f8539"
+        },
+        "back": {
+          "source": "/sprites/back_sprites/14.png",
+          "width": 1024,
+          "height": 1024,
+          "alphaBounds": [
+            89,
+            58,
+            936,
+            974
+          ],
+          "bytes": 1056835,
+          "sha256": "2d08cb87631a1178473b0c082d04fb8247cb925ad5c26db15f7ac500bf1c865e"
+        },
+        "small": {
+          "source": "/sprites/small_sprites/Sprite Small 14.png",
+          "width": 614,
+          "height": 614,
+          "alphaBounds": [
+            2,
+            30,
+            614,
+            614
+          ],
+          "bytes": 513704,
+          "sha256": "307ccdfe2c7c618a0abcd11de61b60c3d45c3ccf09282b6e59442b9a48bf00f3"
+        }
+      }
+    },
+    {
+      "id": 15,
+      "status": "game-data-present",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/15.png",
+          "width": 1792,
+          "height": 2400,
+          "alphaBounds": [
+            135,
+            106,
+            1614,
+            2234
+          ],
+          "bytes": 3423622,
+          "sha256": "f40fe4d2c86dda48cd8b1ffe20d7f0ee20e62eea28cab5a74b8406f67af5258d"
+        },
+        "back": {
+          "source": "/sprites/back_sprites/15.png",
+          "width": 832,
+          "height": 1248,
+          "alphaBounds": [
+            54,
+            107,
+            752,
+            1141
+          ],
+          "bytes": 1080119,
+          "sha256": "e81b445064b8e4698692169c482121c625f5bfe150b838602d790c55faa5c778"
+        },
+        "small": {
+          "source": "/sprites/small_sprites/Sprite Small 15.png",
+          "width": 614,
+          "height": 614,
+          "alphaBounds": [
+            45,
+            21,
+            614,
+            614
+          ],
+          "bytes": 550177,
+          "sha256": "475ab71658343855fa95fedb4740fca25dfcfee8b0ad1d1a8d83559713e25cb2"
+        }
+      }
+    },
+    {
+      "id": 16,
+      "status": "game-data-present",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/16.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            177,
+            143,
+            1973,
+            1922
+          ],
+          "bytes": 2588352,
+          "sha256": "150c98d8df5de73f101df902438c159ca68776733c07bded63f56da320be3bd3"
+        },
+        "back": {
+          "source": "/sprites/back_sprites/16.png",
+          "width": 1024,
+          "height": 1024,
+          "alphaBounds": [
+            108,
+            36,
+            965,
+            971
+          ],
+          "bytes": 1510864,
+          "sha256": "564b2c37535b8a364c462db8ecd934f2debc6587f3370b934ffea1b098fe3b42"
+        },
+        "small": {
+          "source": "/sprites/small_sprites/Sprite Small 16.png",
+          "width": 614,
+          "height": 614,
+          "alphaBounds": [
+            41,
+            52,
+            587,
+            600
+          ],
+          "bytes": 424256,
+          "sha256": "12de8bd8d85f2b68227014a2b56942bc6e5fdbba8a7e405f1372931d383aa446"
+        }
+      }
+    },
+    {
+      "id": 17,
+      "status": "game-data-present",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/17.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            123,
+            31,
+            1890,
+            1976
+          ],
+          "bytes": 3328831,
+          "sha256": "d1b2b3f822070043b2752840160fa2cee09dff46ccb985300d44e09eb0d37171"
+        },
+        "back": {
+          "source": "/sprites/back_sprites/17.png",
+          "width": 1024,
+          "height": 1024,
+          "alphaBounds": [
+            173,
+            121,
+            835,
+            965
+          ],
+          "bytes": 1012401,
+          "sha256": "858bff14debb471069049150e39fc210a2aa83ca68fb7adab4d216cd31be38ff"
+        },
+        "small": {
+          "source": "/sprites/small_sprites/Sprite Small 17.png",
+          "width": 614,
+          "height": 614,
+          "alphaBounds": [
+            55,
+            30,
+            594,
+            610
+          ],
+          "bytes": 500542,
+          "sha256": "708c06d66aeb3a5ca220bd0df1430c30906df1c994cb12d2fd144d14fc5d91a0"
+        }
+      }
+    },
+    {
+      "id": 18,
+      "status": "game-data-present",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/18.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            54,
+            161,
+            2001,
+            1856
+          ],
+          "bytes": 3066322,
+          "sha256": "484a033104fe0c816bbae3ea9aba9a921530fda30c9743f9cb3b5f280f91605e"
+        },
+        "back": {
+          "source": "/sprites/back_sprites/18.png",
+          "width": 1248,
+          "height": 832,
+          "alphaBounds": [
+            121,
+            37,
+            1031,
+            783
+          ],
+          "bytes": 953365,
+          "sha256": "461f1aa20973f7ff91c09285a299a0a9059b25222a86a44c235e9340c02260f3"
+        },
+        "small": {
+          "source": "/sprites/small_sprites/Sprite Small 18.png",
+          "width": 614,
+          "height": 614,
+          "alphaBounds": [
+            37,
+            18,
+            614,
+            614
+          ],
+          "bytes": 468031,
+          "sha256": "738b233ea6bb1af95943d85d825fcd565ee758efa4d82fe0668e2867e73f3719"
+        }
+      }
+    },
+    {
+      "id": 19,
+      "status": "game-data-present",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/19.png",
+          "width": 1335,
+          "height": 1178,
+          "alphaBounds": [
+            0,
+            11,
+            1332,
+            1164
+          ],
+          "bytes": 1429580,
+          "sha256": "40257a731ec0b9b5f46ca444efe374e14cfc8d5ea56df60d0c55bf6335a3715d"
+        },
+        "back": {
+          "source": "/sprites/back_sprites/19.png",
+          "width": 1024,
+          "height": 1024,
+          "alphaBounds": [
+            61,
+            39,
+            961,
+            984
+          ],
+          "bytes": 1181327,
+          "sha256": "dad97741e177ee6201d5939fa378097a4527e7ff82d18321969bdd5c901e4201"
+        },
+        "small": {
+          "source": "/sprites/small_sprites/Sprite Small 19.png",
+          "width": 614,
+          "height": 614,
+          "alphaBounds": [
+            0,
+            0,
+            614,
+            614
+          ],
+          "bytes": 564794,
+          "sha256": "bebbad20740801cc643446a0b06ecfd6b3ab87cc9b2253e1f8a6b3e5ce3fad22"
+        }
+      }
+    },
+    {
+      "id": 20,
+      "status": "game-data-present",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/20.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            160,
+            196,
+            1882,
+            1790
+          ],
+          "bytes": 1873982,
+          "sha256": "15d38c8031d9a7d02c32f8d33b591e374821e27483af4bab69acf5726bd95369"
+        },
+        "back": {
+          "source": "/sprites/back_sprites/20.png",
+          "width": 1024,
+          "height": 1024,
+          "alphaBounds": [
+            94,
+            97,
+            930,
+            875
+          ],
+          "bytes": 740753,
+          "sha256": "66c56148c88df779d7b15586334c497a6ab19adfa77472322e96af747f08a947"
+        },
+        "small": {
+          "source": "/sprites/small_sprites/Sprite Small 20.png",
+          "width": 614,
+          "height": 614,
+          "alphaBounds": [
+            1,
+            41,
+            614,
+            614
+          ],
+          "bytes": 460958,
+          "sha256": "ec66624ed473e40f49c2a204f7bea97de1cd5ba4c97505837d33334fd2b7c93c"
+        }
+      }
+    },
+    {
+      "id": 21,
+      "status": "game-data-present",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/21.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            233,
+            134,
+            1861,
+            1936
+          ],
+          "bytes": 1829824,
+          "sha256": "a5ef1e344411f6ea70436ee525f274eef73eb5cd220dea1def16f3b24c5c3c31"
+        },
+        "back": {
+          "source": "/sprites/back_sprites/21.png",
+          "width": 1024,
+          "height": 1024,
+          "alphaBounds": [
+            105,
+            58,
+            877,
+            959
+          ],
+          "bytes": 682396,
+          "sha256": "62e84758a0210ef251fe28c5df2ecf1a5d5a3f06e8f07cbf737b327063f6bb0a"
+        },
+        "small": {
+          "source": "/sprites/small_sprites/Sprite Small 21.png",
+          "width": 614,
+          "height": 614,
+          "alphaBounds": [
+            43,
+            0,
+            612,
+            614
+          ],
+          "bytes": 423617,
+          "sha256": "2813dcb244e6aa9a1fbd204d1c734e4e0c1b7e7d7989f2ff19a31eab64ca5f0c"
+        }
+      }
+    },
+    {
+      "id": 22,
+      "status": "game-data-present",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/22.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            60,
+            128,
+            2045,
+            1975
+          ],
+          "bytes": 2660354,
+          "sha256": "9279217db2c0abfd682d7954c00ede06315eab9cbb00040ed0567ed6bddb1dad"
+        },
+        "back": {
+          "source": "/sprites/back_sprites/22.png",
+          "width": 1248,
+          "height": 832,
+          "alphaBounds": [
+            238,
+            52,
+            1048,
+            791
+          ],
+          "bytes": 587703,
+          "sha256": "087dbd4876439e1ba5610824c771898660f2c46f523a6552e8d995958ff7da43"
+        },
+        "small": {
+          "source": "/sprites/small_sprites/Sprite Small 22.png",
+          "width": 614,
+          "height": 614,
+          "alphaBounds": [
+            42,
+            20,
+            614,
+            614
+          ],
+          "bytes": 359112,
+          "sha256": "273b53ab8a0c4e74b63c8bd78f4a6236ab5118c36ff3bf255802fb013ad1e3ab"
+        }
+      }
+    },
+    {
+      "id": 23,
+      "status": "game-data-present",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/23.png",
+          "width": 1792,
+          "height": 2400,
+          "alphaBounds": [
+            383,
+            197,
+            1498,
+            2352
+          ],
+          "bytes": 1027780,
+          "sha256": "e6150daf9a5d040b285a0715821d13cc8071881cacfacdfafca2e8baa091cd2b"
+        },
+        "back": {
+          "source": "/sprites/back_sprites/23.png",
+          "width": 1024,
+          "height": 1024,
+          "alphaBounds": [
+            270,
+            145,
+            719,
+            976
+          ],
+          "bytes": 247601,
+          "sha256": "9e4278d9a9d9141d20d76e05f1610d4bff72fd02a288708308c197c87c624500"
+        },
+        "small": {
+          "source": "/sprites/small_sprites/Sprite Small 23.png",
+          "width": 614,
+          "height": 614,
+          "alphaBounds": [
+            51,
+            8,
+            546,
+            614
+          ],
+          "bytes": 228010,
+          "sha256": "7930f9a99137cee489bd7df7c675e4bae90105555ec855628cfcaef7ea5db9a2"
+        }
+      }
+    },
+    {
+      "id": 24,
+      "status": "game-data-present",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/24.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            139,
+            34,
+            1937,
+            1971
+          ],
+          "bytes": 2292790,
+          "sha256": "11098f8bddd1b382903dd9f8490c3d23df50d6c4baf69b59b95c2ca85de5e4d6"
+        },
+        "back": {
+          "source": "/sprites/back_sprites/24.png",
+          "width": 832,
+          "height": 1248,
+          "alphaBounds": [
+            10,
+            222,
+            712,
+            1004
+          ],
+          "bytes": 467147,
+          "sha256": "db2a3aee6c64119047143fcda993837e816412c6340fe789df65daa405e42f7a"
+        },
+        "small": {
+          "source": "/sprites/small_sprites/Sprite Small 24.png",
+          "width": 614,
+          "height": 614,
+          "alphaBounds": [
+            88,
+            59,
+            614,
+            614
+          ],
+          "bytes": 343912,
+          "sha256": "c4d79aca70c2e2f0d3922375d33795a0fac525b1dfa7e61d952ce375154718ef"
+        }
+      }
+    },
+    {
+      "id": 25,
+      "status": "game-data-present",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/25.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            110,
+            105,
+            1973,
+            1915
+          ],
+          "bytes": 2298133,
+          "sha256": "914090dd0df5af3053130308cda6a575464254f357e5b671e28800b4f856a91f"
+        },
+        "back": {
+          "source": "/sprites/back_sprites/25.png",
+          "width": 1024,
+          "height": 1024,
+          "alphaBounds": [
+            52,
+            35,
+            908,
+            907
+          ],
+          "bytes": 609810,
+          "sha256": "64cf9084d8c9520f457404a7905cb1168cedbfc0d564c9e1efe19de3d9c72fc2"
+        },
+        "small": {
+          "source": "/sprites/small_sprites/Sprite Small 25.png",
+          "width": 614,
+          "height": 614,
+          "alphaBounds": [
+            70,
+            1,
+            602,
+            614
+          ],
+          "bytes": 417855,
+          "sha256": "36a27078001363efd77bb0c3bc0f0b5ee54b9a43ad85969fb441c6f25e99c508"
+        }
+      }
+    },
+    {
+      "id": 26,
+      "status": "game-data-present",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/26.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            155,
+            236,
+            1853,
+            1805
+          ],
+          "bytes": 2012163,
+          "sha256": "257e1d24906b5113a50a0568c9e3013cb9c86fe7b884a06ff41fd9811d0192d7"
+        },
+        "back": {
+          "source": "/sprites/back_sprites/26.png",
+          "width": 1024,
+          "height": 1024,
+          "alphaBounds": [
+            221,
+            241,
+            748,
+            789
+          ],
+          "bytes": 311011,
+          "sha256": "c4045c8ad78f759ebdcb0755c893ebe7553cd24372c2af5b469f27757ac8c5ed"
+        },
+        "small": {
+          "source": "/sprites/small_sprites/Sprite Small 26.png",
+          "width": 614,
+          "height": 614,
+          "alphaBounds": [
+            3,
+            36,
+            606,
+            602
+          ],
+          "bytes": 379073,
+          "sha256": "67a42dc401192e51e578bd9ab77c916305c429cc108d44c56f6463b5a7362bc1"
+        }
+      }
+    },
+    {
+      "id": 27,
+      "status": "game-data-present",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/27.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            69,
+            28,
+            1957,
+            2013
+          ],
+          "bytes": 3002873,
+          "sha256": "674805bf0d160bd8aed85d2b49809da7502e74751732873587b495d6d38d03e7"
+        },
+        "back": {
+          "source": "/sprites/back_sprites/27.png",
+          "width": 1024,
+          "height": 1024,
+          "alphaBounds": [
+            115,
+            68,
+            891,
+            916
+          ],
+          "bytes": 713992,
+          "sha256": "da9577183c0ab3ef6140e407f3a714bb063bebcac8464a6c5eaea39511f65e92"
+        },
+        "small": {
+          "source": "/sprites/small_sprites/Sprite Small 27.png",
+          "width": 614,
+          "height": 614,
+          "alphaBounds": [
+            0,
+            0,
+            610,
+            614
+          ],
+          "bytes": 513092,
+          "sha256": "638d97f9865f5f0a40cded3666b407df2991bcd3f0f974cf113ad988ef5e3f35"
+        }
+      }
+    },
+    {
+      "id": 28,
+      "status": "game-data-present",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/28.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            218,
+            53,
+            1830,
+            2015
+          ],
+          "bytes": 2425074,
+          "sha256": "9aabf012e6bd7df467b9291edbc7fd9c1ecb5bb8ac8a4e4c379e5e85b17efab7"
+        },
+        "back": {
+          "source": "/sprites/back_sprites/28.png",
+          "width": 832,
+          "height": 1248,
+          "alphaBounds": [
+            56,
+            197,
+            726,
+            1037
+          ],
+          "bytes": 580980,
+          "sha256": "e30b23491b706f473792e4d29c977d674aaf3ccfd93db860fed3de62118d33e8"
+        },
+        "small": {
+          "source": "/sprites/small_sprites/Sprite Small 28.png",
+          "width": 614,
+          "height": 614,
+          "alphaBounds": [
+            44,
+            13,
+            609,
+            614
+          ],
+          "bytes": 440514,
+          "sha256": "a62861f41589ff98ebf30319ce4704663e2e5c05a9823ee10428167881d57402"
+        }
+      }
+    },
+    {
+      "id": 29,
+      "status": "game-data-present",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/29.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            108,
+            157,
+            2011,
+            1890
+          ],
+          "bytes": 2407133,
+          "sha256": "88a5629114f7f9dfefe1cc8171bcfc145a990e0955c0d120825ec52d33f80885"
+        },
+        "back": {
+          "source": "/sprites/back_sprites/29.png",
+          "width": 832,
+          "height": 1248,
+          "alphaBounds": [
+            1,
+            236,
+            776,
+            945
+          ],
+          "bytes": 588453,
+          "sha256": "3a2cd29f0195c3ad1ddfaa7e909719af3235099ee00dda5c00966559de6cb410"
+        },
+        "small": {
+          "source": "/sprites/small_sprites/Sprite Small 29.png",
+          "width": 614,
+          "height": 614,
+          "alphaBounds": [
+            26,
+            25,
+            614,
+            614
+          ],
+          "bytes": 381837,
+          "sha256": "a0439e5f1fcb0e36c7bfd9fd233d3b218987345829d71a4585367ac2320d2309"
+        }
+      }
+    },
+    {
+      "id": 30,
+      "status": "game-data-present",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/30.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            311,
+            36,
+            1721,
+            2009
+          ],
+          "bytes": 1744817,
+          "sha256": "92d6e81341e0ec29c6542a0ce829847d38b037b1d4a685ba22037bc598deabad"
+        },
+        "back": {
+          "source": "/sprites/back_sprites/30.png",
+          "width": 1024,
+          "height": 1024,
+          "alphaBounds": [
+            150,
+            38,
+            826,
+            1008
+          ],
+          "bytes": 432730,
+          "sha256": "3bcc0f6ee6ed69fa3fa0cc7dd0334c9ac3588eb0d50960e145a9e71c10a2ba77"
+        },
+        "small": {
+          "source": "/sprites/small_sprites/Sprite Small 30.png",
+          "width": 614,
+          "height": 614,
+          "alphaBounds": [
+            78,
+            45,
+            567,
+            614
+          ],
+          "bytes": 291402,
+          "sha256": "59577316ce8b0b658862560f7775f54d39694a04034054fc543290601bfa119d"
+        }
+      }
+    },
+    {
+      "id": 31,
+      "status": "game-data-present",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/31.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            211,
+            117,
+            1888,
+            1939
+          ],
+          "bytes": 1526393,
+          "sha256": "aed484a80d9acd65ce8e5370bc711a7f66ab35c20dad082d70af34d121b08f9f"
+        },
+        "back": {
+          "source": "/sprites/back_sprites/31.png",
+          "width": 1024,
+          "height": 1024,
+          "alphaBounds": [
+            95,
+            81,
+            916,
+            972
+          ],
+          "bytes": 447676,
+          "sha256": "6d0b1a54f542a792b13aa7a11a6d69ab1a67e7ff2f4d68669d2ed6e64d32c1da"
+        },
+        "small": {
+          "source": "/sprites/small_sprites/Sprite Small 31.png",
+          "width": 614,
+          "height": 614,
+          "alphaBounds": [
+            79,
+            31,
+            614,
+            614
+          ],
+          "bytes": 295354,
+          "sha256": "c79e675fb4ae457d985929a6570431a530f881da48fd6da319ad3f5d839112cd"
+        }
+      }
+    },
+    {
+      "id": 32,
+      "status": "game-data-present",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/32.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            169,
+            136,
+            1891,
+            1880
+          ],
+          "bytes": 2164598,
+          "sha256": "2dd151edda0b8e298fbdba66acbde366f9b115355d14b8148f05329130ea5bde"
+        },
+        "back": {
+          "source": "/sprites/back_sprites/32.png",
+          "width": 1248,
+          "height": 832,
+          "alphaBounds": [
+            265,
+            52,
+            1066,
+            784
+          ],
+          "bytes": 584091,
+          "sha256": "64128ca5b57624c9fcb9e661ec9e1c21967c0719b89a6e7bfd9c7dfa64ed3587"
+        },
+        "small": {
+          "source": "/sprites/small_sprites/Sprite Small 32.png",
+          "width": 614,
+          "height": 614,
+          "alphaBounds": [
+            41,
+            35,
+            601,
+            604
+          ],
+          "bytes": 379281,
+          "sha256": "02a4052c271a102d10726022ea15b8b3f51835292888c8fcb2f7761864ce3e82"
+        }
+      }
+    },
+    {
+      "id": 33,
+      "status": "game-data-present",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/33.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            150,
+            80,
+            1903,
+            1934
+          ],
+          "bytes": 2466332,
+          "sha256": "482675530bf9e48dd19105b6468fcfa42e372ddffa533f5f12ad353a9625223c"
+        },
+        "back": {
+          "source": "/sprites/back_sprites/33.png",
+          "width": 1024,
+          "height": 1024,
+          "alphaBounds": [
+            88,
+            49,
+            952,
+            951
+          ],
+          "bytes": 728756,
+          "sha256": "074cc830b3b63233a8ffcbfd6ec70f116638ac089e74da7cf8706790dbb62678"
+        },
+        "small": {
+          "source": "/sprites/small_sprites/Sprite Small 33.png",
+          "width": 614,
+          "height": 614,
+          "alphaBounds": [
+            33,
+            0,
+            608,
+            614
+          ],
+          "bytes": 449327,
+          "sha256": "cf30a946888a10f9236b163dbcf52062f3650309c5a7bb0925e29d9503336a69"
+        }
+      }
+    },
+    {
+      "id": 34,
+      "status": "game-data-present",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/34.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            75,
+            76,
+            1971,
+            1915
+          ],
+          "bytes": 2094076,
+          "sha256": "aaa4c5bb9f623e7af028087d603be5b3a28f399a3dd57b62a3e0f838b9b2a38e"
+        },
+        "back": {
+          "source": "/sprites/back_sprites/34.png",
+          "width": 1024,
+          "height": 1024,
+          "alphaBounds": [
+            106,
+            254,
+            966,
+            893
+          ],
+          "bytes": 504952,
+          "sha256": "f2b5d97ab5ed9ab6d9769315cd7836773e8dcf0139abcb5cec9ac413d2a5e5b6"
+        },
+        "small": {
+          "source": "/sprites/small_sprites/Sprite Small 34.png",
+          "width": 614,
+          "height": 614,
+          "alphaBounds": [
+            36,
+            40,
+            614,
+            614
+          ],
+          "bytes": 392931,
+          "sha256": "73c7b8bd06c709741c1c99bdcb649f2534ef8796340d00af17c9e00889065877"
+        }
+      }
+    },
+    {
+      "id": 35,
+      "status": "game-data-present",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/35.png",
+          "width": 1792,
+          "height": 2400,
+          "alphaBounds": [
+            52,
+            20,
+            1745,
+            2382
+          ],
+          "bytes": 2674952,
+          "sha256": "8052a8f9728404c850239fb25fd9aba35f5e04f427d1df075bf1d31eeaa77aae"
+        },
+        "back": {
+          "source": "/sprites/back_sprites/35.png",
+          "width": 832,
+          "height": 1248,
+          "alphaBounds": [
+            11,
+            66,
+            817,
+            1212
+          ],
+          "bytes": 752126,
+          "sha256": "f90e453217a55b57d381a4aa9fd0074b4833ad9d40ed91fed0b343d2b1fbe4d0"
+        },
+        "small": {
+          "source": "/sprites/small_sprites/Sprite Small 35.png",
+          "width": 614,
+          "height": 614,
+          "alphaBounds": [
+            52,
+            0,
+            613,
+            614
+          ],
+          "bytes": 469089,
+          "sha256": "1c2bc24b675a98a2d319e966f5112f07ed82cc0f0f95cdad3b05d7e88808cbb7"
+        }
+      }
+    },
+    {
+      "id": 36,
+      "status": "game-data-present",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/36.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            96,
+            141,
+            1979,
+            1943
+          ],
+          "bytes": 1992207,
+          "sha256": "87eacac2998bb8b08f947c15d80dd4bd693634697b96cce9175b116d5e91f4b3"
+        },
+        "back": {
+          "source": "/sprites/back_sprites/36.png",
+          "width": 1024,
+          "height": 1024,
+          "alphaBounds": [
+            47,
+            115,
+            880,
+            925
+          ],
+          "bytes": 558539,
+          "sha256": "5077ff1d4892247d557ecca9e5f9ae69fc4b3e03f1e08ff67f1859f4e8f76ff8"
+        },
+        "small": {
+          "source": "/sprites/small_sprites/Sprite Small 36.png",
+          "width": 614,
+          "height": 614,
+          "alphaBounds": [
+            33,
+            3,
+            614,
+            606
+          ],
+          "bytes": 373380,
+          "sha256": "e7c5feb51f24e9a58061e274a231b6b03cb054b42bbcadc04d6db43b899c42e8"
+        }
+      }
+    },
+    {
+      "id": 37,
+      "status": "game-data-present",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/37.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            54,
+            53,
+            1948,
+            1977
+          ],
+          "bytes": 2437292,
+          "sha256": "6c3ee4d1933e42cc0f9954a1dda5bd88bf9529a26d717b33fddd49eb92a549ed"
+        },
+        "back": {
+          "source": "/sprites/back_sprites/37.png",
+          "width": 1024,
+          "height": 1024,
+          "alphaBounds": [
+            58,
+            49,
+            987,
+            950
+          ],
+          "bytes": 808579,
+          "sha256": "d804535a0468ee597801e778f0703ae8d6f5efdad5503fceb180a65bf5d59211"
+        },
+        "small": {
+          "source": "/sprites/small_sprites/Sprite Small 37.png",
+          "width": 614,
+          "height": 614,
+          "alphaBounds": [
+            0,
+            0,
+            614,
+            607
+          ],
+          "bytes": 495650,
+          "sha256": "0910b79cb155fbf3da7807493d2912493c833c8fb02db1fbf84a912cacdf6448"
+        }
+      }
+    },
+    {
+      "id": 38,
+      "status": "game-data-present",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/38.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            26,
+            41,
+            2004,
+            1977
+          ],
+          "bytes": 3444390,
+          "sha256": "3dc8065d144fd61d5b1a6acfcf02e6b06104623bb638a7bec324e707640cb647"
+        },
+        "back": {
+          "source": "/sprites/back_sprites/38.png",
+          "width": 1024,
+          "height": 1024,
+          "alphaBounds": [
+            130,
+            154,
+            857,
+            852
+          ],
+          "bytes": 715022,
+          "sha256": "0dd6831c3edea17a6c512b89f6b43858987d854062c5a8ff54b668eba2318f43"
+        },
+        "small": {
+          "source": "/sprites/small_sprites/Sprite Small 38.png",
+          "width": 614,
+          "height": 614,
+          "alphaBounds": [
+            0,
+            3,
+            614,
+            612
+          ],
+          "bytes": 619762,
+          "sha256": "906941aad6d180f86f7717998fbd6d13b0a6030cfcbb7967fb2680744ebffd20"
+        }
+      }
+    },
+    {
+      "id": 39,
+      "status": "game-data-present",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/39.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            167,
+            54,
+            1840,
+            1988
+          ],
+          "bytes": 2825406,
+          "sha256": "f45f9945b8c3f81fd8cc11fef0c52222379e882a109a65ef3816e0db8c0bec74"
+        },
+        "back": {
+          "source": "/sprites/back_sprites/39.png",
+          "width": 1024,
+          "height": 1024,
+          "alphaBounds": [
+            138,
+            69,
+            909,
+            955
+          ],
+          "bytes": 873678,
+          "sha256": "03f709a0634860dfbadd38530d8d9ffe0842e56d4346f035a83b6698675a61db"
+        },
+        "small": {
+          "source": "/sprites/small_sprites/Sprite Small 39.png",
+          "width": 546,
+          "height": 571,
+          "alphaBounds": [
+            0,
+            0,
+            546,
+            571
+          ],
+          "bytes": 452501,
+          "sha256": "84700d3e0f8cabf35ad6d513c8d37acb4ae0772e554d3e6c74c08e5d3f754d68"
+        }
+      }
+    },
+    {
+      "id": 40,
+      "status": "game-data-present",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/40.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            395,
+            41,
+            1711,
+            1970
+          ],
+          "bytes": 1799777,
+          "sha256": "eef1def278f94e7cfd3f56642e0bd6adc32b40f7b1beae97a098588d7f4054bd"
+        },
+        "back": {
+          "source": "/sprites/back_sprites/40.png",
+          "width": 832,
+          "height": 1248,
+          "alphaBounds": [
+            56,
+            204,
+            665,
+            1038
+          ],
+          "bytes": 571877,
+          "sha256": "d282374d70dc4690f04af8047ed9c38f16a7c86d9327bc93c6efc31f0a7efc09"
+        },
+        "small": {
+          "source": "/sprites/small_sprites/Sprite Small 40.png",
+          "width": 614,
+          "height": 614,
+          "alphaBounds": [
+            83,
+            29,
+            588,
+            614
+          ],
+          "bytes": 392563,
+          "sha256": "f5be7e08db49a4062a8ae92c5d24941bd9c7a73bb5608cac3be17cb1757104d0"
+        }
+      }
+    },
+    {
+      "id": 41,
+      "status": "game-data-present",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/41.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            225,
+            32,
+            1899,
+            2030
+          ],
+          "bytes": 2594882,
+          "sha256": "27328b86c902b43d191dd925b303e67adee1598a60a318282ddf2479ae3e5526"
+        },
+        "back": {
+          "source": "/sprites/back_sprites/41.png",
+          "width": 1024,
+          "height": 1024,
+          "alphaBounds": [
+            89,
+            48,
+            924,
+            999
+          ],
+          "bytes": 976231,
+          "sha256": "5f39887125b94a86a0b3f6f2d3dfc199e21d02df82957e0df65edd94aceaa527"
+        },
+        "small": {
+          "source": "/sprites/small_sprites/Sprite Small 41.png",
+          "width": 614,
+          "height": 614,
+          "alphaBounds": [
+            57,
+            18,
+            614,
+            614
+          ],
+          "bytes": 534205,
+          "sha256": "db030d1c3ba2643af04327320825ae111635607f568f5907983f919a8802b82a"
+        }
+      }
+    },
+    {
+      "id": 42,
+      "status": "game-data-present",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/42.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            192,
+            182,
+            1878,
+            1923
+          ],
+          "bytes": 1726236,
+          "sha256": "99b02067e4ec84bfd846771b976a280ff6e8cb9cc88bdfab1ba1da915e4d1e7f"
+        },
+        "back": {
+          "source": "/sprites/back_sprites/42.png",
+          "width": 1024,
+          "height": 1024,
+          "alphaBounds": [
+            164,
+            168,
+            871,
+            881
+          ],
+          "bytes": 432052,
+          "sha256": "f4b5e3fa9d3c6ff4eb20d231af1192e0cd57e6ddef13f63d37b01fe8a85dd041"
+        },
+        "small": {
+          "source": "/sprites/small_sprites/Sprite Small 42.png",
+          "width": 614,
+          "height": 614,
+          "alphaBounds": [
+            25,
+            15,
+            614,
+            614
+          ],
+          "bytes": 354588,
+          "sha256": "86a55b9e83301252ab7fe4826ca4264a1a85e935faaa9d6043cc49af1dd4d8db"
+        }
+      }
+    },
+    {
+      "id": 43,
+      "status": "game-data-present",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/43.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            259,
+            129,
+            1657,
+            1965
+          ],
+          "bytes": 1483759,
+          "sha256": "cce3b061f1feddb482518d80e8446e2a61f2aa87482b210323b216cfb1fe8d41"
+        },
+        "back": {
+          "source": "/sprites/back_sprites/43.png",
+          "width": 1024,
+          "height": 1024,
+          "alphaBounds": [
+            205,
+            89,
+            839,
+            962
+          ],
+          "bytes": 452874,
+          "sha256": "eef34fa4cfacf1631b1ee55efd439a10e9298aa8d381675bc15411e9b037287e"
+        },
+        "small": {
+          "source": "/sprites/small_sprites/Sprite Small 43.png",
+          "width": 614,
+          "height": 614,
+          "alphaBounds": [
+            72,
+            19,
+            608,
+            614
+          ],
+          "bytes": 325773,
+          "sha256": "f6f5450124bc4000e94ecff18a3372707f64437882a2616e41e7a82e44cbebe3"
+        }
+      }
+    },
+    {
+      "id": 44,
+      "status": "game-data-present",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/44.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            165,
+            103,
+            1969,
+            1999
+          ],
+          "bytes": 1844682,
+          "sha256": "e39380148243c2f6893bf7762bd9a1af8f2a9609b79a3161545fcb41345c21d1"
+        },
+        "back": {
+          "source": "/sprites/back_sprites/44.png",
+          "width": 1024,
+          "height": 1024,
+          "alphaBounds": [
+            53,
+            58,
+            940,
+            977
+          ],
+          "bytes": 455110,
+          "sha256": "4e01f446671be84970384b9216d0c7264756999c8050be6e87bad94ef22629ea"
+        },
+        "small": {
+          "source": "/sprites/small_sprites/Sprite Small 44.png",
+          "width": 614,
+          "height": 614,
+          "alphaBounds": [
+            48,
+            8,
+            600,
+            614
+          ],
+          "bytes": 295489,
+          "sha256": "ee66a29cbee932516045237a92d3063bea891a11ba01d902949e9faaa035720e"
+        }
+      }
+    },
+    {
+      "id": 45,
+      "status": "game-data-present",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/45.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            38,
+            227,
+            2029,
+            1678
+          ],
+          "bytes": 1584014,
+          "sha256": "7a54851a1df7aa1de78bea3fd598b4557e49825b82b783827874469f98e4af0b"
+        },
+        "back": {
+          "source": "/sprites/back_sprites/45.png",
+          "width": 1248,
+          "height": 832,
+          "alphaBounds": [
+            176,
+            130,
+            1015,
+            690
+          ],
+          "bytes": 365275,
+          "sha256": "50a6d104eebe23fd9b577577f3a1ec94c3f688fde5219142252544468d3d9267"
+        },
+        "small": {
+          "source": "/sprites/small_sprites/Sprite Small 45.png",
+          "width": 614,
+          "height": 614,
+          "alphaBounds": [
+            21,
+            13,
+            614,
+            614
+          ],
+          "bytes": 296685,
+          "sha256": "de972bfd0635149bb5a3a79194345f2438d7ee5e14232e74674a316fa428061f"
+        }
+      }
+    },
+    {
+      "id": 46,
+      "status": "game-data-present",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/46.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            101,
+            130,
+            1960,
+            1928
+          ],
+          "bytes": 2307955,
+          "sha256": "5932bed4f4df790e8e63dcbdcea2f0ccd56a405e3a97c844c97ee355b6a23055"
+        },
+        "back": {
+          "source": "/sprites/back_sprites/46.png",
+          "width": 1024,
+          "height": 1024,
+          "alphaBounds": [
+            76,
+            68,
+            978,
+            954
+          ],
+          "bytes": 819855,
+          "sha256": "df82d69ddb8535a0bfe9d7cd98ceef62e7f0d57393bf5b86d2754e08ef454be1"
+        },
+        "small": {
+          "source": "/sprites/small_sprites/Sprite Small 46.png",
+          "width": 614,
+          "height": 614,
+          "alphaBounds": [
+            4,
+            5,
+            614,
+            614
+          ],
+          "bytes": 441107,
+          "sha256": "534108626fd9599b4fca45c9b99816caa666a696c4cb0463d8c8b0a489f56f99"
+        }
+      }
+    },
+    {
+      "id": 47,
+      "status": "game-data-present",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/47.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            163,
+            229,
+            1822,
+            1755
+          ],
+          "bytes": 1489624,
+          "sha256": "daa426adcfffabe6fb25723201d4daa9e98726546debfaa04321473774959cdb"
+        },
+        "back": {
+          "source": "/sprites/back_sprites/47.png",
+          "width": 1024,
+          "height": 1024,
+          "alphaBounds": [
+            94,
+            153,
+            915,
+            893
+          ],
+          "bytes": 411015,
+          "sha256": "63874957599d118baa3912487f1cfe05c59b4ad9e14b7a4582450725d7b7f9f8"
+        },
+        "small": {
+          "source": "/sprites/small_sprites/Sprite Small 47.png",
+          "width": 614,
+          "height": 614,
+          "alphaBounds": [
+            0,
+            0,
+            614,
+            607
+          ],
+          "bytes": 405573,
+          "sha256": "66662aeab83ee2d41eb5c94779ff6fd81e76d710d044af697e1cb3b8cca7adf9"
+        }
+      }
+    },
+    {
+      "id": 48,
+      "status": "game-data-present",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/48.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            213,
+            120,
+            1878,
+            1960
+          ],
+          "bytes": 2491753,
+          "sha256": "a074738f8646024b3f1d8ed7ed73456141c6626161a8f3829f91601149d2862c"
+        },
+        "back": {
+          "source": "/sprites/back_sprites/48.png",
+          "width": 1024,
+          "height": 1024,
+          "alphaBounds": [
+            75,
+            104,
+            876,
+            936
+          ],
+          "bytes": 724860,
+          "sha256": "0f3a70c104d9c84ffb878227e9a3adb55f27c0817d40fd153897a63fafd4e23e"
+        },
+        "small": {
+          "source": "/sprites/small_sprites/Sprite Small 48.png",
+          "width": 614,
+          "height": 614,
+          "alphaBounds": [
+            0,
+            0,
+            614,
+            614
+          ],
+          "bytes": 520890,
+          "sha256": "a7616fd5d41c6c5bff8e82387bc781beeea4e85d9433184995e377ce40bb1f05"
+        }
+      }
+    },
+    {
+      "id": 49,
+      "status": "game-data-present",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/49.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            209,
+            163,
+            1819,
+            1908
+          ],
+          "bytes": 1814457,
+          "sha256": "d4a01397dc925aded9d275afffd81d2de7ee170ad287fff918c36e9a00635564"
+        },
+        "back": {
+          "source": "/sprites/back_sprites/49.png",
+          "width": 1024,
+          "height": 1024,
+          "alphaBounds": [
+            124,
+            85,
+            896,
+            941
+          ],
+          "bytes": 782375,
+          "sha256": "d1be5f0f7d955e1b7ca9a02f260a6ec7012693b0f4a7096637c0c7abf0a35b57"
+        },
+        "small": {
+          "source": "/sprites/small_sprites/Sprite Small 49.png",
+          "width": 614,
+          "height": 614,
+          "alphaBounds": [
+            91,
+            73,
+            614,
+            614
+          ],
+          "bytes": 281246,
+          "sha256": "b9892047d79f5dbb8a30a9d0148f81a52c05738e06015f76d689e8ddbd08a5fc"
+        }
+      }
+    },
+    {
+      "id": 50,
+      "status": "game-data-present",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/50.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            134,
+            200,
+            1876,
+            1858
+          ],
+          "bytes": 2120870,
+          "sha256": "aa78b8a42b5ab0c4a96b5a711b0fd92637dd7c31eca571b6a186185be25d450f"
+        },
+        "back": {
+          "source": "/sprites/back_sprites/50.png",
+          "width": 1024,
+          "height": 1024,
+          "alphaBounds": [
+            99,
+            137,
+            930,
+            868
+          ],
+          "bytes": 611911,
+          "sha256": "77b5f1ed2f4652c17eb66777128328d72b6d70905213f6323c49908782f59852"
+        },
+        "small": {
+          "source": "/sprites/small_sprites/Sprite Small 50.png",
+          "width": 614,
+          "height": 614,
+          "alphaBounds": [
+            47,
+            1,
+            614,
+            614
+          ],
+          "bytes": 393633,
+          "sha256": "8d2fa9fbbeb90c02a86f599cce580a39fccc5b107ef04f8658ee82eada3d2d60"
+        }
+      }
+    },
+    {
+      "id": 51,
+      "status": "game-data-present",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/51.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            0,
+            76,
+            1993,
+            1939
+          ],
+          "bytes": 3367419,
+          "sha256": "b014e97e51a1c2739892842bbdb89ca10679c047c2ccbd95f07ee464af64efcf"
+        },
+        "back": {
+          "source": "/sprites/back_sprites/51.png",
+          "width": 1248,
+          "height": 832,
+          "alphaBounds": [
+            179,
+            36,
+            1008,
+            766
+          ],
+          "bytes": 783330,
+          "sha256": "4e9eac663bafe66f9ef6dff14be1949952a24c53142ad84b7502f416a2fa814a"
+        },
+        "small": {
+          "source": "/sprites/small_sprites/Sprite Small 51.png",
+          "width": 614,
+          "height": 614,
+          "alphaBounds": [
+            30,
+            22,
+            614,
+            614
+          ],
+          "bytes": 448313,
+          "sha256": "af065d6d69adc61da57f5b3bd75009430a081685eecd9b3a3f2993527aa275ff"
+        }
+      }
+    },
+    {
+      "id": 52,
+      "status": "game-data-present",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/52.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            77,
+            78,
+            1969,
+            1998
+          ],
+          "bytes": 2686755,
+          "sha256": "6f419b23b530a41cd00ef21294b1139a8becb10a1484a1d03006fb7842e142bc"
+        },
+        "back": {
+          "source": "/sprites/back_sprites/52.png",
+          "width": 1024,
+          "height": 1024,
+          "alphaBounds": [
+            47,
+            85,
+            983,
+            977
+          ],
+          "bytes": 1019665,
+          "sha256": "fe2c4286bc5cd538ada07849f89921b3ef7a0078e671de644e237d3ce10e1d53"
+        },
+        "small": {
+          "source": "/sprites/small_sprites/Sprite Small 52.png",
+          "width": 614,
+          "height": 614,
+          "alphaBounds": [
+            6,
+            20,
+            614,
+            614
+          ],
+          "bytes": 546582,
+          "sha256": "a2899c55d3e4f132ca4012040e8274221bc3c41d58d251783e636e16c41cf8b8"
+        }
+      }
+    },
+    {
+      "id": 53,
+      "status": "game-data-present",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/53.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            46,
+            55,
+            1981,
+            1970
+          ],
+          "bytes": 3071350,
+          "sha256": "e01f7e10ab7d5d9a2fbe70abc1e2251f55f370f36a0606e6355911c742175721"
+        },
+        "back": {
+          "source": "/sprites/back_sprites/53.png",
+          "width": 1024,
+          "height": 1024,
+          "alphaBounds": [
+            65,
+            46,
+            976,
+            981
+          ],
+          "bytes": 925234,
+          "sha256": "f367cd5890d567e388ebdc66c51016d31a40129b5185f3f54a6a2cb7c44eea38"
+        },
+        "small": {
+          "source": "/sprites/small_sprites/Sprite Small 53.png",
+          "width": 614,
+          "height": 614,
+          "alphaBounds": [
+            30,
+            20,
+            614,
+            614
+          ],
+          "bytes": 504955,
+          "sha256": "b72a95a38cd25aff47e1f2fe5f4b47967ca5fd21c4313bf1868cab599f063842"
+        }
+      }
+    },
+    {
+      "id": 54,
+      "status": "game-data-present",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/54.png",
+          "width": 2400,
+          "height": 1792,
+          "alphaBounds": [
+            96,
+            0,
+            2332,
+            1792
+          ],
+          "bytes": 3317387,
+          "sha256": "2567f96556b490976ad741fdce3d240d4eb4b52c79ebdaeee4697d09797f19e6"
+        },
+        "back": {
+          "source": "/sprites/back_sprites/54.png",
+          "width": 1024,
+          "height": 1024,
+          "alphaBounds": [
+            66,
+            72,
+            896,
+            980
+          ],
+          "bytes": 792489,
+          "sha256": "0fb31bd2abad061ffd7db9f4666fa626e0b984367bde76decba911da4e2fddb8"
+        },
+        "small": {
+          "source": "/sprites/small_sprites/Sprite Small 54.png",
+          "width": 614,
+          "height": 614,
+          "alphaBounds": [
+            72,
+            5,
+            614,
+            614
+          ],
+          "bytes": 461940,
+          "sha256": "bb0d7ec0269ea09c9366303e3a88421393eeef6e8fb1971f0a1f3d812f081d5d"
+        }
+      }
+    },
+    {
+      "id": 55,
+      "status": "game-data-present",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/55.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            330,
+            54,
+            1681,
+            1955
+          ],
+          "bytes": 1500338,
+          "sha256": "0ed972964e21dd38401b33860f67bacf81cd0403b803885196603446af69ec1f"
+        },
+        "back": {
+          "source": "/sprites/back_sprites/55.png",
+          "width": 832,
+          "height": 1248,
+          "alphaBounds": [
+            67,
+            54,
+            791,
+            1111
+          ],
+          "bytes": 606088,
+          "sha256": "228b49c803a33c1c80aa4c3dbb48aaa5b1c07b170b4bcdf5828fefd68efdad35"
+        },
+        "small": {
+          "source": "/sprites/small_sprites/Sprite Small 55.png",
+          "width": 614,
+          "height": 614,
+          "alphaBounds": [
+            74,
+            0,
+            611,
+            614
+          ],
+          "bytes": 342357,
+          "sha256": "2800a94813fa42cef1c2e3f0864d1b43d68300514b552b20eea0fd061dbe3237"
+        }
+      }
+    },
+    {
+      "id": 56,
+      "status": "game-data-present",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/56.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            399,
+            91,
+            1903,
+            1921
+          ],
+          "bytes": 1871684,
+          "sha256": "73b1483531cbfbd2963468521ea074a68694732aa0c5c9e6e0a0baca742fb6e3"
+        },
+        "back": {
+          "source": "/sprites/back_sprites/56.png",
+          "width": 1024,
+          "height": 1024,
+          "alphaBounds": [
+            156,
+            95,
+            893,
+            931
+          ],
+          "bytes": 617999,
+          "sha256": "57d29d85a2594c0fc45e00f93f653ad851bae5ea981e4b1839683c7a65e5809b"
+        },
+        "small": {
+          "source": "/sprites/small_sprites/Sprite Small 56.png",
+          "width": 614,
+          "height": 614,
+          "alphaBounds": [
+            73,
+            3,
+            607,
+            613
+          ],
+          "bytes": 403043,
+          "sha256": "034b6d6c235e49e08499c52f52b9ee1b02599d22bae07de9d158df350fe43bc8"
+        }
+      }
+    },
+    {
+      "id": 57,
+      "status": "game-data-present",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/57.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            39,
+            26,
+            1995,
+            1993
+          ],
+          "bytes": 2701807,
+          "sha256": "8aeacd43809c6c533b6ba52ef23c7255c5a5ceb1c5df498f6b67a907f8b29d5b"
+        },
+        "back": {
+          "source": "/sprites/back_sprites/57.png",
+          "width": 1024,
+          "height": 1024,
+          "alphaBounds": [
+            162,
+            152,
+            885,
+            828
+          ],
+          "bytes": 513761,
+          "sha256": "b10afb58a797c812fda0b18d15614a39d08519cd584c1d3c2dff9c1228757e8b"
+        },
+        "small": {
+          "source": "/sprites/small_sprites/Sprite Small 57.png",
+          "width": 614,
+          "height": 614,
+          "alphaBounds": [
+            0,
+            0,
+            614,
+            614
+          ],
+          "bytes": 505242,
+          "sha256": "925a12c33fb049b85cba378eb8329f7f56e9cba7aaf2e7b42948adf3501df722"
+        }
+      }
+    },
+    {
+      "id": 58,
+      "status": "game-data-present",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/58.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            121,
+            50,
+            1955,
+            1988
+          ],
+          "bytes": 2231158,
+          "sha256": "cda2020b6bce11e01658a0ba3467a73675f34095ac8278af189e950134e07c0e"
+        },
+        "back": {
+          "source": "/sprites/back_sprites/58.png",
+          "width": 1024,
+          "height": 1024,
+          "alphaBounds": [
+            120,
+            82,
+            971,
+            924
+          ],
+          "bytes": 575871,
+          "sha256": "a487eeb6f1e4b828daaf3d8e35bb748cc2c7501cf3a10176ddeab80542f64e1f"
+        },
+        "small": {
+          "source": "/sprites/small_sprites/Sprite Small 58.png",
+          "width": 614,
+          "height": 614,
+          "alphaBounds": [
+            20,
+            0,
+            614,
+            609
+          ],
+          "bytes": 351268,
+          "sha256": "3bec62622a2424733dd0dfab53be731914a297dad1d6465119f2eb08c5821964"
+        }
+      }
+    },
+    {
+      "id": 59,
+      "status": "game-data-present",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/59.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            68,
+            28,
+            1994,
+            1990
+          ],
+          "bytes": 1810016,
+          "sha256": "2dc6b1c60949f913fe1a833c6fe3260d4bd67c5281588c3e06e74c953afd0f55"
+        },
+        "back": {
+          "source": "/sprites/back_sprites/59.png",
+          "width": 1024,
+          "height": 1024,
+          "alphaBounds": [
+            32,
+            153,
+            965,
+            857
+          ],
+          "bytes": 514757,
+          "sha256": "2bb1a132ad2c596591c3e1c9895cbcd4e66d9f9d7210e36108db857150178554"
+        },
+        "small": {
+          "source": "/sprites/small_sprites/Sprite Small 59.png",
+          "width": 614,
+          "height": 614,
+          "alphaBounds": [
+            28,
+            0,
+            608,
+            614
+          ],
+          "bytes": 400294,
+          "sha256": "bfaf74de0eb9011a35bf4fc62e21eb4c27640fb49628f269eacd64e56767ce40"
+        }
+      }
+    },
+    {
+      "id": 60,
+      "status": "game-data-present",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/60.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            5,
+            0,
+            2048,
+            2047
+          ],
+          "bytes": 3278995,
+          "sha256": "cb26721b427078ce792e1bc09474fe4ad314c470792a9ba3d47aea1e7ce4f1a8"
+        },
+        "back": {
+          "source": "/sprites/back_sprites/60.png",
+          "width": 1056,
+          "height": 992,
+          "alphaBounds": [
+            273,
+            186,
+            888,
+            775
+          ],
+          "bytes": 411509,
+          "sha256": "97322187f41c01eaf847f8f7f9b702eaff5d25db83e3c390ef61790ce2589243"
+        },
+        "small": {
+          "source": "/sprites/small_sprites/Sprite Small 60.png",
+          "width": 614,
+          "height": 614,
+          "alphaBounds": [
+            0,
+            0,
+            614,
+            606
+          ],
+          "bytes": 544778,
+          "sha256": "8355b0b4a13153f28c10e586de705138e0313949db933e6e509d3ab3f910a3ce"
+        }
+      }
+    },
+    {
+      "id": 61,
+      "status": "game-data-present",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/61.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            123,
+            147,
+            2014,
+            1846
+          ],
+          "bytes": 2801936,
+          "sha256": "03462419f2e935c497d3dbd24ed7bc3d4be7858f9f59815681bff9fa1a342615"
+        },
+        "back": {
+          "source": "/sprites/back_sprites/61.png",
+          "width": 1248,
+          "height": 832,
+          "alphaBounds": [
+            179,
+            52,
+            1024,
+            795
+          ],
+          "bytes": 827684,
+          "sha256": "e61f591f563406da63c5775a2cfa7bfb7dd76db21d06eecbcb218baa25318fe0"
+        },
+        "small": {
+          "source": "/sprites/small_sprites/Sprite Small 61.png",
+          "width": 614,
+          "height": 614,
+          "alphaBounds": [
+            41,
+            8,
+            614,
+            614
+          ],
+          "bytes": 483218,
+          "sha256": "2d6a2a070ca48a9006cd1a0c91710cefcfbc188b4b23a152b82a1a21c6da536d"
+        }
+      }
+    },
+    {
+      "id": 62,
+      "status": "game-data-present",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/62.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            125,
+            107,
+            1961,
+            1776
+          ],
+          "bytes": 2532081,
+          "sha256": "fdc60bc988f283e9d3f5c04903caec5472852aa5eca5a56cb7ace74405a3054e"
+        },
+        "back": {
+          "source": "/sprites/back_sprites/62.png",
+          "width": 832,
+          "height": 1248,
+          "alphaBounds": [
+            111,
+            289,
+            755,
+            893
+          ],
+          "bytes": 460369,
+          "sha256": "dde9d5c333c90d89c02b12db0765c5dfc6252c54d1afa5b7aeaf46bd7bd5dc71"
+        },
+        "small": {
+          "source": "/sprites/small_sprites/Sprite Small 62.png",
+          "width": 614,
+          "height": 614,
+          "alphaBounds": [
+            14,
+            18,
+            598,
+            550
+          ],
+          "bytes": 398285,
+          "sha256": "867dead8391af4201ef27efa7e32d73e0e40375b7699c607526f26d109b3c1da"
+        }
+      }
+    },
+    {
+      "id": 63,
+      "status": "game-data-present",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/63.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            49,
+            148,
+            1968,
+            1921
+          ],
+          "bytes": 2652719,
+          "sha256": "f35e54014a02fc12169246ea49ba1ca28311a1f84dd53e0daaf1ece635f08766"
+        },
+        "back": {
+          "source": "/sprites/back_sprites/63.png",
+          "width": 832,
+          "height": 1248,
+          "alphaBounds": [
+            59,
+            285,
+            779,
+            940
+          ],
+          "bytes": 611249,
+          "sha256": "6f9f4ea1bf8622861a0f5abf7b44b5c1d9cda48cf15319448b44a69c014a5cb5"
+        },
+        "small": {
+          "source": "/sprites/small_sprites/Sprite Small 63.png",
+          "width": 614,
+          "height": 614,
+          "alphaBounds": [
+            0,
+            6,
+            614,
+            585
+          ],
+          "bytes": 519476,
+          "sha256": "731115ae13d0fbd31b256518e812b79bb35f2783e734fcb9f734b4a00d96fdca"
+        }
+      }
+    },
+    {
+      "id": 64,
+      "status": "game-data-present",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/64.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            122,
+            126,
+            1933,
+            1958
+          ],
+          "bytes": 2710814,
+          "sha256": "8ce92593e05300423e3d0e3b003f4d9e407bac73ebb5a5f5010708266fe17a19"
+        },
+        "back": {
+          "source": "/sprites/back_sprites/64.png",
+          "width": 1248,
+          "height": 832,
+          "alphaBounds": [
+            164,
+            24,
+            1048,
+            814
+          ],
+          "bytes": 673290,
+          "sha256": "89e3234a4a83dfd16425155a4c728fa040986dd56efd2a6a9917c2164d23acd9"
+        },
+        "small": {
+          "source": "/sprites/small_sprites/Sprite Small 64.png",
+          "width": 614,
+          "height": 614,
+          "alphaBounds": [
+            45,
+            43,
+            569,
+            571
+          ],
+          "bytes": 366382,
+          "sha256": "e428304bb2693182f38ddc0214efdaab63c92e32f01e56099984c6e48728344a"
+        }
+      }
+    },
+    {
+      "id": 65,
+      "status": "game-data-present",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/65.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            154,
+            76,
+            1908,
+            1952
+          ],
+          "bytes": 2664635,
+          "sha256": "6b0f3eb0e8b7767882c64142e0a674a842906dfbf4ab5017713f2ce92b938781"
+        },
+        "back": {
+          "source": "/sprites/back_sprites/65.png",
+          "width": 1024,
+          "height": 1024,
+          "alphaBounds": [
+            171,
+            180,
+            772,
+            845
+          ],
+          "bytes": 552768,
+          "sha256": "10b4d341de3e20858bb9432d74504fb73094cd16d0ce9da359a2e02afd8bfe5b"
+        },
+        "small": {
+          "source": "/sprites/small_sprites/Sprite Small 65.png",
+          "width": 614,
+          "height": 614,
+          "alphaBounds": [
+            39,
+            12,
+            614,
+            614
+          ],
+          "bytes": 449091,
+          "sha256": "5f02fd470f467ecb213c99143bb42c77205c336df10994f4f4baa5c52580876c"
+        }
+      }
+    },
+    {
+      "id": 66,
+      "status": "game-data-present",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/66.png",
+          "width": 1792,
+          "height": 2400,
+          "alphaBounds": [
+            84,
+            86,
+            1646,
+            2383
+          ],
+          "bytes": 2967745,
+          "sha256": "a0d83f06df5572d4ea2beac4f040e929109e2af4263cbd67e63f97df3dc7c938"
+        },
+        "back": {
+          "source": "/sprites/back_sprites/66.png",
+          "width": 832,
+          "height": 1248,
+          "alphaBounds": [
+            86,
+            200,
+            652,
+            1081
+          ],
+          "bytes": 642085,
+          "sha256": "61bf9c9a4a0cb817a0ec0c6ee584368a1a90c4b1951bef96d0d70a1cd30e3056"
+        },
+        "small": {
+          "source": "/sprites/small_sprites/Sprite Small 66.png",
+          "width": 614,
+          "height": 614,
+          "alphaBounds": [
+            3,
+            0,
+            614,
+            614
+          ],
+          "bytes": 572356,
+          "sha256": "82d0ee84d21cf00071842e65f33b454e0a3b38f20ceb42a777ba93c7e4f79aa2"
+        }
+      }
+    },
+    {
+      "id": 67,
+      "status": "game-data-present",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/67.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            334,
+            28,
+            1704,
+            2006
+          ],
+          "bytes": 2464031,
+          "sha256": "fbff1cc4f6bd0b5b8591053d31223c7170e24965f58660c2eed262ba1ac6973d"
+        },
+        "back": {
+          "source": "/sprites/back_sprites/67.png",
+          "width": 832,
+          "height": 1248,
+          "alphaBounds": [
+            61,
+            109,
+            768,
+            1143
+          ],
+          "bytes": 837828,
+          "sha256": "8bd850823a552385a45dc0d077d0c22ab8ff5a288cd8ec7caca3e2e9f0baf2cf"
+        },
+        "small": {
+          "source": "/sprites/small_sprites/Sprite Small 67.png",
+          "width": 614,
+          "height": 614,
+          "alphaBounds": [
+            14,
+            16,
+            599,
+            614
+          ],
+          "bytes": 453969,
+          "sha256": "f378fa76f483d48a0a472ab0fa6e7794bdce9852c8a560b5f82e6b668c0e2211"
+        }
+      }
+    },
+    {
+      "id": 68,
+      "status": "game-data-present",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/68.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            336,
+            41,
+            1725,
+            2043
+          ],
+          "bytes": 2475289,
+          "sha256": "726a9dff130fbaa632864e1fad7ba3374efc1089f02683c7f89d16f7ac2c86ed"
+        },
+        "back": {
+          "source": "/sprites/back_sprites/68.png",
+          "width": 832,
+          "height": 1248,
+          "alphaBounds": [
+            25,
+            51,
+            791,
+            1177
+          ],
+          "bytes": 772949,
+          "sha256": "94baf8774e9cab0db52712c7ebc14658c7aabf3f18d83d656a866b26007b5ee8"
+        },
+        "small": {
+          "source": "/sprites/small_sprites/Sprite Small 68.png",
+          "width": 614,
+          "height": 614,
+          "alphaBounds": [
+            22,
+            0,
+            607,
+            614
+          ],
+          "bytes": 467962,
+          "sha256": "1b637bed7e9e78ecdd3332141d4a468915b7e03c351d10347f3a9debd310c5ba"
+        }
+      }
+    },
+    {
+      "id": 69,
+      "status": "game-data-present",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/69.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            108,
+            205,
+            2026,
+            1813
+          ],
+          "bytes": 2426304,
+          "sha256": "1c5d981cdc34c12d2b5d06550b0454d6eb0f95a4c36e9dba1039e8de81b09ea6"
+        },
+        "back": {
+          "source": "/sprites/back_sprites/69.png",
+          "width": 1248,
+          "height": 832,
+          "alphaBounds": [
+            141,
+            35,
+            1031,
+            805
+          ],
+          "bytes": 757610,
+          "sha256": "ce6760f9071776ba7719943eb0d31ded9c510e067a8cfa951171542e93c14efe"
+        },
+        "small": {
+          "source": "/sprites/small_sprites/Sprite Small 69.png",
+          "width": 614,
+          "height": 614,
+          "alphaBounds": [
+            50,
+            64,
+            601,
+            575
+          ],
+          "bytes": 404416,
+          "sha256": "2359fadf833df4818750fb8aa84e5a6211a71b34bb7825a57255926fb44acaa0"
+        }
+      }
+    },
+    {
+      "id": 70,
+      "status": "game-data-present",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/70.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            43,
+            74,
+            2015,
+            1944
+          ],
+          "bytes": 3532595,
+          "sha256": "cc78587fe448e9e533704fdc2c089109c283a969933bec65da46abd53e5c493d"
+        },
+        "back": {
+          "source": "/sprites/back_sprites/70.png",
+          "width": 1024,
+          "height": 1024,
+          "alphaBounds": [
+            9,
+            80,
+            940,
+            964
+          ],
+          "bytes": 1029788,
+          "sha256": "3f308fa30b3e217b825c7e48cc4b67539ba52554e04a8b8dbe33d8100d6e33ff"
+        },
+        "small": {
+          "source": "/sprites/small_sprites/Sprite Small 70.png",
+          "width": 614,
+          "height": 614,
+          "alphaBounds": [
+            0,
+            52,
+            614,
+            614
+          ],
+          "bytes": 532085,
+          "sha256": "db070f1a2d09e1a23e2f545b1141780a8539cb8a536ca9ed76164aa3e02757c8"
+        }
+      }
+    },
+    {
+      "id": 71,
+      "status": "game-data-present",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/71.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            156,
+            322,
+            1871,
+            1932
+          ],
+          "bytes": 1957357,
+          "sha256": "dd28617754ba98bbbd16e9e5d2d06157612a10940086e8a69803012a0b025e12"
+        },
+        "back": {
+          "source": "/sprites/back_sprites/71.png",
+          "width": 1024,
+          "height": 1024,
+          "alphaBounds": [
+            122,
+            183,
+            888,
+            873
+          ],
+          "bytes": 643863,
+          "sha256": "11afcbd29c164fe052f89975529de393265a376b7d5d384e4b932f163f1c4501"
+        },
+        "small": {
+          "source": "/sprites/small_sprites/Sprite Small 71.png",
+          "width": 614,
+          "height": 614,
+          "alphaBounds": [
+            2,
+            27,
+            614,
+            614
+          ],
+          "bytes": 449638,
+          "sha256": "553f40798fddce4d2d8987e6f06fb70df6324f13a26b7af7d2d36c820e4e269c"
+        }
+      }
+    },
+    {
+      "id": 72,
+      "status": "game-data-present",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/72.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            44,
+            108,
+            1984,
+            1921
+          ],
+          "bytes": 2709961,
+          "sha256": "80d5de932e88348f3b9088208e41fe4f593de5e1b55b4e47e21cd4af3c4787ec"
+        },
+        "back": {
+          "source": "/sprites/back_sprites/72.png",
+          "width": 1024,
+          "height": 1024,
+          "alphaBounds": [
+            125,
+            168,
+            879,
+            844
+          ],
+          "bytes": 594028,
+          "sha256": "a319f3e40ff27e0fbf55fe49246d59d3da298cddfaeebcda898283bb533966c8"
+        },
+        "small": {
+          "source": "/sprites/small_sprites/Sprite Small 72.png",
+          "width": 614,
+          "height": 614,
+          "alphaBounds": [
+            0,
+            0,
+            614,
+            614
+          ],
+          "bytes": 513651,
+          "sha256": "370137ed3a7e0d22976fc2588b1c572b9d06eb0a98153e2ffc287e6bdacbbe75"
+        }
+      }
+    },
+    {
+      "id": 73,
+      "status": "game-data-present",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/73.png",
+          "width": 1248,
+          "height": 832,
+          "alphaBounds": [
+            28,
+            4,
+            1172,
+            806
+          ],
+          "bytes": 1076428,
+          "sha256": "03524dac43e0909226d71a4db8f1f1e0e243b669de7fa063f7acab9a045179f4"
+        },
+        "back": {
+          "source": "/sprites/back_sprites/73.png",
+          "width": 1248,
+          "height": 832,
+          "alphaBounds": [
+            120,
+            16,
+            1177,
+            822
+          ],
+          "bytes": 772265,
+          "sha256": "283de9bd1caabbe8b825113b514e9d5cdd35d10f274fad7657afd4c641cbb079"
+        },
+        "small": {
+          "source": "/sprites/small_sprites/Sprite Small 73.png",
+          "width": 614,
+          "height": 614,
+          "alphaBounds": [
+            0,
+            43,
+            614,
+            614
+          ],
+          "bytes": 517863,
+          "sha256": "5ef59b40e706651dcb1563dda0faf5e24441ea53d98acc3010e426a1a87325f3"
+        }
+      }
+    },
+    {
+      "id": 74,
+      "status": "game-data-present",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/74.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            224,
+            52,
+            1791,
+            1937
+          ],
+          "bytes": 1723250,
+          "sha256": "2df15840fd47059cd54a155d99e23e9ed375399be3de4bdf62cf72b5f4740979"
+        },
+        "back": {
+          "source": "/sprites/back_sprites/74.png",
+          "width": 1024,
+          "height": 1024,
+          "alphaBounds": [
+            71,
+            50,
+            926,
+            932
+          ],
+          "bytes": 595171,
+          "sha256": "d75cfc4062046a9a545bcadd6500ab249198bd8369866ccfea7ddfe6e7f8c063"
+        },
+        "small": {
+          "source": "/sprites/small_sprites/Sprite Small 74.png",
+          "width": 614,
+          "height": 614,
+          "alphaBounds": [
+            18,
+            0,
+            614,
+            604
+          ],
+          "bytes": 391188,
+          "sha256": "567d3cc0b6e356295e8337ed04edca192edc93b2a38b413359de1512f8787310"
+        }
+      }
+    },
+    {
+      "id": 75,
+      "status": "game-data-present",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/75.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            96,
+            104,
+            1944,
+            1950
+          ],
+          "bytes": 2718239,
+          "sha256": "1af6cf7ea66591d937f2c66ecba737b85e1e2cff15c670dc5b0b97a4c50dbaf9"
+        },
+        "back": {
+          "source": "/sprites/back_sprites/75.png",
+          "width": 1024,
+          "height": 1024,
+          "alphaBounds": [
+            88,
+            67,
+            945,
+            924
+          ],
+          "bytes": 838643,
+          "sha256": "a543f99b4525a7dda96fcf3c77c41717b4019b6b4abf7e58cdcaddd18b8bad1c"
+        },
+        "small": {
+          "source": "/sprites/small_sprites/Sprite Small 75.png",
+          "width": 614,
+          "height": 614,
+          "alphaBounds": [
+            0,
+            2,
+            614,
+            614
+          ],
+          "bytes": 499475,
+          "sha256": "6dcca01c42ae9668c5b8b077e3598d4deb380cb09448f7e2537b3806154d4c1d"
+        }
+      }
+    },
+    {
+      "id": 76,
+      "status": "game-data-present",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/76.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            97,
+            28,
+            2007,
+            1992
+          ],
+          "bytes": 3403550,
+          "sha256": "5d7698d690e5881500ff9a5266c2775143a521d478bd65621d394940d16432d7"
+        },
+        "back": {
+          "source": "/sprites/back_sprites/76.png",
+          "width": 1024,
+          "height": 1024,
+          "alphaBounds": [
+            77,
+            131,
+            919,
+            962
+          ],
+          "bytes": 974919,
+          "sha256": "5b82078b7ff40e6a5a4c2704a46dd83b16fd9701192144c4efdaae2268563bc8"
+        },
+        "small": {
+          "source": "/sprites/small_sprites/Sprite Small 76.png",
+          "width": 614,
+          "height": 614,
+          "alphaBounds": [
+            0,
+            0,
+            614,
+            614
+          ],
+          "bytes": 614756,
+          "sha256": "1f834fb7f82dad2b19364e7039bf90962dc45975969fe403813111316e93a0ee"
+        }
+      }
+    },
+    {
+      "id": 77,
+      "status": "game-data-present",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/77.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            357,
+            44,
+            1657,
+            1964
+          ],
+          "bytes": 1566490,
+          "sha256": "c3c8e7aa7ba5dc359d42bdfe99e7b9d25bc03ad405f461852e642615a2ca0c7c"
+        },
+        "back": {
+          "source": "/sprites/back_sprites/77.png",
+          "width": 832,
+          "height": 1248,
+          "alphaBounds": [
+            56,
+            83,
+            791,
+            1078
+          ],
+          "bytes": 618443,
+          "sha256": "9b2f6298c7d64f6151c8e82f893e182533354e81caabdbb03d62f9daa51f14aa"
+        },
+        "small": {
+          "source": "/sprites/small_sprites/Sprite Small 77.png",
+          "width": 614,
+          "height": 614,
+          "alphaBounds": [
+            16,
+            0,
+            610,
+            606
+          ],
+          "bytes": 385088,
+          "sha256": "7580a63ab8bc44c3f05aeb536ceaa228880d1fa861cc5cf06d76dac9cb778b60"
+        }
+      }
+    },
+    {
+      "id": 78,
+      "status": "game-data-present",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/78.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            268,
+            208,
+            1816,
+            1878
+          ],
+          "bytes": 2128917,
+          "sha256": "833956c3ae2155164c860bd0d7cc26687bcf3bf69e225f68b137ece920c5df12"
+        },
+        "back": {
+          "source": "/sprites/back_sprites/78.png",
+          "width": 1024,
+          "height": 1024,
+          "alphaBounds": [
+            117,
+            108,
+            903,
+            908
+          ],
+          "bytes": 678525,
+          "sha256": "fb14be919d92f3dcc945de73aa8a6d736fb56c059bf9ea86859ef870c3622948"
+        },
+        "small": {
+          "source": "/sprites/small_sprites/Sprite Small 78.png",
+          "width": 614,
+          "height": 614,
+          "alphaBounds": [
+            7,
+            3,
+            614,
+            614
+          ],
+          "bytes": 521228,
+          "sha256": "112616fbc10bd29a98cc59b15d0ee6ed8a72b6b04d45e975a9383aafa7166e00"
+        }
+      }
+    },
+    {
+      "id": 79,
+      "status": "game-data-present",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/79.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            296,
+            85,
+            1819,
+            1957
+          ],
+          "bytes": 1458277,
+          "sha256": "920045f971d6459c46d107bf2e247abc4ccf930ea88c17c0c780bdc06111e740"
+        },
+        "back": {
+          "source": "/sprites/back_sprites/79.png",
+          "width": 1024,
+          "height": 1024,
+          "alphaBounds": [
+            104,
+            88,
+            875,
+            952
+          ],
+          "bytes": 584476,
+          "sha256": "9ddc045b0b484d5a6a55acf5c88d60b16cf227dfb34c298fa9582f7025326fc4"
+        },
+        "small": {
+          "source": "/sprites/small_sprites/Sprite Small 79.png",
+          "width": 614,
+          "height": 614,
+          "alphaBounds": [
+            57,
+            0,
+            611,
+            610
+          ],
+          "bytes": 310448,
+          "sha256": "595cf784b3095dda10596bb5b246d0435df5b648c419c7e6b39b9a0869018994"
+        }
+      }
+    },
+    {
+      "id": 80,
+      "status": "game-data-present",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/80.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            125,
+            23,
+            1940,
+            2024
+          ],
+          "bytes": 1925353,
+          "sha256": "d99345ce2c5a73eb07e5c240f315ea74cc9daefc375d4e883c95f59ecbc83813"
+        },
+        "back": {
+          "source": "/sprites/back_sprites/80.png",
+          "width": 1024,
+          "height": 1024,
+          "alphaBounds": [
+            48,
+            113,
+            906,
+            898
+          ],
+          "bytes": 525689,
+          "sha256": "aa4ada7924ca96433865dc3e675dcf64983cc88f72ac603af4db5ce4a2807816"
+        },
+        "small": {
+          "source": "/sprites/small_sprites/Sprite Small 80.png",
+          "width": 614,
+          "height": 614,
+          "alphaBounds": [
+            26,
+            1,
+            614,
+            609
+          ],
+          "bytes": 381597,
+          "sha256": "a05e1dedeb3246d2354972fa4f3ec4a6ce83490aa3f309244ce5693734d1720e"
+        }
+      }
+    },
+    {
+      "id": 81,
+      "status": "game-data-present",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/81.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            244,
+            9,
+            1823,
+            2048
+          ],
+          "bytes": 2364653,
+          "sha256": "3b3f82f32e501f3b2d59730f9f54529e6284bdd6f9655009b81706e0f54cb6fe"
+        },
+        "back": {
+          "source": "/sprites/back_sprites/81.png",
+          "width": 832,
+          "height": 1248,
+          "alphaBounds": [
+            87,
+            198,
+            742,
+            976
+          ],
+          "bytes": 598640,
+          "sha256": "6b0d6d241ce66e72c7db0e6f3e2dc07f876d9a3031a04786428178e95595bbef"
+        },
+        "small": {
+          "source": "/sprites/small_sprites/Sprite Small 81.png",
+          "width": 614,
+          "height": 614,
+          "alphaBounds": [
+            17,
+            0,
+            610,
+            614
+          ],
+          "bytes": 403252,
+          "sha256": "5879ae1d598136f707d80afb2e52aa304896530c64174fda740568a290f44e1b"
+        }
+      }
+    },
+    {
+      "id": 82,
+      "status": "game-data-present",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/82.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            71,
+            53,
+            2027,
+            1825
+          ],
+          "bytes": 2660156,
+          "sha256": "19278fe414ec8cd4ad299db33b8ff3406239d36585c08a65f5aa5d2034fbad2f"
+        },
+        "back": {
+          "source": "/sprites/back_sprites/82.png",
+          "width": 1024,
+          "height": 1024,
+          "alphaBounds": [
+            0,
+            72,
+            981,
+            918
+          ],
+          "bytes": 793570,
+          "sha256": "42be625eb939d764d11687a878c92dda409654ec031cc4e38a8bda103442d56c"
+        },
+        "small": {
+          "source": "/sprites/small_sprites/Sprite Small 82.png",
+          "width": 614,
+          "height": 614,
+          "alphaBounds": [
+            39,
+            0,
+            614,
+            587
+          ],
+          "bytes": 576536,
+          "sha256": "5eec9ebd1ea0f4780748393607e135c0006a755801fb0474795ec7d387beafa9"
+        }
+      }
+    },
+    {
+      "id": 83,
+      "status": "game-data-present",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/83.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            220,
+            49,
+            1866,
+            1957
+          ],
+          "bytes": 2567602,
+          "sha256": "357708b849e05b443cf26be074152a40337b68298c57d18a428d009dc746be78"
+        },
+        "back": {
+          "source": "/sprites/back_sprites/83.png",
+          "width": 1024,
+          "height": 1024,
+          "alphaBounds": [
+            101,
+            77,
+            893,
+            937
+          ],
+          "bytes": 784527,
+          "sha256": "130f6d9845bf60303b8e25fe6fed6bc596c002a29bf50953deaeefb2d04f3a5c"
+        },
+        "small": {
+          "source": "/sprites/small_sprites/Sprite Small 83.png",
+          "width": 614,
+          "height": 614,
+          "alphaBounds": [
+            44,
+            12,
+            614,
+            613
+          ],
+          "bytes": 494179,
+          "sha256": "d9f5457fd45606000dcee2a39f10b72b795d7a463851751e875b781019dda9d3"
+        }
+      }
+    },
+    {
+      "id": 84,
+      "status": "game-data-present",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/84.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            110,
+            104,
+            1925,
+            1929
+          ],
+          "bytes": 2075538,
+          "sha256": "7fc503dedbedc5a6bdbf8ba990bdbba2b8803d03dc22e2d326d53ded9e35c2a1"
+        },
+        "back": {
+          "source": "/sprites/back_sprites/84.png",
+          "width": 1024,
+          "height": 1024,
+          "alphaBounds": [
+            93,
+            92,
+            948,
+            901
+          ],
+          "bytes": 719783,
+          "sha256": "0dc5a6edbdd644da31b066b5a8042d1d0650c86d95ef46fa34f70393010ac143"
+        },
+        "small": {
+          "source": "/sprites/small_sprites/Sprite Small 84.png",
+          "width": 614,
+          "height": 614,
+          "alphaBounds": [
+            0,
+            78,
+            614,
+            614
+          ],
+          "bytes": 418447,
+          "sha256": "934f0b948399d9826b6179d23551a68d3895035fd71af91ffd3842268b2fbebe"
+        }
+      }
+    },
+    {
+      "id": 85,
+      "status": "game-data-present",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/85.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            63,
+            19,
+            1970,
+            2003
+          ],
+          "bytes": 2583645,
+          "sha256": "ed22a09aeb92579f56764ae72002055f11492ed7618438e8467f59da0dd1e2b0"
+        },
+        "back": {
+          "source": "/sprites/back_sprites/85.png",
+          "width": 1024,
+          "height": 1024,
+          "alphaBounds": [
+            70,
+            109,
+            914,
+            988
+          ],
+          "bytes": 758139,
+          "sha256": "658805264c51bb0823b298ca3887d81ddfe7e597bde427c0a806e9e2a6fc7a1d"
+        },
+        "small": {
+          "source": "/sprites/small_sprites/Sprite Small 85.png",
+          "width": 614,
+          "height": 614,
+          "alphaBounds": [
+            0,
+            5,
+            614,
+            599
+          ],
+          "bytes": 487722,
+          "sha256": "2cefd5d3621ba6eba17a5ee33c1d52fd136ab7649e296d81445760c04d8febcd"
+        }
+      }
+    },
+    {
+      "id": 86,
+      "status": "game-data-present",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/86.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            470,
+            22,
+            1722,
+            2006
+          ],
+          "bytes": 1862191,
+          "sha256": "ab17452bcbf39028a34d0049cbf294951b0314493abbfa1a41264ac64dcdd6ae"
+        },
+        "back": {
+          "source": "/sprites/back_sprites/86.png",
+          "width": 1024,
+          "height": 1024,
+          "alphaBounds": [
+            153,
+            16,
+            769,
+            948
+          ],
+          "bytes": 540439,
+          "sha256": "8ba349881b195e527811962891c1505c889761acf8fbedb544081f0ec7628f61"
+        },
+        "small": {
+          "source": "/sprites/small_sprites/Sprite Small 86.png",
+          "width": 614,
+          "height": 614,
+          "alphaBounds": [
+            65,
+            1,
+            597,
+            614
+          ],
+          "bytes": 377401,
+          "sha256": "e2690fec41a220dfb3f24b9f902b073d814b3cff9dd3578b32b5cc5df1812a69"
+        }
+      }
+    },
+    {
+      "id": 87,
+      "status": "game-data-present",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/87.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            132,
+            56,
+            1897,
+            1980
+          ],
+          "bytes": 2404259,
+          "sha256": "683ec71ce3a3f185d4605e477622684756f2d26e57dc300cc3e08315c3442663"
+        },
+        "back": {
+          "source": "/sprites/back_sprites/87.png",
+          "width": 1024,
+          "height": 1024,
+          "alphaBounds": [
+            80,
+            37,
+            964,
+            964
+          ],
+          "bytes": 801502,
+          "sha256": "31deafc47e7cbf696c026795d6d93b2a77b770935111281ff382dfff98aa3019"
+        },
+        "small": {
+          "source": "/sprites/small_sprites/Sprite Small 87.png",
+          "width": 614,
+          "height": 614,
+          "alphaBounds": [
+            3,
+            0,
+            614,
+            614
+          ],
+          "bytes": 476053,
+          "sha256": "de7d7659dde9245cbe2eefc28ebe9e4a73b66a8cf6087034c8481081369b026f"
+        }
+      }
+    },
+    {
+      "id": 88,
+      "status": "game-data-present",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/88.png",
+          "width": 1792,
+          "height": 2400,
+          "alphaBounds": [
+            163,
+            0,
+            1607,
+            2394
+          ],
+          "bytes": 1914007,
+          "sha256": "9bb01dff2a3968bee8c6ca4d91f575c029c1b998c170106530d1833c180b45fd"
+        },
+        "back": {
+          "source": "/sprites/back_sprites/88.png",
+          "width": 832,
+          "height": 1248,
+          "alphaBounds": [
+            7,
+            0,
+            732,
+            1196
+          ],
+          "bytes": 633332,
+          "sha256": "4348e659ef2e0573a3e188808e769e5108a8f7e56b7925720df26c2c11e62508"
+        },
+        "small": {
+          "source": "/sprites/small_sprites/Sprite Small 88.png",
+          "width": 614,
+          "height": 614,
+          "alphaBounds": [
+            102,
+            4,
+            568,
+            614
+          ],
+          "bytes": 266689,
+          "sha256": "f02ac770666dac6a218c8fb323096d2977ba0d086dd627572e6e8c1b69b25851"
+        }
+      }
+    },
+    {
+      "id": 89,
+      "status": "game-data-present",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/89.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            258,
+            0,
+            1835,
+            2048
+          ],
+          "bytes": 1822782,
+          "sha256": "d5661baf2a4b0c0c292e15fc277616b13de75dad1cb3f4875815d74862fc0389"
+        },
+        "back": {
+          "source": "/sprites/back_sprites/89.png",
+          "width": 1024,
+          "height": 1024,
+          "alphaBounds": [
+            101,
+            25,
+            860,
+            1011
+          ],
+          "bytes": 596969,
+          "sha256": "3253926a6566cae1c12482600c29dbfee6a505e1b98a3c1669b9127b5d0f13a1"
+        },
+        "small": {
+          "source": "/sprites/small_sprites/Sprite Small 89.png",
+          "width": 614,
+          "height": 614,
+          "alphaBounds": [
+            27,
+            43,
+            612,
+            614
+          ],
+          "bytes": 340767,
+          "sha256": "6b5f8b0a13b290664ad3b3042a9f133d2fb32cf5b3344e4f172d73b4962e9e51"
+        }
+      }
+    },
+    {
+      "id": 90,
+      "status": "game-data-present",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/90.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            126,
+            21,
+            1736,
+            2022
+          ],
+          "bytes": 1784966,
+          "sha256": "33b77910782470fe2949d6f7344f09f77511cb790a62a656306d72c71b9198a7"
+        },
+        "back": {
+          "source": "/sprites/back_sprites/90.png",
+          "width": 832,
+          "height": 1248,
+          "alphaBounds": [
+            24,
+            101,
+            813,
+            1155
+          ],
+          "bytes": 577904,
+          "sha256": "5029c103810e0761f6b59c8f541025fab0730491570f82fca56a1f77736e7f57"
+        },
+        "small": {
+          "source": "/sprites/small_sprites/Sprite Small 90.png",
+          "width": 614,
+          "height": 614,
+          "alphaBounds": [
+            9,
+            11,
+            586,
+            614
+          ],
+          "bytes": 315909,
+          "sha256": "49753165b73be878e9d4d8b2bf9338fa8dc60bb49172d660270071f125a57eb7"
+        }
+      }
+    },
+    {
+      "id": 91,
+      "status": "game-data-present",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/91.png",
+          "width": 1792,
+          "height": 2400,
+          "alphaBounds": [
+            247,
+            10,
+            1507,
+            2389
+          ],
+          "bytes": 1899811,
+          "sha256": "b64070c4e8236c201f546a8c557878de7006bc2999c50480d2ce060f207eda2f"
+        },
+        "back": {
+          "source": "/sprites/back_sprites/91.png",
+          "width": 832,
+          "height": 1248,
+          "alphaBounds": [
+            87,
+            18,
+            680,
+            1217
+          ],
+          "bytes": 737059,
+          "sha256": "b053146c9b2f7ca677b117333d4d7bfeeed23af16fecb70c7e309fd2280dbefb"
+        },
+        "small": {
+          "source": "/sprites/small_sprites/Sprite Small 91.png",
+          "width": 614,
+          "height": 614,
+          "alphaBounds": [
+            70,
+            16,
+            565,
+            614
+          ],
+          "bytes": 347403,
+          "sha256": "bfa0ae4879f55bc31eb703f4c9f3690f81d57f173b52163c419cde3f579a1a16"
+        }
+      }
+    },
+    {
+      "id": 92,
+      "status": "game-data-present",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/92.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            256,
+            112,
+            1871,
+            1916
+          ],
+          "bytes": 2337846,
+          "sha256": "f45507a52597d9c97126c3f07f4ccb2771f6550ae5802a1978573004622b42bd"
+        },
+        "back": {
+          "source": "/sprites/back_sprites/92.png",
+          "width": 1024,
+          "height": 1024,
+          "alphaBounds": [
+            233,
+            219,
+            796,
+            805
+          ],
+          "bytes": 407129,
+          "sha256": "9906713b3e2b555920c6943fe4227abec967ae958a4e6661e9badc54d6cff391"
+        },
+        "small": {
+          "source": "/sprites/small_sprites/Sprite Small 92.png",
+          "width": 614,
+          "height": 614,
+          "alphaBounds": [
+            53,
+            18,
+            586,
+            606
+          ],
+          "bytes": 358756,
+          "sha256": "478c04d91648850c506467ef0fc60a581014f65282058440f8702e046b6f9029"
+        }
+      }
+    },
+    {
+      "id": 93,
+      "status": "game-data-present",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/93.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            71,
+            60,
+            1964,
+            1958
+          ],
+          "bytes": 2874607,
+          "sha256": "3db2b25e0535a79345bdbed0e2ff31c9f2121d92066d7ac2b35b21c83366c6af"
+        },
+        "back": {
+          "source": "/sprites/back_sprites/93.png",
+          "width": 1024,
+          "height": 1024,
+          "alphaBounds": [
+            95,
+            75,
+            955,
+            963
+          ],
+          "bytes": 757597,
+          "sha256": "b3520159db25dea5c256c579e9be7977ed43ad0b31726fdbdce627495e9cecce"
+        },
+        "small": {
+          "source": "/sprites/small_sprites/Sprite Small 93.png",
+          "width": 614,
+          "height": 614,
+          "alphaBounds": [
+            8,
+            0,
+            614,
+            603
+          ],
+          "bytes": 437586,
+          "sha256": "38a06ab29451f00ddc8e6e66f1073136012d296d583422f63363ec74be16f28d"
+        }
+      }
+    },
+    {
+      "id": 94,
+      "status": "game-data-present",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/94.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            45,
+            78,
+            1997,
+            1934
+          ],
+          "bytes": 2941931,
+          "sha256": "d8d586344acf0f0a88e885a71af7645950f3c2e975e0f52f6488bb19942aa488"
+        },
+        "back": {
+          "source": "/sprites/back_sprites/94.png",
+          "width": 1024,
+          "height": 1024,
+          "alphaBounds": [
+            185,
+            172,
+            892,
+            835
+          ],
+          "bytes": 614334,
+          "sha256": "05783edde3c5bf9558f9d65c80c0d02d7988d031f26d2dad40285eb196a37709"
+        },
+        "small": {
+          "source": "/sprites/small_sprites/Sprite Small 94.png",
+          "width": 614,
+          "height": 614,
+          "alphaBounds": [
+            19,
+            10,
+            614,
+            614
+          ],
+          "bytes": 450507,
+          "sha256": "13123b45310a74101747bd5ae8d770ec5334c1395a4c7f4de30b1e2094f83a9e"
+        }
+      }
+    },
+    {
+      "id": 95,
+      "status": "game-data-present",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/95.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            123,
+            112,
+            1942,
+            1905
+          ],
+          "bytes": 1876226,
+          "sha256": "cd1648b67942f6ffcbac6f8a97a774badf6be2788d70ad7881c6494c508fa96c"
+        },
+        "back": {
+          "source": "/sprites/back_sprites/95.png",
+          "width": 1024,
+          "height": 1024,
+          "alphaBounds": [
+            114,
+            166,
+            904,
+            867
+          ],
+          "bytes": 463761,
+          "sha256": "87fdf2efd082578573edc0a02700c8edb4916b56759bf439d77c6d7e1712b7e4"
+        },
+        "small": {
+          "source": "/sprites/small_sprites/Sprite Small 95.png",
+          "width": 614,
+          "height": 614,
+          "alphaBounds": [
+            30,
+            18,
+            598,
+            608
+          ],
+          "bytes": 324734,
+          "sha256": "6621f69fc05c10a7f40e051124a0dea1464635c7dc3a5a8d3e719f88b7b88604"
+        }
+      }
+    },
+    {
+      "id": 96,
+      "status": "game-data-present",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/96.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            79,
+            52,
+            1993,
+            2008
+          ],
+          "bytes": 2070168,
+          "sha256": "6480cdd1c3f8aa9a2adf88ecb25f9059e6fa4cc3db6319b79f74710a87b16585"
+        },
+        "back": {
+          "source": "/sprites/back_sprites/96.png",
+          "width": 1024,
+          "height": 1024,
+          "alphaBounds": [
+            128,
+            128,
+            898,
+            887
+          ],
+          "bytes": 497199,
+          "sha256": "91d151a53d2da5597951c5a28590c5afff1a915b1e10402b2fe283fbb55656e6"
+        },
+        "small": {
+          "source": "/sprites/small_sprites/Sprite Small 96.png",
+          "width": 614,
+          "height": 614,
+          "alphaBounds": [
+            19,
+            9,
+            603,
+            603
+          ],
+          "bytes": 339817,
+          "sha256": "a18149b9593b3773fe7ee44476e6ffed0bb026322c0a51a4b73cf7093392d1f3"
+        }
+      }
+    },
+    {
+      "id": 97,
+      "status": "game-data-present",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/97.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            64,
+            65,
+            1967,
+            2045
+          ],
+          "bytes": 2513665,
+          "sha256": "a4302f713b156a8654970ac50ead4686dd1454ba02d3155a78ac454e245fa916"
+        },
+        "back": {
+          "source": "/sprites/back_sprites/97.png",
+          "width": 1024,
+          "height": 1024,
+          "alphaBounds": [
+            81,
+            68,
+            936,
+            1007
+          ],
+          "bytes": 717601,
+          "sha256": "2c900cb922400b0b0940593ae965cd2628b6402487b8b32fbe4acd3055921695"
+        },
+        "small": {
+          "source": "/sprites/small_sprites/Sprite Small 97.png",
+          "width": 614,
+          "height": 614,
+          "alphaBounds": [
+            15,
+            1,
+            602,
+            613
+          ],
+          "bytes": 486591,
+          "sha256": "d552d1ad12fd981c1a1f6a97c6009389fea64b53878d8d5a430b85f8a9d3887b"
+        }
+      }
+    },
+    {
+      "id": 98,
+      "status": "game-data-present",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/98.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            255,
+            24,
+            1793,
+            1957
+          ],
+          "bytes": 2679410,
+          "sha256": "6b687fdf5b79988de7cfd2cd1725d826c2ec554f995cabb44b7c002f5c96c631"
+        },
+        "back": {
+          "source": "/sprites/back_sprites/98.png",
+          "width": 832,
+          "height": 1248,
+          "alphaBounds": [
+            61,
+            130,
+            772,
+            1031
+          ],
+          "bytes": 867141,
+          "sha256": "237dfa56828de1ffd4d0d5e923d7dd2d63b45c761ad2b3876206fd63f63ec77a"
+        },
+        "small": {
+          "source": "/sprites/small_sprites/Sprite Small 98.png",
+          "width": 614,
+          "height": 614,
+          "alphaBounds": [
+            3,
+            0,
+            614,
+            614
+          ],
+          "bytes": 574309,
+          "sha256": "23d34276c8e3cf49f10be0b70e4d0e26f7842892e3bebd13fdfb921c3265cd45"
+        }
+      }
+    },
+    {
+      "id": 99,
+      "status": "game-data-present",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/99.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            56,
+            78,
+            1997,
+            1812
+          ],
+          "bytes": 2112922,
+          "sha256": "86c4dbe1fce0e413d2eb9d9739be23c280526ba7a1c7a1142e9628e1828ca599"
+        },
+        "back": {
+          "source": "/sprites/back_sprites/99.png",
+          "width": 1024,
+          "height": 1024,
+          "alphaBounds": [
+            169,
+            212,
+            888,
+            832
+          ],
+          "bytes": 387938,
+          "sha256": "b1a6df6810d83691e2cd57e2790b56442e27a5484e6f557340b767de620a802f"
+        },
+        "small": {
+          "source": "/sprites/small_sprites/Sprite Small 99.png",
+          "width": 614,
+          "height": 614,
+          "alphaBounds": [
+            1,
+            27,
+            614,
+            613
+          ],
+          "bytes": 366866,
+          "sha256": "62f729dc38c2bc224be1aea14791dbc78bf7a6d486b1daf8c266729ee033ed06"
+        }
+      }
+    },
+    {
+      "id": 100,
+      "status": "game-data-present",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/100.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            87,
+            2,
+            1947,
+            2048
+          ],
+          "bytes": 1633276,
+          "sha256": "95a19a2c47e98896a83b6730663fcc38bbe65b35a1dc20169c6a20c0b59bd56c"
+        },
+        "back": {
+          "source": "/sprites/back_sprites/100.png",
+          "width": 1024,
+          "height": 1024,
+          "alphaBounds": [
+            69,
+            132,
+            959,
+            890
+          ],
+          "bytes": 417452,
+          "sha256": "4616926aa97ec4106392eb466bb6d1d007cfb9c3e2b7ea36f3a2bd4354275380"
+        },
+        "small": {
+          "source": "/sprites/small_sprites/Sprite Small 100.png",
+          "width": 614,
+          "height": 614,
+          "alphaBounds": [
+            36,
+            26,
+            609,
+            614
+          ],
+          "bytes": 314755,
+          "sha256": "45ebc701ccb6557fb8ff201532789dcc68c4d7eb9200eef0ae82e10b06920dbc"
+        }
+      }
+    },
+    {
+      "id": 101,
+      "status": "game-data-present",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/101.png",
+          "width": 1792,
+          "height": 2400,
+          "alphaBounds": [
+            13,
+            259,
+            1779,
+            2144
+          ],
+          "bytes": 1733037,
+          "sha256": "37bc8ba9928c62fe49df9f128569148b3b46a7e979bb501f3b9a6ad093a0090d"
+        },
+        "back": {
+          "source": "/sprites/back_sprites/101.png",
+          "width": 1024,
+          "height": 1024,
+          "alphaBounds": [
+            117,
+            146,
+            934,
+            884
+          ],
+          "bytes": 493695,
+          "sha256": "afd76ddf265554242b0b3d9028b9d3d7074caf8a3d3e4df6d4ceb528b1e21145"
+        },
+        "small": {
+          "source": "/sprites/small_sprites/Sprite Small 101.png",
+          "width": 614,
+          "height": 614,
+          "alphaBounds": [
+            47,
+            20,
+            596,
+            611
+          ],
+          "bytes": 342659,
+          "sha256": "0a04e1dcd508f4d9d154594e902e34c94e3a32bef7345938ed028a591df588bb"
+        }
+      }
+    },
+    {
+      "id": 102,
+      "status": "game-data-present",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/102.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            83,
+            41,
+            1958,
+            1993
+          ],
+          "bytes": 1934313,
+          "sha256": "f361ee25840c5803cf25191524c47761a80f5404d5d28d777f70270384c0b727"
+        },
+        "back": {
+          "source": "/sprites/back_sprites/102.png",
+          "width": 1024,
+          "height": 1024,
+          "alphaBounds": [
+            161,
+            197,
+            858,
+            824
+          ],
+          "bytes": 380887,
+          "sha256": "ad4285d01cff8096ea21ec9cacee20ac1c4ff7a1dcb899812c5e6dd246d0ca89"
+        },
+        "small": {
+          "source": "/sprites/small_sprites/Sprite Small 102.png",
+          "width": 614,
+          "height": 614,
+          "alphaBounds": [
+            6,
+            1,
+            614,
+            614
+          ],
+          "bytes": 346284,
+          "sha256": "00c30b2d2cfcc960fe6bd066fe6f9f22194acda33748a6bd0da98feca74dcc19"
+        }
+      }
+    },
+    {
+      "id": 103,
+      "status": "game-data-present",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/103.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            230,
+            105,
+            1904,
+            1952
+          ],
+          "bytes": 2400710,
+          "sha256": "796fe49bec6a31a715663c5985941b4ae5c3085eac30efd84ed2db62f30d6d1e"
+        },
+        "back": {
+          "source": "/sprites/back_sprites/103.png",
+          "width": 1024,
+          "height": 1024,
+          "alphaBounds": [
+            99,
+            146,
+            836,
+            843
+          ],
+          "bytes": 764541,
+          "sha256": "11eb9428b9e606c9fc7bb4e9f9f3fbc805b4e7cd2d005854c2a9845d31e39b4f"
+        },
+        "small": {
+          "source": "/sprites/small_sprites/Sprite Small 103.png",
+          "width": 614,
+          "height": 614,
+          "alphaBounds": [
+            59,
+            65,
+            608,
+            614
+          ],
+          "bytes": 452939,
+          "sha256": "db5b2f390f137d9d10022b299261dc0ec021c5e8ca0a9a5faafa704535d13de8"
+        }
+      }
+    },
+    {
+      "id": 104,
+      "status": "game-data-present",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/104.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            72,
+            113,
+            2000,
+            1942
+          ],
+          "bytes": 2866240,
+          "sha256": "ce3fb4f08a8180a69bf80a21fc430658bd1b32a1743d2d67493d66a186de93a1"
+        },
+        "back": {
+          "source": "/sprites/back_sprites/104.png",
+          "width": 1024,
+          "height": 1024,
+          "alphaBounds": [
+            134,
+            176,
+            884,
+            839
+          ],
+          "bytes": 624869,
+          "sha256": "b3716620994286c11adc88f36435193a843297a0fa55d8b5fc179bffd0b411c4"
+        },
+        "small": {
+          "source": "/sprites/small_sprites/Sprite Small 104.png",
+          "width": 614,
+          "height": 614,
+          "alphaBounds": [
+            0,
+            31,
+            614,
+            614
+          ],
+          "bytes": 403972,
+          "sha256": "ecb298f450f7e17d7f2c784f6581d4df9f436e1c14f3fec1f937a72268056c38"
+        }
+      }
+    },
+    {
+      "id": 105,
+      "status": "game-data-present",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/105.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            290,
+            161,
+            1901,
+            1879
+          ],
+          "bytes": 1265376,
+          "sha256": "473bd3afa8712fd19340ddb5595e012e634cce6add628d8788c6a8e37943b409"
+        },
+        "back": {
+          "source": "/sprites/back_sprites/105.png",
+          "width": 1024,
+          "height": 1024,
+          "alphaBounds": [
+            69,
+            95,
+            940,
+            946
+          ],
+          "bytes": 491696,
+          "sha256": "deaad9a27a20f66c9a74084e999201a89e99af3984eeee572da7667877c014b6"
+        },
+        "small": {
+          "source": "/sprites/small_sprites/Sprite Small 105.png",
+          "width": 614,
+          "height": 614,
+          "alphaBounds": [
+            53,
+            6,
+            614,
+            614
+          ],
+          "bytes": 298138,
+          "sha256": "6dc80af8e3482697fbf0e4e049771fb40f36fa106e8c85114d354e7c1261157c"
+        }
+      }
+    },
+    {
+      "id": 106,
+      "status": "game-data-present",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/106.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            353,
+            82,
+            1821,
+            2009
+          ],
+          "bytes": 1548609,
+          "sha256": "32a212a4a57c251621ff875fd96af7ae11bbd1601d5bc42700f964d4990992e5"
+        },
+        "back": {
+          "source": "/sprites/back_sprites/106.png",
+          "width": 832,
+          "height": 1248,
+          "alphaBounds": [
+            59,
+            219,
+            702,
+            1002
+          ],
+          "bytes": 426927,
+          "sha256": "37857794173a05991f6d7e199304eacb5eecf1959e8bc78ec940b5e821d1f1f0"
+        },
+        "small": {
+          "source": "/sprites/small_sprites/Sprite Small 106.png",
+          "width": 614,
+          "height": 614,
+          "alphaBounds": [
+            0,
+            1,
+            594,
+            614
+          ],
+          "bytes": 320220,
+          "sha256": "aa1f81775555b907711b8a1ec69c248a1046409568b0344a69b3acce7bc56e4f"
+        }
+      }
+    },
+    {
+      "id": 107,
+      "status": "game-data-present",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/107.png",
+          "width": 2400,
+          "height": 1792,
+          "alphaBounds": [
+            75,
+            60,
+            2372,
+            1791
+          ],
+          "bytes": 4065158,
+          "sha256": "952bed62dc5a84981176adf5a30fed1b0de77a9aa0ba9fdd8a4e32d030a1d84c"
+        },
+        "back": {
+          "source": "/sprites/back_sprites/107.png",
+          "width": 1248,
+          "height": 832,
+          "alphaBounds": [
+            315,
+            15,
+            940,
+            813
+          ],
+          "bytes": 719455,
+          "sha256": "31d2b582b66cfd0d8489b7a2996a48c0045c6038d874c786ccd09b3dc5c2e583"
+        },
+        "small": {
+          "source": "/sprites/small_sprites/Sprite Small 107.png",
+          "width": 614,
+          "height": 614,
+          "alphaBounds": [
+            2,
+            5,
+            614,
+            614
+          ],
+          "bytes": 494996,
+          "sha256": "1286dd49da53543149f5125ba7cdb4b2e7507f9291577669fb6ee2060160ba73"
+        }
+      }
+    },
+    {
+      "id": 108,
+      "status": "game-data-present",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/108.png",
+          "width": 2400,
+          "height": 1792,
+          "alphaBounds": [
+            81,
+            3,
+            2400,
+            1792
+          ],
+          "bytes": 4341161,
+          "sha256": "623a63cd3cea64204ef3fd959cd8a8d45c8712a7e8086059bd4436f884bc1892"
+        },
+        "back": {
+          "source": "/sprites/back_sprites/108.png",
+          "width": 1248,
+          "height": 832,
+          "alphaBounds": [
+            259,
+            30,
+            1061,
+            809
+          ],
+          "bytes": 741761,
+          "sha256": "74dd1903e998cd67390b73fbd3ce784209aa0475096b0692d3165d6b687da17b"
+        },
+        "small": {
+          "source": "/sprites/small_sprites/Sprite Small 108.png",
+          "width": 595,
+          "height": 614,
+          "alphaBounds": [
+            0,
+            0,
+            595,
+            614
+          ],
+          "bytes": 470081,
+          "sha256": "0e932f3c774da0c0e3f6427a10e3881563606e79932308ac7d942e11d9869eb7"
+        }
+      }
+    },
+    {
+      "id": 109,
+      "status": "game-data-present",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/109.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            108,
+            72,
+            1950,
+            1851
+          ],
+          "bytes": 2106519,
+          "sha256": "fb510e2f0d0aa626508919ceca099fec4486b20e157119d1a805c6623f970b15"
+        },
+        "back": {
+          "source": "/sprites/back_sprites/109.png",
+          "width": 1024,
+          "height": 1024,
+          "alphaBounds": [
+            72,
+            130,
+            934,
+            904
+          ],
+          "bytes": 581124,
+          "sha256": "1d6f973a37595e2ac048aca6e20bee50550e7cdca58ea1930f56fdcac1fdfc7c"
+        },
+        "small": {
+          "source": "/sprites/small_sprites/Sprite Small 109.png",
+          "width": 615,
+          "height": 613,
+          "alphaBounds": [
+            0,
+            0,
+            615,
+            613
+          ],
+          "bytes": 432485,
+          "sha256": "627f22ab5644550520ce86eff6806fcc7348baf5e7305674ddacce298305cb20"
+        }
+      }
+    },
+    {
+      "id": 110,
+      "status": "game-data-present",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/110.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            133,
+            29,
+            1959,
+            2003
+          ],
+          "bytes": 1552352,
+          "sha256": "032b40631e824bf38aeac1d5279d28297e3ef608d8c085d31eee256f7a891913"
+        },
+        "back": {
+          "source": "/sprites/back_sprites/110.png",
+          "width": 1024,
+          "height": 1024,
+          "alphaBounds": [
+            84,
+            84,
+            880,
+            952
+          ],
+          "bytes": 517819,
+          "sha256": "8e291188da967f4507ab521a426cf7eb1d19d4e24cf6ef09b3ffa7c073470329"
+        },
+        "small": {
+          "source": "/sprites/small_sprites/Sprite Small 110.png",
+          "width": 614,
+          "height": 614,
+          "alphaBounds": [
+            38,
+            75,
+            557,
+            614
+          ],
+          "bytes": 260284,
+          "sha256": "67918c05e79c7df2deaf265483a9c6b92594cdb551d1791dbdd6ffa1ca0441dc"
+        }
+      }
+    },
+    {
+      "id": 111,
+      "status": "pending-game-data",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/111.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            147,
+            123,
+            1776,
+            1926
+          ],
+          "bytes": 2328689,
+          "sha256": "f75b61903c865cd3182e1ab2274ce689511a459288d562f4e200996f24521d84"
+        }
+      }
+    },
+    {
+      "id": 112,
+      "status": "pending-game-data",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/112.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            245,
+            44,
+            1741,
+            2040
+          ],
+          "bytes": 2496959,
+          "sha256": "3b3ed7d8f55c4a3752d9b7d433c16b23a60726ea19e3d7e7ca6514deee0c6370"
+        }
+      }
+    },
+    {
+      "id": 113,
+      "status": "pending-game-data",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/113.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            249,
+            92,
+            1852,
+            2044
+          ],
+          "bytes": 2805208,
+          "sha256": "e7ca1304a5799c0cf3071c9842ea365b8b6fca4e10ad0abffb83abe6527760aa"
+        }
+      }
+    },
+    {
+      "id": 114,
+      "status": "pending-game-data",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/114.png",
+          "width": 1254,
+          "height": 1254,
+          "alphaBounds": [
+            115,
+            148,
+            1090,
+            1143
+          ],
+          "bytes": 1029782,
+          "sha256": "66af3c28a1ec22b1ab2cb0ca9cac0871d05144241ffcb1884951610b50eb81c5"
+        }
+      }
+    },
+    {
+      "id": 115,
+      "status": "pending-game-data",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/115.png",
+          "width": 1254,
+          "height": 1254,
+          "alphaBounds": [
+            30,
+            97,
+            1208,
+            1197
+          ],
+          "bytes": 1128388,
+          "sha256": "314b4af53fbe6fa58e7a077c7cf00032fabcc55ebf8b4548e6b4e9c4847723ca"
+        }
+      }
+    },
+    {
+      "id": 116,
+      "status": "pending-game-data",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/116.png",
+          "width": 1254,
+          "height": 1254,
+          "alphaBounds": [
+            11,
+            3,
+            1247,
+            1232
+          ],
+          "bytes": 1609666,
+          "sha256": "91c0e062ced35efa723186ccddf6acd956b2dd187824348384d920f98f106388"
+        }
+      }
+    },
+    {
+      "id": 117,
+      "status": "pending-game-data",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/117.png",
+          "width": 1254,
+          "height": 1254,
+          "alphaBounds": [
+            35,
+            15,
+            1227,
+            1240
+          ],
+          "bytes": 1485848,
+          "sha256": "b8b5eb2735dc8c06458518427368fbb7fde2057d5f8022a9a2b53253bd1b98a5"
+        }
+      }
+    },
+    {
+      "id": 118,
+      "status": "pending-game-data",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/118.png",
+          "width": 1254,
+          "height": 1254,
+          "alphaBounds": [
+            21,
+            97,
+            1222,
+            1248
+          ],
+          "bytes": 1568431,
+          "sha256": "79ba1d189213f0830e602bb14de9fddff04fe90209f2da6f99a55eb92a16e8ec"
+        }
+      }
+    },
+    {
+      "id": 119,
+      "status": "pending-game-data",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/119.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            23,
+            59,
+            2039,
+            2034
+          ],
+          "bytes": 3028633,
+          "sha256": "18bb959ffbbfa1b979451645906b5246efdb4e7d1f59920028a7a23c8a468df2"
+        }
+      }
+    },
+    {
+      "id": 120,
+      "status": "pending-game-data",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/120.png",
+          "width": 1254,
+          "height": 1254,
+          "alphaBounds": [
+            77,
+            26,
+            1156,
+            1229
+          ],
+          "bytes": 1103581,
+          "sha256": "ec5ff742b78f4191bace2a1306b857fcaae8d5ad6cac715797e9a4903324c9b9"
+        }
+      }
+    },
+    {
+      "id": 121,
+      "status": "pending-game-data",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/121.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            65,
+            52,
+            1928,
+            1992
+          ],
+          "bytes": 3590237,
+          "sha256": "47016de7fe31b3f185ed500f99a0e70877477ccdb6f0d2541b1284023df429da"
+        }
+      }
+    },
+    {
+      "id": 122,
+      "status": "pending-game-data",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/122.png",
+          "width": 2400,
+          "height": 1792,
+          "alphaBounds": [
+            85,
+            46,
+            2319,
+            1755
+          ],
+          "bytes": 2499370,
+          "sha256": "8e38d059c044da5733efb5529809c74bec2a6f1270d625b1543319d998b6d9eb"
+        }
+      }
+    },
+    {
+      "id": 123,
+      "status": "pending-game-data",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/123.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            128,
+            34,
+            1913,
+            2013
+          ],
+          "bytes": 2493722,
+          "sha256": "f8069ef1518c43981eef68d7d937fb8e37504fe07b91c5d23975d3f1266bec2b"
+        }
+      }
+    },
+    {
+      "id": 124,
+      "status": "pending-game-data",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/124.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            0,
+            14,
+            2032,
+            2035
+          ],
+          "bytes": 3401231,
+          "sha256": "ebed299fb056722e91169a6b386871685a4b55be69562e3ef4ce60c54ebed872"
+        }
+      }
+    },
+    {
+      "id": 125,
+      "status": "pending-game-data",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/125.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            287,
+            41,
+            1836,
+            1992
+          ],
+          "bytes": 3096952,
+          "sha256": "4b689db6db3f617d9558aefd7ec400f1e21882e9a028c943c7460d908e4d3b1e"
+        }
+      }
+    },
+    {
+      "id": 126,
+      "status": "pending-game-data",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/126.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            10,
+            0,
+            2031,
+            2048
+          ],
+          "bytes": 4035272,
+          "sha256": "011c1fdb8f48f2058d459df7c2662fb51f9d6f5d8092dc30cd199ddc4dbbb2ad"
+        }
+      }
+    },
+    {
+      "id": 127,
+      "status": "pending-game-data",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/127.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            20,
+            10,
+            2034,
+            2030
+          ],
+          "bytes": 3634910,
+          "sha256": "6a8f9721f9c36b14764c9e791d45d696d2c832f9b4928ae0d401e412819b03fd"
+        }
+      }
+    },
+    {
+      "id": 128,
+      "status": "pending-game-data",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/128.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            81,
+            15,
+            2048,
+            2031
+          ],
+          "bytes": 3193367,
+          "sha256": "a5f1a3d42716f9c1a1017a42c1e92e452405b3e43b6e9b952d09f16ad079f97c"
+        }
+      }
+    },
+    {
+      "id": 129,
+      "status": "pending-game-data",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/129.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            20,
+            15,
+            2040,
+            2020
+          ],
+          "bytes": 3287612,
+          "sha256": "1fef61f53df6183b70f0870c7f382786ad32331411417fc714b12b0e749a2942"
+        }
+      }
+    },
+    {
+      "id": 130,
+      "status": "pending-game-data",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/130.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            33,
+            7,
+            2017,
+            2041
+          ],
+          "bytes": 3180025,
+          "sha256": "84c2577ccfafab3d6f7328a80ff64357eacac9d4cd1e6ca12cd2137f547b5041"
+        }
+      }
+    },
+    {
+      "id": 131,
+      "status": "pending-game-data",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/131.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            8,
+            54,
+            2008,
+            2034
+          ],
+          "bytes": 3595657,
+          "sha256": "5a70828dc55e907a5b65b1bf260424bfb62ce0124989c11738bdab13c3f475d0"
+        }
+      }
+    },
+    {
+      "id": 132,
+      "status": "pending-game-data",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/132.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            20,
+            5,
+            2043,
+            2033
+          ],
+          "bytes": 5001393,
+          "sha256": "026d733f711cba1abd9c4de21bcfd5c0bc63b1585f0c9694e700277964234542"
+        }
+      }
+    },
+    {
+      "id": 133,
+      "status": "pending-game-data",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/133.png",
+          "width": 1122,
+          "height": 1402,
+          "alphaBounds": [
+            27,
+            0,
+            1104,
+            1402
+          ],
+          "bytes": 1826394,
+          "sha256": "13875ccdd1ad8ea6b8fe7aa51c8886e94fefb5a915745c608dbf4bf957336e98"
+        }
+      }
+    },
+    {
+      "id": 134,
+      "status": "pending-game-data",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/134.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            41,
+            20,
+            2022,
+            2048
+          ],
+          "bytes": 3987855,
+          "sha256": "8f78e10796cf009ef2f6caab0226c80c0dbf127b31315dea4627afb112431c8f"
+        }
+      }
+    },
+    {
+      "id": 135,
+      "status": "pending-game-data",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/135.png",
+          "width": 1254,
+          "height": 1254,
+          "alphaBounds": [
+            0,
+            0,
+            1236,
+            1254
+          ],
+          "bytes": 1613339,
+          "sha256": "54796932131553bffaa9caa10f8e4b78723c6338ab8304e1928b8b6b1199f54b"
+        }
+      }
+    },
+    {
+      "id": 136,
+      "status": "pending-game-data",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/136.png",
+          "width": 1254,
+          "height": 1254,
+          "alphaBounds": [
+            0,
+            33,
+            1253,
+            1254
+          ],
+          "bytes": 1597280,
+          "sha256": "14817ee4c993bf2f6c2c24cbcb1a52ef4d45918369e7ccb4d8c390641880867f"
+        }
+      }
+    },
+    {
+      "id": 137,
+      "status": "pending-game-data",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/137.png",
+          "width": 1254,
+          "height": 1254,
+          "alphaBounds": [
+            0,
+            28,
+            1232,
+            1214
+          ],
+          "bytes": 1496097,
+          "sha256": "3cc69c423ec4159fe6ee4abcec318dbb8c7f4373d8d56295dd5e9efb75f273ca"
+        }
+      }
+    },
+    {
+      "id": 138,
+      "status": "pending-game-data",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/138.png",
+          "width": 1254,
+          "height": 1254,
+          "alphaBounds": [
+            19,
+            9,
+            1224,
+            1233
+          ],
+          "bytes": 1847042,
+          "sha256": "eadf753b26e61a8894cdbc89a2fe0350c2b4049bbcf63a05bdeff4f787014a26"
+        }
+      }
+    },
+    {
+      "id": 139,
+      "status": "pending-game-data",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/139.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            204,
+            263,
+            1972,
+            1859
+          ],
+          "bytes": 2349889,
+          "sha256": "fa1586bb9d985865b8da28211d2f609aacd64eabc86e4db90339a1136f8f47f3"
+        }
+      }
+    },
+    {
+      "id": 140,
+      "status": "pending-game-data",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/140.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            1,
+            71,
+            2048,
+            1977
+          ],
+          "bytes": 2797610,
+          "sha256": "459513eb02ad8ed9e500caf98dd4c79ff32254b449852f11d9ed07885c0b57d3"
+        }
+      }
+    },
+    {
+      "id": 141,
+      "status": "pending-game-data",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/141.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            0,
+            185,
+            2048,
+            1933
+          ],
+          "bytes": 2726651,
+          "sha256": "6dca9c480edbe424bebf19309882a7e867f4a00e82a6d01f000f3b7871049897"
+        }
+      }
+    },
+    {
+      "id": 142,
+      "status": "pending-game-data",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/142.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            0,
+            117,
+            2048,
+            1970
+          ],
+          "bytes": 3378237,
+          "sha256": "f7b639ecdc2ef36c56d3f9ca2f9d0f9cb6e241d3d2a9e7fbd5d448629e6be600"
+        }
+      }
+    },
+    {
+      "id": 143,
+      "status": "pending-game-data",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/143.png",
+          "width": 1024,
+          "height": 1024,
+          "alphaBounds": [
+            96,
+            142,
+            932,
+            893
+          ],
+          "bytes": 565183,
+          "sha256": "af4fc6b78d25773f1235785f99f3a8b369d2d0c29efe8a914fd27987112b322a"
+        }
+      }
+    },
+    {
+      "id": 144,
+      "status": "pending-game-data",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/144.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            304,
+            160,
+            2048,
+            2048
+          ],
+          "bytes": 1586300,
+          "sha256": "eb9cfd9c66bb7d5e122f93b03921332bc6cfb5d09d7c1a138ddcbaf683bd8b7e"
+        }
+      }
+    },
+    {
+      "id": 145,
+      "status": "pending-game-data",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/145.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            69,
+            81,
+            1976,
+            2003
+          ],
+          "bytes": 3541435,
+          "sha256": "b3abdc76e8d82faf72ef0f1967e76e14756d3fb038b0efbf4ee773c241bd5d25"
+        }
+      }
+    },
+    {
+      "id": 146,
+      "status": "pending-game-data",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/146.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            86,
+            265,
+            1993,
+            1852
+          ],
+          "bytes": 2842480,
+          "sha256": "92c60cc113a30086ad81f7085b7d5f0bf7fe3d9ef68a905aeb67e8f9f5ff9803"
+        }
+      }
+    },
+    {
+      "id": 147,
+      "status": "pending-game-data",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/147.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            38,
+            54,
+            1997,
+            2019
+          ],
+          "bytes": 2867014,
+          "sha256": "ef8ed31cf22b2bc4793667e54ab091e5c2ca86a651fcc5c68c45ad7e000a0a21"
+        }
+      }
+    },
+    {
+      "id": 148,
+      "status": "pending-game-data",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/148.png",
+          "width": 2400,
+          "height": 1792,
+          "alphaBounds": [
+            61,
+            60,
+            2349,
+            1771
+          ],
+          "bytes": 3247405,
+          "sha256": "22b7923dd458fefbf687dc973a3405d38d2be19b85eb04cca0f8c1bffc297de6"
+        }
+      }
+    },
+    {
+      "id": 149,
+      "status": "pending-game-data",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/149.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            92,
+            84,
+            1925,
+            1917
+          ],
+          "bytes": 3102414,
+          "sha256": "e90481b8d7f407d1276e04d438cb8c282e0613fd5c1f4bd611a3560554d60ba7"
+        }
+      }
+    },
+    {
+      "id": 150,
+      "status": "pending-game-data",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/150.png",
+          "width": 5632,
+          "height": 3072,
+          "alphaBounds": [
+            69,
+            95,
+            5565,
+            3000
+          ],
+          "bytes": 13721677,
+          "sha256": "d899b0c144999a9f68963e0a44268c909e3060bad9aea9bfeb5c2cb88b7742fe"
+        }
+      }
+    },
+    {
+      "id": 151,
+      "status": "pending-game-data",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/151.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            284,
+            459,
+            1428,
+            2031
+          ],
+          "bytes": 1201277,
+          "sha256": "c76d4c35df49bae4d99fab68e6db59eef7e3b4e798917d51eb9a8a6ce2a3c812"
+        }
+      }
+    },
+    {
+      "id": 152,
+      "status": "pending-game-data",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/152.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            51,
+            107,
+            1989,
+            2031
+          ],
+          "bytes": 1722876,
+          "sha256": "90fad5b6accbd48547a9083199790b285cd9e4f9003c62ee9b08afaa99301889"
+        }
+      }
+    },
+    {
+      "id": 153,
+      "status": "pending-game-data",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/153.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            46,
+            29,
+            1997,
+            2010
+          ],
+          "bytes": 2790038,
+          "sha256": "1233560a2e688d22df425ea45fe457c2f7f8acb562356eabff19c016a4ca89c0"
+        }
+      }
+    },
+    {
+      "id": 154,
+      "status": "pending-game-data",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/154.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            114,
+            22,
+            1729,
+            2018
+          ],
+          "bytes": 2323306,
+          "sha256": "8e834205f13327db0ace9e2e371343aada395f00f193e4d2d8b09fec2f70513f"
+        }
+      }
+    },
+    {
+      "id": 155,
+      "status": "pending-game-data",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/155.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            13,
+            31,
+            2004,
+            2024
+          ],
+          "bytes": 3400634,
+          "sha256": "b94feba59f3aaf90a1c68f21f540224e389b92781e848c8416ac1b943e5650d9"
+        }
+      }
+    },
+    {
+      "id": 156,
+      "status": "pending-game-data",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/156.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            47,
+            20,
+            1989,
+            2016
+          ],
+          "bytes": 3235520,
+          "sha256": "ae9d7277f35cffee012a730313aed1db6f01f7527040c172bf8009738b2d28ae"
+        }
+      }
+    },
+    {
+      "id": 157,
+      "status": "pending-game-data",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/157.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            1,
+            8,
+            2048,
+            2048
+          ],
+          "bytes": 3441827,
+          "sha256": "e67583053f965d30197f48832c2e828e20b9dcd6460182a6e4c0ba6a3bab1eb7"
+        }
+      }
+    },
+    {
+      "id": 158,
+      "status": "pending-game-data",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/158.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            4,
+            162,
+            2036,
+            1878
+          ],
+          "bytes": 3129390,
+          "sha256": "a662e5cfd903c939258b7f624dd531c4fc9d797f8ce881646607bf2b24017df4"
+        }
+      }
+    },
+    {
+      "id": 159,
+      "status": "pending-game-data",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/159.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            151,
+            93,
+            1863,
+            2024
+          ],
+          "bytes": 1800112,
+          "sha256": "e4e7f6ec4f18ccedce59fc997f55b00761894b29bf155feee1131f99765e02f7"
+        }
+      }
+    },
+    {
+      "id": 160,
+      "status": "pending-game-data",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/160.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            123,
+            103,
+            1920,
+            1895
+          ],
+          "bytes": 1809541,
+          "sha256": "613d9b6741d0e64baf94c9b9abac0d80b6d37f6f90b6487508bd420da1323a70"
+        }
+      }
+    },
+    {
+      "id": 161,
+      "status": "pending-game-data",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/161.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            208,
+            56,
+            1808,
+            2005
+          ],
+          "bytes": 1825108,
+          "sha256": "be8fe8d28e15e16c1ac409b0cab44df7292d1f83964eb4b82cc4e15060c975cc"
+        }
+      }
+    },
+    {
+      "id": 162,
+      "status": "pending-game-data",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/162.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            16,
+            17,
+            2036,
+            2031
+          ],
+          "bytes": 2939028,
+          "sha256": "be4de98d701031051faa30272fe4531047198beeb4088df4a60b0975d84bb2d0"
+        }
+      }
+    },
+    {
+      "id": 163,
+      "status": "pending-game-data",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/163.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            0,
+            251,
+            2047,
+            1820
+          ],
+          "bytes": 2819119,
+          "sha256": "235539dd6fcf56903de9e6a6148a4582a24d0544b08cdde504bdf910541797ab"
+        }
+      }
+    },
+    {
+      "id": 164,
+      "status": "pending-game-data",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/164.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            44,
+            282,
+            2001,
+            1766
+          ],
+          "bytes": 2343716,
+          "sha256": "8477ca9a82209d4fb97e3c3073f86fae6c0f9cb53b98b36dab91297a6d3c3a62"
+        }
+      }
+    },
+    {
+      "id": 165,
+      "status": "pending-game-data",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/165.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            6,
+            54,
+            2034,
+            1945
+          ],
+          "bytes": 4246125,
+          "sha256": "fb07fa1e83e1823ede38b5035a2bd9a1349c9d632cf1f75db6c370e3a4a9e8d0"
+        }
+      }
+    },
+    {
+      "id": 166,
+      "status": "pending-game-data",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/166.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            92,
+            38,
+            1948,
+            1985
+          ],
+          "bytes": 1692340,
+          "sha256": "32d0b0c47ef1a918d30cb665df4c96d2ab55230d396013fa495de91c9a4bbac0"
+        }
+      }
+    },
+    {
+      "id": 167,
+      "status": "pending-game-data",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/167.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            188,
+            216,
+            2001,
+            1947
+          ],
+          "bytes": 2643618,
+          "sha256": "f90af9f811693850d4e991a72a1b6047c35654be578c84b0dd7662bdd0b75bc0"
+        }
+      }
+    },
+    {
+      "id": 168,
+      "status": "pending-game-data",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/168.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            176,
+            115,
+            1978,
+            1995
+          ],
+          "bytes": 2666205,
+          "sha256": "5f0d9478b13b2669f820b09a89d5b31a3c203d91280b589089e02534fbbaf093"
+        }
+      }
+    },
+    {
+      "id": 169,
+      "status": "pending-game-data",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/169.png",
+          "width": 1254,
+          "height": 1254,
+          "alphaBounds": [
+            194,
+            101,
+            1050,
+            1161
+          ],
+          "bytes": 748218,
+          "sha256": "692045e08875573ed2b124ccce3be6f3729c8a6b3a96107bfcaa232c175afb15"
+        }
+      }
+    },
+    {
+      "id": 170,
+      "status": "pending-game-data",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/170.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            26,
+            62,
+            2048,
+            2022
+          ],
+          "bytes": 2624667,
+          "sha256": "898d63c98de60d71d88303d49ed1446e921fa916410f1e2dad975894be58b783"
+        }
+      }
+    },
+    {
+      "id": 171,
+      "status": "pending-game-data",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/171.png",
+          "width": 1376,
+          "height": 768,
+          "alphaBounds": [
+            320,
+            51,
+            1058,
+            733
+          ],
+          "bytes": 293664,
+          "sha256": "f00aeeb0781f27da3dab9cc8e51f231bfa8880f13a2039ddd1a3124e0be89566"
+        }
+      }
+    },
+    {
+      "id": 172,
+      "status": "pending-game-data",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/172.png",
+          "width": 1376,
+          "height": 768,
+          "alphaBounds": [
+            400,
+            28,
+            1150,
+            746
+          ],
+          "bytes": 440500,
+          "sha256": "7fc7fa234c4f9af898acd947b151f4f04bc424e7a6d0599ceb9fe4fc9cea9535"
+        }
+      }
+    },
+    {
+      "id": 173,
+      "status": "pending-game-data",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/173.png",
+          "width": 1376,
+          "height": 768,
+          "alphaBounds": [
+            269,
+            21,
+            1241,
+            761
+          ],
+          "bytes": 644978,
+          "sha256": "5d5b19bd95ab99c271d7a9e2387372ab452455be78a08cfdc9ab531c0e4d8bd4"
+        }
+      }
+    },
+    {
+      "id": 174,
+      "status": "pending-game-data",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/174.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            145,
+            15,
+            1904,
+            2020
+          ],
+          "bytes": 2356298,
+          "sha256": "f450c8413cab215bb0cb39c79f191cab164bf049c3783288fa0897c77d79626f"
+        }
+      }
+    },
+    {
+      "id": 175,
+      "status": "pending-game-data",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/175.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            266,
+            57,
+            1763,
+            2020
+          ],
+          "bytes": 1723189,
+          "sha256": "3999bd9d5ec3d3b4a7158c22ccb61bf74a77aef3d77efe61ff89104950269174"
+        }
+      }
+    },
+    {
+      "id": 176,
+      "status": "pending-game-data",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/176.png",
+          "width": 1024,
+          "height": 1024,
+          "alphaBounds": [
+            115,
+            27,
+            911,
+            987
+          ],
+          "bytes": 767919,
+          "sha256": "be7b67d515845c334a703bbda07808e91bf3bb8bd49556d3463d7d864527e408"
+        }
+      }
+    },
+    {
+      "id": 177,
+      "status": "pending-game-data",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/177.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            316,
+            89,
+            1948,
+            1978
+          ],
+          "bytes": 1840730,
+          "sha256": "710c5636c08f7549e78f717c5d0810a3a6156f6967097a8c4db286cd4f6654ff"
+        }
+      }
+    },
+    {
+      "id": 178,
+      "status": "pending-game-data",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/178.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            0,
+            77,
+            2048,
+            1972
+          ],
+          "bytes": 2056353,
+          "sha256": "6c052fdb19d071d52c473d5a58a0fe95432f6190b7d47b9a6ec1e8fa5775deaa"
+        }
+      }
+    },
+    {
+      "id": 182,
+      "status": "pending-game-data",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/182.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            205,
+            243,
+            1843,
+            1805
+          ],
+          "bytes": 1530603,
+          "sha256": "f9a0977b47e48b9f5889019a686b8a493aa088fcd59b6e011d4f2fb7e88a2878"
+        }
+      }
+    },
+    {
+      "id": 183,
+      "status": "pending-game-data",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/183.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            44,
+            90,
+            2011,
+            1965
+          ],
+          "bytes": 2610774,
+          "sha256": "9baac39822b204d39eeb51485fcb6e77f08e50ef1c577902d8fe951c2d2ca73d"
+        }
+      }
+    },
+    {
+      "id": 184,
+      "status": "pending-game-data",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/184.png",
+          "width": 4800,
+          "height": 3584,
+          "alphaBounds": [
+            1493,
+            183,
+            3750,
+            2953
+          ],
+          "bytes": 3343017,
+          "sha256": "a1e36aa9d95511512b9d84b0d815fa5ee7f02a2009790b859d4be9f01894a53d"
+        }
+      }
+    },
+    {
+      "id": 185,
+      "status": "pending-game-data",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/185.png",
+          "width": 1024,
+          "height": 1024,
+          "alphaBounds": [
+            85,
+            62,
+            967,
+            972
+          ],
+          "bytes": 878066,
+          "sha256": "28a800bfb2a5624ec66fbbc3028d5a2824754a67fff7ec09b012c9bbcbfe45a7"
+        }
+      }
+    },
+    {
+      "id": 186,
+      "status": "pending-game-data",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/186.png",
+          "width": 1254,
+          "height": 1254,
+          "alphaBounds": [
+            0,
+            0,
+            1254,
+            1254
+          ],
+          "bytes": 1710408,
+          "sha256": "d58aaa14981af3ba8a8ada4ee64b16423bd8d830da3d7426f0abe8dfbb33bdb7"
+        }
+      }
+    },
+    {
+      "id": 187,
+      "status": "pending-game-data",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/187.png",
+          "width": 1377,
+          "height": 1142,
+          "alphaBounds": [
+            0,
+            0,
+            1377,
+            1142
+          ],
+          "bytes": 1949633,
+          "sha256": "ae6169d4df99ed66b6e464b1d8557d0b7dd20b7f909ec6436582f0f7a2280c3f"
+        }
+      }
+    },
+    {
+      "id": 191,
+      "status": "pending-game-data",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/191.png",
+          "width": 1254,
+          "height": 1254,
+          "alphaBounds": [
+            95,
+            239,
+            1170,
+            1058
+          ],
+          "bytes": 774312,
+          "sha256": "5f126d48af561d28195eb58e6c945e66016adad4bd015d437191253bfa34a6d7"
+        }
+      }
+    },
+    {
+      "id": 192,
+      "status": "pending-game-data",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/192.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            69,
+            238,
+            1902,
+            1798
+          ],
+          "bytes": 2265764,
+          "sha256": "734366ca361fc96d72c23994aeca5447ad2321bed13de0f581a5dc0e45bfa1f5"
+        }
+      }
+    },
+    {
+      "id": 193,
+      "status": "pending-game-data",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/193.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            485,
+            267,
+            1795,
+            1802
+          ],
+          "bytes": 1114408,
+          "sha256": "9ef2c713b382582d5e8f13a83434335f9f4aaa40882b0c23deddf2877c43c1b5"
+        }
+      }
+    },
+    {
+      "id": 194,
+      "status": "pending-game-data",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/194.png",
+          "width": 1376,
+          "height": 768,
+          "alphaBounds": [
+            199,
+            54,
+            1298,
+            752
+          ],
+          "bytes": 701410,
+          "sha256": "b747c558fd12f25d2ac087d73456cdb5c455f19dcd7c0fdf8c5808852dbce724"
+        }
+      }
+    },
+    {
+      "id": 195,
+      "status": "pending-game-data",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/195.png",
+          "width": 1536,
+          "height": 1024,
+          "alphaBounds": [
+            82,
+            10,
+            1498,
+            1015
+          ],
+          "bytes": 1321791,
+          "sha256": "2159f7c80c384e6c0c0c71249b72962429180d3c3e224ee9e97799977992b3b9"
+        }
+      }
+    },
+    {
+      "id": 196,
+      "status": "pending-game-data",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/196.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            320,
+            290,
+            1725,
+            1740
+          ],
+          "bytes": 1582028,
+          "sha256": "b1a2512500004231b993bc38e31befb4b1e9bf4c044c7421c4fe2a5dd3eb897a"
+        }
+      }
+    },
+    {
+      "id": 197,
+      "status": "pending-game-data",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/197.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            172,
+            55,
+            1934,
+            1974
+          ],
+          "bytes": 2310454,
+          "sha256": "c418c49a7e1a653185b6ceb51bbebaec5772ba406686bbb51368e0b38769be27"
+        }
+      }
+    },
+    {
+      "id": 198,
+      "status": "pending-game-data",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/198.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            89,
+            106,
+            1963,
+            2010
+          ],
+          "bytes": 3373727,
+          "sha256": "f06621aaf9d42f4e0dede017c50e12a2a13754653379b53cd0b58ff62993f566"
+        }
+      }
+    },
+    {
+      "id": 199,
+      "status": "pending-game-data",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/199.png",
+          "width": 1376,
+          "height": 768,
+          "alphaBounds": [
+            371,
+            66,
+            1025,
+            686
+          ],
+          "bytes": 366167,
+          "sha256": "992ae87c1b81c110e8fe6047e27523962097b79ea31d5920e870f5998ef818f3"
+        }
+      }
+    },
+    {
+      "id": 200,
+      "status": "pending-game-data",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/200.png",
+          "width": 1536,
+          "height": 1024,
+          "alphaBounds": [
+            118,
+            5,
+            1437,
+            998
+          ],
+          "bytes": 998205,
+          "sha256": "64af0a103784f3e259f7e87783bdc7c051e2690dca47e8518da36cd3a4a38383"
+        }
+      }
+    },
+    {
+      "id": 201,
+      "status": "pending-game-data",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/201.png",
+          "width": 1254,
+          "height": 1254,
+          "alphaBounds": [
+            211,
+            28,
+            1093,
+            1218
+          ],
+          "bytes": 878613,
+          "sha256": "b42ced4b48ea0a866808b2b9aebb24e94aa22385b478ba15c78565305a2bfaec"
+        }
+      }
+    },
+    {
+      "id": 202,
+      "status": "pending-game-data",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/202.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            418,
+            101,
+            1699,
+            2007
+          ],
+          "bytes": 2065205,
+          "sha256": "6077891facf0baa57c2adb54ce94a951a65989e94829b15de3b3bc82c06eb84e"
+        }
+      }
+    },
+    {
+      "id": 203,
+      "status": "pending-game-data",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/203.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            29,
+            95,
+            2034,
+            1954
+          ],
+          "bytes": 3478377,
+          "sha256": "1a419e04ae4897691224004f875e01908ea6438c00170170cad06e9068d8ea10"
+        }
+      }
+    },
+    {
+      "id": 204,
+      "status": "pending-game-data",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/204.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            4,
+            289,
+            2044,
+            1774
+          ],
+          "bytes": 2079647,
+          "sha256": "141f3d42467f501323c8ad96334fe7d20632f3cd3f0ce05ce891ed186706bfb1"
+        }
+      }
+    },
+    {
+      "id": 205,
+      "status": "pending-game-data",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/205.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            477,
+            6,
+            1834,
+            2030
+          ],
+          "bytes": 1937841,
+          "sha256": "d3eec9a53a943ff2cae02423521d19d3e6435a11f1b36910ddcf570a1505fb7c"
+        }
+      }
+    },
+    {
+      "id": 206,
+      "status": "pending-game-data",
+      "sprites": {
+        "front": {
+          "source": "/sprites/front_sprites/206.png",
+          "width": 2048,
+          "height": 2048,
+          "alphaBounds": [
+            78,
+            10,
+            2030,
+            2030
+          ],
+          "bytes": 3266332,
+          "sha256": "9660cb8a4d152014799e37f852c0bb0b99bd6d9f73b97570fc9bb186887d8cfb"
+        }
+      }
+    }
+  ]
+}

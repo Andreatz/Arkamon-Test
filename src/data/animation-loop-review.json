@@ -1,0 +1,100 @@
+[
+  {
+    "speciesId": 15,
+    "source": "/sprites/arkamon/15/front/idle.metadata.json",
+    "ratio": 4.552,
+    "status": "pending",
+    "sourceFramesPreserved": true
+  },
+  {
+    "speciesId": 16,
+    "source": "/sprites/arkamon/16/front/idle.metadata.json",
+    "ratio": 3.979,
+    "status": "pending",
+    "sourceFramesPreserved": true
+  },
+  {
+    "speciesId": 17,
+    "source": "/sprites/arkamon/17/front/idle.metadata.json",
+    "ratio": 5.37,
+    "status": "pending",
+    "sourceFramesPreserved": true
+  },
+  {
+    "speciesId": 18,
+    "source": "/sprites/arkamon/18/front/idle.metadata.json",
+    "ratio": 3.451,
+    "status": "pending",
+    "sourceFramesPreserved": true
+  },
+  {
+    "speciesId": 31,
+    "source": "/sprites/arkamon/31/front/idle.metadata.json",
+    "ratio": 3.112,
+    "status": "pending",
+    "sourceFramesPreserved": true
+  },
+  {
+    "speciesId": 50,
+    "source": "/sprites/arkamon/50/front/idle.metadata.json",
+    "ratio": 3.395,
+    "status": "pending",
+    "sourceFramesPreserved": true
+  },
+  {
+    "speciesId": 59,
+    "source": "/sprites/arkamon/59/front/idle.metadata.json",
+    "ratio": 3.129,
+    "status": "pending",
+    "sourceFramesPreserved": true
+  },
+  {
+    "speciesId": 74,
+    "source": "/sprites/arkamon/74/front/idle.metadata.json",
+    "ratio": 4.228,
+    "status": "pending",
+    "sourceFramesPreserved": true
+  },
+  {
+    "speciesId": 93,
+    "source": "/sprites/arkamon/93/front/idle.metadata.json",
+    "ratio": 4.922,
+    "status": "pending",
+    "sourceFramesPreserved": true
+  },
+  {
+    "speciesId": 94,
+    "source": "/sprites/arkamon/94/front/idle.metadata.json",
+    "ratio": 3.001,
+    "status": "pending",
+    "sourceFramesPreserved": true
+  },
+  {
+    "speciesId": 124,
+    "source": "/sprites/arkamon/124/front/idle.metadata.json",
+    "ratio": 3.369,
+    "status": "pending",
+    "sourceFramesPreserved": true
+  },
+  {
+    "speciesId": 125,
+    "source": "/sprites/arkamon/125/front/idle.metadata.json",
+    "ratio": 4.243,
+    "status": "pending",
+    "sourceFramesPreserved": true
+  },
+  {
+    "speciesId": 134,
+    "source": "/sprites/arkamon/134/front/idle.metadata.json",
+    "ratio": 3.067,
+    "status": "pending",
+    "sourceFramesPreserved": true
+  },
+  {
+    "speciesId": 137,
+    "source": "/sprites/arkamon/137/front/idle.metadata.json",
+    "ratio": 3.345,
+    "status": "pending",
+    "sourceFramesPreserved": true
+  }
+]

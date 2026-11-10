@@ -1,0 +1,137 @@
+.darklaw-lab {
+  --darklaw-accent: #b7f776;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  color: #edf2e8;
+  background: radial-gradient(ellipse at 80% 0%, #182827 0%, transparent 45%), #0b1214;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+.darklaw-lab *,
+.darklaw-lab *::before,
+.darklaw-lab *::after { box-sizing: border-box; }
+
+.darklaw-lab__content { width: min(1180px, 100%); margin: 0 auto; padding: 44px 32px 28px; }
+.darklaw-lab__header { display: flex; align-items: flex-start; justify-content: space-between; gap: 28px; margin-bottom: 30px; }
+.darklaw-lab__eyebrow, .darklaw-lab__card-kicker { margin: 0 0 10px; font-size: 11px; font-weight: 750; letter-spacing: .14em; text-transform: uppercase; }
+.darklaw-lab__eyebrow { color: var(--darklaw-accent); }
+.darklaw-lab h1 { margin: 0; font-size: clamp(28px, 3.8vw, 43px); font-weight: 800; line-height: 1.13; letter-spacing: -.035em; }
+.darklaw-lab h1 > span { color: var(--darklaw-accent); }
+.darklaw-lab__intro { max-width: 590px; margin: 14px 0 0; color: #a4b1ad; font-size: 14px; line-height: 1.7; }
+.darklaw-lab__pending { margin: 0 0 20px; padding: 16px 20px; border: 1px solid #806a42; border-radius: 10px; background: #30291b; color: #f2dfb9; font-size: 13px; line-height: 1.65; }
+.darklaw-lab__pending p { margin: 5px 0 0; color: #d4c9ad; }
+.darklaw-lab__asset-portrait { display: block; width: 100%; height: 100%; overflow: visible; transform: scale(var(--darklaw-preview-scale)); transform-origin: center; }
+.darklaw-lab__asset-image { position: relative; width: 100%; height: 100%; }
+.darklaw-lab__asset-message { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; margin: 0; color: #e2e9dd; text-align: center; font-size: 12px; line-height: 1.6; }
+.darklaw-lab__asset-message p { margin: 0; padding: 8px; border-radius: 6px; background: #14201de8; }
+.darklaw-lab__asset-message button { padding: 8px 12px; border: 1px solid var(--darklaw-accent); border-radius: 6px; color: #1a2b0d; background: var(--darklaw-accent); font: inherit; cursor: pointer; }
+.darklaw-lab__back { flex-shrink: 0; display: flex; align-items: center; gap: 18px; margin-top: 5px; padding: 11px 14px; border: 1px solid #3e504d; border-radius: 8px; color: #d5dfd9; font-size: 12px; text-decoration: none; }
+.darklaw-lab__back:hover { background: #21312f; }
+.darklaw-lab__back span { color: var(--darklaw-accent); font-size: 17px; }
+
+.darklaw-lab__settings { display: flex; flex-wrap: wrap; align-items: flex-end; gap: 20px; padding: 18px 20px; margin-bottom: 20px; border: 1px solid #263934; border-radius: 12px; background: #12201ee6; }
+.darklaw-lab__settings label { display: grid; gap: 8px; min-width: 142px; }
+.darklaw-lab__settings label > span, .darklaw-lab__side legend { color: #a9b9b1; font-size: 11px; font-weight: 650; }
+.darklaw-lab__settings select { min-height: 40px; padding: 8px 32px 8px 12px; border: 1px solid #3d5048; border-radius: 6px; color: #e8f0e6; background: #182723; font: inherit; font-size: 13px; }
+.darklaw-lab__side { padding: 0; margin: 0; border: 0; }
+.darklaw-lab__side legend { padding: 0; margin-bottom: 8px; }
+.darklaw-lab__segmented { display: flex; padding: 3px; border: 1px solid #3d5048; border-radius: 7px; background: #0e1917; }
+.darklaw-lab__segmented button { min-height: 32px; padding: 6px 14px; border: 0; border-radius: 4px; background: transparent; color: #a9b9b1; font: inherit; font-size: 12px; cursor: pointer; }
+.darklaw-lab__segmented button[aria-pressed='true'] { background: #344a3a; color: #d8f7c2; }
+.darklaw-lab__settings-note { flex: 1 1 180px; align-self: center; margin: 18px 0 0; text-align: right; color: #a4b6a7; font-size: 11px; line-height: 1.7; }
+
+.darklaw-lab__comparison { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+.darklaw-lab__card { container-type: inline-size; min-width: 0; overflow: hidden; border: 1px solid #2e413a; border-radius: 14px; background: #14201d; }
+.darklaw-lab__card--animated { border-color: #78984f; }
+.darklaw-lab__card-heading { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 20px; }
+.darklaw-lab__card-kicker { margin-bottom: 6px; font-size: 9px; color: #97aa9e; letter-spacing: .12em; }
+.darklaw-lab h2 { margin: 0; font-size: 16px; font-weight: 750; letter-spacing: -.015em; }
+.darklaw-lab__badge { flex-shrink: 0; padding: 6px 9px; border: 1px solid #41534b; border-radius: 30px; color: #bcc9bf; font-size: 10px; font-weight: 600; }
+.darklaw-lab__badge--active { border-color: #5f7b42; color: #d0f4ad; background: #2a3c26; }
+.darklaw-lab__stage {
+  --darklaw-slot-size: 230px;
+  --darklaw-stage-base-height: 400px;
+  --darklaw-effective-slot-size: min(var(--darklaw-slot-size), calc((100cqw - 24px) / var(--darklaw-canvas-width-factor) / var(--darklaw-preview-scale)));
+  --darklaw-stage-height: max(var(--darklaw-stage-base-height), calc(var(--darklaw-effective-slot-size) * (var(--darklaw-preview-scale) * var(--darklaw-canvas-height-factor) + var(--darklaw-scale-origin-offset)) + 40px));
+  container-type: inline-size;
+  position: relative;
+  isolation: isolate;
+  display: grid;
+  place-items: center;
+  min-height: var(--darklaw-stage-height);
+  height: var(--darklaw-stage-height);
+  overflow: hidden;
+  background-position: center;
+  background-size: cover;
+}
+.darklaw-lab__stage--battle::before { content: ''; position: absolute; z-index: -1; inset: 0; background: linear-gradient(#0b1a2030, #0b1a2000 42%, #0b1a2040); }
+.darklaw-lab__stage--checker { background-color: #d4d9cd; background-image: linear-gradient(45deg, #bdc8b7 25%, transparent 25%), linear-gradient(-45deg, #bdc8b7 25%, transparent 25%), linear-gradient(45deg, transparent 75%, #bdc8b7 75%), linear-gradient(-45deg, transparent 75%, #bdc8b7 75%); background-size: 32px 32px; background-position: 0 0, 0 16px, 16px -16px, -16px 0; }
+.darklaw-lab__stage--light { background: #ecf0e5; }
+.darklaw-lab__stage--dark { background: #111827; }
+.darklaw-lab__stage-caption { position: absolute; top: 14px; left: 14px; z-index: 2; padding: 6px 9px; border: 1px solid #cbe2c52b; border-radius: 5px; background: #14201ddb; color: #e4eee2; font-size: 10px; font-weight: 600; letter-spacing: .02em; }
+.darklaw-lab__stage-caption > span { padding: 0 5px; color: #9cae94; }
+.darklaw-lab__sprite-slot { position: relative; z-index: 1; width: var(--darklaw-effective-slot-size); aspect-ratio: 1; margin-top: 20px; }
+.darklaw-lab__sprite { width: 100%; height: 100%; }
+.darklaw-lab__comparison[data-preview-scale='1.5'] { grid-template-columns: 1fr; }
+.darklaw-lab__card-note { min-height: 54px; margin: 0; padding: 14px 20px; color: #a0b1a4; font-size: 11px; line-height: 1.65; }
+
+.darklaw-lab__actions { margin-top: 20px; padding: 22px; border: 1px solid #2e413a; border-radius: 12px; background: #14201d; }
+.darklaw-lab__actions-heading { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 18px; }
+.darklaw-lab__play { display: flex; align-items: center; gap: 10px; min-height: 40px; padding: 10px 15px; border: 1px solid var(--darklaw-accent); border-radius: 7px; color: #1a2b0d; background: var(--darklaw-accent); font: inherit; font-size: 12px; font-weight: 750; cursor: pointer; }
+.darklaw-lab__play:hover { background: #c7fb95; }
+.darklaw-lab__play span { font-size: 10px; }
+.darklaw-lab__action-buttons { display: flex; flex-wrap: wrap; gap: 8px; }
+.darklaw-lab__action-buttons button { flex: 1 1 auto; min-height: 42px; padding: 10px 16px; border: 1px solid #41564a; border-radius: 7px; color: #c8d6c9; background: #192a22; font: inherit; font-size: 12px; font-weight: 600; cursor: pointer; }
+.darklaw-lab__action-buttons button:hover { background: #2b4031; }
+.darklaw-lab__action-buttons button[aria-pressed='true'] { border-color: #9bc264; background: #2e4325; color: #d7f6b9; }
+.darklaw-lab__status { min-height: 18px; margin: 14px 0 0; color: #acbda9; font-size: 11px; line-height: 1.65; }
+.darklaw-lab__footer { display: flex; align-items: center; gap: 12px; margin-top: 20px; color: #90a496; font-size: 10px; line-height: 1.6; }
+.darklaw-lab__footer p { margin: 0; }
+.darklaw-lab__prototype { flex-shrink: 0; padding: 4px 7px; border: 1px solid #465a41; border-radius: 4px; color: #b2c9a2; font-size: 9px; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; }
+.darklaw-lab button:disabled { opacity: .45; cursor: default; }
+.darklaw-lab :is(button, a, select):focus-visible { outline: 3px solid #d0fc9c; outline-offset: 4px; }
+
+@media (max-width: 900px) {
+  .darklaw-lab__content { padding: 28px 22px 24px; }
+  .darklaw-lab__header { gap: 18px; }
+  .darklaw-lab__settings-note { flex-basis: 150px; }
+  .darklaw-lab__comparison { grid-template-columns: 1fr; }
+  .darklaw-lab__stage { --darklaw-slot-size: 200px; }
+  .darklaw-lab__card-heading { padding: 17px; }
+  .darklaw-lab__card-heading h2 { font-size: 15px; }
+  .darklaw-lab__card-note { padding: 13px 17px; }
+}
+
+@media (max-width: 650px) {
+  .darklaw-lab__content { padding: 24px 16px; }
+  .darklaw-lab__header { flex-wrap: wrap; }
+  .darklaw-lab__back { margin-top: 0; }
+  .darklaw-lab__settings { gap: 16px; padding: 16px; }
+  .darklaw-lab__settings label { flex: 1; min-width: 120px; }
+  .darklaw-lab__settings-note { flex: 1; margin: 18px 0 0; text-align: left; }
+  .darklaw-lab__comparison { grid-template-columns: 1fr; gap: 16px; }
+  .darklaw-lab__stage { --darklaw-slot-size: 198px; --darklaw-stage-base-height: 340px; }
+  .darklaw-lab__actions { padding: 18px; }
+  .darklaw-lab__actions-heading { flex-wrap: wrap; }
+  .darklaw-lab__action-buttons button { flex-basis: calc(50% - 8px); }
+  .darklaw-lab__footer { align-items: flex-start; }
+}
+
+.darklaw-lab__attack-preview { margin-top: 20px; padding: 22px; border: 1px solid #2e413a; border-radius: 12px; background: #14201d; }
+.darklaw-lab__attack-settings { display: flex; flex-wrap: wrap; align-items: flex-end; gap: 14px; margin-bottom: 18px; }
+.darklaw-lab__attack-settings label { display: grid; gap: 8px; min-width: 160px; }
+.darklaw-lab__attack-settings label > span { color: #a9b9b1; font-size: 11px; font-weight: 650; }
+.darklaw-lab__attack-settings select { width: 100%; min-height: 40px; padding: 8px 32px 8px 12px; border: 1px solid #3d5048; border-radius: 6px; color: #e8f0e6; background: #182723; font: inherit; font-size: 13px; }
+.darklaw-lab__attack-stage { position: relative; isolation: isolate; width: 100%; aspect-ratio: 16 / 9; min-height: 320px; overflow: hidden; border: 1px solid #41534b; border-radius: 8px; background-color: #19282a; background-position: center; background-size: cover; }
+.darklaw-lab__attack-sprite { position: absolute; z-index: 35; }
+.darklaw-lab__cancel { min-height: 40px; padding: 10px 15px; border: 1px solid #41564a; border-radius: 7px; color: #c8d6c9; background: #192a22; font: inherit; font-size: 12px; cursor: pointer; }
+@media (max-width: 650px) {
+  .darklaw-lab__attack-preview { padding: 18px; }
+  .darklaw-lab__attack-settings label { flex: 1 1 140px; min-width: 0; }
+  .darklaw-lab__attack-settings .darklaw-lab__play { width: 100%; justify-content: center; }
+  .darklaw-lab__attack-stage { min-height: 280px; }
+}
+
+.darklaw-lab__review { border:1px solid #738eab; border-radius:12px; background:#142034; padding:24px; display:grid; gap:16px; color:#dfebf7; }
+.darklaw-lab__review h2 { font-size:28px; }.darklaw-lab__review h3 { font-size:22px; }.darklaw-lab__review p { line-height:1.5; }.darklaw-lab__review label { display:grid; gap:8px; }.darklaw-lab__review select { padding:12px; background:#0c1727; border:1px solid #9dbbda; }

@@ -1,0 +1,178 @@
+/* RPG presentation contract. This stylesheet owns desktop composition; older
+   compatibility rules stay in player-ui.css for embedded and historical views. */
+.pu-shell{--pu-ink:#f5f1e9;--pu-muted:#c1ccd9;--pu-line:#6d8194;--pu-selected:#fff2cb;color:var(--pu-ink);font-size:22px;line-height:1.3;background:radial-gradient(ellipse at 47% 35%,#223649e8,#0b1424f5 80%),var(--pu-background) center/cover}
+.pu-shell *{box-sizing:border-box}.pu-shell h1,.pu-shell h2,.pu-shell h3,.pu-shell strong{font-weight:400}.pu-shell h1{font-size:38px;letter-spacing:.02em}.pu-shell h2{font-size:32px}.pu-shell h3{font-size:24px}.pu-shell p{line-height:1.35}.pu-shell small,.pu-shell label{font-size:18px}.pu-shell .pu-kicker{font-size:17px;letter-spacing:.08em;color:#c3d4df}.pu-shell input,.pu-shell select{min-height:44px;font-size:20px;border-radius:5px;padding:6px 12px}
+.pu-shell .pu-panel{background:linear-gradient(145deg,#243347cc,#121e30e8);border:1px solid #8b99aa55;border-radius:9px;padding:22px 26px}.pu-shell .pu-panel>.rpg-frame-window{opacity:.78}
+.pu-shell .pu-button{font-size:22px;min-height:52px;padding:10px 24px;font-weight:400;line-height:1.1}.pu-shell button:disabled{opacity:.58}.pu-shell button:focus-visible{outline:3px solid #fff1c9;outline-offset:3px}
+.pu-shell .pu-button>.rpg-frame-command,.pu-shell .pu-button>.rpg-frame-selected{inset:-5px -9px;border-width:15px 32px}
+.pu-shell .pu-health progress{height:14px}.pu-shell .pu-health>span{font-size:22px;line-height:1.2;letter-spacing:.03em}.pu-shell .pu-type{font-size:20px;background:#1a2b3c;border-color:#87959e80;padding:3px 8px;line-height:1.1}.pu-shell .pu-type .pu-kit-icon{width:24px;height:24px}.pu-shell .pu-status-pill{font-size:18px;line-height:1.2;padding:3px 8px}
+.pu-shell .pu-note,.pu-shell .pu-readonly,.pu-shell .pu-empty-copy,.pu-shell .pu-muted{font-size:18px;line-height:1.35}.pu-shell .pu-readonly{color:#d4e2eb!important;background:#162e40!important;border-color:#648ba2!important}
+.pu-shell .pu-hero-column,.pu-shell .pu-dex-hero{background:radial-gradient(ellipse at 50% 40%,#477a9340,#13233111 68%);border:0}.pu-shell .pu-hero-column::before,.pu-shell .pu-dex-hero::before{display:none}.pu-shell .pu-creature-portrait{overflow:visible}.pu-shell .pu-creature-circle{opacity:.65}.pu-shell .is-large .pu-creature-circle{opacity:.85}.pu-shell .is-large .pu-creature-art{inset:11%;width:78%;height:78%}.pu-shell .pu-hero-caption h2{font-size:36px;margin:8px 0 12px;line-height:1.08}.pu-shell .pu-species-number{font-size:18px;top:8px;left:12px}.pu-shell .pu-hero{overflow:visible}.pu-shell .pu-move{padding:16px 0;border-bottom:1px solid #8294a44d;background:none}.pu-shell .pu-move strong{font-size:26px}.pu-shell .pu-dice{font-size:24px;white-space:nowrap}.pu-shell .pu-move-tactical{font-size:19px}.pu-shell .pu-actions{gap:12px;padding-top:16px;border-color:#8294a44d}
+.pu-shell .pu-menu-layout{grid-template-columns:minmax(400px,.8fr) minmax(0,1.4fr);gap:32px}.pu-shell .pu-menu-grid{grid-template-columns:1fr;grid-template-rows:repeat(6,minmax(0,1fr));gap:8px}.pu-shell .pu-menu-tile{min-height:0;display:flex;align-items:center;gap:22px;padding:10px 26px;border:1px solid #7890a14d;background:linear-gradient(110deg,#1e3146,#152538);border-radius:8px}.pu-shell .pu-menu-tile>.rpg-frame{display:none}.pu-shell .pu-menu-tile:hover,.pu-shell .pu-menu-tile:focus-visible{background:linear-gradient(110deg,#255675,#163047)}.pu-shell .pu-menu-tile .pu-kit-icon{height:44px;width:44px;margin:0}.pu-shell .pu-menu-tile h2{font-size:28px;margin:0 0 6px}.pu-shell .pu-menu-tile p{font-size:19px;margin:0}.pu-shell .pu-tile-number{font-size:17px;top:12px;right:16px;color:#aac1cf}.pu-shell .pu-journey{padding:26px 32px}.pu-shell .pu-journey h2{font-size:38px}.pu-shell .pu-journey-scene{height:120px;margin:12px 0}.pu-shell .pu-journey-scene strong{font-size:30px}.pu-shell .pu-summary dt{font-size:20px}.pu-shell .pu-summary dd{font-size:28px;margin:4px 0}.pu-shell .pu-gym-badges{gap:14px;margin:10px 0}.pu-shell .pu-gym-badges span{width:56px;height:56px;border:0;background:transparent}.pu-shell .pu-gym-badges img{width:100%;height:100%;object-fit:contain}.pu-shell .pu-gym-badges span:not(.earned) img{filter:grayscale(1);opacity:.28}.pu-shell .pu-mini-team .pu-creature-portrait{width:68px;height:68px}.pu-shell .pu-trainer-progress strong{font-size:24px}.pu-shell .pu-trainer-progress p{font-size:20px}
+.pu-shell .pu-store-layout{grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);gap:28px}.pu-shell .pu-store-catalog h2{font-size:28px;margin:0 0 12px}.pu-shell .pu-shop-list{display:grid;grid-template-rows:repeat(7,minmax(0,1fr));gap:8px;flex:1;margin:0}.pu-shell .pu-shop-row-compact{margin:0;height:auto;min-height:58px;position:relative}.pu-shell .pu-shop-row-main{height:100%;padding:8px 22px;gap:20px}.pu-shell .pu-shop-row .pu-kit-icon{height:52px;width:52px}.pu-shell .pu-shop-row strong{font-size:28px}.pu-shell .pu-shop-row small{font-size:20px;display:block;margin-top:3px}.pu-shell .pu-shop-cart-count{font-size:26px;min-width:46px;text-align:center;color:#e5d3a3}.pu-shell .pu-store-selected-summary{display:grid;grid-template-columns:130px minmax(0,1fr);gap:24px;align-items:center}.pu-shell .pu-store-selected-summary .pu-item-hero{height:130px}.pu-shell .pu-store-selected-summary .pu-item-hero>.pu-kit-icon{height:120px;width:120px}.pu-shell .pu-store-selected-summary h2{margin:6px 0;font-size:32px}.pu-shell .pu-store-selected-summary .pu-description,.pu-shell .pu-item-held{font-size:20px;margin:6px 0}.pu-shell .pu-quantity-control{justify-content:center;margin:12px 0;gap:20px}.pu-shell .pu-quantity-control .pu-button{min-width:56px;padding:8px}.pu-shell .pu-shop-quantity{display:flex;flex-direction:row;align-items:center;gap:16px}.pu-shell .pu-shop-quantity input{width:90px;text-align:center;font-size:26px}.pu-shell .pu-shop-quantity>span{font-size:20px}.pu-shell .pu-cart-lines-compact{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 18px;padding:0}.pu-shell .pu-cart-line{font-size:19px;min-height:40px;padding:4px 0;gap:8px}.pu-shell .pu-cart-line .pu-kit-icon{height:28px;width:28px}.pu-shell .pu-cart-line strong{font-size:19px}.pu-shell .pu-cart-remove{min-width:36px;min-height:36px;font-size:24px}.pu-shell .pu-cart-lines>.pu-empty{grid-column:1/-1;font-size:20px}.pu-shell .pu-store-totals{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px;border-top:1px solid #8294a466;padding-top:12px;margin-top:auto}.pu-shell .pu-store-totals strong{font-size:28px}.pu-shell .pu-store-totals span{font-size:20px}.pu-shell .pu-store-actions{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:14px 0 0}.pu-shell .pu-store-notices{margin:0 0 8px}.pu-shell .pu-store-notices p{font-size:18px;margin:3px 0}.pu-shell .pu-store-cart>h3{font-size:22px;margin:6px 0}.pu-shell .pu-store-result{margin:8px 0 0;font-size:20px;min-height:0}
+@media(min-width:1100px) and (min-height:640px){
+ .pu-shell{display:flex;flex-direction:column;gap:0;height:100%;min-height:0;padding:20px 34px;font-size:22px}
+ .pu-shell .pu-topbar{flex:none;min-height:72px;padding:0 4px 10px;gap:28px;border-bottom:1px solid #71879b80}.pu-topbar>.rpg-frame,.pu-nav>.rpg-frame{display:none}.pu-shell .pu-brand img{width:220px}.pu-shell .pu-brand small{font-size:15px;letter-spacing:.08em}.pu-shell .pu-header-meta{font-size:23px;gap:16px}.pu-shell .pu-header-meta small{font-size:18px}.pu-shell .pu-player-switch .pu-button{min-height:48px;font-size:20px;padding:9px 20px;max-width:340px}.pu-shell .pu-player-switch .pu-creature-portrait{height:32px;width:32px}.pu-shell .pu-player-switch .pu-button span:last-child{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.pu-shell .pu-currency strong{font-size:30px}.pu-shell .pu-currency>div>span{font-size:16px}
+ .pu-shell .pu-nav{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:12px;flex:none;margin:12px 0 10px;padding:0 8px;min-height:56px;border-bottom:1px solid #71879b70}.pu-shell .pu-nav-button{font-size:23px;min-height:52px;padding:8px 16px}.pu-shell .pu-nav-button>.rpg-frame-command{display:none}.pu-shell .pu-nav-button .pu-kit-icon{height:27px;width:27px}
+ .pu-shell .pu-page-head,.pu-shell .pu-screen-heading{min-height:56px;flex:none;padding:0 0 10px;gap:20px;align-items:center}.pu-shell .pu-screen-heading h1,.pu-shell .pu-page-head h1,.pu-shell .pu-page-head h2{font-size:34px;margin:0}.pu-shell .pu-screen-heading .pu-kicker,.pu-shell .pu-page-head .pu-kicker{font-size:16px;margin:0 0 3px}.pu-shell .pu-page-head>div>p,.pu-shell .pu-screen-heading>div>p:last-child:not(.pu-kicker){display:none}.pu-shell .pu-player-context{font-size:20px;padding:6px 12px}.pu-shell .pu-player-context small{font-size:16px}.pu-shell .pu-player-context strong{font-size:21px}.pu-shell .pu-player-context>.pu-frame{display:none}
+ .pu-shell .pu-content{flex:1;min-height:0}.pu-shell .pu-content>.pu-screen,.pu-shell .pu-dex-screen,.pu-shell .pu-bag-screen,.pu-shell .pu-store-screen{height:100%;min-height:0;display:flex;flex-direction:column}.pu-shell .pu-team-layout,.pu-shell .pu-deposit-layout,.pu-shell .pu-analysis-layout,.pu-shell .pu-dex-layout,.pu-shell .pu-bag-layout,.pu-shell .pu-store-layout{flex:1;min-height:0;gap:24px;align-items:stretch}
+ .pu-shell .pu-team-layout{grid-template-columns:minmax(420px,1fr) minmax(390px,1.07fr) minmax(440px,1.15fr)}.pu-shell .pu-team-list{display:grid;grid-template-rows:repeat(6,minmax(0,1fr)) auto;gap:8px;min-height:0}.pu-shell .pu-team-slot{height:auto;min-height:0;padding:8px 16px 8px 12px;border:1px solid #8497a155;border-radius:7px;background:linear-gradient(110deg,#16283d,#1b2e42);gap:12px}.pu-shell .pu-team-slot>.rpg-frame{display:none}.pu-shell .pu-team-slot.is-selected{border:2px solid #a7d9eb;box-shadow:inset 5px 0 #f1deb3;background:linear-gradient(110deg,#245271,#19364b)}.pu-shell .pu-team-slot .pu-creature-portrait{width:70px;height:70px}.pu-shell .pu-slot-number{left:4px;font-size:14px}.pu-shell .pu-team-slot-title{align-items:center;gap:8px}.pu-shell .pu-team-slot-content{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:3px 8px;width:100%}.pu-shell .pu-team-slot-content strong{font-size:24px;line-height:1.1;max-height:2.2em;overflow:hidden}.pu-shell .pu-team-slot-title>span{font-size:22px}.pu-shell .pu-team-slot-content>.pu-health{grid-column:1/-1;margin:0;gap:12px;display:grid;grid-template-columns:minmax(0,1fr) auto}.pu-shell .pu-team-slot .pu-health>span{font-size:20px}.pu-shell .pu-team-slot-meta{display:none}.pu-shell .pu-team-cap{padding:4px 0!important;background:none;border:0;min-height:42px}.pu-shell .pu-team-cap>.rpg-frame{display:none}.pu-shell .pu-team-cap strong{font-size:19px}.pu-shell .pu-team-cap p{font-size:17px;margin:2px 0}.pu-shell .pu-team-list>.pu-button{display:none}
+ .pu-shell .pu-hero-column{display:flex;flex-direction:column;min-height:0}.pu-shell .pu-hero{height:100%;min-height:0;padding:20px 0;justify-content:center;gap:4px}.pu-shell .pu-creature-portrait.is-large{width:100%;height:min(47dvh,480px);min-height:0}.pu-shell .pu-hero-caption{padding:0 14px;margin-top:0}.pu-shell .pu-hero-caption h2{font-size:36px;margin:6px 0 10px}.pu-shell .pu-hero-caption .pu-kicker{font-size:18px}.pu-shell .pu-detail-panel{min-height:0;display:flex;flex-direction:column;padding:24px}.pu-shell .pu-detail-panel h2{font-size:30px;margin:6px 0 14px}.pu-shell .pu-detail-panel h3{font-size:24px;margin:14px 0 4px}.pu-shell .pu-detail-panel>.pu-health>span{font-size:28px}.pu-shell .pu-actions{margin-top:auto;padding-top:14px;gap:12px}.pu-shell .pu-team-layout .pu-actions{grid-template-columns:repeat(2,minmax(0,1fr))}.pu-shell .pu-team-layout .pu-actions>.pu-button:last-child{grid-column:auto}.pu-shell .pu-actions .pu-button{font-size:20px;min-height:50px}
+ .pu-shell .pu-tabs{gap:10px;margin:0 0 16px}.pu-shell .pu-tabs .pu-button{font-size:21px;min-height:48px;padding:8px 16px}.pu-shell .pu-analysis-layout{grid-template-columns:minmax(400px,.9fr) minmax(0,1.35fr)}.pu-shell .pu-analysis-selector{max-width:650px;flex-basis:650px;gap:3px;margin:0;font-size:17px}.pu-shell .pu-analysis-selector select{font-size:20px;min-height:42px}.pu-shell .pu-stat-grid{gap:14px;margin:16px 0}.pu-shell .pu-stat{padding:14px}.pu-shell .pu-stat strong{font-size:36px}.pu-shell .pu-stat span{font-size:20px}.pu-shell .pu-data-list{font-size:24px;line-height:1.4}.pu-shell .pu-data-list>div{padding:12px 0}.pu-shell .pu-affinity-compact{grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}.pu-shell .pu-affinity-compact .pu-type{font-size:18px}
+ .pu-shell .pu-deposit-layout{grid-template-columns:minmax(0,1.8fr) minmax(470px,1fr)}.pu-shell .pu-deposit-grid-panel{display:flex;flex-direction:column;min-height:0;padding:18px 22px}.pu-shell .pu-panel-heading h2{font-size:28px;margin:0}.pu-shell .pu-panel-heading>span{font-size:20px}.pu-shell .pu-box-toolbar{min-height:46px;gap:14px;margin:0 0 8px}.pu-shell .pu-box-toolbar span{font-size:20px}.pu-shell .pu-box-toolbar .pu-button{min-height:42px;padding:6px 18px}.pu-shell .pu-deposit-filters{grid-template-columns:minmax(180px,1.6fr) 1fr 1fr .6fr .6fr auto;gap:10px;margin:6px 0}.pu-shell .pu-deposit-filters label{font-size:16px}.pu-shell .pu-deposit-filters input,.pu-shell .pu-deposit-filters select{min-height:36px;font-size:18px;padding:4px 8px}.pu-shell .pu-deposit-filters .pu-button{min-height:36px;font-size:17px;padding:4px 10px}.pu-shell .pu-deposit-filter-result{font-size:17px;margin:0 0 4px}.pu-shell .pu-deposit-grid-panel .pu-box-grid{display:grid;grid-template-rows:repeat(5,minmax(0,1fr));gap:4px 10px;flex:1;min-height:0;margin:4px 0}.pu-shell .pu-box-slot{height:auto;min-height:0;overflow:visible}.pu-shell .pu-box-slot .pu-creature-portrait{width:100%;height:100%;max-width:82px;max-height:82px;aspect-ratio:1}.pu-shell .pu-box-slot>.pu-empty-circle{width:72px!important;height:72px!important;inset:0!important;margin:auto!important}.pu-shell .pu-box-slot-level{font-size:16px;padding:2px 5px;bottom:0;right:2px;line-height:1}.pu-shell .pu-deposit-grid-panel>h3{font-size:20px;margin:5px 0}.pu-shell .pu-deposit-team{height:88px;flex:none;gap:12px;margin:4px 0}.pu-shell .pu-deposit-team-slot{height:88px;gap:3px;padding:4px}.pu-shell .pu-deposit-team .pu-creature-portrait{width:56px;height:56px}.pu-shell .pu-deposit-team-name{font-size:16px;line-height:1.1}.pu-shell .pu-deposit-grid-panel>.pu-note{font-size:18px;margin:5px 0 0;padding:0}.pu-shell .pu-deposit-detail .pu-hero{flex:1;padding:0}.pu-shell .pu-deposit-detail .pu-creature-portrait.is-large{height:min(32dvh,310px)}.pu-shell .pu-deposit-detail .pu-hero-caption h2{font-size:30px}.pu-shell .pu-deposit-detail .pu-stat-grid{margin:10px 0}.pu-shell .pu-deposit-detail .pu-stat strong{font-size:28px}.pu-shell .pu-swap-preview{font-size:18px;padding:10px}.pu-shell .pu-deposit-detail .pu-actions{flex-wrap:wrap}
+ .pu-shell .pu-dex-layout{grid-template-columns:minmax(420px,1.05fr) minmax(370px,1fr) minmax(430px,1.1fr)}.pu-shell .pu-dex-index{padding:18px 22px;min-height:0}.pu-shell .pu-filter-grid{gap:6px 14px}.pu-shell .pu-filter-grid label{font-size:17px}.pu-shell .pu-filter-grid input,.pu-shell .pu-filter-grid select{font-size:18px;min-height:36px;padding:4px 9px}.pu-shell .pu-filter-grid .pu-button{font-size:18px;min-height:34px}.pu-shell .pu-result-count{font-size:17px;margin:6px 0}.pu-shell .pu-dex-list{display:grid;grid-template-rows:repeat(6,minmax(0,1fr));gap:4px;min-height:0}.pu-shell .pu-dex-row.pu-button{height:auto;min-height:0;margin:0;padding:3px 14px 3px 24px;gap:12px}.pu-shell .pu-dex-row .pu-creature-portrait,.pu-shell .pu-dex-row .pu-unknown-portrait{height:48px;width:48px}.pu-shell .pu-dex-row .pu-dex-row-title strong{font-size:24px;line-height:1.05}.pu-shell .pu-dex-row .pu-dex-row-copy{display:block}.pu-shell .pu-dex-row small{font-size:17px}.pu-shell .pu-dex-row-title{gap:7px}.pu-shell .pu-dex-pagination{margin-top:10px}.pu-shell .pu-pagination>span{font-size:21px}.pu-shell .pu-pagination small{font-size:17px}.pu-shell .pu-dex-pagination .pu-button{min-height:44px}.pu-shell .pu-dex-hero{padding-top:30px}.pu-shell .pu-dex-detail{display:flex;flex-direction:column;min-height:0;padding:24px}.pu-shell .pu-dex-detail h2{font-size:30px;margin:5px 0}.pu-shell .pu-dex-detail p{font-size:20px;line-height:1.35;margin:10px 0}.pu-shell .pu-dex-detail .pu-tabs{gap:8px}.pu-shell .pu-dex-detail .pu-tabs .pu-button{font-size:18px;min-height:44px;padding:5px 10px}.pu-shell .pu-facts dt{font-size:18px}.pu-shell .pu-facts dd{font-size:25px}.pu-shell .pu-evolution-step strong{font-size:20px}.pu-shell .pu-evolution-step small{font-size:18px}.pu-shell .pu-evolution .pu-creature-portrait{height:90px;width:90px}
+ .pu-shell .pu-bag-layout{grid-template-columns:minmax(0,1fr) minmax(0,1.12fr)}.pu-shell .pu-bag-inventory{display:flex;flex-direction:column;min-height:0}.pu-shell .pu-item-grid{grid-template-columns:repeat(4,minmax(0,1fr));grid-template-rows:repeat(2,minmax(0,1fr));flex:1;gap:16px;margin:16px 0}.pu-shell .pu-item-slot.pu-button{height:auto;min-height:0;padding:12px;gap:10px}.pu-shell .pu-item-slot .pu-kit-icon{width:110px;height:110px}.pu-shell .pu-item-slot strong{font-size:23px;margin:0}.pu-shell .pu-item-quantity{font-size:22px!important;top:10px;right:14px}.pu-shell .pu-bag-detail{display:flex;flex-direction:column;min-height:0}.pu-shell .pu-bag-detail .pu-item-hero{height:112px}.pu-shell .pu-bag-detail .pu-item-hero>.pu-kit-icon{height:106px;width:106px}.pu-shell .pu-bag-detail h2{font-size:32px;margin:5px 0}.pu-shell .pu-bag-detail .pu-description{font-size:22px;line-height:1.35}.pu-shell .pu-bag-detail .pu-item-held{font-size:20px}.pu-shell .pu-item-use{margin-top:auto;padding-top:10px}.pu-shell .pu-item-use .arka-store-note,.pu-shell .pu-item-use .arka-store-warning{font-size:18px}.pu-shell .pu-item-use .arka-item-target{font-size:20px}.pu-shell .pu-item-use .arka-item-target select{font-size:20px}.pu-shell .pu-item-use .arka-button{font-size:22px;min-height:50px}.pu-shell .pu-cure-preview{grid-template-columns:64px minmax(0,1fr) minmax(0,1fr);padding:12px;gap:12px}.pu-shell .pu-cure-preview>.pu-creature-portrait{height:64px;width:64px}.pu-shell .pu-cure-preview strong{font-size:22px}.pu-shell .pu-cure-preview .pu-kicker{font-size:16px}.pu-shell .pu-cure-preview .pu-health>span{font-size:25px}.pu-shell .pu-cure-after>span:last-child,.pu-shell .pu-cure-no-effect{font-size:18px}.pu-shell .pu-inventory-count{font-size:20px}.pu-shell .pu-screen-toolbar{min-height:38px;margin:0 0 10px}.pu-shell .pu-discovery-count{font-size:20px}
+ .pu-shell .pu-store-catalog,.pu-shell .pu-store-detail{display:flex;flex-direction:column;min-height:0;padding:24px}.pu-shell .pu-store-heading .pu-store-balance{font-size:28px}.pu-shell .pu-menu-layout{height:100%;min-height:0}.pu-shell .pu-footer{min-height:56px;flex:none;margin-top:16px;padding:10px 4px 0;gap:20px;font-size:18px;line-height:1.15}.pu-shell .pu-footer>.pu-button{min-height:48px;font-size:22px;padding:8px 26px}.pu-shell .pu-footer>.pu-keyboard-hint{font-size:17px;color:#b8c8d7}.pu-shell .pu-content-auxiliary{padding:20px 26px;font-size:22px}
+}
+@media(min-width:1100px) and (min-height:640px) and (max-height:960px){
+ .pu-shell{padding:12px 30px}.pu-shell .pu-topbar{min-height:60px}.pu-shell .pu-brand img{width:180px}.pu-shell .pu-nav{min-height:48px;margin:8px 0}.pu-shell .pu-nav-button{min-height:44px;font-size:22px}.pu-shell .pu-page-head,.pu-shell .pu-screen-heading{min-height:46px;padding-bottom:6px}.pu-shell .pu-screen-heading h1,.pu-shell .pu-page-head h1,.pu-shell .pu-page-head h2{font-size:30px}.pu-shell .pu-footer{margin-top:10px;min-height:50px;padding-top:6px}.pu-shell .pu-keyboard-hint{display:none}.pu-shell .pu-team-list{gap:6px}.pu-shell .pu-team-slot .pu-creature-portrait{height:60px;width:60px}.pu-shell .pu-team-slot-content strong{font-size:23px}.pu-shell .pu-team-slot-title>span{font-size:20px}.pu-shell .pu-team-slot .pu-health>span{font-size:19px}.pu-shell .pu-creature-portrait.is-large{height:40dvh}.pu-shell .pu-detail-panel{padding:18px 22px}.pu-shell .pu-detail-panel>.pu-note{font-size:17px;margin:4px 0;padding:4px 0}.pu-shell .pu-detail-panel .pu-move{padding:10px 0}.pu-shell .pu-detail-panel h3{font-size:22px;margin:8px 0 4px}.pu-shell .pu-detail-panel h2{font-size:28px;margin:3px 0 10px}.pu-shell .pu-actions .pu-button{min-height:44px;font-size:19px;padding:6px 12px}.pu-shell .pu-hero-caption h2{font-size:31px}.pu-shell .pu-deposit-team,.pu-shell .pu-deposit-team-slot{height:74px}.pu-shell .pu-deposit-team .pu-creature-portrait{height:45px;width:45px}.pu-shell .pu-deposit-team-name{font-size:15px}.pu-shell .pu-deposit-grid-panel{padding:14px 18px}.pu-shell .pu-deposit-detail .pu-creature-portrait.is-large{height:24dvh}.pu-shell .pu-deposit-detail .pu-stat{padding:5px}.pu-shell .pu-deposit-detail .pu-stat strong{font-size:25px}.pu-shell .pu-deposit-detail .pu-note,.pu-shell .pu-deposit-detail .pu-readonly{font-size:17px;margin:4px 0;padding:5px}.pu-shell .pu-filter-grid{gap:3px 10px}.pu-shell .pu-filter-grid input,.pu-shell .pu-filter-grid select{min-height:32px;font-size:18px}.pu-shell .pu-dex-index{padding:14px 18px}.pu-shell .pu-dex-row .pu-creature-portrait,.pu-shell .pu-dex-row .pu-unknown-portrait{height:40px;width:40px}.pu-shell .pu-dex-row .pu-dex-row-title strong{font-size:22px}.pu-shell .pu-dex-row small{font-size:16px}.pu-shell .pu-dex-detail p{font-size:18px}.pu-shell .pu-dex-detail .pu-tabs .pu-button{font-size:17px;min-height:40px}.pu-shell .pu-facts{margin:10px 0;gap:6px 14px}.pu-shell .pu-facts dd{font-size:23px}.pu-shell .pu-bag-detail .pu-item-hero{display:none}.pu-shell .pu-bag-detail .pu-description{font-size:20px;margin:6px 0}.pu-shell .pu-item-grid{gap:12px;margin:12px 0}.pu-shell .pu-item-slot .pu-kit-icon{width:90px;height:90px}.pu-shell .pu-cure-preview{padding:9px}.pu-shell .pu-cure-preview>.pu-creature-portrait{height:52px;width:52px}.pu-shell .pu-cure-preview strong{font-size:20px}.pu-shell .pu-cure-preview .pu-health>span{font-size:22px}.pu-shell .pu-item-use .arka-store-note,.pu-shell .pu-item-use .arka-store-warning{font-size:17px}.pu-shell .pu-store-catalog,.pu-shell .pu-store-detail{padding:18px 22px}.pu-shell .pu-store-selected-summary{grid-template-columns:86px minmax(0,1fr);gap:16px}.pu-shell .pu-store-selected-summary .pu-item-hero{height:86px}.pu-shell .pu-store-selected-summary .pu-item-hero>.pu-kit-icon{height:84px;width:84px}.pu-shell .pu-store-selected-summary .pu-description,.pu-shell .pu-item-held{font-size:18px}.pu-shell .pu-shop-row strong{font-size:26px}.pu-shell .pu-shop-row small{font-size:19px}.pu-shell .pu-shop-row .pu-kit-icon{height:44px;width:44px}.pu-shell .pu-store-actions .pu-button{min-height:46px;font-size:21px}.pu-shell .pu-store-totals strong{font-size:26px}.pu-shell .pu-store-totals span{font-size:18px}.pu-shell .pu-quantity-control{margin:8px 0}.pu-shell .pu-cart-line{min-height:35px;font-size:18px}.pu-shell .pu-cart-line strong{font-size:18px}.pu-shell .pu-journey-scene{height:90px;margin:8px 0}.pu-shell .pu-journey h2{font-size:34px;margin:4px 0}.pu-shell .pu-summary{margin:10px 0;gap:6px 16px}.pu-shell .pu-summary dd{font-size:25px}.pu-shell .pu-gym-badges span{height:46px;width:46px}.pu-shell .pu-mini-team .pu-creature-portrait{height:52px;width:52px}.pu-shell .pu-journey>.pu-muted{font-size:17px;margin:6px 0}.pu-shell .pu-menu-tile h2{font-size:26px}.pu-shell .pu-menu-tile p{font-size:18px}.pu-shell .pu-trainer-progress strong{font-size:22px}.pu-shell .pu-trainer-progress p{font-size:18px}
+}
+@media(max-width:1099px),(max-height:639px){.pu-shell .pu-store-layout{display:flex;flex-direction:column}.pu-shell .pu-menu-grid{grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:auto}.pu-shell .pu-menu-tile{min-height:100px}.pu-shell .pu-cart-lines-compact{grid-template-columns:1fr}.pu-shell .pu-footer{flex-wrap:wrap}.pu-shell .pu-keyboard-hint{display:none}.pu-shell .pu-shop-list{display:block}.pu-shell .pu-shop-row-compact{min-height:66px;margin:8px 0}.pu-shell .pu-menu-layout{display:flex;flex-direction:column}.pu-shell .pu-menu-grid{gap:12px}}
+/* Decorations remain within their host: they must not enlarge scroll geometry. */
+.pu-shell .pu-panel>.rpg-frame-window{inset:0}
+.pu-shell .pu-button>.rpg-frame-command,.pu-shell .pu-button>.rpg-frame-selected{inset:0}
+@media(min-width:1100px) and (min-height:640px){
+ .pu-shell .pu-team-layout .pu-detail-panel{padding:18px 22px}
+ .pu-shell .pu-team-layout .pu-detail-panel>.pu-note{padding:2px 0;margin:4px 0}
+ .pu-shell .pu-team-layout .pu-move{padding:12px 0}
+ .pu-shell .pu-team-layout .pu-actions{padding-top:10px}
+ .pu-shell .pu-team-layout .pu-readonly{font-size:18px;padding:6px 8px;margin:5px 0}
+ .pu-shell .pu-team-slot-title>strong{overflow-wrap:normal;word-break:normal}
+ .pu-shell .pu-dex-row-copy strong{overflow-wrap:anywhere}
+}
+.pu-shell .rpg-frame{inset:0}
+@media(min-width:1100px) and (min-height:640px){
+ .pu-shell .pu-box-slot .pu-creature-portrait{height:100%;width:auto;max-height:100%;max-width:100%;aspect-ratio:1}
+ .pu-shell .pu-box-slot>.pu-empty-circle{height:100%!important;width:auto!important;max-height:72px!important;max-width:72px!important;aspect-ratio:1}
+ .pu-shell .pu-deposit-team-slot .pu-creature-portrait{width:54px;height:54px;max-width:100%;max-height:calc(100% - 22px)}
+ .pu-shell .pu-deposit-team-slot>.rpg-frame{inset:0}
+ .pu-shell .pu-deposit-grid-panel .pu-box-grid{grid-auto-rows:minmax(0,1fr)}
+}
+@media(min-width:1100px) and (min-height:640px){
+ .pu-shell .pu-race-screen{display:flex;flex-direction:column;min-height:0;height:100%;gap:12px}
+ .pu-shell .pu-race-screen>p{margin:0;font-size:22px}
+ .pu-shell .pu-race-cards{margin:0;gap:20px;flex:none}
+ .pu-shell .pu-race-cards .pu-panel{padding:18px 24px}
+ .pu-shell .pu-race-cards h2{font-size:28px;margin:0 0 8px}
+ .pu-shell .pu-race-cards p{font-size:20px;margin:6px 0}
+ .pu-shell .pu-race-cards dl{margin:12px 0;gap:32px}
+ .pu-shell .pu-race-cards dt{font-size:18px}.pu-shell .pu-race-cards dd{font-size:28px;margin:4px 0}
+ .pu-shell .pu-race-screen>section{display:flex;flex-direction:column;min-height:0;flex:1;gap:12px}
+ .pu-shell .pu-race-screen>section h2{font-size:28px;margin:0}
+ .pu-shell .pu-recap-events{margin:0;padding:0;gap:16px;list-style:none}
+ .pu-shell .pu-recap-events li{padding:12px 16px;min-height:0}
+ .pu-shell .pu-recap-events strong{font-size:22px}.pu-shell .pu-recap-events p{font-size:20px;line-height:1.25;margin:6px 0 0}.pu-shell .pu-recap-events time{font-size:17px;margin-top:5px}
+ .pu-shell .pu-race-screen .pu-pagination{margin-top:auto;flex:none}
+}
+@media(min-width:1100px) and (min-height:640px){
+ .pu-shell .pu-dex-hero .pu-creature-portrait.is-large{height:auto;flex:1 1 0;min-height:0;max-height:440px}
+ .pu-shell .pu-dex-hero .pu-species-animation{height:auto;flex:1;min-height:0;max-height:440px}
+ .pu-shell .pu-dex-hero .pu-hero-caption,.pu-shell .pu-dex-hero .pu-animation-toggle{flex:none}
+ .pu-shell .pu-dex-row .pu-creature-portrait,.pu-shell .pu-dex-row .pu-unknown-portrait{height:100%;max-height:40px;width:40px;aspect-ratio:1}
+}
+@media(min-width:1100px) and (min-height:640px){
+ .pu-shell .pu-filter-grid{grid-template-columns:minmax(0,1.4fr) minmax(0,1fr) minmax(0,1fr);gap:6px 10px;align-items:end}
+ .pu-shell .pu-filter-grid>label:first-child{grid-column:auto}
+ .pu-shell .pu-filter-grid>label{display:flex;flex-direction:column;justify-content:space-between;min-height:66px;line-height:1.1}
+ .pu-shell .pu-dex-row.pu-button{padding-top:2px;padding-bottom:2px}
+ .pu-shell .pu-dex-row-copy>small{font-size:16px;line-height:1.05}
+ .pu-shell .pu-dex-row .pu-dex-row-title strong{font-size:23px;line-height:1.05}
+}
+@media(min-width:1100px) and (min-height:640px){
+ .pu-shell .pu-analysis-screen .pu-moves{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+ .pu-shell .pu-analysis-screen .pu-move{display:flex;flex-direction:column;align-items:flex-start;justify-content:space-between;gap:12px;padding:12px 0}
+ .pu-shell .pu-analysis-screen .pu-dice{align-self:flex-end;font-size:25px}
+ .pu-shell .pu-analysis-screen .pu-supreme-note{margin-top:auto;padding:14px 18px}
+ .pu-shell .pu-analysis-screen .pu-supreme-note strong{font-size:23px}
+ .pu-shell .pu-analysis-screen .pu-supreme-note p{font-size:20px}
+}
+@media(min-width:1100px) and (min-height:640px){
+ .pu-shell .pu-team-slot .pu-team-slot-meta{display:flex;grid-column:2;grid-row:2;align-self:center;margin:0}
+ .pu-shell .pu-team-slot-meta .pu-type{display:none}
+ .pu-shell .pu-team-slot .pu-team-slot-meta .pu-status-pill{font-size:17px;padding:2px 6px}
+ .pu-shell .pu-team-slot-content>.pu-health{grid-column:1;grid-row:2;gap:10px}
+}
+@media(min-width:1100px) and (min-height:640px){
+ .pu-shell .pu-analysis-screen .pu-moves{grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+ .pu-shell .pu-analysis-screen .pu-move-tactical{font-size:19px;line-height:1.3}
+ .pu-shell .pu-analysis-screen .pu-supreme-note{margin-top:18px;flex:none}
+}
+@media(min-width:1100px) and (min-height:640px){
+ .pu-shell .pu-menu-layout{grid-template-rows:minmax(0,1fr);align-items:stretch}
+ .pu-shell .pu-menu-grid{min-height:0;height:100%}
+ .pu-shell .pu-journey{min-height:0;height:100%;padding:18px 26px;display:flex;flex-direction:column;gap:7px}
+ .pu-shell .pu-journey h2{font-size:34px;margin:0;line-height:1.05}
+ .pu-shell .pu-journey-scene{height:90px;min-height:70px;flex:0 1 90px;margin:0}
+ .pu-shell .pu-summary{margin:4px 0;gap:4px 20px}
+ .pu-shell .pu-summary dt{font-size:18px;line-height:1.1}.pu-shell .pu-summary dd{font-size:26px;margin:3px 0;line-height:1.1}
+ .pu-shell .pu-gym-badges{margin:5px 0;gap:12px}.pu-shell .pu-gym-badges span{width:48px;height:48px}
+ .pu-shell .pu-trainer-progress{margin:0;padding-top:6px}.pu-shell .pu-trainer-progress strong{font-size:23px}.pu-shell .pu-trainer-progress p{font-size:19px;margin:4px 0}
+ .pu-shell .pu-journey>.pu-muted{margin:0;font-size:18px;line-height:1.2}
+ .pu-shell .pu-mini-team{gap:12px}.pu-shell .pu-mini-team .pu-creature-portrait{width:54px;height:54px}
+}
+@media(min-width:1100px) and (min-height:640px) and (max-height:960px){
+ .pu-shell .pu-journey{padding:14px 22px;gap:5px}.pu-shell .pu-journey h2{font-size:30px}.pu-shell .pu-journey-scene{height:64px;min-height:54px;flex-basis:64px}.pu-shell .pu-summary dt{font-size:17px}.pu-shell .pu-summary dd{font-size:23px}.pu-shell .pu-gym-badges span{height:40px;width:40px}.pu-shell .pu-journey .pu-kicker{font-size:16px}.pu-shell .pu-trainer-progress strong{font-size:21px}.pu-shell .pu-trainer-progress p{font-size:18px}.pu-shell .pu-journey>.pu-muted{font-size:17px}.pu-shell .pu-mini-team .pu-creature-portrait{height:44px;width:44px}
+}
+@media(min-width:1100px) and (min-height:640px){
+ .pu-shell .pu-dex-screen{position:relative}
+ .pu-shell[data-player-ui-screen=arkadex]>.pu-page-head .pu-player-context{display:none}
+ .pu-shell .pu-dex-screen>.pu-screen-toolbar{position:absolute;right:0;top:-68px;width:60%;margin:0;min-height:0;justify-content:flex-end}
+ .pu-shell .pu-dex-screen>.pu-screen-toolbar .pu-discovery-count{margin:0;font-size:20px}
+ .pu-shell .pu-dex-list{gap:0}
+ .pu-shell .pu-filter-grid>label{min-height:54px}
+ .pu-shell .pu-dex-detail .pu-move{padding:10px 0}
+ .pu-shell .pu-dex-detail .pu-move strong{font-size:24px}
+ .pu-shell .pu-bag-detail .pu-description{margin:6px 0}
+ .pu-shell .pu-bag-detail .pu-item-use{padding-top:6px}
+}
+@media(min-width:1100px) and (min-height:640px){
+ .pu-shell .pu-store-cart .pu-quantity-control .pu-button{width:56px;min-width:56px;flex:none}
+ .pu-shell .pu-quantity-control{margin:8px 0;min-height:48px}
+ .pu-shell .pu-shop-quantity>span{max-width:300px}
+ .pu-shell .pu-cart-line{min-height:36px;padding:2px 0;line-height:1.1}
+ .pu-shell .pu-cart-remove{min-height:32px;height:32px;line-height:1;padding:0 6px}
+ .pu-shell .pu-store-selected-summary .pu-description{line-height:1.25}
+ .pu-shell .pu-store-actions{margin-top:10px;gap:14px}
+}
+@media(min-width:1100px) and (min-height:640px) and (max-height:960px){
+ .pu-shell .pu-shop-list{gap:5px}
+ .pu-shell .pu-shop-row-compact{min-height:0}
+ .pu-shell .pu-shop-row-main{min-height:0;padding:5px 16px}
+ .pu-shell .pu-shop-row .pu-kit-icon{width:38px;height:38px}
+ .pu-shell .pu-store-selected-summary h2{font-size:29px}
+ .pu-shell .pu-store-detail>.pu-store-notices p{font-size:17px;line-height:1.15;margin:2px 0}
+ .pu-shell .pu-cart-line,.pu-shell .pu-cart-line strong{font-size:18px}
+ .pu-shell .pu-store-actions .pu-button{min-height:44px}
+}
+@media(min-width:1100px) and (min-height:640px){
+ /* The selected name/type already form the hero caption; do not repeat that
+    block above the analytical data at the cost of the complete move rules. */
+ .pu-shell .pu-analysis-screen .pu-detail-heading{display:none}
+ .pu-shell .pu-bag-screen{position:relative}
+ .pu-shell[data-player-ui-screen=borsa]>.pu-page-head .pu-player-context{display:none}
+ .pu-shell .pu-bag-screen>.pu-screen-toolbar{position:absolute;right:0;top:-68px;width:60%;min-height:0;margin:0;justify-content:flex-end}
+ .pu-shell .pu-bag-screen .pu-inventory-count{font-size:20px;line-height:1.15;gap:3px}
+}
+@media(min-width:1100px) and (min-height:640px) and (max-height:960px){
+ .pu-shell .pu-store-catalog,.pu-shell .pu-store-detail{padding-top:12px;padding-bottom:12px}
+ .pu-shell .pu-store-detail .pu-quantity-control{margin:6px 0}
+}
+@media(min-width:1100px) and (min-height:640px){
+ .pu-shell .pu-team-layout .pu-move{display:flex;flex-direction:row;align-items:center;gap:10px;padding:8px 0;min-height:0}
+ .pu-shell .pu-team-layout .pu-move>div{display:flex;align-items:center;justify-content:space-between;gap:12px;flex:1;min-width:0}
+ .pu-shell .pu-team-layout .pu-move strong{font-size:24px;line-height:1.1}
+ .pu-shell .pu-team-layout .pu-move .pu-type{font-size:18px;flex:none}
+ .pu-shell .pu-team-layout .pu-move .pu-dice{font-size:23px}
+}
+@media(min-width:1100px) and (min-height:640px) and (max-height:960px){
+ .pu-shell .pu-store-catalog,.pu-shell .pu-store-detail{padding-top:10px;padding-bottom:10px}
+}
+@media(min-width:1100px) and (min-height:640px) and (max-height:960px){
+ .pu-shell .pu-bag-detail{padding-top:12px;padding-bottom:12px}
+}
+/* At intermediate desktop widths keep the selected inspector readable instead
+   of allowing the three-column layouts to enlarge the whole shell. */
+@media(min-width:1100px) and (max-width:1390px) and (min-height:640px){
+ .pu-shell .pu-team-layout,.pu-shell .pu-dex-layout{grid-template-columns:minmax(360px,.9fr) minmax(0,1.1fr);}
+ .pu-shell .pu-team-layout .pu-hero-column,.pu-shell .pu-dex-layout .pu-dex-hero{display:none;}
+}

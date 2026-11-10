@@ -1,0 +1,804 @@
+/* Three alternate compositions for the live player tools. Decorative menu
+   artwork is removed by concept-base.css; portraits and item art stay native. */
+
+/* ECLISSE — quiet graphite, bronze, a persistent vertical command rail. */
+html .pu-shell.pu-live-shell[data-ui-concept="eclisse"] {
+  --ui-bg: #101214;
+  --ui-surface: #191c1f;
+  --ui-surface-raised: #222629;
+  --ui-text: #f2eee5;
+  --ui-muted: #b2b5b6;
+  --ui-line: #42433e;
+  --ui-accent: #dfb979;
+  --ui-accent-ink: #1b1712;
+  --ui-accent-soft: #dfb97918;
+  --ui-radius: 5px;
+  --ui-display-font: Georgia, 'Times New Roman', serif;
+  --ui-body-font: Arial, sans-serif;
+  --ui-shadow: 0 16px 40px #0004;
+  --ui-hero-glow: radial-gradient(ellipse at 50% 55%, #b28a4030, transparent 68%);
+  display: grid;
+  grid-template-columns: 176px minmax(0, 1fr);
+  grid-template-rows: auto minmax(0, 1fr) auto;
+  grid-template-areas: 'header header' 'nav content' 'nav footer';
+  column-gap: clamp(20px, 2.4vw, 36px);
+  row-gap: 14px;
+  padding: 18px 26px 16px;
+  background: radial-gradient(ellipse at 76% -15%, #3e332b70, transparent 58%), var(--ui-bg);
+}
+html .pu-shell.pu-live-shell[data-ui-concept="eclisse"] > .pu-topbar {
+  grid-area: header;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--ui-line);
+}
+html .pu-shell.pu-live-shell[data-ui-concept="eclisse"] > .pu-nav {
+  grid-area: nav;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  align-self: stretch;
+  justify-content: flex-start;
+  gap: 4px;
+  margin: 0;
+  padding: 10px 18px 0 0;
+  border: 0;
+  border-right: 1px solid var(--ui-line);
+  border-radius: 0;
+  background: transparent;
+  overflow: visible;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="eclisse"] .pu-nav-button {
+  flex: none;
+  justify-content: flex-start;
+  width: 100%;
+  min-height: 49px;
+  padding: 11px 13px;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  font-family: var(--ui-body-font);
+  font-size: 13px;
+  letter-spacing: .015em;
+  text-align: left;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="eclisse"] .pu-nav-button.is-active {
+  background: var(--ui-accent-soft) !important;
+  border-color: #dfb97958;
+  color: var(--ui-accent) !important;
+  box-shadow: inset 3px 0 var(--ui-accent);
+}
+html .pu-shell.pu-live-shell[data-ui-concept="eclisse"] > .pu-content { grid-area: content; }
+html .pu-shell.pu-live-shell[data-ui-concept="eclisse"] > .pu-footer { grid-area: footer; }
+html .pu-shell.pu-live-shell[data-ui-concept="eclisse"] :is(h1, .pu-live-team-facts strong) {
+  font-family: var(--ui-display-font);
+  font-weight: 400;
+  letter-spacing: -.035em;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="eclisse"] .pu-screen-heading h1 { font-size: clamp(25px, 2.4vw, 38px); }
+html .pu-shell.pu-live-shell[data-ui-concept="eclisse"] .pu-kicker {
+  color: var(--ui-accent);
+  font-family: var(--ui-body-font);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="eclisse"] .pu-player-option {
+  border-radius: 3px;
+  font-family: var(--ui-body-font);
+  font-size: 12px;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="eclisse"] .pu-team-layout {
+  grid-template-columns: minmax(175px, .95fr) minmax(180px, .9fr) minmax(245px, 1.15fr);
+  gap: clamp(18px, 2vw, 34px);
+}
+html .pu-shell.pu-live-shell[data-ui-concept="eclisse"] .pu-hero-column {
+  border: 0;
+  background: var(--ui-hero-glow);
+}
+html .pu-shell.pu-live-shell[data-ui-concept="eclisse"] .pu-hero-column::before {
+  inset: 10% 6%;
+  border: 1px solid #d2af6c2b;
+  border-radius: 50%;
+  opacity: .7;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="eclisse"] .pu-live-team-facts {
+  padding: 0 0 15px;
+  border: 0;
+  border-bottom: 1px solid #dfb97977;
+  border-radius: 0;
+  background: transparent;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="eclisse"] .pu-live-team-facts strong {
+  font-size: clamp(27px, 2.5vw, 42px);
+  color: var(--ui-text);
+}
+html .pu-shell.pu-live-shell[data-ui-concept="eclisse"] .pu-team-tactics {
+  padding: 18px;
+  border: 1px solid var(--ui-line);
+  border-top: 2px solid #dfb97980;
+  border-radius: 3px;
+  background: linear-gradient(140deg, #2c29204d, transparent 60%), var(--ui-surface);
+}
+html .pu-shell.pu-live-shell[data-ui-concept="eclisse"] .pu-team-tactics > h2 {
+  font-family: var(--ui-body-font);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="eclisse"] .pu-team-list { gap: 8px; }
+html .pu-shell.pu-live-shell[data-ui-concept="eclisse"] .pu-team-slot {
+  border: 1px solid var(--ui-line);
+  border-radius: 3px;
+  background: #ffffff03;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="eclisse"] .pu-team-slot.is-selected {
+  border-color: var(--ui-accent);
+  background: linear-gradient(145deg, #dfb97919, #dfb97903);
+  box-shadow: inset 0 2px #dfb979;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="eclisse"] .pu-team-slot-title > strong {
+  font-family: var(--ui-body-font);
+  font-size: 12px;
+  font-weight: 600;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="eclisse"] .pu-menu-layout {
+  grid-template-columns: minmax(245px, .8fr) minmax(0, 1.5fr);
+  gap: 24px;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="eclisse"] .pu-journey {
+  grid-column: 1;
+  grid-row: 1;
+  padding: 22px;
+  background: linear-gradient(140deg, #40332666, transparent 70%), var(--ui-surface);
+  border-top: 2px solid var(--ui-accent);
+}
+html .pu-shell.pu-live-shell[data-ui-concept="eclisse"] .pu-journey > h2 {
+  font-family: var(--ui-display-font);
+  font-weight: 400;
+  font-size: 32px;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="eclisse"] .pu-menu-grid {
+  grid-column: 2;
+  grid-row: 1;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="eclisse"] .pu-menu-tile {
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 24px;
+  background: linear-gradient(135deg, #3330253d, transparent 75%), var(--ui-surface);
+  border-radius: 3px;
+  text-align: left;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="eclisse"] .pu-menu-tile h2 {
+  font-family: var(--ui-display-font);
+  font-weight: 400;
+  font-size: 24px;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="eclisse"] .pu-tile-number {
+  font-family: var(--ui-display-font);
+  font-size: 48px;
+  color: #dfb97938;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="eclisse"] .pu-live-bag-grid { gap: 10px; }
+html .pu-shell.pu-live-shell[data-ui-concept="eclisse"] .pu-live-bag-cell {
+  border-radius: 3px;
+  background: #ffffff03;
+  border-bottom: 1px solid var(--ui-line);
+}
+html .pu-shell.pu-live-shell[data-ui-concept="eclisse"] .pu-live-bag-detail {
+  border-top: 2px solid var(--ui-accent);
+  padding: 22px;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="eclisse"] .pu-live-bag-detail h2 {
+  font-family: var(--ui-display-font);
+  font-weight: 400;
+  font-size: 30px;
+}
+
+/* IMPULSO — an electric performance dashboard with a sharp command ribbon. */
+html .pu-shell.pu-live-shell[data-ui-concept="impulso"] {
+  --ui-bg: #0c0a14;
+  --ui-surface: #171322;
+  --ui-surface-raised: #241c36;
+  --ui-text: #f5f2ff;
+  --ui-muted: #b7abc9;
+  --ui-line: #443753;
+  --ui-accent: #d6ff55;
+  --ui-accent-ink: #202609;
+  --ui-accent-soft: #d6ff5518;
+  --ui-radius: 0px;
+  --ui-display-font: 'Arkamon Norwester', 'Arial Narrow', Arial, sans-serif;
+  --ui-body-font: Arial, sans-serif;
+  --ui-shadow: 6px 6px 0 #0003;
+  --ui-hero-glow: radial-gradient(ellipse at center, #a465fd4d, transparent 70%);
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: auto auto minmax(0, 1fr) auto;
+  grid-template-areas: 'header' 'nav' 'content' 'footer';
+  gap: 12px;
+  padding: 14px 28px;
+  background: linear-gradient(126deg, #20142b, transparent 48%), var(--ui-bg);
+}
+html .pu-shell.pu-live-shell[data-ui-concept="impulso"] > .pu-topbar {
+  grid-area: header;
+  border: 0;
+  padding-bottom: 0;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="impulso"] .pu-brand small {
+  color: var(--ui-accent);
+  font-family: var(--ui-body-font);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="impulso"] > .pu-nav {
+  grid-area: nav;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 0;
+  background: var(--ui-surface);
+  border: 1px solid var(--ui-line);
+  border-radius: 0;
+  overflow: visible;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="impulso"] .pu-nav-button {
+  flex: 1;
+  padding: 11px 9px;
+  min-height: 48px;
+  border: 0;
+  border-right: 1px solid var(--ui-line);
+  border-bottom: 3px solid transparent;
+  border-radius: 0;
+  background: transparent;
+  font-family: var(--ui-display-font);
+  font-size: 17px;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="impulso"] .pu-nav-button:last-child { border-right: 0; }
+html .pu-shell.pu-live-shell[data-ui-concept="impulso"] .pu-nav-button.is-active {
+  color: var(--ui-accent);
+  background: linear-gradient(0deg, #d6ff5518, transparent);
+  border-bottom-color: var(--ui-accent);
+  box-shadow: none;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="impulso"] > .pu-content { grid-area: content; }
+html .pu-shell.pu-live-shell[data-ui-concept="impulso"] > .pu-footer { grid-area: footer; }
+html .pu-shell.pu-live-shell[data-ui-concept="impulso"] .pu-screen-heading {
+  border-bottom: 1px solid var(--ui-line);
+  padding-bottom: 13px;
+  margin-bottom: 14px;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="impulso"] .pu-screen-heading h1 {
+  font-family: var(--ui-display-font);
+  font-size: clamp(30px, 3vw, 44px);
+  font-weight: 400;
+  letter-spacing: .025em;
+  text-transform: uppercase;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="impulso"] .pu-kicker {
+  font-family: 'Courier New', monospace;
+  font-size: 10px;
+  color: #d2b0ff;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="impulso"] :is(.pu-player-option, .studio-command, .pu-button) {
+  border-radius: 0;
+  letter-spacing: .035em;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="impulso"] .pu-team-layout {
+  grid-template-columns: minmax(175px, .85fr) minmax(190px, .9fr) minmax(290px, 1.3fr);
+  gap: 18px;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="impulso"] .pu-hero-column {
+  padding: 10px;
+  background: var(--ui-hero-glow), repeating-linear-gradient(0deg, transparent 0 31px, #b186ff0d 31px 32px);
+  border: 1px solid #b186ff4d;
+  border-left: 3px solid #a974f3;
+  border-radius: 0;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="impulso"] .pu-hero-column::before {
+  inset: 13px;
+  border: 1px solid #b186ff30;
+  border-radius: 0;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="impulso"] .pu-live-team-facts {
+  border: 0;
+  padding: 8px 0 17px;
+  background: transparent;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="impulso"] .pu-live-team-facts strong {
+  font-family: var(--ui-display-font);
+  color: var(--ui-accent);
+  font-size: clamp(32px, 3.4vw, 48px);
+  font-weight: 400;
+  line-height: .98;
+  text-transform: uppercase;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="impulso"] .pu-live-team-facts span {
+  font-family: 'Courier New', monospace;
+  font-size: 11px;
+  letter-spacing: .15em;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="impulso"] .pu-team-tactics {
+  padding: 14px 18px;
+  border: 1px solid var(--ui-line);
+  border-radius: 0;
+  background: var(--ui-surface);
+}
+html .pu-shell.pu-live-shell[data-ui-concept="impulso"] .pu-team-tactics > h2 {
+  color: #cda5ff;
+  font-family: var(--ui-display-font);
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="impulso"] .pu-move {
+  border-bottom: 1px dashed var(--ui-line);
+}
+html .pu-shell.pu-live-shell[data-ui-concept="impulso"] .pu-dice {
+  color: var(--ui-accent);
+  font-family: 'Courier New', monospace;
+  border-color: #d6ff5559;
+  background: #d6ff550b;
+  border-radius: 0;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="impulso"] .pu-team-list { gap: 5px; }
+html .pu-shell.pu-live-shell[data-ui-concept="impulso"] .pu-team-slot {
+  border: 1px solid var(--ui-line);
+  border-radius: 0;
+  background: var(--ui-surface);
+}
+html .pu-shell.pu-live-shell[data-ui-concept="impulso"] .pu-team-slot.is-selected {
+  border-color: var(--ui-accent);
+  background: linear-gradient(140deg, #d6ff5523, #a465fd15);
+  box-shadow: inset 0 3px var(--ui-accent);
+}
+html .pu-shell.pu-live-shell[data-ui-concept="impulso"] .pu-slot-number {
+  font-family: 'Courier New', monospace;
+  font-size: 11px;
+  color: var(--ui-accent);
+}
+html .pu-shell.pu-live-shell[data-ui-concept="impulso"] .pu-menu-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="impulso"] .pu-menu-tile {
+  padding: 22px;
+  border: 1px solid #654785;
+  border-left: 3px solid #a465fd;
+  border-radius: 0;
+  background: linear-gradient(130deg, #41285c50, transparent 80%), var(--ui-surface);
+  text-align: left;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="impulso"] .pu-menu-tile.is-featured {
+  border-color: var(--ui-accent);
+  background: linear-gradient(130deg, #d6ff551c, transparent 80%), var(--ui-surface);
+}
+html .pu-shell.pu-live-shell[data-ui-concept="impulso"] .pu-menu-tile h2 {
+  font-family: var(--ui-display-font);
+  font-size: 27px;
+  font-weight: 400;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="impulso"] .pu-tile-number {
+  color: #bc8eff;
+  font-family: 'Courier New', monospace;
+  font-size: 13px;
+  letter-spacing: .15em;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="impulso"] .pu-journey {
+  border: 1px solid var(--ui-line);
+  border-top: 3px solid #a465fd;
+  border-radius: 0;
+  background: #15101f;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="impulso"] .pu-live-bag-category[aria-pressed="true"] {
+  background: var(--ui-accent);
+  color: var(--ui-accent-ink);
+  border-color: var(--ui-accent);
+}
+html .pu-shell.pu-live-shell[data-ui-concept="impulso"] .pu-live-bag-cell {
+  border: 1px solid var(--ui-line);
+  border-radius: 0;
+  background: #a465fd08;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="impulso"] .pu-live-bag-detail {
+  border: 1px solid #a465fd66;
+  border-top: 3px solid #a465fd;
+  border-radius: 0;
+  background: #20152e;
+}
+
+/* PRISMA — bright creature collecting, generous rounded cards and a bottom dock. */
+html .pu-shell.pu-live-shell[data-ui-concept="prisma"] {
+  --ui-bg: #e9f1fa;
+  --ui-surface: #ffffff;
+  --ui-surface-raised: #f3f7fd;
+  --ui-text: #173252;
+  --ui-muted: #536b85;
+  --ui-line: #c9d8e9;
+  --ui-accent: #245bc3;
+  --ui-accent-ink: #ffffff;
+  --ui-accent-soft: #245bc311;
+  --ui-radius: 22px;
+  --ui-display-font: 'Arkamon Norwester', 'Arial Narrow', Arial, sans-serif;
+  --ui-body-font: Arial, sans-serif;
+  --ui-shadow: 0 10px 32px #1a447014;
+  --ui-hero-glow: radial-gradient(ellipse at center, #c0dafc, #d9e9fc88 54%, transparent 72%);
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: auto minmax(0, 1fr) auto auto;
+  grid-template-areas: 'header' 'content' 'nav' 'footer';
+  gap: 12px;
+  padding: 14px 28px;
+  background: radial-gradient(ellipse at 15% 45%, #c7ddfa 0, transparent 44%), var(--ui-bg);
+}
+html .pu-shell.pu-live-shell[data-ui-concept="prisma"] > .pu-topbar {
+  grid-area: header;
+  border: 0;
+  padding-bottom: 0;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="prisma"] .pu-brand img {
+  filter: drop-shadow(0 1px 1px #17325233);
+}
+html .pu-shell.pu-live-shell[data-ui-concept="prisma"] .pu-player-switch {
+  gap: 5px;
+  padding: 5px;
+  border: 1px solid var(--ui-line);
+  border-radius: 99px;
+  background: #fff8;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="prisma"] .pu-player-option {
+  min-height: 38px;
+  border: 0;
+  border-radius: 99px;
+  background: transparent;
+  color: var(--ui-muted);
+  font-size: 12px;
+  font-weight: 700;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="prisma"] .pu-player-option[aria-pressed="true"] {
+  background: #fff;
+  color: var(--ui-accent);
+  box-shadow: 0 3px 12px #1b41601a;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="prisma"] > .pu-content { grid-area: content; }
+html .pu-shell.pu-live-shell[data-ui-concept="prisma"] > .pu-footer { grid-area: footer; }
+html .pu-shell.pu-live-shell[data-ui-concept="prisma"] > .pu-nav {
+  grid-area: nav;
+  display: flex;
+  align-self: end;
+  justify-content: center;
+  gap: 7px;
+  width: min(100%, 930px);
+  margin: 0 auto;
+  padding: 8px;
+  border: 1px solid #fff;
+  border-radius: 24px;
+  background: #ffffffd9;
+  box-shadow: 0 8px 26px #234e7820;
+  overflow: visible;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="prisma"] .pu-nav-button {
+  flex: 1;
+  min-height: 43px;
+  padding: 10px 9px;
+  border: 0;
+  border-radius: 17px;
+  background: transparent;
+  color: #52647e;
+  font-family: var(--ui-body-font);
+  font-size: 13px;
+  font-weight: 700;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="prisma"] .pu-nav-button.is-active {
+  background: #245bc3;
+  color: #fff;
+  box-shadow: 0 4px 11px #245bc339;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="prisma"] .pu-screen-heading h1 {
+  font-family: var(--ui-display-font);
+  font-size: clamp(29px, 3vw, 42px);
+  font-weight: 400;
+  letter-spacing: .005em;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="prisma"] .pu-kicker {
+  color: #47658b;
+  font-family: var(--ui-body-font);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="prisma"] .pu-count {
+  padding: 9px 14px;
+  border: 0;
+  border-radius: 99px;
+  background: #fff;
+  color: var(--ui-accent);
+  font-size: 12px;
+  box-shadow: 0 2px 8px #234e780a;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="prisma"] .pu-team-layout {
+  grid-template-columns: minmax(220px, 1.1fr) minmax(200px, .9fr) minmax(260px, 1.1fr);
+  gap: 20px;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="prisma"] .pu-hero-column {
+  border: 0;
+  border-radius: 45% 45% 35% 35%;
+  background: var(--ui-hero-glow);
+}
+html .pu-shell.pu-live-shell[data-ui-concept="prisma"] .pu-hero-column::before {
+  inset: 8%;
+  border: 2px solid #ffffffa6;
+  border-radius: 50%;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="prisma"] .pu-live-team-facts {
+  padding: 0 0 16px;
+  border: 0;
+  background: transparent;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="prisma"] .pu-live-team-facts strong {
+  color: #173252;
+  font-family: var(--ui-display-font);
+  font-size: clamp(34px, 3.4vw, 46px);
+  font-weight: 400;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="prisma"] .pu-live-team-facts span {
+  color: #245bc3;
+  font-family: var(--ui-body-font);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .12em;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="prisma"] .pu-team-tactics {
+  padding: 18px 20px;
+  border: 1px solid #fff;
+  border-radius: 24px;
+  background: #ffffffd6;
+  box-shadow: var(--ui-shadow);
+}
+html .pu-shell.pu-live-shell[data-ui-concept="prisma"] .pu-team-tactics > h2 {
+  color: #173252;
+  font-family: var(--ui-display-font);
+  font-size: 23px;
+  font-weight: 400;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="prisma"] .pu-dice {
+  color: #2c5997;
+  border: 0;
+  border-radius: 12px;
+  background: #e9f1fc;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="prisma"] .pu-team-list { gap: 9px; }
+html .pu-shell.pu-live-shell[data-ui-concept="prisma"] .pu-team-slot {
+  border: 2px solid #fff;
+  border-radius: 21px;
+  background: #ffffffb0;
+  box-shadow: 0 3px 10px #234e780a;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="prisma"] .pu-team-slot.is-selected {
+  border-color: #ee745f;
+  background: #fff;
+  box-shadow: 0 5px 16px #ee745f24;
+  color: #173252;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="prisma"] .pu-slot-number {
+  color: #406a9d;
+  font-family: var(--ui-body-font);
+  font-size: 11px;
+  font-weight: 700;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="prisma"] .pu-team-slot-title > strong {
+  color: #173252;
+  font-family: var(--ui-body-font);
+  font-size: 12px;
+  font-weight: 700;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="prisma"] .pu-resume-command {
+  border-color: #b84430;
+  border-radius: 99px;
+  background: #b84430;
+  color: #fff;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="prisma"] .pu-menu-grid { gap: 15px; }
+html .pu-shell.pu-live-shell[data-ui-concept="prisma"] .pu-menu-tile {
+  padding: 25px;
+  border: 1px solid #fff;
+  border-radius: 25px;
+  background: #ffffffdc;
+  color: #173252;
+  box-shadow: var(--ui-shadow);
+  text-align: left;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="prisma"] .pu-menu-tile.is-featured {
+  border-color: #f4b5aa;
+  background: linear-gradient(145deg, #fff0ec, #fff);
+}
+html .pu-shell.pu-live-shell[data-ui-concept="prisma"] .pu-menu-tile h2 {
+  font-family: var(--ui-display-font);
+  font-size: 28px;
+  font-weight: 400;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="prisma"] .pu-tile-number {
+  color: #245bc32b;
+  font-family: var(--ui-display-font);
+  font-size: 52px;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="prisma"] .pu-journey {
+  border: 1px solid #fff;
+  border-radius: 25px;
+  background: #fff;
+  box-shadow: var(--ui-shadow);
+}
+html .pu-shell.pu-live-shell[data-ui-concept="prisma"] .pu-live-bag-categories { gap: 8px; }
+html .pu-shell.pu-live-shell[data-ui-concept="prisma"] .pu-live-bag-category {
+  border-radius: 99px;
+  background: #fff;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="prisma"] .pu-live-bag-category[aria-pressed="true"] {
+  color: #fff;
+  background: #245bc3;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="prisma"] .pu-live-bag-grid { gap: 13px; }
+html .pu-shell.pu-live-shell[data-ui-concept="prisma"] .pu-live-bag-cell {
+  border: 1px solid #fff;
+  border-radius: 22px;
+  background: #ffffffb3;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="prisma"] .pu-live-bag-slot[aria-pressed="true"] {
+  border-color: #ee745f;
+  background: #fff1ed;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="prisma"] :is(.pu-live-bag-detail, .pu-live-bag-use) {
+  border: 1px solid #fff;
+  border-radius: 25px;
+  background: #fff;
+  box-shadow: var(--ui-shadow);
+}
+html .pu-shell.pu-live-shell[data-ui-concept="prisma"] .pu-live-bag-illustration {
+  border: 0;
+  border-radius: 50%;
+  background: #edf4ff;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="prisma"] .pu-live-bag-detail h2 {
+  color: #173252;
+  font-family: var(--ui-display-font);
+  font-size: 31px;
+  font-weight: 400;
+}
+
+/* Interactive affordances use the same palette as the live composition. */
+html .pu-shell.pu-live-shell:is([data-ui-concept="eclisse"], [data-ui-concept="impulso"], [data-ui-concept="prisma"])
+  :is(button, input, select, a):focus-visible {
+  outline: 3px solid var(--ui-accent);
+  outline-offset: 3px;
+}
+@media (hover: hover) {
+  html .pu-shell.pu-live-shell:is([data-ui-concept="eclisse"], [data-ui-concept="impulso"])
+    :is(.pu-menu-tile, .pu-team-slot, .pu-nav-button):hover:not(:disabled) {
+    border-color: var(--ui-accent);
+    background-color: var(--ui-accent-soft);
+    filter: none;
+  }
+  html .pu-shell.pu-live-shell[data-ui-concept="prisma"]
+    :is(.pu-menu-tile, .pu-team-slot):hover:not(:disabled) {
+    border-color: #7eace9;
+    box-shadow: 0 7px 20px #245bc325;
+    filter: none;
+  }
+  html .pu-shell.pu-live-shell[data-ui-concept="prisma"] .pu-nav-button:hover:not(:disabled):not(.is-active) {
+    color: #173252;
+    background: #e9f1fc;
+    filter: none;
+  }
+}
+
+/* Each composition reflows without a horizontal scrolling navigation rail. */
+@media (min-width: 901px) and (max-height: 820px) {
+  html .pu-shell.pu-live-shell[data-ui-concept="eclisse"] {
+    padding: 10px 20px;
+    gap: 10px 22px;
+    grid-template-columns: 156px minmax(0, 1fr);
+  }
+  html .pu-shell.pu-live-shell[data-ui-concept="eclisse"] .pu-nav-button { min-height: 43px; }
+  html .pu-shell.pu-live-shell[data-ui-concept="eclisse"] .pu-team-tactics { padding: 12px 15px; }
+  html .pu-shell.pu-live-shell[data-ui-concept="eclisse"] .pu-menu-tile { padding: 17px; }
+  html .pu-shell.pu-live-shell[data-ui-concept="impulso"] { padding: 10px 24px; gap: 9px; }
+  html .pu-shell.pu-live-shell[data-ui-concept="impulso"] .pu-nav-button { min-height: 43px; padding-block: 8px; }
+  html .pu-shell.pu-live-shell[data-ui-concept="impulso"] .pu-team-tactics { padding: 10px 14px; }
+  /* The reserve grid keeps its usable cell size; reclaim space in its heading. */
+  html .pu-shell.pu-live-shell[data-ui-concept="impulso"] .pu-deposit-screen > .pu-screen-heading {
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+  }
+  html .pu-shell.pu-live-shell[data-ui-concept="impulso"] .pu-bag-screen.pu-bag-dedicated { gap: 8px; }
+  html .pu-shell.pu-live-shell[data-ui-concept="impulso"] .pu-bag-dedicated .pu-bag-layout { row-gap: 10px; }
+  html .pu-shell.pu-live-shell[data-ui-concept="impulso"] .pu-live-bag-detail { padding: 12px 16px; gap: 6px; }
+  html .pu-shell.pu-live-shell[data-ui-concept="impulso"] .pu-live-bag-use { padding-top: 8px; }
+  html .pu-shell.pu-live-shell[data-ui-concept="prisma"] { padding: 10px 22px; gap: 9px; }
+  html .pu-shell.pu-live-shell[data-ui-concept="prisma"] > .pu-nav { padding: 5px; border-radius: 20px; }
+  html .pu-shell.pu-live-shell[data-ui-concept="prisma"] .pu-nav-button { min-height: 38px; padding-block: 7px; }
+  html .pu-shell.pu-live-shell[data-ui-concept="prisma"] .pu-team-tactics { padding: 11px 15px; }
+  html .pu-shell.pu-live-shell[data-ui-concept="prisma"] .pu-bag-screen.pu-bag-dedicated { gap: 8px; }
+  html .pu-shell.pu-live-shell[data-ui-concept="prisma"] .pu-bag-dedicated .pu-bag-layout { row-gap: 10px; }
+  html .pu-shell.pu-live-shell[data-ui-concept="prisma"] .pu-live-bag-detail { padding: 12px 18px; gap: 6px; }
+  html .pu-shell.pu-live-shell[data-ui-concept="prisma"] .pu-live-bag-use { padding-top: 8px; }
+}
+@media (min-width: 901px) and (max-width: 1180px) {
+  html .pu-shell.pu-live-shell[data-ui-concept="eclisse"] { grid-template-columns: 142px minmax(0, 1fr); padding-inline: 18px; column-gap: 18px; }
+  html .pu-shell.pu-live-shell[data-ui-concept="eclisse"] .pu-nav-button { font-size: 12px; padding-inline: 9px; }
+  html .pu-shell.pu-live-shell[data-ui-concept="eclisse"] .pu-team-layout { grid-template-columns: minmax(140px, .8fr) minmax(150px, .8fr) minmax(205px, 1.1fr); gap: 14px; }
+  html .pu-shell.pu-live-shell[data-ui-concept="eclisse"] .pu-menu-layout { grid-template-columns: minmax(220px, .9fr) minmax(0, 1.25fr); gap: 16px; }
+  html .pu-shell.pu-live-shell[data-ui-concept="eclisse"] .pu-journey { padding: 16px; }
+  html .pu-shell.pu-live-shell[data-ui-concept="impulso"] .pu-team-layout { grid-template-columns: minmax(160px, .8fr) minmax(170px, .85fr) minmax(255px, 1.1fr); gap: 14px; }
+  html .pu-shell.pu-live-shell[data-ui-concept="prisma"] .pu-team-layout { grid-template-columns: minmax(170px, .9fr) minmax(170px, .8fr) minmax(255px, 1.1fr); gap: 14px; }
+}
+@media (max-width: 900px) {
+  html .pu-shell.pu-live-shell:is([data-ui-concept="eclisse"], [data-ui-concept="impulso"], [data-ui-concept="prisma"]) {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding: 14px;
+    min-height: 100%;
+    height: auto;
+  }
+  html .pu-shell.pu-live-shell:is([data-ui-concept="eclisse"], [data-ui-concept="impulso"], [data-ui-concept="prisma"]) > .pu-topbar { order: 0; gap: 10px; flex-wrap: wrap; }
+  html .pu-shell.pu-live-shell:is([data-ui-concept="eclisse"], [data-ui-concept="impulso"], [data-ui-concept="prisma"]) > .pu-nav {
+    order: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin: 0;
+    padding: 6px;
+    border: 1px solid var(--ui-line);
+    border-radius: var(--ui-radius);
+    overflow: visible;
+  }
+  html .pu-shell.pu-live-shell:is([data-ui-concept="eclisse"], [data-ui-concept="impulso"], [data-ui-concept="prisma"]) .pu-nav-button {
+    flex: 1 1 28%;
+    justify-content: center;
+    width: auto;
+    min-width: 0;
+    min-height: 42px;
+    padding: 9px 5px;
+    font-size: 12px;
+    text-align: center;
+  }
+  html .pu-shell.pu-live-shell:is([data-ui-concept="eclisse"], [data-ui-concept="impulso"], [data-ui-concept="prisma"]) > .pu-content { order: 2; }
+  html .pu-shell.pu-live-shell:is([data-ui-concept="eclisse"], [data-ui-concept="impulso"], [data-ui-concept="prisma"]) > .pu-footer { order: 3; }
+  html .pu-shell.pu-live-shell[data-ui-concept="prisma"] > .pu-nav { order: 3; }
+  html .pu-shell.pu-live-shell[data-ui-concept="prisma"] > .pu-footer { order: 4; }
+  html .pu-shell.pu-live-shell:is([data-ui-concept="eclisse"], [data-ui-concept="impulso"], [data-ui-concept="prisma"]) .pu-team-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 18px;
+  }
+  html .pu-shell.pu-live-shell:is([data-ui-concept="eclisse"], [data-ui-concept="impulso"], [data-ui-concept="prisma"]) .pu-menu-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+  html .pu-shell.pu-live-shell:is([data-ui-concept="eclisse"], [data-ui-concept="impulso"], [data-ui-concept="prisma"]) .pu-menu-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    width: 100%;
+    gap: 10px;
+  }
+  html .pu-shell.pu-live-shell:is([data-ui-concept="eclisse"], [data-ui-concept="impulso"], [data-ui-concept="prisma"]) .pu-menu-tile { min-height: 155px; padding: 18px; }
+  html .pu-shell.pu-live-shell:is([data-ui-concept="eclisse"], [data-ui-concept="impulso"], [data-ui-concept="prisma"]) .pu-menu-tile h2 { font-size: 23px; }
+  html .pu-shell.pu-live-shell:is([data-ui-concept="eclisse"], [data-ui-concept="impulso"], [data-ui-concept="prisma"]) .pu-journey { width: 100%; padding: 20px; }
+  html .pu-shell.pu-live-shell:is([data-ui-concept="eclisse"], [data-ui-concept="impulso"], [data-ui-concept="prisma"]) .pu-team-tactics { padding: 18px; }
+  html .pu-shell.pu-live-shell[data-ui-concept="prisma"] .pu-player-switch { width: 100%; flex-basis: 100%; }
+}

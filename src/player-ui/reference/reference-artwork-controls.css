@@ -1,0 +1,176 @@
+/* Native controls retain editing, clear buttons and the platform select menu.
+   The supplied search/filter frames are contained, never stretched. The fixed
+   field height and responsive side padding keep live text inside the narrower
+   focus artwork as well as the normal artwork, including any side letterbox. */
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] :is(.pu-dex-index .pu-filter-grid,.pu-deposit-filters) :is(input[type="search"],select) {
+  --provided-field-height: 34px;
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  min-width: 0;
+  height: var(--provided-field-height);
+  min-height: var(--provided-field-height);
+  max-height: var(--provided-field-height);
+  aspect-ratio: auto;
+  appearance: none;
+  border: 0 !important;
+  border-radius: 0;
+  box-shadow: none !important;
+  background: transparent var(--provided-field-art) center / contain no-repeat !important;
+  padding-block: 4px;
+  color: #f3ebdc;
+  font-size: 13px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  line-height: 1.2;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-dex-screen .pu-dex-index .pu-filter-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-rows: auto;
+  grid-auto-flow: row;
+  gap: 6px 8px;
+  align-items: end;
+  justify-content: stretch;
+  min-width: 0;
+  width: 100%;
+  flex: none;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-dex-screen .pu-dex-index .pu-filter-grid > label {
+  position: static;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  align-items: stretch;
+  align-content: start;
+  justify-content: stretch;
+  gap: 3px;
+  width: 100%;
+  min-width: 0;
+  min-height: 0;
+  max-width: none;
+  font-size: 11px;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-dex-screen .pu-dex-index .pu-filter-grid > label:first-child,
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-dex-screen .pu-dex-index .pu-filter-reset {
+  grid-column: 1 / -1;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-dex-screen .pu-dex-index .pu-filter-grid :is(input[type="search"],select) {
+  width: 100%;
+  max-width: none;
+  min-width: 0;
+  justify-self: stretch;
+  font-size: 13px;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] :is(.pu-dex-index .pu-filter-grid,.pu-deposit-filters) input[type="search"] {
+  --provided-field-art: var(--provided-search-field);
+  /* Normal ratio 611/98; focus 662/124 includes the surrounding cyan glow. */
+  padding-left: max(20%, calc(50% - var(--provided-field-height) * 1.6016));
+  padding-right: max(7%, calc(50% - var(--provided-field-height) * 2.2956));
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] :is(.pu-dex-index .pu-filter-grid,.pu-deposit-filters) select {
+  --provided-field-art: var(--provided-filter-field);
+  /* Both funnel and chevron are part of the supplied 436/98 frame. */
+  padding-left: max(22%, calc(50% - var(--provided-field-height) * 1.0952));
+  padding-right: max(18%, calc(50% - var(--provided-field-height) * 1.2516));
+  cursor: pointer;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] :is(.pu-dex-index .pu-filter-grid,.pu-deposit-filters) input[type="search"]:focus {
+  --provided-field-art: var(--provided-search-field-focus);
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] :is(.pu-dex-index .pu-filter-grid,.pu-deposit-filters) select:focus {
+  --provided-field-art: var(--provided-filter-field-focus);
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] :is(.pu-dex-index .pu-filter-grid,.pu-deposit-filters) :is(input[type="search"],select):focus-visible {
+  outline: 2px solid #a0f4ff;
+  outline-offset: 1px;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] :is(.pu-dex-index .pu-filter-grid,.pu-deposit-filters) input[type="search"]::placeholder {
+  color: #b7cbdb;
+  opacity: 1;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] :is(.pu-dex-index .pu-filter-grid,.pu-deposit-filters) select option {
+  color: #f3ebdc;
+  background: #092038;
+}
+
+/* Two pairs of intact command frames use less vertical space than the former
+   three rows. Live labels may wrap inside the frame instead of sitting across
+   the transparent side margins of a disproportionately wide button. */
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-actions > .studio-command {
+  --provided-command-art: var(--provided-button-normal);
+  position: relative;
+  isolation: isolate;
+  display: grid;
+  align-content: center;
+  min-width: 0;
+  width: 100%;
+  height: auto;
+  min-height: 46px;
+  aspect-ratio: 347 / 110;
+  padding: 7px 14%;
+  border: 0 !important;
+  border-radius: 0;
+  background: transparent !important;
+  box-shadow: none;
+  color: #fff0d7;
+  font: 600 14px/1.15 Georgia,serif;
+  white-space: normal;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-actions > .studio-command:is(:first-child,:last-child) {
+  grid-column: auto;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-actions > .studio-command::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background: var(--provided-command-art) center / contain no-repeat;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-actions > .studio-command > span {
+  position: static;
+  inset: auto;
+  display: block;
+  width: 100%;
+  min-width: 0;
+  height: auto;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-actions > .studio-command[data-selected="true"] {
+  --provided-command-art: var(--provided-button-selected);
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-actions > .studio-command:hover:enabled {
+  --provided-command-art: var(--provided-button-hover);
+  transform: none;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-actions > .studio-command:focus-visible {
+  --provided-command-art: var(--provided-button-selected);
+  outline: 2px solid #a0f4ff;
+  outline-offset: 2px;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-actions > .studio-command:disabled {
+  --provided-command-art: var(--provided-button-disabled);
+  opacity: .65;
+}
+
+@media (max-width: 900px) {
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] :is(.pu-dex-index .pu-filter-grid,.pu-deposit-filters) :is(input[type="search"],select) {
+    --provided-field-height: 38px;
+  }
+}

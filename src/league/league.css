@@ -1,0 +1,44 @@
+.league-scene { width:100%; height:100%; display:grid; grid-template-rows:auto minmax(0,1fr) auto; gap:22px; padding:36px; color:var(--arka-text); background:linear-gradient(145deg,var(--arka-bg),var(--arka-surface)); }
+.league-heading { display:flex; align-items:center; justify-content:space-between; gap:24px; }
+.league-heading h1 { font-size:38px; line-height:1.2; margin:8px 0; }
+.league-heading p { font-size:20px; }
+.league-eyebrow { color:var(--arka-text-muted); font-size:15px!important; text-transform:uppercase; letter-spacing:.08em; }
+.league-player-card { min-width:300px; display:grid; grid-template-columns:44px 1fr; gap:8px 14px; padding:24px; }
+.league-player-card .pu-kit-icon { grid-row:span 2; width:44px; height:44px; }
+.league-player-card strong { font-size:22px; }.league-player-card span:last-child { color:var(--arka-text-muted); }
+.league-content { min-height:0; display:grid; grid-template-columns:minmax(350px,.85fr) minmax(0,1.8fr); gap:24px; }
+.league-path,.league-team { padding:28px; min-height:0; display:flex; flex-direction:column; gap:20px; overflow:auto; }
+.league-path h2,.league-team h2 { margin:0; font-size:26px; }
+.league-stages { padding:0; margin:0; list-style:none; display:flex; flex-direction:column; gap:18px; }
+.league-stages li { border:2px solid var(--arka-border); display:flex; align-items:center; gap:20px; padding:18px; background:var(--arka-surface); }
+.league-stage-number { display:grid; place-items:center; width:42px; height:42px; border:2px solid var(--arka-primary); font-size:22px; font-weight:700; flex-shrink:0; }
+.league-stages li>div { min-width:0; }.league-stages strong { display:block; font-size:22px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }.league-stages small { display:block; color:var(--arka-text-muted); font-size:17px; margin-top:5px; }
+.league-stages .is-current { outline:2px solid var(--arka-primary); }.league-stages .is-completed .league-stage-number { background:var(--arka-primary); color:var(--arka-bg); }
+.league-rule-note { color:var(--arka-text-muted); font-size:18px; margin-top:auto; }
+.league-team-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px; }
+.league-team-member { display:grid; grid-template-columns:80px minmax(0,1fr); align-items:center; gap:16px; border:1px solid var(--arka-border); padding:12px; }
+.league-team-member .pu-creature-portrait { width:80px; height:80px; }.league-team-member strong { display:block; white-space:nowrap; text-overflow:ellipsis; overflow:hidden; font-size:20px; }.league-team-member span { font-size:16px; }.league-team-member .pu-health { margin-top:8px; }
+.league-notice,.league-intermission { padding:18px; border:1px solid var(--arka-border); font-size:18px; }.league-notice ul { margin:8px 0; padding-left:22px; }.league-announcement { font-size:25px; font-weight:bold; line-height:1.5; padding:28px; text-align:center; margin:auto 0; }
+.league-item-use { display:grid; grid-template-columns:1fr 1fr auto; align-items:end; gap:12px; margin-top:14px; }.league-item-use label { display:flex; flex-direction:column; gap:8px; }.league-item-use select { padding:9px; background:var(--arka-bg); border:1px solid var(--arka-border); }
+.league-footer { display:flex; align-items:center; justify-content:space-between; gap:18px; border-top:1px solid var(--arka-border); padding-top:18px; }.league-footer p { font-size:18px; }.league-actions { display:flex; gap:12px; }.league-actions button { min-height:54px; font-size:18px; }
+.league-scene h1,.league-heading p { overflow-wrap:anywhere; }.league-notice { overflow:auto; }.league-footer>p { min-width:0; flex:1; }.league-actions { flex-shrink:0; flex-wrap:wrap; justify-content:flex-end; }
+@keyframes league-crown-arrival { from { opacity:0; transform:translateY(12px); } to { opacity:1; transform:translateY(0); } }
+.league-announcement { animation:league-crown-arrival .45s ease-out both; }
+.league-scene[data-reduced-motion="true"] .league-announcement { animation:none; }
+@media (prefers-reduced-motion:reduce) { .league-announcement { animation:none; } }
+@media (max-width:1500px) {
+  .league-scene { padding:22px; gap:14px; }.league-heading h1 { font-size:28px; margin:4px 0; }.league-heading p { font-size:15px; }.league-eyebrow { font-size:11px!important; }
+  .league-player-card { min-width:220px; padding:18px; grid-template-columns:32px 1fr; gap:5px 10px; }.league-player-card .pu-kit-icon { width:32px; height:32px; }.league-player-card strong { font-size:16px; }.league-player-card span:last-child { font-size:12px; }
+  .league-content { grid-template-columns:minmax(260px,.9fr) minmax(0,1.8fr); gap:14px; }.league-path,.league-team { padding:18px; gap:12px; }.league-path h2,.league-team h2 { font-size:20px; }
+  .league-stages { gap:10px; }.league-stages li { padding:10px; gap:12px; }.league-stage-number { width:30px; height:30px; font-size:16px; }.league-stages strong { font-size:16px; }.league-stages small { font-size:12px; margin-top:2px; }
+  .league-rule-note { font-size:13px; }.league-team-grid { gap:9px; }.league-team-member { grid-template-columns:54px minmax(0,1fr); gap:9px; padding:8px; }.league-team-member .pu-creature-portrait { width:54px; height:54px; }.league-team-member strong { font-size:14px; }.league-team-member span { font-size:11px; }
+  .league-notice,.league-intermission { padding:12px; font-size:13px; }.league-item-use { gap:8px; }.league-item-use select { font-size:12px; padding:6px; }.league-item-use button { font-size:12px; padding:8px; }.league-announcement { font-size:20px; padding:14px; }
+  .league-footer { gap:10px; padding-top:10px; }.league-footer p { font-size:13px; }.league-actions { gap:8px; }.league-actions button { min-height:38px; font-size:13px; padding:8px 12px; }
+}
+@media (max-width:800px) {
+  .arka-stage--league { width:100vw; height:100dvh; aspect-ratio:auto; }.league-scene { padding:14px; gap:10px; }.league-heading { align-items:flex-start; gap:10px; }.league-heading h1 { font-size:21px; }.league-heading p { font-size:12px; }.league-player-card { min-width:0; max-width:42%; padding:12px; display:flex; flex-direction:column; gap:4px; }.league-player-card .pu-kit-icon { display:none; }.league-player-card strong { font-size:12px; }.league-player-card span:last-child { font-size:10px; }
+  .league-content { grid-template-columns:1fr; grid-template-rows:minmax(120px,.65fr) minmax(0,1.65fr); gap:10px; }.league-path,.league-team { padding:14px; gap:10px; }.league-path h2,.league-team h2 { font-size:16px; }.league-stages { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:7px; }.league-stages li { gap:6px; padding:6px; }.league-stage-number { width:24px; height:24px; font-size:12px; }.league-stages strong { font-size:11px; }.league-stages small { font-size:10px; }.league-rule-note { font-size:11px; margin:0; }
+  .league-team-member { grid-template-columns:42px minmax(0,1fr); padding:5px; gap:5px; }.league-team-member .pu-creature-portrait { width:42px; height:42px; }.league-team-member strong { font-size:11px; }.league-team-member span { font-size:9px; }.league-team-member .pu-health>span { font-size:9px; }.league-team-grid { gap:6px; }
+  .league-item-use { grid-template-columns:1fr; gap:6px; }.league-notice,.league-intermission { font-size:12px; }.league-announcement { font-size:15px; padding:8px; }
+  .league-footer { flex-direction:column; align-items:stretch; gap:6px; }.league-footer p { font-size:11px; margin:0; }.league-actions { justify-content:stretch; }.league-actions button { flex:1; font-size:11px; min-height:38px; }
+}

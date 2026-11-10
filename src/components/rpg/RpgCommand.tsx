@@ -1,0 +1,1 @@
+export { RpgCommand } from './index'

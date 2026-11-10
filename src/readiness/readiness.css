@@ -1,0 +1,16 @@
+.arka-session p { margin-top: .35rem; }
+.arka-session-actions { display:flex; flex-wrap:wrap; gap:.6rem; }
+.arka-session-button { display:inline-block; padding:.55rem .8rem; border:1px solid var(--arka-border); border-radius:.4rem; font-weight:700; }
+.arka-session-button:disabled { opacity:.55; cursor:not-allowed; }
+.arka-session-link { text-decoration:underline; margin-top:.45rem; text-underline-offset:.2em; }
+.arka-session-race { display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); gap:.65rem; margin-top:.6rem; }
+.arka-session-race article,.arka-session-import { padding:.8rem; border:1px solid var(--arka-border); border-radius:.4rem; }
+.arka-session-checks { display:grid; gap:.65rem; margin:.75rem 0; }
+.arka-session-checks li { border-left:3px solid var(--arka-primary); padding:.65rem .8rem; background:var(--arka-bg); }
+.arka-session-checks [data-readiness-level=error] { border-color:#ff657c; }
+.arka-session-checks [data-readiness-level=warning] { border-color:#e9bf55; }
+.arka-session-checks [data-readiness-level=ok] { border-color:#51c595; }
+.arka-session table { border-collapse:collapse; width:100%; font-size:12px; margin:.6rem 0; }
+.arka-session th,.arka-session td { text-align:left; padding:.4rem; border-bottom:1px solid var(--arka-border); }
+.arka-session-import { margin-top:.75rem; }
+.arka-session-events li { padding:.6rem 0; border-bottom:1px solid var(--arka-border); }

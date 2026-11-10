@@ -1,0 +1,69 @@
+{
+  "name": "arkamon",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Arkamon - gioco ibrido tra Pokémon e boardgame con dadi D6",
+  "scripts": {
+    "postinstall": "node scripts/harden-build-dependencies.mjs",
+    "test:security": "node --test tests/security-braces.cjs",
+    "test:startup": "node scripts/check-startup-budget.mjs",
+    "test:release": "playwright test --config playwright.release.config.ts",
+    "test:desktop": "playwright test --config playwright.desktop.config.ts",
+    "test:private-guest": "playwright test --config playwright.private-guest.config.ts",
+    "obs:relay": "node scripts/public-relay.mjs",
+    "dev": "vite",
+    "build": "node scripts/build-runtime-game-data.mjs --check && tsc && vite build",
+    "build:desktop": "node scripts/build-runtime-game-data.mjs --check && tsc && vite build --mode desktop",
+    "data:runtime": "node scripts/build-runtime-game-data.mjs",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:ui-assets": "node --test tests/reference-svg-atlas.test.mjs tests/provided-png-package.test.mjs scripts/__tests__/catalog-splash-artwork.test.mjs",
+    "test:e2e": "playwright test",
+    "vfx:runtime": "node scripts/build-vfx-runtime-assets.mjs",
+    "tauri:dev": "tauri dev",
+    "tauri:build": "tauri build",
+    "vfx:sheets": "node scripts/build-vfx-spritesheets.mjs --input ./vfx-source/raw --output ./public/vfx/generated --fps 24 --maxColumns 8 --maxCellWidth 640 --maxCellHeight 640 --overwrite",
+    "vfx:build": "npm run vfx:sheets && npm run vfx:runtime",
+    "animations:pages": "node scripts/build-arkamon-pages.mjs --resume --effort 1",
+    "assets:catalog": "node scripts/build-arkamon-asset-catalog.mjs",
+    "assets:catalog:check": "node scripts/build-arkamon-asset-catalog.mjs --check",
+    "media:catalog": "node scripts/build-vfx-curation-catalog.mjs --check",
+    "media:pin": "node scripts/pin-media-release.mjs",
+    "media:release": "node scripts/package-media-release.mjs"
+  },
+  "dependencies": {
+    "framer-motion": "11.18.2",
+    "qrcode": "1.5.4",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "zustand": "4.5.7"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "4.13.0",
+    "@playwright/test": "1.64.0",
+    "@tauri-apps/cli": "2.11.2",
+    "@types/node": "25.9.1",
+    "@types/qrcode": "1.5.5",
+    "@types/react": "18.3.18",
+    "@types/react-dom": "18.3.5",
+    "@vitejs/plugin-react": "5.2.0",
+    "autoprefixer": "10.4.20",
+    "postcss": "8.5.29",
+    "sharp": "0.35.5",
+    "tailwindcss": "3.4.17",
+    "typescript": "5.7.3",
+    "vite": "7.3.7",
+    "vitest": "4.1.12"
+  },
+  "overrides": {
+    "vite": "7.3.7",
+    "@vitejs/plugin-react": "5.2.0",
+    "tailwindcss": "3.4.17",
+    "postcss-selector-parser": "7.1.6",
+    "esbuild": "0.28.2"
+  },
+  "engines": {
+    "node": ">=20.19.0"
+  }
+}

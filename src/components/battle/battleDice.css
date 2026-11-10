@@ -1,0 +1,57 @@
+.battle-dice-panel {
+  position: relative;
+  width: min(680px, 92%);
+  max-height: 94%;
+  overflow-y: auto;
+  pointer-events: auto;
+  /* Trasparenza solo del fondo: testi, dadi e risultati restano nitidi. */
+  background: color-mix(in srgb, var(--arka-bg) 55%, transparent);
+}
+
+.battle-dice-grid {
+  display: grid;
+  grid-template-columns: repeat(var(--battle-dice-columns), minmax(0, 1fr));
+  width: 100%;
+  max-width: calc(var(--battle-dice-columns) * var(--battle-dice-cell-width));
+  margin: 14px auto 0;
+  gap: 6px 0;
+}
+
+.battle-die {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1;
+  min-width: 0;
+}
+
+/* Preserve the transparent margins so the reveal flash is never clipped. */
+.battle-die-sprite {
+  position: absolute;
+  width: 200%;
+  aspect-ratio: 267 / 259;
+  pointer-events: none;
+}
+
+.battle-die-fallback {
+  display: grid;
+  place-items: center;
+  width: 64%;
+  aspect-ratio: 1;
+  border: 2px solid #7dd3fc;
+  border-radius: 12px;
+  background: #0c4a6e;
+  color: white;
+  font-size: clamp(18px, 3vw, 32px);
+  font-weight: 900;
+}
+
+@media (max-width: 640px) {
+  .battle-dice-grid {
+    grid-template-columns: repeat(var(--battle-dice-mobile-columns), minmax(0, 1fr));
+    max-width: calc(var(--battle-dice-mobile-columns) * var(--battle-dice-mobile-cell-width));
+    margin-top: 10px;
+    gap: 2px 0;
+  }
+}
