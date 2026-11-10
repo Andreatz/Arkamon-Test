@@ -1,0 +1,89 @@
+name: Bootstrap Arkamon Test from pinned Beta source
+
+on:
+  pull_request:
+    paths:
+      - '.github/workflows/bootstrap-test.yml'
+      - 'bootstrap/import-from-beta.mjs'
+      - 'docs/rework/**'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: arkamon-test-bootstrap-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  import:
+    if: github.event_name == 'workflow_dispatch' || (github.event.pull_request.head.repo.full_name == github.repository && github.event.pull_request.head.ref == 'rework/bootstrap-from-beta')
+    runs-on: ubuntu-24.04
+    timeout-minutes: 100
+    steps:
+      - name: Checkout dedicated test branch
+        uses: actions/checkout@v4
+        with:
+          ref: rework/bootstrap-from-beta
+          persist-credentials: true
+
+      - name: Setup Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Fetch exact upstream source without historical media
+        run: |
+          set -euo pipefail
+          git clone --depth 1 --filter=blob:none --no-checkout https://github.com/Andreatz/Arkamon-Beta.git /tmp/arkamon-beta
+          git -C /tmp/arkamon-beta sparse-checkout init --cone
+          git -C /tmp/arkamon-beta sparse-checkout set \
+            src scripts tests e2e e2e-desktop e2e-release e2e-native-release \
+            public/ui public/maps public/backgrounds public/assets \
+            public/sprites/front_sprites public/sprites/back_sprites public/sprites/small_sprites \
+            public/audio public/audio-lab
+          git -C /tmp/arkamon-beta checkout --detach 62d24f0361611daff1ca5211c444fa4acefc196d
+          git -C /tmp/arkamon-beta rev-parse HEAD
+          du -sh /tmp/arkamon-beta || true
+
+      - name: Copy bounded source and configure external media
+        run: node bootstrap/import-from-beta.mjs /tmp/arkamon-beta
+
+      - name: Publish imported source only into this PR branch
+        env:
+          TARGET_BRANCH: rework/bootstrap-from-beta
+        run: |
+          set -euo pipefail
+          test "$TARGET_BRANCH" = "rework/bootstrap-from-beta"
+          test -f docs/rework/import-report.json
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then echo "No changes to import"; exit 0; fi
+          git commit -m "Import pinned Arkamon source and local UI media into isolated test repository"
+          git push origin "HEAD:refs/heads/$TARGET_BRANCH"
+
+      - name: Install dependencies
+        id: npm
+        run: npm ci
+
+      - name: Verify TypeScript
+        id: typecheck
+        run: npx tsc --noEmit
+
+      - name: Verify lightweight standalone production build
+        id: build
+        run: npm run build
+
+      - name: Run battle engine unit test slice
+        id: tests
+        run: npx vitest run src/engine/__tests__ --maxWorkers=2
+
+      - name: Write bootstrap summary
+        if: always()
+        run: |
+          echo "## Arkamon-Test bootstrap" >> "$GITHUB_STEP_SUMMARY"
+          if test -f docs/rework/import-report.json; then
+            node -e 'let j=require("./docs/rework/import-report.json"); console.log("Source: "+j.sourceRevision+"\nFiles: "+j.copiedFiles+"\nTotal MiB: "+j.copiedMiB+"\nStatic MiB: "+j.staticMiB+"\nOmitted files: "+j.omitted.length)' >> "$GITHUB_STEP_SUMMARY"
+          fi
+          echo "See build/typecheck/test steps above. Media-heavy files were not copied." >> "$GITHUB_STEP_SUMMARY"
