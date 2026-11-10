@@ -5,6 +5,7 @@ on:
     paths:
       - '.github/workflows/rework-checks.yml'
       - 'src/**'
+      - 'e2e/rework-title.spec.ts'
       - 'ui-source/**'
       - 'public/**'
       - 'scripts/**'
@@ -43,6 +44,18 @@ jobs:
         run: npm run build
         env:
           GITHUB_PAGES: 'true'
+      - name: Install browser for title visual smoke
+        run: npx playwright install --with-deps chromium
+      - name: Check title rework desktop and mobile
+        run: npx playwright test e2e/rework-title.spec.ts --project=chromium --workers=1 --reporter=list
+      - name: Upload title screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: arkamon-test-title-rework
+          path: output/rework-visual/
+          if-no-files-found: warn
+          retention-days: 14
       - name: Rework verification summary
         if: always()
         run: |
