@@ -50,3 +50,62 @@
 @media (prefers-reduced-motion: reduce) {
   .battle-camera-glaze { transition-duration: 0ms !important; }
 }
+
+
+/*
+ * Camera choreography v2: contrast comes from motion blocking and the move's
+ * existing elemental tint, not from extra GIFs or sprite atlas allocations.
+ * Every variant uses the same bounded transform and live VFX timeline.
+ */
+.battle-camera[data-battle-camera-choreography="physical"][data-battle-camera-beat="travel"] .battle-camera-glaze {
+  background:
+    linear-gradient(118deg, transparent 26%,
+      color-mix(in srgb, var(--battle-camera-accent) 30%, transparent) 48%,
+      transparent 67%),
+    radial-gradient(circle at var(--battle-focus-x) var(--battle-focus-y),
+      color-mix(in srgb, var(--battle-camera-accent) 20%, transparent),
+      transparent 62%);
+}
+.battle-camera[data-battle-camera-choreography="physical"][data-battle-camera-beat="impact"] .battle-camera-glaze {
+  background:
+    radial-gradient(ellipse 31% 22% at var(--battle-focus-x) var(--battle-focus-y),
+      color-mix(in srgb, var(--battle-camera-accent) 66%, transparent),
+      color-mix(in srgb, var(--battle-camera-accent) 22%, transparent) 35%,
+      transparent 86%);
+}
+.battle-camera[data-battle-camera-choreography="projectile"][data-battle-camera-beat="travel"] .battle-camera-glaze {
+  background:
+    linear-gradient(131deg, transparent 33%,
+      color-mix(in srgb, var(--battle-camera-accent) 15%, transparent) 46%,
+      color-mix(in srgb, var(--battle-camera-accent) 23%, transparent) 51%,
+      transparent 66%);
+}
+.battle-camera[data-battle-camera-choreography="projectile"][data-battle-camera-beat="impact"] .battle-camera-glaze {
+  background:
+    radial-gradient(circle at var(--battle-focus-x) var(--battle-focus-y),
+      color-mix(in srgb, var(--battle-camera-accent) 54%, transparent),
+      color-mix(in srgb, var(--battle-camera-accent) 16%, transparent) 20%,
+      transparent 62%);
+}
+.battle-camera[data-battle-camera-choreography="area"][data-battle-camera-beat="travel"] .battle-camera-glaze {
+  background:
+    radial-gradient(ellipse 58% 37% at 50% 51%,
+      transparent 18%,
+      color-mix(in srgb, var(--battle-camera-accent) 14%, transparent) 45%,
+      transparent 87%);
+}
+.battle-camera[data-battle-camera-choreography="area"][data-battle-camera-beat="impact"] .battle-camera-glaze {
+  background:
+    radial-gradient(ellipse 68% 55% at 50% 50%,
+      transparent 27%,
+      color-mix(in srgb, var(--battle-camera-accent) 60%, transparent) 38%,
+      color-mix(in srgb, var(--battle-camera-accent) 14%, transparent) 57%,
+      transparent 77%);
+}
+.battle-camera[data-battle-camera-choreography="support"][data-battle-camera-beat="travel"] .battle-camera-glaze,
+.battle-camera[data-battle-camera-choreography="support"][data-battle-camera-beat="impact"] .battle-camera-glaze {
+  background:
+    radial-gradient(ellipse 36% 45% at var(--battle-focus-x) var(--battle-focus-y),
+      color-mix(in srgb, var(--battle-camera-accent) 27%, transparent),
+      transparent 74%);
+}
