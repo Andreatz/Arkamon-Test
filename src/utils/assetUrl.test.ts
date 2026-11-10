@@ -42,4 +42,16 @@ describe('immutable media distribution and local graphics', () => {
     expect(resolveAssetUrl('sounds/a #1.wav', '/', undefined, undefined, true)).toBe('/sounds/a%20%231.wav')
     for (const url of ['https://example/a.webp', 'blob:example', 'data:image/png;base64,AA']) expect(resolveAssetUrl(url, '/', revision)).toBe(url)
   })
+  it('resolves only intentionally omitted fork assets through the pinned upstream media source', () => {
+    const missing = ['sprites/front_sprites/5.png', 'sprites/back_sprites/13.png', 'audio/selected/fanfare.mp3']
+    for (const name of missing) {
+      const expected = name.split('/').map(encodeURIComponent).join('/')
+      expect(resolveAssetUrl('/' + name, '/Arkamon-Test/', revision, undefined, false, [5], missing))
+        .toBe(`https://raw.githubusercontent.com/Andreatz/Arkamon-Beta/${revision}/public/${expected}`)
+    }
+    expect(resolveAssetUrl('/ui/logo_arkamon.png', '/Arkamon-Test/', revision, undefined, false, [5], missing))
+      .toBe('/Arkamon-Test/ui/logo_arkamon.png')
+    expect(resolveAssetUrl('/sprites/front_sprites/13.png', '/Arkamon-Test/', revision, undefined, false, [5, 13], missing))
+      .toBe('/Arkamon-Test/sprites/front_sprites/13.png')
+  })
 })
