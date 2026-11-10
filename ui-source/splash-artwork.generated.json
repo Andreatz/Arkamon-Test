@@ -1,0 +1,2312 @@
+[
+  {
+    "speciesId": 1,
+    "src": "/backgrounds/arkamon-splash/001-vyrath.webp",
+    "sha256": "32e9dd3c627535930777d859afd4a56f9ec5ff8500972a6d744eba1bd837cd21",
+    "label": "Illustrazione di Vyrath",
+    "objectPosition": "50% 50%",
+    "aspectRatio": "16 / 9",
+    "subjectBounds": {
+      "left": 0.174,
+      "top": 0.083,
+      "right": 0.7,
+      "bottom": 0.903
+    },
+    "compositionPolicy": "full-canvas-focus",
+    "focusBounds": {
+      "left": 0.316,
+      "top": 0.265,
+      "right": 0.552,
+      "bottom": 0.798
+    }
+  },
+  {
+    "speciesId": 2,
+    "src": "/backgrounds/arkamon-splash/002-vyrath.webp",
+    "sha256": "071c811f8e2c3973c2f714ac943f1ff5a2d70a842ea9c9b5a3fc20af28b27177",
+    "label": "Illustrazione di Vyrath",
+    "objectPosition": "50% 50%",
+    "aspectRatio": "16 / 9",
+    "subjectBounds": {
+      "left": 0.06,
+      "top": 0,
+      "right": 0.93,
+      "bottom": 0.96
+    },
+    "compositionPolicy": "full-canvas-focus",
+    "focusBounds": {
+      "left": 0.315,
+      "top": 0.255,
+      "right": 0.565,
+      "bottom": 0.79
+    }
+  },
+  {
+    "speciesId": 3,
+    "src": "/backgrounds/arkamon-splash/003-vyrath.webp",
+    "sha256": "8962d2a22825460be17babf86036c47f59a882118b6537a44b32ccb33e12593f",
+    "label": "Illustrazione di Vyrath",
+    "objectPosition": "50% 50%",
+    "aspectRatio": "16 / 9",
+    "subjectBounds": {
+      "left": 0,
+      "top": 0,
+      "right": 1,
+      "bottom": 1
+    },
+    "compositionPolicy": "full-canvas-focus",
+    "focusBounds": {
+      "left": 0.4,
+      "top": 0.295,
+      "right": 0.55,
+      "bottom": 0.745
+    }
+  },
+  {
+    "speciesId": 4,
+    "src": "/backgrounds/arkamon-splash/004-vyrath.webp",
+    "sha256": "b3f9edf2c42c9b13bb4113210c3d8ad5166277e070e80c6c3b3f000955137b23",
+    "label": "Illustrazione di Vyrath",
+    "objectPosition": "50% 50%",
+    "aspectRatio": "16 / 9",
+    "subjectBounds": {
+      "left": 0.321,
+      "top": 0.192,
+      "right": 0.721,
+      "bottom": 0.835
+    },
+    "compositionPolicy": "full-canvas-focus",
+    "focusBounds": {
+      "left": 0.344,
+      "top": 0.31,
+      "right": 0.585,
+      "bottom": 0.775
+    }
+  },
+  {
+    "speciesId": 5,
+    "src": "/backgrounds/arkamon-splash/005-darklaw.webp",
+    "sha256": "98e341e7a902d22e3f041e9eb6177d94873b0f7aa29a00ab6d412d2151721bcf",
+    "label": "Illustrazione di Darklaw",
+    "objectPosition": "50% 50%",
+    "aspectRatio": "16 / 9",
+    "subjectBounds": {
+      "left": 0.25,
+      "top": 0,
+      "right": 0.84,
+      "bottom": 0.98
+    },
+    "compositionPolicy": "full-canvas-focus",
+    "focusBounds": {
+      "left": 0.31,
+      "top": 0.255,
+      "right": 0.59,
+      "bottom": 0.8
+    }
+  },
+  {
+    "speciesId": 6,
+    "src": "/backgrounds/arkamon-splash/006-darklaw.webp",
+    "sha256": "3c016eae80ecb0b90fe210d7b031b46164b719ba78adc116289b30b9ad6a1d47",
+    "label": "Illustrazione di Darklaw",
+    "objectPosition": "50% 50%",
+    "aspectRatio": "16 / 9",
+    "subjectBounds": {
+      "left": 0.22,
+      "top": 0,
+      "right": 0.93,
+      "bottom": 0.97
+    },
+    "compositionPolicy": "full-canvas-focus",
+    "focusBounds": {
+      "left": 0.315,
+      "top": 0.26,
+      "right": 0.61,
+      "bottom": 0.77
+    }
+  },
+  {
+    "speciesId": 7,
+    "src": "/backgrounds/arkamon-splash/007-darklaw.webp",
+    "sha256": "26d0a70ac3616035fef75843f4b8fb39c28834c6acdd5bc012b4289678b56a3a",
+    "label": "Illustrazione di Darklaw",
+    "objectPosition": "50% 50%",
+    "aspectRatio": "16 / 9",
+    "subjectBounds": {
+      "left": 0,
+      "top": 0,
+      "right": 1,
+      "bottom": 1
+    },
+    "compositionPolicy": "full-canvas-focus",
+    "focusBounds": {
+      "left": 0.315,
+      "top": 0.255,
+      "right": 0.59,
+      "bottom": 0.8
+    }
+  },
+  {
+    "speciesId": 8,
+    "src": "/backgrounds/arkamon-splash/008-darklaw.webp",
+    "sha256": "6cf0f2335ed86a1b2652a8c53f20559bd83be38283ab913d8a89250b1ed3757d",
+    "label": "Illustrazione di Darklaw",
+    "objectPosition": "50% 50%",
+    "aspectRatio": "16 / 9",
+    "subjectBounds": {
+      "left": 0,
+      "top": 0,
+      "right": 1,
+      "bottom": 1
+    },
+    "compositionPolicy": "full-canvas-focus",
+    "focusBounds": {
+      "left": 0.423,
+      "top": 0.266,
+      "right": 0.535,
+      "bottom": 0.755
+    }
+  },
+  {
+    "speciesId": 9,
+    "src": "/backgrounds/arkamon-splash/009-felyss.webp",
+    "sha256": "d6fc828ac40ce2ac944d46e2c150a7b3fcf67031035592d59ccbab143bdf853c",
+    "label": "Illustrazione di Felyss",
+    "objectPosition": "50% 50%",
+    "aspectRatio": "16 / 9",
+    "subjectBounds": {
+      "left": 0.297,
+      "top": 0.1,
+      "right": 0.65,
+      "bottom": 0.761
+    },
+    "compositionPolicy": "full-canvas-focus",
+    "focusBounds": {
+      "left": 0.339,
+      "top": 0.271,
+      "right": 0.57,
+      "bottom": 0.738
+    }
+  },
+  {
+    "speciesId": 10,
+    "src": "/backgrounds/arkamon-splash/010-felyss.webp",
+    "sha256": "ed0d76b6c9e22d84153c0194a1cec8a8c06e8ba31c92b5bf12aceec7f651fe95",
+    "label": "Illustrazione di Felyss",
+    "objectPosition": "50% 50%",
+    "aspectRatio": "16 / 9",
+    "subjectBounds": {
+      "left": 0,
+      "top": 0,
+      "right": 1,
+      "bottom": 1
+    },
+    "compositionPolicy": "full-canvas-focus",
+    "focusBounds": {
+      "left": 0.315,
+      "top": 0.225,
+      "right": 0.615,
+      "bottom": 0.8
+    }
+  },
+  {
+    "speciesId": 11,
+    "src": "/backgrounds/arkamon-splash/011-felyss.webp",
+    "sha256": "8eda055dcffadf20543e9d080e26f25979ecf4c86a98bb717eb598e844283b3d",
+    "label": "Illustrazione di Felyss",
+    "objectPosition": "50% 50%",
+    "aspectRatio": "16 / 9",
+    "subjectBounds": {
+      "left": 0,
+      "top": 0,
+      "right": 1,
+      "bottom": 1
+    },
+    "compositionPolicy": "full-canvas-focus",
+    "focusBounds": {
+      "left": 0.315,
+      "top": 0.235,
+      "right": 0.585,
+      "bottom": 0.79
+    }
+  },
+  {
+    "speciesId": 12,
+    "src": "/backgrounds/arkamon-splash/012-felyss.webp",
+    "sha256": "d03dd647c9a457289181421fa956a955534d42ff8a6602f214dd4b5a4d61a395",
+    "label": "Illustrazione di Felyss",
+    "objectPosition": "50% 50%",
+    "aspectRatio": "16 / 9",
+    "subjectBounds": {
+      "left": 0.05,
+      "top": 0.146,
+      "right": 1,
+      "bottom": 1
+    },
+    "compositionPolicy": "full-canvas-focus",
+    "focusBounds": {
+      "left": 0.398,
+      "top": 0.368,
+      "right": 0.565,
+      "bottom": 0.8
+    }
+  },
+  {
+    "speciesId": 13,
+    "src": "/backgrounds/arkamon-splash/013-wormaren.webp",
+    "sha256": "5a87d88cd52ab0db09c93b2d6c5cd52018535b50e9bbae67f126076d1891afc2",
+    "label": "Illustrazione di Wormaren",
+    "objectPosition": "50% 50%",
+    "aspectRatio": "16 / 9",
+    "subjectBounds": {
+      "left": 0,
+      "top": 0,
+      "right": 1,
+      "bottom": 1
+    },
+    "compositionPolicy": "full-canvas-focus",
+    "focusBounds": {
+      "left": 0.285,
+      "top": 0.285,
+      "right": 0.62,
+      "bottom": 0.8
+    }
+  },
+  {
+    "speciesId": 14,
+    "src": "/backgrounds/arkamon-splash/014-wormaren.webp",
+    "sha256": "3a18a7685bb6ef0d7bbcf2db08c56accafc7c38b63d3176eb771848f60569344",
+    "label": "Illustrazione di Wormaren",
+    "objectPosition": "50% 50%",
+    "aspectRatio": "16 / 9",
+    "subjectBounds": {
+      "left": 0,
+      "top": 0,
+      "right": 1,
+      "bottom": 1
+    },
+    "compositionPolicy": "full-canvas-focus",
+    "focusBounds": {
+      "left": 0.295,
+      "top": 0.255,
+      "right": 0.625,
+      "bottom": 0.8
+    }
+  },
+  {
+    "speciesId": 15,
+    "src": "/backgrounds/arkamon-splash/015-wormaren.webp",
+    "sha256": "89ce1f587fb020e62bac3b080a8d0ef3dcac31b949957f5264a635f125807b33",
+    "label": "Illustrazione di Wormaren",
+    "objectPosition": "50% 50%",
+    "aspectRatio": "16 / 9",
+    "subjectBounds": {
+      "left": 0,
+      "top": 0,
+      "right": 1,
+      "bottom": 1
+    },
+    "compositionPolicy": "full-canvas-focus",
+    "focusBounds": {
+      "left": 0.344,
+      "top": 0.28,
+      "right": 0.615,
+      "bottom": 0.795
+    }
+  },
+  {
+    "speciesId": 16,
+    "src": "/backgrounds/arkamon-splash/016-clastoom.webp",
+    "sha256": "64a626566498976066c2fc16871b7a1425e40bd6ce9eb6c11fc7db34924725ce",
+    "label": "Illustrazione di Clastoom",
+    "objectPosition": "50% 50%",
+    "aspectRatio": "16 / 9",
+    "subjectBounds": {
+      "left": 0,
+      "top": 0,
+      "right": 1,
+      "bottom": 1
+    },
+    "compositionPolicy": "full-canvas-focus",
+    "focusBounds": {
+      "left": 0.31,
+      "top": 0.24,
+      "right": 0.635,
+      "bottom": 0.8
+    }
+  },
+  {
+    "speciesId": 17,
+    "src": "/backgrounds/arkamon-splash/017-clastoom.webp",
+    "sha256": "02029d109a1e05c77fba544532d9ecaa5cdb0690d3280c577c3358b9eacba70a",
+    "label": "Illustrazione di Clastoom",
+    "objectPosition": "50% 50%",
+    "aspectRatio": "16 / 9",
+    "subjectBounds": {
+      "left": 0,
+      "top": 0,
+      "right": 1,
+      "bottom": 1
+    },
+    "compositionPolicy": "full-canvas-focus",
+    "focusBounds": {
+      "left": 0.31,
+      "top": 0.255,
+      "right": 0.625,
+      "bottom": 0.8
+    }
+  },
+  {
+    "speciesId": 18,
+    "src": "/backgrounds/arkamon-splash/018-clastoom.webp",
+    "sha256": "c6a8b8bb998bf66fbc8413af59cc31d243b180e04ac42afea0448fa8839c402f",
+    "label": "Illustrazione di Clastoom",
+    "objectPosition": "50% 50%",
+    "aspectRatio": "16 / 9",
+    "subjectBounds": {
+      "left": 0,
+      "top": 0,
+      "right": 1,
+      "bottom": 1
+    },
+    "compositionPolicy": "full-canvas-focus",
+    "focusBounds": {
+      "left": 0.31,
+      "top": 0.265,
+      "right": 0.63,
+      "bottom": 0.8
+    }
+  },
+  {
+    "speciesId": 19,
+    "src": "/backgrounds/arkamon-splash/019-colussand.webp",
+    "sha256": "1054bb927aed994068e6ab92f7797fea69a24ad585aa9149362b872dcf8085e5",
+    "label": "Illustrazione di Colussand",
+    "objectPosition": "50% 50%",
+    "aspectRatio": "16 / 9",
+    "subjectBounds": {
+      "left": 0,
+      "top": 0,
+      "right": 1,
+      "bottom": 1
+    },
+    "compositionPolicy": "full-canvas-focus",
+    "focusBounds": {
+      "left": 0.315,
+      "top": 0.23,
+      "right": 0.645,
+      "bottom": 0.8
+    }
+  },
+  {
+    "speciesId": 20,
+    "src": "/backgrounds/arkamon-splash/020-handipus.webp",
+    "sha256": "6e730c59f36249c50ab90103fe0264785e18d7d6dd7b8c3ea10f7831a5f853d9",
+    "label": "Illustrazione di Handipus",
+    "objectPosition": "50% 50%",
+    "aspectRatio": "16 / 9",
+    "subjectBounds": {
+      "left": 0,
+      "top": 0,
+      "right": 1,
+      "bottom": 1
+    },
+    "compositionPolicy": "full-canvas-focus",
+    "focusBounds": {
+      "left": 0.305,
+      "top": 0.29,
+      "right": 0.615,
+      "bottom": 0.8
+    }
+  },
+  {
+    "speciesId": 21,
+    "src": "/backgrounds/arkamon-splash/021-shrody.webp",
+    "sha256": "a139235c3ccf4e9d2784ba48a242910ce6fe6a6d3d06ca86dc2c6ec11cdac054",
+    "label": "Illustrazione di Shrody",
+    "objectPosition": "50% 50%",
+    "aspectRatio": "16 / 9",
+    "subjectBounds": {
+      "left": 0,
+      "top": 0,
+      "right": 1,
+      "bottom": 1
+    },
+    "compositionPolicy": "full-canvas-focus",
+    "focusBounds": {
+      "left": 0.285,
+      "top": 0.255,
+      "right": 0.605,
+      "bottom": 0.79
+    }
+  },
+  {
+    "speciesId": 22,
+    "src": "/backgrounds/arkamon-splash/022-voltrake.webp",
+    "sha256": "7c163b0942f606f90f569fc86fb87a31005e4ff9b8c8cb76fa8f0568726d2a92",
+    "label": "Illustrazione di Voltrake",
+    "objectPosition": "50% 50%",
+    "aspectRatio": "16 / 9",
+    "subjectBounds": {
+      "left": 0,
+      "top": 0,
+      "right": 1,
+      "bottom": 1
+    },
+    "compositionPolicy": "full-canvas-focus",
+    "focusBounds": {
+      "left": 0.31,
+      "top": 0.235,
+      "right": 0.65,
+      "bottom": 0.8
+    }
+  },
+  {
+    "speciesId": 23,
+    "src": "/backgrounds/arkamon-splash/023-sparkly.webp",
+    "sha256": "ba4598310ae0d460341a984007014437fbbf96ebc4474bf4482af2852223bec9",
+    "label": "Illustrazione di Sparkly",
+    "objectPosition": "50% 50%",
+    "aspectRatio": "16 / 9",
+    "subjectBounds": {
+      "left": 0,
+      "top": 0,
+      "right": 1,
+      "bottom": 1
+    },
+    "compositionPolicy": "full-canvas-focus",
+    "focusBounds": {
+      "left": 0.315,
+      "top": 0.265,
+      "right": 0.6,
+      "bottom": 0.79
+    }
+  },
+  {
+    "speciesId": 24,
+    "src": "/backgrounds/arkamon-splash/024-grimbolt.webp",
+    "sha256": "39b388219221851c13b6439988fbb7a10a699c713d8538bf88b9f3d5ff10b028",
+    "label": "Illustrazione di Grimbolt",
+    "objectPosition": "50% 50%",
+    "aspectRatio": "16 / 9",
+    "subjectBounds": {
+      "left": 0,
+      "top": 0,
+      "right": 1,
+      "bottom": 1
+    },
+    "compositionPolicy": "full-canvas-focus",
+    "focusBounds": {
+      "left": 0.31,
+      "top": 0.265,
+      "right": 0.62,
+      "bottom": 0.8
+    }
+  },
+  {
+    "speciesId": 25,
+    "src": "/backgrounds/arkamon-splash/025-grimbolt.webp",
+    "sha256": "c0147a31279b690cb61c508e47f99a30b313ebd7d237758ae2f3ed8468e010c3",
+    "label": "Illustrazione di Grimbolt",
+    "objectPosition": "50% 50%",
+    "aspectRatio": "16 / 9",
+    "subjectBounds": {
+      "left": 0,
+      "top": 0,
+      "right": 1,
+      "bottom": 1
+    },
+    "compositionPolicy": "full-canvas-focus",
+    "focusBounds": {
+      "left": 0.315,
+      "top": 0.28,
+      "right": 0.63,
+      "bottom": 0.8
+    }
+  },
+  {
+    "speciesId": 26,
+    "src": "/backgrounds/arkamon-splash/026-ampereel.webp",
+    "sha256": "41daa1a0915cbdad4a5a405b16540a6b66faa0babe62e4e4865aa3ad93c02275",
+    "label": "Illustrazione di Ampereel",
+    "objectPosition": "50% 50%",
+    "aspectRatio": "16 / 9",
+    "subjectBounds": {
+      "left": 0.29,
+      "top": 0.216,
+      "right": 0.952,
+      "bottom": 0.969
+    },
+    "compositionPolicy": "full-canvas-focus",
+    "focusBounds": {
+      "left": 0.389,
+      "top": 0.329,
+      "right": 0.611,
+      "bottom": 0.799
+    }
+  },
+  {
+    "speciesId": 27,
+    "src": "/backgrounds/arkamon-splash/027-ampereel.webp",
+    "sha256": "361132ab50e8c4bff16c277582f09f3aa1e9e9a5546036dc68a3581b97e2bd8d",
+    "label": "Illustrazione di Ampereel",
+    "objectPosition": "50% 50%",
+    "aspectRatio": "16 / 9",
+    "subjectBounds": {
+      "left": 0,
+      "top": 0,
+      "right": 1,
+      "bottom": 1
+    },
+    "compositionPolicy": "full-canvas-focus",
+    "focusBounds": {
+      "left": 0.29,
+      "top": 0.28,
+      "right": 0.625,
+      "bottom": 0.8
+    }
+  },
+  {
+    "speciesId": 28,
+    "src": "/backgrounds/arkamon-splash/028-silvard.webp",
+    "sha256": "838f073b591efb99ad44f5178fa812661567ac0eb55235c9db85d263f95ceebe",
+    "label": "Illustrazione di Silvard",
+    "objectPosition": "50% 50%",
+    "aspectRatio": "16 / 9",
+    "subjectBounds": {
+      "left": 0,
+      "top": 0,
+      "right": 1,
+      "bottom": 1
+    },
+    "compositionPolicy": "full-canvas-focus",
+    "focusBounds": {
+      "left": 0.31,
+      "top": 0.235,
+      "right": 0.625,
+      "bottom": 0.8
+    }
+  },
+  {
+    "speciesId": 29,
+    "src": "/backgrounds/arkamon-splash/029-silvard.webp",
+    "sha256": "e4d36c4367e233c53fc90c0a77b80c3abe162e3672e184f5d69a7ebbaa97ca2f",
+    "label": "Illustrazione di Silvard",
+    "objectPosition": "50% 50%",
+    "aspectRatio": "16 / 9",
+    "subjectBounds": {
+      "left": 0.315,
+      "top": 0.17,
+      "right": 0.88,
+      "bottom": 0.91
+    },
+    "compositionPolicy": "full-canvas-focus",
+    "focusBounds": {
+      "left": 0.36,
+      "top": 0.28,
+      "right": 0.645,
+      "bottom": 0.7
+    }
+  },
+  {
+    "speciesId": 30,
+    "src": "/backgrounds/arkamon-splash/030-eclyps.webp",
+    "sha256": "bc408b1216a1e0a6092a2ea5450001b788e250c3198af6bb010c012185f74fba",
+    "label": "Illustrazione di Eclyps",
+    "objectPosition": "50% 50%",
+    "aspectRatio": "16 / 9",
+    "subjectBounds": {
+      "left": 0.295,
+      "top": 0.08,
+      "right": 0.715,
+      "bottom": 0.98
+    },
+    "compositionPolicy": "full-canvas-focus",
+    "focusBounds": {
+      "left": 0.34,
+      "top": 0.25,
+      "right": 0.595,
+      "bottom": 0.79
+    }
+  },
+  {
+    "speciesId": 31,
+    "src": "/backgrounds/arkamon-splash/031-eclyps.webp",
+    "sha256": "1cbe8d2f6cf101d61d7cf2b92a5ae4ff8125118daaeb7c45c8501bcf0f2c5425",
+    "label": "Illustrazione di Eclyps",
+    "objectPosition": "50% 50%",
+    "aspectRatio": "16 / 9",
+    "subjectBounds": {
+      "left": 0.34,
+      "top": 0.14,
+      "right": 0.81,
+      "bottom": 0.935
+    },
+    "compositionPolicy": "full-canvas-focus",
+    "focusBounds": {
+      "left": 0.38,
+      "top": 0.23,
+      "right": 0.645,
+      "bottom": 0.76
+    }
+  },
+  {
+    "speciesId": 32,
+    "src": "/backgrounds/arkamon-splash/032-blazion.webp",
+    "sha256": "d3229a5420e0383f8346fa374ca6d44b774f208eb49216ef79eb18a913fa20ca",
+    "label": "Illustrazione di Blazion",
+    "objectPosition": "50% 50%",
+    "aspectRatio": "16 / 9",
+    "subjectBounds": {
+      "left": 0.258,
+      "top": 0.052,
+      "right": 0.79,
+      "bottom": 0.875
+    },
+    "compositionPolicy": "full-canvas-focus",
+    "focusBounds": {
+      "left": 0.309,
+      "top": 0.242,
+      "right": 0.628,
+      "bottom": 0.785
+    }
+  },
+  {
+    "speciesId": 33,
+    "src": "/backgrounds/arkamon-splash/033-blazion.webp",
+    "sha256": "e471aa2f3ed42056c508992116d907476198d9c1474ac652b0f866c209ec588b",
+    "label": "Illustrazione di Blazion",
+    "objectPosition": "50% 50%",
+    "aspectRatio": "16 / 9",
+    "subjectBounds": {
+      "left": 0.224,
+      "top": 0,
+      "right": 0.8,
+      "bottom": 0.937
+    },
+    "compositionPolicy": "full-canvas-focus",
+    "focusBounds": {
+      "left": 0.293,
+      "top": 0.23,
+      "right": 0.612,
+      "bottom": 0.77
+    }
+  },
+  {
+    "speciesId": 34,
+    "src": "/backgrounds/arkamon-splash/034-crawgoyle.webp",
+    "sha256": "5417a16dd539e1128580a8ec79e0353fec6c4e88108f8d1355091e76e3ce11e8",
+    "label": "Illustrazione di Crawgoyle",
+    "objectPosition": "50% 50%",
+    "aspectRatio": "16 / 9",
+    "subjectBounds": {
+      "left": 0,
+      "top": 0,
+      "right": 1,
+      "bottom": 1
+    },
+    "compositionPolicy": "full-canvas-focus",
+    "focusBounds": {
+      "left": 0.352,
+      "top": 0.305,
+      "right": 0.557,
+      "bottom": 0.745
+    }
+  },
+  {
+    "speciesId": 35,
+    "src": "/backgrounds/arkamon-splash/035-crawgoyle.webp",
+    "sha256": "ea8a89d9ec53d6eb7e3dcf531bc72c60918f40ab62190662c09504d6ba3dac81",
+    "label": "Illustrazione di Crawgoyle",
+    "objectPosition": "50% 50%",
+    "aspectRatio": "16 / 9",
+    "subjectBounds": {
+      "left": 0.162,
+      "top": 0,
+      "right": 0.858,
+      "bottom": 0.92
+    },
+    "compositionPolicy": "full-canvas-focus",
+    "focusBounds": {
+      "left": 0.317,
+      "top": 0.277,
+      "right": 0.593,
+      "bottom": 0.778
+    }
+  },
+  {
+    "speciesId": 36,
+    "src": "/backgrounds/arkamon-splash/036-chimzap.webp",
+    "sha256": "a242c2dd837b6a251e579458768d02909c27d85437b361fb673ddcf9bef93c71",
+    "label": "Illustrazione di Chimzap",
+    "objectPosition": "50% 50%",
+    "aspectRatio": "16 / 9",
+    "subjectBounds": {
+      "left": 0.284,
+      "top": 0.103,
+      "right": 0.797,
+      "bottom": 0.918
+    },
+    "compositionPolicy": "full-canvas-focus",
+    "focusBounds": {
+      "left": 0.374,
+      "top": 0.295,
+      "right": 0.598,
+      "bottom": 0.792
+    }
+  },
+  {
+    "speciesId": 37,
+    "src": "/backgrounds/arkamon-splash/037-chimzap.webp",
+    "sha256": "278b2b73b6fbf08b65f2858d8e36e86ee9dd7d394c92aca9b56287216cf09479",
+    "label": "Illustrazione di Chimzap",
+    "objectPosition": "50% 50%",
+    "aspectRatio": "16 / 9",
+    "subjectBounds": {
+      "left": 0.14,
+      "top": 0.012,
+      "right": 0.88,
+      "bottom": 0.97
+    },
+    "compositionPolicy": "full-canvas-focus",
+    "focusBounds": {
+      "left": 0.345,
+      "top": 0.265,
+      "right": 0.63,
+      "bottom": 0.75
+    }
+  },
+  {
+    "speciesId": 38,
+    "src": "/backgrounds/arkamon-splash/038-chimzap.webp",
+    "sha256": "83214ea5d61c9c552ac977387389280b849a571ba44e50b1a5c311b92098eb9f",
+    "label": "Illustrazione di Chimzap",
+    "objectPosition": "50% 50%",
+    "aspectRatio": "16 / 9",
+    "subjectBounds": {
+      "left": 0.17,
+      "top": 0.01,
+      "right": 0.825,
+      "bottom": 0.98
+    },
+    "compositionPolicy": "full-canvas-focus",
+    "focusBounds": {
+      "left": 0.35,
+      "top": 0.24,
+      "right": 0.59,
+      "bottom": 0.735
+    }
+  },
+  {
+    "speciesId": 39,
+    "src": "/backgrounds/arkamon-splash/039-rs-219.webp",
+    "sha256": "2b761356af2844892dc02a0a52f2d8ff277c52334d579e8323f069a7a9c63666",
+    "label": "Illustrazione di RS-219",
+    "objectPosition": "50% 50%",
+    "aspectRatio": "16 / 9",
+    "subjectBounds": {
+      "left": 0.18,
+      "top": 0.04,
+      "right": 0.75,
+      "bottom": 0.95
+    },
+    "compositionPolicy": "full-canvas-focus",
+    "focusBounds": {
+      "left": 0.285,
+      "top": 0.285,
+      "right": 0.615,
+      "bottom": 0.79
+    }
+  },
+  {
+    "speciesId": 40,
+    "src": "/backgrounds/arkamon-splash/040-rs-219.webp",
+    "sha256": "feba657b89ec1ca60eb7b889a0594de7f553c141fb834a996919cc0083f33ce4",
+    "label": "Illustrazione di RS-219",
+    "objectPosition": "50% 50%",
+    "aspectRatio": "16 / 9",
+    "subjectBounds": {
+      "left": 0.23,
+      "top": 0.004,
+      "right": 0.785,
+      "bottom": 1
+    },
+    "compositionPolicy": "full-canvas-focus",
+    "focusBounds": {
+      "left": 0.315,
+      "top": 0.25,
+      "right": 0.585,
+      "bottom": 0.79
+    }
+  },
+  {
+    "speciesId": 41,
+    "src": "/backgrounds/arkamon-splash/041-rs-219.webp",
+    "sha256": "ea2b4f1e68824333067705c7a3bc34faf274ec94d8b261e2154381d8339a6a59",
+    "label": "Illustrazione di RS-219",
+    "objectPosition": "50% 50%",
+    "aspectRatio": "16 / 9",
+    "subjectBounds": {
+      "left": 0.24,
+      "top": 0.218,
+      "right": 0.85,
+      "bottom": 0.97
+    },
+    "compositionPolicy": "full-canvas-focus",
+    "focusBounds": {
+      "left": 0.355,
+      "top": 0.23,
+      "right": 0.61,
+      "bottom": 0.74
+    }
+  },
+  {
+    "speciesId": 42,
+    "src": "/backgrounds/arkamon-splash/042-felvex.webp",
+    "sha256": "c8566bf00792890bc1eb80bed75510f11c793e39f72a0403bbe37c3c84fb72ab",
+    "label": "Illustrazione di Felvex",
+    "objectPosition": "50% 50%",
+    "aspectRatio": "16 / 9",
+    "subjectBounds": {
+      "left": 0,
+      "top": 0,
+      "right": 1,
+      "bottom": 1
+    },
+    "compositionPolicy": "full-canvas-focus",
+    "focusBounds": {
+      "left": 0.285,
+      "top": 0.3,
+      "right": 0.63,
+      "bottom": 0.8
+    }
+  },
+  {
+    "speciesId": 43,
+    "src": "/backgrounds/arkamon-splash/043-felvex.webp",
+    "sha256": "1300fbd8c0dc3b059f33482195e9c6b2c3433348f3b80addee6eaa2660e472bc",
+    "label": "Illustrazione di Felvex",
+    "objectPosition": "50% 50%",
+    "aspectRatio": "16 / 9",
+    "subjectBounds": {
+      "left": 0,
+      "top": 0,
+      "right": 1,
+      "bottom": 1
+    },
+    "compositionPolicy": "full-canvas-focus",
+    "focusBounds": {
+      "left": 0.31,
+      "top": 0.265,
+      "right": 0.63,
+      "bottom": 0.8
+    }
+  },
+  {
+    "speciesId": 44,
+    "src": "/backgrounds/arkamon-splash/044-felvex.webp",
+    "sha256": "7288a07a528f9dfe26042fb686e708557ac889093c0288c7a3b227e9854afa08",
+    "label": "Illustrazione di Felvex",
+    "objectPosition": "50% 50%",
+    "aspectRatio": "16 / 9",
+    "subjectBounds": {
+      "left": 0,
+      "top": 0,
+      "right": 1,
+      "bottom": 1
+    },
+    "compositionPolicy": "full-canvas-focus",
+    "focusBounds": {
+      "left": 0.305,
+      "top": 0.26,
+      "right": 0.625,
+      "bottom": 0.8
+    }
+  },
+  {
+    "speciesId": 45,
+    "src": "/backgrounds/arkamon-splash/045-spectron.webp",
+    "sha256": "c6db7ce5725031bfe9b696fa60180ded1aea4223a0022a8d01182159fbd69ad4",
+    "label": "Illustrazione di Spectron",
+    "objectPosition": "50% 50%",
+    "aspectRatio": "16 / 9",
+    "subjectBounds": {
+      "left": 0,
+      "top": 0,
+      "right": 1,
+      "bottom": 1
+    },
+    "compositionPolicy": "full-canvas-focus",
+    "focusBounds": {
+      "left": 0.315,
+      "top": 0.265,
+      "right": 0.63,
+      "bottom": 0.8
+    }
+  },
+  {
+    "speciesId": 46,
+    "src": "/backgrounds/arkamon-splash/046-spectron.webp",
+    "sha256": "01962518348004d90636a3d520b101a4a2665af0ae53816dcdbe16e8292235bc",
+    "label": "Illustrazione di Spectron",
+    "objectPosition": "50% 50%",
+    "aspectRatio": "16 / 9",
+    "subjectBounds": {
+      "left": 0,
+      "top": 0,
+      "right": 1,
+      "bottom": 1
+    },
+    "compositionPolicy": "full-canvas-focus",
+    "focusBounds": {
+      "left": 0.315,
+      "top": 0.27,
+      "right": 0.635,
+      "bottom": 0.8
+    }
+  },
+  {
+    "speciesId": 47,
+    "src": "/backgrounds/arkamon-splash/047-weedrug.webp",
+    "sha256": "f8305eea1f6180f1daa2f15a5c5695c32e47a3e59c8082cdb97d2b2e62844325",
+    "label": "Illustrazione di Weedrug",
+    "objectPosition": "50% 50%",
+    "aspectRatio": "16 / 9",
+    "subjectBounds": {
+      "left": 0,
+      "top": 0,
+      "right": 1,
+      "bottom": 1
+    },
+    "compositionPolicy": "full-canvas-focus",
+    "focusBounds": {
+      "left": 0.3,
+      "top": 0.255,
+      "right": 0.65,
+      "bottom": 0.8
+    }
+  },
+  {
+    "speciesId": 48,
+    "src": "/backgrounds/arkamon-splash/048-weedrug.webp",
+    "sha256": "23d61b551f07890cac293e556b34fd1e540eda80093bc22802cc8bcbd43fdf3c",
+    "label": "Illustrazione di Weedrug",
+    "objectPosition": "50% 50%",
+    "aspectRatio": "16 / 9",
+    "subjectBounds": {
+      "left": 0.181,
+      "top": 0.119,
+      "right": 0.846,
+      "bottom": 1
+    },
+    "compositionPolicy": "full-canvas-focus",
+    "focusBounds": {
+      "left": 0.329,
+      "top": 0.303,
+      "right": 0.667,
+      "bottom": 0.8
+    }
+  },
+  {
+    "speciesId": 49,
+    "src": "/backgrounds/arkamon-splash/049-constrix.webp",
+    "sha256": "48614761a0d661e81095564ca2e7b907cc90357975f5302e83ecc385543ec0c5",
+    "label": "Illustrazione di Constrix",
+    "objectPosition": "50% 50%",
+    "aspectRatio": "16 / 9",
+    "subjectBounds": {
+      "left": 0,
+      "top": 0,
+      "right": 1,
+      "bottom": 1
+    },
+    "compositionPolicy": "full-canvas-focus",
+    "focusBounds": {
+      "left": 0.346,
+      "top": 0.232,
+      "right": 0.577,
+      "bottom": 0.775
+    }
+  },
+  {
+    "speciesId": 50,
+    "src": "/backgrounds/arkamon-splash/050-constrix.webp",
+    "sha256": "8022bb081ea15a85392c37e3bf2f11578d459702eaacc5475c76309702695153",
+    "label": "Illustrazione di Constrix",
+    "objectPosition": "50% 50%",
+    "aspectRatio": "16 / 9",
+    "subjectBounds": {
+      "left": 0,
+      "top": 0,
+      "right": 1,
+      "bottom": 1
+    },
+    "compositionPolicy": "full-canvas-focus",
+    "focusBounds": {
+      "left": 0.295,
+      "top": 0.265,
+      "right": 0.625,
+      "bottom": 0.8
+    }
+  },
+  {
+    "speciesId": 51,
+    "src": "/backgrounds/arkamon-splash/051-goliash.webp",
+    "sha256": "96945009e6f4ad3566f850bea699b5eb812c26d6f71fe239b2bc491d5a690d57",
+    "label": "Illustrazione di Goliash",
+    "objectPosition": "50% 50%",
+    "aspectRatio": "16 / 9",
+    "subjectBounds": {
+      "left": 0,
+      "top": 0,
+      "right": 1,
+      "bottom": 1
+    },
+    "compositionPolicy": "full-canvas-focus",
+    "focusBounds": {
+      "left": 0.31,
+      "top": 0.245,
+      "right": 0.635,
+      "bottom": 0.8
+    }
+  },
+  {
+    "speciesId": 52,
+    "src": "/backgrounds/arkamon-splash/052-leafrex.webp",
+    "sha256": "dd4cf35e24b133040ed55603ffb149e4739c04de062c2dc10cb7a06482e7a8f1",
+    "label": "Illustrazione di Leafrex",
+    "objectPosition": "50% 50%",
+    "aspectRatio": "16 / 9",
+    "subjectBounds": {
+      "left": 0,
+      "top": 0,
+      "right": 1,
+      "bottom": 1
+    },
+    "compositionPolicy": "full-canvas-focus",
+    "focusBounds": {
+      "left": 0.3,
+      "top": 0.255,
+      "right": 0.63,
+      "bottom": 0.8
+    }
+  },
+  {
+    "speciesId": 53,
+    "src": "/backgrounds/arkamon-splash/053-leafrex.webp",
+    "sha256": "7cb4f56155ee4f2ed6bda338569352789ed02e4f669e28b7a72d1956f1199a12",
+    "label": "Illustrazione di Leafrex",
+    "objectPosition": "50% 50%",
+    "aspectRatio": "16 / 9",
+    "subjectBounds": {
+      "left": 0,
+      "top": 0,
+      "right": 1,
+      "bottom": 1
+    },
+    "compositionPolicy": "full-canvas-focus",
+    "focusBounds": {
+      "left": 0.3,
+      "top": 0.255,
+      "right": 0.635,
+      "bottom": 0.8
+    }
+  },
+  {
+    "speciesId": 54,
+    "src": "/backgrounds/arkamon-splash/054-leafrex.webp",
+    "sha256": "64c9d774bdfd290aecf21a666cbfe0707563814515c5eb7057abccd8fcd4a15b",
+    "label": "Illustrazione di Leafrex",
+    "objectPosition": "50% 50%",
+    "aspectRatio": "16 / 9",
+    "subjectBounds": {
+      "left": 0,
+      "top": 0,
+      "right": 1,
+      "bottom": 1
+    },
+    "compositionPolicy": "full-canvas-focus",
+    "focusBounds": {
+      "left": 0.31,
+      "top": 0.255,
+      "right": 0.635,
+      "bottom": 0.8
+    }
+  },
+  {
+    "speciesId": 55,
+    "src": "/backgrounds/arkamon-splash/055-peek-a-buu.webp",
+    "sha256": "25081a3337f1751572f045ee172f56296935dafb3c9d1508c25950220b5d24c7",
+    "label": "Illustrazione di Peek-a-buu",
+    "objectPosition": "50% 50%",
+    "aspectRatio": "16 / 9",
+    "subjectBounds": {
+      "left": 0,
+      "top": 0,
+      "right": 1,
+      "bottom": 1
+    },
+    "compositionPolicy": "full-canvas-focus",
+    "focusBounds": {
+      "left": 0.31,
+      "top": 0.23,
+      "right": 0.635,
+      "bottom": 0.8
+    }
+  },
+  {
+    "speciesId": 56,
+    "src": "/backgrounds/arkamon-splash/056-deephion.webp",
+    "sha256": "e801e769eca0a18dd774607c2d72bd5670add74fac3f6d8e90b295428d5e73b9",
+    "label": "Illustrazione di Deephion",
+    "objectPosition": "50% 50%",
+    "aspectRatio": "16 / 9",
+    "subjectBounds": {
+      "left": 0,
+      "top": 0,
+      "right": 1,
+      "bottom": 1
+    },
+    "compositionPolicy": "full-canvas-focus",
+    "focusBounds": {
+      "left": 0.29,
+      "top": 0.255,
+      "right": 0.63,
+      "bottom": 0.8
+    }
+  },
+  {
+    "speciesId": 57,
+    "src": "/backgrounds/arkamon-splash/057-deephion.webp",
+    "sha256": "a7c3d9ae4e8dbf135fb26c6edbed2a53bfa4463559735ea1d77e89ccf17d521d",
+    "label": "Illustrazione di Deephion",
+    "objectPosition": "50% 50%",
+    "aspectRatio": "16 / 9",
+    "subjectBounds": {
+      "left": 0,
+      "top": 0,
+      "right": 1,
+      "bottom": 1
+    },
+    "compositionPolicy": "full-canvas-focus",
+    "focusBounds": {
+      "left": 0.31,
+      "top": 0.25,
+      "right": 0.635,
+      "bottom": 0.8
+    }
+  },
+  {
+    "speciesId": 58,
+    "src": "/backgrounds/arkamon-splash/058-shabyss.webp",
+    "sha256": "655bc10d2d10e002a0f9254f82bd6f48804811c84af157cd545de6db61f82a11",
+    "label": "Illustrazione di Shabyss",
+    "objectPosition": "50% 50%",
+    "aspectRatio": "16 / 9",
+    "subjectBounds": {
+      "left": 0.278,
+      "top": 0.085,
+      "right": 0.846,
+      "bottom": 0.98
+    },
+    "compositionPolicy": "full-canvas-focus",
+    "focusBounds": {
+      "left": 0.333,
+      "top": 0.298,
+      "right": 0.609,
+      "bottom": 0.795
+    }
+  },
+  {
+    "speciesId": 59,
+    "src": "/backgrounds/arkamon-splash/059-shabyss.webp",
+    "sha256": "8aeec117729999a72c1c7c680fdfb8e8ec82645c3e01961f96701446cbcacacf",
+    "label": "Illustrazione di Shabyss",
+    "objectPosition": "50% 50%",
+    "aspectRatio": "16 / 9",
+    "subjectBounds": {
+      "left": 0,
+      "top": 0,
+      "right": 1,
+      "bottom": 1
+    },
+    "compositionPolicy": "full-canvas-focus",
+    "focusBounds": {
+      "left": 0.275,
+      "top": 0.265,
+      "right": 0.63,
+      "bottom": 0.8
+    }
+  },
+  {
+    "speciesId": 60,
+    "src": "/backgrounds/arkamon-splash/060-shabyss.webp",
+    "sha256": "fc0bd894c1d0adb488f2887db01dd6eeec4ab5cfdf0143200108664d6409f573",
+    "label": "Illustrazione di Shabyss",
+    "objectPosition": "50% 50%",
+    "aspectRatio": "16 / 9",
+    "subjectBounds": {
+      "left": 0.165,
+      "top": 0.022,
+      "right": 0.98,
+      "bottom": 0.987
+    },
+    "compositionPolicy": "full-canvas-focus",
+    "focusBounds": {
+      "left": 0.329,
+      "top": 0.257,
+      "right": 0.601,
+      "bottom": 0.796
+    }
+  },
+  {
+    "speciesId": 61,
+    "src": "/backgrounds/arkamon-splash/061-wailoom.webp",
+    "sha256": "95ea69f8dbdaf163d46bf4e419c3386db506947a63100947e4244179317673a0",
+    "label": "Illustrazione di Wailoom",
+    "objectPosition": "50% 50%",
+    "aspectRatio": "16 / 9",
+    "subjectBounds": {
+      "left": 0.196,
+      "top": 0.117,
+      "right": 0.937,
+      "bottom": 0.996
+    },
+    "compositionPolicy": "full-canvas-focus",
+    "focusBounds": {
+      "left": 0.351,
+      "top": 0.282,
+      "right": 0.601,
+      "bottom": 0.799
+    }
+  },
+  {
+    "speciesId": 62,
+    "src": "/backgrounds/arkamon-splash/062-fluffet.webp",
+    "sha256": "f2439e6a67b9af8bf65fb47fa5d40901f25e2761105c253ce56ba5fc0c27ff5e",
+    "label": "Illustrazione di Fluffet",
+    "objectPosition": "50% 50%",
+    "aspectRatio": "16 / 9",
+    "subjectBounds": {
+      "left": 0,
+      "top": 0,
+      "right": 1,
+      "bottom": 1
+    },
+    "compositionPolicy": "full-canvas-focus",
+    "focusBounds": {
+      "left": 0.31,
+      "top": 0.29,
+      "right": 0.63,
+      "bottom": 0.8
+    }
+  },
+  {
+    "speciesId": 63,
+    "src": "/backgrounds/arkamon-splash/063-fluffet.webp",
+    "sha256": "7ad53dcd24f5edd9b7a52420f9280ced85d0c23474652efa59b628069a065f1c",
+    "label": "Illustrazione di Fluffet",
+    "objectPosition": "50% 50%",
+    "aspectRatio": "16 / 9",
+    "subjectBounds": {
+      "left": 0,
+      "top": 0,
+      "right": 1,
+      "bottom": 1
+    },
+    "compositionPolicy": "full-canvas-focus",
+    "focusBounds": {
+      "left": 0.31,
+      "top": 0.285,
+      "right": 0.635,
+      "bottom": 0.8
+    }
+  },
+  {
+    "speciesId": 64,
+    "src": "/backgrounds/arkamon-splash/064-hopz.webp",
+    "sha256": "c42df0f13c3776ab2d5c352bf07b6cbb21c11a0fc4c7c9c27e7d2e4916c8f62c",
+    "label": "Illustrazione di Hopz",
+    "objectPosition": "50% 50%",
+    "aspectRatio": "16 / 9",
+    "subjectBounds": {
+      "left": 0,
+      "top": 0,
+      "right": 1,
+      "bottom": 1
+    },
+    "compositionPolicy": "full-canvas-focus",
+    "focusBounds": {
+      "left": 0.31,
+      "top": 0.235,
+      "right": 0.635,
+      "bottom": 0.8
+    }
+  },
+  {
+    "speciesId": 65,
+    "src": "/backgrounds/arkamon-splash/065-piox.webp",
+    "sha256": "c48b62dd8e55748c10ad7fda14058fe2c879474cb117cda8e24214283b92aa0e",
+    "label": "Illustrazione di Piox",
+    "objectPosition": "50% 50%",
+    "aspectRatio": "16 / 9",
+    "subjectBounds": {
+      "left": 0.333,
+      "top": 0.145,
+      "right": 0.963,
+      "bottom": 0.965
+    },
+    "compositionPolicy": "full-canvas-focus",
+    "focusBounds": {
+      "left": 0.39,
+      "top": 0.247,
+      "right": 0.597,
+      "bottom": 0.748
+    }
+  },
+  {
+    "speciesId": 66,
+    "src": "/backgrounds/arkamon-splash/066-hoppiox.webp",
+    "sha256": "f49372102f7ccb381021aa7da37f0154a85aee4db8b980b2195b23ff4bfe869f",
+    "label": "Illustrazione di Hoppiox",
+    "objectPosition": "50% 50%",
+    "aspectRatio": "16 / 9",
+    "subjectBounds": {
+      "left": 0,
+      "top": 0,
+      "right": 1,
+      "bottom": 1
+    },
+    "compositionPolicy": "full-canvas-focus",
+    "focusBounds": {
+      "left": 0.315,
+      "top": 0.228,
+      "right": 0.6,
+      "bottom": 0.795
+    }
+  },
+  {
+    "speciesId": 67,
+    "src": "/backgrounds/arkamon-splash/067-fearstraw.webp",
+    "sha256": "2856956799747978b5d8abaf80dcbe6d09a71e35d5ad237e8bea9b3243c2413a",
+    "label": "Illustrazione di Fearstraw",
+    "objectPosition": "50% 50%",
+    "aspectRatio": "16 / 9",
+    "subjectBounds": {
+      "left": 0.15,
+      "top": 0,
+      "right": 0.81,
+      "bottom": 1
+    },
+    "compositionPolicy": "full-canvas-focus",
+    "focusBounds": {
+      "left": 0.31,
+      "top": 0.26,
+      "right": 0.63,
+      "bottom": 0.8
+    }
+  },
+  {
+    "speciesId": 68,
+    "src": "/backgrounds/arkamon-splash/068-fearstraw.webp",
+    "sha256": "5d3fcb6c37f9f902c9381868992ea9562b63036c07d53cb56246171921365827",
+    "label": "Illustrazione di Fearstraw",
+    "objectPosition": "50% 50%",
+    "aspectRatio": "16 / 9",
+    "subjectBounds": {
+      "left": 0.07,
+      "top": 0,
+      "right": 0.84,
+      "bottom": 1
+    },
+    "compositionPolicy": "full-canvas-focus",
+    "focusBounds": {
+      "left": 0.31,
+      "top": 0.245,
+      "right": 0.635,
+      "bottom": 0.8
+    }
+  },
+  {
+    "speciesId": 69,
+    "src": "/backgrounds/arkamon-splash/069-lickard.webp",
+    "sha256": "7b277c5abc8738e2dcab68e1184973440255907de08ebbc73e9a38079de89b88",
+    "label": "Illustrazione di Lickard",
+    "objectPosition": "50% 50%",
+    "aspectRatio": "16 / 9",
+    "subjectBounds": {
+      "left": 0.307,
+      "top": 0.213,
+      "right": 0.853,
+      "bottom": 0.977
+    },
+    "compositionPolicy": "full-canvas-focus",
+    "focusBounds": {
+      "left": 0.332,
+      "top": 0.232,
+      "right": 0.608,
+      "bottom": 0.799
+    }
+  },
+  {
+    "speciesId": 70,
+    "src": "/backgrounds/arkamon-splash/070-lickard.webp",
+    "sha256": "3ad78039e75cfd0e1ce1570e009085f59690e01aa890b369852c87a571e4e9f4",
+    "label": "Illustrazione di Lickard",
+    "objectPosition": "50% 50%",
+    "aspectRatio": "16 / 9",
+    "subjectBounds": {
+      "left": 0.263,
+      "top": 0.282,
+      "right": 0.718,
+      "bottom": 0.899
+    },
+    "compositionPolicy": "full-canvas-focus",
+    "focusBounds": {
+      "left": 0.411,
+      "top": 0.283,
+      "right": 0.572,
+      "bottom": 0.792
+    }
+  },
+  {
+    "speciesId": 71,
+    "src": "/backgrounds/arkamon-splash/071-blizzaquil.webp",
+    "sha256": "79d46165fa8e13871f42899cacb69ac22d1a9e4fab97634cc5f6b83963520997",
+    "label": "Illustrazione di Blizzaquil",
+    "objectPosition": "50% 50%",
+    "aspectRatio": "16 / 9",
+    "subjectBounds": {
+      "left": 0.287,
+      "top": 0.17,
+      "right": 0.716,
+      "bottom": 0.845
+    },
+    "compositionPolicy": "full-canvas-focus",
+    "focusBounds": {
+      "left": 0.37,
+      "top": 0.303,
+      "right": 0.568,
+      "bottom": 0.77
+    }
+  },
+  {
+    "speciesId": 72,
+    "src": "/backgrounds/arkamon-splash/072-blizzaquil.webp",
+    "sha256": "9d27ed81980ddb18fa462e7d7838df9a402c5cfedb0a07375a92577c00cfb419",
+    "label": "Illustrazione di Blizzaquil",
+    "objectPosition": "50% 50%",
+    "aspectRatio": "16 / 9",
+    "subjectBounds": {
+      "left": 0.132,
+      "top": 0,
+      "right": 0.912,
+      "bottom": 0.903
+    },
+    "compositionPolicy": "full-canvas-focus",
+    "focusBounds": {
+      "left": 0.36,
+      "top": 0.24,
+      "right": 0.58,
+      "bottom": 0.7
+    }
+  },
+  {
+    "speciesId": 73,
+    "src": "/backgrounds/arkamon-splash/073-blizzaquil.webp",
+    "sha256": "34ba0a5aa7111a5e78aa6d007f56c35b6fc6949a71b7c0a40dd68001036e4c04",
+    "label": "Illustrazione di Blizzaquil",
+    "objectPosition": "50% 50%",
+    "aspectRatio": "16 / 9",
+    "subjectBounds": {
+      "left": 0.097,
+      "top": 0,
+      "right": 0.899,
+      "bottom": 0.929
+    },
+    "compositionPolicy": "full-canvas-focus",
+    "focusBounds": {
+      "left": 0.323,
+      "top": 0.26,
+      "right": 0.61,
+      "bottom": 0.77
+    }
+  },
+  {
+    "speciesId": 74,
+    "src": "/backgrounds/arkamon-splash/074-impise.webp",
+    "sha256": "c17d5032d0c5d7cbf9bd3a600c16fe5ee29dc1ae44878c801ffb511bb01a0962",
+    "label": "Illustrazione di Impise",
+    "objectPosition": "50% 50%",
+    "aspectRatio": "16 / 9",
+    "subjectBounds": {
+      "left": 0.219,
+      "top": 0.01,
+      "right": 0.704,
+      "bottom": 0.903
+    },
+    "compositionPolicy": "full-canvas-focus",
+    "focusBounds": {
+      "left": 0.31,
+      "top": 0.345,
+      "right": 0.54,
+      "bottom": 0.799
+    }
+  },
+  {
+    "speciesId": 75,
+    "src": "/backgrounds/arkamon-splash/075-impise.webp",
+    "sha256": "4cb4f07de3be9ec30e5ebea94a0cc48aa6d2bd122d9db6e813b247d6afa3417b",
+    "label": "Illustrazione di Impise",
+    "objectPosition": "50% 50%",
+    "aspectRatio": "16 / 9",
+    "subjectBounds": {
+      "left": 0.165,
+      "top": 0,
+      "right": 0.79,
+      "bottom": 0.95
+    },
+    "compositionPolicy": "full-canvas-focus",
+    "focusBounds": {
+      "left": 0.35,
+      "top": 0.26,
+      "right": 0.51,
+      "bottom": 0.72
+    }
+  },
+  {
+    "speciesId": 76,
+    "src": "/backgrounds/arkamon-splash/076-impise.webp",
+    "sha256": "f7d69ab7154abcc8800bbb4ebd55c7e0016b50eadaea0f10fcf0e7acd4964431",
+    "label": "Illustrazione di Impise",
+    "objectPosition": "50% 50%",
+    "aspectRatio": "16 / 9",
+    "subjectBounds": {
+      "left": 0.168,
+      "top": 0,
+      "right": 0.824,
+      "bottom": 0.9
+    },
+    "compositionPolicy": "full-canvas-focus",
+    "focusBounds": {
+      "left": 0.342,
+      "top": 0.235,
+      "right": 0.536,
+      "bottom": 0.779
+    }
+  },
+  {
+    "speciesId": 77,
+    "src": "/backgrounds/arkamon-splash/077-ignitor.webp",
+    "sha256": "afd84faab147e8bf7a5217d072a7d9b693eb68f8220d3f019cfa5562c6d49b9b",
+    "label": "Illustrazione di Ignitor",
+    "objectPosition": "50% 50%",
+    "aspectRatio": "16 / 9",
+    "subjectBounds": {
+      "left": 0,
+      "top": 0,
+      "right": 1,
+      "bottom": 1
+    },
+    "compositionPolicy": "full-canvas-focus",
+    "focusBounds": {
+      "left": 0.31,
+      "top": 0.27,
+      "right": 0.63,
+      "bottom": 0.8
+    }
+  },
+  {
+    "speciesId": 78,
+    "src": "/backgrounds/arkamon-splash/078-trippix.webp",
+    "sha256": "0e873b1b7a4f4db6c4f7cb2c28d02c64aa93b126d5bbb7bfbc9006e7296d8d84",
+    "label": "Illustrazione di Trippix",
+    "objectPosition": "50% 50%",
+    "aspectRatio": "16 / 9",
+    "subjectBounds": {
+      "left": 0,
+      "top": 0,
+      "right": 1,
+      "bottom": 1
+    },
+    "compositionPolicy": "full-canvas-focus",
+    "focusBounds": {
+      "left": 0.315,
+      "top": 0.255,
+      "right": 0.63,
+      "bottom": 0.8
+    }
+  },
+  {
+    "speciesId": 79,
+    "src": "/backgrounds/arkamon-splash/079-cellgon.webp",
+    "sha256": "582526f1928ea5f44b098c5314c0ba1d6cd80d7c17ca973d890ed738481b239e",
+    "label": "Illustrazione di Cellgon",
+    "objectPosition": "50% 50%",
+    "aspectRatio": "16 / 9",
+    "subjectBounds": {
+      "left": 0,
+      "top": 0,
+      "right": 1,
+      "bottom": 1
+    },
+    "compositionPolicy": "full-canvas-focus",
+    "focusBounds": {
+      "left": 0.315,
+      "top": 0.255,
+      "right": 0.63,
+      "bottom": 0.8
+    }
+  },
+  {
+    "speciesId": 80,
+    "src": "/backgrounds/arkamon-splash/080-cellgon.webp",
+    "sha256": "4213fe21cfee130de320bacbc10e949c24b7afae366d6b4d87c910dc08b86e4f",
+    "label": "Illustrazione di Cellgon",
+    "objectPosition": "50% 50%",
+    "aspectRatio": "16 / 9",
+    "subjectBounds": {
+      "left": 0,
+      "top": 0,
+      "right": 1,
+      "bottom": 1
+    },
+    "compositionPolicy": "full-canvas-focus",
+    "focusBounds": {
+      "left": 0.31,
+      "top": 0.25,
+      "right": 0.635,
+      "bottom": 0.8
+    }
+  },
+  {
+    "speciesId": 81,
+    "src": "/backgrounds/arkamon-splash/081-cellgon.webp",
+    "sha256": "6eb260f853ba6d60de98e7cc015eb161dc9ac62ce70ede780fe6bbc8a86381f1",
+    "label": "Illustrazione di Cellgon",
+    "objectPosition": "50% 50%",
+    "aspectRatio": "16 / 9",
+    "subjectBounds": {
+      "left": 0,
+      "top": 0,
+      "right": 1,
+      "bottom": 1
+    },
+    "compositionPolicy": "full-canvas-focus",
+    "focusBounds": {
+      "left": 0.31,
+      "top": 0.255,
+      "right": 0.635,
+      "bottom": 0.8
+    }
+  },
+  {
+    "speciesId": 82,
+    "src": "/backgrounds/arkamon-splash/082-reliskull.webp",
+    "sha256": "7e4a7c83c78db50449ff3a6ec8706b4fa5bc75faae6b141738225c4400b1319b",
+    "label": "Illustrazione di Reliskull",
+    "objectPosition": "50% 50%",
+    "aspectRatio": "16 / 9",
+    "subjectBounds": {
+      "left": 0,
+      "top": 0,
+      "right": 1,
+      "bottom": 1
+    },
+    "compositionPolicy": "full-canvas-focus",
+    "focusBounds": {
+      "left": 0.29,
+      "top": 0.265,
+      "right": 0.63,
+      "bottom": 0.8
+    }
+  },
+  {
+    "speciesId": 83,
+    "src": "/backgrounds/arkamon-splash/083-cerebron.webp",
+    "sha256": "3f5ba6914df9694198f4dbb8e2cf8266dcc76f163b160d6bdcb0c1c23f6ee123",
+    "label": "Illustrazione di Cerebron",
+    "objectPosition": "50% 50%",
+    "aspectRatio": "16 / 9",
+    "subjectBounds": {
+      "left": 0,
+      "top": 0,
+      "right": 1,
+      "bottom": 1
+    },
+    "compositionPolicy": "full-canvas-focus",
+    "focusBounds": {
+      "left": 0.31,
+      "top": 0.285,
+      "right": 0.635,
+      "bottom": 0.8
+    }
+  },
+  {
+    "speciesId": 84,
+    "src": "/backgrounds/arkamon-splash/084-psycroak.webp",
+    "sha256": "469b26b1f2cd52fbb392e2a41c5c20f2c85d00ac3b58abe8ccce2f8938687164",
+    "label": "Illustrazione di Psycroak",
+    "objectPosition": "50% 50%",
+    "aspectRatio": "16 / 9",
+    "subjectBounds": {
+      "left": 0,
+      "top": 0,
+      "right": 1,
+      "bottom": 1
+    },
+    "compositionPolicy": "full-canvas-focus",
+    "focusBounds": {
+      "left": 0.354,
+      "top": 0.274,
+      "right": 0.65,
+      "bottom": 0.79
+    }
+  },
+  {
+    "speciesId": 85,
+    "src": "/backgrounds/arkamon-splash/085-psycroak.webp",
+    "sha256": "601b165cb075193d5a040db021a7457c7d6d291777de80771366af9dc5338091",
+    "label": "Illustrazione di Psycroak",
+    "objectPosition": "50% 50%",
+    "aspectRatio": "16 / 9",
+    "subjectBounds": {
+      "left": 0,
+      "top": 0,
+      "right": 1,
+      "bottom": 1
+    },
+    "compositionPolicy": "full-canvas-focus",
+    "focusBounds": {
+      "left": 0.38,
+      "top": 0.24,
+      "right": 0.61,
+      "bottom": 0.78
+    }
+  },
+  {
+    "speciesId": 86,
+    "src": "/backgrounds/arkamon-splash/086-teslat.webp",
+    "sha256": "168db7e93b13724046ecbe248742c61b4e6416d22f09833a4245b29cf44ad1c3",
+    "label": "Illustrazione di Teslat",
+    "objectPosition": "50% 50%",
+    "aspectRatio": "16 / 9",
+    "subjectBounds": {
+      "left": 0,
+      "top": 0,
+      "right": 1,
+      "bottom": 1
+    },
+    "compositionPolicy": "full-canvas-focus",
+    "focusBounds": {
+      "left": 0.315,
+      "top": 0.265,
+      "right": 0.635,
+      "bottom": 0.8
+    }
+  },
+  {
+    "speciesId": 87,
+    "src": "/backgrounds/arkamon-splash/087-teslat.webp",
+    "sha256": "8a0bc543cf647279f2be413620b023a238b96532780f6d0181196e818c374c93",
+    "label": "Illustrazione di Teslat",
+    "objectPosition": "50% 50%",
+    "aspectRatio": "16 / 9",
+    "subjectBounds": {
+      "left": 0,
+      "top": 0,
+      "right": 1,
+      "bottom": 1
+    },
+    "compositionPolicy": "full-canvas-focus",
+    "focusBounds": {
+      "left": 0.31,
+      "top": 0.265,
+      "right": 0.63,
+      "bottom": 0.8
+    }
+  },
+  {
+    "speciesId": 88,
+    "src": "/backgrounds/arkamon-splash/088-teslat.webp",
+    "sha256": "6b6c8b86464d1be31729a66253d6e7afffbd71ded701b83117fd4ccc8062635e",
+    "label": "Illustrazione di Teslat",
+    "objectPosition": "50% 50%",
+    "aspectRatio": "16 / 9",
+    "subjectBounds": {
+      "left": 0,
+      "top": 0,
+      "right": 1,
+      "bottom": 1
+    },
+    "compositionPolicy": "full-canvas-focus",
+    "focusBounds": {
+      "left": 0.315,
+      "top": 0.24,
+      "right": 0.635,
+      "bottom": 0.8
+    }
+  },
+  {
+    "speciesId": 89,
+    "src": "/backgrounds/arkamon-splash/089-espeiry.webp",
+    "sha256": "550558241c530bdd3e72cfa26d19daf01dafd6f52debae713daef674562cfce8",
+    "label": "Illustrazione di Espeiry",
+    "objectPosition": "50% 50%",
+    "aspectRatio": "16 / 9",
+    "subjectBounds": {
+      "left": 0,
+      "top": 0,
+      "right": 1,
+      "bottom": 1
+    },
+    "compositionPolicy": "full-canvas-focus",
+    "focusBounds": {
+      "left": 0.315,
+      "top": 0.235,
+      "right": 0.63,
+      "bottom": 0.8
+    }
+  },
+  {
+    "speciesId": 90,
+    "src": "/backgrounds/arkamon-splash/090-espeiry.webp",
+    "sha256": "350ee7c100d071366f9c3413ba060dd4f44fcb3fd3e352e702eda7af1f7c6587",
+    "label": "Illustrazione di Espeiry",
+    "objectPosition": "50% 50%",
+    "aspectRatio": "16 / 9",
+    "subjectBounds": {
+      "left": 0,
+      "top": 0,
+      "right": 1,
+      "bottom": 1
+    },
+    "compositionPolicy": "full-canvas-focus",
+    "focusBounds": {
+      "left": 0.31,
+      "top": 0.245,
+      "right": 0.63,
+      "bottom": 0.8
+    }
+  },
+  {
+    "speciesId": 91,
+    "src": "/backgrounds/arkamon-splash/091-espeiry.webp",
+    "sha256": "eb5ac101fd281a91aea855fa5ab89148acd5bd57525263df36d709e82f5c1bc7",
+    "label": "Illustrazione di Espeiry",
+    "objectPosition": "50% 50%",
+    "aspectRatio": "16 / 9",
+    "subjectBounds": {
+      "left": 0,
+      "top": 0,
+      "right": 1,
+      "bottom": 1
+    },
+    "compositionPolicy": "full-canvas-focus",
+    "focusBounds": {
+      "left": 0.315,
+      "top": 0.24,
+      "right": 0.635,
+      "bottom": 0.8
+    }
+  },
+  {
+    "speciesId": 92,
+    "src": "/backgrounds/arkamon-splash/092-pyrodil.webp",
+    "sha256": "264535254669054c62c65572a4db1dbf2f426eb216f9e5386287809a5ca8b192",
+    "label": "Illustrazione di Pyrodil",
+    "objectPosition": "50% 50%",
+    "aspectRatio": "16 / 9",
+    "subjectBounds": {
+      "left": 0,
+      "top": 0,
+      "right": 1,
+      "bottom": 1
+    },
+    "compositionPolicy": "full-canvas-focus",
+    "focusBounds": {
+      "left": 0.302,
+      "top": 0.235,
+      "right": 0.605,
+      "bottom": 0.785
+    }
+  },
+  {
+    "speciesId": 93,
+    "src": "/backgrounds/arkamon-splash/093-pyrodil.webp",
+    "sha256": "37e75dda3045fb7fca8eda414f5d45e8d1cee9138e556c9d44ba18143643392e",
+    "label": "Illustrazione di Pyrodil",
+    "objectPosition": "50% 50%",
+    "aspectRatio": "16 / 9",
+    "subjectBounds": {
+      "left": 0,
+      "top": 0,
+      "right": 1,
+      "bottom": 1
+    },
+    "compositionPolicy": "full-canvas-focus",
+    "focusBounds": {
+      "left": 0.29,
+      "top": 0.23,
+      "right": 0.61,
+      "bottom": 0.785
+    }
+  },
+  {
+    "speciesId": 94,
+    "src": "/backgrounds/arkamon-splash/094-pyrodil.webp",
+    "sha256": "b19a0a27f3cb9ce0a68dcc6f7d7df743ca9d879056148f074f5f609ba54275f1",
+    "label": "Illustrazione di Pyrodil",
+    "objectPosition": "50% 50%",
+    "aspectRatio": "16 / 9",
+    "subjectBounds": {
+      "left": 0,
+      "top": 0,
+      "right": 1,
+      "bottom": 1
+    },
+    "compositionPolicy": "full-canvas-focus",
+    "focusBounds": {
+      "left": 0.255,
+      "top": 0.23,
+      "right": 0.62,
+      "bottom": 0.79
+    }
+  },
+  {
+    "speciesId": 95,
+    "src": "/backgrounds/arkamon-splash/095-beestrix.webp",
+    "sha256": "407474f308466ba347b6a33cadbe79a75cda43e71d566a01bace3a9fb2be225d",
+    "label": "Illustrazione di Beestrix",
+    "objectPosition": "50% 50%",
+    "aspectRatio": "16 / 9",
+    "subjectBounds": {
+      "left": 0,
+      "top": 0,
+      "right": 1,
+      "bottom": 1
+    },
+    "compositionPolicy": "full-canvas-focus",
+    "focusBounds": {
+      "left": 0.315,
+      "top": 0.235,
+      "right": 0.645,
+      "bottom": 0.8
+    }
+  },
+  {
+    "speciesId": 96,
+    "src": "/backgrounds/arkamon-splash/096-beestrix.webp",
+    "sha256": "2004fdda5e6a6c0092ac8cff3e803063d8bba3aed901a2d2fcbc1c8c08c11774",
+    "label": "Illustrazione di Beestrix",
+    "objectPosition": "50% 50%",
+    "aspectRatio": "16 / 9",
+    "subjectBounds": {
+      "left": 0,
+      "top": 0,
+      "right": 1,
+      "bottom": 1
+    },
+    "compositionPolicy": "full-canvas-focus",
+    "focusBounds": {
+      "left": 0.315,
+      "top": 0.255,
+      "right": 0.635,
+      "bottom": 0.8
+    }
+  },
+  {
+    "speciesId": 97,
+    "src": "/backgrounds/arkamon-splash/097-beestrix.webp",
+    "sha256": "1272a5584186481312624610716049e0a8db9215c892580aac8a673b3b03890f",
+    "label": "Illustrazione di Beestrix",
+    "objectPosition": "50% 50%",
+    "aspectRatio": "16 / 9",
+    "subjectBounds": {
+      "left": 0.14,
+      "top": 0,
+      "right": 0.835,
+      "bottom": 0.97
+    },
+    "compositionPolicy": "full-canvas-focus",
+    "focusBounds": {
+      "left": 0.397,
+      "top": 0.296,
+      "right": 0.538,
+      "bottom": 0.707
+    }
+  },
+  {
+    "speciesId": 98,
+    "src": "/backgrounds/arkamon-splash/098-grooty.webp",
+    "sha256": "05bbc713f34cdc370c492764127f06298ef59078f06f3ac5724ae0835d8b6a63",
+    "label": "Illustrazione di Grooty",
+    "objectPosition": "50% 50%",
+    "aspectRatio": "16 / 9",
+    "subjectBounds": {
+      "left": 0.22,
+      "top": 0,
+      "right": 0.765,
+      "bottom": 0.973
+    },
+    "compositionPolicy": "full-canvas-focus",
+    "focusBounds": {
+      "left": 0.375,
+      "top": 0.28,
+      "right": 0.598,
+      "bottom": 0.79
+    }
+  },
+  {
+    "speciesId": 99,
+    "src": "/backgrounds/arkamon-splash/099-ervys.webp",
+    "sha256": "8d98ba4c1eb7ebb6f6b3547c273372c9d21f9ff0ab4b25a7ba73bbf2ed280b56",
+    "label": "Illustrazione di Ervys",
+    "objectPosition": "50% 50%",
+    "aspectRatio": "16 / 9",
+    "subjectBounds": {
+      "left": 0.196,
+      "top": 0.03,
+      "right": 0.851,
+      "bottom": 0.789
+    },
+    "compositionPolicy": "full-canvas-focus",
+    "focusBounds": {
+      "left": 0.325,
+      "top": 0.283,
+      "right": 0.582,
+      "bottom": 0.724
+    }
+  },
+  {
+    "speciesId": 100,
+    "src": "/backgrounds/arkamon-splash/100-ervys.webp",
+    "sha256": "2dddb7fb01ea03d2fada020bd85d1c13e189c7d1d62b0910952d4767f1a474d9",
+    "label": "Illustrazione di Ervys",
+    "objectPosition": "50% 50%",
+    "aspectRatio": "16 / 9",
+    "subjectBounds": {
+      "left": 0.023,
+      "top": 0,
+      "right": 0.963,
+      "bottom": 0.845
+    },
+    "compositionPolicy": "full-canvas-focus",
+    "focusBounds": {
+      "left": 0.331,
+      "top": 0.31,
+      "right": 0.555,
+      "bottom": 0.708
+    }
+  },
+  {
+    "speciesId": 101,
+    "src": "/backgrounds/arkamon-splash/101-xesar.webp",
+    "sha256": "ce24c6819b686d38e3b793e81cd4bc1d648f55621f1aa492a13ecacf125499a0",
+    "label": "Illustrazione di Xesar",
+    "objectPosition": "50% 50%",
+    "aspectRatio": "16 / 9",
+    "subjectBounds": {
+      "left": 0.262,
+      "top": 0.095,
+      "right": 0.751,
+      "bottom": 0.913
+    },
+    "compositionPolicy": "full-canvas-focus",
+    "focusBounds": {
+      "left": 0.346,
+      "top": 0.235,
+      "right": 0.565,
+      "bottom": 0.78
+    }
+  },
+  {
+    "speciesId": 102,
+    "src": "/backgrounds/arkamon-splash/102-xesar.webp",
+    "sha256": "fd25518b82c1941f2bc7239071e938a36ca634898708254c0d700efc93380aa2",
+    "label": "Illustrazione di Xesar",
+    "objectPosition": "50% 50%",
+    "aspectRatio": "16 / 9",
+    "subjectBounds": {
+      "left": 0.175,
+      "top": 0.011,
+      "right": 0.834,
+      "bottom": 0.969
+    },
+    "compositionPolicy": "full-canvas-focus",
+    "focusBounds": {
+      "left": 0.324,
+      "top": 0.232,
+      "right": 0.601,
+      "bottom": 0.785
+    }
+  },
+  {
+    "speciesId": 103,
+    "src": "/backgrounds/arkamon-splash/103-boomrock.webp",
+    "sha256": "85e154ac4f80d35c4e3a68aa312fda37e58a9d63168887d5b0e838a55228d14d",
+    "label": "Illustrazione di Boomrock",
+    "objectPosition": "50% 50%",
+    "aspectRatio": "16 / 9",
+    "subjectBounds": {
+      "left": 0.253,
+      "top": 0.056,
+      "right": 0.757,
+      "bottom": 0.908
+    },
+    "compositionPolicy": "full-canvas-focus",
+    "focusBounds": {
+      "left": 0.309,
+      "top": 0.235,
+      "right": 0.606,
+      "bottom": 0.789
+    }
+  },
+  {
+    "speciesId": 104,
+    "src": "/backgrounds/arkamon-splash/104-boomrock.webp",
+    "sha256": "dbba8c528db4665e28f80de890863671edb54a59c948f4ad01d011e97be44e20",
+    "label": "Illustrazione di Boomrock",
+    "objectPosition": "50% 50%",
+    "aspectRatio": "16 / 9",
+    "subjectBounds": {
+      "left": 0.237,
+      "top": 0.031,
+      "right": 0.817,
+      "bottom": 0.961
+    },
+    "compositionPolicy": "full-canvas-focus",
+    "focusBounds": {
+      "left": 0.33,
+      "top": 0.255,
+      "right": 0.622,
+      "bottom": 0.727
+    }
+  },
+  {
+    "speciesId": 105,
+    "src": "/backgrounds/arkamon-splash/105-zoorian.webp",
+    "sha256": "5e92e596b8527ff4261125d61e79f38f75c0c12603587cf234b576003c32a508",
+    "label": "Illustrazione di Zoorian",
+    "objectPosition": "50% 50%",
+    "aspectRatio": "16 / 9",
+    "subjectBounds": {
+      "left": 0.262,
+      "top": 0.008,
+      "right": 0.782,
+      "bottom": 0.889
+    },
+    "compositionPolicy": "full-canvas-focus",
+    "focusBounds": {
+      "left": 0.327,
+      "top": 0.319,
+      "right": 0.634,
+      "bottom": 0.797
+    }
+  },
+  {
+    "speciesId": 106,
+    "src": "/backgrounds/arkamon-splash/106-zoorian.webp",
+    "sha256": "77b0b977805d70a63a30abb9bc5bc14de9489b5cb1c5548368631fff0614108a",
+    "label": "Illustrazione di Zoorian",
+    "objectPosition": "50% 50%",
+    "aspectRatio": "16 / 9",
+    "subjectBounds": {
+      "left": 0.266,
+      "top": 0,
+      "right": 0.783,
+      "bottom": 0.958
+    },
+    "compositionPolicy": "full-canvas-focus",
+    "focusBounds": {
+      "left": 0.319,
+      "top": 0.279,
+      "right": 0.592,
+      "bottom": 0.797
+    }
+  },
+  {
+    "speciesId": 107,
+    "src": "/backgrounds/arkamon-splash/107-ao-shin.webp",
+    "sha256": "254c16c89c43b14a611aba9e9c50fc48bb58405e7d4dd9e261415b544e10e7ec",
+    "label": "Illustrazione di Ao-shin",
+    "objectPosition": "50% 50%",
+    "aspectRatio": "16 / 9",
+    "subjectBounds": {
+      "left": 0.123,
+      "top": 0.036,
+      "right": 0.983,
+      "bottom": 0.967
+    },
+    "compositionPolicy": "full-canvas-focus",
+    "focusBounds": {
+      "left": 0.333,
+      "top": 0.275,
+      "right": 0.58,
+      "bottom": 0.8
+    }
+  },
+  {
+    "speciesId": 108,
+    "src": "/backgrounds/arkamon-splash/108-aka-shin.webp",
+    "sha256": "8b37665619313b5eb7ef5d191b5f66866d95c0ed129dea7accc9def3bbf2bcc2",
+    "label": "Illustrazione di Aka-shin",
+    "objectPosition": "50% 50%",
+    "aspectRatio": "16 / 9",
+    "subjectBounds": {
+      "left": 0.206,
+      "top": 0.012,
+      "right": 0.893,
+      "bottom": 0.928
+    },
+    "compositionPolicy": "full-canvas-focus",
+    "focusBounds": {
+      "left": 0.29,
+      "top": 0.245,
+      "right": 0.619,
+      "bottom": 0.777
+    }
+  },
+  {
+    "speciesId": 109,
+    "src": "/backgrounds/arkamon-splash/109-oniros.webp",
+    "sha256": "aa8defb70abd5b06d78a86f2259363d411a9a8073e14a585cd3d1af49c47c5d0",
+    "label": "Illustrazione di Oniros",
+    "objectPosition": "50% 50%",
+    "aspectRatio": "16 / 9",
+    "subjectBounds": {
+      "left": 0.177,
+      "top": 0.028,
+      "right": 0.831,
+      "bottom": 0.863
+    },
+    "compositionPolicy": "full-canvas-focus",
+    "focusBounds": {
+      "left": 0.365,
+      "top": 0.235,
+      "right": 0.607,
+      "bottom": 0.725
+    }
+  },
+  {
+    "speciesId": 110,
+    "src": "/backgrounds/arkamon-splash/110-voider.webp",
+    "sha256": "9beba6edb12858c8c9352d0263f592e1560ca7d4208590df08213c85fcbc2576",
+    "label": "Illustrazione di Voider",
+    "objectPosition": "50% 50%",
+    "aspectRatio": "16 / 9",
+    "subjectBounds": {
+      "left": 0.222,
+      "top": 0.062,
+      "right": 0.839,
+      "bottom": 0.974
+    },
+    "compositionPolicy": "full-canvas-focus",
+    "focusBounds": {
+      "left": 0.361,
+      "top": 0.247,
+      "right": 0.623,
+      "bottom": 0.779
+    }
+  }
+]
