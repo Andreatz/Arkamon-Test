@@ -22,7 +22,7 @@ import { useAudienceTurn } from '@/audience/useAudienceTurn'
 import { getMoveVfxAssignment } from '@/components/vfx/moveVfxAssignments'
 import { useGameStore, creaIstanza, haSpazioPokemon } from '@store/gameStore'
 import { useAdminStore } from '@store/adminStore'
-import { useState, useEffect, useRef, useCallback, useContext } from 'react'
+import { useState, useEffect, useRef, useCallback, useContext, type CSSProperties } from 'react'
 import { UiPreviewViewContext } from '@/ui-studio/UiPreviewViewContext'
 import { BattleLayoutProvider, useResolvedBattleLayout } from '@/ui-studio/battleLayout'
 import { useRegiaStore } from '@/regia/regiaStore'
@@ -70,6 +70,7 @@ import { createBattleDamageReveal } from '@/components/battle/battleVisualSequen
 import {
   battleCameraIntensity,
   battleCameraAnticipationLeadMs,
+  resolveBattleCameraChoreography,
   planBattleCameraPose,
   type BattleCinematicShot,
 } from '@/components/battle/battleCameraLanguage'
@@ -97,6 +98,7 @@ import {
   getMoveVfxFeedback,
   getMoveVfxImpactDelayMs,
 } from '@/components/vfx/resolveMoveVfxAsset'
+import { resolveMoveVfxProfile } from '@/components/vfx/moveVfxProfiles'
 
 
 const VFX_TYPE_COLORS: Record<TipoPokemon, string> = {
@@ -675,7 +677,8 @@ export function BattagliaScene() {
     const dedicatedAttack = !!attackAsset
     const dedicatedHit = !!targetAsset
     const effectId = ++moveVfxIdRef.current
-    const cameraIntensity = battleCameraIntensity(getMoveVfxFeedback(move))
+    const cameraProfile = resolveMoveVfxProfile(move)
+    const cameraIntensity = battleCameraIntensity(cameraProfile.feedback)
     // A native clip can release on its first frame. Without a minimum visible
     // preparation, React batches windup and release into the same paint.
     // Preserve all frame markers; add only the missing camera anticipation lead.
@@ -730,7 +733,11 @@ export function BattagliaScene() {
     activePlaybackRef.current?.cancel()
     activePlaybackRef.current = director
     setPresentationPhase('preparing')
-    setCinematicShot({ attacker: side, target: targetSide, intensity: cameraIntensity })
+    setCinematicShot({
+      attacker: side, target: targetSide, intensity: cameraIntensity,
+      choreography: resolveBattleCameraChoreography(cameraProfile.archetype),
+      accent: VFX_TYPE_COLORS[move.tipo],
+    })
     setCameraShake(null)
     setHeldHitReactions(targetSide && dedicatedHit ? { [targetSide]: true } : {})
 
@@ -1570,10 +1577,14 @@ export function BattagliaScene() {
         data-battle-camera
         data-battle-camera-beat={cameraPose.beat}
         data-battle-camera-intensity={cinematicShot?.intensity ?? 'none'}
+        data-battle-camera-choreography={cinematicShot?.choreography ?? 'none'}
         data-battle-camera-target={cinematicShot?.target ?? cinematicShot?.attacker ?? 'none'}
         data-battle-camera-zoom={cameraPose.scale}
         className="battle-camera absolute inset-0"
-        style={{ transformOrigin: 'center center' }}
+        style={{
+          transformOrigin: 'center center',
+          '--battle-camera-accent': cinematicShot?.accent ?? '#dbeafe',
+        } as CSSProperties}
         animate={{ x: cameraPose.x, y: cameraPose.y, scale: cameraPose.scale }}
         transition={{ duration: cameraPose.durationMs / 1000, ease: 'easeInOut' }}
       >
