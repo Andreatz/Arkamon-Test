@@ -67,6 +67,11 @@ import {
 import { prepareArkamonAnimationPlayback } from '@/components/arkamon/preloadArkamonAnimations'
 import { createBattleDamageReveal } from '@/components/battle/battleVisualSequence'
 import {
+  battleCameraIntensity,
+  planBattleCameraPose,
+  type BattleCinematicShot,
+} from '@/components/battle/battleCameraLanguage'
+import {
   createBattlePresentationDirector,
   type BattleDirectorPhase,
 } from '@/components/battle/battlePresentationDirector'
@@ -190,6 +195,7 @@ export function BattagliaScene() {
   const impactPulseIdRef = useRef(0)
   const [moveVfx, setMoveVfx] = useState<MoveVfxEvent | null>(null)
   const [presentationPhase, setPresentationPhase] = useState<BattleDirectorPhase | 'idle'>('idle')
+  const [cinematicShot, setCinematicShot] = useState<BattleCinematicShot | null>(null)
   const moveVfxIdRef = useRef(0)
   const moveVfxCallbacksRef = useRef<{
     id: number
@@ -716,6 +722,8 @@ export function BattagliaScene() {
     activePlaybackRef.current?.cancel()
     activePlaybackRef.current = director
     setPresentationPhase('preparing')
+    setCinematicShot({ attacker: side, target: targetSide, intensity: battleCameraIntensity(getMoveVfxFeedback(move)) })
+    setCameraShake(null)
     setHeldHitReactions(targetSide && dedicatedHit ? { [targetSide]: true } : {})
 
     // If a page cannot preload, let the existing player and VFX fallback
@@ -1471,6 +1479,8 @@ export function BattagliaScene() {
       ? 'victory'
       : undefined
 
+  const cameraPose = planBattleCameraPose(presentationPhase, cinematicShot, reducedMotion, animationSpeed)
+
   return (
     <BattleLayoutProvider value={battleLayout}><div
       data-battle-layout-root
@@ -1540,6 +1550,16 @@ export function BattagliaScene() {
         </>
       )}
 
+      <motion.div
+        data-battle-camera
+        data-battle-camera-beat={cameraPose.beat}
+        data-battle-camera-intensity={cinematicShot?.intensity ?? 'none'}
+        data-battle-camera-zoom={cameraPose.scale}
+        className="battle-camera absolute inset-0"
+        style={{ transformOrigin: 'center center' }}
+        animate={{ x: cameraPose.x, y: cameraPose.y, scale: cameraPose.scale }}
+        transition={{ duration: cameraPose.durationMs / 1000, ease: 'easeInOut' }}
+      >
       <motion.div data-battle-world className="battle-world absolute inset-0 bg-cover bg-center"
         style={{ backgroundImage: `url(${bgBattaglia})` }}
       animate={
@@ -1627,6 +1647,15 @@ export function BattagliaScene() {
         </BattleLayoutItem>
       </AnimatePresence>
 
+      </motion.div>
+      <div
+        className="battle-camera-glaze absolute inset-0 pointer-events-none"
+        aria-hidden="true"
+        style={{
+          opacity: cameraPose.overlayOpacity,
+          transitionDuration: reducedMotion ? '0ms' : String(180 / animationSpeed) + 'ms',
+        }}
+      />
       </motion.div>
 
       <BattleLayoutItem
