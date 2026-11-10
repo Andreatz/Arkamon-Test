@@ -1,6 +1,9 @@
 name: Arkamon Test Rework Checks
 
 on:
+  push:
+    branches:
+      - 'rework/**'
   pull_request:
     paths:
       - '.github/workflows/rework-checks.yml'
