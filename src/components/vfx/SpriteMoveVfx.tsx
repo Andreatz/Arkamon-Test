@@ -31,7 +31,7 @@ export function SpriteMoveVfx({ effect, onStart, onImpact, onComplete, assetOver
   useEffect(() => {
     let active = true
     const prepared = reducedMotion ? Promise.resolve() : assetOverride
-      ? prepareImageAsset(asset.kind === 'sprite-sheet' ? assetUrl(asset.src) : getGifRuntimeSrc(assetUrl(asset.src), effect.id))
+      ? prepareImageAsset(asset.kind === 'gif' ? getGifRuntimeSrc(assetUrl(asset.src), effect.id) : assetUrl(asset.src))
       : prepareMoveVfxPlayback(effect.move, effect.id, true)
     void prepared.then(() => {
       if (active) setReadyId(effect.id)
