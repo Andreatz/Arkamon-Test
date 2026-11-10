@@ -1,4 +1,6 @@
 import {
+  forwardRef,
+  useCallback,
   useLayoutEffect,
   useEffect,
   useRef,
@@ -95,17 +97,7 @@ function snapRect(rect: AdminLayoutRect, mode: 'move' | 'resize', guides: { x: n
   return next
 }
 
-export function AdminLayoutItem({
-  rootSelector,
-  label,
-  rect,
-  editing,
-  onChange,
-  children,
-  zIndex = 20,
-  uiId,
-  layoutOwner,
-}: {
+export const AdminLayoutItem = forwardRef<HTMLDivElement, {
   rootSelector: string
   label: string
   rect: AdminLayoutRect
@@ -115,9 +107,24 @@ export function AdminLayoutItem({
   zIndex?: number
   uiId?: string
   layoutOwner?: string
-}) {
+}>(function AdminLayoutItem({
+  rootSelector,
+  label,
+  rect,
+  editing,
+  onChange,
+  children,
+  zIndex = 20,
+  uiId,
+  layoutOwner,
+}, forwardedRef) {
   const beginLayoutChange = useAdminStore((state) => state.beginLayoutChange)
-  const itemRef = useRef<HTMLDivElement>(null)
+  const itemRef = useRef<HTMLDivElement | null>(null)
+  const setRefs = useCallback((node: HTMLDivElement | null) => {
+    itemRef.current = node
+    if (typeof forwardedRef === 'function') forwardedRef(node)
+    else if (forwardedRef) forwardedRef.current = node
+  }, [forwardedRef])
   const dragCleanup = useRef<(() => void) | null>(null)
   useEffect(() => () => dragCleanup.current?.(), [editing])
 
@@ -240,7 +247,7 @@ export function AdminLayoutItem({
 
   return (
     <div
-      ref={itemRef}
+      ref={setRefs}
       data-admin-layout-item="true"
       data-ui-label={label}
       data-ui-id={uiId ?? `layout.${label.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')}`}
@@ -294,4 +301,4 @@ export function AdminLayoutItem({
       {children}
     </div>
   )
-}
+})
