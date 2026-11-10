@@ -9,7 +9,7 @@ const sample = (atMs: number): BattleProfileSample => ({
   atMs, frames: summarizeFrameIntervals([16.67, 16.67, 33.34]),
   activeBattle: true, nativeBytes: 64 * 1048576, nativeBudgetBytes: 64 * 1048576,
   vfxBytes: 32 * 1048576, vfxBudgetBytes: 64 * 1048576,
-  nativeDecodes: 1, peakNativeDecodes: 2, pagedRenderers: 2,
+  nativeDecodes: 1, peakNativeDecodes: 2, nativeLoads: 1, nativeLoadLastMs: 125, vfxPrepares: 2, vfxPrepareLastMs: 55, pagedRenderers: 2,
   atlasRenderers: 0, lastCanvasDrawMs: 1.25, longTasks: 0, longTaskMs: 0,
 })
 
