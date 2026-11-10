@@ -1,5 +1,5 @@
 import { expect, test, type Page } from '@playwright/test'
-import { mkdir } from 'node:fs/promises'
+import { mkdir, writeFile } from 'node:fs/promises'
 import { resolve } from 'node:path'
 
 test.use({ reducedMotion: 'no-preference', video: 'on' })
@@ -164,6 +164,12 @@ for (const shot of SHOTS) {
         p95Ms: sorted[Math.floor(sorted.length * .95)] ?? null },
       decoded: { vfxBytes: results.vfxBytes, nativeBytes: results.nativeBytes },
     }
+    // Playwright attachment paths are not necessarily retained in CI artifacts:
+    // persist a standalone machine-readable file beside each video/screenshot.
+    await writeFile(
+      resolve('output/rework-shot-v2/' + shot.choreography + '-telemetry.json'),
+      JSON.stringify(report, null, 2) + '\n',
+    )
     await test.info().attach('Shot telemetry ' + shot.choreography, {
       body: Buffer.from(JSON.stringify(report, null, 2)), contentType: 'application/json',
     })

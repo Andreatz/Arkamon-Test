@@ -26,6 +26,8 @@ The dedicated `e2e/rework-shot-choreography.spec.ts` performs four real seeded a
 
 All tests capture before/after images, a real Chromium video, presentation cue order, decoded graphics memory indicators and frame pacing (p50/p95 milliseconds). This is an illustrative baseline only; frames reported from headless CI are not substitutes for performance testing with OBS.
 
+The CI artifact contains `physical-telemetry.json`, `projectile-telemetry.json`, `area-telemetry.json` and `support-telemetry.json` next to the videos and images; these exports are independent of the Playwright HTML reporter.
+
 ## Acceptance and next steps
 
 Keep all combat/KO, XP, checkpoint tests green. Camera must not wrap HUD, HP, commands or dice. The battle returns to neutral by dice reveal. Look at captured four-category videos before tuning intensity further. Later add a per-type camera configuration in UI Studio rather than hardcoding one-off motion for each move.
