@@ -2,6 +2,7 @@ import { describe, expect, it } from 'vitest'
 import {
   battleCameraIntensity,
   battleCameraAnticipationLeadMs,
+  resolveBattleCameraChoreography,
   planBattleCameraPose,
   type BattleCinematicShot,
 } from './battleCameraLanguage'
@@ -98,6 +99,78 @@ describe('bounded battle cinematography', () => {
     expect(battleCameraAnticipationLeadMs(0, 'subtle', false)).toBe(0)
     expect(battleCameraAnticipationLeadMs(0, 'heavy', true)).toBe(0)
     expect(battleCameraAnticipationLeadMs(Number.NaN, 'light', false)).toBe(210)
+  })
+
+  it('classifies every existing VFX archetype into four deterministic choreographies', () => {
+    const samples = {
+      physical: ['blunt', 'slash', 'bite', 'charge'],
+      projectile: ['beam', 'plant', 'fire', 'electric', 'water', 'dark'],
+      area: ['wave', 'storm', 'eruption', 'psychic', 'supreme'],
+      support: ['heal', 'status', 'aura'],
+    } as const
+    for (const [choreography, archetypes] of Object.entries(samples)) {
+      for (const archetype of archetypes) {
+        expect(resolveBattleCameraChoreography(archetype)).toBe(choreography)
+      }
+    }
+  })
+
+  it('makes physical attacks lunge, projectile attacks track and area attacks pull to center', () => {
+    const physical = { ...aToB, choreography: 'physical' as const }
+    const projectile = { ...aToB, choreography: 'projectile' as const }
+    const area = { ...aToB, choreography: 'area' as const }
+    const pWindup = planBattleCameraPose('windup', physical, false)
+    const pRelease = planBattleCameraPose('released', physical, false)
+    const ranged = planBattleCameraPose('released', projectile, false)
+    const areaRelease = planBattleCameraPose('released', area, false)
+    const areaImpact = planBattleCameraPose('impact', area, false)
+    expect(Number.parseFloat(pWindup.x)).toBeGreaterThan(0.7)
+    expect(Number.parseFloat(pRelease.x)).toBeLessThan(Number.parseFloat(ranged.x))
+    expect(pRelease.durationMs).toBeLessThan(ranged.durationMs)
+    expect(areaRelease.x).toBe('0%')
+    expect(areaRelease.y).toBe('0%')
+    expect(areaImpact.x).toBe('0%')
+    expect(areaImpact.y).toBe('0%')
+    expect(areaImpact.overlayOpacity).toBeGreaterThan(planBattleCameraPose('impact', projectile, false).overlayOpacity)
+  })
+
+  it('uses caster-focused motion for non-damaging support instead of rushing the opponent', () => {
+    const a = { ...aToB, choreography: 'support' as const }
+    const attack = planBattleCameraPose('released', a, false)
+    expect(Number.parseFloat(attack.x)).toBeGreaterThan(0)
+    expect(Number.parseFloat(attack.y)).toBeLessThan(0)
+    expect(attack.scale).toBeLessThan(planBattleCameraPose('released', { ...aToB, choreography: 'projectile' }, false).scale)
+  })
+
+  it('mirrors all four choreographies correctly and retains strict mobile bounds', () => {
+    for (const choreography of ['physical', 'projectile', 'area', 'support'] as const) {
+      for (const intensity of ['light', 'medium', 'heavy'] as const) {
+        const a: BattleCinematicShot = { attacker: 'A', target: 'B', intensity, choreography }
+        const b: BattleCinematicShot = { attacker: 'B', target: 'A', intensity, choreography }
+        for (const phase of ['windup', 'released', 'impact'] as const) {
+          const left = planBattleCameraPose(phase, a, false)
+          const right = planBattleCameraPose(phase, b, false)
+          expect(Number.parseFloat(left.x)).toBeCloseTo(-Number.parseFloat(right.x), 3)
+          expect(Number.parseFloat(left.y)).toBeCloseTo(-Number.parseFloat(right.y), 3)
+          for (const pose of [left, right]) {
+            expect(Math.abs(Number.parseFloat(pose.x))).toBeLessThanOrEqual(2)
+            expect(Math.abs(Number.parseFloat(pose.y))).toBeLessThanOrEqual(2)
+            expect(pose.scale).toBeGreaterThanOrEqual(1)
+            expect(pose.scale).toBeLessThanOrEqual(1.07)
+            expect(pose.overlayOpacity).toBeLessThanOrEqual(0.22)
+          }
+        }
+      }
+    }
+  })
+
+  it('keeps every choreography completely still when reduced motion is requested', () => {
+    for (const choreography of ['physical', 'projectile', 'area', 'support'] as const) {
+      for (const phase of ['windup', 'released', 'impact'] as const) {
+        expect(planBattleCameraPose(phase, { ...aToB, choreography, intensity: 'heavy' }, true))
+          .toEqual({ x: '0%', y: '0%', scale: 1, durationMs: 0, overlayOpacity: 0, beat: 'neutral' })
+      }
+    }
   })
 
 })
