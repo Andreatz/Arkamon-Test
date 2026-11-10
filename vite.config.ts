@@ -1,6 +1,7 @@
 import { defineConfig, type ConfigEnv, type UserConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import path from 'path'
+import { existsSync, readFileSync } from 'node:fs'
 import mediaRelease from './src/data/media-release.json'
 // @ts-expect-error The packaging utility also runs as a standalone Node ES module.
 import { assertPinnedMediaRevision, readPlayableFrontSpriteIds, webAssetsPlugin } from './scripts/package-web-assets.mjs'
@@ -13,6 +14,9 @@ import { separateDesktopResources } from './scripts/separate-desktop-resources.m
 // Il workflow .github/workflows/ci.yml setta GITHUB_PAGES=true al build.
 export function createGameConfig({ command, mode }: ConfigEnv): UserConfig {
   const web = process.env.GITHUB_PAGES === 'true' && mode !== 'desktop'
+  const inventory = JSON.parse(readFileSync(path.resolve(__dirname, 'docs/rework/import-report.json'), 'utf8')) as { omitted: { path: string }[] }
+  const sourceOnlyAssets = inventory.omitted.map(item => item.path.replace(/^public\//, ''))
+  const presentFrontSprites = readPlayableFrontSpriteIds(__dirname).filter(id => existsSync(path.resolve(__dirname, `public/sprites/front_sprites/${id}.png`)))
   const bounded = command === 'build' && process.env.ARKAMON_TEST_FULL_MEDIA === 'true'
   const mediaRevision = bounded ? assertPinnedMediaRevision(process.env.VITE_MEDIA_REVISION ?? mediaRelease.revision, mediaRelease) : mediaRelease.revision
   return {
@@ -21,7 +25,8 @@ export function createGameConfig({ command, mode }: ConfigEnv): UserConfig {
     mode === 'desktop' ? path.resolve(__dirname, 'dist-desktop-resources') : undefined)] : [])],
   publicDir: 'public',
   define: { 'import.meta.env.VITE_MEDIA_REVISION': JSON.stringify(mediaRevision), 'import.meta.env.VITE_SPLIT_MEDIA': JSON.stringify(true),
-    'import.meta.env.VITE_LOCAL_FRONT_SPRITE_IDS': JSON.stringify(readPlayableFrontSpriteIds(__dirname)) },
+    'import.meta.env.VITE_LOCAL_FRONT_SPRITE_IDS': JSON.stringify(presentFrontSprites),
+    'import.meta.env.VITE_OMITTED_MEDIA_PATHS': JSON.stringify(sourceOnlyAssets) },
   base: web ? '/Arkamon-Test/' : '/',
   resolve: {
     alias: {
