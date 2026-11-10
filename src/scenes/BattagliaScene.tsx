@@ -674,13 +674,20 @@ export function BattagliaScene() {
     const dedicatedAttack = !!attackAsset
     const dedicatedHit = !!targetAsset
     const effectId = ++moveVfxIdRef.current
+    const cameraIntensity = battleCameraIntensity(getMoveVfxFeedback(move))
+    // A native clip can release on its first frame. Without a minimum visible
+    // preparation, React batches windup and release into the same paint.
+    // Preserve all frame markers; add only the missing camera anticipation lead.
+    const attackReleaseMs = attackAsset ? (attackAsset.releaseFrame ?? 0) / attackAsset.fps * 1000 : 0
+    const cameraAnticipationMs = reducedMotion || cameraIntensity === 'subtle'
+      ? 0 : Math.max(0, 210 - attackReleaseMs)
 
     // The director owns cue ordering; this React scene only binds actual media
     // elements, VFX callbacks, and the existing gameplay/dice completion.
     const director = createBattlePresentationDirector({
       dedicatedAttack,
       dedicatedHit,
-      attackReleaseMs: attackAsset ? (attackAsset.releaseFrame ?? 0) / attackAsset.fps * 1000 : 0,
+      attackReleaseMs,
       hitReactionMs: targetAsset ? (targetAsset.reactionFrame ?? 0) / targetAsset.fps * 1000 : 0,
       vfxImpactMs: getMoveVfxImpactDelayMs(move),
       reducedMotion,
@@ -723,7 +730,7 @@ export function BattagliaScene() {
     activePlaybackRef.current?.cancel()
     activePlaybackRef.current = director
     setPresentationPhase('preparing')
-    setCinematicShot({ attacker: side, target: targetSide, intensity: battleCameraIntensity(getMoveVfxFeedback(move)) })
+    setCinematicShot({ attacker: side, target: targetSide, intensity: cameraIntensity })
     setCameraShake(null)
     setHeldHitReactions(targetSide && dedicatedHit ? { [targetSide]: true } : {})
 
@@ -734,7 +741,15 @@ export function BattagliaScene() {
       target ? prepareArkamonAnimationPlayback(target.specieId, targetView, 'hit') : Promise.resolve(),
       prepareMoveVfxPlayback(move, effectId),
     ]).catch(() => undefined).then(() => {
-      if (activePlaybackRef.current === director) director.start()
+      if (activePlaybackRef.current !== director) return
+      if (cameraAnticipationMs <= 0) {
+        director.start()
+        return
+      }
+      setPresentationPhase('windup')
+      scheduleFeedbackTimer(() => {
+        if (activePlaybackRef.current === director) director.start()
+      }, cameraAnticipationMs)
     })
   }
 
