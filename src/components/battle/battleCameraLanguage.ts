@@ -1,14 +1,19 @@
-import type { MoveVfxFeedback } from '@/components/vfx/types'
+import type { MoveVfxFeedback, VfxArchetype } from '@/components/vfx/types'
 import type { BattleDirectorPhase } from './battlePresentationDirector'
 
 export type BattleCameraSide = 'A' | 'B'
 export type BattleCinematicPhase = BattleDirectorPhase | 'idle'
 export type BattleCameraIntensity = 'subtle' | 'light' | 'medium' | 'heavy'
+export type BattleCameraChoreography = 'physical' | 'projectile' | 'area' | 'support'
 
 export interface BattleCinematicShot {
   attacker: BattleCameraSide
   target: BattleCameraSide | null
   intensity: BattleCameraIntensity
+  /** Optional for compatibility with the original camera tests/fixtures. */
+  choreography?: BattleCameraChoreography
+  /** Existing type color, for a small impact light tint only. */
+  accent?: string
 }
 
 export interface BattleCameraPose {
@@ -29,6 +34,29 @@ export function battleCameraIntensity(feedback: Pick<MoveVfxFeedback, 'cameraSha
   if (amount < 2) return 'light'
   if (amount < 5) return 'medium'
   return 'heavy'
+}
+
+/** Map the existing move visual vocabulary to a camera language; never infer from damage. */
+export function resolveBattleCameraChoreography(archetype: VfxArchetype): BattleCameraChoreography {
+  switch (archetype) {
+    case 'slash':
+    case 'bite':
+    case 'charge':
+    case 'blunt':
+      return 'physical'
+    case 'wave':
+    case 'storm':
+    case 'eruption':
+    case 'supreme':
+    case 'psychic':
+      return 'area'
+    case 'heal':
+    case 'status':
+    case 'aura':
+      return 'support'
+    default:
+      return 'projectile'
+  }
 }
 
 const STRENGTH: Record<BattleCameraIntensity, number> = {
@@ -61,36 +89,46 @@ export function planBattleCameraPose(
   }
 
   const strength = STRENGTH[shot.intensity]
+  const kind = shot.choreography ?? 'projectile'
   const focus = (side: BattleCameraSide, amountX: number, amountY: number) => ({
     x: limitedPercent((side === 'A' ? 1 : -1) * amountX * strength),
     y: limitedPercent((side === 'A' ? -1 : 1) * amountY * strength),
   })
   const destination = shot.target ?? shot.attacker
+  const pose = (
+    beat: BattleCameraPose['beat'],
+    side: BattleCameraSide | null,
+    offsetX: number,
+    offsetY: number,
+    zoom: number,
+    ms: number,
+    glow: number,
+  ): BattleCameraPose => ({
+    ...(side ? focus(side, offsetX, offsetY) : { x: '0%', y: '0%' }),
+    scale: Number((1 + zoom * strength).toFixed(4)),
+    durationMs: duration(ms),
+    overlayOpacity: Number(Math.min(0.22, glow * strength).toFixed(4)),
+    beat,
+  })
+
+  // Tracking follows the authored VFX archetype, but never alters its own
+  // timeline. Framing offsets stay below 2% and zoom below 1.07.
   switch (phase) {
     case 'windup':
-      return {
-        ...focus(shot.attacker, 0.72, 0.35),
-        scale: Number((1 + 0.021 * strength).toFixed(4)),
-        durationMs: duration(330),
-        overlayOpacity: Math.min(0.2, 0.075 * strength),
-        beat: 'anticipation',
-      }
+      if (kind === 'physical') return pose('anticipation', shot.attacker, 1.02, 0.47, 0.029, 260, 0.073)
+      if (kind === 'area') return pose('anticipation', shot.attacker, 0.35, 0.18, 0.013, 400, 0.085)
+      if (kind === 'support') return pose('anticipation', shot.attacker, 0.34, 0.18, 0.011, 350, 0.05)
+      return pose('anticipation', shot.attacker, 0.72, 0.35, 0.021, 330, 0.075)
     case 'released':
-      return {
-        ...focus(destination, 0.98, 0.43),
-        scale: Number((1 + 0.032 * strength).toFixed(4)),
-        durationMs: duration(250),
-        overlayOpacity: Math.min(0.15, 0.045 * strength),
-        beat: 'travel',
-      }
+      if (kind === 'physical') return pose('travel', destination, 1.38, 0.65, 0.023, 170, 0.08)
+      if (kind === 'area') return pose('travel', null, 0, 0, 0.015, 370, 0.105)
+      if (kind === 'support') return pose('travel', shot.attacker, 0.3, 0.16, 0.012, 300, 0.075)
+      return pose('travel', destination, 0.98, 0.43, 0.032, 250, 0.045)
     case 'impact':
-      return {
-        ...focus(destination, 1.36, 0.56),
-        scale: Number((1 + 0.051 * strength).toFixed(4)),
-        durationMs: duration(95),
-        overlayOpacity: Math.min(0.22, 0.095 * strength),
-        beat: 'impact',
-      }
+      if (kind === 'physical') return pose('impact', destination, 1.45, 0.66, 0.05, 85, 0.125)
+      if (kind === 'area') return pose('impact', null, 0, 0, 0.031, 125, 0.14)
+      if (kind === 'support') return pose('impact', shot.attacker, 0.3, 0.16, 0.018, 160, 0.09)
+      return pose('impact', destination, 1.36, 0.56, 0.051, 95, 0.095)
     case 'visual-complete':
     case 'cancelled':
       return { ...NEUTRAL, durationMs: duration(360) }

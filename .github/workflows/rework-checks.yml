@@ -10,6 +10,7 @@ on:
       - 'src/**'
       - 'e2e/rework-title.spec.ts'
       - 'e2e/rework-cinematic-battle.spec.ts'
+      - 'e2e/rework-shot-choreography.spec.ts'
       - 'ui-source/**'
       - 'public/**'
       - 'scripts/**'
@@ -58,6 +59,18 @@ jobs:
         run: npx playwright test e2e/battle-chronicle.spec.ts --grep 'Suprema reveals KO after dice' --project=chromium --workers=1 --reporter=list --output=output/rework-battle-e2e
       - name: Real battle cinematic camera, lighting and reduced-motion checks
         run: npx playwright test e2e/rework-cinematic-battle.spec.ts --project=chromium --workers=1 --reporter=list --output=output/rework-cinema-playwright
+      - name: Visual choreography across physical, projectile, area and support moves
+        run: npx playwright test e2e/rework-shot-choreography.spec.ts --project=chromium --workers=1 --reporter=list --output=output/rework-shot-v2-playwright
+      - name: Upload choreography comparison videos and frame telemetry
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: arkamon-shot-choreography-v2
+          path: |
+            output/rework-shot-v2/
+            output/rework-shot-v2-playwright/
+          if-no-files-found: warn
+          retention-days: 14
       - name: Upload before-after arena frames, cinematic video and phase diagnostics
         if: always()
         uses: actions/upload-artifact@v4
