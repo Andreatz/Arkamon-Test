@@ -67,6 +67,7 @@ import {
 } from '@/components/arkamon/arkamonAnimationManifest'
 import { prepareArkamonAnimationPlayback } from '@/components/arkamon/preloadArkamonAnimations'
 import { createBattleDamageReveal } from '@/components/battle/battleVisualSequence'
+import { planBattleImpactComposition, getBattleImpactDurationMs } from '@/components/battle/battleImpactComposition'
 import {
   battleCameraIntensity,
   battleCameraAnticipationLeadMs,
@@ -197,6 +198,7 @@ export function BattagliaScene() {
   } | null>(null)
   const [impactPulse, setImpactPulse] = useState<ImpactPulseDisplay | null>(null)
   const impactPulseIdRef = useRef(0)
+  const impactFeedbackEpochRef = useRef(0)
   const [moveVfx, setMoveVfx] = useState<MoveVfxEvent | null>(null)
   const [presentationPhase, setPresentationPhase] = useState<BattleDirectorPhase | 'idle'>('idle')
   const [cinematicShot, setCinematicShot] = useState<BattleCinematicShot | null>(null)
@@ -485,6 +487,7 @@ export function BattagliaScene() {
         window.clearTimeout(timer)
       }
       feedbackTimersRef.current.clear()
+      impactFeedbackEpochRef.current++
       spriteCompletionWaitersRef.current = {}
       spriteStartWaitersRef.current = {}
       spriteCueWaitersRef.current = {}
@@ -631,31 +634,36 @@ export function BattagliaScene() {
     playHitAnimation = true
   ) => {
     const feedback = getMoveVfxFeedback(move)
+    // An old hit-stop/flash timer must not clear a newer attack's effect.
+    const epoch = ++impactFeedbackEpochRef.current
+    const onlyCurrent = (callback: () => void) => () => {
+      if (impactFeedbackEpochRef.current === epoch) callback()
+    }
     if (!reducedMotion && feedback.hitStopMs > 0) {
       setPresentationPaused(true)
-      scheduleFeedbackTimer(() => setPresentationPaused(false), feedback.hitStopMs)
-    }
+      scheduleFeedbackTimer(onlyCurrent(() => setPresentationPaused(false)), feedback.hitStopMs)
+    } else setPresentationPaused(false)
 
     if (playHitAnimation) playSpriteAction(side, 'hit', Math.max(240, feedback.targetShakeMs))
     if (!reducedMotion && feedback.targetShakeMs > 0 && feedback.targetShakePx > 0) {
       setShakeStrengthPx(feedback.targetShakePx)
       setShakeDurationMs(getAnimationDuration(feedback.targetShakeMs))
       setShaking(side)
-      scheduleFeedbackTimer(() => setShaking(null), feedback.targetShakeMs)
-    }
+      scheduleFeedbackTimer(onlyCurrent(() => setShaking(null)), feedback.targetShakeMs)
+    } else setShaking(null)
 
     if (!reducedMotion && feedback.targetFlashMs > 0) {
       setImpactFlash(side)
-      scheduleFeedbackTimer(() => setImpactFlash(null), feedback.targetFlashMs)
-    }
+      scheduleFeedbackTimer(onlyCurrent(() => setImpactFlash(null)), feedback.targetFlashMs)
+    } else setImpactFlash(null)
 
     if (!reducedMotion && feedback.cameraShakeMs > 0 && feedback.cameraShakePx > 0) {
       setCameraShake({
         px: feedback.cameraShakePx,
         ms: getAnimationDuration(feedback.cameraShakeMs),
       })
-      scheduleFeedbackTimer(() => setCameraShake(null), feedback.cameraShakeMs)
-    }
+      scheduleFeedbackTimer(onlyCurrent(() => setCameraShake(null)), feedback.cameraShakeMs)
+    } else setCameraShake(null)
 
     if (playHitSound && !getMoveVfxAssignment(move)) playSound('hit')
   }
@@ -783,15 +791,21 @@ export function BattagliaScene() {
       playImpactFeedback(risultato.mossa, targetSide, true, !targetHasHit)
 
       const pulseId = ++impactPulseIdRef.current
-      setImpactPulse({
-        id: pulseId,
-        side: targetSide,
-        color: VFX_TYPE_COLORS[risultato.mossa.tipo],
-        strength: Math.max(0.85, 0.9 + feedback.cameraShakePx * 0.06),
-      })
-      scheduleFeedbackTimer(() => {
-        setImpactPulse((current) => (current?.id === pulseId ? null : current))
-      }, 560)
+      const choreography = resolveBattleCameraChoreography(resolveMoveVfxProfile(risultato.mossa).archetype)
+      const strength = Math.max(0.85, 0.9 + feedback.cameraShakePx * 0.06)
+      if (!reducedMotion) {
+        setImpactPulse({
+          id: pulseId,
+          side: targetSide,
+          color: VFX_TYPE_COLORS[risultato.mossa.tipo],
+          strength,
+          choreography,
+        })
+        const duration = getBattleImpactDurationMs(planBattleImpactComposition(choreography, strength))
+        scheduleFeedbackTimer(() => {
+          setImpactPulse((current) => (current?.id === pulseId ? null : current))
+        }, duration + 40)
+      }
 
     }, () => {
       if (èMossaSoloStato(risultato.mossa)) {
