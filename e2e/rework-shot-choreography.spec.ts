@@ -59,6 +59,8 @@ async function observe(page: Page) {
   await page.evaluate(() => {
     type Item = { phase: string; beat: string; choreography: string; zoom: number; hp: string | null; elapsedMs: number }
     const samples: Item[] = []
+    const impacts: { id: string; kind: string; elapsedMs: number }[] = []
+    const seenImpacts = new Set<string>()
     const clock = performance.now()
     let previous = ''
     let lastFrame = 0
@@ -72,6 +74,15 @@ async function observe(page: Page) {
     }
     requestAnimationFrame(tick)
     const sample = () => {
+      for (const element of document.querySelectorAll('[data-battle-impact-cue]')) {
+        const id = element.getAttribute('data-battle-impact-cue') ?? ''
+        if (seenImpacts.has(id)) continue
+        seenImpacts.add(id)
+        impacts.push({
+          id, kind: element.getAttribute('data-battle-impact-kind') ?? '',
+          elapsedMs: Math.round(performance.now() - clock),
+        })
+      }
       const stage = document.querySelector('[data-battle-director-phase]')
       const camera = document.querySelector('[data-battle-camera]')
       if (!stage || !camera) return
@@ -90,15 +101,15 @@ async function observe(page: Page) {
     }
     const observer = new MutationObserver(sample)
     observer.observe(document.body, {
-      subtree: true, attributes: true,
+      subtree: true, attributes: true, childList: true,
       attributeFilter: ['data-battle-director-phase', 'data-battle-camera-beat',
         'data-battle-camera-choreography', 'data-battle-camera-zoom'],
     })
     sample()
     ;(window as typeof window & {
-      __shotProbe?: { samples: Item[]; finish: () => { frameTimes: number[]; vfxBytes: string | null; nativeBytes: string | null } }
+      __shotProbe?: { samples: Item[]; impacts: typeof impacts; finish: () => { frameTimes: number[]; vfxBytes: string | null; nativeBytes: string | null } }
     }).__shotProbe = {
-      samples,
+      samples, impacts,
       finish: () => {
         collecting = false
         observer.disconnect()
@@ -137,9 +148,10 @@ for (const shot of SHOTS) {
     const results = await page.evaluate(() => {
       const probe = (window as typeof window & { __shotProbe?: {
         samples: Sample[]
+        impacts: { id: string; kind: string; elapsedMs: number }[]
         finish: () => { frameTimes: number[]; vfxBytes: string | null; nativeBytes: string | null }
       } }).__shotProbe!
-      return { samples: probe.samples, ...probe.finish() }
+      return { samples: probe.samples, impacts: probe.impacts, ...probe.finish() }
     })
     const phases = results.samples.map(item => item.phase)
     const cameraBeats = results.samples.map(item => item.beat)
@@ -147,6 +159,8 @@ for (const shot of SHOTS) {
     expect(phases).toContain('released')
     expect(phases).toContain('impact')
     expect(phases).toContain('visual-complete')
+    expect(results.impacts, 'one impact must be emitted by the VFX cue').toHaveLength(1)
+    expect(results.impacts[0].kind).toBe(shot.choreography)
     expect(cameraBeats).toContain('anticipation')
     expect(cameraBeats).toContain('travel')
     expect(cameraBeats).toContain('impact')
@@ -160,6 +174,7 @@ for (const shot of SHOTS) {
     const report = {
       speciesId: shot.speciesId, move: shot.moveName, choreography: shot.choreography,
       timings: results.samples,
+      impacts: results.impacts,
       frames: { samples: sorted.length, p50Ms: sorted[Math.floor(sorted.length * .5)] ?? null,
         p95Ms: sorted[Math.floor(sorted.length * .95)] ?? null },
       decoded: { vfxBytes: results.vfxBytes, nativeBytes: results.nativeBytes },

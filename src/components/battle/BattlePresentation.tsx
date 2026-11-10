@@ -8,6 +8,8 @@ import { AdminLayoutItem } from '@/admin/AdminLayoutItem'
 import { ArkamonBattleSprite, type ArkamonAnimationCue } from '@/components/arkamon/ArkamonBattleSprite'
 import { getArkamonAnimationAsset, type ArkamonBattleAnimation } from '@/components/arkamon/arkamonAnimationManifest'
 import { getBattleSideCenter } from '@/components/vfx/battleVfxPosition'
+import { planBattleImpactComposition, impactLayerAppearance, type ImpactLayerKind } from './battleImpactComposition'
+import type { BattleCameraChoreography } from './battleCameraLanguage'
 import { StatusToken } from './StatusToken'
 import { useGameMotionPreferences, getAnimationDuration } from '@/settings/gamePreferences'
 import { battleMoveFacts } from './battleMoveFacts'
@@ -55,6 +57,7 @@ export type ImpactPulseDisplay = {
   side: 'A' | 'B'
   color: string
   strength: number
+  choreography?: BattleCameraChoreography
 }
 
 export function ImpactPulseOverlay({
@@ -64,44 +67,47 @@ export function ImpactPulseOverlay({
   pulse: ImpactPulseDisplay
   layout: AdminBattleLayout
 }) {
-  const { reducedMotion } = useGameMotionPreferences()
-  if (reducedMotion) return null
+  const { reducedMotion, speed } = useGameMotionPreferences()
+  // The cue is dispatched by the VFX layer's impact callback, not by a
+  // separate guessed offset. Rendering this component cannot affect damage.
+  const layers = planBattleImpactComposition(pulse.choreography ?? 'projectile', pulse.strength, reducedMotion)
+  if (!layers.length) return null
   const point = getBattleSideCenter(layout, pulse.side)
-
-  const position = {
-    left: `${point.x}%`,
-    top: `${point.y}%`,
-  }
 
   return (
     <div
-      className="pointer-events-none absolute z-[64] -translate-x-1/2 -translate-y-1/2"
-      style={position}
+      data-battle-impact-cue={pulse.id}
+      data-battle-impact-kind={pulse.choreography ?? 'projectile'}
+      className="pointer-events-none absolute z-[64]"
+      style={{ left: `${point.x}%`, top: `${point.y}%`, width: 0, height: 0 }}
       aria-hidden="true"
     >
-      <motion.div
-        initial={{ opacity: 0.95, scale: 0.25 }}
-        animate={{
-          opacity: [0.95, 0.72, 0],
-          scale: [
-            0.25,
-            pulse.strength,
-            pulse.strength * 1.9,
-          ],
-        }}
-        exit={{ opacity: 0 }}
-        transition={{
-          duration: 0.5,
-          ease: 'easeOut',
-        }}
-        className="h-28 w-28 rounded-full border-[3px]"
-        style={{
-          borderColor: pulse.color,
-          background: `radial-gradient(circle, ${pulse.color}55 0%, ${pulse.color}22 42%, transparent 70%)`,
-          boxShadow: `0 0 18px ${pulse.color}, 0 0 42px ${pulse.color}88, inset 0 0 20px ${pulse.color}66`,
-          mixBlendMode: 'screen',
-        }}
-      />
+      {layers.map((layer, index) => (
+        <motion.div
+          key={`${pulse.id}-${layer.kind}-${index}`}
+          data-battle-impact-layer={layer.kind as ImpactLayerKind}
+          className="pointer-events-none absolute rounded-full"
+          initial={{ opacity: 0, scale: layer.startScale }}
+          animate={{ opacity: [0, layer.peakOpacity, 0], scale: [layer.startScale, 1, layer.endScale] }}
+          exit={{ opacity: 0 }}
+          transition={{
+            duration: layer.durationMs / 1000 / speed,
+            delay: layer.delayMs / 1000 / speed,
+            ease: 'easeOut',
+            times: [0, 0.22, 1],
+          }}
+          style={{
+            left: -layer.width / 2,
+            top: -layer.height / 2,
+            width: layer.width,
+            height: layer.height,
+            rotate: `${layer.rotate}deg`,
+            mixBlendMode: 'screen',
+            willChange: 'transform, opacity',
+            ...impactLayerAppearance(layer.kind, pulse.color),
+          }}
+        />
+      ))}
     </div>
   )
 }
