@@ -27,19 +27,16 @@ const COMPACT_VFX_QUERY = '(max-width: 640px)'
 
 function StaticImageVfx({
   asset,
-  effectId,
   style,
   onError,
 }: {
   asset: MoveVfxAsset
-  effectId: number
   style?: CSSProperties
   onError: () => void
 }) {
-  const separator = asset.src.includes('?') ? '&' : '?'
   return (
     <img
-      src={`${assetUrl(asset.src)}${separator}vfx=${effectId}`}
+      src={assetUrl(asset.src)}
       alt=""
       decoding="async"
       draggable={false}
@@ -160,7 +157,7 @@ export function MoveVfxLayer({
       onError={onAssetError}
     />
   ) : (
-    <StaticImageVfx asset={asset} effectId={effectId} style={visualStyle} onError={onAssetError} />
+    <StaticImageVfx asset={asset} style={visualStyle} onError={onAssetError} />
   )
 
   return (
