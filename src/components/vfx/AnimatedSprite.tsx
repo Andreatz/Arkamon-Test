@@ -7,12 +7,14 @@ import type { SpritePage } from './spritePages'
 const useSpriteLayoutEffect = typeof window === 'undefined' ? useEffect : useLayoutEffect
 
 /** Own decoded canvas pixels only while their clip is mounted. */
-export function createSpriteCanvasImage(image: HTMLImageElement) {
+export function createSpriteCanvasImage(image: HTMLImageElement, reusePreparedPixels = false) {
   let disposed = false
   let bitmap: ImageBitmap | undefined
   const ready: Promise<CanvasImageSource | undefined> = Promise.resolve().then(async () => {
     if (disposed) return undefined
-    if (typeof createImageBitmap !== 'function') return image
+    // A predecoded Image owned by the shared VFX cache already has retained
+    // pixels. Creating a second ImageBitmap would duplicate that memory.
+    if (reusePreparedPixels || typeof createImageBitmap !== 'function') return image
     try {
       const decodedBitmap = await createImageBitmap(image)
       if (disposed) {
@@ -262,7 +264,7 @@ export function AtlasAnimatedSprite({
       if (!active) return
       let drawable: CanvasImageSource | undefined = image
       if (renderMode === 'canvas') {
-        canvasImage = createSpriteCanvasImage(image)
+        canvasImage = createSpriteCanvasImage(image, preparedImage !== undefined)
         drawable = await canvasImage.ready
       }
       if (!active || !drawable) return
@@ -444,8 +446,8 @@ export function AtlasAnimatedSprite({
     const failed = canvasErrorIdentityRef.current
     if (failed?.src === src && failed.replayKey === replayKey) return
     try {
-      // Use a CPU-oriented surface to crop the current cell from a large atlas.
-      const context = canvas.getContext('2d', { willReadFrequently: true })
+      // No pixel readback: allow a GPU-backed canvas where the browser supports it.
+      const context = canvas.getContext('2d')
       if (!context) throw new Error('Sprite canvas is unavailable')
       const drawStartedAt = performance.now()
       const decodedImage = canvasImageRef.current

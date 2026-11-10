@@ -65,11 +65,25 @@ async function observe(page: Page) {
     let previous = ''
     let lastFrame = 0
     const frameTimes: number[] = []
+    const memorySnapshots: { ms: number; vfxBytes: number; nativeBytes: number; pagedDrawers: number; memorySamples: number }[] = []
+    let lastMemorySnapshot = Number.NEGATIVE_INFINITY
     let collecting = true
     const tick = (now: number) => {
       if (!collecting) return
       if (lastFrame) frameTimes.push(Math.round((now - lastFrame) * 100) / 100)
       lastFrame = now
+      if (now - lastMemorySnapshot >= 500) {
+        lastMemorySnapshot = now
+        const stage = document.querySelector('[data-battle-decoded-vfx-bytes]')
+        const paged = [...document.querySelectorAll('[data-sprite-renderer="paged-canvas"]')]
+        memorySnapshots.push({
+          ms: Math.round(now - clock),
+          vfxBytes: Number(stage?.getAttribute('data-battle-decoded-vfx-bytes') ?? 0),
+          nativeBytes: Number(stage?.getAttribute('data-battle-decoded-native-bytes') ?? 0),
+          pagedDrawers: paged.length,
+          memorySamples: paged.reduce((sum, sprite) => sum + Number(sprite.getAttribute('data-sprite-memory-samples') ?? 0), 0),
+        })
+      }
       requestAnimationFrame(tick)
     }
     requestAnimationFrame(tick)
@@ -107,7 +121,7 @@ async function observe(page: Page) {
     })
     sample()
     ;(window as typeof window & {
-      __shotProbe?: { samples: Item[]; impacts: typeof impacts; finish: () => { frameTimes: number[]; vfxBytes: string | null; nativeBytes: string | null } }
+      __shotProbe?: { samples: Item[]; impacts: typeof impacts; finish: () => { frameTimes: number[]; memorySnapshots: typeof memorySnapshots; vfxBytes: string | null; nativeBytes: string | null } }
     }).__shotProbe = {
       samples, impacts,
       finish: () => {
@@ -115,7 +129,7 @@ async function observe(page: Page) {
         observer.disconnect()
         const stage = document.querySelector('[data-battle-decoded-vfx-bytes]')
         return {
-          frameTimes,
+          frameTimes, memorySnapshots,
           vfxBytes: stage?.getAttribute('data-battle-decoded-vfx-bytes') ?? null,
           nativeBytes: stage?.getAttribute('data-battle-decoded-native-bytes') ?? null,
         }
@@ -149,7 +163,7 @@ for (const shot of SHOTS) {
       const probe = (window as typeof window & { __shotProbe?: {
         samples: Sample[]
         impacts: { id: string; kind: string; elapsedMs: number }[]
-        finish: () => { frameTimes: number[]; vfxBytes: string | null; nativeBytes: string | null }
+        finish: () => { frameTimes: number[]; memorySnapshots: { ms: number; vfxBytes: number; nativeBytes: number; pagedDrawers: number; memorySamples: number }[]; vfxBytes: string | null; nativeBytes: string | null }
       } }).__shotProbe!
       return { samples: probe.samples, impacts: probe.impacts, ...probe.finish() }
     })
@@ -165,6 +179,7 @@ for (const shot of SHOTS) {
     expect(cameraBeats).toContain('travel')
     expect(cameraBeats).toContain('impact')
     expect(results.samples.filter(item => item.phase === 'impact').every(item => item.hp === '12')).toBe(true)
+    expect(results.memorySnapshots.length).toBeGreaterThan(0)
     expect(pageErrors).toEqual([])
     await page.screenshot({
       path: resolve('output/rework-shot-v2/' + shot.choreography + '-after.png'),
@@ -178,6 +193,7 @@ for (const shot of SHOTS) {
       frames: { samples: sorted.length, p50Ms: sorted[Math.floor(sorted.length * .5)] ?? null,
         p95Ms: sorted[Math.floor(sorted.length * .95)] ?? null },
       decoded: { vfxBytes: results.vfxBytes, nativeBytes: results.nativeBytes },
+      memorySnapshots: results.memorySnapshots,
     }
     // Playwright attachment paths are not necessarily retained in CI artifacts:
     // persist a standalone machine-readable file beside each video/screenshot.

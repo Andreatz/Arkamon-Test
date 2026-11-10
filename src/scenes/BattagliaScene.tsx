@@ -235,7 +235,7 @@ export function BattagliaScene() {
   const [azioneInCorso, setAzioneInCorso] = useState(false)
   const [supremaSide, setSupremaSide] = useState<'A' | 'B' | null>(null)
   const [bagOpen, setBagOpen] = useState(false)
-  const assetReadiness = useBattleAssetReadiness([pkmnA?.specieId ?? 1, pkmnB?.specieId ?? 13], [...squadraA, ...squadraB].map(pokemon => pokemon.specieId))
+  const assetReadiness = useBattleAssetReadiness([pkmnA?.specieId, pkmnB?.specieId].filter((id): id is number => id !== undefined), [...squadraA, ...squadraB].map(pokemon => pokemon.specieId))
   const battleLayout = useResolvedBattleLayout(bagOpen ? 'bag' : diceRoll ? 'dice' : previewView)
   const [pendingCaptureSave, setPendingCaptureSave] = useState<{ masterball: boolean } | null>(null)
   const actionInProgressRef = useRef(false)
