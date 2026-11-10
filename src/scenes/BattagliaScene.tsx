@@ -3,6 +3,7 @@ import { ChallengeBanner } from '@/challenges/ChallengeBanner'
 import { useSettledBattleCheckpoint } from '@/components/battle/useSettledBattleCheckpoint'
 import { BattleLayoutItem, ImpactPulseOverlay, InfoBox, ScambioModal, SquadIndicator, PokemonBattleSlot, HpBar, ActionButton, SupremeButton, MoveButton, type ImpactPulseDisplay } from '@/components/battle/BattlePresentation'
 import '@/components/ui/gameButton.css'
+import './battleCinematic.css'
 import { BattleLogPanel } from '@/components/battle/BattleLogPanel'
 import { BattleResultCard } from '@/components/battle/BattleResultCard'
 import { useBattleChronicle } from '@/components/battle/useBattleChronicle'
@@ -66,6 +67,12 @@ import {
 } from '@/components/arkamon/arkamonAnimationManifest'
 import { prepareArkamonAnimationPlayback } from '@/components/arkamon/preloadArkamonAnimations'
 import { createBattleDamageReveal } from '@/components/battle/battleVisualSequence'
+import {
+  battleCameraIntensity,
+  battleCameraAnticipationLeadMs,
+  planBattleCameraPose,
+  type BattleCinematicShot,
+} from '@/components/battle/battleCameraLanguage'
 import {
   createBattlePresentationDirector,
   type BattleDirectorPhase,
@@ -190,6 +197,7 @@ export function BattagliaScene() {
   const impactPulseIdRef = useRef(0)
   const [moveVfx, setMoveVfx] = useState<MoveVfxEvent | null>(null)
   const [presentationPhase, setPresentationPhase] = useState<BattleDirectorPhase | 'idle'>('idle')
+  const [cinematicShot, setCinematicShot] = useState<BattleCinematicShot | null>(null)
   const moveVfxIdRef = useRef(0)
   const moveVfxCallbacksRef = useRef<{
     id: number
@@ -667,13 +675,19 @@ export function BattagliaScene() {
     const dedicatedAttack = !!attackAsset
     const dedicatedHit = !!targetAsset
     const effectId = ++moveVfxIdRef.current
+    const cameraIntensity = battleCameraIntensity(getMoveVfxFeedback(move))
+    // A native clip can release on its first frame. Without a minimum visible
+    // preparation, React batches windup and release into the same paint.
+    // Preserve all frame markers; add only the missing camera anticipation lead.
+    const attackReleaseMs = attackAsset ? (attackAsset.releaseFrame ?? 0) / attackAsset.fps * 1000 : 0
+    const cameraAnticipationMs = battleCameraAnticipationLeadMs(attackReleaseMs, cameraIntensity, reducedMotion)
 
     // The director owns cue ordering; this React scene only binds actual media
     // elements, VFX callbacks, and the existing gameplay/dice completion.
     const director = createBattlePresentationDirector({
       dedicatedAttack,
       dedicatedHit,
-      attackReleaseMs: attackAsset ? (attackAsset.releaseFrame ?? 0) / attackAsset.fps * 1000 : 0,
+      attackReleaseMs,
       hitReactionMs: targetAsset ? (targetAsset.reactionFrame ?? 0) / targetAsset.fps * 1000 : 0,
       vfxImpactMs: getMoveVfxImpactDelayMs(move),
       reducedMotion,
@@ -716,6 +730,8 @@ export function BattagliaScene() {
     activePlaybackRef.current?.cancel()
     activePlaybackRef.current = director
     setPresentationPhase('preparing')
+    setCinematicShot({ attacker: side, target: targetSide, intensity: cameraIntensity })
+    setCameraShake(null)
     setHeldHitReactions(targetSide && dedicatedHit ? { [targetSide]: true } : {})
 
     // If a page cannot preload, let the existing player and VFX fallback
@@ -725,7 +741,15 @@ export function BattagliaScene() {
       target ? prepareArkamonAnimationPlayback(target.specieId, targetView, 'hit') : Promise.resolve(),
       prepareMoveVfxPlayback(move, effectId),
     ]).catch(() => undefined).then(() => {
-      if (activePlaybackRef.current === director) director.start()
+      if (activePlaybackRef.current !== director) return
+      if (cameraAnticipationMs <= 0) {
+        director.start()
+        return
+      }
+      setPresentationPhase('windup')
+      scheduleFeedbackTimer(() => {
+        if (activePlaybackRef.current === director) director.start()
+      }, cameraAnticipationMs)
     })
   }
 
@@ -1471,6 +1495,8 @@ export function BattagliaScene() {
       ? 'victory'
       : undefined
 
+  const cameraPose = planBattleCameraPose(presentationPhase, cinematicShot, reducedMotion, animationSpeed)
+
   return (
     <BattleLayoutProvider value={battleLayout}><div
       data-battle-layout-root
@@ -1540,6 +1566,17 @@ export function BattagliaScene() {
         </>
       )}
 
+      <motion.div
+        data-battle-camera
+        data-battle-camera-beat={cameraPose.beat}
+        data-battle-camera-intensity={cinematicShot?.intensity ?? 'none'}
+        data-battle-camera-target={cinematicShot?.target ?? cinematicShot?.attacker ?? 'none'}
+        data-battle-camera-zoom={cameraPose.scale}
+        className="battle-camera absolute inset-0"
+        style={{ transformOrigin: 'center center' }}
+        animate={{ x: cameraPose.x, y: cameraPose.y, scale: cameraPose.scale }}
+        transition={{ duration: cameraPose.durationMs / 1000, ease: 'easeInOut' }}
+      >
       <motion.div data-battle-world className="battle-world absolute inset-0 bg-cover bg-center"
         style={{ backgroundImage: `url(${bgBattaglia})` }}
       animate={
@@ -1627,6 +1664,15 @@ export function BattagliaScene() {
         </BattleLayoutItem>
       </AnimatePresence>
 
+      </motion.div>
+      <div
+        className="battle-camera-glaze absolute inset-0 pointer-events-none"
+        aria-hidden="true"
+        style={{
+          opacity: cameraPose.overlayOpacity,
+          transitionDuration: reducedMotion ? '0ms' : String(180 / animationSpeed) + 'ms',
+        }}
+      />
       </motion.div>
 
       <BattleLayoutItem
