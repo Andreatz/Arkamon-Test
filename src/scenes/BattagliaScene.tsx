@@ -69,6 +69,7 @@ import { prepareArkamonAnimationPlayback } from '@/components/arkamon/preloadArk
 import { createBattleDamageReveal } from '@/components/battle/battleVisualSequence'
 import {
   battleCameraIntensity,
+  battleCameraAnticipationLeadMs,
   planBattleCameraPose,
   type BattleCinematicShot,
 } from '@/components/battle/battleCameraLanguage'
@@ -679,8 +680,7 @@ export function BattagliaScene() {
     // preparation, React batches windup and release into the same paint.
     // Preserve all frame markers; add only the missing camera anticipation lead.
     const attackReleaseMs = attackAsset ? (attackAsset.releaseFrame ?? 0) / attackAsset.fps * 1000 : 0
-    const cameraAnticipationMs = reducedMotion || cameraIntensity === 'subtle'
-      ? 0 : Math.max(0, 210 - attackReleaseMs)
+    const cameraAnticipationMs = battleCameraAnticipationLeadMs(attackReleaseMs, cameraIntensity, reducedMotion)
 
     // The director owns cue ordering; this React scene only binds actual media
     // elements, VFX callbacks, and the existing gameplay/dice completion.
