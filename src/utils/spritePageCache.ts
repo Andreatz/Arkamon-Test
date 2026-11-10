@@ -26,6 +26,7 @@ const MIB = 1024 * 1024
 export function createSpritePageCache(loader: PageLoader, initialBudget = 64 * MIB) {
   const entries = new Map<string, CacheEntry>()
   let budget = initialBudget, bytes = 0, peakBytes = 0, activeDecodes = 0, peakDecodes = 0
+  let completedPageLoads = 0, failedPageLoads = 0, lastPageLoadMs = 0, maxPageLoadMs = 0
   const remove = (key: string, entry: CacheEntry) => {
     if (entries.get(key) !== entry) return
     entries.delete(key)
@@ -58,10 +59,15 @@ export function createSpritePageCache(loader: PageLoader, initialBudget = 64 * M
       entry.status = 'loading'
       bytes += entry.page.decodedBytes; peakBytes = Math.max(peakBytes, bytes)
       activeDecodes++; peakDecodes = Math.max(peakDecodes, activeDecodes)
+      const loadStartedAt = performance.now()
       void loader(entry.page, entry.controller.signal).then(pixels => {
         if (entries.get(key) !== entry) { pixels.dispose(); return }
+        lastPageLoadMs = Math.max(0, performance.now() - loadStartedAt)
+        maxPageLoadMs = Math.max(maxPageLoadMs, lastPageLoadMs)
+        completedPageLoads++
         entry.pixels = pixels; entry.status = 'ready'; entry.resolve(pixels); expire(key, entry)
       }, error => {
+        failedPageLoads++
         remove(key, entry)
         entry.reject(error instanceof Error ? error : new Error('Native page decoding failed'))
       }).finally(() => { activeDecodes--; pump() })
@@ -93,7 +99,12 @@ export function createSpritePageCache(loader: PageLoader, initialBudget = 64 * M
     acquire,
     async prepare(page: SpritePage) { const lease = acquire(page); try { await lease.ready } catch { /* The renderer owns its visible fallback. */ } finally { lease.release() } },
     setBudget(next: number) { budget = next; evict(0); pump() },
-    stats() { return { budgetBytes: budget, decodedBytes: bytes, peakDecodedBytes: peakBytes, activeDecodes, peakDecodes, entries: entries.size, leasedPages: [...entries.values()].filter(entry => entry.references > 0).length } },
+    stats() { return {
+      budgetBytes: budget, decodedBytes: bytes, peakDecodedBytes: peakBytes,
+      activeDecodes, peakDecodes, completedPageLoads, failedPageLoads,
+      lastPageLoadMs, maxPageLoadMs,
+      entries: entries.size, leasedPages: [...entries.values()].filter(entry => entry.references > 0).length,
+    } },
     clear() { for (const [key, entry] of entries) { entry.controller.abort(); remove(key, entry); if (entry.status !== 'ready') entry.reject(new Error('Native page cache cleared')) } },
   }
 }

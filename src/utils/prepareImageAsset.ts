@@ -1,6 +1,7 @@
 const pendingImages = new Map<string, Promise<void>>()
 const readyImages = new Map<string, { image: HTMLImageElement; timeout: number; bytes: number; request: Promise<void> }>()
 let readyBudgetBytes = 128 * 1024 * 1024
+let completedPrepares = 0, failedPrepares = 0, lastPrepareMs = 0, maxPrepareMs = 0
 
 /** Keep decoded pixels alive only through the current short battle sequence. */
 export function isImageAssetPrepared(src: string): boolean {
@@ -27,12 +28,17 @@ export function prepareImageAsset(src: string): Promise<void> {
   if (pending) return pending
   const request = new Promise<void>((resolve) => {
     const image = new Image()
+    const prepareStartedAt = performance.now()
     image.decoding = 'async'
     let settled = false
     let decoding = false
     const finish = (decoded = false) => {
       if (settled) return
       settled = true
+      lastPrepareMs = Math.max(0, performance.now() - prepareStartedAt)
+      maxPrepareMs = Math.max(maxPrepareMs, lastPrepareMs)
+      if (decoded) completedPrepares++
+      else failedPrepares++
       window.clearTimeout(timeout)
       image.onload = null
       image.onerror = null
@@ -84,5 +90,10 @@ export function setPreparedImageBudget(bytes: number): void {
   }
 }
 export function getPreparedImageStats() {
-  return { budgetBytes: readyBudgetBytes, decodedBytes: [...readyImages.values()].reduce((sum, entry) => sum + entry.bytes, 0), images: readyImages.size, pending: pendingImages.size }
+  return {
+    budgetBytes: readyBudgetBytes,
+    decodedBytes: [...readyImages.values()].reduce((sum, entry) => sum + entry.bytes, 0),
+    images: readyImages.size, pending: pendingImages.size,
+    completedPrepares, failedPrepares, lastPrepareMs, maxPrepareMs,
+  }
 }

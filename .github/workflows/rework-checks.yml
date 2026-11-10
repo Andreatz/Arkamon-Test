@@ -9,6 +9,7 @@ on:
       - '.github/workflows/rework-checks.yml'
       - 'src/**'
       - 'e2e/rework-title.spec.ts'
+      - 'e2e/battle-profiler-lab.spec.ts'
       - 'e2e/rework-cinematic-battle.spec.ts'
       - 'e2e/rework-shot-choreography.spec.ts'
       - 'ui-source/**'
@@ -46,7 +47,7 @@ jobs:
       - name: Battle engine regression tests
         run: npx vitest run src/engine/__tests__ --maxWorkers=2
       - name: Presentation director and legacy cue regression tests
-        run: npx vitest run src/components/battle/battlePresentationDirector.test.ts src/components/battle/battleVisualSequence.test.ts src/components/battle/battleCameraLanguage.test.ts src/components/battle/battleImpactComposition.test.ts src/components/vfx/preloadVfxAssets.test.ts src/components/vfx/spriteRenderPerformance.test.ts src/components/vfx/AnimatedSprite.pixels.test.ts src/components/battle/warmBattleMediaBounded.test.ts src/components/battle/battleMediaBudget.test.ts src/utils/spritePageCache.test.ts src/utils/prepareImageAsset.test.ts --maxWorkers=2
+        run: npx vitest run src/components/battle/battlePresentationDirector.test.ts src/components/battle/battleVisualSequence.test.ts src/components/battle/battleCameraLanguage.test.ts src/components/battle/battleImpactComposition.test.ts src/components/vfx/preloadVfxAssets.test.ts src/components/vfx/spriteRenderPerformance.test.ts src/components/vfx/AnimatedSprite.pixels.test.ts src/components/battle/warmBattleMediaBounded.test.ts src/components/battle/battleMediaBudget.test.ts src/utils/spritePageCache.test.ts src/utils/prepareImageAsset.test.ts src/performance/battleProfilerModel.test.ts --maxWorkers=2
       - name: Lightweight web build
         run: npm run build
         env:
@@ -61,6 +62,18 @@ jobs:
         run: npx playwright test e2e/rework-cinematic-battle.spec.ts --project=chromium --workers=1 --reporter=list --output=output/rework-cinema-playwright
       - name: Visual choreography across physical, projectile, area and support moves
         run: npx playwright test e2e/rework-shot-choreography.spec.ts --project=chromium --workers=1 --reporter=list --output=output/rework-shot-v2-playwright
+      - name: Battle profiler laboratory records and exports safely
+        run: npx playwright test e2e/battle-profiler-lab.spec.ts --project=chromium --workers=1 --reporter=list --output=output/rework-profiler-playwright
+      - name: Upload profiler visual audit and failure evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: arkamon-battle-profiler-lab
+          path: |
+            output/rework-profiler/
+            output/rework-profiler-playwright/
+          if-no-files-found: warn
+          retention-days: 14
       - name: Upload choreography comparison videos and frame telemetry
         if: always()
         uses: actions/upload-artifact@v4
