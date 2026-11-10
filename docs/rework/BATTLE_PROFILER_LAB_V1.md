@@ -21,7 +21,7 @@ Start is refused if the active DOM has no battle stage. A battle's timeline is s
 | VFX image bytes and budget | `getPreparedImageStats()` | Estimates decoded images held by the VFX cache, not all image/video allocations |
 | Canvas time | Latest `data-sprite-draw-ms` among visible sprite canvases | Snapshot of drawing duration; not GPU trace or all frames |
 | Renderer count | DOM `data-sprite-renderer` | Counts present paged/native and atlas renderers |
-| Long tasks | Browser `PerformanceObserver` `longtask`, when supported | Main-thread blocking tasks ≥50ms; browser support differs |
+| Native page preparation | Native sprite page fetch + decode latency on completed loads | Measures network plus decode, not decode alone |\n| VFX image preparation | VFX image load + decode latency on completed preparations | Only retained asset preparation; not all CSS/GIF image work |\n| Long tasks | Browser `PerformanceObserver` `longtask`, when supported | Main-thread blocking tasks ≥50ms; browser support differs |
 | Animation phase timeline | DOM mutation observer filtered to director phase and camera beat | Does not log combat state, move names, or source URLs |
 
 Suspension gaps above 250ms and intervals while the tab is hidden are excluded from FPS analysis. Sampling is limited to 2Hz; the profiler should not scan all caches or DOM on every rendered frame. It is opt-in, and normal gameplay has no monitoring overhead while it is stopped.
