@@ -1,11 +1,7 @@
 name: Bootstrap Arkamon Test from pinned Beta source
 
+# One-shot bootstrap only. Never run this importer again on a PR synchronization.
 on:
-  pull_request:
-    paths:
-      - '.github/workflows/bootstrap-test.yml'
-      - 'bootstrap/import-from-beta.mjs'
-      - 'docs/rework/**'
   workflow_dispatch:
 
 permissions:
@@ -17,7 +13,7 @@ concurrency:
 
 jobs:
   import:
-    if: github.event_name == 'workflow_dispatch' || (github.event.pull_request.head.repo.full_name == github.repository && github.event.pull_request.head.ref == 'rework/bootstrap-from-beta')
+    if: github.ref == 'refs/heads/rework/bootstrap-from-beta'
     runs-on: ubuntu-24.04
     timeout-minutes: 100
     steps:
