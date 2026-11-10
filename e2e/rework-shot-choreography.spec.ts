@@ -24,7 +24,7 @@ async function openBattle(page: Page, speciesId: number) {
   await page.setViewportSize({ width: 1280, height: 720 })
   await page.addInitScript(id => {
     const attacker = { istanzaId: 'film-attacker', specieId: id, nome: 'Camera Audit', livello: 14, hp: 25, xp: 0 }
-    const defender = { istanzaId: 'film-defender', specieId: 13, nome: 'Wormaren', livello: 5, hp: 200, xp: 0 }
+    const defender = { istanzaId: 'film-defender', specieId: 13, nome: 'Wormaren', livello: 5, hp: 12, xp: 0 }
     const player = (number: 1 | 2) => ({
       id: number, nome: 'Regia ' + number,
       squadra: number === 1 ? [attacker] : [],
@@ -41,7 +41,7 @@ async function openBattle(page: Page, speciesId: number) {
       interactionProgress: { completed1: [], completed2: [], completedShared: [], log1: [], log2: [], pendingBattle: null },
       battaglia: {
         tipo: 'Selvatico', pokemonA: attacker, pokemonB: defender,
-        squadraA: [attacker], squadraB: [defender], hpMaxA: 25, hpMaxB: 200,
+        squadraA: [attacker], squadraB: [defender], hpMaxA: 25, hpMaxB: 12,
         turnoCorrente: 'A', luogoRitorno: 'mappa-principale',
         log: ['Prova di regia specifica per tipologia di mossa.'], evoluzioneInAttesa: null,
       },
@@ -52,7 +52,7 @@ async function openBattle(page: Page, speciesId: number) {
   }, speciesId)
   await page.goto('/')
   await expect(page.locator('[data-presented-scene="battaglia"]')).toHaveAttribute('aria-busy', 'false')
-  await expect(page.locator('[data-battle-hp-side="enemy"]')).toHaveAttribute('data-battle-hp', '200')
+  await expect(page.locator('[data-battle-hp-side="enemy"]')).toHaveAttribute('data-battle-hp', '12')
 }
 
 async function observe(page: Page) {
@@ -150,7 +150,7 @@ for (const shot of SHOTS) {
     expect(cameraBeats).toContain('anticipation')
     expect(cameraBeats).toContain('travel')
     expect(cameraBeats).toContain('impact')
-    expect(results.samples.filter(item => item.phase === 'impact').every(item => item.hp === '200')).toBe(true)
+    expect(results.samples.filter(item => item.phase === 'impact').every(item => item.hp === '12')).toBe(true)
     expect(pageErrors).toEqual([])
     await page.screenshot({
       path: resolve('output/rework-shot-v2/' + shot.choreography + '-after.png'),
