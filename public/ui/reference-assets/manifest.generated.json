@@ -1,0 +1,2660 @@
+{
+  "version": 1,
+  "manifestSha256": "aeea02e4ed70ddf12d842f3744a9fa2eddc836853b8a1faa1080c53c922fa207",
+  "sheets": [
+    {
+      "file": "01-cornici-e-pannelli.svg",
+      "sha256": "352d2a879717c1427805669473efdba94d37a78e5d165ccf58ecb39024bdbfec",
+      "bytes": 13160050,
+      "viewBox": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "pathCount": 81366,
+      "rectangleCount": 495204,
+      "gradientCount": 3744
+    },
+    {
+      "file": "02-arkadex-intestazioni-etichette.svg",
+      "sha256": "befcc1a6e4df5e27f7e7e029146724de6940a0fe94554314b3f7827a6e9919b4",
+      "bytes": 13747653,
+      "viewBox": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "pathCount": 76928,
+      "rectangleCount": 541892,
+      "gradientCount": 3853
+    },
+    {
+      "file": "03-tabs-pulsanti-controlli.svg",
+      "sha256": "b02742affdea7dfd28486244cbf0033b8f62869bf0f0dc5153aebfb2c24fae67",
+      "bytes": 15569082,
+      "viewBox": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "pathCount": 112195,
+      "rectangleCount": 550784,
+      "gradientCount": 3302
+    },
+    {
+      "file": "04-ricerca-filtri-scroll.svg",
+      "sha256": "801978dda1fc1a83e2a22af69415639daeb0ee0165503f139c73e9beff6f7351",
+      "bytes": 14699161,
+      "viewBox": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "pathCount": 97392,
+      "rectangleCount": 546053,
+      "gradientCount": 3073
+    },
+    {
+      "file": "05-righe-creature.svg",
+      "sha256": "9d62d223f069d46ae447d483d223fe8e1fe49cea3e9c673ed5fcba19bc3120ea",
+      "bytes": 14826711,
+      "viewBox": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "pathCount": 99599,
+      "rectangleCount": 526254,
+      "gradientCount": 4836
+    },
+    {
+      "file": "06-schede-profilo-evoluzioni.svg",
+      "sha256": "72ce185191393fb34c5081ff308b45c7edfef2dd504bb09372997ce5326df599",
+      "bytes": 12271023,
+      "viewBox": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "pathCount": 60992,
+      "rectangleCount": 474143,
+      "gradientCount": 5609
+    },
+    {
+      "file": "07-icone-componenti-modulari.svg",
+      "sha256": "ee2070efa2df05b358d4f48460d9c13fdb4ba096433f8ce33559a6cb0a683e14",
+      "bytes": 15194163,
+      "viewBox": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "pathCount": 105376,
+      "rectangleCount": 529518,
+      "gradientCount": 4651
+    },
+    {
+      "file": "08-profilo-giocatore-cornici.svg",
+      "sha256": "00d5e4e6d96594368b927300614747335da733f752a87052519cc81203aa2fd5",
+      "bytes": 11030355,
+      "viewBox": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "pathCount": 74005,
+      "rectangleCount": 405084,
+      "gradientCount": 2315
+    },
+    {
+      "file": "09-illustrazioni-menu.svg",
+      "sha256": "c1c581f10776aef773c40710e3d1beee618eae234e0b423bcb3240824b64b705",
+      "bytes": 19898183,
+      "viewBox": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "pathCount": 147813,
+      "rectangleCount": 727046,
+      "gradientCount": 1659
+    },
+    {
+      "file": "10-allenatori-creature-medaglie.svg",
+      "sha256": "ef6c2e62d501f8e6932aa6110597ad8860c7ac2108eaa2fb34e297e2e652485c",
+      "bytes": 14857372,
+      "viewBox": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "pathCount": 115925,
+      "rectangleCount": 511617,
+      "gradientCount": 2130
+    },
+    {
+      "file": "11-logo-arkamon-menu.svg",
+      "sha256": "ec9e5b7ae23a3b9d9347526a6ec73fbb244f67abd39c5f992e42e1c7ff4e3f63",
+      "bytes": 13744918,
+      "viewBox": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "pathCount": 93185,
+      "rectangleCount": 537153,
+      "gradientCount": 710
+    },
+    {
+      "file": "12-schede-bagliori-gemme.svg",
+      "sha256": "83e1501029dd2cddeabfe2134d6cb88f99e9d3ec586f75032bedb6bd04596409",
+      "bytes": 10931922,
+      "viewBox": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "pathCount": 83587,
+      "rectangleCount": 372245,
+      "gradientCount": 2132
+    },
+    {
+      "file": "15-inventario-icone.svg",
+      "sha256": "d6f491bf84cfa8ca66f2c0ad8b4bb6dbc255ac8f07ea4956d27496216f0ea215",
+      "bytes": 14986885,
+      "viewBox": [
+        0,
+        0,
+        1254,
+        1254
+      ],
+      "pathCount": 114288,
+      "rectangleCount": 530154,
+      "gradientCount": 1665
+    },
+    {
+      "file": "16-pozioni-campana-cristallo.svg",
+      "sha256": "088ed18607887b851f62587369e97977247939a6461aceb1a0522f5fc5a3d326",
+      "bytes": 15482460,
+      "viewBox": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "pathCount": 119573,
+      "rectangleCount": 532619,
+      "gradientCount": 2467
+    },
+    {
+      "file": "17-negozio-controlli.svg",
+      "sha256": "184fbf87b7a5cfcf2f4817f39a219523c5d8567bfa7779f216892daceb0af37c",
+      "bytes": 9089897,
+      "viewBox": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "pathCount": 57290,
+      "rectangleCount": 324793,
+      "gradientCount": 3692
+    },
+    {
+      "file": "18-insegne-rune-ornamenti.svg",
+      "sha256": "d70c4d59b82e239703c59dd1dcfbdd993cf235b45e2f0ff33bf2d531a6bd3a7f",
+      "bytes": 17025094,
+      "viewBox": [
+        0,
+        0,
+        1254,
+        1254
+      ],
+      "pathCount": 124955,
+      "rectangleCount": 606059,
+      "gradientCount": 2822
+    },
+    {
+      "file": "02-simboli-elementali.svg",
+      "sha256": "a4efb426914eb1e81ffe021014c5ba7ccb7bea34f8dd2b6ce6722a9c96bcaf4e",
+      "bytes": 15350354,
+      "viewBox": [
+        0,
+        0,
+        1774,
+        887
+      ],
+      "pathCount": 113365,
+      "rectangleCount": 538559,
+      "gradientCount": 2637
+    },
+    {
+      "file": "01-medaglie-palestra.svg",
+      "sha256": "d63fc94025875d8c1498d8f0aa639ae5167f9dc89dd74256e57feaa00191ef73",
+      "bytes": 15696122,
+      "viewBox": [
+        0,
+        0,
+        1774,
+        887
+      ],
+      "pathCount": 119173,
+      "rectangleCount": 579164,
+      "gradientCount": 239
+    }
+  ],
+  "assets": [
+    {
+      "id": "summoning-ring",
+      "sheet": "01-cornici-e-pannelli.svg",
+      "rect": [
+        466,
+        246,
+        513,
+        546
+      ],
+      "role": "Anello runico trasparente dietro le creature ufficiali",
+      "file": "summoning-ring.svg",
+      "sourceSha256": "352d2a879717c1427805669473efdba94d37a78e5d165ccf58ecb39024bdbfec",
+      "sha256": "0cc77ad988e78c83ccd66eb95b1594573414f8577a040685de496249762e2bc7",
+      "bytes": 2802171,
+      "pathCount": 22192,
+      "rectangleCount": 90355,
+      "gradientCount": 848,
+      "runtime": {
+        "file": "summoning-ring.webp",
+        "sha256": "67ec6220fed36674b15468e32808c36901d823469cd821ac1d5ce24dfa1886ad",
+        "bytes": 180198,
+        "width": 1026,
+        "height": 1092
+      }
+    },
+    {
+      "id": "habitat-frame",
+      "sheet": "01-cornici-e-pannelli.svg",
+      "rect": [
+        466,
+        807,
+        513,
+        211
+      ],
+      "role": "Cornice orizzontale habitat",
+      "file": "habitat-frame.svg",
+      "sourceSha256": "352d2a879717c1427805669473efdba94d37a78e5d165ccf58ecb39024bdbfec",
+      "sha256": "f3c4bf1230309e322a882413ea7e2337ecf3e98bdefc4da90e65146b5ab86d0f",
+      "bytes": 1035758,
+      "pathCount": 10420,
+      "rectangleCount": 29206,
+      "gradientCount": 85,
+      "runtime": {
+        "file": "habitat-frame.webp",
+        "sha256": "22ab7484ed94071207c6afc85659eb27173bc9a1756e0c3435ed37e360c91c64",
+        "bytes": 51674,
+        "width": 1026,
+        "height": 422
+      }
+    },
+    {
+      "id": "header-empty",
+      "sheet": "02-arkadex-intestazioni-etichette.svg",
+      "rect": [
+        20,
+        235,
+        713,
+        171
+      ],
+      "role": "Intestazione senza testo",
+      "file": "header-empty.svg",
+      "sourceSha256": "befcc1a6e4df5e27f7e7e029146724de6940a0fe94554314b3f7827a6e9919b4",
+      "sha256": "501a13a31a151033d6182d31aa9282cb6c9a5fdae5e93849cf4dbd7a4f376ca7",
+      "bytes": 1318793,
+      "pathCount": 9675,
+      "rectangleCount": 41579,
+      "gradientCount": 658,
+      "runtime": {
+        "file": "header-empty.webp",
+        "sha256": "2a7a5897c417f74611f38263c8237bfcdb76972a8f99156407c903ee7b5ea465",
+        "bytes": 76366,
+        "width": 1400,
+        "height": 336
+      }
+    },
+    {
+      "id": "button-normal",
+      "sheet": "03-tabs-pulsanti-controlli.svg",
+      "rect": [
+        30,
+        477,
+        347,
+        110
+      ],
+      "role": "Pulsante vuoto normale",
+      "file": "button-normal.svg",
+      "sourceSha256": "b02742affdea7dfd28486244cbf0033b8f62869bf0f0dc5153aebfb2c24fae67",
+      "sha256": "1877781261974a13a982deccdc5df7df2041e72be6f44099866ac6a363494c9e",
+      "bytes": 474087,
+      "pathCount": 4102,
+      "rectangleCount": 15270,
+      "gradientCount": 87,
+      "runtime": {
+        "file": "button-normal.webp",
+        "sha256": "e86d43d39650092eaa27eba2994f2a58f45474a8837877338ce35d8c225b0668",
+        "bytes": 22326,
+        "width": 694,
+        "height": 220
+      }
+    },
+    {
+      "id": "button-hover",
+      "sheet": "03-tabs-pulsanti-controlli.svg",
+      "rect": [
+        388,
+        477,
+        338,
+        110
+      ],
+      "role": "Pulsante vuoto hover",
+      "file": "button-hover.svg",
+      "sourceSha256": "b02742affdea7dfd28486244cbf0033b8f62869bf0f0dc5153aebfb2c24fae67",
+      "sha256": "6b6429fd5f36528787a1152391805adcd97273f8bce8f0e604729dd0a0c416d4",
+      "bytes": 632384,
+      "pathCount": 5838,
+      "rectangleCount": 16037,
+      "gradientCount": 303,
+      "runtime": {
+        "file": "button-hover.webp",
+        "sha256": "cce1a2386fa411fc1e17ca2e4f29653374f915f83991bc3786768c48a797c7c2",
+        "bytes": 26848,
+        "width": 676,
+        "height": 220
+      }
+    },
+    {
+      "id": "button-selected",
+      "sheet": "03-tabs-pulsanti-controlli.svg",
+      "rect": [
+        733,
+        469,
+        362,
+        128
+      ],
+      "role": "Pulsante vuoto selezionato",
+      "file": "button-selected.svg",
+      "sourceSha256": "b02742affdea7dfd28486244cbf0033b8f62869bf0f0dc5153aebfb2c24fae67",
+      "sha256": "84faa9ccecc82003b6278d0d23e646216c57418c1617f7649d1ae84a5c41e987",
+      "bytes": 861003,
+      "pathCount": 7179,
+      "rectangleCount": 24358,
+      "gradientCount": 364,
+      "runtime": {
+        "file": "button-selected.webp",
+        "sha256": "91764f85ea251f0ffb115bf6644bf804f48e0d1cab0492ea9f0f2489176d4052",
+        "bytes": 34610,
+        "width": 724,
+        "height": 256
+      }
+    },
+    {
+      "id": "button-disabled",
+      "sheet": "03-tabs-pulsanti-controlli.svg",
+      "rect": [
+        1097,
+        477,
+        328,
+        110
+      ],
+      "role": "Pulsante vuoto disabilitato",
+      "file": "button-disabled.svg",
+      "sourceSha256": "b02742affdea7dfd28486244cbf0033b8f62869bf0f0dc5153aebfb2c24fae67",
+      "sha256": "6cd79a3962daaf53b195cf6abb5880c21a928fd0f4253af677a4752374fb801f",
+      "bytes": 380809,
+      "pathCount": 3043,
+      "rectangleCount": 12746,
+      "gradientCount": 22,
+      "runtime": {
+        "file": "button-disabled.webp",
+        "sha256": "85d98d2290fe08b10bc4f89b6121365d0853175b1e0f514e17476c46bed8a835",
+        "bytes": 17850,
+        "width": 656,
+        "height": 220
+      }
+    },
+    {
+      "id": "tab-active",
+      "sheet": "03-tabs-pulsanti-controlli.svg",
+      "rect": [
+        103,
+        223,
+        411,
+        112
+      ],
+      "role": "Tab attiva vuota",
+      "file": "tab-active.svg",
+      "sourceSha256": "b02742affdea7dfd28486244cbf0033b8f62869bf0f0dc5153aebfb2c24fae67",
+      "sha256": "1b2e9395c24dacdc8739261f751f9f22961b314f2c974d869e717d52bbfe97ea",
+      "bytes": 780172,
+      "pathCount": 6807,
+      "rectangleCount": 23779,
+      "gradientCount": 186,
+      "runtime": {
+        "file": "tab-active.webp",
+        "sha256": "e46e988e1fc3de6ac324587e9f18653c4f2fd38aba8650576c94d90c04b252ec",
+        "bytes": 34518,
+        "width": 822,
+        "height": 224
+      }
+    },
+    {
+      "id": "tab-middle",
+      "sheet": "03-tabs-pulsanti-controlli.svg",
+      "rect": [
+        528,
+        223,
+        391,
+        113
+      ],
+      "role": "Tab centrale vuota",
+      "file": "tab-middle.svg",
+      "sourceSha256": "b02742affdea7dfd28486244cbf0033b8f62869bf0f0dc5153aebfb2c24fae67",
+      "sha256": "ce62f90743963fae602d151ec5b56038b90b26a08645516b9d7612a37b1397e5",
+      "bytes": 469918,
+      "pathCount": 4131,
+      "rectangleCount": 14913,
+      "gradientCount": 64,
+      "runtime": {
+        "file": "tab-middle.webp",
+        "sha256": "b3c72f67c0c44ddd9c953cc238e06d94f4da1efd77a0c68a07faeeb76ede6586",
+        "bytes": 21248,
+        "width": 782,
+        "height": 226
+      }
+    },
+    {
+      "id": "tab-end",
+      "sheet": "03-tabs-pulsanti-controlli.svg",
+      "rect": [
+        937,
+        223,
+        401,
+        113
+      ],
+      "role": "Tab finale vuota",
+      "file": "tab-end.svg",
+      "sourceSha256": "b02742affdea7dfd28486244cbf0033b8f62869bf0f0dc5153aebfb2c24fae67",
+      "sha256": "51590eb40be4193ae6cb00e3330fd60adf0318b4cb0ad773b2c01024c2e71bc1",
+      "bytes": 508230,
+      "pathCount": 4340,
+      "rectangleCount": 15391,
+      "gradientCount": 98,
+      "runtime": {
+        "file": "tab-end.webp",
+        "sha256": "eaacf307e7ca1742faf90ff7e7935e6015e7f403892a3d59e4ec9ab509c33469",
+        "bytes": 23986,
+        "width": 802,
+        "height": 226
+      }
+    },
+    {
+      "id": "search-field",
+      "sheet": "04-ricerca-filtri-scroll.svg",
+      "rect": [
+        60,
+        278,
+        611,
+        98
+      ],
+      "role": "Campo ricerca con lente",
+      "file": "search-field.svg",
+      "sourceSha256": "801978dda1fc1a83e2a22af69415639daeb0ee0165503f139c73e9beff6f7351",
+      "sha256": "d437c97d0bf456ce54e62da92eb624934713b20a302eb50c970187f780cb5f95",
+      "bytes": 739350,
+      "pathCount": 5904,
+      "rectangleCount": 24594,
+      "gradientCount": 157,
+      "runtime": {
+        "file": "search-field.webp",
+        "sha256": "1d4f6768e2ed6146682de2310c57294d0d5767108cb6c0aab7585e17e3120814",
+        "bytes": 36230,
+        "width": 1222,
+        "height": 196
+      }
+    },
+    {
+      "id": "search-field-focus",
+      "sheet": "04-ricerca-filtri-scroll.svg",
+      "rect": [
+        38,
+        374,
+        662,
+        124
+      ],
+      "role": "Ricerca focus",
+      "file": "search-field-focus.svg",
+      "sourceSha256": "801978dda1fc1a83e2a22af69415639daeb0ee0165503f139c73e9beff6f7351",
+      "sha256": "05f5c9f1ea86636aa9ecef0fe406e11de4225a8a8a0e6aef5d6da4fde5812b31",
+      "bytes": 933202,
+      "pathCount": 6083,
+      "rectangleCount": 34098,
+      "gradientCount": 313,
+      "runtime": {
+        "file": "search-field-focus.webp",
+        "sha256": "e0fcc6725da3e325f692b5807765cd9d3d583301e9c91cf3ba4be87c52350ff6",
+        "bytes": 55512,
+        "width": 1324,
+        "height": 248
+      }
+    },
+    {
+      "id": "filter-field",
+      "sheet": "04-ricerca-filtri-scroll.svg",
+      "rect": [
+        707,
+        278,
+        436,
+        98
+      ],
+      "role": "Filtro con icona",
+      "file": "filter-field.svg",
+      "sourceSha256": "801978dda1fc1a83e2a22af69415639daeb0ee0165503f139c73e9beff6f7351",
+      "sha256": "3de9d274bb7a174e12aa1edc25d5b2518f66e1bb5e0a50b6204479318607e466",
+      "bytes": 555380,
+      "pathCount": 5036,
+      "rectangleCount": 16547,
+      "gradientCount": 88,
+      "runtime": {
+        "file": "filter-field.webp",
+        "sha256": "1336562494dfd5d881dc5e4158d064de07c0bd61d6ee36c1b6fbbb5802906d4e",
+        "bytes": 27348,
+        "width": 872,
+        "height": 196
+      }
+    },
+    {
+      "id": "filter-field-focus",
+      "sheet": "04-ricerca-filtri-scroll.svg",
+      "rect": [
+        685,
+        374,
+        485,
+        124
+      ],
+      "role": "Filtro focus",
+      "file": "filter-field-focus.svg",
+      "sourceSha256": "801978dda1fc1a83e2a22af69415639daeb0ee0165503f139c73e9beff6f7351",
+      "sha256": "a3be01e4e613ffc7080739a2f594cd66128b5a478124cabaa9c772b94ae894de",
+      "bytes": 734421,
+      "pathCount": 5301,
+      "rectangleCount": 24505,
+      "gradientCount": 237,
+      "runtime": {
+        "file": "filter-field-focus.webp",
+        "sha256": "ba24296d48b576b926a4f1f8a95e44ceb58c28cec9dd74610e14ea09b0e426a3",
+        "bytes": 42834,
+        "width": 970,
+        "height": 248
+      }
+    },
+    {
+      "id": "creature-row-normal",
+      "sheet": "05-righe-creature.svg",
+      "rect": [
+        772,
+        56,
+        631,
+        116
+      ],
+      "role": "Riga Arkadex vuota",
+      "file": "creature-row-normal.svg",
+      "sourceSha256": "9d62d223f069d46ae447d483d223fe8e1fe49cea3e9c673ed5fcba19bc3120ea",
+      "sha256": "121bcdded29f128e4cfb2dfd781c50ea9c9461235361fa7b51dbabb7db2a66b4",
+      "bytes": 913610,
+      "pathCount": 8219,
+      "rectangleCount": 28003,
+      "gradientCount": 158,
+      "runtime": {
+        "file": "creature-row-normal.webp",
+        "sha256": "641fdec7f734195eb2e93cf8d067fd16b3cd7904e2b8907627a79e9000ee86d7",
+        "bytes": 42956,
+        "width": 1262,
+        "height": 232
+      }
+    },
+    {
+      "id": "creature-row-selected",
+      "sheet": "05-righe-creature.svg",
+      "rect": [
+        772,
+        173,
+        632,
+        115
+      ],
+      "role": "Riga Arkadex selezionata",
+      "file": "creature-row-selected.svg",
+      "sourceSha256": "9d62d223f069d46ae447d483d223fe8e1fe49cea3e9c673ed5fcba19bc3120ea",
+      "sha256": "7a2c2568f365cd635bf9b0b2f1ef8dc8d2dfb59a364e10d75b5d2a8fe897bf1d",
+      "bytes": 1168011,
+      "pathCount": 10638,
+      "rectangleCount": 29893,
+      "gradientCount": 507,
+      "runtime": {
+        "file": "creature-row-selected.webp",
+        "sha256": "0558dba5698d430f0f78c58e7f3ce218359aebf1c8cde826135498eb87afe0d2",
+        "bytes": 42468,
+        "width": 1264,
+        "height": 230
+      }
+    },
+    {
+      "id": "creature-row-hover",
+      "sheet": "05-righe-creature.svg",
+      "rect": [
+        772,
+        290,
+        632,
+        113
+      ],
+      "role": "Riga Arkadex hover",
+      "file": "creature-row-hover.svg",
+      "sourceSha256": "9d62d223f069d46ae447d483d223fe8e1fe49cea3e9c673ed5fcba19bc3120ea",
+      "sha256": "ebe7555d49faf0bae9ca7483f906a3f951d01c784f745e7eceae78225f80afa6",
+      "bytes": 1055168,
+      "pathCount": 9745,
+      "rectangleCount": 28016,
+      "gradientCount": 370,
+      "runtime": {
+        "file": "creature-row-hover.webp",
+        "sha256": "59729f3a05984ddd12f54750c019d04fe8f5dcd73ec43a2b22d0027c21c1033e",
+        "bytes": 41246,
+        "width": 1264,
+        "height": 226
+      }
+    },
+    {
+      "id": "creature-row-disabled",
+      "sheet": "05-righe-creature.svg",
+      "rect": [
+        772,
+        404,
+        632,
+        113
+      ],
+      "role": "Riga Arkadex indisponibile",
+      "file": "creature-row-disabled.svg",
+      "sourceSha256": "9d62d223f069d46ae447d483d223fe8e1fe49cea3e9c673ed5fcba19bc3120ea",
+      "sha256": "7353a722e572d3ef161e614b2dfc2cc10821b462d47a58bb10371c04656d1bcc",
+      "bytes": 741313,
+      "pathCount": 5798,
+      "rectangleCount": 24931,
+      "gradientCount": 117,
+      "runtime": {
+        "file": "creature-row-disabled.webp",
+        "sha256": "c285e6b4e98dce7d73c23aa0b02ebd2d425e5c0de678419ceab4a543daa13705",
+        "bytes": 34764,
+        "width": 1264,
+        "height": 226
+      }
+    },
+    {
+      "id": "team-row-normal",
+      "sheet": "05-righe-creature.svg",
+      "rect": [
+        41,
+        551,
+        620,
+        117
+      ],
+      "role": "Riga squadra vuota",
+      "file": "team-row-normal.svg",
+      "sourceSha256": "9d62d223f069d46ae447d483d223fe8e1fe49cea3e9c673ed5fcba19bc3120ea",
+      "sha256": "079f47319b5ede1cf858fe5c27f87ce37427fdb50695d4e6da2a129d174362df",
+      "bytes": 988170,
+      "pathCount": 9583,
+      "rectangleCount": 28476,
+      "gradientCount": 167,
+      "runtime": {
+        "file": "team-row-normal.webp",
+        "sha256": "b8814db4e0dc8f14a5804da7fa573d231681b50334f79c6b297fe11bc6acd155",
+        "bytes": 41918,
+        "width": 1240,
+        "height": 234
+      }
+    },
+    {
+      "id": "team-row-selected",
+      "sheet": "05-righe-creature.svg",
+      "rect": [
+        36,
+        667,
+        628,
+        120
+      ],
+      "role": "Riga squadra selezionata",
+      "file": "team-row-selected.svg",
+      "sourceSha256": "9d62d223f069d46ae447d483d223fe8e1fe49cea3e9c673ed5fcba19bc3120ea",
+      "sha256": "8b18cbef0ca86f940e5a9594a2f3624456d2f3b33c49b1dce9809f31bb5e6938",
+      "bytes": 1210482,
+      "pathCount": 10895,
+      "rectangleCount": 31250,
+      "gradientCount": 621,
+      "runtime": {
+        "file": "team-row-selected.webp",
+        "sha256": "2f720c71d65d74c6123ec636114e0c333047eb448bd8880b628188d56cc99cc5",
+        "bytes": 48588,
+        "width": 1256,
+        "height": 240
+      }
+    },
+    {
+      "id": "team-row-hover",
+      "sheet": "05-righe-creature.svg",
+      "rect": [
+        41,
+        789,
+        620,
+        116
+      ],
+      "role": "Riga squadra hover",
+      "file": "team-row-hover.svg",
+      "sourceSha256": "9d62d223f069d46ae447d483d223fe8e1fe49cea3e9c673ed5fcba19bc3120ea",
+      "sha256": "bf0c12ee6c7609faaab304957f3f886d5075aadd7b412ecb209d765344af9705",
+      "bytes": 1083474,
+      "pathCount": 9377,
+      "rectangleCount": 29015,
+      "gradientCount": 566,
+      "runtime": {
+        "file": "team-row-hover.webp",
+        "sha256": "87fe7a63d68564a4f44bb57954d005a9c56a7162f863c218228fd09d97f4b1fe",
+        "bytes": 47632,
+        "width": 1240,
+        "height": 232
+      }
+    },
+    {
+      "id": "team-row-disabled",
+      "sheet": "05-righe-creature.svg",
+      "rect": [
+        41,
+        907,
+        620,
+        116
+      ],
+      "role": "Riga squadra disabilitata",
+      "file": "team-row-disabled.svg",
+      "sourceSha256": "9d62d223f069d46ae447d483d223fe8e1fe49cea3e9c673ed5fcba19bc3120ea",
+      "sha256": "01db3f642e0b6920abc7b99234d6881d0426d84958a20fec863816bc8be2fdbc",
+      "bytes": 784287,
+      "pathCount": 6511,
+      "rectangleCount": 26231,
+      "gradientCount": 94,
+      "runtime": {
+        "file": "team-row-disabled.webp",
+        "sha256": "2fbbf2e59852312a8f3f94ccc41b5d634f25a43f52240d7fa0c8739155bc2446",
+        "bytes": 38570,
+        "width": 1240,
+        "height": 232
+      }
+    },
+    {
+      "id": "parchment-compact",
+      "sheet": "06-schede-profilo-evoluzioni.svg",
+      "rect": [
+        522,
+        29,
+        391,
+        289
+      ],
+      "role": "Pergamena compatta vuota",
+      "file": "parchment-compact.svg",
+      "sourceSha256": "72ce185191393fb34c5081ff308b45c7edfef2dd504bb09372997ce5326df599",
+      "sha256": "9904d44e9e2634010e641efd84eeeea82f5d7509abafede038da3cbce475e1f9",
+      "bytes": 1173633,
+      "pathCount": 7424,
+      "rectangleCount": 39507,
+      "gradientCount": 674,
+      "runtime": {
+        "file": "parchment-compact.webp",
+        "sha256": "220fa0252c31889a51e02c3424ba5a4a6da62507ebec74d44bbd9b62c4468789",
+        "bytes": 54464,
+        "width": 782,
+        "height": 578
+      }
+    },
+    {
+      "id": "evolution-empty",
+      "sheet": "06-schede-profilo-evoluzioni.svg",
+      "rect": [
+        606,
+        664,
+        258,
+        239
+      ],
+      "role": "Stadio evolutivo vuoto",
+      "file": "evolution-empty.svg",
+      "sourceSha256": "72ce185191393fb34c5081ff308b45c7edfef2dd504bb09372997ce5326df599",
+      "sha256": "5953634bb12cc87866ffd6c32a55d187ec17dc8225d4f450c6d81221b58c0168",
+      "bytes": 939240,
+      "pathCount": 7653,
+      "rectangleCount": 28755,
+      "gradientCount": 323,
+      "runtime": {
+        "file": "evolution-empty.webp",
+        "sha256": "6617e22c130122ba98be93d30665e0bbcace766cce14d484a6cd61a6eba2f056",
+        "bytes": 41320,
+        "width": 516,
+        "height": 478
+      }
+    },
+    {
+      "id": "evolution-locked",
+      "sheet": "06-schede-profilo-evoluzioni.svg",
+      "rect": [
+        885,
+        664,
+        254,
+        241
+      ],
+      "role": "Stadio evolutivo bloccato",
+      "file": "evolution-locked.svg",
+      "sourceSha256": "72ce185191393fb34c5081ff308b45c7edfef2dd504bb09372997ce5326df599",
+      "sha256": "8a86ed342786bcda574ef0d8aa5eea60c2c9a0497be4ab429259fa5c503eb696",
+      "bytes": 748566,
+      "pathCount": 6088,
+      "rectangleCount": 23952,
+      "gradientCount": 143,
+      "runtime": {
+        "file": "evolution-locked.webp",
+        "sha256": "00586030667ef412891c656253337f9715dea42e9ec15129610ffe0fd989192b",
+        "bytes": 37320,
+        "width": 508,
+        "height": 482
+      }
+    },
+    {
+      "id": "icon-book",
+      "sheet": "07-icone-componenti-modulari.svg",
+      "rect": [
+        44,
+        66,
+        91,
+        92
+      ],
+      "role": "Libro",
+      "file": "icon-book.svg",
+      "sourceSha256": "ee2070efa2df05b358d4f48460d9c13fdb4ba096433f8ce33559a6cb0a683e14",
+      "sha256": "ad85740b1f4055c3652a919ef4c308b09eb1e4fdd009f6aa864d522a7e15595a",
+      "bytes": 220297,
+      "pathCount": 2639,
+      "rectangleCount": 5223,
+      "gradientCount": 20,
+      "runtime": {
+        "file": "icon-book.webp",
+        "sha256": "9239c1eec732d19b1467186aca854d0511ee243e22211ca9f58b5149eb84485c",
+        "bytes": 12426,
+        "width": 182,
+        "height": 184
+      }
+    },
+    {
+      "id": "icon-search",
+      "sheet": "07-icone-componenti-modulari.svg",
+      "rect": [
+        137,
+        66,
+        91,
+        92
+      ],
+      "role": "Ricerca",
+      "file": "icon-search.svg",
+      "sourceSha256": "ee2070efa2df05b358d4f48460d9c13fdb4ba096433f8ce33559a6cb0a683e14",
+      "sha256": "d4de11dcad3505d2b92ef4ab6f7d418f08f21a631aa6b9297196f3de0faa85b8",
+      "bytes": 193095,
+      "pathCount": 2235,
+      "rectangleCount": 4425,
+      "gradientCount": 33,
+      "runtime": {
+        "file": "icon-search.webp",
+        "sha256": "8f82b48684224a103a5127bc0e8b088dcae1bfc9f2862c4c99e025771edf3123",
+        "bytes": 12152,
+        "width": 182,
+        "height": 184
+      }
+    },
+    {
+      "id": "icon-filter",
+      "sheet": "07-icone-componenti-modulari.svg",
+      "rect": [
+        231,
+        66,
+        91,
+        92
+      ],
+      "role": "Filtro",
+      "file": "icon-filter.svg",
+      "sourceSha256": "ee2070efa2df05b358d4f48460d9c13fdb4ba096433f8ce33559a6cb0a683e14",
+      "sha256": "16b1682caaffbc60e6019dccd81e70d7fdb45e2a66ad11fd102be1c91d526ad4",
+      "bytes": 182468,
+      "pathCount": 2141,
+      "rectangleCount": 4180,
+      "gradientCount": 24,
+      "runtime": {
+        "file": "icon-filter.webp",
+        "sha256": "cfafdca497d140d4d27bbde2c308619cb8a9e4d496f4dead3e56f75d0b83f6f3",
+        "bytes": 10874,
+        "width": 182,
+        "height": 184
+      }
+    },
+    {
+      "id": "icon-seen",
+      "sheet": "07-icone-componenti-modulari.svg",
+      "rect": [
+        323,
+        66,
+        91,
+        92
+      ],
+      "role": "Visti",
+      "file": "icon-seen.svg",
+      "sourceSha256": "ee2070efa2df05b358d4f48460d9c13fdb4ba096433f8ce33559a6cb0a683e14",
+      "sha256": "0d77d3260f38789053dbdcd7889b69673cfddb3940cc5051877c9790615745bc",
+      "bytes": 207755,
+      "pathCount": 2408,
+      "rectangleCount": 4888,
+      "gradientCount": 25,
+      "runtime": {
+        "file": "icon-seen.webp",
+        "sha256": "403cfca26a38132d7ddc491ea008cba7b2ee965d59c2dddcd1a4275272aeace7",
+        "bytes": 12942,
+        "width": 182,
+        "height": 184
+      }
+    },
+    {
+      "id": "icon-capture",
+      "sheet": "07-icone-componenti-modulari.svg",
+      "rect": [
+        413,
+        66,
+        91,
+        92
+      ],
+      "role": "Catturati",
+      "file": "icon-capture.svg",
+      "sourceSha256": "ee2070efa2df05b358d4f48460d9c13fdb4ba096433f8ce33559a6cb0a683e14",
+      "sha256": "d781dc05e0b2ee5722965e49c5eea700a57604c469468948ac5ec7cd7f9e6f36",
+      "bytes": 221974,
+      "pathCount": 2589,
+      "rectangleCount": 5303,
+      "gradientCount": 18,
+      "runtime": {
+        "file": "icon-capture.webp",
+        "sha256": "8c0dd3ddd3b4bcb881b0775b27b1847379f007689c997d6434379f3f6dba7d17",
+        "bytes": 13308,
+        "width": 182,
+        "height": 184
+      }
+    },
+    {
+      "id": "icon-height",
+      "sheet": "07-icone-componenti-modulari.svg",
+      "rect": [
+        774,
+        66,
+        91,
+        92
+      ],
+      "role": "Altezza",
+      "file": "icon-height.svg",
+      "sourceSha256": "ee2070efa2df05b358d4f48460d9c13fdb4ba096433f8ce33559a6cb0a683e14",
+      "sha256": "2474da334e31c83a033532c702e354096a9b64e77b63ec9104413018c2a20354",
+      "bytes": 174933,
+      "pathCount": 2042,
+      "rectangleCount": 4158,
+      "gradientCount": 16,
+      "runtime": {
+        "file": "icon-height.webp",
+        "sha256": "b3b746b430049a3445d53d5a4448b4cb94cceeabf5b684f89a10898aa5bef7c3",
+        "bytes": 10932,
+        "width": 182,
+        "height": 184
+      }
+    },
+    {
+      "id": "icon-weight",
+      "sheet": "07-icone-componenti-modulari.svg",
+      "rect": [
+        864,
+        66,
+        91,
+        92
+      ],
+      "role": "Peso",
+      "file": "icon-weight.svg",
+      "sourceSha256": "ee2070efa2df05b358d4f48460d9c13fdb4ba096433f8ce33559a6cb0a683e14",
+      "sha256": "251f2a96470f72e29e8cbaffc2e7c8597ac82b87717e7ae53a1db3ab3155e70d",
+      "bytes": 198406,
+      "pathCount": 2305,
+      "rectangleCount": 4682,
+      "gradientCount": 23,
+      "runtime": {
+        "file": "icon-weight.webp",
+        "sha256": "d38c8d22e89267abc855ac793ff125d29b1d79a7da2c54353a2404d00f819520",
+        "bytes": 12226,
+        "width": 182,
+        "height": 184
+      }
+    },
+    {
+      "id": "icon-talent",
+      "sheet": "07-icone-componenti-modulari.svg",
+      "rect": [
+        955,
+        66,
+        91,
+        92
+      ],
+      "role": "Talento",
+      "file": "icon-talent.svg",
+      "sourceSha256": "ee2070efa2df05b358d4f48460d9c13fdb4ba096433f8ce33559a6cb0a683e14",
+      "sha256": "9a26b8279b4d5d29d721ab7e9d8f8660ce3402105ffb82d951b64b757ed26def",
+      "bytes": 194441,
+      "pathCount": 2235,
+      "rectangleCount": 4466,
+      "gradientCount": 27,
+      "runtime": {
+        "file": "icon-talent.webp",
+        "sha256": "a0362abf6b50cb2607e85645c9580a46964f8130e91a794dd4c8de58f19003eb",
+        "bytes": 12352,
+        "width": 182,
+        "height": 184
+      }
+    },
+    {
+      "id": "icon-lock",
+      "sheet": "07-icone-componenti-modulari.svg",
+      "rect": [
+        1045,
+        66,
+        91,
+        92
+      ],
+      "role": "Blocco",
+      "file": "icon-lock.svg",
+      "sourceSha256": "ee2070efa2df05b358d4f48460d9c13fdb4ba096433f8ce33559a6cb0a683e14",
+      "sha256": "dd026aba2b2ac8b4f8814cfbd9f063f178e8ad6541a5c0d1be33abf536f532c1",
+      "bytes": 199687,
+      "pathCount": 2289,
+      "rectangleCount": 4498,
+      "gradientCount": 25,
+      "runtime": {
+        "file": "icon-lock.webp",
+        "sha256": "b1562758d8f53f5f5118ff493a601daf6b5e171f11dad2242d340b0ccadef635",
+        "bytes": 11594,
+        "width": 182,
+        "height": 184
+      }
+    },
+    {
+      "id": "arrow-down",
+      "sheet": "07-icone-componenti-modulari.svg",
+      "rect": [
+        1136,
+        66,
+        91,
+        92
+      ],
+      "role": "Freccia giù",
+      "file": "arrow-down.svg",
+      "sourceSha256": "ee2070efa2df05b358d4f48460d9c13fdb4ba096433f8ce33559a6cb0a683e14",
+      "sha256": "802127189f6ae2645271e7f8fd9da898794b821bfff3d31d8391f02bd6c0b9e9",
+      "bytes": 167941,
+      "pathCount": 1929,
+      "rectangleCount": 3821,
+      "gradientCount": 17,
+      "runtime": {
+        "file": "arrow-down.webp",
+        "sha256": "8e0c25fea35152318da16ec37c5a7f52cbb25139f793835b6a1f027648491bdb",
+        "bytes": 10508,
+        "width": 182,
+        "height": 184
+      }
+    },
+    {
+      "id": "arrow-right",
+      "sheet": "07-icone-componenti-modulari.svg",
+      "rect": [
+        1228,
+        66,
+        91,
+        92
+      ],
+      "role": "Freccia destra",
+      "file": "arrow-right.svg",
+      "sourceSha256": "ee2070efa2df05b358d4f48460d9c13fdb4ba096433f8ce33559a6cb0a683e14",
+      "sha256": "c748d51aadeb3e4103fcfb9a3d1e18127a03c93ce6133f48f79a6d1b022e4373",
+      "bytes": 169678,
+      "pathCount": 1969,
+      "rectangleCount": 3821,
+      "gradientCount": 16,
+      "runtime": {
+        "file": "arrow-right.webp",
+        "sha256": "922439a36dc6be7b1c8755866b9cca14c9e4225ad101e2b27e0430b125930b28",
+        "bytes": 10290,
+        "width": 182,
+        "height": 184
+      }
+    },
+    {
+      "id": "arrow-left",
+      "sheet": "07-icone-componenti-modulari.svg",
+      "rect": [
+        1318,
+        66,
+        91,
+        92
+      ],
+      "role": "Freccia sinistra",
+      "file": "arrow-left.svg",
+      "sourceSha256": "ee2070efa2df05b358d4f48460d9c13fdb4ba096433f8ce33559a6cb0a683e14",
+      "sha256": "3ed4805655080ee48445681d931d7599aab1afbd40410e9626575f2c64ff0dec",
+      "bytes": 167370,
+      "pathCount": 1922,
+      "rectangleCount": 3792,
+      "gradientCount": 18,
+      "runtime": {
+        "file": "arrow-left.webp",
+        "sha256": "7a06fd5c2d6b2fb7f22a0fe96e948799d51da8c3f5519987de324c228c83c45e",
+        "bytes": 10150,
+        "width": 182,
+        "height": 184
+      }
+    },
+    {
+      "id": "menu-card-normal",
+      "sheet": "08-profilo-giocatore-cornici.svg",
+      "rect": [
+        742,
+        118,
+        330,
+        301
+      ],
+      "role": "Cornice tessera menù",
+      "file": "menu-card-normal.svg",
+      "sourceSha256": "00d5e4e6d96594368b927300614747335da733f752a87052519cc81203aa2fd5",
+      "sha256": "a2f0646f4876ff29d15e2cf49c4d85e7c967d6f5f0989609d414826c782b4202",
+      "bytes": 657027,
+      "pathCount": 5052,
+      "rectangleCount": 22341,
+      "gradientCount": 106,
+      "runtime": {
+        "file": "menu-card-normal.webp",
+        "sha256": "bd4d6374aacd976c3c780754928f1a67a05255c091ed93c09d72d39c33d6aa2d",
+        "bytes": 34778,
+        "width": 660,
+        "height": 602
+      }
+    },
+    {
+      "id": "menu-card-selected",
+      "sheet": "08-profilo-giocatore-cornici.svg",
+      "rect": [
+        1075,
+        113,
+        359,
+        320
+      ],
+      "role": "Cornice tessera selezionata con gemma",
+      "file": "menu-card-selected.svg",
+      "sourceSha256": "00d5e4e6d96594368b927300614747335da733f752a87052519cc81203aa2fd5",
+      "sha256": "f6a113bf6d7b2d0ca2b1f88229afef4e6587eda6634c250dc65bf64e4972f030",
+      "bytes": 1204691,
+      "pathCount": 9641,
+      "rectangleCount": 32597,
+      "gradientCount": 621,
+      "runtime": {
+        "file": "menu-card-selected.webp",
+        "sha256": "fbe5e7b4b7ccda9f4132801aadad6abe8a1656772762f0433d257b5cd49eb3af",
+        "bytes": 51200,
+        "width": 718,
+        "height": 640
+      }
+    },
+    {
+      "id": "close-control",
+      "sheet": "08-profilo-giocatore-cornici.svg",
+      "rect": [
+        1320,
+        14,
+        108,
+        102
+      ],
+      "role": "Chiusura",
+      "file": "close-control.svg",
+      "sourceSha256": "00d5e4e6d96594368b927300614747335da733f752a87052519cc81203aa2fd5",
+      "sha256": "78ae99d3ebd67f5eb0fc038675a5d234e994ecdc8a6edc0adb9813c563c61335",
+      "bytes": 239509,
+      "pathCount": 2765,
+      "rectangleCount": 5560,
+      "gradientCount": 24,
+      "runtime": {
+        "file": "close-control.webp",
+        "sha256": "4770b3878ea52aebb9b1a5e69e9e89d58dc67662a25188f8b59449799cbcb6de",
+        "bytes": 16114,
+        "width": 216,
+        "height": 204
+      }
+    },
+    {
+      "id": "menu-team-art",
+      "sheet": "09-illustrazioni-menu.svg",
+      "rect": [
+        53,
+        15,
+        418,
+        401
+      ],
+      "role": "Illustrazione categoria squadra, non rappresenta il roster",
+      "file": "menu-team-art.svg",
+      "sourceSha256": "c1c581f10776aef773c40710e3d1beee618eae234e0b423bcb3240824b64b705",
+      "sha256": "cfb17b316eeb6ce551fc769372686f9b94eb4bb751343782342dfe2402f47017",
+      "bytes": 3426824,
+      "pathCount": 36753,
+      "rectangleCount": 93388,
+      "gradientCount": 185,
+      "runtime": {
+        "file": "menu-team-art.webp",
+        "sha256": "5c0e60fee3aeb76d06c57a00e3fd140ca2374dc37e9b4109abd42268c2b2a883",
+        "bytes": 167818,
+        "width": 836,
+        "height": 802
+      }
+    },
+    {
+      "id": "menu-arkadex-art",
+      "sheet": "09-illustrazioni-menu.svg",
+      "rect": [
+        475,
+        65,
+        516,
+        324
+      ],
+      "role": "Libro Arkadex",
+      "file": "menu-arkadex-art.svg",
+      "sourceSha256": "c1c581f10776aef773c40710e3d1beee618eae234e0b423bcb3240824b64b705",
+      "sha256": "77b2eef979c9bd42cf292779a1f6ffaf012a3c59eca1a0a60f1f0b715c7eb45a",
+      "bytes": 2803632,
+      "pathCount": 21533,
+      "rectangleCount": 102549,
+      "gradientCount": 204,
+      "runtime": {
+        "file": "menu-arkadex-art.webp",
+        "sha256": "e65ece2063885fde5569de0d9e0ebbf401a3a04f8b2f46b37437e8f480335940",
+        "bytes": 160086,
+        "width": 1032,
+        "height": 648
+      }
+    },
+    {
+      "id": "menu-bag-art",
+      "sheet": "09-illustrazioni-menu.svg",
+      "rect": [
+        988,
+        50,
+        442,
+        354
+      ],
+      "role": "Borsa",
+      "file": "menu-bag-art.svg",
+      "sourceSha256": "c1c581f10776aef773c40710e3d1beee618eae234e0b423bcb3240824b64b705",
+      "sha256": "48a0a9bbdca3f77b121074e93ed9c71124f378f747c662f6b412aa1ff1d29d3e",
+      "bytes": 2696870,
+      "pathCount": 23436,
+      "rectangleCount": 83165,
+      "gradientCount": 297,
+      "runtime": {
+        "file": "menu-bag-art.webp",
+        "sha256": "14c9dc341051b8d6b5c68a0bb4f81a75aea903b49e30f689b5ed3c68a8e6e713",
+        "bytes": 140998,
+        "width": 884,
+        "height": 708
+      }
+    },
+    {
+      "id": "menu-deposit-art",
+      "sheet": "09-illustrazioni-menu.svg",
+      "rect": [
+        41,
+        416,
+        425,
+        322
+      ],
+      "role": "Baule deposito",
+      "file": "menu-deposit-art.svg",
+      "sourceSha256": "c1c581f10776aef773c40710e3d1beee618eae234e0b423bcb3240824b64b705",
+      "sha256": "4b9c61c1de0e8b6d06aa54a71825cc1bf2ccd40b141eb0eabb82080d58bf6a45",
+      "bytes": 2978651,
+      "pathCount": 31418,
+      "rectangleCount": 83711,
+      "gradientCount": 62,
+      "runtime": {
+        "file": "menu-deposit-art.webp",
+        "sha256": "b42d503a1eacf0c370357488922e685205509946f69d20c501069fbe65e703d7",
+        "bytes": 145002,
+        "width": 850,
+        "height": 644
+      }
+    },
+    {
+      "id": "menu-map-art",
+      "sheet": "09-illustrazioni-menu.svg",
+      "rect": [
+        477,
+        400,
+        511,
+        345
+      ],
+      "role": "Mappa e bussola",
+      "file": "menu-map-art.svg",
+      "sourceSha256": "c1c581f10776aef773c40710e3d1beee618eae234e0b423bcb3240824b64b705",
+      "sha256": "0ad12ba2bb093878116daef996c33e61bfe2f2718eb829e6f34f07571bf6f462",
+      "bytes": 3089145,
+      "pathCount": 29495,
+      "rectangleCount": 94846,
+      "gradientCount": 160,
+      "runtime": {
+        "file": "menu-map-art.webp",
+        "sha256": "7f8d69d4bbac4ca09678f7e5d8f0ade4a4d091df93aa389a8411e68011bd9b59",
+        "bytes": 170910,
+        "width": 1022,
+        "height": 690
+      }
+    },
+    {
+      "id": "menu-diary-art",
+      "sheet": "09-illustrazioni-menu.svg",
+      "rect": [
+        1012,
+        404,
+        406,
+        359
+      ],
+      "role": "Diario",
+      "file": "menu-diary-art.svg",
+      "sourceSha256": "c1c581f10776aef773c40710e3d1beee618eae234e0b423bcb3240824b64b705",
+      "sha256": "2a9345f7eebca8c32208b88a754656f57659ddea23f002e72e317e14ae37009a",
+      "bytes": 2413440,
+      "pathCount": 21133,
+      "rectangleCount": 75697,
+      "gradientCount": 112,
+      "runtime": {
+        "file": "menu-diary-art.webp",
+        "sha256": "02dde813008e8443bb4937dbf91f207a7dba813af8a96de78c99b3d9474e5eb9",
+        "bytes": 131696,
+        "width": 812,
+        "height": 718
+      }
+    },
+    {
+      "id": "menu-register-art",
+      "sheet": "09-illustrazioni-menu.svg",
+      "rect": [
+        39,
+        732,
+        426,
+        340
+      ],
+      "role": "Registro",
+      "file": "menu-register-art.svg",
+      "sourceSha256": "c1c581f10776aef773c40710e3d1beee618eae234e0b423bcb3240824b64b705",
+      "sha256": "99ad1f8dae1274184510593dad5a24e57759ff7a5ad5609f83da8f78b31d2ba0",
+      "bytes": 2094406,
+      "pathCount": 20042,
+      "rectangleCount": 59898,
+      "gradientCount": 392,
+      "runtime": {
+        "file": "menu-register-art.webp",
+        "sha256": "4924a8ece2161ec418afdd589836cee9cedc6ca1a5158a9c0ff3bda7f7ea6154",
+        "bytes": 117074,
+        "width": 852,
+        "height": 680
+      }
+    },
+    {
+      "id": "menu-save-art",
+      "sheet": "09-illustrazioni-menu.svg",
+      "rect": [
+        465,
+        745,
+        378,
+        327
+      ],
+      "role": "Cristallo salvataggio",
+      "file": "menu-save-art.svg",
+      "sourceSha256": "c1c581f10776aef773c40710e3d1beee618eae234e0b423bcb3240824b64b705",
+      "sha256": "dcda64c1101062ddc140e4d41bd43e7b7b21a60411b2118e4ddb3bcfa9dcfc84",
+      "bytes": 2592998,
+      "pathCount": 29411,
+      "rectangleCount": 64508,
+      "gradientCount": 98,
+      "runtime": {
+        "file": "menu-save-art.webp",
+        "sha256": "fb07dd093ac28567b25bc735e8d9d19bffc0d6c7ed39e1eda82a19cdfade6fc6",
+        "bytes": 129614,
+        "width": 756,
+        "height": 654
+      }
+    },
+    {
+      "id": "menu-settings-art",
+      "sheet": "09-illustrazioni-menu.svg",
+      "rect": [
+        858,
+        763,
+        412,
+        308
+      ],
+      "role": "Ingranaggi impostazioni",
+      "file": "menu-settings-art.svg",
+      "sourceSha256": "c1c581f10776aef773c40710e3d1beee618eae234e0b423bcb3240824b64b705",
+      "sha256": "8a5330cb4e359475ea03ca25e953d383ac1d0b189b87616a816189ff88dac4c7",
+      "bytes": 1919012,
+      "pathCount": 17322,
+      "rectangleCount": 58828,
+      "gradientCount": 113,
+      "runtime": {
+        "file": "menu-settings-art.webp",
+        "sha256": "8f8a76e53ec06ca4f6c94081438c7262c876a8de138397813fc4de3e39caccc2",
+        "bytes": 114060,
+        "width": 824,
+        "height": 616
+      }
+    },
+    {
+      "id": "creature-tile-normal",
+      "sheet": "10-allenatori-creature-medaglie.svg",
+      "rect": [
+        920,
+        434,
+        226,
+        206
+      ],
+      "role": "Tessera creatura vuota",
+      "file": "creature-tile-normal.svg",
+      "sourceSha256": "ef6c2e62d501f8e6932aa6110597ad8860c7ac2108eaa2fb34e297e2e652485c",
+      "sha256": "dbd01c16303544fb9f11c99c88f6b12a2fd4c141b07738bfd79bf26ce1a25875",
+      "bytes": 506252,
+      "pathCount": 4532,
+      "rectangleCount": 15693,
+      "gradientCount": 42,
+      "runtime": {
+        "file": "creature-tile-normal.webp",
+        "sha256": "256d0ece3076bd190d3555904aec30053573553fe9dc5cb5a7db0c755f4e1f56",
+        "bytes": 25072,
+        "width": 452,
+        "height": 412
+      }
+    },
+    {
+      "id": "creature-tile-selected",
+      "sheet": "10-allenatori-creature-medaglie.svg",
+      "rect": [
+        1149,
+        428,
+        251,
+        222
+      ],
+      "role": "Tessera creatura selezionata vuota",
+      "file": "creature-tile-selected.svg",
+      "sourceSha256": "ef6c2e62d501f8e6932aa6110597ad8860c7ac2108eaa2fb34e297e2e652485c",
+      "sha256": "447299e89f6dc2e877529fcf685c2c4f09ed22b85ebec826aaa8f0672a32986d",
+      "bytes": 709111,
+      "pathCount": 5174,
+      "rectangleCount": 21725,
+      "gradientCount": 290,
+      "runtime": {
+        "file": "creature-tile-selected.webp",
+        "sha256": "d6ad45dc4d228b20dfc41afd092579860080c9618a2e8b469dc5f5cac8244755",
+        "bytes": 33000,
+        "width": 502,
+        "height": 444
+      }
+    },
+    {
+      "id": "medal-empty",
+      "sheet": "10-allenatori-creature-medaglie.svg",
+      "rect": [
+        1032,
+        662,
+        105,
+        106
+      ],
+      "role": "Medaglia da conquistare",
+      "file": "medal-empty.svg",
+      "sourceSha256": "ef6c2e62d501f8e6932aa6110597ad8860c7ac2108eaa2fb34e297e2e652485c",
+      "sha256": "219977078bf7b480fb12e8a264c1eb04aa724ad2a6138300cdcf802b43b1a457",
+      "bytes": 153642,
+      "pathCount": 1827,
+      "rectangleCount": 3161,
+      "gradientCount": 20,
+      "runtime": {
+        "file": "medal-empty.webp",
+        "sha256": "858902720b3752deaa2f6d8a91c03371da7dd93cd6c86f702c19db1f649eecc3",
+        "bytes": 10470,
+        "width": 210,
+        "height": 212
+      }
+    },
+    {
+      "id": "coin",
+      "sheet": "10-allenatori-creature-medaglie.svg",
+      "rect": [
+        1142,
+        656,
+        128,
+        119
+      ],
+      "role": "Moneta",
+      "file": "coin.svg",
+      "sourceSha256": "ef6c2e62d501f8e6932aa6110597ad8860c7ac2108eaa2fb34e297e2e652485c",
+      "sha256": "5b27339f97ccf8c63b381eb11bed9c0b57453541d02d65d2cddb3b9ccb641fba",
+      "bytes": 403695,
+      "pathCount": 4394,
+      "rectangleCount": 10294,
+      "gradientCount": 1,
+      "runtime": {
+        "file": "coin.webp",
+        "sha256": "772ff3906bd77747baa1aedba4194ad52bbca783e158d0de42c118cf80ce2067",
+        "bytes": 23502,
+        "width": 256,
+        "height": 238
+      }
+    },
+    {
+      "id": "map-pin",
+      "sheet": "10-allenatori-creature-medaglie.svg",
+      "rect": [
+        1297,
+        658,
+        79,
+        113
+      ],
+      "role": "Posizione",
+      "file": "map-pin.svg",
+      "sourceSha256": "ef6c2e62d501f8e6932aa6110597ad8860c7ac2108eaa2fb34e297e2e652485c",
+      "sha256": "61d064a4940cd7af21b23cee0f8dd056ae7c29eb0e63840af8dc0f77960336b8",
+      "bytes": 126408,
+      "pathCount": 1400,
+      "rectangleCount": 2923,
+      "gradientCount": 17,
+      "runtime": {
+        "file": "map-pin.webp",
+        "sha256": "4d0c33a8f28492356c60cf806094d8cf9deefcf51ac580bbed66971c64806849",
+        "bytes": 10086,
+        "width": 158,
+        "height": 226
+      }
+    },
+    {
+      "id": "arkamon-logo",
+      "sheet": "11-logo-arkamon-menu.svg",
+      "rect": [
+        10,
+        54,
+        658,
+        400
+      ],
+      "role": "Logo Arkamon",
+      "file": "arkamon-logo.svg",
+      "sourceSha256": "ec9e5b7ae23a3b9d9347526a6ec73fbb244f67abd39c5f992e42e1c7ff4e3f63",
+      "sha256": "e13e8813fdda643f0c69c4f96037794890c37ba168cfeb57fcadaf5894390194",
+      "bytes": 3264829,
+      "pathCount": 26439,
+      "rectangleCount": 117296,
+      "gradientCount": 108,
+      "runtime": {
+        "file": "arkamon-logo.webp",
+        "sha256": "d8af0bffb38f7373e857fe8b899a70ae0e756a6fb0adaf07cf3ca28ffb99fda8",
+        "bytes": 205272,
+        "width": 1316,
+        "height": 800
+      }
+    },
+    {
+      "id": "divider-gem",
+      "sheet": "11-logo-arkamon-menu.svg",
+      "rect": [
+        19,
+        484,
+        547,
+        150
+      ],
+      "role": "Separatore con gemma",
+      "file": "divider-gem.svg",
+      "sourceSha256": "ec9e5b7ae23a3b9d9347526a6ec73fbb244f67abd39c5f992e42e1c7ff4e3f63",
+      "sha256": "88c307b5e50ba6493c431f691231e4d3e6def450aedbe4e4e3be2d370e262537",
+      "bytes": 1030729,
+      "pathCount": 11086,
+      "rectangleCount": 28524,
+      "gradientCount": 4,
+      "runtime": {
+        "file": "divider-gem.webp",
+        "sha256": "fd3278e08ca0dc787871a0937012ab5d680d8ae36a62ea63bfa8c5c855a76541",
+        "bytes": 58788,
+        "width": 1094,
+        "height": 300
+      }
+    },
+    {
+      "id": "divider-thin",
+      "sheet": "11-logo-arkamon-menu.svg",
+      "rect": [
+        27,
+        651,
+        565,
+        65
+      ],
+      "role": "Separatore sottile",
+      "file": "divider-thin.svg",
+      "sourceSha256": "ec9e5b7ae23a3b9d9347526a6ec73fbb244f67abd39c5f992e42e1c7ff4e3f63",
+      "sha256": "03b2d249df399898aa79682e67a7782b4fedc81e02d52aa8298698bb8c6c82ef",
+      "bytes": 536826,
+      "pathCount": 5460,
+      "rectangleCount": 15942,
+      "gradientCount": 1,
+      "runtime": {
+        "file": "divider-thin.webp",
+        "sha256": "4785282740de0462bd542cecaa73dd77c31e1c722098026702b1055663a649d7",
+        "bytes": 32286,
+        "width": 1130,
+        "height": 130
+      }
+    },
+    {
+      "id": "card-normal",
+      "sheet": "12-schede-bagliori-gemme.svg",
+      "rect": [
+        30,
+        63,
+        384,
+        329
+      ],
+      "role": "Card normale",
+      "file": "card-normal.svg",
+      "sourceSha256": "83e1501029dd2cddeabfe2134d6cb88f99e9d3ec586f75032bedb6bd04596409",
+      "sha256": "fc9bbd326349a82b500ea79b23ea9caf1eecd35ffe1b499b448738a6cf98ee5c",
+      "bytes": 743473,
+      "pathCount": 5660,
+      "rectangleCount": 26808,
+      "gradientCount": 153,
+      "runtime": {
+        "file": "card-normal.webp",
+        "sha256": "3c194f7a334a3db95b414aa9c2ecbca7cb9310388873790845d6f0624072ff93",
+        "bytes": 39312,
+        "width": 768,
+        "height": 658
+      }
+    },
+    {
+      "id": "card-selected",
+      "sheet": "12-schede-bagliori-gemme.svg",
+      "rect": [
+        781,
+        43,
+        382,
+        366
+      ],
+      "role": "Card selezionata",
+      "file": "card-selected.svg",
+      "sourceSha256": "83e1501029dd2cddeabfe2134d6cb88f99e9d3ec586f75032bedb6bd04596409",
+      "sha256": "b8f56f66be74390b63051e34ff3080faec4416846a8aa76e6ad9f7cfce0817fd",
+      "bytes": 1487790,
+      "pathCount": 12340,
+      "rectangleCount": 39493,
+      "gradientCount": 856,
+      "runtime": {
+        "file": "card-selected.webp",
+        "sha256": "102829d9a24a32113d5ee597bb772d38c30fa0616ea8290b538ee9658d3e8da5",
+        "bytes": 59466,
+        "width": 764,
+        "height": 732
+      }
+    },
+    {
+      "id": "gem-cyan",
+      "sheet": "12-schede-bagliori-gemme.svg",
+      "rect": [
+        1165,
+        485,
+        147,
+        183
+      ],
+      "role": "Gemma ciano",
+      "file": "gem-cyan.svg",
+      "sourceSha256": "83e1501029dd2cddeabfe2134d6cb88f99e9d3ec586f75032bedb6bd04596409",
+      "sha256": "d2fe410c8b11193a1d38834dc2f1fa06c1bddc489de042cc3432740dcc4b8120",
+      "bytes": 725687,
+      "pathCount": 8454,
+      "rectangleCount": 16675,
+      "gradientCount": 12,
+      "runtime": {
+        "file": "gem-cyan.webp",
+        "sha256": "7ec0cb2fa117ccc48e74481183d33d3cb1ef80430c19b6a3a621cc7abacd97a7",
+        "bytes": 36216,
+        "width": 294,
+        "height": 366
+      }
+    },
+    {
+      "id": "category-heal",
+      "sheet": "15-inventario-icone.svg",
+      "rect": [
+        113,
+        34,
+        298,
+        363
+      ],
+      "role": "Categoria cure",
+      "file": "category-heal.svg",
+      "sourceSha256": "d6f491bf84cfa8ca66f2c0ad8b4bb6dbc255ac8f07ea4956d27496216f0ea215",
+      "sha256": "922c1a0b8a21c6774faed2a890773f28929e7e5d66d0bcf887db58b6d0d3eb73",
+      "bytes": 1480108,
+      "pathCount": 13483,
+      "rectangleCount": 46505,
+      "gradientCount": 173,
+      "runtime": {
+        "file": "category-heal.webp",
+        "sha256": "e56c6796488b68661b23e4995d386e584d403eeb4232a09728edc8259a50a02e",
+        "bytes": 76010,
+        "width": 596,
+        "height": 726
+      }
+    },
+    {
+      "id": "category-capture",
+      "sheet": "15-inventario-icone.svg",
+      "rect": [
+        473,
+        47,
+        331,
+        330
+      ],
+      "role": "Categoria cattura",
+      "file": "category-capture.svg",
+      "sourceSha256": "d6f491bf84cfa8ca66f2c0ad8b4bb6dbc255ac8f07ea4956d27496216f0ea215",
+      "sha256": "8f070989d92e91b0f3d5b3fa8d7ca9b2f0c39932bc371a7b0ba3c32054e43366",
+      "bytes": 1616318,
+      "pathCount": 15387,
+      "rectangleCount": 47133,
+      "gradientCount": 279,
+      "runtime": {
+        "file": "category-capture.webp",
+        "sha256": "97406f2d2dbcfac4086c0a1173ee3717f33a62801ee827fb85f9fd65526bf44e",
+        "bytes": 82414,
+        "width": 662,
+        "height": 660
+      }
+    },
+    {
+      "id": "category-tools",
+      "sheet": "15-inventario-icone.svg",
+      "rect": [
+        867,
+        38,
+        333,
+        349
+      ],
+      "role": "Categoria strumenti",
+      "file": "category-tools.svg",
+      "sourceSha256": "d6f491bf84cfa8ca66f2c0ad8b4bb6dbc255ac8f07ea4956d27496216f0ea215",
+      "sha256": "ddc268bbb9aea851829d9dab4f88f744037c4b3f1248a27c0bff028d80af0bf1",
+      "bytes": 1746972,
+      "pathCount": 16563,
+      "rectangleCount": 51858,
+      "gradientCount": 124,
+      "runtime": {
+        "file": "category-tools.webp",
+        "sha256": "edc049374e6a589bbb686e4701b6c35de471745b4c05698ebd2a742c805fdff2",
+        "bytes": 83800,
+        "width": 666,
+        "height": 698
+      }
+    },
+    {
+      "id": "item-potion",
+      "sheet": "16-pozioni-campana-cristallo.svg",
+      "rect": [
+        36,
+        105,
+        290,
+        415
+      ],
+      "role": "Pozione",
+      "file": "item-potion.svg",
+      "sourceSha256": "088ed18607887b851f62587369e97977247939a6461aceb1a0522f5fc5a3d326",
+      "sha256": "5c6e79cdb62f9b5f4a2e25d535d9b71827dee00247704ad9cecd34d2229d9d59",
+      "bytes": 1800166,
+      "pathCount": 19616,
+      "rectangleCount": 48343,
+      "gradientCount": 47,
+      "runtime": {
+        "file": "item-potion.webp",
+        "sha256": "30b4e12341b632cd499ed7000378f97b955d5e15e31a960a59a3a8539b75ce7d",
+        "bytes": 88856,
+        "width": 580,
+        "height": 830
+      }
+    },
+    {
+      "id": "item-superpotion",
+      "sheet": "16-pozioni-campana-cristallo.svg",
+      "rect": [
+        325,
+        105,
+        331,
+        421
+      ],
+      "role": "Superpozione",
+      "file": "item-superpotion.svg",
+      "sourceSha256": "088ed18607887b851f62587369e97977247939a6461aceb1a0522f5fc5a3d326",
+      "sha256": "d385967b7e695d2f8ba4b367283e9d08cb1629dd7353813653c92949f38ab31c",
+      "bytes": 2164940,
+      "pathCount": 22944,
+      "rectangleCount": 58831,
+      "gradientCount": 133,
+      "runtime": {
+        "file": "item-superpotion.webp",
+        "sha256": "3215ff735e47d2191f19cfe108a470280582ff942348d10e54508ea4097327b8",
+        "bytes": 103520,
+        "width": 662,
+        "height": 842
+      }
+    },
+    {
+      "id": "item-antidote",
+      "sheet": "16-pozioni-campana-cristallo.svg",
+      "rect": [
+        657,
+        105,
+        283,
+        430
+      ],
+      "role": "Antidoto",
+      "file": "item-antidote.svg",
+      "sourceSha256": "088ed18607887b851f62587369e97977247939a6461aceb1a0522f5fc5a3d326",
+      "sha256": "dc902ff56ee389b6f39adaafc395bcc8e6b56697e73c6306fb67094f99137204",
+      "bytes": 2052284,
+      "pathCount": 22875,
+      "rectangleCount": 52715,
+      "gradientCount": 82,
+      "runtime": {
+        "file": "item-antidote.webp",
+        "sha256": "cbc0ab59fa48ff6c23d4b3d8eccd38aa166f3b7cffdff7c33428579d8c657fee",
+        "bytes": 93122,
+        "width": 566,
+        "height": 860
+      }
+    },
+    {
+      "id": "item-awakening",
+      "sheet": "16-pozioni-campana-cristallo.svg",
+      "rect": [
+        40,
+        532,
+        385,
+        445
+      ],
+      "role": "Sveglia",
+      "file": "item-awakening.svg",
+      "sourceSha256": "088ed18607887b851f62587369e97977247939a6461aceb1a0522f5fc5a3d326",
+      "sha256": "c5de0bc68ef272f89b768d3aee77ab184fb496a59886e0ef11772e59abb4c776",
+      "bytes": 2089826,
+      "pathCount": 16687,
+      "rectangleCount": 74633,
+      "gradientCount": 137,
+      "runtime": {
+        "file": "item-awakening.webp",
+        "sha256": "891e200f08068e90141461da62f0ab24eb108467d11e7ca97df0d80af1f04ec0",
+        "bytes": 136726,
+        "width": 770,
+        "height": 890
+      }
+    },
+    {
+      "id": "item-revive",
+      "sheet": "16-pozioni-campana-cristallo.svg",
+      "rect": [
+        429,
+        524,
+        384,
+        477
+      ],
+      "role": "Cristallo per il Rianimatore",
+      "file": "item-revive.svg",
+      "sourceSha256": "088ed18607887b851f62587369e97977247939a6461aceb1a0522f5fc5a3d326",
+      "sha256": "a1a1c38cd2a7fe0f31f9e2f14ff6699eca7b713634d66cdadd4b0ddba8b619ce",
+      "bytes": 2298771,
+      "pathCount": 17485,
+      "rectangleCount": 81384,
+      "gradientCount": 382,
+      "runtime": {
+        "file": "item-revive.webp",
+        "sha256": "bbd6767caa8483bfe058bc55bba39038b3051cc1281bb0cd74fb9c3b0c1108df",
+        "bytes": 160448,
+        "width": 768,
+        "height": 954
+      }
+    },
+    {
+      "id": "quantity-minus",
+      "sheet": "17-negozio-controlli.svg",
+      "rect": [
+        70,
+        245,
+        197,
+        185
+      ],
+      "role": "Diminuisci quantità",
+      "file": "quantity-minus.svg",
+      "sourceSha256": "184fbf87b7a5cfcf2f4817f39a219523c5d8567bfa7779f216892daceb0af37c",
+      "sha256": "84c5c5f244ee427c25f60904c1664b5a99a88a9f70df39a5ddb3d89ab00a75de",
+      "bytes": 511137,
+      "pathCount": 4935,
+      "rectangleCount": 13516,
+      "gradientCount": 172,
+      "runtime": {
+        "file": "quantity-minus.webp",
+        "sha256": "22086ef2329f4137132a4bed43bc91cf426fa6616d62885ee689b5618ce14fe7",
+        "bytes": 21952,
+        "width": 394,
+        "height": 370
+      }
+    },
+    {
+      "id": "quantity-field",
+      "sheet": "17-negozio-controlli.svg",
+      "rect": [
+        272,
+        245,
+        286,
+        185
+      ],
+      "role": "Campo quantità vuoto",
+      "file": "quantity-field.svg",
+      "sourceSha256": "184fbf87b7a5cfcf2f4817f39a219523c5d8567bfa7779f216892daceb0af37c",
+      "sha256": "9869e169104553bd7d2eb102cf2fab66a4cfc6074369c7028384d8fbdc8f1aa8",
+      "bytes": 576508,
+      "pathCount": 5439,
+      "rectangleCount": 16711,
+      "gradientCount": 106,
+      "runtime": {
+        "file": "quantity-field.webp",
+        "sha256": "3acd81272a462155f88705925d9d8ea85943cb5ba37a1a8f147a4fefa1bc7ea3",
+        "bytes": 31598,
+        "width": 572,
+        "height": 370
+      }
+    },
+    {
+      "id": "quantity-plus",
+      "sheet": "17-negozio-controlli.svg",
+      "rect": [
+        561,
+        245,
+        197,
+        185
+      ],
+      "role": "Aumenta quantità",
+      "file": "quantity-plus.svg",
+      "sourceSha256": "184fbf87b7a5cfcf2f4817f39a219523c5d8567bfa7779f216892daceb0af37c",
+      "sha256": "305c674a572cc7a5592a1bb5bde7d1861e734030edd18f1fb0e3f5f0f4d9bbdc",
+      "bytes": 561539,
+      "pathCount": 5494,
+      "rectangleCount": 14359,
+      "gradientCount": 196,
+      "runtime": {
+        "file": "quantity-plus.webp",
+        "sha256": "33b4c5e8553eb6baf33b0074b335b289b7a0d89ce37cffcab417bb187fba008c",
+        "bytes": 23052,
+        "width": 394,
+        "height": 370
+      }
+    },
+    {
+      "id": "purchase-button",
+      "sheet": "17-negozio-controlli.svg",
+      "rect": [
+        24,
+        586,
+        792,
+        157
+      ],
+      "role": "Pulsante acquisto vuoto",
+      "file": "purchase-button.svg",
+      "sourceSha256": "184fbf87b7a5cfcf2f4817f39a219523c5d8567bfa7779f216892daceb0af37c",
+      "sha256": "488f7ef47b9a38a904e29d074d0445749ac3eba3c71b4ffe782cf8496bd3cce4",
+      "bytes": 1825350,
+      "pathCount": 15292,
+      "rectangleCount": 53480,
+      "gradientCount": 766,
+      "runtime": {
+        "file": "purchase-button.webp",
+        "sha256": "e88391453536c4b29fbed244c0fab0a6f04ef78dff845fd0a1b802006a94018c",
+        "bytes": 79788,
+        "width": 1400,
+        "height": 278
+      }
+    },
+    {
+      "id": "purchase-button-active",
+      "sheet": "17-negozio-controlli.svg",
+      "rect": [
+        4,
+        743,
+        820,
+        165
+      ],
+      "role": "Pulsante acquisto attivo vuoto",
+      "file": "purchase-button-active.svg",
+      "sourceSha256": "184fbf87b7a5cfcf2f4817f39a219523c5d8567bfa7779f216892daceb0af37c",
+      "sha256": "6de6f6e6438ecc8e6f498283cd3bbe18fe0a6ff061989636e3bb501543cea9f5",
+      "bytes": 1923019,
+      "pathCount": 14971,
+      "rectangleCount": 53473,
+      "gradientCount": 1282,
+      "runtime": {
+        "file": "purchase-button-active.webp",
+        "sha256": "112faff0c3be7a1bb15ceec98371f33bd3a911b346ff22d33a6fdd6f876465f1",
+        "bytes": 89858,
+        "width": 1400,
+        "height": 282
+      }
+    },
+    {
+      "id": "sign-alchemy",
+      "sheet": "18-insegne-rune-ornamenti.svg",
+      "rect": [
+        6,
+        29,
+        156,
+        215
+      ],
+      "role": "Insegna alchimia",
+      "file": "sign-alchemy.svg",
+      "sourceSha256": "d70c4d59b82e239703c59dd1dcfbdd993cf235b45e2f0ff33bf2d531a6bd3a7f",
+      "sha256": "743b657a896bc7c48c467fbd319e0c6146c8709414aa80ad827fc98328c32e5e",
+      "bytes": 533562,
+      "pathCount": 6037,
+      "rectangleCount": 13895,
+      "gradientCount": 42,
+      "runtime": {
+        "file": "sign-alchemy.webp",
+        "sha256": "a46636dea7182ba66e1109cbb56ceb65377d0112351fb74e8126d09823179448",
+        "bytes": 32008,
+        "width": 312,
+        "height": 430
+      }
+    },
+    {
+      "id": "sign-heal",
+      "sheet": "18-insegne-rune-ornamenti.svg",
+      "rect": [
+        163,
+        38,
+        156,
+        209
+      ],
+      "role": "Insegna cure",
+      "file": "sign-heal.svg",
+      "sourceSha256": "d70c4d59b82e239703c59dd1dcfbdd993cf235b45e2f0ff33bf2d531a6bd3a7f",
+      "sha256": "d2b09a4d05ebb86039988da198af2b5c8bc6f8c9e0e4d8cf79b7af476ec57035",
+      "bytes": 567292,
+      "pathCount": 6559,
+      "rectangleCount": 13784,
+      "gradientCount": 38,
+      "runtime": {
+        "file": "sign-heal.webp",
+        "sha256": "eb7a21c9fd4927a1bb6ef077699b7b953ef3b33bd7da081ef55fdee93eac2725",
+        "bytes": 32610,
+        "width": 312,
+        "height": 418
+      }
+    },
+    {
+      "id": "sign-inventory",
+      "sheet": "18-insegne-rune-ornamenti.svg",
+      "rect": [
+        320,
+        40,
+        154,
+        209
+      ],
+      "role": "Insegna inventario",
+      "file": "sign-inventory.svg",
+      "sourceSha256": "d70c4d59b82e239703c59dd1dcfbdd993cf235b45e2f0ff33bf2d531a6bd3a7f",
+      "sha256": "09bc9fd2137681315d7f292292c7f5048b59ffba0771e008d02845472acc56ad",
+      "bytes": 535554,
+      "pathCount": 6208,
+      "rectangleCount": 12986,
+      "gradientCount": 33,
+      "runtime": {
+        "file": "sign-inventory.webp",
+        "sha256": "249d563fe673ea81f78511a78b128324e9992713c7a05ab6eb297c2b7e590dd7",
+        "bytes": 30390,
+        "width": 308,
+        "height": 418
+      }
+    },
+    {
+      "id": "sign-battle",
+      "sheet": "18-insegne-rune-ornamenti.svg",
+      "rect": [
+        475,
+        29,
+        171,
+        223
+      ],
+      "role": "Insegna squadra",
+      "file": "sign-battle.svg",
+      "sourceSha256": "d70c4d59b82e239703c59dd1dcfbdd993cf235b45e2f0ff33bf2d531a6bd3a7f",
+      "sha256": "1d25e1b10db9598b6e020f7082c8871f3ae46dde8627a47d43c303fea379e1e2",
+      "bytes": 629601,
+      "pathCount": 7228,
+      "rectangleCount": 15633,
+      "gradientCount": 34,
+      "runtime": {
+        "file": "sign-battle.webp",
+        "sha256": "80e4802c9e5e7009a295382d094f90802cdb95997688ad165e5a9f635a63e20a",
+        "bytes": 37854,
+        "width": 342,
+        "height": 446
+      }
+    },
+    {
+      "id": "corner-gold",
+      "sheet": "18-insegne-rune-ornamenti.svg",
+      "rect": [
+        607,
+        273,
+        103,
+        108
+      ],
+      "role": "Angolo ornamentale oro",
+      "file": "corner-gold.svg",
+      "sourceSha256": "d70c4d59b82e239703c59dd1dcfbdd993cf235b45e2f0ff33bf2d531a6bd3a7f",
+      "sha256": "30069ba9de1e696ee6ff3ba360a428e5b7ddcf9c805f076bcaca971add321395",
+      "bytes": 175067,
+      "pathCount": 2063,
+      "rectangleCount": 4239,
+      "gradientCount": 0,
+      "runtime": {
+        "file": "corner-gold.webp",
+        "sha256": "41d023203465f4c9fdfd8aa5e0e9e8b61bd1829f55488fda0bf223d8f57b521c",
+        "bytes": 10248,
+        "width": 206,
+        "height": 216
+      }
+    },
+    {
+      "id": "corner-rune",
+      "sheet": "18-insegne-rune-ornamenti.svg",
+      "rect": [
+        961,
+        379,
+        107,
+        112
+      ],
+      "role": "Angolo runico",
+      "file": "corner-rune.svg",
+      "sourceSha256": "d70c4d59b82e239703c59dd1dcfbdd993cf235b45e2f0ff33bf2d531a6bd3a7f",
+      "sha256": "635471da13dee1746d329a99279f66419659bad3f9ef55b67f749677200b8e0a",
+      "bytes": 203303,
+      "pathCount": 2328,
+      "rectangleCount": 4989,
+      "gradientCount": 1,
+      "runtime": {
+        "file": "corner-rune.webp",
+        "sha256": "949231ed1a4132d01c73c011b15eac2e980a5ad9eebd57dfb7a0b96f2acf5f40",
+        "bytes": 10416,
+        "width": 214,
+        "height": 224
+      }
+    },
+    {
+      "id": "divider-gold",
+      "sheet": "18-insegne-rune-ornamenti.svg",
+      "rect": [
+        20,
+        478,
+        436,
+        51
+      ],
+      "role": "Separatore oro",
+      "file": "divider-gold.svg",
+      "sourceSha256": "d70c4d59b82e239703c59dd1dcfbdd993cf235b45e2f0ff33bf2d531a6bd3a7f",
+      "sha256": "36d1035c68fb147576168aef30583179f3d6a109f97c529f27748ec47fa011eb",
+      "bytes": 291464,
+      "pathCount": 2748,
+      "rectangleCount": 9417,
+      "gradientCount": 0,
+      "runtime": {
+        "file": "divider-gold.webp",
+        "sha256": "6b6ceffdace40a8d8345da728496c98ea545ab3fbe4e68520000893ed88b4c8b",
+        "bytes": 23698,
+        "width": 872,
+        "height": 102
+      }
+    },
+    {
+      "id": "type-normal",
+      "sheet": "02-simboli-elementali.svg",
+      "rect": [
+        20,
+        10,
+        414,
+        420
+      ],
+      "role": "Tipo Normale",
+      "file": "type-normal.svg",
+      "sourceSha256": "a4efb426914eb1e81ffe021014c5ba7ccb7bea34f8dd2b6ce6722a9c96bcaf4e",
+      "sha256": "e3024d20a75e35f5b2b2b5f7923585eda88471dbe857548ed2508699c06138e1",
+      "bytes": 1930612,
+      "pathCount": 15794,
+      "rectangleCount": 64308,
+      "gradientCount": 402,
+      "runtime": {
+        "file": "type-normal.webp",
+        "sha256": "328b6efb573721e9c9b741cc50f41edc287ae06313a31c74ca77c25394aa43c3",
+        "bytes": 125536,
+        "width": 828,
+        "height": 840
+      }
+    },
+    {
+      "id": "type-fire",
+      "sheet": "02-simboli-elementali.svg",
+      "rect": [
+        458,
+        10,
+        414,
+        420
+      ],
+      "role": "Tipo Fuoco",
+      "file": "type-fire.svg",
+      "sourceSha256": "a4efb426914eb1e81ffe021014c5ba7ccb7bea34f8dd2b6ce6722a9c96bcaf4e",
+      "sha256": "0507253669760fe3535fe433bf40571c1cca667c5735b36108fd6ed408a5e6c9",
+      "bytes": 2103557,
+      "pathCount": 17642,
+      "rectangleCount": 69093,
+      "gradientCount": 375,
+      "runtime": {
+        "file": "type-fire.webp",
+        "sha256": "85fc52d5741b54cc858da9e0d06f07b9eb81cd32b36c1b4ae424f2e12a9212de",
+        "bytes": 129752,
+        "width": 828,
+        "height": 840
+      }
+    },
+    {
+      "id": "type-water",
+      "sheet": "02-simboli-elementali.svg",
+      "rect": [
+        896,
+        10,
+        414,
+        420
+      ],
+      "role": "Tipo Acqua",
+      "file": "type-water.svg",
+      "sourceSha256": "a4efb426914eb1e81ffe021014c5ba7ccb7bea34f8dd2b6ce6722a9c96bcaf4e",
+      "sha256": "e643b8500335fc17d2eff0f2eca58edf0ed3d31b6d6c573c4eaef24832b17bf0",
+      "bytes": 2191758,
+      "pathCount": 18575,
+      "rectangleCount": 69036,
+      "gradientCount": 307,
+      "runtime": {
+        "file": "type-water.webp",
+        "sha256": "1788cff407dae5b5c1afbe800202dda75ad18cacbca2ae439ca5a89c8e6d1154",
+        "bytes": 122030,
+        "width": 828,
+        "height": 840
+      }
+    },
+    {
+      "id": "type-grass",
+      "sheet": "02-simboli-elementali.svg",
+      "rect": [
+        1334,
+        10,
+        414,
+        420
+      ],
+      "role": "Tipo Erba",
+      "file": "type-grass.svg",
+      "sourceSha256": "a4efb426914eb1e81ffe021014c5ba7ccb7bea34f8dd2b6ce6722a9c96bcaf4e",
+      "sha256": "de3a4557b3c5c4bb9f6cb3f705c44acd93b6dbb1a0015e5cb3f045ada0625fee",
+      "bytes": 2359124,
+      "pathCount": 22275,
+      "rectangleCount": 66537,
+      "gradientCount": 321,
+      "runtime": {
+        "file": "type-grass.webp",
+        "sha256": "3d4621c35e70f7ec5a5399b005c62dc2c5bee034d7c738214bededd26ebdcc12",
+        "bytes": 126216,
+        "width": 828,
+        "height": 840
+      }
+    },
+    {
+      "id": "type-electric",
+      "sheet": "02-simboli-elementali.svg",
+      "rect": [
+        20,
+        449,
+        414,
+        420
+      ],
+      "role": "Tipo Elettro",
+      "file": "type-electric.svg",
+      "sourceSha256": "a4efb426914eb1e81ffe021014c5ba7ccb7bea34f8dd2b6ce6722a9c96bcaf4e",
+      "sha256": "432b8910cf16340e38951d68e8812622993e02c227707a4918b20f5df7113eed",
+      "bytes": 1936189,
+      "pathCount": 15260,
+      "rectangleCount": 66785,
+      "gradientCount": 334,
+      "runtime": {
+        "file": "type-electric.webp",
+        "sha256": "ed6ec157af36ba227e298f8613554374e3adb731b1f00cd8bcfdd69c049e4d2b",
+        "bytes": 129744,
+        "width": 828,
+        "height": 840
+      }
+    },
+    {
+      "id": "type-earth",
+      "sheet": "02-simboli-elementali.svg",
+      "rect": [
+        458,
+        449,
+        414,
+        420
+      ],
+      "role": "Tipo Terra",
+      "file": "type-earth.svg",
+      "sourceSha256": "a4efb426914eb1e81ffe021014c5ba7ccb7bea34f8dd2b6ce6722a9c96bcaf4e",
+      "sha256": "6c61d4a47eb88794f3a731f1372fe338b5c1a45b4fc7a3ef1b51261aa48c9b45",
+      "bytes": 1978849,
+      "pathCount": 16231,
+      "rectangleCount": 66441,
+      "gradientCount": 288,
+      "runtime": {
+        "file": "type-earth.webp",
+        "sha256": "b69694d8fb16d0162a7007f1e078c4ef6c784687feebf92401c99eaa83c27f4c",
+        "bytes": 130652,
+        "width": 828,
+        "height": 840
+      }
+    },
+    {
+      "id": "type-dark",
+      "sheet": "02-simboli-elementali.svg",
+      "rect": [
+        896,
+        449,
+        414,
+        420
+      ],
+      "role": "Tipo Oscurità",
+      "file": "type-dark.svg",
+      "sourceSha256": "a4efb426914eb1e81ffe021014c5ba7ccb7bea34f8dd2b6ce6722a9c96bcaf4e",
+      "sha256": "2be66ee74091eca5ed7ea69376f6da01edde71cf424129dc9910e078ef51f7ce",
+      "bytes": 2324879,
+      "pathCount": 21940,
+      "rectangleCount": 65543,
+      "gradientCount": 342,
+      "runtime": {
+        "file": "type-dark.webp",
+        "sha256": "4c452f286c3a258e68767d1ada882e5225337ace6d0eeb649481eb6050bbcfd7",
+        "bytes": 122218,
+        "width": 828,
+        "height": 840
+      }
+    },
+    {
+      "id": "type-psychic",
+      "sheet": "02-simboli-elementali.svg",
+      "rect": [
+        1334,
+        449,
+        414,
+        420
+      ],
+      "role": "Tipo Psico",
+      "file": "type-psychic.svg",
+      "sourceSha256": "a4efb426914eb1e81ffe021014c5ba7ccb7bea34f8dd2b6ce6722a9c96bcaf4e",
+      "sha256": "93a2eba908d933029c4640adbecacae51edba01b5a64a216e9c68c134b41c5fd",
+      "bytes": 2446256,
+      "pathCount": 22689,
+      "rectangleCount": 70660,
+      "gradientCount": 268,
+      "runtime": {
+        "file": "type-psychic.webp",
+        "sha256": "d0f29e8cdaea16b0cb655a8118483406632b0ba404325b7816d91f2c3cd62fb0",
+        "bytes": 134224,
+        "width": 828,
+        "height": 840
+      }
+    },
+    {
+      "id": "medal-1",
+      "sheet": "01-medaglie-palestra.svg",
+      "rect": [
+        22,
+        6,
+        430,
+        434
+      ],
+      "role": "Medaglia 1",
+      "file": "medal-1.svg",
+      "sourceSha256": "d63fc94025875d8c1498d8f0aa639ae5167f9dc89dd74256e57feaa00191ef73",
+      "sha256": "8fadb816922e4dc2df057800ef17ade231919b41e96a6b5c050e0fff90687453",
+      "bytes": 2398441,
+      "pathCount": 23031,
+      "rectangleCount": 75045,
+      "gradientCount": 55,
+      "runtime": {
+        "file": "medal-1.webp",
+        "sha256": "e7e1dbe4735b6b9111973dab8e5081b431d1fd961ae64da5a07be4c9e2140d07",
+        "bytes": 149184,
+        "width": 860,
+        "height": 868
+      }
+    },
+    {
+      "id": "medal-2",
+      "sheet": "01-medaglie-palestra.svg",
+      "rect": [
+        453,
+        6,
+        430,
+        434
+      ],
+      "role": "Medaglia 2",
+      "file": "medal-2.svg",
+      "sourceSha256": "d63fc94025875d8c1498d8f0aa639ae5167f9dc89dd74256e57feaa00191ef73",
+      "sha256": "1e0d719a23be9c16c138793518ebd9bffbb1e058da3adbfbeb34beaec77c8a9f",
+      "bytes": 2499296,
+      "pathCount": 25346,
+      "rectangleCount": 73979,
+      "gradientCount": 12,
+      "runtime": {
+        "file": "medal-2.webp",
+        "sha256": "ce8a4ecdd85be19346cc8a7fab7ce6b6fcc7294362f71e86bbc0af7335a7e9f3",
+        "bytes": 136960,
+        "width": 860,
+        "height": 868
+      }
+    },
+    {
+      "id": "medal-3",
+      "sheet": "01-medaglie-palestra.svg",
+      "rect": [
+        884,
+        6,
+        430,
+        434
+      ],
+      "role": "Medaglia 3",
+      "file": "medal-3.svg",
+      "sourceSha256": "d63fc94025875d8c1498d8f0aa639ae5167f9dc89dd74256e57feaa00191ef73",
+      "sha256": "8a04f8ef2990b57eb822bafcc5829475522805cc7bc44ead2bb4893536f1f4ae",
+      "bytes": 2019121,
+      "pathCount": 18900,
+      "rectangleCount": 61152,
+      "gradientCount": 28,
+      "runtime": {
+        "file": "medal-3.webp",
+        "sha256": "9da5853617be2b81c3fe807b077f265b42507eae52b4dacf9588af1a83ffbce6",
+        "bytes": 133352,
+        "width": 860,
+        "height": 868
+      }
+    },
+    {
+      "id": "medal-4",
+      "sheet": "01-medaglie-palestra.svg",
+      "rect": [
+        1315,
+        6,
+        430,
+        434
+      ],
+      "role": "Medaglia 4",
+      "file": "medal-4.svg",
+      "sourceSha256": "d63fc94025875d8c1498d8f0aa639ae5167f9dc89dd74256e57feaa00191ef73",
+      "sha256": "33a90f40994232f5ad50d4b7eca76fddd740ef7b40fcee214d87e85eaa60b555",
+      "bytes": 2262331,
+      "pathCount": 21580,
+      "rectangleCount": 66914,
+      "gradientCount": 34,
+      "runtime": {
+        "file": "medal-4.webp",
+        "sha256": "5a8c68779bce1dbd60c4b11442eeeadd27b848ea0a1522fd52e4d864b6950bbc",
+        "bytes": 130964,
+        "width": 860,
+        "height": 868
+      }
+    },
+    {
+      "id": "medal-5",
+      "sheet": "01-medaglie-palestra.svg",
+      "rect": [
+        22,
+        443,
+        430,
+        434
+      ],
+      "role": "Medaglia 5",
+      "file": "medal-5.svg",
+      "sourceSha256": "d63fc94025875d8c1498d8f0aa639ae5167f9dc89dd74256e57feaa00191ef73",
+      "sha256": "f05dff0cc2e422ed6813824d38e1b170c413216d6dc93b857b2dad3da7b42f52",
+      "bytes": 2107384,
+      "pathCount": 19205,
+      "rectangleCount": 69422,
+      "gradientCount": 20,
+      "runtime": {
+        "file": "medal-5.webp",
+        "sha256": "305085426f8ab0fc499ecbccd3da5aea5c9bf5d5341713cdf7a27ee63d8c622c",
+        "bytes": 128924,
+        "width": 860,
+        "height": 868
+      }
+    },
+    {
+      "id": "medal-6",
+      "sheet": "01-medaglie-palestra.svg",
+      "rect": [
+        453,
+        443,
+        430,
+        434
+      ],
+      "role": "Medaglia 6",
+      "file": "medal-6.svg",
+      "sourceSha256": "d63fc94025875d8c1498d8f0aa639ae5167f9dc89dd74256e57feaa00191ef73",
+      "sha256": "580076aac2572c896bc65595ab30e629ae9bd15bb2d06a8e967c625a61204150",
+      "bytes": 2192943,
+      "pathCount": 20047,
+      "rectangleCount": 71022,
+      "gradientCount": 61,
+      "runtime": {
+        "file": "medal-6.webp",
+        "sha256": "cd3aac332160b950ca46d34e31716f02a521aabc3c88c6db239ddb056ba13a20",
+        "bytes": 148834,
+        "width": 860,
+        "height": 868
+      }
+    },
+    {
+      "id": "medal-7",
+      "sheet": "01-medaglie-palestra.svg",
+      "rect": [
+        884,
+        443,
+        430,
+        434
+      ],
+      "role": "Medaglia 7",
+      "file": "medal-7.svg",
+      "sourceSha256": "d63fc94025875d8c1498d8f0aa639ae5167f9dc89dd74256e57feaa00191ef73",
+      "sha256": "69f96c3698dd672857bbbb337fe8a5ee4386a39e5497f6cc146e6ea3a77842b1",
+      "bytes": 2669409,
+      "pathCount": 26994,
+      "rectangleCount": 75054,
+      "gradientCount": 8,
+      "runtime": {
+        "file": "medal-7.webp",
+        "sha256": "3d6da259c43ac339f0ab0a343031b8f624472424de82f39ff0d272e54f64ea2a",
+        "bytes": 149840,
+        "width": 860,
+        "height": 868
+      }
+    },
+    {
+      "id": "medal-8",
+      "sheet": "01-medaglie-palestra.svg",
+      "rect": [
+        1315,
+        443,
+        430,
+        434
+      ],
+      "role": "Medaglia 8",
+      "file": "medal-8.svg",
+      "sourceSha256": "d63fc94025875d8c1498d8f0aa639ae5167f9dc89dd74256e57feaa00191ef73",
+      "sha256": "9b2febe161ef7806b251a49670b5e4d865f094eb8af4b41c46273c3fee6fa5a8",
+      "bytes": 2069318,
+      "pathCount": 12935,
+      "rectangleCount": 85464,
+      "gradientCount": 21,
+      "runtime": {
+        "file": "medal-8.webp",
+        "sha256": "7216d2e3a13e06d5ca0ea7f2b3d1db1171b2a93c1772231c6c464e2a5b7c9957",
+        "bytes": 158228,
+        "width": 860,
+        "height": 868
+      }
+    }
+  ]
+}

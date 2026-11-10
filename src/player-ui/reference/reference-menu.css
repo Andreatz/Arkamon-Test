@@ -1,0 +1,55 @@
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .ref-main-menu {display:grid;grid-template-columns:minmax(300px,.9fr) minmax(0,1.65fr);gap:28px;height:100%;min-height:0;padding:6px 0}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .ref-trainers {display:flex;flex-direction:column;gap:14px;min-height:0}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .ref-trainer-card {background:var(--ref-panel);border:1px solid var(--ref-gold);border-radius:4px;box-shadow:inset 0 0 0 4px #081b2d,inset 0 0 0 5px #b8965d88,0 8px 24px #0004;position:relative;overflow:hidden;padding:14px}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .ref-trainer-card::after {content:'◇';position:absolute;top:3px;right:9px;color:var(--ref-gold);font:25px Georgia,serif;pointer-events:none}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .ref-trainer-card.is-primary {flex:1;min-height:0;display:flex;flex-direction:column;justify-content:space-between}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .ref-trainer-identity {display:grid;grid-template-columns:minmax(90px,.85fr) minmax(0,1.1fr);gap:14px;min-height:0;flex:1;align-items:center}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .ref-trainer-portrait {position:relative;min-width:0;display:flex;align-items:center;justify-content:center;overflow:hidden;background:radial-gradient(ellipse,#16758e66,transparent 70%);height:100%;min-height:100px}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .ref-trainer-portrait img {width:100%;max-height:290px;object-fit:contain;filter:drop-shadow(0 6px 8px #0007)}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .ref-trainer-copy {min-width:0;padding:12px 0}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .ref-trainer-card h2 {font:clamp(24px,2.5vw,36px)/1.1 Georgia,serif;margin:3px 0 14px;color:var(--ref-ink);overflow-wrap:anywhere}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .ref-trainer-copy>p {display:flex;align-items:center;gap:6px;font:17px Georgia,serif;margin:0 0 20px;color:#c2d7df}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .ref-medals {display:flex;gap:5px;flex-wrap:wrap;margin:8px 0}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .ref-medals>span {width:23px;height:23px;border:1px solid #b5a789;border-radius:50%;display:grid;place-items:center;font:11px Georgia,serif;color:#c9c8c0;background:#091b2c}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .ref-medals>span[data-earned=true] {background:radial-gradient(circle at 35% 25%,#ffdf8e,#8b5725);color:#fff4c5;border-color:#f8d292;box-shadow:inset 0 0 0 2px #784f2880}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .ref-medal-count {font:14px Georgia,serif;color:#d2d9dc}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .ref-trainer-coins {display:flex;align-items:center;gap:9px;font:30px Georgia,serif;margin-top:22px;padding-top:16px;border-top:1px solid #bb9b5b66}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .ref-trainer-coins .pu-kit-icon {color:var(--ref-gold);width:30px;height:30px}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .ref-trainer-team {display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:5px;flex:none;border-top:1px solid #d5b57899;padding-top:10px;margin-top:10px}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .ref-trainer-team>span {height:83px;background:linear-gradient(#123754,#071c30);border:1px solid #8da7b0;border-radius:5px}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .ref-trainer-team .pu-creature-portrait {width:100%;height:100%;display:block;min-height:0}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .ref-trainer-team>p {grid-column:1/-1;margin:0;padding:12px}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .ref-trainer-card.is-secondary {display:grid;grid-template-columns:85px 1fr;gap:12px;min-height:120px;border-color:#b9a0cc;background:linear-gradient(115deg,#35254ee8,#0a1d32f5 65%);flex:none}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .ref-trainer-card.is-secondary h2 {font-size:26px;margin:3px 0 5px}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .ref-trainer-card.is-secondary .ref-trainer-portrait {min-height:0}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .ref-menu-utilities {display:flex;gap:8px;flex:none}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .ref-menu-utilities>button {display:flex;align-items:center;justify-content:center;gap:7px;color:var(--ref-ink);font:15px Georgia,serif;min-height:42px;border:1px solid var(--ref-gold-dim);border-radius:5px;background:#092239ed;flex:1}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .ref-gm-note {display:flex;align-items:center;gap:9px;margin:0;font:13px Georgia,serif;color:#e3c799;flex:none}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .ref-menu-grid {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));grid-template-rows:repeat(3,minmax(0,1fr));gap:14px;min-height:0}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .ref-menu-tile {position:relative;display:flex;align-items:center;justify-content:center;flex-direction:column;min-height:0;padding:12px;gap:0;border:1px solid var(--ref-gold);border-radius:3px;background:radial-gradient(ellipse at center,#17425b55,transparent 70%),linear-gradient(145deg,#0c2b43fa,#051528f5);box-shadow:inset 0 0 0 3px #081a2c,inset 0 0 0 4px #a58a5f70,0 4px 10px #0004;overflow:visible;text-align:center}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .ref-menu-tile::before {content:'';display:block!important;position:absolute;inset:7px;border:1px solid #4b7e9670;border-radius:9px 0;pointer-events:none;background:linear-gradient(135deg,#e4bf7f 0 2px,transparent 2px) top left/12px 12px no-repeat,linear-gradient(315deg,#e4bf7f 0 2px,transparent 2px) bottom right/12px 12px no-repeat}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .ref-menu-tile::after {content:'◇';position:absolute;top:4px;right:9px;color:#c9a669;font:22px Georgia,serif;pointer-events:none}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .ref-menu-tile:is(:hover,:focus-visible) {background:radial-gradient(ellipse at 50% 80%,#028aa877,transparent 80%),#082942;border-color:#84f2ff;box-shadow:inset 0 0 0 2px #15748e,inset 0 0 18px #50eaff50,0 0 16px #49e8ff90;transform:translateY(-2px);outline:0}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .ref-menu-tile h2 {font:clamp(22px,2.2vw,32px)/1.1 Georgia,serif;color:#faf0dc;margin:2px 0 0;text-shadow:0 2px 3px #0007}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .ref-menu-tile>.ref-emblem {width:min(76%,155px);height:auto;max-height:74%;filter:drop-shadow(0 7px 6px #0007);flex:1;min-height:0}
+@media(max-height:820px) and (min-width:901px) {
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .ref-main-menu {gap:22px;padding:0}
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .ref-trainers {gap:10px}
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .ref-trainer-team>span {height:65px}
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .ref-trainer-card.is-secondary {min-height:106px;padding:10px 14px}
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .ref-trainer-copy>p {margin-bottom:10px}
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .ref-trainer-coins {margin-top:12px;padding-top:10px}
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .ref-menu-tile>.ref-emblem {max-height:70%;max-width:120px}
+}
+@media(max-width:900px) {
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .ref-main-menu {display:flex;flex-direction:column;gap:18px;height:auto}
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .ref-trainer-card.is-primary {min-height:280px}
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .ref-menu-grid {grid-template-columns:repeat(3,minmax(0,1fr));grid-template-rows:repeat(3,150px);gap:8px}
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .ref-menu-tile {padding:10px}
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .ref-menu-tile h2 {font-size:18px}
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .ref-trainer-team>span {height:70px}
+}
+@media(max-width:600px) {
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .ref-menu-grid {grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:none;grid-auto-rows:160px}
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .ref-menu-tile h2 {font-size:20px;max-width:100%;overflow-wrap:anywhere}
+}

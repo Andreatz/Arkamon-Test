@@ -1,0 +1,19 @@
+.battle-audience-overlay { position:absolute; inset:0; z-index:70; display:flex; align-items:center; justify-content:center; padding:16px; background:rgba(5,9,15,.83); }
+.battle-audience-card { width:min(880px,100%); max-height:100%; overflow:auto; padding:22px; border:2px solid var(--arka-primary); border-radius:18px; background:var(--arka-surface); color:var(--arka-text); box-shadow:0 16px 70px #0009; font-family:system-ui,sans-serif; }
+.battle-audience-card header { display:flex; align-items:center; justify-content:space-between; gap:16px; }
+.battle-audience-card h2 { margin:0 0 8px; font-size:clamp(18px,2.4vw,30px); font-weight:900; }
+.battle-audience-card p { margin:6px 0; }
+.battle-audience-channel { color:var(--arka-primary-hover); font-weight:800; }
+.battle-audience-timer { min-width:80px; text-align:center; padding:14px; border-radius:12px; background:var(--arka-bg); font-size:30px; }
+.battle-audience-content { display:grid; grid-template-columns:minmax(0,1fr) 210px; gap:22px; margin:20px 0; }
+.battle-audience-options { min-width:0; }
+.battle-audience-option { display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:10px; padding:14px; border:1px solid var(--arka-border); border-radius:12px; background:var(--arka-bg); }
+.battle-audience-option strong,.battle-audience-option span { display:block; }
+.battle-audience-option span { margin-top:5px; font-size:12px; color:var(--arka-text-muted); }
+.battle-audience-option b { white-space:nowrap; color:var(--arka-primary-hover); }
+.battle-audience-rules { font-size:12px; color:var(--arka-text-muted); line-height:1.45; }
+.battle-audience-card aside { align-self:center; text-align:center; }
+.battle-audience-card aside img { max-width:100%; height:auto; }
+.battle-audience-card footer { display:flex; flex-wrap:wrap; gap:12px; }
+.battle-audience-card footer button { padding:12px 16px; font-family:inherit; font-weight:800; }
+@media(max-width:650px) { .battle-audience-overlay { padding:7px; }.battle-audience-card{padding:14px;}.battle-audience-content{grid-template-columns:minmax(0,1fr) 130px;gap:10px;margin:12px 0;}.battle-audience-option{padding:10px;}.battle-audience-option b{font-size:11px;}.battle-audience-timer{min-width:55px;padding:9px;font-size:22px;}.battle-audience-card footer button{padding:10px;font-size:11px;}.battle-audience-rules{font-size:10px;} }

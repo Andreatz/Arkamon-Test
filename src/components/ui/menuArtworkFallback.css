@@ -1,0 +1,57 @@
+/* Usable base controls while the authored menu SVGs are suspended. */
+:is(.game-button,.rpg-command,.studio-command)[data-menu-artwork="css"] {
+  border: 1px solid var(--arka-control-border, #6d8096);
+  border-radius: var(--arka-control-radius, 8px);
+  background: var(--arka-control-background, #1a293b);
+  color: var(--arka-control-text, #f2f6fa);
+}
+:is(.game-button,.rpg-command,.studio-command)[data-menu-artwork="css"]:is([data-game-button="primary"],[data-selected="true"]) {
+  border-color: var(--arka-control-selected-border, #9ed1e7);
+  background: var(--arka-control-selected-background, #294a60);
+}
+:is(.game-button,.rpg-command)[data-menu-artwork="css"][data-game-button="danger"] {
+  border-color: #aa7275;
+  background: #422d35;
+  color: #ffe2e2;
+}
+.studio-dialog-close[data-menu-artwork="css"] {
+  border: 1px solid var(--arka-control-border, #6d8096);
+  border-radius: var(--arka-control-radius, 8px);
+  color: var(--arka-control-text, #f2f6fa);
+  background: var(--arka-control-background, #1a293b);
+  font: 400 28px/1 sans-serif;
+}
+.pu-kit-icon-glyph {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+  border: 1px solid currentColor;
+  border-radius: 25%;
+  font-family: sans-serif;
+  font-size: .65em;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: -.04em;
+}
+.pu-shell .pu-button[data-menu-artwork="css"] {
+  border: 1px solid var(--arka-control-border, #6d8096);
+  border-radius: var(--arka-control-radius, 8px);
+  background: var(--arka-control-background, #1a293b);
+}
+.pu-shell .pu-button[data-menu-artwork="css"].is-active {
+  border-color: var(--arka-control-selected-border, #9ed1e7);
+  background: var(--arka-control-selected-background, #294a60);
+}
+.pu-artwork-symbol { display: grid; place-items: center; width: 100%; height: 100%; font: 500 24px/1 sans-serif; }
+.pu-gym-badge-symbol { display: grid; place-items: center; width: 100%; height: 100%; border: 1px solid currentColor; border-radius: 50%; font-size: 16px; font-variant-numeric: tabular-nums; }
+.pu-gym-badges > :not(.earned) > .pu-gym-badge-symbol { border-style: dashed; }
+.game-audio-toggle[data-menu-artwork="css"] > input {
+  position: static;
+  width: 24px;
+  height: 24px;
+  opacity: 1;
+  accent-color: var(--arka-control-selected-border, #9ed1e7);
+  flex: none;
+}
+.game-audio-toggle[data-menu-artwork="css"] > input:focus-visible { outline: 3px solid currentColor; outline-offset: 3px; }

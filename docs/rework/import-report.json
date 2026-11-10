@@ -1,0 +1,1709 @@
+{
+  "version": 1,
+  "source": "Andreatz/Arkamon-Beta",
+  "sourceRevision": "62d24f0361611daff1ca5211c444fa4acefc196d",
+  "copiedFiles": 1876,
+  "copiedMiB": 661.38,
+  "staticMiB": 650,
+  "folders": [
+    "src",
+    "scripts",
+    "tests",
+    "e2e",
+    "e2e-desktop",
+    "e2e-release",
+    "e2e-native-release",
+    "public/ui",
+    "public/maps",
+    "public/backgrounds",
+    "public/assets",
+    "public/sprites/front_sprites",
+    "public/sprites/back_sprites",
+    "public/sprites/small_sprites",
+    "public/audio",
+    "public/audio-lab"
+  ],
+  "omitted": [
+    {
+      "path": "public/sprites/front_sprites/29.png",
+      "bytes": 2407133,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/front_sprites/3.png",
+      "bytes": 2087257,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/front_sprites/30.png",
+      "bytes": 1744817,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/front_sprites/31.png",
+      "bytes": 1526393,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/front_sprites/32.png",
+      "bytes": 2164598,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/front_sprites/33.png",
+      "bytes": 2466332,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/front_sprites/34.png",
+      "bytes": 2094076,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/front_sprites/35.png",
+      "bytes": 2674952,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/front_sprites/36.png",
+      "bytes": 1992207,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/front_sprites/37.png",
+      "bytes": 2437292,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/front_sprites/38.png",
+      "bytes": 3444390,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/front_sprites/39.png",
+      "bytes": 2825406,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/front_sprites/4.png",
+      "bytes": 2876906,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/front_sprites/40.png",
+      "bytes": 1799777,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/front_sprites/41.png",
+      "bytes": 2594882,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/front_sprites/42.png",
+      "bytes": 1726236,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/front_sprites/43.png",
+      "bytes": 1483759,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/front_sprites/44.png",
+      "bytes": 1844682,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/front_sprites/45.png",
+      "bytes": 1584014,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/front_sprites/46.png",
+      "bytes": 2307955,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/front_sprites/47.png",
+      "bytes": 1489624,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/front_sprites/48.png",
+      "bytes": 2491753,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/front_sprites/49.png",
+      "bytes": 1814457,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/front_sprites/5.png",
+      "bytes": 1680402,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/front_sprites/50.png",
+      "bytes": 2120870,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/front_sprites/51.png",
+      "bytes": 3367419,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/front_sprites/52.png",
+      "bytes": 2686755,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/front_sprites/53.png",
+      "bytes": 3071350,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/front_sprites/54.png",
+      "bytes": 3317387,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/front_sprites/55.png",
+      "bytes": 1500338,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/front_sprites/56.png",
+      "bytes": 1871684,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/front_sprites/57.png",
+      "bytes": 2701807,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/front_sprites/58.png",
+      "bytes": 2231158,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/front_sprites/59.png",
+      "bytes": 1810016,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/front_sprites/6.png",
+      "bytes": 1970496,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/front_sprites/60.png",
+      "bytes": 3278995,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/front_sprites/61.png",
+      "bytes": 2801936,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/front_sprites/62.png",
+      "bytes": 2532081,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/front_sprites/63.png",
+      "bytes": 2652719,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/front_sprites/64.png",
+      "bytes": 2710814,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/front_sprites/65.png",
+      "bytes": 2664635,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/front_sprites/66.png",
+      "bytes": 2967745,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/front_sprites/67.png",
+      "bytes": 2464031,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/front_sprites/68.png",
+      "bytes": 2475289,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/front_sprites/69.png",
+      "bytes": 2426304,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/front_sprites/7.png",
+      "bytes": 2426126,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/front_sprites/70.png",
+      "bytes": 3532595,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/front_sprites/71.png",
+      "bytes": 1957357,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/front_sprites/72.png",
+      "bytes": 2709961,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/front_sprites/73.png",
+      "bytes": 1076428,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/front_sprites/74.png",
+      "bytes": 1723250,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/front_sprites/75.png",
+      "bytes": 2718239,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/front_sprites/76.png",
+      "bytes": 3403550,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/front_sprites/77.png",
+      "bytes": 1566490,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/front_sprites/78.png",
+      "bytes": 2128917,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/front_sprites/79.png",
+      "bytes": 1458277,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/front_sprites/8.png",
+      "bytes": 1912587,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/front_sprites/80.png",
+      "bytes": 1925353,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/front_sprites/81.png",
+      "bytes": 2364653,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/front_sprites/82.png",
+      "bytes": 2660156,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/front_sprites/83.png",
+      "bytes": 2567602,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/front_sprites/84.png",
+      "bytes": 2075538,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/front_sprites/85.png",
+      "bytes": 2583645,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/front_sprites/86.png",
+      "bytes": 1862191,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/front_sprites/87.png",
+      "bytes": 2404259,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/front_sprites/88.png",
+      "bytes": 1914007,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/front_sprites/89.png",
+      "bytes": 1822782,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/front_sprites/9.png",
+      "bytes": 1803086,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/front_sprites/90.png",
+      "bytes": 1784966,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/front_sprites/91.png",
+      "bytes": 1899811,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/front_sprites/92.png",
+      "bytes": 2337846,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/front_sprites/93.png",
+      "bytes": 2874607,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/front_sprites/94.png",
+      "bytes": 2941931,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/front_sprites/95.png",
+      "bytes": 1876226,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/front_sprites/96.png",
+      "bytes": 2070168,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/front_sprites/97.png",
+      "bytes": 2513665,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/front_sprites/98.png",
+      "bytes": 2679410,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/front_sprites/99.png",
+      "bytes": 2112922,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/back_sprites/10.png",
+      "bytes": 661476,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/back_sprites/100.png",
+      "bytes": 417452,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/back_sprites/101.png",
+      "bytes": 493695,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/back_sprites/103.png",
+      "bytes": 764541,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/back_sprites/104.png",
+      "bytes": 624869,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/back_sprites/105.png",
+      "bytes": 491696,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/back_sprites/106.png",
+      "bytes": 426927,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/back_sprites/107.png",
+      "bytes": 719455,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/back_sprites/108.png",
+      "bytes": 741761,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/back_sprites/109.png",
+      "bytes": 581124,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/back_sprites/11.png",
+      "bytes": 633445,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/back_sprites/110.png",
+      "bytes": 517819,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/back_sprites/12.png",
+      "bytes": 535695,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/back_sprites/13.png",
+      "bytes": 622299,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/back_sprites/14.png",
+      "bytes": 1056835,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/back_sprites/15.png",
+      "bytes": 1080119,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/back_sprites/16.png",
+      "bytes": 1510864,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/back_sprites/17.png",
+      "bytes": 1012401,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/back_sprites/18.png",
+      "bytes": 953365,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/back_sprites/19.png",
+      "bytes": 1181327,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/back_sprites/2.png",
+      "bytes": 1445889,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/back_sprites/20.png",
+      "bytes": 740753,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/back_sprites/21.png",
+      "bytes": 682396,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/back_sprites/22.png",
+      "bytes": 587703,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/back_sprites/23.png",
+      "bytes": 247601,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/back_sprites/24.png",
+      "bytes": 467147,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/back_sprites/25.png",
+      "bytes": 609810,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/back_sprites/26.png",
+      "bytes": 311011,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/back_sprites/27.png",
+      "bytes": 713992,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/back_sprites/28.png",
+      "bytes": 580980,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/back_sprites/29.png",
+      "bytes": 588453,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/back_sprites/3.png",
+      "bytes": 470449,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/back_sprites/30.png",
+      "bytes": 432730,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/back_sprites/31.png",
+      "bytes": 447676,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/back_sprites/32.png",
+      "bytes": 584091,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/back_sprites/33.png",
+      "bytes": 728756,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/back_sprites/34.png",
+      "bytes": 504952,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/back_sprites/35.png",
+      "bytes": 752126,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/back_sprites/36.png",
+      "bytes": 558539,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/back_sprites/37.png",
+      "bytes": 808579,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/back_sprites/38.png",
+      "bytes": 715022,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/back_sprites/39.png",
+      "bytes": 873678,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/back_sprites/4.png",
+      "bytes": 813093,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/back_sprites/40.png",
+      "bytes": 571877,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/back_sprites/41.png",
+      "bytes": 976231,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/back_sprites/42.png",
+      "bytes": 432052,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/back_sprites/43.png",
+      "bytes": 452874,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/back_sprites/44.png",
+      "bytes": 455110,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/back_sprites/45.png",
+      "bytes": 365275,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/back_sprites/46.png",
+      "bytes": 819855,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/back_sprites/47.png",
+      "bytes": 411015,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/back_sprites/48.png",
+      "bytes": 724860,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/back_sprites/49.png",
+      "bytes": 782375,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/back_sprites/5.png",
+      "bytes": 354253,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/back_sprites/50.png",
+      "bytes": 611911,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/back_sprites/51.png",
+      "bytes": 783330,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/back_sprites/52.png",
+      "bytes": 1019665,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/back_sprites/53.png",
+      "bytes": 925234,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/back_sprites/54.png",
+      "bytes": 792489,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/back_sprites/55.png",
+      "bytes": 606088,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/back_sprites/56.png",
+      "bytes": 617999,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/back_sprites/57.png",
+      "bytes": 513761,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/back_sprites/58.png",
+      "bytes": 575871,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/back_sprites/59.png",
+      "bytes": 514757,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/back_sprites/6.png",
+      "bytes": 427079,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/back_sprites/60.png",
+      "bytes": 411509,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/back_sprites/61.png",
+      "bytes": 827684,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/back_sprites/62.png",
+      "bytes": 460369,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/back_sprites/63.png",
+      "bytes": 611249,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/back_sprites/64.png",
+      "bytes": 673290,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/back_sprites/65.png",
+      "bytes": 552768,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/back_sprites/66.png",
+      "bytes": 642085,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/back_sprites/67.png",
+      "bytes": 837828,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/back_sprites/68.png",
+      "bytes": 772949,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/back_sprites/69.png",
+      "bytes": 757610,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/back_sprites/7.png",
+      "bytes": 663286,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/back_sprites/70.png",
+      "bytes": 1029788,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/back_sprites/71.png",
+      "bytes": 643863,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/back_sprites/72.png",
+      "bytes": 594028,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/back_sprites/73.png",
+      "bytes": 772265,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/back_sprites/74.png",
+      "bytes": 595171,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/back_sprites/75.png",
+      "bytes": 838643,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/back_sprites/76.png",
+      "bytes": 974919,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/back_sprites/77.png",
+      "bytes": 618443,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/back_sprites/78.png",
+      "bytes": 678525,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/back_sprites/79.png",
+      "bytes": 584476,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/back_sprites/8.png",
+      "bytes": 610809,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/back_sprites/80.png",
+      "bytes": 525689,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/back_sprites/81.png",
+      "bytes": 598640,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/back_sprites/82.png",
+      "bytes": 793570,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/back_sprites/83.png",
+      "bytes": 784527,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/back_sprites/84.png",
+      "bytes": 719783,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/back_sprites/85.png",
+      "bytes": 758139,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/back_sprites/86.png",
+      "bytes": 540439,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/back_sprites/87.png",
+      "bytes": 801502,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/back_sprites/88.png",
+      "bytes": 633332,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/back_sprites/89.png",
+      "bytes": 596969,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/back_sprites/9.png",
+      "bytes": 478070,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/back_sprites/90.png",
+      "bytes": 577904,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/back_sprites/91.png",
+      "bytes": 737059,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/back_sprites/92.png",
+      "bytes": 407129,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/back_sprites/93.png",
+      "bytes": 757597,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/back_sprites/94.png",
+      "bytes": 614334,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/back_sprites/95.png",
+      "bytes": 463761,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/back_sprites/96.png",
+      "bytes": 497199,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/back_sprites/97.png",
+      "bytes": 717601,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/back_sprites/98.png",
+      "bytes": 867141,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/back_sprites/99.png",
+      "bytes": 387938,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/small_sprites/Sprite Small 1.png",
+      "bytes": 317729,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/small_sprites/Sprite Small 10.png",
+      "bytes": 318666,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/small_sprites/Sprite Small 100.png",
+      "bytes": 314755,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/small_sprites/Sprite Small 101.png",
+      "bytes": 342659,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/small_sprites/Sprite Small 102.png",
+      "bytes": 346284,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/small_sprites/Sprite Small 103.png",
+      "bytes": 452939,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/small_sprites/Sprite Small 104.png",
+      "bytes": 403972,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/small_sprites/Sprite Small 105.png",
+      "bytes": 298138,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/small_sprites/Sprite Small 106.png",
+      "bytes": 320220,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/small_sprites/Sprite Small 107.png",
+      "bytes": 494996,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/small_sprites/Sprite Small 108.png",
+      "bytes": 470081,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/small_sprites/Sprite Small 109.png",
+      "bytes": 432485,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/small_sprites/Sprite Small 11.png",
+      "bytes": 339817,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/small_sprites/Sprite Small 110.png",
+      "bytes": 260284,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/small_sprites/Sprite Small 12.png",
+      "bytes": 298771,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/small_sprites/Sprite Small 13.png",
+      "bytes": 528072,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/small_sprites/Sprite Small 14.png",
+      "bytes": 513704,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/small_sprites/Sprite Small 15.png",
+      "bytes": 550177,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/small_sprites/Sprite Small 16.png",
+      "bytes": 424256,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/small_sprites/Sprite Small 17.png",
+      "bytes": 500542,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/small_sprites/Sprite Small 18.png",
+      "bytes": 468031,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/small_sprites/Sprite Small 19.png",
+      "bytes": 564794,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/small_sprites/Sprite Small 2.png",
+      "bytes": 375521,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/small_sprites/Sprite Small 20.png",
+      "bytes": 460958,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/small_sprites/Sprite Small 21.png",
+      "bytes": 423617,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/small_sprites/Sprite Small 22.png",
+      "bytes": 359112,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/small_sprites/Sprite Small 23.png",
+      "bytes": 228010,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/small_sprites/Sprite Small 24.png",
+      "bytes": 343912,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/small_sprites/Sprite Small 25.png",
+      "bytes": 417855,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/small_sprites/Sprite Small 26.png",
+      "bytes": 379073,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/small_sprites/Sprite Small 27.png",
+      "bytes": 513092,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/small_sprites/Sprite Small 28.png",
+      "bytes": 440514,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/small_sprites/Sprite Small 29.png",
+      "bytes": 381837,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/small_sprites/Sprite Small 3.png",
+      "bytes": 362202,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/small_sprites/Sprite Small 30.png",
+      "bytes": 291402,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/small_sprites/Sprite Small 31.png",
+      "bytes": 295354,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/small_sprites/Sprite Small 32.png",
+      "bytes": 379281,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/small_sprites/Sprite Small 33.png",
+      "bytes": 449327,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/small_sprites/Sprite Small 34.png",
+      "bytes": 392931,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/small_sprites/Sprite Small 35.png",
+      "bytes": 469089,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/small_sprites/Sprite Small 36.png",
+      "bytes": 373380,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/small_sprites/Sprite Small 37.png",
+      "bytes": 495650,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/small_sprites/Sprite Small 38.png",
+      "bytes": 619762,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/small_sprites/Sprite Small 39.png",
+      "bytes": 452501,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/small_sprites/Sprite Small 4.png",
+      "bytes": 443459,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/small_sprites/Sprite Small 40.png",
+      "bytes": 392563,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/small_sprites/Sprite Small 41.png",
+      "bytes": 534205,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/small_sprites/Sprite Small 42.png",
+      "bytes": 354588,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/small_sprites/Sprite Small 43.png",
+      "bytes": 325773,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/small_sprites/Sprite Small 44.png",
+      "bytes": 295489,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/small_sprites/Sprite Small 45.png",
+      "bytes": 296685,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/small_sprites/Sprite Small 46.png",
+      "bytes": 441107,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/small_sprites/Sprite Small 47.png",
+      "bytes": 405573,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/small_sprites/Sprite Small 48.png",
+      "bytes": 520890,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/small_sprites/Sprite Small 49.png",
+      "bytes": 281246,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/small_sprites/Sprite Small 5.png",
+      "bytes": 251137,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/small_sprites/Sprite Small 50.png",
+      "bytes": 393633,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/small_sprites/Sprite Small 51.png",
+      "bytes": 448313,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/small_sprites/Sprite Small 52.png",
+      "bytes": 546582,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/small_sprites/Sprite Small 53.png",
+      "bytes": 504955,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/small_sprites/Sprite Small 54.png",
+      "bytes": 461940,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/small_sprites/Sprite Small 55.png",
+      "bytes": 342357,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/small_sprites/Sprite Small 56.png",
+      "bytes": 403043,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/small_sprites/Sprite Small 57.png",
+      "bytes": 505242,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/small_sprites/Sprite Small 58.png",
+      "bytes": 351268,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/small_sprites/Sprite Small 59.png",
+      "bytes": 400294,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/small_sprites/Sprite Small 6.png",
+      "bytes": 258287,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/small_sprites/Sprite Small 60.png",
+      "bytes": 544778,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/small_sprites/Sprite Small 61.png",
+      "bytes": 483218,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/small_sprites/Sprite Small 62.png",
+      "bytes": 398285,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/small_sprites/Sprite Small 63.png",
+      "bytes": 519476,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/small_sprites/Sprite Small 64.png",
+      "bytes": 366382,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/small_sprites/Sprite Small 65.png",
+      "bytes": 449091,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/small_sprites/Sprite Small 66.png",
+      "bytes": 572356,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/small_sprites/Sprite Small 67.png",
+      "bytes": 453969,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/small_sprites/Sprite Small 68.png",
+      "bytes": 467962,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/small_sprites/Sprite Small 69.png",
+      "bytes": 404416,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/small_sprites/Sprite Small 7.png",
+      "bytes": 356531,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/small_sprites/Sprite Small 70.png",
+      "bytes": 532085,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/small_sprites/Sprite Small 71.png",
+      "bytes": 449638,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/small_sprites/Sprite Small 72.png",
+      "bytes": 513651,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/small_sprites/Sprite Small 73.png",
+      "bytes": 517863,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/small_sprites/Sprite Small 74.png",
+      "bytes": 391188,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/small_sprites/Sprite Small 75.png",
+      "bytes": 499475,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/small_sprites/Sprite Small 76.png",
+      "bytes": 614756,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/small_sprites/Sprite Small 77.png",
+      "bytes": 385088,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/small_sprites/Sprite Small 78.png",
+      "bytes": 521228,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/small_sprites/Sprite Small 79.png",
+      "bytes": 310448,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/small_sprites/Sprite Small 8.png",
+      "bytes": 343556,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/small_sprites/Sprite Small 80.png",
+      "bytes": 381597,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/small_sprites/Sprite Small 81.png",
+      "bytes": 403252,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/small_sprites/Sprite Small 82.png",
+      "bytes": 576536,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/small_sprites/Sprite Small 83.png",
+      "bytes": 494179,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/small_sprites/Sprite Small 84.png",
+      "bytes": 418447,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/small_sprites/Sprite Small 85.png",
+      "bytes": 487722,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/small_sprites/Sprite Small 86.png",
+      "bytes": 377401,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/small_sprites/Sprite Small 87.png",
+      "bytes": 476053,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/small_sprites/Sprite Small 88.png",
+      "bytes": 266689,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/small_sprites/Sprite Small 89.png",
+      "bytes": 340767,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/small_sprites/Sprite Small 9.png",
+      "bytes": 242777,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/small_sprites/Sprite Small 90.png",
+      "bytes": 315909,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/small_sprites/Sprite Small 91.png",
+      "bytes": 347403,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/small_sprites/Sprite Small 92.png",
+      "bytes": 358756,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/small_sprites/Sprite Small 93.png",
+      "bytes": 437586,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/small_sprites/Sprite Small 94.png",
+      "bytes": 450507,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/small_sprites/Sprite Small 95.png",
+      "bytes": 324734,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/small_sprites/Sprite Small 96.png",
+      "bytes": 339817,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/small_sprites/Sprite Small 97.png",
+      "bytes": 486591,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/small_sprites/Sprite Small 98.png",
+      "bytes": 574309,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/sprites/small_sprites/Sprite Small 99.png",
+      "bytes": 366866,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/audio/selected/0579665730410eca.ogg",
+      "bytes": 10786,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/audio/selected/0c1ac31706ae71f8.ogg",
+      "bytes": 35624,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/audio/selected/10e8141029783069.ogg",
+      "bytes": 15688,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/audio/selected/1dd6d0b6cd752cb6.ogg",
+      "bytes": 13950,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/audio/selected/1fd802595e514267.ogg",
+      "bytes": 9339,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/audio/selected/2136f9bb83a9b08f.ogg",
+      "bytes": 15917,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/audio/selected/279cabb26458734b.ogg",
+      "bytes": 6517,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/audio/selected/343737a148d99107.ogg",
+      "bytes": 10138,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/audio/selected/3e9f30d7cb88cd2b.ogg",
+      "bytes": 11330,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/audio/selected/44e48f20095e28f4.ogg",
+      "bytes": 33120,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/audio/selected/52bd9ddb6f8875be.ogg",
+      "bytes": 5456,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/audio/selected/56873cec3e45687b.ogg",
+      "bytes": 18367,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/audio/selected/5ed763bd52859384.ogg",
+      "bytes": 12093,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/audio/selected/6666389b47450020.ogg",
+      "bytes": 18309,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/audio/selected/699f764beacfecfb.ogg",
+      "bytes": 25914,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/audio/selected/6d9a0f77e5d61ed2.ogg",
+      "bytes": 12443,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/audio/selected/7190caeeb27e407e.ogg",
+      "bytes": 21739,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/audio/selected/78551a4cba7b8cb9.ogg",
+      "bytes": 13022,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/audio/selected/789f46428118b50e.ogg",
+      "bytes": 7453,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/audio/selected/81c4a5cd050fd055.ogg",
+      "bytes": 19045,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/audio/selected/841801a2caebc0b6.ogg",
+      "bytes": 16399,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/audio/selected/9262a5b98f7cbed0.ogg",
+      "bytes": 13920,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/audio/selected/9661121fbf6619fb.ogg",
+      "bytes": 14976,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/audio/selected/9c505d5a3955224c.ogg",
+      "bytes": 18946,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/audio/selected/b94a642c6ebec41a.ogg",
+      "bytes": 16559,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/audio/selected/c12857598aaae1ed.ogg",
+      "bytes": 55608,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/audio/selected/c6273b59ef8a4271.ogg",
+      "bytes": 6484,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/audio/selected/d1039331ee9de790.ogg",
+      "bytes": 8268,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/audio/selected/dbb6f59587891cec.ogg",
+      "bytes": 6745,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/audio/selected/df8921a9283fcc98.ogg",
+      "bytes": 5259,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/audio/selected/e5cc1e6f26709a98.ogg",
+      "bytes": 18696,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/audio/selected/ed1a7af99afeb249.ogg",
+      "bytes": 15148,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/audio/selected/ed228a2a2f0f3a50.ogg",
+      "bytes": 6280,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/audio/selected/ee7798ec114d5b68.ogg",
+      "bytes": 31680,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/audio/selected/f464aee60d4bf089.ogg",
+      "bytes": 4982,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/audio/selected/f5fbd97277b532ee.ogg",
+      "bytes": 14140,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/audio/selected/f62097a32e8686dc.ogg",
+      "bytes": 19348,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/audio/selected/f8af9da9379a6fba.ogg",
+      "bytes": 21720,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/audio/selected/fd68437f1d735f29.ogg",
+      "bytes": 25565,
+      "reason": "size-budget"
+    },
+    {
+      "path": "public/audio-lab/catalog.json",
+      "bytes": 1617228,
+      "reason": "size-budget"
+    }
+  ],
+  "remoteMedia": "https://raw.githubusercontent.com/Andreatz/Arkamon-Beta/62d24f0361611daff1ca5211c444fa4acefc196d/public/"
+}

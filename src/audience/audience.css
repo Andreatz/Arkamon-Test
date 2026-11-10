@@ -1,0 +1,24 @@
+.audience-admin { display: grid; gap: 1rem; }
+.audience-admin h3 { font-size: 1.2rem; font-weight: 800; margin-bottom: .5rem; }
+.audience-admin h4 { font-size: 1rem; font-weight: 800; }
+.audience-admin p { line-height: 1.5; }
+.audience-connect-form, .audience-settings { display: grid; gap: .75rem; border: 1px solid var(--arka-border); padding: 1rem; border-radius: .6rem; }
+.audience-admin label { display: grid; gap: .4rem; font-weight: 700; }
+.audience-admin input:not([type=checkbox]) { min-width: 0; width: 100%; border: 1px solid var(--arka-border); border-radius: .4rem; padding: .6rem; background: var(--arka-bg); color: var(--arka-text); font-weight: 400; }
+.audience-admin input:disabled { opacity: .65; }
+.audience-admin button { border: 1px solid var(--arka-primary); border-radius: .4rem; padding: .55rem .75rem; color: var(--arka-text); font-weight: 700; }
+.audience-admin button:hover:enabled { background: var(--arka-surface-hover); }
+.audience-admin button:disabled { opacity: .45; cursor: not-allowed; }
+.audience-actions { display: flex; flex-wrap: wrap; gap: .6rem; }
+.audience-admin .audience-toggle { display: flex; align-items: center; gap: .7rem; }
+.audience-toggle input { width: 1.1rem; height: 1.1rem; }
+.audience-duration { display: flex; align-items: center; gap: .6rem; }
+.audience-admin .audience-duration input { max-width: 7rem; }
+.audience-hint { font-size: .85rem; color: var(--arka-text-muted); }
+.audience-warning, .audience-error { border: 1px solid #b45309; background: #92400e26; border-radius: .4rem; padding: .75rem; }
+.audience-error { border-color: #dc2626; background: #991b1b26; }
+.audience-connection, .audience-feedback { font-weight: 700; }
+.audience-invitations { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr)); gap: 1rem; }
+.audience-invitation { display: grid; gap: .75rem; border: 1px solid var(--arka-border); border-radius: .6rem; padding: 1rem; }
+.audience-qr-image { display: block; width: min(100%, 360px); aspect-ratio: 1; height: auto; border-radius: .35rem; margin: auto; background: white; }
+.audience-admin .audience-share-link { font-size: .75rem; }

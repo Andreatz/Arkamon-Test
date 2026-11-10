@@ -1,0 +1,103 @@
+/* Keep the complete catalog, selected article and seven-line checkout side by
+   side in the height available to the real player dialog. */
+.pu-shell .pu-store-dedicated .pu-store-actions>.studio-command{font-size:16px;padding:0 12%;min-width:0}
+.pu-shell .pu-store-dedicated .pu-store-heading>div>p:last-child:not(.pu-kicker){display:block}
+@media(min-width:901px){
+ .pu-shell .pu-store-screen.pu-store-dedicated{height:100%;min-height:0;gap:0}
+ .pu-shell .pu-store-dedicated>.pu-store-heading{flex:none;min-height:0;padding:0 0 10px;margin:0 0 10px;gap:20px}
+ .pu-shell .pu-store-dedicated .pu-store-heading h1{font-size:28px;margin:2px 0 4px;line-height:1.1}
+ .pu-shell .pu-store-dedicated .pu-store-heading .pu-kicker{font-size:12px;margin:0 0 3px;line-height:1.1}
+ .pu-shell .pu-store-dedicated .pu-store-heading p:last-child{font-family:Arial,sans-serif;font-size:13px;line-height:1.4;margin:0}
+ .pu-shell .pu-store-dedicated .pu-store-heading .pu-store-balance{font-size:25px;white-space:nowrap}
+ .pu-shell .pu-store-dedicated>.pu-store-layout{display:grid;grid-template-columns:minmax(0,1.03fr) minmax(0,.97fr) minmax(0,1.12fr);gap:18px;flex:1;min-height:0;align-items:stretch}
+ .pu-shell .pu-store-dedicated .pu-store-catalog,.pu-shell .pu-store-dedicated .pu-store-detail,.pu-shell .pu-store-dedicated .pu-store-checkout{display:flex;flex-direction:column;min-width:0;min-height:0;padding:16px;gap:0}
+ .pu-shell .pu-store-dedicated .pu-store-catalog>h2{flex:none;font-size:23px;margin:0 0 10px;line-height:1.15}
+ .pu-shell .pu-store-dedicated .pu-shop-list{display:grid;grid-template-rows:repeat(7,minmax(44px,1fr));gap:5px;flex:1;min-height:0;margin:0}
+ .pu-shell .pu-store-dedicated .pu-shop-row-compact{height:auto;min-height:0;margin:0;padding:0;gap:7px}
+ .pu-shell .pu-store-dedicated .pu-shop-row-main{height:100%;min-height:44px;min-width:0;padding:3px 14px;gap:10px;flex:1;margin:0}
+ .pu-shell .pu-store-dedicated .pu-shop-row .pu-kit-icon{width:36px;height:36px;flex:none}
+ .pu-shell .pu-store-dedicated .pu-shop-row strong{font-size:19px;line-height:1.1}
+ .pu-shell .pu-store-dedicated .pu-shop-row small{display:block;font-size:13px;margin-top:3px;line-height:1.2}
+ .pu-shell .pu-store-dedicated .pu-shop-cart-count{font-size:19px;min-width:28px}
+ .pu-shell .pu-store-dedicated .pu-store-selected-summary{display:flex;flex-direction:column;gap:12px;align-items:stretch}
+ .pu-shell .pu-store-dedicated .pu-store-selected-summary .pu-item-hero{height:clamp(90px,14dvh,145px);min-height:0;flex:none}
+ .pu-shell .pu-store-dedicated .pu-store-selected-summary .pu-item-hero>.pu-kit-icon{height:clamp(85px,13dvh,135px);width:clamp(85px,13dvh,135px)}
+ .pu-shell .pu-store-dedicated .pu-store-selected-summary .pu-kicker{font-size:12px;line-height:1.2}
+ .pu-shell .pu-store-dedicated .pu-store-selected-summary h2{font-size:28px;line-height:1.1;margin:5px 0 9px}
+ .pu-shell .pu-store-dedicated .pu-store-selected-summary .pu-description{font-family:Arial,sans-serif;font-size:14px;line-height:1.5;margin:0 0 10px}
+ .pu-shell .pu-store-dedicated .pu-store-selected-summary .pu-item-held{font-size:16px;line-height:1.3;margin:0}
+ .pu-shell .pu-store-dedicated .pu-quantity-control{flex:none;min-height:64px;margin:12px 0 8px;gap:8px;justify-content:center}
+ .pu-shell .pu-store-dedicated .pu-quantity-control .pu-button{width:52px;min-width:52px;height:52px;min-height:52px;margin:0;padding:0;flex:none}
+ .pu-shell .pu-store-dedicated .pu-shop-quantity{display:flex;flex-direction:column;gap:4px;min-width:0;max-width:190px}
+ .pu-shell .pu-store-dedicated .pu-shop-quantity>span{font-size:13px;line-height:1.2;text-align:center}
+ .pu-shell .pu-store-dedicated .pu-shop-quantity input{width:92px;height:44px;font-size:24px;padding:0;text-align:center}
+ .pu-shell .pu-store-dedicated .pu-store-notices{margin:4px 0 0;gap:6px}
+ .pu-shell .pu-store-dedicated .pu-store-notices>p{font-family:Arial,sans-serif;font-size:13px;line-height:1.4;margin:0}
+ .pu-shell .pu-store-dedicated .pu-store-checkout>h3{font-size:22px;line-height:1.2;margin:0 0 8px;flex:none}
+ .pu-shell .pu-store-dedicated .pu-cart-lines-compact{display:grid;grid-template-columns:minmax(0,1fr);gap:0;padding:0;flex:none;min-width:0}
+ .pu-shell .pu-store-dedicated .pu-cart-lines-compact .pu-cart-line{min-height:34px;line-height:1.15;padding:2px 0;gap:7px;font-size:15px}
+ .pu-shell .pu-store-dedicated .pu-cart-line strong{font-size:15px;line-height:1.15;white-space:nowrap}
+ .pu-shell .pu-store-dedicated .pu-cart-line .pu-kit-icon{width:22px;height:22px;flex:none}
+ .pu-shell .pu-store-dedicated .pu-cart-remove{min-width:28px;min-height:28px;height:28px;line-height:1;font-size:19px;flex:none}
+ .pu-shell .pu-store-dedicated .pu-cart-lines>.pu-empty{font-size:16px;line-height:1.5;margin:6px 0}
+ .pu-shell .pu-store-dedicated .pu-store-totals{display:grid;flex:none;gap:5px;margin-top:auto;padding-top:10px;border-top:1px solid #8294a466}
+ .pu-shell .pu-store-dedicated .pu-store-totals strong{font-size:21px;line-height:1.15}
+ .pu-shell .pu-store-dedicated .pu-store-totals span{font-size:15px;line-height:1.25}
+ .pu-shell .pu-store-dedicated .pu-store-actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-top:9px;flex:none}
+ .pu-shell .pu-store-dedicated .pu-store-actions>.studio-command{min-height:44px;font-size:15px;padding:0 12px}
+ .pu-shell .pu-store-dedicated .pu-store-result{font-family:Arial,sans-serif;font-size:13px;line-height:1.4;margin:8px 0 0;flex:none}
+}
+@media(min-width:901px) and (max-height:820px){
+ .pu-shell .pu-store-dedicated>.pu-store-heading{margin-bottom:8px;padding-bottom:7px}
+ .pu-shell .pu-store-dedicated .pu-store-heading h1{font-size:25px}
+ .pu-shell .pu-store-dedicated .pu-store-catalog,.pu-shell .pu-store-dedicated .pu-store-detail,.pu-shell .pu-store-dedicated .pu-store-checkout{padding:12px}
+ .pu-shell .pu-store-dedicated .pu-store-catalog>h2{font-size:21px;margin-bottom:8px}
+ .pu-shell .pu-store-dedicated .pu-shop-list{gap:4px}
+ .pu-shell .pu-store-dedicated .pu-shop-row strong{font-size:18px}
+ .pu-shell .pu-store-dedicated .pu-shop-row .pu-kit-icon{width:32px;height:32px}
+ .pu-shell .pu-store-dedicated .pu-store-selected-summary{gap:7px}
+ .pu-shell .pu-store-dedicated .pu-store-selected-summary .pu-item-hero{height:85px}
+ .pu-shell .pu-store-dedicated .pu-store-selected-summary .pu-item-hero>.pu-kit-icon{height:80px;width:80px}
+ .pu-shell .pu-store-dedicated .pu-store-selected-summary h2{font-size:25px}
+ .pu-shell .pu-store-dedicated .pu-store-selected-summary .pu-description{font-size:14px;line-height:1.4}
+ .pu-shell .pu-store-dedicated .pu-quantity-control{margin:8px 0 5px}
+ .pu-shell .pu-store-dedicated .pu-cart-lines-compact .pu-cart-line{min-height:32px;padding:1px 0}
+ .pu-shell .pu-store-dedicated .pu-store-checkout>h3{font-size:21px}
+ .pu-shell .pu-store-dedicated .pu-store-totals strong{font-size:19px}
+}
+@media(max-width:900px){
+ .pu-shell .pu-store-screen.pu-store-dedicated{height:auto;min-width:0}
+ .pu-shell .pu-store-dedicated>.pu-store-heading{gap:12px;min-width:0}
+ .pu-shell .pu-store-dedicated>.pu-store-heading h1{font-size:25px;line-height:1.15}
+ .pu-shell .pu-store-dedicated>.pu-store-heading p{font-size:13px;line-height:1.45}
+ .pu-shell .pu-store-dedicated .pu-store-heading .pu-store-balance{font-size:20px;white-space:nowrap}
+ .pu-shell .pu-store-dedicated .pu-store-layout{display:flex;flex-direction:column;gap:20px}
+ .pu-shell .pu-store-dedicated .pu-store-catalog,.pu-shell .pu-store-dedicated .pu-store-detail,.pu-shell .pu-store-dedicated .pu-store-checkout{min-width:0;padding:18px 16px}
+ .pu-shell .pu-store-dedicated .pu-store-catalog>h2{font-size:22px;margin:0 0 12px}
+ .pu-shell .pu-store-dedicated .pu-shop-row{gap:7px;min-height:66px;margin:7px 0}
+ .pu-shell .pu-store-dedicated .pu-shop-row-main{width:auto;flex:1;min-width:0;padding:8px 12px;gap:8px}
+ .pu-shell .pu-store-dedicated .pu-shop-row-main>span:not(.pu-kit-icon){min-width:0}
+ .pu-shell .pu-store-dedicated .pu-shop-row strong{font-size:19px;line-height:1.15}
+ .pu-shell .pu-store-dedicated .pu-shop-row small{font-size:13px;line-height:1.2;margin-top:3px}
+ .pu-shell .pu-store-dedicated .pu-shop-row .pu-kit-icon{width:32px;height:32px;flex:none}
+ .pu-shell .pu-store-dedicated .pu-shop-cart-count{min-width:25px;font-size:19px}
+ .pu-shell .pu-store-dedicated .pu-store-selected-summary{grid-template-columns:75px minmax(0,1fr);gap:12px}
+ .pu-shell .pu-store-dedicated .pu-store-selected-summary .pu-item-hero{min-height:0;height:90px}
+ .pu-shell .pu-store-dedicated .pu-store-selected-summary .pu-item-hero>.pu-kit-icon{width:75px;height:75px}
+ .pu-shell .pu-store-dedicated .pu-store-selected-summary .pu-kicker{font-size:11px}
+ .pu-shell .pu-store-dedicated .pu-store-selected-summary h2{font-size:24px;line-height:1.15;margin:5px 0}
+ .pu-shell .pu-store-dedicated .pu-store-selected-summary .pu-description{font-family:Arial,sans-serif;font-size:13px;line-height:1.45;margin:8px 0}
+ .pu-shell .pu-store-dedicated .pu-store-selected-summary .pu-item-held{font-size:15px;line-height:1.3}
+ .pu-shell .pu-store-dedicated .pu-store-notices p{font-family:Arial,sans-serif;font-size:13px;line-height:1.45}
+ .pu-shell .pu-store-dedicated .pu-store-cart{min-height:0}
+ .pu-shell .pu-store-dedicated .pu-store-checkout>h3{font-size:22px;margin:0 0 10px}
+ .pu-shell .pu-store-dedicated .pu-cart-lines-compact{display:grid;grid-template-columns:minmax(0,1fr);gap:0}
+ .pu-shell .pu-store-dedicated .pu-cart-lines-compact .pu-cart-line{font-size:14px;gap:5px;min-height:38px;padding:3px 0}
+ .pu-shell .pu-store-dedicated .pu-cart-line strong{font-size:14px}
+ .pu-shell .pu-store-dedicated .pu-cart-line .pu-kit-icon{width:22px;height:22px;flex:none}
+ .pu-shell .pu-store-dedicated .pu-cart-remove{min-width:28px;min-height:28px;font-size:20px;flex:none}
+ .pu-shell .pu-store-dedicated .pu-store-totals strong{font-size:21px}
+ .pu-shell .pu-store-dedicated .pu-store-totals span{font-size:15px}
+ .pu-shell .pu-store-dedicated .pu-store-actions{display:grid;grid-template-columns:1fr;gap:8px}
+ .pu-shell .pu-store-dedicated .pu-store-actions>.studio-command{max-width:320px;margin:auto;min-height:44px}
+}

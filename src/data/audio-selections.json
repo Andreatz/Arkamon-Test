@@ -1,0 +1,2215 @@
+{
+  "version": 1,
+  "basis": "Scelta semantica effettuata da Codex su delega utente; decodifica verificata, timbro non ascoltato.",
+  "choices": {
+    "move:1": {
+      "soundId": "597d9d884f21fca2",
+      "volume": 0.45,
+      "cue": "start",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:2": {
+      "soundId": "0cc09666b99b7f61",
+      "volume": 0.55,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:3": {
+      "soundId": "0cc09666b99b7f61",
+      "volume": 0.55,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:4": {
+      "soundId": "19510e47d52aa5bd",
+      "volume": 0.65,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:5": {
+      "soundId": "17708233f0637cc9",
+      "volume": 0.45,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:6": {
+      "soundId": "54b8a2e3aff6da28",
+      "volume": 0.55,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:7": {
+      "soundId": "44172fa91e059dc4",
+      "volume": 0.65,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:8": {
+      "soundId": "658a1e1f542d2cf9",
+      "volume": 0.45,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:9": {
+      "soundId": "8078b7c4aed09a62",
+      "volume": 0.55,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:10": {
+      "soundId": "a0e5a940241581d9",
+      "volume": 0.65,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:11": {
+      "soundId": "b3528bcfa8bd166a",
+      "volume": 0.45,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:12": {
+      "soundId": "ed0e7f38dcd61e25",
+      "volume": 0.55,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:13": {
+      "soundId": "ba642b9bb781a695",
+      "volume": 0.65,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:14": {
+      "soundId": "17708233f0637cc9",
+      "volume": 0.45,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:15": {
+      "soundId": "54b8a2e3aff6da28",
+      "volume": 0.55,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:16": {
+      "soundId": "597d9d884f21fca2",
+      "volume": 0.45,
+      "cue": "start",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:17": {
+      "soundId": "f6c15513fae3c147",
+      "volume": 0.55,
+      "cue": "start",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:18": {
+      "soundId": "17708233f0637cc9",
+      "volume": 0.45,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:19": {
+      "soundId": "54b8a2e3aff6da28",
+      "volume": 0.55,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:20": {
+      "soundId": "2466e7e75afcba44",
+      "volume": 0.45,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:21": {
+      "soundId": "2c64fabde3c77c53",
+      "volume": 0.55,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:22": {
+      "soundId": "b5052d508b784d94",
+      "volume": 0.45,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:23": {
+      "soundId": "92eca9f7e461ee50",
+      "volume": 0.55,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:24": {
+      "soundId": "92eca9f7e461ee50",
+      "volume": 0.55,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:25": {
+      "soundId": "19510e47d52aa5bd",
+      "volume": 0.65,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:26": {
+      "soundId": "b8700da05fe4632e",
+      "volume": 0.65,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:27": {
+      "soundId": "b8700da05fe4632e",
+      "volume": 0.65,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:28": {
+      "soundId": "9ed1e87cd06d7705",
+      "volume": 0.45,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:29": {
+      "soundId": "0d043f249f332b0a",
+      "volume": 0.55,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:30": {
+      "soundId": "87a9efe5bf8d4979",
+      "volume": 0.55,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:31": {
+      "soundId": "605306c40dceb51c",
+      "volume": 0.65,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:32": {
+      "soundId": "6eb7886535a155c6",
+      "volume": 0.45,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:33": {
+      "soundId": "84cb9950c0485276",
+      "volume": 0.55,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:34": {
+      "soundId": "deb7239a9b8a9214",
+      "volume": 0.65,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:35": {
+      "soundId": "6eb7886535a155c6",
+      "volume": 0.45,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:36": {
+      "soundId": "84cb9950c0485276",
+      "volume": 0.55,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:37": {
+      "soundId": "deb7239a9b8a9214",
+      "volume": 0.65,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:38": {
+      "soundId": "17708233f0637cc9",
+      "volume": 0.45,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:39": {
+      "soundId": "54b8a2e3aff6da28",
+      "volume": 0.55,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:40": {
+      "soundId": "44172fa91e059dc4",
+      "volume": 0.65,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:41": {
+      "soundId": "9b3e0318dc4a531c",
+      "volume": 0.45,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:42": {
+      "soundId": "84f2c63862107d78",
+      "volume": 0.55,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:43": {
+      "soundId": "b5052d508b784d94",
+      "volume": 0.45,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:44": {
+      "soundId": "92eca9f7e461ee50",
+      "volume": 0.55,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:45": {
+      "soundId": "9ed1e87cd06d7705",
+      "volume": 0.45,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:46": {
+      "soundId": "605306c40dceb51c",
+      "volume": 0.65,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:47": {
+      "soundId": "9ed1e87cd06d7705",
+      "volume": 0.45,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:48": {
+      "soundId": "87a9efe5bf8d4979",
+      "volume": 0.55,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:49": {
+      "soundId": "2466e7e75afcba44",
+      "volume": 0.45,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:50": {
+      "soundId": "2c64fabde3c77c53",
+      "volume": 0.55,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:51": {
+      "soundId": "44172fa91e059dc4",
+      "volume": 0.65,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:52": {
+      "soundId": "54b8a2e3aff6da28",
+      "volume": 0.55,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:53": {
+      "soundId": "92eca9f7e461ee50",
+      "volume": 0.55,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:54": {
+      "soundId": "969eb930bc2777f8",
+      "volume": 0.45,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:55": {
+      "soundId": "b5052d508b784d94",
+      "volume": 0.45,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:56": {
+      "soundId": "92eca9f7e461ee50",
+      "volume": 0.55,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:57": {
+      "soundId": "92eca9f7e461ee50",
+      "volume": 0.55,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:58": {
+      "soundId": "e24a7d05f6a35948",
+      "volume": 0.65,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:59": {
+      "soundId": "9b3e0318dc4a531c",
+      "volume": 0.45,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:60": {
+      "soundId": "84f2c63862107d78",
+      "volume": 0.55,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:61": {
+      "soundId": "0788262c2f3e750d",
+      "volume": 0.65,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:62": {
+      "soundId": "9ed1e87cd06d7705",
+      "volume": 0.45,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:63": {
+      "soundId": "0d043f249f332b0a",
+      "volume": 0.55,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:64": {
+      "soundId": "605306c40dceb51c",
+      "volume": 0.65,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:65": {
+      "soundId": "9b3e0318dc4a531c",
+      "volume": 0.45,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:66": {
+      "soundId": "84f2c63862107d78",
+      "volume": 0.55,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:67": {
+      "soundId": "0788262c2f3e750d",
+      "volume": 0.65,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:68": {
+      "soundId": "9ed1e87cd06d7705",
+      "volume": 0.45,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:69": {
+      "soundId": "0d043f249f332b0a",
+      "volume": 0.55,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:70": {
+      "soundId": "9b3e0318dc4a531c",
+      "volume": 0.45,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:71": {
+      "soundId": "84f2c63862107d78",
+      "volume": 0.55,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:72": {
+      "soundId": "9b3e0318dc4a531c",
+      "volume": 0.45,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:73": {
+      "soundId": "84f2c63862107d78",
+      "volume": 0.55,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:74": {
+      "soundId": "6eb7886535a155c6",
+      "volume": 0.45,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:75": {
+      "soundId": "deb7239a9b8a9214",
+      "volume": 0.65,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:76": {
+      "soundId": "17708233f0637cc9",
+      "volume": 0.45,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:77": {
+      "soundId": "ed0e7f38dcd61e25",
+      "volume": 0.55,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:78": {
+      "soundId": "44172fa91e059dc4",
+      "volume": 0.65,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:79": {
+      "soundId": "969eb930bc2777f8",
+      "volume": 0.45,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:80": {
+      "soundId": "b3528bcfa8bd166a",
+      "volume": 0.45,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:81": {
+      "soundId": "84cb9950c0485276",
+      "volume": 0.55,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:82": {
+      "soundId": "b3528bcfa8bd166a",
+      "volume": 0.45,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:83": {
+      "soundId": "ed0e7f38dcd61e25",
+      "volume": 0.55,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:84": {
+      "soundId": "ba642b9bb781a695",
+      "volume": 0.65,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:85": {
+      "soundId": "969eb930bc2777f8",
+      "volume": 0.45,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:86": {
+      "soundId": "0cc09666b99b7f61",
+      "volume": 0.55,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:87": {
+      "soundId": "19510e47d52aa5bd",
+      "volume": 0.65,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:88": {
+      "soundId": "b5052d508b784d94",
+      "volume": 0.45,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:89": {
+      "soundId": "92eca9f7e461ee50",
+      "volume": 0.55,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:90": {
+      "soundId": "e24a7d05f6a35948",
+      "volume": 0.65,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:91": {
+      "soundId": "2466e7e75afcba44",
+      "volume": 0.45,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:92": {
+      "soundId": "2c64fabde3c77c53",
+      "volume": 0.55,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:93": {
+      "soundId": "b8700da05fe4632e",
+      "volume": 0.65,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:94": {
+      "soundId": "b3528bcfa8bd166a",
+      "volume": 0.45,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:95": {
+      "soundId": "ed0e7f38dcd61e25",
+      "volume": 0.55,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:96": {
+      "soundId": "969eb930bc2777f8",
+      "volume": 0.45,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:97": {
+      "soundId": "f6c15513fae3c147",
+      "volume": 0.55,
+      "cue": "start",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:98": {
+      "soundId": "6eb7886535a155c6",
+      "volume": 0.45,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:99": {
+      "soundId": "84cb9950c0485276",
+      "volume": 0.55,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:100": {
+      "soundId": "969eb930bc2777f8",
+      "volume": 0.45,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:101": {
+      "soundId": "0cc09666b99b7f61",
+      "volume": 0.55,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:102": {
+      "soundId": "ed0e7f38dcd61e25",
+      "volume": 0.55,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:103": {
+      "soundId": "deb7239a9b8a9214",
+      "volume": 0.65,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:104": {
+      "soundId": "84f2c63862107d78",
+      "volume": 0.55,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:105": {
+      "soundId": "605306c40dceb51c",
+      "volume": 0.65,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:106": {
+      "soundId": "84f2c63862107d78",
+      "volume": 0.55,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:107": {
+      "soundId": "a0e5a940241581d9",
+      "volume": 0.65,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:108": {
+      "soundId": "605306c40dceb51c",
+      "volume": 0.65,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:109": {
+      "soundId": "b8700da05fe4632e",
+      "volume": 0.65,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:110": {
+      "soundId": "deb7239a9b8a9214",
+      "volume": 0.65,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:111": {
+      "soundId": "9b3e0318dc4a531c",
+      "volume": 0.45,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:112": {
+      "soundId": "84f2c63862107d78",
+      "volume": 0.55,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:113": {
+      "soundId": "84f2c63862107d78",
+      "volume": 0.55,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:114": {
+      "soundId": "0788262c2f3e750d",
+      "volume": 0.65,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:115": {
+      "soundId": "9b3e0318dc4a531c",
+      "volume": 0.45,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:116": {
+      "soundId": "84f2c63862107d78",
+      "volume": 0.55,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:117": {
+      "soundId": "0788262c2f3e750d",
+      "volume": 0.65,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:118": {
+      "soundId": "b5052d508b784d94",
+      "volume": 0.45,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:119": {
+      "soundId": "92eca9f7e461ee50",
+      "volume": 0.55,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:120": {
+      "soundId": "e24a7d05f6a35948",
+      "volume": 0.65,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:121": {
+      "soundId": "6eb7886535a155c6",
+      "volume": 0.45,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:122": {
+      "soundId": "84cb9950c0485276",
+      "volume": 0.55,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:123": {
+      "soundId": "deb7239a9b8a9214",
+      "volume": 0.65,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:124": {
+      "soundId": "2466e7e75afcba44",
+      "volume": 0.45,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:125": {
+      "soundId": "2c64fabde3c77c53",
+      "volume": 0.55,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:126": {
+      "soundId": "b3528bcfa8bd166a",
+      "volume": 0.45,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:127": {
+      "soundId": "ed0e7f38dcd61e25",
+      "volume": 0.55,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:128": {
+      "soundId": "969eb930bc2777f8",
+      "volume": 0.45,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:129": {
+      "soundId": "0cc09666b99b7f61",
+      "volume": 0.55,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:130": {
+      "soundId": "969eb930bc2777f8",
+      "volume": 0.45,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:131": {
+      "soundId": "0cc09666b99b7f61",
+      "volume": 0.55,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:132": {
+      "soundId": "b3528bcfa8bd166a",
+      "volume": 0.45,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:133": {
+      "soundId": "ed0e7f38dcd61e25",
+      "volume": 0.55,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:134": {
+      "soundId": "84f2c63862107d78",
+      "volume": 0.55,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:135": {
+      "soundId": "deb7239a9b8a9214",
+      "volume": 0.65,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:136": {
+      "soundId": "ba642b9bb781a695",
+      "volume": 0.65,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:137": {
+      "soundId": "19510e47d52aa5bd",
+      "volume": 0.65,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:138": {
+      "soundId": "6eb7886535a155c6",
+      "volume": 0.45,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:139": {
+      "soundId": "84cb9950c0485276",
+      "volume": 0.55,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:140": {
+      "soundId": "84cb9950c0485276",
+      "volume": 0.55,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:141": {
+      "soundId": "6b5ed2fd0443a31f",
+      "volume": 0.65,
+      "cue": "start",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:142": {
+      "soundId": "9ed1e87cd06d7705",
+      "volume": 0.45,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:143": {
+      "soundId": "0d043f249f332b0a",
+      "volume": 0.55,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:144": {
+      "soundId": "605306c40dceb51c",
+      "volume": 0.65,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:145": {
+      "soundId": "969eb930bc2777f8",
+      "volume": 0.45,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:146": {
+      "soundId": "0cc09666b99b7f61",
+      "volume": 0.55,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:147": {
+      "soundId": "19510e47d52aa5bd",
+      "volume": 0.65,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:148": {
+      "soundId": "17708233f0637cc9",
+      "volume": 0.45,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:149": {
+      "soundId": "54b8a2e3aff6da28",
+      "volume": 0.55,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:150": {
+      "soundId": "44172fa91e059dc4",
+      "volume": 0.65,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:151": {
+      "soundId": "597d9d884f21fca2",
+      "volume": 0.45,
+      "cue": "start",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:152": {
+      "soundId": "f6c15513fae3c147",
+      "volume": 0.55,
+      "cue": "start",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:153": {
+      "soundId": "969eb930bc2777f8",
+      "volume": 0.45,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:154": {
+      "soundId": "48262802520e9d8a",
+      "volume": 0.55,
+      "cue": "start",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:155": {
+      "soundId": "597d9d884f21fca2",
+      "volume": 0.45,
+      "cue": "start",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:156": {
+      "soundId": "19510e47d52aa5bd",
+      "volume": 0.65,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:157": {
+      "soundId": "12691ace5ed9e22f",
+      "volume": 0.45,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:158": {
+      "soundId": "87a9efe5bf8d4979",
+      "volume": 0.55,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:159": {
+      "soundId": "b3528bcfa8bd166a",
+      "volume": 0.45,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:160": {
+      "soundId": "ed0e7f38dcd61e25",
+      "volume": 0.55,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:161": {
+      "soundId": "0788262c2f3e750d",
+      "volume": 0.65,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:162": {
+      "soundId": "84f2c63862107d78",
+      "volume": 0.55,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:163": {
+      "soundId": "0cc09666b99b7f61",
+      "volume": 0.55,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:164": {
+      "soundId": "9ed1e87cd06d7705",
+      "volume": 0.45,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:165": {
+      "soundId": "658a1e1f542d2cf9",
+      "volume": 0.45,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:166": {
+      "soundId": "8078b7c4aed09a62",
+      "volume": 0.55,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:167": {
+      "soundId": "8078b7c4aed09a62",
+      "volume": 0.55,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:168": {
+      "soundId": "a0e5a940241581d9",
+      "volume": 0.65,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:169": {
+      "soundId": "b5052d508b784d94",
+      "volume": 0.45,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:170": {
+      "soundId": "92eca9f7e461ee50",
+      "volume": 0.55,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:171": {
+      "soundId": "e24a7d05f6a35948",
+      "volume": 0.65,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:172": {
+      "soundId": "6eb7886535a155c6",
+      "volume": 0.45,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:173": {
+      "soundId": "84cb9950c0485276",
+      "volume": 0.55,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:174": {
+      "soundId": "deb7239a9b8a9214",
+      "volume": 0.65,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:175": {
+      "soundId": "2466e7e75afcba44",
+      "volume": 0.45,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:176": {
+      "soundId": "2c64fabde3c77c53",
+      "volume": 0.55,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:177": {
+      "soundId": "b8700da05fe4632e",
+      "volume": 0.65,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:178": {
+      "soundId": "6eb7886535a155c6",
+      "volume": 0.45,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:179": {
+      "soundId": "84cb9950c0485276",
+      "volume": 0.55,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:180": {
+      "soundId": "969eb930bc2777f8",
+      "volume": 0.45,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:181": {
+      "soundId": "0cc09666b99b7f61",
+      "volume": 0.55,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:182": {
+      "soundId": "969eb930bc2777f8",
+      "volume": 0.45,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:183": {
+      "soundId": "0cc09666b99b7f61",
+      "volume": 0.55,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:184": {
+      "soundId": "17708233f0637cc9",
+      "volume": 0.45,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:185": {
+      "soundId": "44172fa91e059dc4",
+      "volume": 0.65,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:186": {
+      "soundId": "6eb7886535a155c6",
+      "volume": 0.45,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:187": {
+      "soundId": "84cb9950c0485276",
+      "volume": 0.55,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:188": {
+      "soundId": "44172fa91e059dc4",
+      "volume": 0.65,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:189": {
+      "soundId": "9b3e0318dc4a531c",
+      "volume": 0.45,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:190": {
+      "soundId": "9b3e0318dc4a531c",
+      "volume": 0.45,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:191": {
+      "soundId": "54b8a2e3aff6da28",
+      "volume": 0.55,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:192": {
+      "soundId": "6eb7886535a155c6",
+      "volume": 0.45,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:193": {
+      "soundId": "84cb9950c0485276",
+      "volume": 0.55,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:194": {
+      "soundId": "deb7239a9b8a9214",
+      "volume": 0.65,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:195": {
+      "soundId": "6eb7886535a155c6",
+      "volume": 0.45,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:196": {
+      "soundId": "84cb9950c0485276",
+      "volume": 0.55,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:197": {
+      "soundId": "44172fa91e059dc4",
+      "volume": 0.65,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:198": {
+      "soundId": "6eb7886535a155c6",
+      "volume": 0.45,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:199": {
+      "soundId": "54b8a2e3aff6da28",
+      "volume": 0.55,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:200": {
+      "soundId": "deb7239a9b8a9214",
+      "volume": 0.65,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:201": {
+      "soundId": "9ed1e87cd06d7705",
+      "volume": 0.45,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:202": {
+      "soundId": "0d043f249f332b0a",
+      "volume": 0.55,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:203": {
+      "soundId": "605306c40dceb51c",
+      "volume": 0.65,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:204": {
+      "soundId": "9ed1e87cd06d7705",
+      "volume": 0.45,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:205": {
+      "soundId": "0d043f249f332b0a",
+      "volume": 0.55,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:206": {
+      "soundId": "6eb7886535a155c6",
+      "volume": 0.45,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:207": {
+      "soundId": "84cb9950c0485276",
+      "volume": 0.55,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:208": {
+      "soundId": "b3528bcfa8bd166a",
+      "volume": 0.45,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:209": {
+      "soundId": "ed0e7f38dcd61e25",
+      "volume": 0.55,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:210": {
+      "soundId": "b3528bcfa8bd166a",
+      "volume": 0.45,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:211": {
+      "soundId": "ed0e7f38dcd61e25",
+      "volume": 0.55,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:212": {
+      "soundId": "0cc09666b99b7f61",
+      "volume": 0.55,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:213": {
+      "soundId": "19510e47d52aa5bd",
+      "volume": 0.65,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:214": {
+      "soundId": "0d043f249f332b0a",
+      "volume": 0.55,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:215": {
+      "soundId": "19510e47d52aa5bd",
+      "volume": 0.65,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:216": {
+      "soundId": "48262802520e9d8a",
+      "volume": 0.55,
+      "cue": "start",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:217": {
+      "soundId": "19510e47d52aa5bd",
+      "volume": 0.65,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:218": {
+      "soundId": "19510e47d52aa5bd",
+      "volume": 0.65,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:219": {
+      "soundId": "19510e47d52aa5bd",
+      "volume": 0.65,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:220": {
+      "soundId": "19510e47d52aa5bd",
+      "volume": 0.65,
+      "cue": "impact",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:221": {
+      "soundId": "54b8a2e3aff6da28",
+      "volume": 0.55,
+      "cue": "start",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:222": {
+      "soundId": "5663af37acd8fd72",
+      "volume": 0.55,
+      "cue": "start",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:223": {
+      "soundId": "8078b7c4aed09a62",
+      "volume": 0.55,
+      "cue": "start",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:224": {
+      "soundId": "48262802520e9d8a",
+      "volume": 0.55,
+      "cue": "start",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:225": {
+      "soundId": "54b8a2e3aff6da28",
+      "volume": 0.55,
+      "cue": "start",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:226": {
+      "soundId": "5663af37acd8fd72",
+      "volume": 0.55,
+      "cue": "start",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:227": {
+      "soundId": "54b8a2e3aff6da28",
+      "volume": 0.55,
+      "cue": "start",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:228": {
+      "soundId": "5663af37acd8fd72",
+      "volume": 0.55,
+      "cue": "start",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:229": {
+      "soundId": "5663af37acd8fd72",
+      "volume": 0.55,
+      "cue": "start",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:230": {
+      "soundId": "54b8a2e3aff6da28",
+      "volume": 0.55,
+      "cue": "start",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:231": {
+      "soundId": "48262802520e9d8a",
+      "volume": 0.55,
+      "cue": "start",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:232": {
+      "soundId": "48262802520e9d8a",
+      "volume": 0.55,
+      "cue": "start",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:233": {
+      "soundId": "48262802520e9d8a",
+      "volume": 0.55,
+      "cue": "start",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:234": {
+      "soundId": "48262802520e9d8a",
+      "volume": 0.55,
+      "cue": "start",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:235": {
+      "soundId": "5663af37acd8fd72",
+      "volume": 0.55,
+      "cue": "start",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:236": {
+      "soundId": "5663af37acd8fd72",
+      "volume": 0.55,
+      "cue": "start",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:237": {
+      "soundId": "48262802520e9d8a",
+      "volume": 0.55,
+      "cue": "start",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:238": {
+      "soundId": "48262802520e9d8a",
+      "volume": 0.55,
+      "cue": "start",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:239": {
+      "soundId": "48262802520e9d8a",
+      "volume": 0.55,
+      "cue": "start",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:240": {
+      "soundId": "48262802520e9d8a",
+      "volume": 0.55,
+      "cue": "start",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:241": {
+      "soundId": "48262802520e9d8a",
+      "volume": 0.55,
+      "cue": "start",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:242": {
+      "soundId": "54b8a2e3aff6da28",
+      "volume": 0.55,
+      "cue": "start",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:243": {
+      "soundId": "5663af37acd8fd72",
+      "volume": 0.55,
+      "cue": "start",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:244": {
+      "soundId": "48262802520e9d8a",
+      "volume": 0.55,
+      "cue": "start",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:245": {
+      "soundId": "48262802520e9d8a",
+      "volume": 0.55,
+      "cue": "start",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:246": {
+      "soundId": "48262802520e9d8a",
+      "volume": 0.55,
+      "cue": "start",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:247": {
+      "soundId": "5663af37acd8fd72",
+      "volume": 0.55,
+      "cue": "start",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:248": {
+      "soundId": "5663af37acd8fd72",
+      "volume": 0.55,
+      "cue": "start",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:249": {
+      "soundId": "5663af37acd8fd72",
+      "volume": 0.55,
+      "cue": "start",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:250": {
+      "soundId": "48262802520e9d8a",
+      "volume": 0.55,
+      "cue": "start",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:251": {
+      "soundId": "5663af37acd8fd72",
+      "volume": 0.55,
+      "cue": "start",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:252": {
+      "soundId": "5663af37acd8fd72",
+      "volume": 0.55,
+      "cue": "start",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:253": {
+      "soundId": "54b8a2e3aff6da28",
+      "volume": 0.55,
+      "cue": "start",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:254": {
+      "soundId": "5663af37acd8fd72",
+      "volume": 0.55,
+      "cue": "start",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:255": {
+      "soundId": "48262802520e9d8a",
+      "volume": 0.55,
+      "cue": "start",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:256": {
+      "soundId": "54b8a2e3aff6da28",
+      "volume": 0.55,
+      "cue": "start",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:257": {
+      "soundId": "48262802520e9d8a",
+      "volume": 0.55,
+      "cue": "start",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:258": {
+      "soundId": "5663af37acd8fd72",
+      "volume": 0.55,
+      "cue": "start",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:259": {
+      "soundId": "6b5ed2fd0443a31f",
+      "volume": 0.55,
+      "cue": "start",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:260": {
+      "soundId": "48262802520e9d8a",
+      "volume": 0.55,
+      "cue": "start",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:261": {
+      "soundId": "5663af37acd8fd72",
+      "volume": 0.55,
+      "cue": "start",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:262": {
+      "soundId": "5663af37acd8fd72",
+      "volume": 0.55,
+      "cue": "start",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:263": {
+      "soundId": "48262802520e9d8a",
+      "volume": 0.55,
+      "cue": "start",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:264": {
+      "soundId": "48262802520e9d8a",
+      "volume": 0.55,
+      "cue": "start",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:265": {
+      "soundId": "5663af37acd8fd72",
+      "volume": 0.55,
+      "cue": "start",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:266": {
+      "soundId": "5663af37acd8fd72",
+      "volume": 0.55,
+      "cue": "start",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:267": {
+      "soundId": "48262802520e9d8a",
+      "volume": 0.55,
+      "cue": "start",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:268": {
+      "soundId": "5663af37acd8fd72",
+      "volume": 0.55,
+      "cue": "start",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:269": {
+      "soundId": "48262802520e9d8a",
+      "volume": 0.55,
+      "cue": "start",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:270": {
+      "soundId": "54b8a2e3aff6da28",
+      "volume": 0.55,
+      "cue": "start",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:271": {
+      "soundId": "54b8a2e3aff6da28",
+      "volume": 0.55,
+      "cue": "start",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:272": {
+      "soundId": "48262802520e9d8a",
+      "volume": 0.55,
+      "cue": "start",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:273": {
+      "soundId": "5663af37acd8fd72",
+      "volume": 0.55,
+      "cue": "start",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:274": {
+      "soundId": "5663af37acd8fd72",
+      "volume": 0.55,
+      "cue": "start",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:275": {
+      "soundId": "5663af37acd8fd72",
+      "volume": 0.55,
+      "cue": "start",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "move:276": {
+      "soundId": "5663af37acd8fd72",
+      "volume": 0.55,
+      "cue": "start",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "event:click": {
+      "soundId": "a922a86b565b3fe6",
+      "volume": 0.28,
+      "cue": "start",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "event:battle-start": {
+      "soundId": "c346f7e2a607ad2c",
+      "volume": 0.5,
+      "cue": "start",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "event:hit": {
+      "soundId": "969eb930bc2777f8",
+      "volume": 0.5,
+      "cue": "start",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "event:ko": {
+      "soundId": "9ed1e87cd06d7705",
+      "volume": 0.5,
+      "cue": "start",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "event:capture": {
+      "soundId": "fd5acdeb3f122066",
+      "volume": 0.5,
+      "cue": "start",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "event:victory": {
+      "soundId": "744ee2a138629c81",
+      "volume": 0.5,
+      "cue": "start",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "event:level-up": {
+      "soundId": "5b1ec6b61926d66b",
+      "volume": 0.5,
+      "cue": "start",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "event:evolution": {
+      "soundId": "e24a7d05f6a35948",
+      "volume": 0.5,
+      "cue": "start",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "event:transition": {
+      "soundId": "f0cf8f5e8cfce0f4",
+      "volume": 0.5,
+      "cue": "start",
+      "delayMs": 0,
+      "status": "selected"
+    },
+    "event:dice": {
+      "soundId": "f7cfc6634f2a2fb5",
+      "volume": 0.5,
+      "cue": "start",
+      "delayMs": 0,
+      "status": "selected"
+    }
+  },
+  "sounds": {
+    "597d9d884f21fca2": {
+      "src": "audio/selected/ed228a2a2f0f3a50.ogg",
+      "name": "whoosh2",
+      "originalSrc": "sounds/Part 1/SFX_whoosh/whoosh2.wav"
+    },
+    "0cc09666b99b7f61": {
+      "src": "audio/selected/1fd802595e514267.ogg",
+      "name": "impact",
+      "originalSrc": "sounds/Part 1/Bokura Ga Ita SFX Rips/Ep6/impact.mp3"
+    },
+    "19510e47d52aa5bd": {
+      "src": "audio/selected/81c4a5cd050fd055.ogg",
+      "name": "13-impact",
+      "originalSrc": "sounds/Part 2/13-impact.mp3"
+    },
+    "17708233f0637cc9": {
+      "src": "audio/selected/343737a148d99107.ogg",
+      "name": "6-mini-zap",
+      "originalSrc": "sounds/Part 1/anime sounding/6-mini-zap.mp3"
+    },
+    "54b8a2e3aff6da28": {
+      "src": "audio/selected/e5cc1e6f26709a98.ogg",
+      "name": "Magic - Lightning",
+      "originalSrc": "sounds/Part 2/Magic - Lightning.mp3"
+    },
+    "44172fa91e059dc4": {
+      "src": "audio/selected/44e48f20095e28f4.ogg",
+      "name": "Thunder strike",
+      "originalSrc": "sounds/Part 1/Ambience/Thunder strike.mp3"
+    },
+    "658a1e1f542d2cf9": {
+      "src": "audio/selected/d1039331ee9de790.ogg",
+      "name": "Magic Ice Slice",
+      "originalSrc": "sounds/Part 1/SP_SFX_magic/Magic Ice Slice.wav"
+    },
+    "8078b7c4aed09a62": {
+      "src": "audio/selected/1dd6d0b6cd752cb6.ogg",
+      "name": "Magic Ice Freeze 1",
+      "originalSrc": "sounds/Part 1/SP_SFX_magic/Magic Ice Freeze 1.wav"
+    },
+    "a0e5a940241581d9": {
+      "src": "audio/selected/2136f9bb83a9b08f.ogg",
+      "name": "Magic Ice Freeze 3",
+      "originalSrc": "sounds/Part 1/SP_SFX_magic/Magic Ice Freeze 3.wav"
+    },
+    "b3528bcfa8bd166a": {
+      "src": "audio/selected/0579665730410eca.ogg",
+      "name": "Magic Earth Crack 2",
+      "originalSrc": "sounds/Part 1/SP_SFX_magic/Magic Earth Crack 2.wav"
+    },
+    "ed0e7f38dcd61e25": {
+      "src": "audio/selected/9262a5b98f7cbed0.ogg",
+      "name": "Magic Earth Broken",
+      "originalSrc": "sounds/Part 1/SP_SFX_magic/Magic Earth Broken.wav"
+    },
+    "ba642b9bb781a695": {
+      "src": "audio/selected/78551a4cba7b8cb9.ogg",
+      "name": "Magic Earth Rise",
+      "originalSrc": "sounds/Part 1/SP_SFX_magic/Magic Earth Rise.wav"
+    },
+    "f6c15513fae3c147": {
+      "src": "audio/selected/df8921a9283fcc98.ogg",
+      "name": "whoosh4",
+      "originalSrc": "sounds/Part 1/SFX_whoosh/whoosh4.wav"
+    },
+    "2466e7e75afcba44": {
+      "src": "audio/selected/c6273b59ef8a4271.ogg",
+      "name": "Water Poke",
+      "originalSrc": "sounds/Part 2/Water Poke.mp3"
+    },
+    "2c64fabde3c77c53": {
+      "src": "audio/selected/6666389b47450020.ogg",
+      "name": "Ponya Water Spit Attack",
+      "originalSrc": "sounds/Part 2/Ponya Water Spit Attack.mp3"
+    },
+    "b5052d508b784d94": {
+      "src": "audio/selected/789f46428118b50e.ogg",
+      "name": "Magic Teleport 2",
+      "originalSrc": "sounds/Part 1/SP_SFX_magic/Magic Teleport 2.wav"
+    },
+    "92eca9f7e461ee50": {
+      "src": "audio/selected/841801a2caebc0b6.ogg",
+      "name": "Magic Slowmo Enter 2",
+      "originalSrc": "sounds/Part 1/SP_SFX_magic/Magic Slowmo Enter 2.wav"
+    },
+    "b8700da05fe4632e": {
+      "src": "audio/selected/c12857598aaae1ed.ogg",
+      "name": "2-MAGI-magical water whooshes",
+      "originalSrc": "sounds/Part 2/2-MAGI-magical water whooshes.mp3"
+    },
+    "9ed1e87cd06d7705": {
+      "src": "audio/selected/dbb6f59587891cec.ogg",
+      "name": "Magic Dark Projectile",
+      "originalSrc": "sounds/Part 1/SP_SFX_magic/Magic Dark Projectile.wav"
+    },
+    "0d043f249f332b0a": {
+      "src": "audio/selected/b94a642c6ebec41a.ogg",
+      "name": "Magic Dark 2",
+      "originalSrc": "sounds/Part 1/SP_SFX_magic/Magic Dark 2.wav"
+    },
+    "87a9efe5bf8d4979": {
+      "src": "audio/selected/279cabb26458734b.ogg",
+      "name": "swing1",
+      "originalSrc": "sounds/Part 1/SFX_whoosh/swing1.wav"
+    },
+    "605306c40dceb51c": {
+      "src": "audio/selected/f62097a32e8686dc.ogg",
+      "name": "Magic Dark 1",
+      "originalSrc": "sounds/Part 1/SP_SFX_magic/Magic Dark 1.wav"
+    },
+    "6eb7886535a155c6": {
+      "src": "audio/selected/3e9f30d7cb88cd2b.ogg",
+      "name": "Magic Fire Throw",
+      "originalSrc": "sounds/Part 1/SP_SFX_magic/Magic Fire Throw.wav"
+    },
+    "84cb9950c0485276": {
+      "src": "audio/selected/9661121fbf6619fb.ogg",
+      "name": "Magic Burning Crystals",
+      "originalSrc": "sounds/Part 1/SP_SFX_magic/Magic Burning Crystals.wav"
+    },
+    "deb7239a9b8a9214": {
+      "src": "audio/selected/10e8141029783069.ogg",
+      "name": "explosion",
+      "originalSrc": "sounds/Part 1/KWMS-RIPPED-SFX/Ep04/explosion.wav"
+    },
+    "9b3e0318dc4a531c": {
+      "src": "audio/selected/00682653e848fd3e.ogg",
+      "name": "Magic Earth Roots 2",
+      "originalSrc": "sounds/Part 1/SP_SFX_magic/Magic Earth Roots 2.wav"
+    },
+    "84f2c63862107d78": {
+      "src": "audio/selected/9c505d5a3955224c.ogg",
+      "name": "Magic Earth Roots 1",
+      "originalSrc": "sounds/Part 1/SP_SFX_magic/Magic Earth Roots 1.wav"
+    },
+    "969eb930bc2777f8": {
+      "src": "audio/selected/0bc89c2057a39f9b.ogg",
+      "name": "Hit",
+      "originalSrc": "sounds/Part 1/Ichigo Mashimoro SFX rips/Hit.mp3"
+    },
+    "e24a7d05f6a35948": {
+      "src": "audio/selected/ee7798ec114d5b68.ogg",
+      "name": "Magic Spirit",
+      "originalSrc": "sounds/Part 1/SP_SFX_magic/Magic Spirit.wav"
+    },
+    "0788262c2f3e750d": {
+      "src": "audio/selected/699f764beacfecfb.ogg",
+      "name": "Magic Earth Roots 3",
+      "originalSrc": "sounds/Part 1/SP_SFX_magic/Magic Earth Roots 3.wav"
+    },
+    "6b5ed2fd0443a31f": {
+      "src": "audio/selected/6d9a0f77e5d61ed2.ogg",
+      "name": "Magic Shield 1",
+      "originalSrc": "sounds/Part 1/SP_SFX_magic/Magic Shield 1.wav"
+    },
+    "48262802520e9d8a": {
+      "src": "audio/selected/7190caeeb27e407e.ogg",
+      "name": "M_H_AreaHeal_CE",
+      "originalSrc": "sounds/Part 1/Fairy magic/M_H_AreaHeal_CE.wav"
+    },
+    "12691ace5ed9e22f": {
+      "src": "audio/selected/52bd9ddb6f8875be.ogg",
+      "name": "swing5",
+      "originalSrc": "sounds/Part 1/SFX_whoosh/swing5.wav"
+    },
+    "5663af37acd8fd72": {
+      "src": "audio/selected/56873cec3e45687b.ogg",
+      "name": "Magic Slowmo Enter 1",
+      "originalSrc": "sounds/Part 1/SP_SFX_magic/Magic Slowmo Enter 1.wav"
+    },
+    "a922a86b565b3fe6": {
+      "src": "audio/selected/f464aee60d4bf089.ogg",
+      "name": "Click",
+      "originalSrc": "sounds/Part 2/Click.mp3"
+    },
+    "c346f7e2a607ad2c": {
+      "src": "audio/selected/fd68437f1d735f29.ogg",
+      "name": "Magic Charge",
+      "originalSrc": "sounds/Part 1/SP_SFX_magic/Magic Charge.wav"
+    },
+    "fd5acdeb3f122066": {
+      "src": "audio/selected/f5fbd97277b532ee.ogg",
+      "name": "Magic Poof",
+      "originalSrc": "sounds/Part 1/SP_SFX_magic/Magic Poof.wav"
+    },
+    "744ee2a138629c81": {
+      "src": "audio/selected/0c1ac31706ae71f8.ogg",
+      "name": "victory",
+      "originalSrc": "sounds/Part 1/Bokura Ga Ita SFX Rips/Ep2/victory.mp3"
+    },
+    "5b1ec6b61926d66b": {
+      "src": "audio/selected/ed1a7af99afeb249.ogg",
+      "name": "Sparkle-ascending",
+      "originalSrc": "sounds/Part 2/Sparkle-ascending.mp3"
+    },
+    "f0cf8f5e8cfce0f4": {
+      "src": "audio/selected/5ed763bd52859384.ogg",
+      "name": "Magic Teleport 1",
+      "originalSrc": "sounds/Part 1/SP_SFX_magic/Magic Teleport 1.wav"
+    },
+    "f7cfc6634f2a2fb5": {
+      "src": "audio/selected/f8af9da9379a6fba.ogg",
+      "name": "Clickity Clacks",
+      "originalSrc": "sounds/Part 2/Clickity Clacks.mp3"
+    }
+  }
+}

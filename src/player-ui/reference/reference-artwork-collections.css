@@ -1,0 +1,372 @@
+/* User supplied collection artwork. The sheet crops keep their authored ratio:
+   rows and tiles fit their own canvas; large responsive panels keep fixed corners.
+   Creature PNGs, live values and unknown-species masking remain independent. */
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-team-list {
+  grid-template-rows: repeat(6, auto);
+  align-content: center;
+  flex: 1;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-team-slot {
+  --collection-row-art: var(--provided-team-row-normal);
+  isolation: isolate;
+  grid-template-columns: 21% minmax(0, 1fr) 7%;
+  gap: 3%;
+  aspect-ratio: 620 / 117;
+  height: auto;
+  min-height: 0;
+  padding: 5px 5% 5px 3%;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-team-slot::before,
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-dex-list .pu-dex-row::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border: 0;
+  border-radius: 0;
+  background-image: var(--collection-row-art);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  box-shadow: none;
+  pointer-events: none;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-team-slot:hover:enabled {
+  --collection-row-art: var(--provided-team-row-hover);
+  background: transparent;
+  box-shadow: none;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-team-slot.is-selected {
+  --collection-row-art: var(--provided-team-row-selected);
+  background: transparent;
+  box-shadow: none;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-team-slot:disabled {
+  --collection-row-art: var(--provided-team-row-disabled);
+  opacity: .75;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-slot-number {
+  display: none;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-live-team-slot-art {
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-team-slot-content {
+  position: static;
+  inset: auto;
+  transform: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  gap: 2px;
+  min-height: 0;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-team-slot-title {
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-between;
+  min-width: 0;
+  gap: 5px;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-team-slot-title strong {
+  width: auto;
+  min-width: 0;
+  flex: 1 1 auto;
+  font-size: clamp(14px, 1.14vw, 17px);
+  line-height: 1.1;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-team-slot-title > span,
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-team-slot .pu-health > span {
+  font-size: 11px;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-team-slot .pu-health {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  column-gap: 6px;
+  margin: 0;
+  min-height: 0;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-team-slot .pu-health progress {
+  grid-column: 1;
+  width: 100%;
+  min-width: 0;
+  height: 4px;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-team-slot .pu-health > span {
+  position: static;
+  grid-column: 2;
+  width: auto;
+  display: block;
+  white-space: nowrap;
+  line-height: 1.2;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-reference-slot-status {
+  position: static;
+  inset: auto;
+  display: block;
+  font-size: 10px;
+  line-height: 1.1;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-slot-arrow {
+  visibility: hidden;
+}
+
+/* A real transparent summoning circle sits behind the official front portrait. */
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-portrait-orbit {
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  max-height: none;
+  aspect-ratio: auto;
+  border: 0;
+  border-radius: 0;
+  background: var(--provided-summoning-ring) center / contain no-repeat;
+  box-shadow: none;
+  opacity: .7;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-portrait-orbit::before {
+  display: none;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-dex-hero {
+  isolation: isolate;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-dex-hero::before {
+  inset: 15% 0 7%;
+  width: 100%;
+  height: auto;
+  border: 0;
+  border-radius: 0;
+  background: var(--provided-summoning-ring) center / contain no-repeat;
+  box-shadow: none;
+  opacity: .6;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-deposit-detail .pu-hero {
+  background-image: var(--provided-summoning-ring);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* The empty right-hand rows contain no baked names, IDs, types or statistics. */
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-dex-list {
+  align-content: center;
+  grid-auto-rows: auto;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-dex-list .pu-dex-row {
+  --collection-row-art: var(--provided-creature-row-normal);
+  isolation: isolate;
+  display: grid;
+  grid-template-columns: 22% minmax(0, 1fr) 9%;
+  gap: 3%;
+  aspect-ratio: 631 / 116;
+  min-height: 0;
+  height: auto;
+  padding: 5px 5% 5px 3%;
+  border: 0 !important;
+  border-radius: 0;
+  background: transparent !important;
+  box-shadow: none;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-dex-list .pu-dex-row:hover:enabled {
+  --collection-row-art: var(--provided-creature-row-hover);
+  background: transparent !important;
+  box-shadow: none;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-dex-list .pu-dex-row.is-active {
+  --collection-row-art: var(--provided-creature-row-selected);
+  background: transparent !important;
+  box-shadow: none;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-dex-row[data-discovery-state="unknown"]:not(.is-active):not(:hover) {
+  --collection-row-art: var(--provided-creature-row-disabled);
+}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-dex-row .pu-creature-portrait {
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-dex-row .pu-dex-row-title {
+  flex-direction: row;
+  align-items: baseline;
+  gap: 6px;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-dex-row .pu-dex-row-title strong {
+  font-size: clamp(14px, 1.12vw, 17px);
+}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-dex-row small {
+  font-size: 10px;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-dex-row .pu-discovery-mark {
+  justify-self: center;
+  color: #c0e5f5;
+}
+
+/* The square slot frame stays square even where a box cell is wider. */
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-box-grid .pu-box-slot {
+  --collection-tile-art: var(--provided-creature-tile-normal);
+  isolation: isolate;
+  justify-self: center;
+  width: auto;
+  max-width: 100%;
+  height: 100%;
+  aspect-ratio: 226 / 206;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  padding: 6%;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-box-grid .pu-box-slot::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background: var(--collection-tile-art) center / contain no-repeat;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-box-grid .pu-box-slot:has(>.pu-empty-slot) {
+  background: transparent;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-box-grid .pu-box-slot.is-selected {
+  --collection-tile-art: var(--provided-creature-tile-selected);
+  background: transparent;
+  box-shadow: none;
+  outline: none;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-box-grid .pu-box-slot > .pu-creature-portrait {
+  max-height: none;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-box-grid .pu-box-slot .pu-box-slot-level {
+  bottom: 7%;
+  right: 7%;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-box-grid .pu-box-slot .pu-empty-slot {
+  color: #9eb4c6;
+}
+
+/* Blank parchment and empty evolution cards carry the real, masked data. */
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-dex-detail [data-arkadex-detail="information"] .pu-facts {
+  aspect-ratio: 391 / 289;
+  margin: 10px 0;
+  padding: 7% 8%;
+  gap: 3px 12px;
+  align-content: center;
+  background: var(--provided-parchment-compact) center / contain no-repeat;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-dex-detail [data-arkadex-detail="information"] .pu-facts > div {
+  padding: 6px 0;
+  border-bottom-color: #907e5455;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-dex-detail [data-arkadex-detail="information"] .pu-facts dt {
+  font-size: 11px;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-dex-detail [data-arkadex-detail="information"] .pu-facts dd {
+  font-size: 17px;
+  margin-top: 3px;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-dex-detail .pu-evolution-step {
+  border: 0;
+  background: transparent;
+  padding: 2px;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-dex-detail .pu-evolution-step.is-current {
+  border: 0;
+  background: transparent;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-dex-detail .pu-evolution-step > .pu-creature-portrait {
+  width: 76px;
+  height: 71px;
+  padding: 7px;
+  background: var(--provided-evolution-empty) center / contain no-repeat;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-dex-detail .pu-evolution-step > .pu-unknown-portrait {
+  width: 76px;
+  height: 71px;
+  max-width: 100%;
+  padding: 0;
+  font-size: 0;
+  border: 0;
+  border-radius: 0;
+  color: transparent;
+  background: var(--provided-evolution-locked) center / contain no-repeat;
+}
+
+@media (min-width: 901px) and (max-height: 820px) {
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-team-list {
+    gap: 5px;
+  }
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-team-slot {
+    padding-top: 4px;
+    padding-bottom: 4px;
+  }
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-team-slot-title strong {
+    font-size: 14px;
+  }
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-team-slot-title > span,
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-team-slot .pu-health > span {
+    font-size: 10px;
+  }
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-dex-list .pu-dex-row {
+    width: min(100%, 270px);
+    justify-self: center;
+    padding-top: 3px;
+    padding-bottom: 3px;
+  }
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-dex-row .pu-dex-row-title strong {
+    font-size: 14px;
+  }
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-dex-detail [data-arkadex-detail="information"] .pu-facts {
+    padding: 6% 8%;
+    margin: 7px 0;
+    gap: 2px 9px;
+  }
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-dex-detail [data-arkadex-detail="information"] .pu-facts > div {
+    padding: 4px 0;
+  }
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-dex-detail [data-arkadex-detail="information"] .pu-facts dd {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 900px) {
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-team-list {
+    flex: none;
+  }
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-team-slot {
+    min-height: 0;
+    padding-top: 6px;
+    padding-bottom: 6px;
+  }
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-team-slot-title strong {
+    font-size: clamp(15px, 4.2vw, 20px);
+  }
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-dex-list {
+    flex: none;
+    grid-auto-rows: auto;
+  }
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-dex-row .pu-dex-row-title strong {
+    font-size: clamp(14px, 4vw, 18px);
+  }
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-box-grid .pu-box-slot {
+    padding: 5%;
+  }
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-box-grid .pu-box-slot .pu-box-slot-level {
+    font-size: 6px;
+    bottom: 4%;
+    right: 3%;
+  }
+}

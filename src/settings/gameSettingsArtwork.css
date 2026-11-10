@@ -1,0 +1,7 @@
+.game-settings-artwork{width:100%;max-width:780px;margin:0 auto;padding:10px 0 24px}
+.game-settings-artwork .game-audio-toggle{position:relative;display:flex;align-items:center;gap:18px;cursor:pointer;min-height:66px;font-size:18px}
+.game-audio-toggle>input{position:absolute;left:0;top:0;width:128px;height:66px;opacity:0;cursor:pointer;z-index:1;margin:0}
+.game-audio-toggle>img{display:block;width:128px;height:66px;object-fit:contain}
+.game-audio-toggle>input:focus-visible+img{outline:3px solid #e8f9ff;outline-offset:3px;border-radius:6px}
+.game-settings-artwork>label:not(.game-audio-toggle){font-size:16px;line-height:1.5}
+.game-settings-artwork input[type=range]{accent-color:#78cfe7;min-height:32px}

@@ -1,0 +1,26 @@
+import type { MoveVfxAssetId } from './vfxManifest'
+
+export const MOVE_VFX_BY_MOVE_ID: Partial<Record<number, MoveVfxAssetId>> = {
+  20: 'waterGif',
+  28: 'slash',
+  30: 'slash',
+  36: 'fireballGif',
+  48: 'slash',
+  59: 'cureGif',
+  66: 'cureGif',
+  107: 'waterTorrentGif',
+  138: 'thrust',
+  146: 'gutsPunchGif',
+  153: 'cureGif',
+  154: 'cureGif',
+  157: 'slash',
+  158: 'slash',
+  166: 'slash',
+  174: 'fireWaveGif',
+  184: 'lightningGif',
+  185: 'lightningGif',
+  195: 'firePulseGif',
+  197: 'fireImpactGif',
+  203: 'guardBreakGif',
+  212: 'gutsPunchGif',
+}

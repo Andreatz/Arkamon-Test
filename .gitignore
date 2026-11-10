@@ -1,0 +1,48 @@
+# Dipendenze
+node_modules
+.pnp
+.pnp.js
+
+# Build
+dist
+dist-web/
+dist-ssr
+dist-desktop/
+src-tauri/target
+*.local
+
+# Editor
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Env
+.env
+.env.local
+.env.*.local
+
+# Cache
+.eslintcache
+.cache
+test-results/
+playwright-report/
+native-pages-test-results/
+output/
+dist-desktop-resources/
+
+# Cache Python generata dagli strumenti locali
+__pycache__/
+*.py[cod]

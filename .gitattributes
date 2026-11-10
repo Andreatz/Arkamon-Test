@@ -1,0 +1,21 @@
+# Preserve PNG bytes and reproducible text output across operating systems.
+public/vfx/moves/ai-generated/*.png binary
+public/vfx/moves/ai-generated/catalog.json text eol=lf
+vfx-source/ai-generated/originals/*.png binary
+vfx-source/ai-generated/provenance/*.json text eol=lf
+vfx-source/ai-generated/README.md text eol=lf
+docs/vfx-generated-moves/** text eol=lf
+scripts/vfx-generated/*.py text eol=lf
+
+# Keep the delivered UI files and source SVG hashes byte-identical across clones.
+docs/ui-previews/archive-kit/** -text whitespace=cr-at-eol
+public/ui/player-kit/** -text whitespace=cr-at-eol
+
+# Keep authored SVG formatting byte-identical in runtime adapters and templates.
+public/ui/studio/runtime/*.svg -text whitespace=-blank-at-eol
+src/ui-studio/templates/*.svg -text whitespace=-blank-at-eol
+
+# Preserve imported vector bytes and deterministic generated UI catalogs.
+public/ui/reference-assets/*.svg -text whitespace=-blank-at-eol
+public/ui/reference-png/*.json text eol=lf
+ui-source/*.json text eol=lf

@@ -1,0 +1,28 @@
+.battle-command-cursor { opacity: 0; position: absolute; left: 8%; top: 28%; color: var(--arka-text); font-size: 18px; }
+.battle-move-button:focus-visible { outline: 3px solid var(--arka-text); outline-offset: 3px; }
+.battle-move-button:is(:focus-visible,:hover):enabled .battle-command-cursor { opacity: 1; }
+.battle-move-button { touch-action: manipulation; }
+.battle-turn-label { font-size: clamp(17px, 1.35vw, 26px); line-height: 1.15; }
+.battle-message-lines { font-size: clamp(15px, 1.55vw, 27px); line-height: 1.2; }
+.battle-message-lines p { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden; }
+.battle-result-card { position: absolute; top: 28%; left: 32%; right: 27%; z-index: 25; padding: 18px 24px; border: 3px double var(--arka-text-muted); border-radius: 5px; background: color-mix(in srgb, var(--arka-bg) 94%, transparent); color: var(--arka-text); box-shadow: 0 8px 32px #0008; }
+.battle-result-card h2 { font-size: clamp(22px, 2vw, 36px); color: var(--arka-primary); }
+.battle-result-seal { width: 64px; height: 64px; float: right; margin-left: 12px; }
+.battle-result-card p { margin-top: 8px; font-size: clamp(12px, 1.1vw, 20px); }
+.battle-result-card ul { margin-top: 10px; display: grid; gap: 5px; }
+.battle-result-card li { font-size: clamp(11px, 1vw, 18px); }
+.battle-result-card .battle-result-progress { color: var(--arka-text-muted); }
+@media (max-width: 640px) {
+  .battle-result-card { top: 24%; left: 12%; right: 12%; padding: 10px 14px; }
+  .battle-command-cursor { font-size: 12px; left: 4%; }
+}
+
+/* World motion is confined to creatures, ground and effects; every HUD window is a sibling. */
+.battle-world { isolation:isolate; pointer-events:none; }
+.battle-world [data-admin-layout-item] { pointer-events:auto; }
+.battle-ground-shadow { position:absolute; left:24%; right:24%; bottom:10%; height:9%; border-radius:50%; background:radial-gradient(ellipse,#0008,transparent 72%); filter:blur(4px); pointer-events:none; }
+.battle-challenge-context { position:absolute; left:2%; top:1.5%; width:30%; height:7%; max-width:520px; z-index:32; }
+.battle-challenge-context>button { height:100%; min-height:48px; font-size:clamp(14px,1.3vw,24px); }
+.battle-challenge-context>button>span:last-child { font-size:clamp(10px,.9vw,16px); }
+.battle-stage [data-battle-chronicle-command] { max-width:24%; min-height:44px; font-size:clamp(14px,1.15vw,22px); }
+@media(max-width:800px) { .battle-challenge-context { width:33%; } .battle-challenge-context>button>span:last-child { display:none; } }

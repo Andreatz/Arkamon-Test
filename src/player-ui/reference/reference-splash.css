@@ -1,0 +1,86 @@
+/* Face and torso stay readable; peripheral anatomy may extend behind the live interface. */
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"][data-reference-splash-ready="true"] { overflow:clip; }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"][data-reference-splash-ready="true"]::before {
+  background-image:none; transform:none;
+}
+.pu-splash-backdrop { position:absolute; inset:0; overflow:hidden; z-index:-2; pointer-events:none; }
+.pu-splash-backdrop::before {
+  content:''; position:absolute; inset:0; z-index:1; background-image:var(--pu-background);
+  background-position:var(--pu-splash-position,50% 50%); background-size:cover; background-repeat:no-repeat; opacity:1;
+  transform:none;
+}
+/* One continuous, sharp painting: no resized inset or blurred duplicate. */
+.pu-splash-backdrop::after { content:none; }
+/* Avoid briefly showing an old or unmeasured framing while the lazy screen mounts. */
+.pu-shell:not([data-splash-frame-ready="true"]) .pu-splash-backdrop { visibility:hidden; }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"][data-reference-splash-ready="true"]::after {
+  background:linear-gradient(90deg,#03112488,transparent 30%,transparent 64%,#03112466),linear-gradient(#03112422,transparent 25%,transparent 80%,#03112477);
+  box-shadow:inset 0 0 75px #02102166;
+}
+.pu-splash-hero-presence { display:block; width:100%; height:100%; min-height:0; pointer-events:none; }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-team-screen[data-splash-artwork="ready"] .pu-hero,
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-dex-screen[data-splash-artwork="ready"] .pu-dex-hero {
+  background:none; box-shadow:none;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-dex-screen[data-splash-artwork="ready"] .pu-dex-hero::before { display:none!important; }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-dex-screen[data-splash-artwork="ready"] .pu-dex-hero { position:relative; padding:0; }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-dex-screen[data-splash-artwork="ready"] .pu-dex-hero>.pu-species-number { display:none; }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-dex-screen[data-splash-artwork="ready"] .pu-dex-hero .pu-hero-caption {
+  position:absolute; top:0; left:0; right:0; padding:0;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-dex-screen[data-splash-artwork="ready"] .pu-dex-hero .pu-animation-toggle {
+  position:absolute; bottom:12px; left:50%; transform:translateX(-50%); margin:0;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-team-screen[data-splash-artwork="ready"] .pu-hero-caption { transform:translateY(8px); }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] :is(.pu-team-screen,.pu-dex-screen)[data-splash-artwork="ready"] :is(.pu-hero-caption,.pu-reference-hero-title,.pu-reference-hero-caption,.pu-species-number) {
+  text-shadow:0 2px 4px #000,0 0 12px #000;
+}
+/* Native animation remains an explicit live option above the painted backdrop. */
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-dex-hero[data-splash-animation="playing"] .pu-species-animation {
+  isolation:isolate; background:#071b31ee; border:1px solid #c9a76f; border-radius:12px;
+}
+@media(min-width:901px) {
+  /* Give authored faces a wider opening while keeping the dossier's width. */
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-dex-screen[data-splash-artwork="ready"] .pu-dex-layout {
+    grid-template-columns:minmax(215px,.70fr) minmax(180px,1.26fr) minmax(255px,.94fr);
+  }
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-team-screen[data-splash-artwork="ready"] .pu-team-layout {
+    grid-template-columns:minmax(205px,.815fr) minmax(200px,1.405fr) minmax(260px,1.08fr);
+  }
+  /* Type and condition remain in the live dossier; leave the painted feet clear. */
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-team-screen[data-splash-artwork="ready"] .pu-hero-caption { display:none; }
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-team-screen[data-splash-artwork="ready"] .pu-reference-hero-title .pu-species-number { display:none; }
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-dex-screen[data-splash-artwork="ready"] .pu-dex-hero .pu-hero-caption>.pu-kicker { display:none; }
+}
+@media(min-width:901px) and (max-height:820px) {
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-team-screen[data-splash-artwork="ready"] .pu-reference-hero-title { transform:translateY(-26px); }
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-team-screen[data-splash-artwork="ready"] .pu-reference-hero-title .pu-species-number { margin-bottom:5px; }
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-team-screen[data-splash-artwork="ready"] .pu-reference-hero-title h2 { font-size:34px; }
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-team-screen[data-splash-artwork="ready"] .pu-reference-hero-level { margin-top:4px; }
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-dex-screen[data-splash-artwork="ready"] .pu-dex-hero .pu-hero-caption { top:-26px; }
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-dex-screen[data-splash-artwork="ready"] .pu-dex-hero .pu-hero-caption h2 { font-size:30px; line-height:1.05; margin:3px 0; }
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-dex-screen[data-splash-artwork="ready"] .pu-dex-hero .pu-hero-caption .pu-type { padding:3px 10px; font-size:13px; }
+}
+@media(min-width:901px) and (min-height:821px) and (max-height:1000px) {
+  /* Keep names above the authored face at intermediate desktop heights too. */
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-team-screen[data-splash-artwork="ready"] .pu-reference-hero-title { transform:translateY(calc(20vh - 218px)); }
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-dex-screen[data-splash-artwork="ready"] .pu-dex-hero .pu-hero-caption { top:calc(20vh - 218px); }
+}
+@media(min-width:901px) and (max-height:1000px) {
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-team-screen[data-splash-artwork="ready"] .pu-reference-hero-caption { display:none; }
+}
+@media(max-width:900px) {
+  /* A tall mobile page must not enlarge and crop the landscape artwork. */
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"][data-reference-splash-ready="true"]::before { background-image:none; transform:none; }
+  .pu-splash-backdrop { display:none; }
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] :is(.pu-team-screen,.pu-dex-screen)[data-splash-artwork="ready"] .pu-splash-hero-presence {
+    aspect-ratio:16/9; height:auto; min-height:0; background:var(--pu-background) center/contain no-repeat;
+  }
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-team-screen[data-splash-artwork="ready"] .pu-reference-portrait-space {
+    display:grid; align-items:center; height:auto; min-height:0; flex:none; width:100%; max-width:none;
+  }
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-team-screen[data-splash-artwork="ready"] :is(.pu-hero-column,.pu-hero) { min-height:0; }
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-dex-screen[data-splash-artwork="ready"] .pu-dex-hero { gap:12px; }
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-dex-screen[data-splash-artwork="ready"] .pu-dex-hero :is(.pu-hero-caption,.pu-animation-toggle) { position:static; transform:none; }
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-team-screen[data-splash-artwork="ready"] .pu-hero-caption { transform:none; }
+}

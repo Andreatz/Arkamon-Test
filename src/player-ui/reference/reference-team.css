@@ -1,0 +1,329 @@
+/* Aurora: the party list, a central creature stage and a functional companion dossier. */
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  gap: 17px;
+  padding: 0;
+  min-height: 0;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team > .pu-screen-heading {
+  flex: none;
+  margin: 0;
+  padding: 0 0 12px;
+  border-bottom: 1px solid #9c85464d;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-screen-heading h1 {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: clamp(29px,2.8vw,43px);
+  letter-spacing: -.025em;
+  color: #f2e5c9;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-screen-heading p { margin: 6px 0 0; }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-count {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border: 0;
+  background: transparent;
+  color: #c7b997;
+  font-size: 12px;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-team-layout {
+  display: grid;
+  grid-template-columns: minmax(230px,.92fr) minmax(250px,1.26fr) minmax(300px,1.12fr);
+  grid-template-rows: minmax(0,1fr);
+  align-items: stretch;
+  flex: 1;
+  min-height: 0;
+  gap: clamp(16px,2.4vw,36px);
+}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-roster { display: flex; flex-direction: column; min-height: 0; min-width: 0; }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-column-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3px 13px;
+  color: #bfa66c;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: .13em;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-team-list {
+  position: static;
+  display: grid;
+  grid-template-columns: minmax(0,1fr);
+  grid-template-rows: repeat(6,minmax(0,1fr));
+  flex: 1;
+  min-height: 0;
+  height: auto;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  aspect-ratio: auto;
+  gap: 8px;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-team-slot {
+  position: relative;
+  inset: auto;
+  display: grid;
+  grid-template-columns: 12px 57px minmax(0,1fr) 12px;
+  align-items: center;
+  justify-content: stretch;
+  gap: 10px;
+  min-height: 57px;
+  height: auto;
+  padding: 10px 13px 10px 8px;
+  width: 100%;
+  transform: none;
+  text-align: left;
+  border: 1px solid #8775446b;
+  border-radius: 5px 14px 5px 5px;
+  background: linear-gradient(105deg,#192633ed,#0c1724e8);
+  box-shadow: inset 0 1px #c2ad7520,0 3px 9px #0002;
+  overflow: visible;
+  color: #e7e4d7;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-team-slot.is-selected {
+  border-color: #bbaa6d;
+  background: linear-gradient(105deg,#284453e8,#152c3ce8);
+  color: #fff2d4;
+  box-shadow: inset 3px 0 #d5bc7b,0 0 18px #4db8d323,inset 0 0 15px #6ad8f00c;
+  filter: none;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-team-slot::after { display: none; }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-team-slot.is-move-target { outline: 1px dashed #8bd8de; outline-offset: 2px; }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-slot-number {
+  position: static;
+  color: #8b9caa;
+  font-size: 8px;
+  font-family: Arial,sans-serif;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-live-team-slot-art {
+  position: relative;
+  inset: auto;
+  width: 57px;
+  height: 57px;
+  flex: none;
+  border: 1px solid #c6af6d48;
+  border-radius: 50%;
+  background: radial-gradient(ellipse,#2d56637a,#0c18244d 70%);
+}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-team-slot .pu-creature-portrait {
+  position: absolute;
+  inset: 5%;
+  height: 90%;
+  width: 90%;
+  min-height: 0;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-team-slot-content {
+  position: static;
+  width: 100%;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-team-slot-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 6px;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-team-slot-title strong {
+  font: 16px/1.1 Georgia,'Times New Roman',serif;
+  color: inherit;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-team-slot-title > span { color: #d8c38d; font: 10px/1.2 Arial,sans-serif; flex: none; }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-team-slot .pu-health { display: flex; flex-direction: column; gap: 3px; margin: 0; width: 100%; }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-team-slot .pu-health progress { height: 4px; }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-team-slot .pu-health > span { display: block; font: 9px/1.2 Arial,sans-serif; color: #b7c6ca; margin: 0; text-align: right; }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-slot-status { font: 8px/1 Arial,sans-serif; color: #ebcd86; }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-slot-status.is-ko { color: #f4a4a4; }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-slot-arrow { color: #c4aa6f; font: 24px Georgia,serif; opacity: 0; }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .is-selected .pu-reference-slot-arrow { opacity: 1; }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-slot-empty { display: grid; place-items: center; width: 100%; height: 100%; color: #657984; font-size: 22px; }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-empty-slot { position: static; width: auto; font-size: 12px; color: #a3b2b9; }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-roster-hint { margin: 10px 0 0; font-size: 10px; line-height: 1.4; color: #a0b1b8; }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-hero-column {
+  position: relative;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  min-height: 0;
+  height: 100%;
+  padding: 0;
+  background: radial-gradient(ellipse at 50% 65%,#3693a91c,transparent 66%);
+}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: none;
+  min-height: 0;
+  height: 100%;
+  padding: 0;
+  gap: 12px;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-hero-title { text-align: center; flex: none; }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-hero-title .pu-species-number { display: block; text-align: center; color: #bfa76f; font: 10px/1.2 Arial,sans-serif; letter-spacing: .18em; margin-bottom: 9px; }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-hero-title h2 { font: clamp(29px,3vw,46px)/1.05 Georgia,'Times New Roman',serif; color: #fff1d6; letter-spacing: -.03em; margin: 0; text-shadow: 0 3px 12px #0008; }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-hero-level { display: block; margin-top: 8px; color: #a8c0ca; font-size: 11px; letter-spacing: .08em; }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-portrait-space { position: relative; flex: 1; width: 100%; min-height: 160px; display: grid; place-items: center; isolation: isolate; }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-portrait-orbit { position: absolute; width: 85%; aspect-ratio: 1; max-height: 100%; border: 1px solid #c0aa6835; border-radius: 50%; background: radial-gradient(ellipse,#5fc9db12,transparent 65%); box-shadow: 0 0 0 15px #79bdca03,0 0 0 16px #aa95511a; z-index: -1; }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-portrait-orbit::before { content: '✦'; position: absolute; top: -10px; left: calc(50% - 6px); color: #d7c18a; font-size: 15px; padding: 0 4px; text-shadow: 0 0 9px #071725; }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-live-team-portrait { position: relative; width: 100%; height: 100%; min-height: 160px; max-height: 400px; background: transparent; border: 0; aspect-ratio: auto; }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-live-team-portrait > .pu-creature-portrait.is-large { position: absolute; inset: 0; width: 100%; height: 100%; min-height: 0; margin: 0; }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-live-team-portrait .pu-creature-art { filter: drop-shadow(0 12px 18px #0007) drop-shadow(0 0 16px #85e5f015); }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-portrait-ground { position: absolute; bottom: 6%; left: 16%; right: 16%; height: 6%; border-radius: 50%; background: #080f1a70; filter: blur(9px); z-index: -1; }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-hero-caption { padding: 0; display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 10px; }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-hero-caption { text-align: center; margin: 0; font: italic 11px/1.5 Georgia,serif; color: #b2c0c3; }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-team-tactics {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  gap: 12px;
+  min-height: 0;
+  border: 1px solid #b39b5d80;
+  border-radius: 7px 18px 7px 7px;
+  background: linear-gradient(135deg,#1b2d3ce8,#0e1c2aeb);
+  box-shadow: inset 0 0 0 4px #b8a06309,inset 0 1px #e6c9872b,0 12px 30px #0003;
+  padding: 20px;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-dossier-title { display: flex; justify-content: space-between; align-items: center; color: #cab177; }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-dossier-title .pu-kicker { margin: 0; color: #cab177; font-size: 9px; letter-spacing: .16em; }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-dossier-tabs { display: flex; align-items: stretch; gap: 0; padding: 0; margin: 0; border: 0; border-bottom: 1px solid #a48a4f66; }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-dossier-tabs > button { flex: 1; min-width: 0; border: 0; border-bottom: 2px solid transparent; border-radius: 0; padding: 10px 5px 12px; color: #acbcc5; background: transparent; font: 13px Georgia,serif; }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-dossier-tabs > button.is-active { border-bottom-color: #d8bf7d; color: #f6dfaa; background: linear-gradient(to top,#bda16514,transparent); }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-dossier-content { flex: 1; min-height: 0; overflow: auto; padding-right: 3px; scrollbar-width: thin; scrollbar-color: #6e7e82 transparent; }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-dossier-name { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; padding: 0 0 15px; }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-dossier-name h2 { font: 25px/1.1 Georgia,serif; color: #f2e3bf; margin: 0; }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-dossier-name > span { color: #c5b17e; font-size: 11px; white-space: nowrap; }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-dossier-health { padding: 14px; border: 1px solid #6a91a042; border-radius: 5px; background: #07162355; }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-dossier-health > div:first-child { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; margin-bottom: 12px; }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-dossier-health > div:first-child > span { font-size: 11px; color: #b5c7cb; }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-dossier-health strong { color: #c9e7d6; font: 23px Georgia,serif; }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-dossier-health small { font: 11px Arial,sans-serif; color: #a7bdc5; }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-dossier-health .pu-health { margin: 0; }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-dossier-health .pu-health > span { display: none; }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-dossier-health progress { height: 7px; }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team-facts { margin: 14px 0 0; }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team-facts > div { display: flex; align-items: center; justify-content: space-between; gap: 14px; padding: 10px 0; border-bottom: 1px solid #91a5ab1f; }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team-facts dt { color: #a5b8c2; font-size: 11px; }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team-facts dd { margin: 0; color: #e1d9c2; text-align: right; font: 13px/1.3 Georgia,serif; }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-dossier-note { color: #a4b9c2; font-size: 10px; line-height: 1.6; margin: 15px 0 0; }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-moves { display: flex; flex-direction: column; gap: 7px; margin: 0; }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-move { padding: 13px 0; border: 0; border-bottom: 1px solid #8da8b233; align-items: flex-start; }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-move > div { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-move strong { color: #e9d6aa; font: 17px Georgia,serif; }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-move .pu-move-tactical { color: #a6bbc5; font-size: 10px; line-height: 1.5; }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-actions { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); grid-template-rows: none; gap: 8px; flex: none; margin: 0; padding: 12px 0 0; border: 0; border-top: 1px solid #aa925351; width: 100%; max-width: none; }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-actions > .studio-command { min-height: 40px; padding: 10px; font: 11px/1.2 Georgia,serif; }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-actions > .studio-command:first-child { grid-column: 1/-1; }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-actions > .studio-command:last-child { grid-column: 1/-1; }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team > .pu-team-cap { flex: none; display: flex; align-items: center; gap: 12px; margin: 0; padding: 12px 0 0; border-top: 1px solid #99834842; }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-cap-symbol { color: #cab57a; font: 25px Georgia,serif; }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-team-cap-copy { flex: 1; min-width: 0; }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-team-cap strong { font: 12px Georgia,serif; color: #d7c597; }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-team-cap p { font: 10px/1.4 Arial,sans-serif; margin: 4px 0 0; color: #9eb2bf; }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-team-feedback { max-width: 45%; min-width: 0; color: #acc0cb; }
+@media (min-width:901px) and (max-height:820px) {
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team { gap: 11px; }
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team > .pu-screen-heading { padding-bottom: 8px; }
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-screen-heading h1 { font-size: 30px; }
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-screen-heading p { margin-top: 4px; }
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-column-heading { padding-bottom: 8px; }
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-team-list { gap: 6px; }
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-team-slot { grid-template-columns: 10px 43px minmax(0,1fr) 10px; min-height: 50px; gap: 8px; padding: 6px 9px 6px 6px; }
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-live-team-slot-art { width: 43px; height: 43px; }
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-team-slot-title strong { font-size: 14px; }
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-team-slot-content { gap: 3px; }
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-roster-hint { margin-top: 6px; font-size: 9px; }
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-team-tactics { gap: 10px; padding: 14px; }
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-dossier-tabs > button { padding: 7px 4px 9px; font-size: 12px; }
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-dossier-name { padding-bottom: 9px; }
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-dossier-name h2 { font-size: 22px; }
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-dossier-health { padding: 11px; }
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team-facts { margin-top: 8px; }
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team-facts > div { padding: 8px 0; }
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-dossier-note { margin-top: 10px; }
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-actions { padding-top: 10px; gap: 6px; }
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-actions > .studio-command { min-height: 34px; padding: 7px; }
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team > .pu-team-cap { padding-top: 8px; }
+}
+@media (max-width:1100px) and (min-width:901px) {
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-team-layout { grid-template-columns: minmax(205px,.9fr) minmax(200px,1fr) minmax(260px,1.1fr); gap: 15px; }
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-team-slot { grid-template-columns: 42px minmax(0,1fr); padding: 8px; }
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-slot-number,html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-slot-arrow { display: none; }
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-live-team-slot-art { width: 42px; height: 42px; }
+}
+@media (max-width:900px) {
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team { height: auto; gap: 20px; }
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team > .pu-screen-heading { align-items: flex-start; }
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-count { font-size: 10px; padding: 0; gap: 7px; }
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-team-layout { display: flex; flex-direction: column; gap: 25px; }
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-hero-column { order: 0; min-height: 350px; }
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-hero { height: auto; min-height: 350px; }
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-portrait-space { height: 250px; min-height: 250px; max-width: 360px; flex: none; }
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-live-team-portrait { height: 250px; }
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-roster { order: 1; width: 100%; }
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-team-list { grid-template-columns: minmax(0,1fr); grid-template-rows: repeat(6,auto); }
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-team-slot { min-height: 80px; }
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-team-tactics { order: 2; min-height: 440px; padding: 18px; }
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-dossier-content { overflow: visible; }
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-team-feedback { max-width: none; width: 100%; flex: none; }
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team > .pu-team-cap { flex-wrap: wrap; }
+}
+
+/* The shell already names the screen. Give the companion and its live values the visual space. */
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team > .pu-screen-heading {
+  display: flex;
+  align-items: center;
+  min-height: 29px;
+  padding-bottom: 9px;
+  margin: 0;
+}
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-screen-heading h1,
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-screen-heading > div > p:not(.pu-kicker) { display: none; }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-screen-heading .pu-kicker { font-size: 12px; line-height: 1.3; margin: 0; }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-count { font-size: 13px; }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-column-heading { font-size: 12px; padding-bottom: 10px; }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-team-slot-title strong { font-size: 18px; }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-team-slot-title > span { font-size: 13px; }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-team-slot .pu-health > span { font-size: 12px; line-height: 1.25; }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-team-slot-content { position: relative; inset: auto; transform: none; gap: 5px; }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-slot-status { position: absolute; bottom: 0; left: 0; font-size: 12px; line-height: 1.25; }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-roster-hint { font-size: 12px; line-height: 1.35; margin-top: 8px; }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-hero-title .pu-species-number { font-size: 12px; }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-hero-level { font-size: 14px; }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-hero-caption { font-size: 12px; }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-dossier-title .pu-kicker { font-size: 12px; }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-dossier-tabs > button { font-size: 18px; padding: 9px 4px 11px; }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-dossier-name > span { font-size: 13px; }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-dossier-health > div:first-child > span { font-size: 14px; }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-dossier-health small { font-size: 13px; }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team-facts dt { font-size: 14px; }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team-facts dd { font-size: 16px; }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-dossier-note { font-size: 12px; line-height: 1.5; }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-move .pu-move-tactical { font-size: 12px; line-height: 1.4; }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-move strong { font-size: 19px; }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-actions > .studio-command { font-size: 16px; min-height: 40px; padding: 8px; }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-team-cap strong { font-size: 14px; }
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-team-cap p { font-size: 12px; line-height: 1.4; }
+@media (min-width:901px) and (max-height:820px) {
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team { gap: 10px; }
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team > .pu-screen-heading { min-height: 24px; padding-bottom: 6px; }
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-team-tactics { padding: 13px; gap: 9px; }
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-actions { padding-top: 9px; gap: 6px; }
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team .pu-actions > .studio-command { min-height: 37px; padding: 7px; }
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-dossier-name { padding-bottom: 8px; }
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-team-facts > div { padding: 7px 0; }
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-dossier-health { padding: 10px; }
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .pu-reference-dossier-health > div:first-child { margin-bottom: 9px; }
+}

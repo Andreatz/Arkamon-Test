@@ -1,0 +1,160 @@
+/* The supplied cards keep their authored proportions at every menu size. */
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .ref-provided-main-menu .ref-provided-menu-tile {
+  container-type: size;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: none;
+  box-shadow: none;
+  isolation: isolate;
+  transform: none;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .ref-provided-main-menu .ref-provided-menu-tile::before,
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .ref-provided-main-menu .ref-provided-menu-tile::after {
+  display: none !important;
+  content: none;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .ref-provided-main-menu .ref-menu-card-face {
+  position: relative;
+  display: grid;
+  grid-template-rows: minmax(0, 1fr) auto;
+  align-items: center;
+  justify-items: center;
+  width: min(100cqw, calc(100cqh * var(--provided-menu-card-ratio, 1.5)));
+  height: min(100cqh, calc(100cqw * var(--provided-menu-card-inverse-ratio, .666667)));
+  min-width: 0;
+  min-height: 0;
+  padding: 7% 8% 8%;
+  box-sizing: border-box;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .ref-provided-main-menu .ref-menu-card-frame {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  pointer-events: none;
+  transition: filter 150ms ease;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .ref-provided-main-menu .ref-provided-menu-tile:not(:disabled):is(:hover, :focus-visible) .ref-menu-card-frame {
+  filter: drop-shadow(0 0 4px #8df4ff) drop-shadow(0 0 9px #29ceff88);
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .ref-provided-main-menu .ref-provided-menu-tile:focus-visible {
+  outline: 2px solid #b2faff;
+  outline-offset: 3px;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .ref-provided-main-menu .ref-menu-card-face > .ref-emblem {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  min-width: 0;
+  min-height: 0;
+  object-fit: contain;
+  color: #edcf8d;
+  filter: drop-shadow(0 3px 3px #0008);
+}
+
+.ref-icon-symbol {
+  display: inline-grid;
+  place-items: center;
+  font-family: "Segoe UI Symbol", "Segoe UI Emoji", Georgia, serif;
+  font-size: 1.1em;
+  font-weight: 400;
+  line-height: 1;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .ref-provided-main-menu .ref-emblem-symbol > .ref-icon-symbol {
+  width: 100%;
+  height: 100%;
+  font-size: clamp(32px, 35cqh, 72px);
+  text-shadow: 0 1px 0 #fff1d0, 0 3px 9px #0009;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .ref-provided-main-menu .ref-menu-companions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  isolation: isolate;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .ref-provided-main-menu .ref-menu-companions > .pu-creature-portrait {
+  display: block;
+  width: 40%;
+  height: 100%;
+  min-height: 0;
+  margin: 0 -4%;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .ref-provided-main-menu .ref-menu-companions > .pu-creature-portrait:nth-child(2) {
+  z-index: 1;
+  transform: translateY(-5%);
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .ref-provided-main-menu .ref-menu-card-face > h2 {
+  width: 100%;
+  max-width: 100%;
+  margin: 4px 0 0;
+  font-size: clamp(17px, 13cqh, 27px);
+  line-height: 1.06;
+  overflow-wrap: anywhere;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .ref-provided-main-menu .ref-provided-medals {
+  display: grid;
+  grid-template-columns: repeat(8, minmax(0, 1fr));
+  gap: 3px;
+  width: min(100%, 252px);
+  margin: 8px 0;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .ref-provided-main-menu .ref-provided-medals > span[data-earned] {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1;
+  min-width: 0;
+  border: 0;
+  border-radius: 0;
+  background: none;
+  box-shadow: none;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .ref-provided-main-menu .ref-provided-medals > span > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .ref-provided-main-menu .ref-provided-medals > span[data-earned="false"] > img {
+  opacity: .28;
+  filter: grayscale(1);
+}
+
+@media (max-width: 900px) {
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .ref-provided-main-menu .ref-menu-grid {
+    gap: 14px;
+    padding: 4px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html .pu-shell.pu-live-shell[data-ui-concept="aurora"] .ref-provided-main-menu .ref-menu-card-frame {
+    transition: none;
+  }
+}

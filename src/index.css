@@ -1,0 +1,198 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Arkamon Norwester';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/ui/studio/fonts/norwester.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Chela One';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./assets/fonts/ChelaOne-Regular.ttf') format('truetype');
+}
+
+/*
+ * VARIABILI GLOBALI ARKAMON
+ * Modifica qui per cambiare l'aspetto generale del gioco.
+ * Sono utilizzabili come `var(--arka-primary)` in CSS o
+ * tramite Tailwind con `bg-[var(--arka-primary)]`.
+ */
+:root {
+  /* Colori brand */
+  --arka-primary: #f59e0b;
+  --arka-primary-hover: #fbbf24;
+  --arka-bg: #0f172a;
+  --arka-surface: #1e293b;
+  --arka-surface-hover: #334155;
+  --arka-text: #f1f5f9;
+  --arka-text-muted: #94a3b8;
+  --arka-border: #475569;
+
+  /* HP bar */
+  --hp-high: #16a34a;
+  --hp-mid: #fff71a;
+  --hp-low: #dc2626;
+
+  /* Admin Theme Editor */
+  --arka-panel-radius: 16px;
+  --arka-button-radius: 12px;
+  --arka-panel-opacity: 1;
+  --arka-shadow-intensity: 1;
+  --arka-button-scale: 0.95;
+  --arka-stage-scale: 1;
+  --arka-font-scale: 1;
+  --arka-panel-texture: none;
+  --arka-font-body: 'Arkamon Norwester', 'Arial Narrow', Arial, sans-serif;
+  --arka-font-heading: 'Arkamon Norwester', 'Arial Narrow', Arial, sans-serif;
+  --arka-font-button: 'Arkamon Norwester', 'Arial Narrow', Arial, sans-serif;
+
+  /* Spaziature */
+  --spacing-game: 1rem;
+
+  /* Transizioni */
+  --transition-fast: 0.15s;
+  --transition-medium: 0.3s;
+  --transition-slow: 0.6s;
+}
+
+html {
+  font-size: calc(16px * var(--arka-font-scale));
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: var(--arka-bg);
+  color: var(--arka-text);
+  font-family: var(--arka-font-body);
+  overflow: hidden;
+}
+
+button, input, select, textarea { font-family: var(--arka-font-body); }
+button { font-family: var(--arka-font-button); }
+h1, h2, h3 { font-family: var(--arka-font-heading); }
+.pu-shell button { font-family: var(--arka-font-button); }
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*
+ * Componenti utility riutilizzabili.
+ * Per cambiare l'aspetto di tutti i pannelli/pulsanti del gioco,
+ * basta modificare queste classi.
+ */
+@layer components {
+  .arka-panel {
+    @apply bg-arka-surface border border-arka-border shadow-2xl;
+    border-radius: var(--arka-panel-radius);
+    opacity: var(--arka-panel-opacity);
+    box-shadow: 0 24px 70px rgb(0 0 0 / calc(0.35 * var(--arka-shadow-intensity)));
+    background-image: var(--arka-panel-texture);
+    background-size: cover;
+    background-blend-mode: overlay;
+  }
+
+  .arka-button {
+    @apply px-6 py-3 bg-arka-accent text-arka-bg font-bold
+           hover:brightness-110 transition-all
+           shadow-lg disabled:opacity-50 disabled:cursor-not-allowed;
+    border-radius: var(--arka-button-radius);
+    box-shadow: 0 10px 20px rgb(0 0 0 / calc(0.22 * var(--arka-shadow-intensity)));
+  }
+
+  .arka-button:active {
+    transform: scale(var(--arka-button-scale));
+  }
+
+  .arka-button-secondary {
+    @apply px-6 py-3 bg-arka-surface text-white border border-arka-border
+           hover:bg-arka-surface-hover transition-all;
+    border-radius: var(--arka-button-radius);
+  }
+
+  .arka-button-secondary:active {
+    transform: scale(var(--arka-button-scale));
+  }
+
+  .arka-readable-title {
+    text-shadow:
+      -1px -1px 0 rgb(0 0 0 / 0.85),
+      1px -1px 0 rgb(0 0 0 / 0.85),
+      -1px 1px 0 rgb(0 0 0 / 0.85),
+      1px 1px 0 rgb(0 0 0 / 0.85),
+      0 3px 8px rgb(0 0 0 / 0.55);
+  }
+
+  .arka-readable-text {
+    text-shadow:
+      -1px -1px 0 rgb(0 0 0 / 0.7),
+      1px -1px 0 rgb(0 0 0 / 0.7),
+      -1px 1px 0 rgb(0 0 0 / 0.7),
+      1px 1px 0 rgb(0 0 0 / 0.7),
+      0 2px 5px rgb(0 0 0 / 0.45);
+  }
+
+  .arka-layout-content {
+    transform: translate(
+      calc(var(--arka-layout-group-content-x, 0%) + var(--arka-layout-local-content-x, 0%)),
+      calc(var(--arka-layout-group-content-y, 0%) + var(--arka-layout-local-content-y, 0%))
+    );
+  }
+
+  .arka-battle-font {
+    font-family: var(--arka-font-heading);
+  }
+
+  [data-admin-layout-editing='true'] .arka-layout-content {
+    cursor: move;
+    outline: 1px dashed rgb(125 211 252 / 0.9);
+    outline-offset: 2px;
+  }
+
+  /* Container principale del gioco con aspect ratio 16:9 */
+  .arka-stage {
+    @apply relative bg-arka-bg overflow-hidden shadow-2xl;
+    aspect-ratio: 16 / 9;
+    width: min(100vw, calc(100vh * 16 / 9));
+    height: min(100vh, calc(100vw * 9 / 16));
+    transform: scale(var(--arka-stage-scale));
+    transform-origin: center;
+  }
+
+  .arka-stage--local-map {
+    width: 100vw;
+    height: 100vh;
+    aspect-ratio: auto;
+  }
+
+  .arka-admin-panel,
+  .arka-admin-panel * {
+    user-select: text;
+    -webkit-user-select: text;
+  }
+}
+
+/* Disabilita selezione testo (è un gioco, non un documento) */
+* {
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.arka-admin-panel,
+.arka-admin-panel * {
+  user-select: text;
+  -webkit-user-select: text;
+}

@@ -1,0 +1,22 @@
+[data-world-rpg-map] .world-map-node { position:relative; min-width:44px; min-height:44px; padding:0 8px; }
+[data-world-rpg-map] .world-map-node:focus-visible { outline:3px solid #fff2cb; outline-offset:4px; border-radius:8px; }
+.world-map-node-label { position:absolute; top:28px; font-size:14px; padding:1px 4px; border-radius:3px; background:#07111c88; }
+.world-map-node-label.is-important { font-size:20px; background:#101c30ed; border:1px solid #abc9e6; }
+[data-world-rpg-map] .world-map-node[aria-pressed=true] [data-world-map-marker] { outline:3px solid #fff2cb; outline-offset:5px; }
+.world-map-destination { position:absolute; left:24px; top:34%; width:min(340px,22%); z-index:40; padding:22px; background:linear-gradient(145deg,#17273df7,#0d1829f7); border:2px solid #8dafd2; border-radius:10px; box-shadow:0 10px 32px #0006; }
+.world-map-destination h2 { font-size:32px; line-height:1.15; margin:10px 0; color:#f8f1db; }
+.world-map-destination p { font-size:20px; line-height:1.35; color:#c7dcf1; }
+.world-map-destination button { width:100%; min-height:52px; font-size:21px; margin-top:14px; }
+[data-world-rpg-map] .world-map-status-window .arka-layout-content { font-size:clamp(16px,1.25vw,24px); line-height:1.25; }
+[data-world-rpg-map] .world-map-status-window>.arka-layout-content:first-child { font-size:clamp(14px,1vw,19px); }
+.world-map-legend { gap:2px; }
+.world-map-legend .arka-layout-content { font-size:clamp(11px,.83vw,16px); line-height:1.35; margin:0; min-height:19px; flex:none; }
+.world-map-unified-hud { position:absolute; top:2%; left:2.5%; width:94.5%; height:7.5%; z-index:34; pointer-events:none; padding:0; }
+[data-world-rpg-map][data-combined-hud=true] .world-map-status-window { background:none; border:none; box-shadow:none; border-radius:0; }
+[data-world-rpg-map][data-combined-hud=true] .world-map-status-window::before { display:none; }
+[data-world-rpg-map][data-combined-hud=true] .world-map-status-window { flex-direction:column; align-items:flex-start; justify-content:center; gap:5px; padding-left:24px; }
+[data-world-rpg-map][data-combined-hud=true] .world-map-status-window>.arka-layout-content { margin:0; }
+
+@media(max-width:1100px) { .world-map-node-label { font-size:10px; } .world-map-node-label.is-important { font-size:14px; } .world-map-destination { width:210px; left:12px; padding:12px; } .world-map-destination h2 { font-size:24px; } .world-map-destination p { font-size:15px; } .world-map-destination button { font-size:16px; } }
+
+@media(max-height:950px) { .world-map-legend .arka-layout-content { font-size:14px; line-height:1.2; min-height:17px; } }

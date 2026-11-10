@@ -1,0 +1,1794 @@
+/* A reversible CSS interface. Native gameplay components remain the source of truth. */
+
+.pu-wordmark {
+  display: none;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] {
+  --ui-bg: #151b1e;
+  --ui-surface: #1d272b;
+  --ui-surface-raised: #263236;
+  --ui-text: #f0ede5;
+  --ui-muted: #a6b6b7;
+  --ui-line: #3b494b;
+  --ui-accent: #d7b381;
+  --ui-accent-ink: #1b2425;
+  --ui-accent-soft: #d7b38118;
+  --ui-radius: 10px;
+  --ui-display-font: Arkamon Norwester,Arial,sans-serif;
+  --ui-body-font: Arial,sans-serif;
+  --ui-shadow: 0 12px 40px #0002;
+  --ui-hero-glow: radial-gradient(ellipse,#608d7c30,transparent 67%);
+  --arka-control-background: var(--ui-surface-raised);
+  --arka-control-border: var(--ui-line);
+  --arka-control-text: var(--ui-text);
+  --arka-control-radius: var(--ui-radius);
+  --arka-control-selected-background: var(--ui-accent);
+  --arka-control-selected-border: var(--ui-accent);
+  --pu-ink: var(--ui-text);
+  --pu-muted: var(--ui-muted);
+  --pu-line: var(--ui-line);
+  --pu-blue: var(--ui-accent);
+  --pu-selected: var(--ui-accent);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  padding: 20px 26px;
+  color: var(--ui-text);
+  background: var(--ui-bg);
+  font: 14px/1.4 var(--ui-body-font);
+  isolation: isolate;
+  overflow: hidden;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] * {
+  box-sizing: border-box;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] :is(h1,h2,h3,strong,b) {
+  color: var(--ui-text);
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] :is(h1,h2,h3) {
+  font-family: var(--ui-display-font);
+  font-weight: 400;
+  letter-spacing: .01em;
+  text-transform: none;
+  line-height: 1.1;
+  margin: 0;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] h1 {
+  font-size: 30px;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] h2 {
+  font-size: 24px;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] h3 {
+  font-size: 19px;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] :is(p,small,label,.pu-muted,.pu-note,.pu-description) {
+  color: var(--ui-muted);
+  font-family: var(--ui-body-font);
+  font-size: 12px;
+  line-height: 1.55;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-kicker {
+  color: var(--ui-accent);
+  font: 10px/1.3 var(--ui-body-font);
+  letter-spacing: .13em;
+  text-transform: uppercase;
+  margin: 0 0 8px;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] button {
+  font-family: var(--ui-body-font);
+  cursor: pointer;
+  box-shadow: none;
+  filter: none;
+  transition: background .15s,border-color .15s,transform .15s;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] button:disabled {
+  cursor: not-allowed;
+  opacity: .42;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] :is(button,a,input,select):focus-visible {
+  outline: 3px solid var(--ui-accent);
+  outline-offset: 3px;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] :is(input:not([type=checkbox]):not([type=range]),select) {
+  font: 13px/1.3 var(--ui-body-font);
+  color: var(--ui-text);
+  background: var(--ui-surface-raised);
+  border: 1px solid var(--ui-line);
+  border-radius: var(--ui-radius);
+  min-height: 40px;
+  padding: 8px 12px;
+  box-shadow: none;
+  border-image: none!important;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] input::placeholder {
+  color: var(--ui-muted);
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] :is(.pu-panel,.pu-detail-panel,.pu-team-tactics,.pu-live-bag-detail,.pu-content-auxiliary) {
+  background: var(--ui-surface);
+  border: 1px solid var(--ui-line);
+  border-radius: var(--ui-radius);
+  color: var(--ui-text);
+  padding: 18px;
+  box-shadow: var(--ui-shadow);
+  min-width: 0;
+  min-height: 0;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] :is(.pu-frame,.rpg-frame,.studio-surface-art,.pu-live-team-slot-frame,.pu-live-bag-slot-frame,.pu-creature-circle,.pu-live-team-strip,.pu-empty-circle) {
+  display: none!important;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .studio-surface {
+  aspect-ratio: auto!important;
+  min-width: 0;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] :is(.studio-command,.pu-button,.arka-button) {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  aspect-ratio: auto;
+  width: auto;
+  height: auto;
+  min-height: 40px;
+  padding: 9px 14px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: 0;
+  border: 1px solid var(--ui-line)!important;
+  border-radius: var(--ui-radius);
+  border-image: none!important;
+  background: var(--ui-surface-raised)!important;
+  color: var(--ui-text);
+  text-shadow: none;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] :is(.studio-command,.pu-button,.arka-button)::before {
+  display: none!important;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .studio-command>span {
+  position: static;
+  inset: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: auto;
+  max-width: none;
+  transform: none;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] :is(.pu-button.is-active,.studio-command[data-selected=true],.studio-command[aria-pressed=true],.pu-nav-button.is-active) {
+  background: var(--ui-accent)!important;
+  color: var(--ui-accent-ink)!important;
+  border-color: var(--ui-accent)!important;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] :is(.studio-command,.pu-button,.arka-button):hover:enabled:not(.is-active):not([data-selected=true]):not([aria-pressed=true]) {
+  border-color: var(--ui-accent)!important;
+  background: var(--ui-accent-soft)!important;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-kit-icon {
+  display: inline-grid;
+  place-items: center;
+  font-family: Arial,sans-serif;
+  color: inherit;
+  width: 24px;
+  height: 24px;
+  line-height: 1;
+  font-size: 19px;
+  flex: none;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept]>.pu-topbar {
+  grid-area: header;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  min-height: 60px;
+  margin: 0;
+  padding: 0 0 14px;
+  border: 0;
+  border-bottom: 1px solid var(--ui-line);
+  background: none;
+  flex: none;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-brand {
+  display: block;
+  min-width: 148px;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-brand>img {
+  display: none;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-wordmark {
+  display: block;
+  color: var(--ui-text);
+  font: 30px/.9 Arkamon Norwester,Arial,sans-serif;
+  letter-spacing: 1.5px;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-wordmark>span {
+  display: block;
+  font: 8px/1.3 var(--ui-body-font);
+  letter-spacing: 1.5px;
+  margin-top: 8px;
+  color: var(--ui-accent);
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-brand>small {
+  display: none;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-header-meta {
+  display: grid;
+  gap: 2px;
+  margin-left: 10px;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-header-meta small {
+  font-size: 9px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-player-switch {
+  margin-left: auto;
+  display: flex;
+  flex: none;
+  max-width: none;
+  gap: 6px;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-player-option {
+  width: auto;
+  max-width: none;
+  min-width: 118px;
+  min-height: 40px;
+  height: auto;
+  padding: 9px 14px;
+  flex: none;
+  font-size: 12px;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-currency {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  min-width: 100px;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-currency strong {
+  font-size: 21px;
+  font-family: var(--ui-display-font);
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-currency>div>span {
+  font-size: 9px;
+  color: var(--ui-muted);
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept]>.pu-nav {
+  grid-area: nav;
+  display: flex;
+  gap: 5px;
+  padding: 0;
+  margin: 0;
+  min-height: 42px;
+  border: 0;
+  border-radius: 0;
+  background: none;
+  flex: none;
+  overflow: visible;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-nav-button {
+  flex: 1;
+  min-width: 0;
+  font-size: 12px;
+  min-height: 40px;
+  justify-content: center;
+  gap: 7px;
+  border-color: transparent!important;
+  background: transparent!important;
+  border-radius: var(--ui-radius);
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-nav-button .pu-kit-icon {
+  font-size: 16px;
+  width: 20px;
+  height: 20px;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept]>.pu-page-head {
+  display: none;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept]>.pu-content {
+  grid-area: content;
+  min-height: 0;
+  min-width: 0;
+  height: auto;
+  flex: 1;
+  display: block;
+  overflow: auto;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  scrollbar-width: thin;
+  scrollbar-color: var(--ui-line) transparent;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept]>.pu-footer {
+  grid-area: footer;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 40px;
+  margin: 0;
+  padding: 10px 0 0;
+  border-top: 1px solid var(--ui-line);
+  font-size: 10px;
+  flex: none;
+  color: var(--ui-muted);
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-keyboard-hint {
+  font-size: 10px;
+  margin-left: auto;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-present-control {
+  font-size: 10px;
+  gap: 6px;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-present-control button {
+  font-size: 10px;
+  padding: 5px 8px;
+  color: var(--ui-muted);
+  border: 1px solid var(--ui-line);
+  background: var(--ui-surface);
+  border-radius: 5px;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-footer>.pu-resume-command {
+  height: auto;
+  width: auto;
+  min-width: 166px;
+  min-height: 36px;
+  font-size: 11px;
+  padding: 9px 14px;
+  margin: 0;
+  background: var(--ui-accent)!important;
+  color: var(--ui-accent-ink);
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-screen-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  margin: 0;
+  padding: 0;
+  min-height: 44px;
+  flex: none;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-screen-heading h1 {
+  font-size: 30px;
+  margin: 0;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-count {
+  color: var(--ui-muted);
+  font-size: 11px;
+  padding: 5px 9px;
+  border: 1px solid var(--ui-line);
+  border-radius: 30px;
+  background: none;
+  white-space: nowrap;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] :is(.pu-type,.pu-status-pill) {
+  font: 10px/1.3 var(--ui-body-font);
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  border: 1px solid var(--ui-line);
+  border-radius: 5px;
+  background: var(--ui-accent-soft);
+  color: var(--ui-text);
+  padding: 4px 8px;
+  margin: 0;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-type .pu-kit-icon {
+  width: 14px;
+  height: 14px;
+  font-size: 12px;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-health {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin: 0;
+  width: 100%;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-health>span {
+  font: 11px/1.3 var(--ui-body-font);
+  color: var(--ui-muted);
+  text-align: right;
+  margin: 0;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-health progress {
+  height: 7px;
+  background: var(--ui-line);
+  border: 0;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 100%;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-health progress::-webkit-progress-bar {
+  background: var(--ui-line);
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-health progress::-webkit-progress-value {
+  background: var(--ui-accent);
+  border-radius: 8px;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-health progress::-moz-progress-bar {
+  background: var(--ui-accent);
+}
+
+/* Squad: large native portrait, concise facts, four genuine commands, six companions. */
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-live-team {
+  display: grid;
+  grid-template-rows: auto minmax(210px,1fr) auto auto;
+  gap: 14px;
+  width: 100%;
+  max-width: none;
+  height: 100%;
+  min-height: 0;
+  padding: 0;
+  margin: 0;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] :where(.pu-live-team) .pu-team-layout {
+  display: grid;
+  grid-template-columns: minmax(160px,.9fr) minmax(190px,1fr) minmax(220px,1.15fr);
+  gap: 20px;
+  align-items: center;
+  min-height: 0;
+  height: auto;
+  flex: auto;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] :where(.pu-live-team) .pu-hero-column {
+  display: grid;
+  place-items: center;
+  min-height: 0;
+  height: 100%;
+  background: var(--ui-hero-glow);
+  border: 0;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] :where(.pu-live-team) .pu-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: none;
+  height: 100%;
+  min-height: 0;
+  padding: 0;
+  gap: 8px;
+  background: none;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] :where(.pu-live-team) .pu-live-team-portrait {
+  position: relative;
+  display: block;
+  height: 100%;
+  max-height: 310px;
+  min-height: 150px;
+  width: 100%;
+  flex: 1;
+  aspect-ratio: auto!important;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] :where(.pu-live-team) .pu-live-team-portrait>.pu-creature-portrait.is-large {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  max-height: none;
+  margin: 0;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-creature-art {
+  inset: 0!important;
+  width: 100%!important;
+  height: 100%!important;
+  filter: drop-shadow(0 12px 14px #0002);
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] :where(.pu-live-team) .pu-hero-caption {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 0;
+  flex: none;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-species-number {
+  position: static;
+  font: 9px/1.2 var(--ui-body-font);
+  color: var(--ui-muted);
+  letter-spacing: 1px;
+  text-align: center;
+  width: 100%;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] :where(.pu-live-team) .pu-detail-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 22px;
+  border: 0;
+  background: none;
+  box-shadow: none;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] :where(.pu-live-team) .pu-live-team-facts {
+  margin: 0;
+  width: 100%;
+  min-height: 0;
+  position: static;
+  background: none;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] :where(.pu-live-team) .pu-live-team-facts>div {
+  position: static;
+  inset: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] :where(.pu-live-team) .pu-live-team-facts span {
+  font: 10px/1.3 var(--ui-body-font);
+  color: var(--ui-accent);
+  letter-spacing: 2px;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-live-team-facts strong {
+  font: clamp(28px,3.4vw,48px)/1.05 var(--ui-display-font);
+  color: var(--ui-text);
+  font-weight: 400;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-live-team-facts small {
+  font-size: 11px;
+  color: var(--ui-muted);
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] :where(.pu-live-team) .pu-detail-panel>.pu-note {
+  font: 11px/1.5 var(--ui-body-font);
+  margin: 0;
+  padding: 0;
+  color: var(--ui-muted);
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] :where(.pu-live-team) .pu-team-tactics {
+  padding: 18px;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-team-tactics>h2 {
+  font-size: 18px;
+  margin: 0;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] :where(.pu-live-team) .pu-moves {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin: 0;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-team-layout .pu-move {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 0;
+  min-height: 0;
+  border-bottom: 1px solid var(--ui-line);
+  background: none;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-move>div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+  min-width: 0;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-team-layout .pu-move strong {
+  font: 16px/1.1 var(--ui-display-font);
+  font-weight: 400;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-move .pu-dice {
+  font: 13px/1.2 var(--ui-body-font);
+  background: var(--ui-accent-soft);
+  padding: 5px 7px;
+  border-radius: 4px;
+  color: var(--ui-accent);
+  white-space: nowrap;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] :where(.pu-live-team) .pu-actions {
+  display: grid;
+  grid-template-columns: repeat(2,minmax(0,1fr));
+  gap: 7px;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] :where(.pu-live-team) .pu-actions .studio-command {
+  min-height: 38px;
+  font-size: 11px;
+  padding: 9px;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] :where(.pu-live-team) .pu-team-list {
+  position: static;
+  display: grid;
+  grid-template-columns: repeat(6,minmax(0,1fr));
+  grid-template-rows: none;
+  gap: 9px;
+  flex: none;
+  aspect-ratio: auto;
+  min-height: 0;
+  height: auto;
+  width: 100%;
+  max-width: none;
+  padding: 0;
+  margin: 0;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] :where(.pu-live-team) .pu-team-slot {
+  position: relative;
+  left: auto;
+  top: auto;
+  transform: none;
+  width: 100%;
+  height: 108px;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  padding: 8px;
+  border: 1px solid var(--ui-line);
+  border-radius: var(--ui-radius);
+  background: var(--ui-surface);
+  overflow: hidden;
+  text-align: center;
+  filter: none;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] :where(.pu-live-team) .pu-team-slot.is-selected {
+  border: 1px solid var(--ui-accent);
+  background: var(--ui-accent-soft);
+  box-shadow: inset 0 -3px 0 var(--ui-accent);
+  color: var(--ui-text);
+  filter: none;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] :where(.pu-live-team) .pu-live-team-slot-art {
+  position: relative;
+  inset: auto;
+  display: block;
+  width: 54px;
+  height: 55px;
+  flex: none;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-live-team-slot-art>.pu-creature-portrait {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] :where(.pu-live-team) .pu-team-slot-content {
+  position: static;
+  display: block;
+  width: 100%;
+  min-width: 0;
+  font-size: 10px;
+  transform: none;
+  margin: 0;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] :where(.pu-live-team) .pu-team-slot-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-team-slot-title strong {
+  font: 12px/1.2 var(--ui-display-font);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  min-width: 0;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-team-slot-title>span {
+  font: 9px/1.2 var(--ui-body-font);
+  color: var(--ui-muted);
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] :where(.pu-live-team) .pu-team-slot .pu-health {
+  margin-top: 5px;
+  gap: 0;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-team-slot .pu-health>span,html .pu-shell.pu-live-shell[data-ui-concept] .pu-team-slot-meta {
+  display: none;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-team-slot .pu-health progress {
+  height: 3px;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] :where(.pu-live-team) .pu-slot-number {
+  position: absolute;
+  top: 7px;
+  left: 8px;
+  font-size: 9px;
+  color: var(--ui-muted);
+  visibility: visible;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-team-cap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 0 0;
+  background: none;
+  border: 0;
+  min-height: 0;
+  color: var(--ui-muted);
+  font-size: 10px;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-team-cap strong {
+  font-size: 11px;
+  font-weight: 500;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-team-cap p {
+  font-size: 10px;
+  margin: 0;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-team-feedback {
+  margin-left: auto;
+  max-width: 50%;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-readonly {
+  font: 11px/1.4 var(--ui-body-font);
+  color: var(--ui-muted)!important;
+  background: none!important;
+  border: 0!important;
+  padding: 0;
+  margin: 0;
+}
+
+/* Bag: the old painted coordinates become a real responsive grid. */
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-bag-screen.pu-bag-dedicated {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  height: 100%;
+  min-height: 0;
+  width: 100%;
+  color: var(--ui-text);
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-bag-dedicated>.pu-screen-toolbar:empty {
+  display: none;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-live-bag-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  min-height: 44px;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-live-bag-heading h2 {
+  font-size: 30px;
+  margin: 0;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-live-bag-heading>div>span {
+  font-size: 9px;
+  letter-spacing: 1.3px;
+  color: var(--ui-accent);
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-live-bag-heading>strong {
+  font: 18px/1.2 var(--ui-display-font);
+  text-align: right;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-live-bag-heading small {
+  font: 10px/1.2 var(--ui-body-font);
+  color: var(--ui-muted);
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-live-bag-categories {
+  display: flex;
+  gap: 6px;
+  max-width: 520px;
+  margin: 0;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-live-bag-category {
+  flex: 1;
+  min-height: 36px;
+  font-size: 11px;
+  padding: 8px;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-bag-dedicated .pu-bag-layout {
+  display: grid;
+  grid-template-columns: minmax(0,1.5fr) minmax(230px,.85fr);
+  grid-template-rows: minmax(150px,1fr) auto;
+  gap: 14px 20px;
+  flex: 1;
+  min-height: 0;
+  align-items: stretch;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-live-bag-inventory {
+  grid-column: 1;
+  grid-row: 1/-1;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-live-bag-inventory-art {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  flex: 1;
+  padding: 16px;
+  background: var(--ui-surface);
+  border: 1px solid var(--ui-line);
+  border-radius: var(--ui-radius);
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-live-bag-grid-title {
+  position: static;
+  display: block;
+  width: auto;
+  text-align: left;
+  font: 9px/1.3 var(--ui-body-font);
+  letter-spacing: 1.5px;
+  color: var(--ui-muted);
+  margin: 0 0 12px;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-live-bag-grid {
+  position: static;
+  inset: auto;
+  display: grid;
+  grid-template-columns: repeat(4,minmax(0,1fr));
+  grid-template-rows: repeat(3,minmax(70px,1fr));
+  gap: 10px;
+  flex: 1;
+  min-height: 0;
+  padding: 0;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-live-bag-cell {
+  position: relative;
+  left: auto;
+  top: auto;
+  transform: none;
+  width: auto;
+  height: auto;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 8px;
+  border: 1px solid var(--ui-line);
+  border-radius: var(--ui-radius);
+  background: var(--ui-surface-raised);
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-live-bag-cell.is-empty {
+  background: transparent;
+  border-style: dashed;
+  opacity: .35;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-live-bag-slot {
+  position: static;
+  left: auto;
+  top: auto;
+  transform: none;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 48px;
+  min-height: 0;
+  min-width: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--ui-accent);
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-live-bag-slot[aria-pressed=true] {
+  background: var(--ui-accent-soft);
+  border-radius: var(--ui-radius);
+  outline: 1px solid var(--ui-accent);
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-live-bag-slot>.pu-kit-icon {
+  position: static;
+  left: auto;
+  top: auto;
+  transform: none;
+  width: 100%;
+  height: 44px;
+  filter: none;
+  font-size: 30px;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-live-bag-quantity {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  bottom: auto;
+  font: 10px/1.2 var(--ui-body-font);
+  color: var(--ui-text);
+  background: var(--ui-bg);
+  border: 1px solid var(--ui-line);
+  padding: 2px 5px;
+  border-radius: 5px;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-live-bag-item-name {
+  position: static;
+  top: auto;
+  display: block;
+  width: 100%;
+  margin: 0;
+  color: var(--ui-text);
+  font: 11px/1.25 var(--ui-body-font);
+  text-align: center;
+  overflow-wrap: anywhere;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-live-bag-slot-empty {
+  font-size: 18px;
+  color: var(--ui-muted);
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-live-bag-footnote {
+  font: 10px/1.4 var(--ui-body-font);
+  margin: 8px 0 0;
+  color: var(--ui-muted);
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-live-bag-detail {
+  grid-column: 2;
+  grid-row: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 18px;
+  overflow: auto;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-live-bag-illustration {
+  height: 64px;
+  display: grid;
+  place-items: center;
+  background: var(--ui-hero-glow);
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-live-bag-illustration>.pu-kit-icon {
+  font-size: 46px;
+  width: 64px;
+  height: 64px;
+  filter: none;
+  color: var(--ui-accent);
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-live-bag-detail>.pu-kicker {
+  font-size: 9px;
+  letter-spacing: 1.5px;
+  color: var(--ui-accent);
+  margin: 0;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-live-bag-detail>h2 {
+  font-size: 29px;
+  line-height: 1.1;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-live-bag-detail>.pu-description {
+  font: 12px/1.5 var(--ui-body-font);
+  color: var(--ui-muted);
+  margin: 0;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-live-bag-stock {
+  width: 100%;
+  margin-top: auto;
+  min-height: 36px;
+  padding-top: 10px;
+  border-top: 1px solid var(--ui-line);
+  background: none;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-live-bag-stock>div {
+  position: static;
+  inset: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-live-bag-stock span {
+  font-size: 10px;
+  color: var(--ui-muted);
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-live-bag-stock strong {
+  font: 22px/1.2 var(--ui-display-font);
+  color: var(--ui-accent);
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-live-bag-stock small {
+  font-size: 10px;
+  color: var(--ui-muted);
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-live-bag-use {
+  grid-column: 2;
+  grid-row: 2;
+  padding: 12px 0 0;
+  margin: 0;
+  min-height: 0;
+  border-top: 1px solid var(--ui-line);
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-item-use .arka-item-target {
+  font: 11px var(--ui-body-font);
+  color: var(--ui-muted);
+  gap: 6px;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-item-use .arka-store-note,html .pu-shell.pu-live-shell[data-ui-concept] .pu-item-use .arka-store-warning {
+  font: 10px/1.4 var(--ui-body-font);
+  color: var(--ui-muted);
+  margin: 4px 0;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-item-use .arka-store-catalog {
+  display: block;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-item-use .arka-button {
+  min-height: 38px;
+  width: 100%;
+  max-width: none;
+  padding: 10px;
+  font-size: 12px;
+  aspect-ratio: auto;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-cure-preview {
+  display: grid;
+  grid-template-columns: 36px minmax(0,1fr);
+  gap: 6px;
+  padding: 8px;
+  margin: 6px 0;
+  background: var(--ui-surface);
+  border: 1px solid var(--ui-line);
+  border-radius: var(--ui-radius);
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-cure-preview>.pu-creature-portrait {
+  width: 36px;
+  height: 42px;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-cure-preview strong {
+  font: 13px var(--ui-display-font);
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-cure-preview .pu-kicker {
+  font-size: 8px;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-cure-after,html .pu-shell.pu-live-shell[data-ui-concept] .pu-cure-no-effect {
+  grid-column: 2;
+  font-size: 10px;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-cure-after>span:last-child {
+  font-size: 10px;
+}
+
+/* Menu and secondary tools keep their live actions and finite data. */
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-menu-layout {
+  display: grid;
+  grid-template-columns: minmax(0,1.4fr) minmax(270px,.8fr);
+  gap: 24px;
+  height: 100%;
+  min-height: 0;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-menu-grid {
+  display: grid;
+  grid-template-columns: repeat(2,minmax(0,1fr));
+  grid-template-rows: repeat(3,minmax(100px,1fr));
+  gap: 12px;
+  min-height: 0;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-menu-tile {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 22px;
+  min-height: 0;
+  position: relative;
+  text-align: left;
+  border: 1px solid var(--ui-line);
+  border-radius: var(--ui-radius);
+  background: var(--ui-surface);
+  color: var(--ui-text);
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-menu-tile:hover:enabled {
+  border-color: var(--ui-accent);
+  background: var(--ui-surface-raised);
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-menu-tile h2 {
+  font-size: 26px;
+  margin: 0 0 8px;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-menu-tile p {
+  font-size: 11px;
+  margin: 0;
+  max-width: 26ch;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-menu-tile>.pu-kit-icon {
+  color: var(--ui-accent);
+  width: 30px;
+  height: 30px;
+  font-size: 25px;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-tile-number {
+  position: absolute;
+  right: 14px;
+  top: 12px;
+  font: 10px var(--ui-body-font);
+  color: var(--ui-muted);
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-journey {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 22px;
+  min-height: 0;
+  overflow: auto;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-journey h2 {
+  font-size: 30px;
+  margin: 0;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-journey-scene {
+  height: 100px;
+  min-height: 60px;
+  flex: none;
+  border: 0;
+  border-radius: var(--ui-radius);
+  overflow: hidden;
+  background: var(--ui-surface-raised);
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-journey-scene strong {
+  color: #fff;
+  position: absolute;
+  font-size: 24px;
+  bottom: 8px;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-summary {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin: 0;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-summary dt {
+  font-size: 10px;
+  color: var(--ui-muted);
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-summary dd {
+  font: 17px var(--ui-display-font);
+  color: var(--ui-text);
+  margin: 3px 0 0;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-gym-badges {
+  gap: 6px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 6px 0;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-gym-badges>span {
+  display: grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  border: 1px solid var(--ui-line);
+  background: var(--ui-surface-raised);
+  border-radius: 50%;
+  color: var(--ui-muted);
+  font-size: 10px;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-gym-badges>.earned {
+  background: var(--ui-accent);
+  color: var(--ui-accent-ink);
+  border-color: var(--ui-accent);
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-journey .pu-kicker {
+  font-size: 9px;
+  margin: 0;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-trainer-progress strong {
+  font: 15px var(--ui-display-font);
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-trainer-progress p,html .pu-shell.pu-live-shell[data-ui-concept] .pu-journey>.pu-muted {
+  font-size: 10px;
+  margin: 0;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-mini-team {
+  display: flex;
+  gap: 4px;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-mini-team .pu-creature-portrait {
+  width: 34px;
+  height: 38px;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] :is(.pu-dex-layout,.pu-deposit-layout,.pu-analysis-layout,.pu-store-layout) {
+  height: 100%;
+  min-height: 0;
+  gap: 16px;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] :is(.pu-box-slot,.pu-deposit-team-slot,.pu-stat,.pu-facts>div,.pu-affinity-grid>div) {
+  border: 1px solid var(--ui-line);
+  border-radius: var(--ui-radius);
+  background: var(--ui-surface-raised);
+  color: var(--ui-text);
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-box-slot[aria-pressed=true] {
+  border-color: var(--ui-accent);
+  background: var(--ui-accent-soft);
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-stat strong,html .pu-shell.pu-live-shell[data-ui-concept] .pu-stat b {
+  color: var(--ui-accent);
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-cart-line {
+  border-color: var(--ui-line);
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-content-auxiliary {
+  height: 100%;
+  padding: 20px;
+  overflow: auto;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-store-cart input {
+  background-image: none!important;
+}
+
+@media(min-width:901px) and (max-height:800px) {
+  html .pu-shell.pu-live-shell[data-ui-concept] {
+    padding: 14px 20px;
+    gap: 10px;
+  }
+  html .pu-shell.pu-live-shell[data-ui-concept]>.pu-topbar {
+    min-height: 50px;
+    padding-bottom: 8px;
+  }
+  html .pu-shell.pu-live-shell[data-ui-concept] .pu-live-team {
+    gap: 10px;
+    grid-template-rows: auto minmax(170px,1fr) auto auto;
+  }
+  html .pu-shell.pu-live-shell[data-ui-concept] .pu-screen-heading h1 {
+    font-size: 26px;
+  }
+  html .pu-shell.pu-live-shell[data-ui-concept] :where(.pu-live-team) .pu-team-slot {
+    height: 94px;
+  }
+  html .pu-shell.pu-live-shell[data-ui-concept] :where(.pu-live-team) .pu-live-team-slot-art {
+    height: 43px;
+    width: 43px;
+  }
+  html .pu-shell.pu-live-shell[data-ui-concept] .pu-team-tactics {
+    padding: 12px;
+    gap: 8px;
+  }
+  html .pu-shell.pu-live-shell[data-ui-concept] .pu-team-layout .pu-move {
+    padding: 6px 0;
+  }
+  html .pu-shell.pu-live-shell[data-ui-concept] .pu-menu-tile {
+    padding: 16px;
+  }
+  html .pu-shell.pu-live-shell[data-ui-concept] .pu-journey {
+    padding: 16px;
+    gap: 7px;
+  }
+  html .pu-shell.pu-live-shell[data-ui-concept] .pu-journey-scene {
+    height: 65px;
+  }
+  html .pu-shell.pu-live-shell[data-ui-concept] .pu-live-bag-illustration {
+    height: 40px;
+  }
+  html .pu-shell.pu-live-shell[data-ui-concept] .pu-live-bag-illustration>.pu-kit-icon {
+    height: 40px;
+    font-size: 32px;
+  }
+}
+
+@media(max-width:900px) {
+  html .pu-shell.pu-live-shell[data-ui-concept] {
+    display: flex!important;
+    flex-direction: column;
+    min-height: 100%;
+    height: auto;
+    overflow: visible;
+    padding: 16px;
+    gap: 14px;
+  }
+  html .pu-shell.pu-live-shell[data-ui-concept]>.pu-topbar {
+    flex-wrap: wrap;
+    gap: 12px;
+    padding-bottom: 12px;
+  }
+  html .pu-shell.pu-live-shell[data-ui-concept] .pu-header-meta {
+    margin: 0 0 0 auto;
+  }
+  html .pu-shell.pu-live-shell[data-ui-concept] .pu-player-switch {
+    order: 3;
+    margin: 0;
+    flex: 1;
+  }
+  html .pu-shell.pu-live-shell[data-ui-concept] .pu-player-option {
+    min-width: 0;
+    flex: 1;
+    white-space: normal;
+  }
+  html .pu-shell.pu-live-shell[data-ui-concept] .pu-currency {
+    order: 4;
+    min-width: 0;
+  }
+  html .pu-shell.pu-live-shell[data-ui-concept] .pu-currency strong {
+    font-size: 18px;
+  }
+  html .pu-shell.pu-live-shell[data-ui-concept]>.pu-nav {
+    display: grid;
+    grid-template-columns: repeat(3,minmax(0,1fr));
+    gap: 5px;
+    order: 0;
+    overflow: visible;
+    min-height: 0;
+    padding: 0;
+    border: 0;
+    margin: 0;
+  }
+  html .pu-shell.pu-live-shell[data-ui-concept] .pu-nav-button {
+    min-height: 44px;
+    padding: 9px 6px;
+    font-size: 11px;
+    white-space: normal;
+  }
+  html .pu-shell.pu-live-shell[data-ui-concept]>.pu-content {
+    flex: none;
+    height: auto;
+    overflow: visible;
+  }
+  html .pu-shell.pu-live-shell[data-ui-concept]>.pu-footer {
+    flex-wrap: wrap;
+  }
+  html .pu-shell.pu-live-shell[data-ui-concept] .pu-keyboard-hint {
+    display: none;
+  }
+  html .pu-shell.pu-live-shell[data-ui-concept] .pu-present-control {
+    display: none;
+  }
+  html .pu-shell.pu-live-shell[data-ui-concept] .pu-live-team {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    gap: 18px;
+  }
+  html .pu-shell.pu-live-shell[data-ui-concept] .pu-screen-heading {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  html .pu-shell.pu-live-shell[data-ui-concept] .pu-screen-heading h1 {
+    font-size: 27px;
+  }
+  html .pu-shell.pu-live-shell[data-ui-concept] :where(.pu-live-team) .pu-team-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  html .pu-shell.pu-live-shell[data-ui-concept] :where(.pu-live-team) .pu-hero-column {
+    width: 100%;
+  }
+  html .pu-shell.pu-live-shell[data-ui-concept] :where(.pu-live-team) .pu-hero {
+    width: 100%;
+  }
+  html .pu-shell.pu-live-shell[data-ui-concept] :where(.pu-live-team) .pu-live-team-portrait {
+    height: 240px;
+    flex: none;
+  }
+  html .pu-shell.pu-live-shell[data-ui-concept] :where(.pu-live-team) .pu-detail-panel {
+    padding: 0;
+    width: 100%;
+  }
+  html .pu-shell.pu-live-shell[data-ui-concept] :where(.pu-live-team) .pu-team-tactics {
+    width: 100%;
+    padding: 16px;
+  }
+  html .pu-shell.pu-live-shell[data-ui-concept] :where(.pu-live-team) .pu-team-list {
+    display: grid;
+    grid-template-columns: repeat(3,minmax(0,1fr));
+    gap: 8px;
+  }
+  html .pu-shell.pu-live-shell[data-ui-concept] .pu-team-feedback {
+    margin: 0;
+    max-width: none;
+  }
+  html .pu-shell.pu-live-shell[data-ui-concept] .pu-team-cap {
+    padding-top: 0;
+  }
+  html .pu-shell.pu-live-shell[data-ui-concept] .pu-bag-screen.pu-bag-dedicated {
+    height: auto;
+    gap: 14px;
+  }
+  html .pu-shell.pu-live-shell[data-ui-concept] .pu-bag-dedicated .pu-bag-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  html .pu-shell.pu-live-shell[data-ui-concept] .pu-live-bag-inventory {
+    width: 100%;
+  }
+  html .pu-shell.pu-live-shell[data-ui-concept] .pu-live-bag-grid {
+    grid-template-columns: repeat(2,minmax(0,1fr));
+    grid-template-rows: none;
+    gap: 8px;
+  }
+  html .pu-shell.pu-live-shell[data-ui-concept] .pu-live-bag-cell {
+    min-height: 108px;
+  }
+  html .pu-shell.pu-live-shell[data-ui-concept] .pu-live-bag-cell.is-empty {
+    display: none!important;
+  }
+  html .pu-shell.pu-live-shell[data-ui-concept] .pu-live-bag-detail {
+    width: 100%;
+  }
+  html .pu-shell.pu-live-shell[data-ui-concept] .pu-live-bag-use {
+    width: 100%;
+  }
+  html .pu-shell.pu-live-shell[data-ui-concept] .pu-live-bag-heading h2 {
+    font-size: 25px;
+  }
+  html .pu-shell.pu-live-shell[data-ui-concept] .pu-live-bag-heading>strong {
+    font-size: 16px;
+  }
+  html .pu-shell.pu-live-shell[data-ui-concept] .pu-cure-preview {
+    width: 100%;
+  }
+  html .pu-shell.pu-live-shell[data-ui-concept] .pu-menu-layout {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    gap: 16px;
+  }
+  html .pu-shell.pu-live-shell[data-ui-concept] .pu-menu-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: none;
+    gap: 9px;
+  }
+  html .pu-shell.pu-live-shell[data-ui-concept] .pu-menu-tile {
+    min-height: 132px;
+    padding: 15px;
+    flex-direction: column;
+    gap: 8px;
+  }
+  html .pu-shell.pu-live-shell[data-ui-concept] .pu-menu-tile h2 {
+    font-size: 22px;
+  }
+  html .pu-shell.pu-live-shell[data-ui-concept] .pu-menu-tile p {
+    font-size: 11px;
+  }
+  html .pu-shell.pu-live-shell[data-ui-concept] .pu-journey {
+    overflow: visible;
+  }
+  html .pu-shell.pu-live-shell[data-ui-concept] .pu-journey-scene {
+    height: 110px;
+  }
+  html .pu-shell.pu-live-shell[data-ui-concept] :is(.pu-dex-layout,.pu-deposit-layout,.pu-analysis-layout,.pu-store-layout) {
+    height: auto;
+  }
+  html .pu-shell.pu-live-shell[data-ui-concept] .pu-content-auxiliary {
+    height: auto;
+    overflow: visible;
+  }
+}
+
+@media(prefers-reduced-motion:reduce) {
+  html .pu-shell.pu-live-shell[data-ui-concept] button {
+    transition: none;
+  }
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] :where(.pu-live-team) .pu-team-tactics {
+  align-items: stretch;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] :where(.pu-live-team) .pu-actions {
+  max-width: none;
+  width: 100%;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] :where(.pu-team-tactics)>:is(h2,.pu-moves,.pu-actions) {
+  grid-row: auto;
+  grid-column: auto;
+  flex-shrink: 0;
+}
+
+/* Small object silhouettes are drawn with CSS rather than the suspended SVG kit. */
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-kit-icon:is([data-icon="item-potion"],[data-icon="item-superpotion"],[data-icon="item-antidote"],[data-icon="item-revive"],[data-icon="item-sphere"]) {
+  position: relative;
+  color: var(--ui-accent);
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-kit-icon:is([data-icon="item-potion"],[data-icon="item-superpotion"],[data-icon="item-antidote"],[data-icon="item-revive"],[data-icon="item-sphere"])>.pu-kit-icon-glyph {
+  visibility: hidden;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-kit-icon:is([data-icon="item-potion"],[data-icon="item-superpotion"],[data-icon="item-antidote"])::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: .65em;
+  height: .9em;
+  transform: translate(-50%,-40%);
+  border: 2px solid currentColor;
+  border-radius: .16em .16em .22em .22em;
+  background: linear-gradient(to top,currentColor 0 47%,transparent 48% 67%,currentColor 68% 72%,transparent 73%);
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-kit-icon:is([data-icon="item-potion"],[data-icon="item-superpotion"],[data-icon="item-antidote"])::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: .38em;
+  height: .17em;
+  transform: translate(-50%,-350%);
+  border: 2px solid currentColor;
+  border-radius: 2px;
+  background: var(--ui-surface);
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-kit-icon[data-icon="item-superpotion"]::before {
+  border-radius: .25em;
+  background: repeating-linear-gradient(-35deg,currentColor 0 .12em,transparent .13em .22em);
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-kit-icon[data-icon="item-antidote"]::before {
+  width: .9em;
+  border-radius: .1em .1em .4em .4em;
+  clip-path: polygon(32% 0,68% 0,100% 100%,0 100%);
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-kit-icon[data-icon="item-revive"]::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: .64em;
+  height: .64em;
+  transform: translate(-50%,-50%) rotate(45deg);
+  border: 2px solid currentColor;
+  border-radius: .1em;
+  background: linear-gradient(135deg,transparent 45%,currentColor 46% 54%,transparent 55%);
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-kit-icon[data-icon="item-sphere"]::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: .85em;
+  height: .85em;
+  transform: translate(-50%,-50%);
+  border: 2px solid currentColor;
+  border-radius: 50%;
+  background: linear-gradient(to bottom,currentColor 0 44%,var(--ui-surface) 45% 55%,transparent 56%);
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-kit-icon[data-icon="item-sphere"]::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: .24em;
+  height: .24em;
+  transform: translate(-50%,-50%);
+  border: 2px solid currentColor;
+  border-radius: 50%;
+  background: var(--ui-surface);
+}
+
+/* Keep the before/after HP comparison separate from legacy painted coordinates. */
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-cure-preview {
+  grid-template-columns: 36px minmax(0,1fr) minmax(0,1fr);
+  align-items: center;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-cure-preview>.pu-creature-portrait {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-cure-preview>div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  grid-column: 2;
+  grid-row: 1;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-cure-preview>div:nth-child(2)>:is(.pu-kicker,strong,.pu-health) {
+  grid-column: auto;
+  grid-row: auto;
+  margin: 0;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-cure-preview>.pu-cure-after {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  grid-column: 3;
+  grid-row: 1;
+  align-self: center;
+  min-width: 0;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-cure-preview>.pu-cure-no-effect {
+  grid-column: 2/-1;
+  grid-row: 2;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-dex-row.is-active {
+  background: var(--ui-accent-soft)!important;
+  color: var(--ui-text)!important;
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-cure-after>span:last-child {
+  color: var(--ui-accent);
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-cure-no-effect {
+  color: var(--ui-muted);
+}
+
+html .pu-shell.pu-live-shell[data-ui-concept] .pu-gym-badge-symbol {
+  color: inherit;
+}

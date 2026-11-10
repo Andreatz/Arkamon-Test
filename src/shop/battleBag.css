@@ -1,0 +1,29 @@
+.battle-item-dialog { max-width: min(1400px,96vw)!important; background:#101c30f5; font-family:var(--arka-font-body); }
+.battle-item-dialog>header { padding:18px 24px; }
+.battle-item-dialog>header h2 { font-size:32px; }
+.battle-item-dialog>div { padding:20px; overflow:hidden; }
+.battle-bag-note { margin-bottom:16px; color:#cfdeed; font-size:20px; }
+.battle-bag-layout { display:grid; grid-template-columns:minmax(260px, .7fr) minmax(0,1.3fr); gap:20px; }
+.battle-bag-catalog,.battle-bag-detail { padding:24px; min-width:0; }
+.battle-bag-layout h3 { margin:0 0 12px; font-size:28px; }
+.battle-bag-items { display:grid; gap:10px; min-height:352px; align-content:start; }
+.battle-bag-items>button { display:flex; align-items:center; gap:14px; min-height:78px; padding:10px 16px; text-align:left; font-size:24px; }
+.battle-bag-items>button>.pu-kit-icon { width:54px; height:54px; }
+.battle-bag-items>button>strong { margin-left:auto; }
+.battle-bag-pages { display:flex; align-items:center; gap:16px; justify-content:center; margin-top:16px; font-size:22px; }
+.battle-bag-pages>button { width:64px; min-height:48px; }
+.battle-bag-detail>header { display:flex; align-items:center; gap:16px; min-height:100px; }
+.battle-bag-detail>header>.pu-kit-icon { width:88px; height:88px; flex:none; }
+.battle-bag-detail>header p { font-size:19px; line-height:1.35; }
+.battle-bag-detail h4 { margin:16px 0 10px; font-size:22px; }
+.battle-bag-squad { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:8px; }
+.battle-bag-squad>button { display:flex; align-items:center; gap:8px; text-align:left; padding:8px; min-height:82px; }
+.battle-bag-squad img { width:64px; height:64px; object-fit:contain; flex:none; }
+.battle-bag-squad span { min-width:0; }
+.battle-bag-squad strong { display:block; font-size:18px; line-height:1.2; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.battle-bag-squad small { display:block; margin-top:4px; font-size:15px; }
+.battle-bag-preview { display:flex; flex-direction:column; justify-content:center; min-height:80px; margin-top:12px; gap:6px; font-size:19px; }
+.battle-bag-preview strong { color:#a7f3d0; font-size:26px; }
+.battle-bag-confirm { width:100%; min-height:56px; font-size:24px; }
+@media(max-height:800px) { .battle-item-dialog>header { padding:10px 20px; } .battle-item-dialog>div { padding:12px 20px; } .battle-bag-catalog,.battle-bag-detail { padding:16px; } .battle-bag-squad>button { min-height:64px; } .battle-bag-squad img { width:46px; height:46px; } .battle-bag-preview { min-height:60px; } }
+@media(max-width:800px) { .battle-bag-layout { grid-template-columns: .8fr 1.2fr; gap:8px; } .battle-bag-catalog,.battle-bag-detail { padding:10px; } .battle-bag-items>button { font-size:16px; padding:8px; gap:6px; } .battle-bag-items>button>.pu-kit-icon { width:36px; height:36px; } .battle-bag-squad { grid-template-columns:1fr; max-height:260px; overflow:auto; } .battle-bag-note { font-size:14px; } .battle-bag-detail>header>.pu-kit-icon { display:none; } .battle-bag-detail>header p { font-size:14px; } }

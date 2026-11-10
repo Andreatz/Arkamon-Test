@@ -1,0 +1,23 @@
+/* Keep editor controls readable while changing the game's font scale. */
+.arka-admin-panel {
+  font-family: Inter, system-ui, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.arka-admin-panel .text-xs {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.arka-admin-panel .text-sm {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.arka-admin-panel .text-base {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.arka-authoring-route{background:#112238;border:1px solid #607e9a;border-radius:6px;padding:12px;font-size:14px!important}.arka-authoring-route a{color:#96d9fa;text-decoration:underline}.arka-admin-panel>nav{grid-template-columns:repeat(4,minmax(0,1fr));font-size:13px}.arka-admin-panel>nav>button{min-height:44px;padding:8px;line-height:1.3}.arka-admin-panel input[type=number]{max-width:180px}.arka-admin-panel .grid.gap-2>label{align-content:start}.arka-admin-panel input[type=range]{min-width:120px}

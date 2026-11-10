@@ -1,0 +1,193 @@
+/* Finite tools use the available desktop area. Histories expose explicit pages. */
+.pu-history-pages{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:10px;font-size:14px}
+.pu-history-pages button{min-height:36px;padding:5px 12px;border:1px solid #68859a;border-radius:5px;background:#152a3c;color:#edf6ff}
+.pu-history-pages button:disabled{opacity:.45}
+.journal-overview{display:grid;gap:12px}
+.journal-reading{display:flex;flex-direction:column;gap:12px;min-width:0}
+.journal-sections{display:flex;flex-wrap:wrap;gap:6px}
+.journal-sections button{min-height:36px;border:1px solid #68859a;border-radius:5px;background:#152a3c;padding:5px 10px;font-size:14px}
+.journal-sections button[aria-pressed=true],.challenge-pages button[aria-pressed=true],.challenge-builder-pages button[aria-pressed=true]{background:#284b64;border-color:#a6daeb;color:#fff1ce}
+.journal-section-content{border:1px solid #406587;border-radius:6px;padding:12px;min-width:0}
+.challenge-pages,.challenge-builder-pages{display:flex;gap:8px;flex-wrap:wrap}
+.pu-backup-overview{display:grid;gap:16px}
+.challenge-setup,.challenge-config,.challenge-builder,.challenge-catalog-page{display:grid;gap:12px}
+.challenge-mode-actions{display:grid;gap:8px}
+.pu-challenge-panel [hidden]{display:none!important}
+@media(max-width:1099px){.match-overview{display:grid;gap:12px}.pu-challenge-panel{overflow-wrap:anywhere}}
+@media(min-width:1100px) and (min-height:640px){
+ .pu-live-shell>.pu-content-auxiliary{display:flex;flex-direction:column;min-height:0}
+ .pu-live-shell>.pu-content-auxiliary>section{min-height:0;width:100%;margin:0}
+ .pu-live-shell .game-settings-artwork{display:grid;grid-template-columns:1fr 1fr;align-content:start;gap:14px 32px;max-width:1200px;padding:0 8px;font-size:15px}
+ .pu-live-shell .game-settings-artwork>*{margin:0!important}
+ .pu-live-shell .game-settings-artwork h3{grid-column:1/-1;font-size:24px}
+ .pu-live-shell .game-settings-artwork .game-audio-toggle{grid-column:1/-1;min-height:52px}
+ .pu-live-shell .game-settings-artwork .game-audio-toggle>img,.pu-live-shell .game-settings-artwork .game-audio-toggle>input{height:52px;width:110px}
+ .pu-live-shell .game-settings-artwork label:not(.game-audio-toggle){font-size:15px}
+ .pu-live-shell .game-settings-artwork label>select{margin-top:3px;min-height:40px;font-size:17px;padding:6px 10px}
+ .pu-live-shell .game-settings-artwork input[type=range]{margin-top:0;min-height:30px}
+ .pu-live-shell .game-settings-artwork>p{font-size:13px;line-height:1.4}
+ .pu-live-shell .pu-register-screen{height:100%;display:flex;flex-direction:column;gap:10px}
+ .pu-live-shell .pu-register-tabs{flex:none;gap:12px;margin:0;display:flex}
+ .pu-live-shell .pu-register-tabs .pu-button{min-height:42px;font-size:17px;padding:7px 16px}
+ .pu-live-shell #pu-register-content{min-height:0;flex:1}
+ .pu-live-shell .pu-race-screen{font-size:16px;display:flex;flex-direction:column;gap:12px;align-items:stretch}
+ .pu-live-shell .pu-race-screen>p{margin:0;font-size:16px}
+ .pu-live-shell .pu-race-cards{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+ .pu-live-shell .pu-race-cards>.pu-panel{padding:18px 24px;min-height:0}
+ .pu-live-shell .pu-race-cards h2{font-size:25px;margin:0 0 8px}
+ .pu-live-shell .pu-race-cards p{font-size:16px;margin:5px 0}
+ .pu-live-shell .pu-race-cards dl{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:12px 0}
+ .pu-live-shell .pu-race-cards dt{font-size:14px}
+ .pu-live-shell .pu-race-cards dd{font-size:25px}
+ .pu-live-shell .pu-race-screen>section>h2{font-size:24px;margin:4px 0}
+ .pu-live-shell .pu-recap-events{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:8px 0}
+ .pu-live-shell .pu-recap-events li{font-size:14px;padding:10px 14px;min-width:0}
+ .pu-live-shell .pu-recap-events li strong{font-size:18px}
+ .pu-live-shell .pu-recap-events p{font-size:14px;margin:4px 0}
+ .pu-live-shell .pu-recap-events time{font-size:12px}
+ .pu-live-shell .pu-pagination .pu-button{font-size:15px;min-height:36px;padding:6px 12px}
+ .pu-live-shell .pu-backup-screen{display:grid;grid-template-columns:1fr 1fr;align-content:start;gap:12px 24px;font-size:14px;max-width:1200px;align-self:center}
+ .pu-live-shell .pu-backup-screen>*{margin:0!important;min-width:0}
+ .pu-live-shell .pu-backup-screen>h2,.pu-live-shell .pu-backup-screen>p{grid-column:1/-1}
+ .pu-live-shell .pu-backup-screen>h2{font-size:24px}
+ .pu-live-shell .pu-backup-screen>p,.pu-live-shell .pu-backup-screen label{font-size:14px}
+ .pu-live-shell .pu-backup-overview{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr;align-content:start;gap:12px 24px}
+ .pu-live-shell .pu-backup-overview>*{margin:0!important;min-width:0;font-size:14px}
+ .pu-live-shell .pu-backup-overview p{font-size:13px}
+ .pu-live-shell .pu-backup-screen:has([aria-label="Anteprima ripristino"]){grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr)}
+ .pu-live-shell .pu-backup-screen:has([aria-label="Anteprima ripristino"])>.pu-backup-overview{grid-column:1;display:flex;flex-direction:column;gap:10px}
+ .pu-live-shell .pu-backup-screen [aria-label="Anteprima ripristino"]{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr;gap:8px 20px}
+ .pu-live-shell .pu-backup-screen [aria-label="Anteprima ripristino"]>*{margin:0!important;font-size:14px}
+ .pu-live-shell .pu-backup-screen [aria-label="Anteprima ripristino"]>h3,.pu-live-shell .pu-backup-screen [aria-label="Anteprima ripristino"]>label,.pu-live-shell .pu-backup-screen [aria-label="Anteprima ripristino"]>div{grid-column:1/-1}
+ .pu-live-shell .pu-backup-screen:has([aria-label="Anteprima ripristino"])>[aria-label="Anteprima ripristino"]{grid-column:2;grid-row:3;gap:6px 14px;padding:12px}
+ .pu-live-shell .pu-backup-screen [aria-label="Anteprima ripristino"]>h3{font-size:21px}
+ .pu-live-shell .pu-backup-screen [aria-label="Anteprima ripristino"]>label{display:flex;align-items:flex-start;gap:8px;line-height:1.25}
+ .pu-live-shell .pu-backup-screen [aria-label="Anteprima ripristino"] input[type=checkbox]{width:20px;height:20px;min-height:20px;padding:0;flex:none}
+ .pu-live-shell .player-journal{display:grid;grid-template-columns:minmax(300px,.8fr) minmax(0,1.4fr);gap:24px;font-size:14px;align-items:start}
+ .pu-live-shell .player-journal h2{font-size:24px;margin:0}
+ .pu-live-shell .player-journal h3{font-size:20px;margin:0 0 8px}
+ .pu-live-shell .player-journal label{font-size:14px}
+ .pu-live-shell .player-journal select{font-size:16px;min-height:40px;padding:6px 10px}
+ .pu-live-shell .journal-summary,.pu-live-shell .journal-objective{gap:5px;padding:12px;font-size:14px}
+ .pu-live-shell .journal-summary small{font-size:13px}
+ .pu-live-shell .journal-summary strong,.pu-live-shell .journal-objective strong{font-size:17px}
+ .pu-live-shell .journal-objective p,.pu-live-shell .journal-section-content p{font-size:14px;margin:4px 0}
+ .pu-live-shell .journal-section-content ul,.pu-live-shell .journal-section-content ol{gap:12px;margin-top:4px}
+ .pu-live-shell .journal-section-content li span,.pu-live-shell .journal-section-content li small{font-size:13px}
+ .pu-live-shell .journal-medals{grid-template-columns:1fr 1fr;gap:16px 20px!important}
+ .pu-live-shell .journal-locations{grid-template-columns:1fr 1fr}
+ .pu-live-shell .match-register{display:grid;grid-template-columns:minmax(340px,.9fr) minmax(0,1.3fr);align-items:start;gap:12px 24px;font-size:14px}
+ .pu-live-shell .match-register>div:first-child{grid-column:1/-1}
+ .pu-live-shell .match-register h2{font-size:24px;margin:0}
+ .pu-live-shell .match-register h3{font-size:17px}
+ .pu-live-shell .match-register>div:first-child p{font-size:13px;margin:4px 0}
+ .pu-live-shell .match-overview{display:grid;gap:10px}
+ .pu-live-shell .match-summary{gap:10px}
+ .pu-live-shell .match-summary article{padding:10px;font-size:13px;gap:4px}
+ .pu-live-shell .match-summary article:only-child{grid-column:1/-1}
+ .pu-live-shell .match-filters{grid-template-columns:1fr 1fr;gap:8px}
+ .pu-live-shell .match-filters label{font-size:13px;gap:3px}
+ .pu-live-shell .match-filters input,.pu-live-shell .match-filters select{font-size:14px;min-height:36px;padding:5px 8px}
+ .pu-live-shell .match-filters .match-search{grid-column:auto}
+ .pu-live-shell .match-export button{font-size:13px;min-height:36px;padding:5px 8px}
+ .pu-live-shell .match-overview>p{font-size:13px;margin:0}
+ .pu-live-shell .match-events{gap:10px}
+ .pu-live-shell .match-events li{padding:10px 12px;gap:3px;font-size:13px}
+ .pu-live-shell .match-events strong{font-size:17px}
+ .pu-live-shell .match-events p{font-size:13px;margin:2px 0}
+ .pu-live-shell .pu-battle-archive{font-size:14px}
+ .pu-live-shell .pu-battle-archive>*{margin-top:10px!important}
+ .pu-live-shell .pu-battle-archive>*:first-child{margin-top:0!important}
+ .pu-live-shell .pu-battle-archive h2{font-size:24px}
+ .pu-live-shell .pu-battle-archive>ol{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+ .pu-live-shell .pu-battle-archive>ol>li{padding:12px;margin:0!important}
+ .pu-live-shell .pu-battle-archive h3{font-size:20px}
+ .pu-live-shell .pu-battle-archive p{font-size:13px}
+ .pu-live-shell .pu-battle-archive button{font-size:14px;min-height:36px;padding:5px 12px}
+ .pu-live-shell .pu-challenge-panel{font-size:14px;display:flex;flex-direction:column;gap:10px;max-width:1500px;align-self:center}
+ .pu-live-shell .pu-challenge-panel>*{margin:0!important}
+ .pu-live-shell .pu-challenge-panel h2{font-size:25px}
+ .pu-live-shell .pu-challenge-panel h3{font-size:20px}
+ .pu-live-shell .pu-challenge-panel h4{font-size:17px}
+ .pu-live-shell .pu-challenge-panel p,.pu-live-shell .pu-challenge-panel label{font-size:13px;line-height:1.35}
+ .pu-live-shell .pu-challenge-panel button{font-size:14px;min-height:36px;padding:5px 10px}
+ .pu-live-shell .pu-challenge-panel input,.pu-live-shell .pu-challenge-panel select{min-height:38px;font-size:16px;padding:5px 10px}
+ .pu-live-shell .challenge-setup{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.4fr);gap:12px 24px;align-items:start}
+ .pu-live-shell .challenge-setup>button{grid-column:1/-1;justify-self:start;min-width:180px}
+ .pu-live-shell .challenge-config{gap:10px}
+ .pu-live-shell .challenge-mode-actions{grid-template-columns:minmax(0,1.7fr) minmax(0,1fr);align-items:start}
+ .pu-live-shell .challenge-mode-actions>nav{gap:5px}
+ .pu-live-shell .challenge-mode-actions button{font-size:12px;padding:5px}
+ .pu-live-shell .challenge-builder{gap:8px}
+ .pu-live-shell .challenge-builder>div:first-child{padding:8px 12px}
+ .pu-live-shell .challenge-builder>section[aria-label="Squadra Fanta scelta"]>ol>li{padding:8px}
+ .pu-live-shell .challenge-builder>section[aria-label="Squadra Fanta scelta"] h3{margin:0 0 5px}
+ .pu-live-shell .challenge-builder>section[aria-label="Squadra Fanta scelta"] button{margin-top:4px;min-height:32px}
+ .pu-live-shell .challenge-builder>details{padding:8px}
+ .pu-live-shell .challenge-catalog-page{gap:8px}
+ .pu-live-shell .challenge-catalog{padding:8px}
+ .pu-live-shell .challenge-catalog li{padding:8px}
+ .pu-live-shell .challenge-catalog .pu-history-pages{margin-top:8px}
+ .pu-live-shell .challenge-preview{display:grid;grid-template-columns:1fr 1fr;gap:12px 20px}
+ .pu-live-shell .challenge-preview>*{margin:0!important}
+ .pu-live-shell .challenge-preview>p,.pu-live-shell .challenge-launch,.pu-live-shell .challenge-preview>section[aria-label="Classifica di questa sfida"]{grid-column:1/-1}
+ .pu-live-shell .challenge-preview>section{padding:12px}
+ .pu-live-shell .challenge-preview>section h3{margin:0 0 8px}
+ .pu-live-shell .challenge-preview>section ol{grid-template-columns:repeat(3,minmax(0,1fr))}
+ .pu-live-shell .challenge-preview>section li{padding:8px}
+ .pu-live-shell .challenge-preview>section p{font-size:13px}
+ .pu-live-shell .challenge-launch{display:flex;gap:12px}
+ .pu-live-shell .challenge-sharing textarea{font-size:14px;min-height:130px}
+ .pu-live-shell .challenge-results>ol{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+ .pu-live-shell .challenge-results>ol>li{margin:0!important;padding:12px}
+ .pu-live-shell .challenge-results button{margin-top:8px}
+ .pu-live-shell .challenge-ranking>ol{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+ .pu-live-shell .challenge-ranking>ol>li{margin:0!important;padding:12px}
+}
+@media(min-width:1100px) and (min-height:640px) and (max-height:820px){
+ .pu-live-shell .journal-overview{gap:8px}
+ .pu-live-shell .journal-summary,.pu-live-shell .journal-objective{padding:8px 10px;gap:3px}
+ .pu-live-shell .journal-summary strong,.pu-live-shell .journal-objective strong{font-size:15px;line-height:1.25}
+ .pu-live-shell .journal-summary span,.pu-live-shell .journal-summary small,.pu-live-shell .journal-objective p{font-size:13px;line-height:1.25}
+ .pu-live-shell .match-register{gap:8px 20px}
+ .pu-live-shell .match-overview{gap:7px}
+ .pu-live-shell .match-summary article{padding:8px;gap:2px}
+ .pu-live-shell .match-summary h3{font-size:16px}
+ .pu-live-shell .match-summary span{font-size:12px}
+ .pu-live-shell .match-register>div:first-child p{font-size:12px}
+ .pu-live-shell .match-notice{padding:8px}
+ .pu-live-shell .pu-challenge-panel{gap:6px}
+ .pu-live-shell .challenge-config{gap:8px}
+ .pu-live-shell .challenge-config>button{justify-self:start;min-width:180px}
+ .pu-live-shell .challenge-catalog>ul>li h4{font-size:16px}
+ .pu-live-shell .challenge-catalog>ul>li p{font-size:12px}
+ .pu-live-shell .pu-challenge-panel p{font-size:12px}
+ .pu-live-shell .challenge-builder>section[aria-label="Squadra Fanta scelta"]>ol>li{padding:6px}
+ .pu-live-shell .challenge-builder>section[aria-label="Squadra Fanta scelta"] button{min-height:28px;padding:3px 8px;margin-top:2px}
+ .pu-live-shell .challenge-builder>section[aria-label="Squadra Fanta scelta"] h3{font-size:18px}
+ .pu-live-shell .challenge-config{gap:5px}
+ .pu-live-shell .challenge-config label>input,.pu-live-shell .challenge-config label>select{margin-top:3px}
+ .pu-live-shell .challenge-config>button{min-height:32px}
+ .pu-live-shell .challenge-catalog>ul>li{padding:6px}
+ .pu-live-shell .challenge-catalog>ul>li button{margin-top:3px;min-height:30px;padding:3px 8px}
+ .pu-live-shell .challenge-catalog .pu-history-pages button{min-height:30px;padding:3px 8px}
+ .pu-live-shell .challenge-catalog-page{gap:5px}
+ .pu-live-shell .challenge-builder{gap:6px}
+ .pu-live-shell .challenge-catalog>p{margin-bottom:4px}
+}
+@media(min-width:1100px) and (min-height:640px) and (max-height:740px){
+ .pu-live-shell .pu-challenge-panel{display:grid;grid-template-columns:minmax(0,.6fr) minmax(0,1fr);gap:8px 16px}
+ .pu-live-shell .pu-challenge-panel>div:first-child{grid-column:1;align-self:center}
+ .pu-live-shell .pu-challenge-panel>div:first-child h2{font-size:21px}
+ .pu-live-shell .pu-challenge-panel>.challenge-pages{grid-column:2;align-self:center;gap:5px}
+ .pu-live-shell .challenge-pages button{font-size:12px;padding:4px 7px;min-height:32px}
+ .pu-live-shell .pu-challenge-panel>:not(:first-child):not(.challenge-pages){grid-column:1/-1}
+ .pu-live-shell .challenge-builder{gap:5px}
+ .pu-live-shell .challenge-builder>div:first-child{padding:6px 10px}
+ .pu-live-shell .challenge-builder-pages button{min-height:32px}
+ .pu-live-shell .challenge-catalog-page label>input,.pu-live-shell .challenge-catalog-page label>select{margin-top:2px;min-height:34px}
+ .pu-live-shell .game-settings-artwork{grid-template-columns:repeat(3,minmax(0,1fr));gap:10px 24px}
+ .pu-live-shell .game-settings-artwork .game-audio-toggle{grid-column:auto;grid-row:2/4;flex-direction:column;justify-content:center;align-items:flex-start;gap:5px}
+ .pu-live-shell .game-settings-artwork label:not(.game-audio-toggle){font-size:14px}
+ .pu-live-shell .game-settings-artwork>p{font-size:12px;line-height:1.3}
+}

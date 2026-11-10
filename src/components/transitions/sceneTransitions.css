@@ -1,0 +1,278 @@
+.arka-scene-transition {
+  position: absolute;
+  inset: 0;
+  z-index: 90;
+  overflow: hidden;
+  isolation: isolate;
+  background: #09070a;
+  animation: arka-d6-cover var(--scene-cover-ms) ease-out both;
+}
+
+.arka-scene-transition[data-scene-transition='playing'],
+.arka-scene-transition[data-start-covered='true'][data-scene-transition='cover'] {
+  animation: none;
+  opacity: 1;
+}
+
+.arka-scene-transition[data-scene-transition='reveal'] {
+  animation: arka-d6-reveal var(--scene-blend-ms) ease-in both;
+}
+
+.arka-scene-transition__video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+}
+
+.arka-scene-transition__video[data-ready='true'] { opacity: 1; }
+
+.arka-d6-artwork { position: absolute; inset: 0; }
+
+.arka-d6-board {
+  position: absolute;
+  inset: -10%;
+  background:
+    repeating-linear-gradient(0deg, #fff1d012 0 1px, transparent 1px 82px),
+    radial-gradient(ellipse at 50% 48%, #47100c 0%, #1d0b10 35%, #09070a 75%);
+  animation: arka-d6-board-arrive var(--scene-dice-ms) ease-out both;
+}
+
+.arka-d6-route {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.32;
+}
+
+.arka-d6-route__track {
+  fill: none;
+  stroke: #ac7a4d;
+  stroke-width: 3;
+  stroke-linejoin: round;
+  stroke-dasharray: 3000;
+  animation: arka-d6-route-trace var(--scene-dice-ms) ease-out both;
+}
+
+.arka-d6-route__node {
+  fill: #241214;
+  stroke: #deaa67;
+  stroke-width: 4;
+  animation: arka-d6-node var(--scene-dice-ms) ease-out both;
+}
+
+.arka-d6-hero {
+  --d6-glow-x: 49.2%;
+  --d6-glow-y: 58.3%;
+  --d6-glow-width: 59%;
+  --d6-glow-angle: 18deg;
+  position: absolute;
+  top: 9%;
+  left: 50%;
+  width: 37%;
+  aspect-ratio: 1;
+  filter: var(--scene-artwork-filter);
+  animation: arka-d6-launch var(--scene-dice-ms) cubic-bezier(0.23, 0.75, 0.18, 1) both;
+  will-change: transform;
+  isolation: isolate;
+}
+
+.arka-d6-hero img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  z-index: 1;
+  filter: drop-shadow(0 24px 22px #000a);
+}
+
+.arka-d6-closed { animation: arka-d6-closed-pose var(--scene-dice-ms) linear both; }
+.arka-d6-closed--hold { animation: none; }
+.arka-d6-open { animation: arka-d6-open-pose var(--scene-dice-ms) linear both; }
+
+.arka-d6-landing-shadow {
+  position: absolute;
+  top: 66%;
+  left: 50%;
+  width: 28%;
+  height: 7%;
+  border-radius: 50%;
+  background: #0008;
+  filter: blur(12px);
+  animation: arka-d6-shadow var(--scene-dice-ms) ease-out both;
+}
+
+.arka-d6-wordmark {
+  position: absolute;
+  bottom: 9%;
+  left: 50%;
+  width: 36%;
+  height: auto;
+  filter: drop-shadow(0 7px 12px #000);
+  animation: arka-d6-wordmark var(--scene-dice-ms) ease-out both;
+}
+
+.arka-d6-interior-light {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  animation: arka-d6-interior-light var(--scene-dice-ms) linear both;
+}
+
+.arka-d6-interior-light--source { z-index: 2; }
+
+.arka-d6-interior-light__halo,
+.arka-d6-interior-light__rays,
+.arka-d6-interior-light__wave,
+.arka-d6-interior-light__source,
+.arka-d6-interior-light__flash {
+  position: absolute;
+  top: var(--d6-glow-y);
+  left: var(--d6-glow-x);
+  transform: translate(-50%, -50%) rotate(var(--d6-glow-angle));
+}
+
+.arka-d6-interior-light__halo {
+  width: 280%;
+  height: 210%;
+  border-radius: 50%;
+  background: radial-gradient(ellipse, #fffdf4 0%, #fff0c8ed 12%, #ffce82bb 28%, #ff683a66 46%, transparent 70%);
+  filter: blur(12px);
+  animation: arka-d6-bloom var(--scene-dice-ms) cubic-bezier(0.16, 0.8, 0.26, 1) both;
+}
+
+.arka-d6-interior-light__rays {
+  width: 420%;
+  height: 340%;
+  background: conic-gradient(from 12deg,
+    transparent 0deg 10deg, #fffdf3f2 13deg 16deg, transparent 20deg 44deg,
+    #fff1cce6 48deg 53deg, transparent 59deg 83deg, #fff9e9eb 87deg 90deg,
+    transparent 96deg 130deg, #ffd49ecf 135deg 141deg, transparent 146deg 171deg,
+    #fffdf5f2 175deg 179deg, transparent 185deg 214deg, #fff0cfde 220deg 225deg,
+    transparent 232deg 253deg, #fff8e6ed 258deg 263deg, transparent 270deg 302deg,
+    #ffe4b8d9 307deg 312deg, transparent 319deg 343deg, #fffdf3e6 347deg 352deg,
+    transparent 357deg 360deg);
+  mask-image: radial-gradient(ellipse, #000 3% 18%, #000b 35%, transparent 68%);
+  filter: blur(3px);
+  animation: arka-d6-beams var(--scene-dice-ms) cubic-bezier(0.12, 0.9, 0.2, 1) both;
+}
+
+.arka-d6-interior-light__wave {
+  width: 310%;
+  height: 250%;
+  border-radius: 50%;
+  background: radial-gradient(ellipse, #fff6d9dd 0%, #ffdda6a6 24%, #ff864c55 47%, transparent 68%);
+  filter: blur(10px);
+  animation: arka-d6-light-wave var(--scene-dice-ms) cubic-bezier(0.08, 0.8, 0.24, 1) both;
+}
+
+.arka-d6-interior-light__source {
+  width: var(--d6-glow-width);
+  height: 18%;
+  border-radius: 50%;
+  background: radial-gradient(ellipse, #fff 0% 15%, #fffcecfa 30%, #ffdc99d9 50%, #ff8e5280 64%, transparent 78%);
+  mix-blend-mode: screen;
+  filter: blur(2px);
+}
+
+.arka-d6-interior-light__flash {
+  width: 180%;
+  height: 130%;
+  border-radius: 50%;
+  background: radial-gradient(ellipse, #fffdf4 0%, #fff4d3ed 13%, #ffd69d99 30%, transparent 62%);
+  mix-blend-mode: screen;
+  filter: blur(6px);
+  animation: arka-d6-core-flash var(--scene-dice-ms) ease-out both;
+}
+
+.arka-d6-fallback {
+  position: absolute;
+  inset: 17%;
+  padding: 15%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14%;
+  border: 8px solid #b91413;
+  border-radius: 18%;
+  background: #efe0c0;
+}
+.arka-d6-fallback span { border-radius: 50%; background: #1b1215; }
+
+@keyframes arka-d6-cover { from { opacity: 0; } to { opacity: 1; } }
+@keyframes arka-d6-reveal { from { opacity: 1; } to { opacity: 0; } }
+@keyframes arka-d6-board-arrive {
+  from { transform: perspective(1200px) rotateX(9deg) scale(1.16); }
+  to { transform: perspective(1200px) rotateX(0deg) scale(1); }
+}
+@keyframes arka-d6-route-trace {
+  from { stroke-dashoffset: 3000; }
+  65%, to { stroke-dashoffset: 0; }
+}
+@keyframes arka-d6-node {
+  from { opacity: 0; }
+  48%, to { opacity: 1; }
+}
+@keyframes arka-d6-launch {
+  0% { transform: translate(-170%, -52%) rotate(-125deg) scale(0.55); }
+  26% { transform: translate(-52%, 1%) rotate(13deg) scale(1.06, 0.94); }
+  39% { transform: translate(-48%, -13%) rotate(-9deg) scale(0.98, 1.03); }
+  51%, 77% { transform: translate(-50%, 0) rotate(0deg) scale(1); }
+  100% { transform: translate(-50%, -3%) rotate(0deg) scale(1.06); }
+}
+@keyframes arka-d6-shadow {
+  from { opacity: 0; transform: translateX(-50%) scale(0.4); }
+  30%, to { opacity: 1; transform: translateX(-50%) scale(1); }
+}
+@keyframes arka-d6-closed-pose {
+  0%, 57% { opacity: 1; }
+  71%, 100% { opacity: 0; }
+}
+@keyframes arka-d6-open-pose {
+  0%, 57% { opacity: 0; }
+  71%, 100% { opacity: 1; }
+}
+@keyframes arka-d6-wordmark {
+  0%, 37% { opacity: 0; transform: translate(-50%, 14%) scale(0.94); }
+  54%, to { opacity: 1; transform: translate(-50%, 0) scale(1); }
+}
+@keyframes arka-d6-interior-light {
+  0%, 57% { opacity: 0; }
+  63% { opacity: 0.2; }
+  70%, 80% { opacity: 1; }
+  100% { opacity: 0.1; }
+}
+@keyframes arka-d6-bloom {
+  0%, 57% { transform: translate(-50%, -50%) rotate(var(--d6-glow-angle)) scale(0.12); }
+  70% { transform: translate(-50%, -50%) rotate(var(--d6-glow-angle)) scale(0.94); }
+  100% { transform: translate(-50%, -50%) rotate(var(--d6-glow-angle)) scale(1.25); }
+}
+@keyframes arka-d6-beams {
+  0%, 59% { transform: translate(-50%, -50%) rotate(var(--d6-glow-angle)) scale(0.04); opacity: 0; }
+  70%, 77% { transform: translate(-50%, -50%) rotate(var(--d6-glow-angle)) scale(1); opacity: 1; }
+  100% { transform: translate(-50%, -50%) rotate(var(--d6-glow-angle)) scale(1.18); opacity: 0.25; }
+}
+@keyframes arka-d6-light-wave {
+  0%, 63% { transform: translate(-50%, -50%) rotate(var(--d6-glow-angle)) scale(0.08); opacity: 0; }
+  67% { opacity: 0.9; }
+  80% { transform: translate(-50%, -50%) rotate(var(--d6-glow-angle)) scale(1.1); opacity: 0.45; }
+  100% { transform: translate(-50%, -50%) rotate(var(--d6-glow-angle)) scale(1.5); opacity: 0; }
+}
+@keyframes arka-d6-core-flash {
+  0%, 62% { opacity: 0; transform: translate(-50%, -50%) rotate(var(--d6-glow-angle)) scale(0.1); }
+  70% { opacity: 1; transform: translate(-50%, -50%) rotate(var(--d6-glow-angle)) scale(1); }
+  79% { opacity: 0.48; }
+  100% { opacity: 0; transform: translate(-50%, -50%) rotate(var(--d6-glow-angle)) scale(1.2); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .arka-scene-transition, .arka-scene-transition * { animation: none !important; }
+  .arka-d6-hero, .arka-d6-wordmark { transform: translateX(-50%); }
+  .arka-d6-open, .arka-d6-interior-light { display: none; }
+}
+
+.arka-scene-transition[data-transition-mode='fade'] { background:linear-gradient(135deg,#101b2b,#172a45); }
