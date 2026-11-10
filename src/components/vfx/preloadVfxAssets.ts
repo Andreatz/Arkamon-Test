@@ -12,7 +12,7 @@ import { getGifRuntimeSrc } from './GifVfx'
 
 const preloaded = new Set<string>()
 
-function playbackSource(asset: MoveVfxAsset, effectId: number, replay: boolean): string {
+export function playbackSource(asset: MoveVfxAsset, effectId: number, replay: boolean): string {
   const src = assetUrl(asset.src)
   // Static and sprite-sheet assets have no intrinsic replay clock: reuse their decoded URL.
   // Only animated GIFs require a distinct URL to restart their first frame.
