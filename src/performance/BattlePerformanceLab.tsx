@@ -56,6 +56,8 @@ export function BattlePerformanceLab() {
         { label: 'Frame tardivi / finestra', value: last?.frames.lateFrames ?? 0 },
         { label: 'Gap 60 Hz stimati', value: last?.frames.estimatedMissed60HzFrames ?? 0 },
         { label: 'VFX decodificati', value: last ? mib(last.vfxBytes) + ' / ' + mib(last.vfxBudgetBytes) + ' MiB' : '—' },
+        { label: 'Preparazione VFX', value: last?.vfxPrepareLastMs != null ? number(last.vfxPrepareLastMs) + ' ms' : '—' },
+        { label: 'Caricamento pagina nativa', value: last?.nativeLoadLastMs != null ? number(last.nativeLoadLastMs) + ' ms' : '—' },
         { label: 'Sprite nativi', value: last ? mib(last.nativeBytes) + ' / ' + mib(last.nativeBudgetBytes) + ' MiB' : '—' },
       ].map(card => <div key={card.label} className="rounded-lg border border-[var(--arka-border)] bg-[var(--arka-surface-hover)] p-2">
         <p className="text-[11px] text-[var(--arka-text-muted)]">{card.label}</p>
@@ -67,7 +69,7 @@ export function BattlePerformanceLab() {
       <FrameChart samples={report?.samples ?? []} />
       <p className="text-xs text-[var(--arka-text-muted)]">Battaglia rilevata: {state.battlePresent ? 'sì' : 'no'} · Durata {number(state.durationMs / 1000)} s · Campioni {state.sampleCount}</p>
       {last && <p className="text-xs text-[var(--arka-text-muted)]">
-        Canvas: {last.pagedRenderers} paginati, {last.atlasRenderers} atlanti · ultimo disegno {last.lastCanvasDrawMs === null ? 'n.d.' : number(last.lastCanvasDrawMs, 2) + ' ms'} · decodifiche attive {last.nativeDecodes} · long task {last.longTasks}
+        Canvas: {last.pagedRenderers} paginati, {last.atlasRenderers} atlanti · caricamenti nativi/VFX {last.nativeLoads}/{last.vfxPrepares} · ultimo disegno {last.lastCanvasDrawMs === null ? 'n.d.' : number(last.lastCanvasDrawMs, 2) + ' ms'} · decodifiche attive {last.nativeDecodes} · long task {last.longTasks}
       </p>}
     </div>
     <div className="space-y-2">
