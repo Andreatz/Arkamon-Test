@@ -1,0 +1,50 @@
+name: Arkamon Test Rework Checks
+
+on:
+  pull_request:
+    paths:
+      - '.github/workflows/rework-checks.yml'
+      - 'src/**'
+      - 'ui-source/**'
+      - 'public/**'
+      - 'scripts/**'
+      - 'package.json'
+      - 'package-lock.json'
+      - 'vite.config.ts'
+      - 'docs/rework/**'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: arkamon-test-rework-checks-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - name: Install pinned dependencies
+        run: npm ci
+      - name: TypeScript contracts
+        run: npx tsc --noEmit
+      - name: Battle engine regression tests
+        run: npx vitest run src/engine/__tests__ --maxWorkers=2
+      - name: Lightweight web build
+        run: npm run build
+        env:
+          GITHUB_PAGES: 'true'
+      - name: Rework verification summary
+        if: always()
+        run: |
+          echo '## Arkamon-Test — verified fork' >> "$GITHUB_STEP_SUMMARY"
+          echo 'This is a lightweight test build with heavy media served from an immutable Beta revision, not a full media integrity check.' >> "$GITHUB_STEP_SUMMARY"
