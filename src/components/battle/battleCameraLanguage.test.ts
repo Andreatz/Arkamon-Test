@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import {
   battleCameraIntensity,
+  battleCameraAnticipationLeadMs,
   planBattleCameraPose,
   type BattleCinematicShot,
 } from './battleCameraLanguage'
@@ -90,4 +91,13 @@ describe('bounded battle cinematography', () => {
     expect(fast.y).toBe(normal.y)
     expect(fast.scale).toBe(normal.scale)
   })
+  it('ensures a visible anticipation for first-frame releases without delaying authored long clips', () => {
+    expect(battleCameraAnticipationLeadMs(0, 'light', false)).toBe(210)
+    expect(battleCameraAnticipationLeadMs(150, 'medium', false)).toBe(60)
+    expect(battleCameraAnticipationLeadMs(240, 'heavy', false)).toBe(0)
+    expect(battleCameraAnticipationLeadMs(0, 'subtle', false)).toBe(0)
+    expect(battleCameraAnticipationLeadMs(0, 'heavy', true)).toBe(0)
+    expect(battleCameraAnticipationLeadMs(Number.NaN, 'light', false)).toBe(210)
+  })
+
 })
