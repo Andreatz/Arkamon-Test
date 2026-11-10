@@ -4,6 +4,7 @@ import { useGamePreferences } from '@/settings/gamePreferences'
 import { getPreparedImageStats, setPreparedImageBudget } from '@/utils/prepareImageAsset'
 import { nativeSpritePageCache } from '@/utils/spritePageCache'
 import { prepareMoveVfxPlayback, preloadMoveVfxForPokemon } from '@/components/vfx/preloadVfxAssets'
+import { warmBattleMediaBounded } from './warmBattleMediaBounded'
 
 export function getBattleReadinessPlan(active: readonly number[], reserves: readonly number[]) {
   const current = [...new Set(active)]
@@ -18,7 +19,7 @@ export function useBattleAssetReadiness(active: readonly number[], reserves: rea
   const [ready, setReady] = useState(false)
   const [metrics, setMetrics] = useState({ images: getPreparedImageStats(), pages: nativeSpritePageCache.stats() })
   useEffect(() => {
-    setPreparedImageBudget((memory === 'low' ? 48 : 128) * 1024 * 1024)
+    setPreparedImageBudget((memory === 'low' ? 32 : memory === 'full' ? 128 : 64) * 1024 * 1024)
     const timer = window.setInterval(() => setMetrics({ images: getPreparedImageStats(), pages: nativeSpritePageCache.stats() }), 1500)
     return () => window.clearInterval(timer)
   }, [memory])
@@ -31,7 +32,11 @@ export function useBattleAssetReadiness(active: readonly number[], reserves: rea
     const moves = [...new Set(plan.current.flatMap(id => getPokemon(id)?.mosse ?? []).filter(Boolean))]
       .map(getMossa).filter((move): move is NonNullable<typeof move> => !!move)
     // prepareImageAsset deduplicates simultaneous requests with the renderer.
-    void Promise.all(moves.map(move => prepareMoveVfxPlayback(move, 0))).then(() => { if (!cancelled) setReady(true) })
+    // Warm at most two VFX at once. The active attack still gets its exact
+    // event-specific preload on demand, ahead of release.
+    void warmBattleMediaBounded(moves, move => prepareMoveVfxPlayback(move, 0), () => !cancelled).then(() => {
+      if (!cancelled) setReady(true)
+    })
     const next = () => {
       if (cancelled) return
       const id = plan.deferred.shift()
