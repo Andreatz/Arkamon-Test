@@ -3,6 +3,8 @@
 interface ImportMetaEnv {
   /** Tiny generated build constant; the full game and asset catalogs stay out of assetUrl. */
   readonly VITE_LOCAL_FRONT_SPRITE_IDS: readonly number[]
+  /** Test fork: static assets deliberately omitted from its size-bounded checkout. */
+  readonly VITE_OMITTED_MEDIA_PATHS: readonly string[]
 }
 
 declare module 'virtual:arkamon-runtime-pages' {
