@@ -17,7 +17,7 @@ const SHOTS = [
   { speciesId: 2, moveName: 'Assalto', choreography: 'physical' },
   { speciesId: 1, moveName: 'Soffio', choreography: 'projectile' },
   { speciesId: 42, moveName: 'Polverone', choreography: 'area' },
-  { speciesId: 1, moveName: 'Brezza Profumata', choreography: 'support' },
+  { speciesId: 63, moveName: 'Lana magica', choreography: 'support' },
 ] as const
 
 async function openBattle(page: Page, speciesId: number) {
