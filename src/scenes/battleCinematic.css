@@ -1,0 +1,52 @@
+/*
+ * Arkamon-Test cinematic camera v1.
+ * Purely presentational: only the battlefield world (not HP, dice, commands,
+ * logs or the Game Master overlay) is moved. Native animation frames stay intact.
+ */
+.battle-camera {
+  pointer-events: none;
+  isolation: isolate;
+  transform-origin: center center;
+}
+.battle-camera[data-battle-camera-beat="anticipation"],
+.battle-camera[data-battle-camera-beat="travel"],
+.battle-camera[data-battle-camera-beat="impact"] {
+  will-change: transform;
+}
+.battle-camera[data-battle-camera-target="A"] {
+  --battle-focus-x: 32%;
+  --battle-focus-y: 70%;
+}
+.battle-camera[data-battle-camera-target="B"] {
+  --battle-focus-x: 68%;
+  --battle-focus-y: 29%;
+}
+.battle-camera:not([data-battle-camera-target="A"]):not([data-battle-camera-target="B"]) {
+  --battle-focus-x: 50%;
+  --battle-focus-y: 50%;
+}
+.battle-camera-glaze {
+  z-index: 70;
+  background:
+    radial-gradient(ellipse 52% 54% at var(--battle-focus-x) var(--battle-focus-y),
+      rgba(207, 234, 255, .22), rgba(140, 200, 255, .06) 36%, transparent 78%),
+    radial-gradient(ellipse at 50% 45%, transparent 29%, rgba(7, 23, 45, .52) 100%);
+  mix-blend-mode: screen;
+  transition-property: opacity;
+  transition-timing-function: ease-out;
+}
+.battle-camera[data-battle-camera-beat="travel"] .battle-camera-glaze {
+  background:
+    linear-gradient(110deg, transparent 22%, rgba(170, 225, 255, .15) 45%, transparent 67%),
+    radial-gradient(ellipse at var(--battle-focus-x) var(--battle-focus-y),
+      rgba(185, 228, 255, .18), transparent 62%);
+}
+.battle-camera[data-battle-camera-beat="impact"] .battle-camera-glaze {
+  background:
+    radial-gradient(circle at var(--battle-focus-x) var(--battle-focus-y),
+      rgba(255, 239, 200, .48), rgba(255, 242, 221, .13) 21%, transparent 62%),
+    radial-gradient(ellipse at 50% 50%, transparent 43%, rgba(36, 44, 75, .24) 100%);
+}
+@media (prefers-reduced-motion: reduce) {
+  .battle-camera-glaze { transition-duration: 0ms !important; }
+}
