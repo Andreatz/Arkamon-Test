@@ -17,8 +17,9 @@ const ADMIN_MODE_MARKER = 'ARKAMON_ADMIN_MODE_V1_THEME_EDITOR'
 const AdminInteractionEditor = lazy(() => import('@/interactions/AdminInteractionEditor').then((module) => ({ default: module.AdminInteractionEditor })))
 const AdminLeaguePanel = lazy(() => import('@/league/AdminLeaguePanel').then((module) => ({ default: module.AdminLeaguePanel })))
 const AdminSessionPanel = lazy(() => import('@/readiness/AdminSessionPanel').then((module) => ({ default: module.AdminSessionPanel })))
+const BattlePerformanceLab = lazy(() => import('@/performance/BattlePerformanceLab').then(module => ({ default: module.BattlePerformanceLab })))
 
-type AdminTab = 'session' | 'project' | 'colors' | 'ui' | 'layout' | 'assets' | 'sprites' | 'vfx' | 'presets' | 'json' | 'audience' | 'interactions' | 'league'
+type AdminTab = 'session' | 'project' | 'colors' | 'ui' | 'layout' | 'assets' | 'sprites' | 'vfx' | 'presets' | 'json' | 'audience' | 'interactions' | 'league' | 'performance'
 
 const tabs: { id: AdminTab; label: string }[] = [
   { id: 'session', label: 'Regia' },
@@ -29,6 +30,7 @@ const tabs: { id: AdminTab; label: string }[] = [
   { id: 'assets', label: 'Asset' },
   { id: 'sprites', label: 'Sprite' },
   { id: 'vfx', label: 'VFX' },
+  { id: 'performance', label: 'Prestazioni' },
   { id: 'presets', label: 'Preset' },
   { id: 'json', label: 'Import/Export' },
   { id: 'audience', label: 'Pubblico' },
@@ -105,6 +107,7 @@ export function AdminPanel() {
         {activeTab === 'assets' ? <AdminAssetEditor /> : null}
         {activeTab === 'sprites' ? <AdminSpriteScaleEditor /> : null}
         {activeTab === 'vfx' ? <AdminVfxEditor /> : null}
+        {activeTab === 'performance' ? <Suspense fallback={<p role="status">Caricamento profiler…</p>}><BattlePerformanceLab /></Suspense> : null}
         {activeTab === 'presets' ? <AdminPresetEditor /> : null}
         {activeTab === 'json' ? <AdminImportExport /> : null}
         {activeTab === 'audience' ? <AdminAudiencePanel /> : null}
