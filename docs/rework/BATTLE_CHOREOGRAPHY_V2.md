@@ -22,7 +22,7 @@ The dedicated `e2e/rework-shot-choreography.spec.ts` performs four real seeded a
 - Physical: Vyrath #2 using Assalto (charge).
 - Projectile: Vyrath #1 using Soffio (beam).
 - Area: Felvex #42 using Polverone (storm).
-- Support/aura: Vyrath #1 using Brezza Profumata (aura).
+- Support/aura: Fluffet #63 using Lana magica (explicit aura profile).
 
 All tests capture before/after images, a real Chromium video, presentation cue order, decoded graphics memory indicators and frame pacing (p50/p95 milliseconds). This is an illustrative baseline only; frames reported from headless CI are not substitutes for performance testing with OBS.
 
