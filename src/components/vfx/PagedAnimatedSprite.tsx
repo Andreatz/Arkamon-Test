@@ -4,6 +4,7 @@ import { locateSpritePage, validateSpritePages, type SpritePage } from './sprite
 import { nativeSpritePageCache, getNativeSpriteBudget, type SpritePageLease, type SpritePagePixels } from '@/utils/spritePageCache'
 import { useVfxPlaybackPreferences } from './useVfxPlaybackPreferences'
 import { useGamePreferences } from '@/settings/gamePreferences'
+import { shouldSampleSpriteMemory, shouldWarmNextSpritePage } from './spriteRenderPerformance'
 
 /** Native pages share one bounded decoder; the visible canvas survives slow page handovers. */
 export function PagedAnimatedSprite(props: AnimatedSpriteProps & { pages: readonly SpritePage[] }) {
@@ -44,7 +45,7 @@ export function PagedAnimatedSprite(props: AnimatedSpriteProps & { pages: readon
   useLayoutEffect(() => {
     const canvas = canvasRef.current
     if (!canvas) return
-    const context = canvas.getContext('2d', { willReadFrequently: true })
+    const context = canvas.getContext('2d')
     if (!context || !validateSpritePages(pages, pages.reduce((sum, page) => sum + page.frameCount, 0), frameWidth, frameHeight)) {
       callbacks.current.onError?.(); return
     }
@@ -53,6 +54,8 @@ export function PagedAnimatedSprite(props: AnimatedSpriteProps & { pages: readon
     let stalledAt: number | undefined, pausedAt: number | undefined, nextPrepared = -1
     let frame = 0
     let painted: { frame: number; pixels: SpritePagePixels } | undefined
+    let lastMemorySample = Number.NEGATIVE_INFINITY, lastMemoryPage = -1
+    let memorySamples = 0
     const wake = () => { if (active && !raf) raf = requestAnimationFrame(tick) }
     const totalFrames = pages.reduce((sum, page) => sum + page.frameCount, 0)
     const safeStart = Math.max(0, Math.min(startFrame, totalFrames - 1))
@@ -62,14 +65,24 @@ export function PagedAnimatedSprite(props: AnimatedSpriteProps & { pages: readon
     const clock: SpritePlaybackClock = { startedAt: 0, hasStarted: false }
     const cue = props.cueFrame === undefined ? undefined : Math.max(0, Math.min(props.cueFrame, count - 1))
     const updateMetrics = () => {
+      // Keep frame identity live for native cue diagnostics. Reading every
+      // cache entry and writing memory attributes at 60 FPS causes needless
+      // main-thread work and mutation observer traffic.
+      canvas.dataset.spriteFrame = String(safeStart + frame)
+      if (canvas.parentElement) canvas.parentElement.dataset.spriteFrame = String(safeStart + frame)
+      const now = performance.now()
+      if (!shouldSampleSpriteMemory(lastMemorySample, now, lastMemoryPage, currentPage)) return
       const stats = nativeSpritePageCache.stats()
+      lastMemorySample = now
+      lastMemoryPage = currentPage
+      memorySamples++
       canvas.dataset.spriteDecodedBytes = String(stats.decodedBytes)
       canvas.dataset.spriteDecodedBudget = String(stats.budgetBytes)
       canvas.dataset.spritePage = String(currentPage)
-      canvas.dataset.spriteFrame = String(safeStart + frame)
+      canvas.dataset.spriteMemorySamples = String(memorySamples)
       if (canvas.parentElement) {
-        canvas.parentElement.dataset.spriteFrame = String(safeStart + frame)
         canvas.parentElement.dataset.spritePage = String(currentPage)
+        canvas.parentElement.dataset.spriteMemorySamples = String(memorySamples)
         canvas.parentElement.dataset.spriteHeld = canvas.dataset.spriteHeld ?? 'false'
       }
     }
@@ -112,7 +125,9 @@ export function PagedAnimatedSprite(props: AnimatedSpriteProps & { pages: readon
       updateMetrics()
       if (!readyNotified) { readyNotified = true; setReady(true); callbacks.current.onReady?.() }
       const next = (located.pageIndex + 1) % pages.length
-      if (next !== nextPrepared && (loop || next > located.pageIndex) && !pauseRef.current && !reducedRef.current) {
+      if (next !== nextPrepared && (loop || next > located.pageIndex)
+        && !pauseRef.current && !reducedRef.current
+        && shouldWarmNextSpritePage(located.page, absolute, frameMs)) {
         nextPrepared = next
         // Only one next page is warmed; every renderer shares and evicts through the same budget.
         void nativeSpritePageCache.prepare(pages[next])
