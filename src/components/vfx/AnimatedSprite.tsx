@@ -444,8 +444,8 @@ export function AtlasAnimatedSprite({
     const failed = canvasErrorIdentityRef.current
     if (failed?.src === src && failed.replayKey === replayKey) return
     try {
-      // Use a CPU-oriented surface to crop the current cell from a large atlas.
-      const context = canvas.getContext('2d', { willReadFrequently: true })
+      // No pixel readback: allow a GPU-backed canvas where the browser supports it.
+      const context = canvas.getContext('2d')
       if (!context) throw new Error('Sprite canvas is unavailable')
       const drawStartedAt = performance.now()
       const decodedImage = canvasImageRef.current
