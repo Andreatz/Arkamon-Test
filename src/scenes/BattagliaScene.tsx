@@ -3,6 +3,7 @@ import { ChallengeBanner } from '@/challenges/ChallengeBanner'
 import { useSettledBattleCheckpoint } from '@/components/battle/useSettledBattleCheckpoint'
 import { BattleLayoutItem, ImpactPulseOverlay, InfoBox, ScambioModal, SquadIndicator, PokemonBattleSlot, HpBar, ActionButton, SupremeButton, MoveButton, type ImpactPulseDisplay } from '@/components/battle/BattlePresentation'
 import '@/components/ui/gameButton.css'
+import './battleCinematic.css'
 import { BattleLogPanel } from '@/components/battle/BattleLogPanel'
 import { BattleResultCard } from '@/components/battle/BattleResultCard'
 import { useBattleChronicle } from '@/components/battle/useBattleChronicle'
@@ -1554,6 +1555,7 @@ export function BattagliaScene() {
         data-battle-camera
         data-battle-camera-beat={cameraPose.beat}
         data-battle-camera-intensity={cinematicShot?.intensity ?? 'none'}
+        data-battle-camera-target={cinematicShot?.target ?? cinematicShot?.attacker ?? 'none'}
         data-battle-camera-zoom={cameraPose.scale}
         className="battle-camera absolute inset-0"
         style={{ transformOrigin: 'center center' }}
