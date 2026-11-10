@@ -40,6 +40,8 @@ class BattleProfiler {
   private mutationObserver: MutationObserver | null = null
   private taskObserver: PerformanceObserver | null = null
   private currentMarker = ''
+  private observedNativeLoads = 0
+  private observedVfxPrepares = 0
 
   /** Stable reference required by useSyncExternalStore. */
   getSnapshot = (): BattleProfilerSnapshot => this.state
@@ -89,6 +91,10 @@ class BattleProfiler {
     this.watchBattle(stage)
     const images = getPreparedImageStats()
     const pages = nativeSpritePageCache.stats()
+    const nativeLoads = Math.max(0, pages.completedPageLoads - this.observedNativeLoads)
+    const vfxPrepares = Math.max(0, images.completedPrepares - this.observedVfxPrepares)
+    this.observedNativeLoads = pages.completedPageLoads
+    this.observedVfxPrepares = images.completedPrepares
     const drawElements = stage ? [...stage.querySelectorAll('[data-sprite-draw-ms]')] : []
     const drawTimes = drawElements
       .map(element => Number(element.getAttribute('data-sprite-draw-ms')))
@@ -103,6 +109,10 @@ class BattleProfiler {
       vfxBudgetBytes: images.budgetBytes,
       nativeDecodes: pages.activeDecodes,
       peakNativeDecodes: pages.peakDecodes,
+      nativeLoads,
+      nativeLoadLastMs: nativeLoads ? pages.lastPageLoadMs : null,
+      vfxPrepares,
+      vfxPrepareLastMs: vfxPrepares ? images.lastPrepareMs : null,
       pagedRenderers: stage?.querySelectorAll('[data-sprite-renderer="paged-canvas"]').length ?? 0,
       atlasRenderers: stage?.querySelectorAll('[data-sprite-renderer="canvas"]').length ?? 0,
       lastCanvasDrawMs: drawTimes.length ? Math.max(...drawTimes) : null,
@@ -154,6 +164,8 @@ class BattleProfiler {
     this.lastSampleAt = this.startedAtMs
     this.startedAtUtc = new Date().toISOString()
     this.stoppedAtUtc = null
+    this.observedNativeLoads = nativeSpritePageCache.stats().completedPageLoads
+    this.observedVfxPrepares = getPreparedImageStats().completedPrepares
     this.publish({ ...EMPTY, status: 'recording', startedAt: this.startedAtUtc, battlePresent: true })
     this.watchBattle(stage)
     if (typeof PerformanceObserver !== 'undefined'
