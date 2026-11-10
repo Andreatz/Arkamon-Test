@@ -30,6 +30,10 @@ export interface BattleProfileSample {
   vfxBudgetBytes: number
   nativeDecodes: number
   peakNativeDecodes: number
+  nativeLoads: number
+  nativeLoadLastMs: number | null
+  vfxPrepares: number
+  vfxPrepareLastMs: number | null
   pagedRenderers: number
   atlasRenderers: number
   lastCanvasDrawMs: number | null
@@ -90,6 +94,7 @@ export function createBattleProfileReport(
       'Estimated missed frames use a 60 Hz reference and can differ on high-refresh displays.',
       'Hidden-tab and >250 ms suspension gaps are excluded from FPS statistics.',
       'Cache bytes are retained decoded-image estimates, not total browser or GPU memory.',
+      'Asset preparation times include fetch and decode, and are emitted only when a new load completes within a sampling window.',
       'Canvas draw times are the latest sampled renderer measurements, not a complete GPU trace.',
       'The profiler itself adds a small measurement overhead; compare identical browser/hardware conditions.',
     ],
@@ -100,6 +105,7 @@ export function battleProfileCsv(samples: readonly BattleProfileSample[]): strin
   const columns: (keyof BattleProfileSample | 'fps' | 'p50Ms' | 'p95Ms' | 'estimatedMissed60HzFrames')[] = [
     'atMs', 'fps', 'p50Ms', 'p95Ms', 'estimatedMissed60HzFrames', 'nativeBytes',
     'nativeBudgetBytes', 'vfxBytes', 'vfxBudgetBytes', 'nativeDecodes',
+    'nativeLoads', 'nativeLoadLastMs', 'vfxPrepares', 'vfxPrepareLastMs',
     'pagedRenderers', 'atlasRenderers', 'lastCanvasDrawMs', 'longTasks', 'longTaskMs',
   ]
   const valueFor = (sample: BattleProfileSample, column: typeof columns[number]): number | null => {
