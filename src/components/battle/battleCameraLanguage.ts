@@ -98,3 +98,18 @@ export function planBattleCameraPose(
       return { ...NEUTRAL, durationMs: 0 }
   }
 }
+
+/**
+ * Keep the camera's anticipation visible even when a static or one-frame native
+ * attack releases immediately. This is presentation-only lead time; all native
+ * release and VFX cue offsets continue to use their authored source frames.
+ */
+export function battleCameraAnticipationLeadMs(
+  attackReleaseMs: number,
+  intensity: BattleCameraIntensity,
+  reducedMotion: boolean,
+): number {
+  if (reducedMotion || intensity === 'subtle') return 0
+  const release = Number.isFinite(attackReleaseMs) ? Math.max(0, attackReleaseMs) : 0
+  return Math.max(0, 210 - release)
+}
