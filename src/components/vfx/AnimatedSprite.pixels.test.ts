@@ -23,7 +23,8 @@ describe('predecoded atlas pixel ownership', () => {
     const fresh = {} as HTMLImageElement
     const source = createSpriteCanvasImage(fresh)
     expect(await source.ready).toBe(bitmap)
-    expect(create).toHaveBeenCalledExactlyOnceWith(fresh)
+    expect(create).toHaveBeenCalledOnce()
+    expect(create).toHaveBeenCalledWith(fresh)
     source.dispose(); source.dispose()
     expect(bitmap.close).toHaveBeenCalledOnce()
   })
