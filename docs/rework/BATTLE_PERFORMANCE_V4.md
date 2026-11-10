@@ -9,6 +9,7 @@ The paged native renderer used `willReadFrequently: true` for a canvas that neve
 ## Changes
 
 - Both canvas paths now request `getContext('2d')` without the readback-specific hint; browsers may choose accelerated backing. No frame crop geometry or pixels change.
+- The atlas renderer now reuses an already-decoded `HTMLImageElement` when it comes from the shared VFX cache instead of allocating a second `ImageBitmap`. For uncached atlas media, ownership and disposal of the separate bitmap remain unchanged. This removes a duplicate decoded buffer in the prepared path without changing the frames.
 - Native page painting still advances at its original FPS and emits frame/cue attributes every painted frame, but the more expensive cache-stat scan and corresponding memory DOM writes occur only on first paint, page handover or every 500 ms.
 - Next-page decoded prefetch starts at most about **1.2 seconds before** its actual display. Short pages still begin prefetch immediately. On a slow connection the previous frame remains painted while loading; neither source frames nor game rules are skipped.
 - The VFX decoded-image cache budget is now **32 MiB low / 64 MiB auto / 128 MiB full**, instead of 48 MiB low / 128 MiB auto/full. The existing native page budget remains 32 MiB low / 64 MiB auto on typical desktops or full. These are **retained cache ceilings, not a total GPU-memory guarantee**.
@@ -18,6 +19,7 @@ The paged native renderer used `willReadFrequently: true` for a canvas that neve
 ## Regression and measurement
 
 - `spriteRenderPerformance.test.ts`: bounded stats cadence and safe late-page prefetch.
+- `AnimatedSprite.pixels.test.ts`: reuse of predecoded image pixels, ownership and disposal after unmount.
 - `warmBattleMediaBounded.test.ts`: concurrency, cancellation and asset failure fallback.
 - `battleMediaBudget.test.ts`: cache ceilings by user preference.
 - Existing `spritePageCache.test.ts` and `prepareImageAsset.test.ts`: lease lifetimes, decoded cache limits, late async decode and fallback.
