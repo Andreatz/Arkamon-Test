@@ -94,6 +94,9 @@ for (const reduced of ['off', 'on'] as const) {
     await page.getByRole('button', { name: 'Mossa Suprema', exact: true }).click()
     await page.getByRole('dialog', { name: 'Mossa Suprema', exact: true })
       .getByRole('button', { name: 'Soffio', exact: true }).click()
+    if (reduced === 'off') {
+      await expect(page.locator('[data-battle-technique-banner]')).toContainText('Soffio', { timeout: 20_000 })
+    }
 
     await expect(page.locator('[data-dice-revealed="true"]')).toBeVisible({ timeout: 60_000 })
     await expect(page.locator('[data-battle-camera]')).toHaveAttribute('data-battle-camera-beat', 'neutral')
