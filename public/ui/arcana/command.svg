@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 170" preserveAspectRatio="none" role="img" aria-label="Forged fantasy command plaque">
+ <defs><linearGradient id="gold" x1="0" x2="0" y1="0" y2="1"><stop stop-color="#f3e1ad"/><stop offset=".12" stop-color="#72553e"/><stop offset=".38" stop-color="#d6b886"/><stop offset=".6" stop-color="#504838"/><stop offset="1" stop-color="#e1c28d"/></linearGradient>
+ <linearGradient id="panel" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#1d4650"/><stop offset=".54" stop-color="#0b2532"/><stop offset="1" stop-color="#225059"/></linearGradient></defs>
+ <path d="M26 9H694l18 30v92l-18 30H26L8 131V39Z" fill="url(#gold)" stroke="#f9e5bb" stroke-width="2"/>
+ <path d="M30 16H690l13 27v84l-13 27H30l-14-27V43Z" fill="url(#panel)" stroke="#0c1b25" stroke-width="4"/>
+ <path d="M41 25H678l12 25v70l-12 25H41L29 120V50Z" fill="none" stroke="#e5c28c" stroke-opacity=".47" stroke-width="2"/>
+ <g stroke="#f0cf97" stroke-width="2" fill="none"><path d="M48 54l14-14h35l10 8M48 116l14 14h35l10-8M670 54l-14-14h-35l-10 8M670 116l-14 14h-35l-10-8"/></g>
+ <g transform="translate(42 84)"><path d="M0 -14L14 0L0 14L-14 0Z" fill="#b6e9db" stroke="#f7dda9" stroke-width="3"/><path d="M0 -8L8 0L0 8L-8 0Z" fill="#347b80"/></g>
+ <g transform="translate(678 84)"><path d="M0 -14L14 0L0 14L-14 0Z" fill="#b6e9db" stroke="#f7dda9" stroke-width="3"/><path d="M0 -8L8 0L0 8L-8 0Z" fill="#347b80"/></g>
+ <path d="M150 24H572M150 147H572" stroke="#fff2c8" stroke-opacity=".32" stroke-width="1.5"/>
+ </svg>
