@@ -533,6 +533,36 @@
   padding: clamp(15px,2vw,32px);
 }
 
+/* Performance-friendly dynamic cues: shared with camera phase, never gameplay. */
+.battle-stage[data-battle-ui="aether"] .battle-v5-move {
+  transition: opacity 180ms ease, border-color 170ms ease, box-shadow 170ms ease, filter 180ms ease;
+}
+.battle-stage[data-battle-ui="aether"]:is(
+  [data-battle-director-phase="windup"],
+  [data-battle-director-phase="released"],
+  [data-battle-director-phase="impact"]
+) .battle-v5-move {
+  opacity: .64;
+  filter: saturate(.66);
+}
+/* The focused combatant receives a single low-cost metallic rim flash. */
+.battle-stage[data-battle-ui="aether"][data-battle-director-phase="impact"][data-battle-focus-side="A"]
+  .battle-v5-hp[data-battle-hp-side="player"],
+.battle-stage[data-battle-ui="aether"][data-battle-director-phase="impact"][data-battle-focus-side="B"]
+  .battle-v5-hp[data-battle-hp-side="enemy"] {
+  animation: battle-aether-hp-impact 380ms ease-out both;
+}
+@keyframes battle-aether-hp-impact {
+  0% { border-color: rgba(255,233,183,.95); box-shadow: 0 0 30px rgba(248,220,160,.57), inset 0 1px 0 rgba(255,255,255,.16); }
+  100% { border-color: var(--aether-edge); box-shadow: 0 10px 30px rgba(1,8,14,.43), inset 0 1px 0 rgba(255,255,255,.16); }
+}
+.battle-stage[data-battle-ui="aether"][data-battle-reduced-motion="true"] .battle-v5-hp,
+.battle-stage[data-battle-ui="aether"][data-battle-reduced-motion="true"] .battle-v5-move { animation: none !important; transition: none !important; }
+@media (prefers-reduced-motion: reduce) {
+  .battle-stage[data-battle-ui="aether"] .battle-v5-hp,
+  .battle-stage[data-battle-ui="aether"] .battle-v5-move { animation: none !important; transition: none !important; }
+}
+
 /* Opt-in composition, and reduced motion as a strict visual—not rules—toggle. */
 .battle-stage[data-battle-ui="aether"] .battle-v5-hp,
 .battle-stage[data-battle-ui="aether"] .battle-v5-move,
