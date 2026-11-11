@@ -383,7 +383,9 @@
   padding: clamp(2px,.36vw,6px) clamp(6px,.66vw,12px);
 }
 .battle-stage[data-battle-ui="aether"] .battle-v5-move__name {
-  padding-top: clamp(4px,.55vw,9px);
+  position: relative;
+  top: clamp(12px,1.1vw,18px);
+  padding-top: 0;
 }
 @media (max-width: 740px) {
   .battle-stage[data-battle-ui="aether"] .battle-v5-move-stack {
@@ -394,7 +396,8 @@
     padding: 4px 5px;
   }
   .battle-stage[data-battle-ui="aether"] .battle-v5-move__name {
-    padding-top: 2px;
+    top: 12px;
+    padding-top: 0;
   }
   .battle-stage[data-battle-ui="aether"] .battle-v5-capture-actions .battle-v5-action {
     min-height: 16px;
