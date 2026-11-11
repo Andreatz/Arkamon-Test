@@ -9,6 +9,14 @@ This branch replaces the ornamental CSS/SVG-style game interface from Aether v5 
 - `scripts/check-imagegen-v2.mjs`: verifies 17 genuine WebP files, animated Supreme WebP and the 4MiB runtime budget.
 - The battle visual Playwright test checks actual HTTP 200 WebP assets, active UI and reduced-motion static Supreme. All previous battle/checkpoint tests remain.
 
+## Transparency verification and preview correction
+
+The ImageGen originals do include a real PNG alpha channel. The misleading earlier preview added **solid near-black rounded rectangles** beneath each asset to hide the previous UI. Those plates were authored by the preview script, **not** by ImageGen, and must not be used in review screenshots.
+
+The corrected kit `Arkamon-ImageGen-Alpha-Verified.zip` provides light checkerboard and forest-green compositing previews with **no backing rectangles**, original transparent PNGs, 17 optimized WebP assets, and an offline `verify_alpha.py` script. The script confirms for every WebP that the four corner alpha values are invisible, the outside has genuine transparency and the painted middle remains opaque. The browser visual test additionally draws real WebPs to canvas and checks all four corners, preventing a baked black rectangle from shipping.
+
+The illustrated near-black interiors of the HUD and move cards are intentional and remain part of their art. If their density proves excessive in real gameplay, they should be redrawn as genuinely translucent Game UI assets in ImageGen; do not remove those regions through black-color chroma keying, which destroys the intended dark materials.
+
 ## Binary upload required to complete draft PR
 
 The ImageGen asset bytes exist in the attached small kit ZIP, not in the source connector. `public/ui/imagegen/v2/*.webp` must be added to the PR branch **before CI can pass**. Do not merge until the actual images are present and Playwright screenshots look correct. The repository's source connector accepts text/base64 blobs but does not have a direct local-binary upload action.
