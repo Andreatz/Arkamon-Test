@@ -1776,9 +1776,9 @@ export function BattagliaScene() {
           editing={layoutEditing}
           onChange={updateBattleLayout}
         >
-          <div className="h-full w-full p-2">
+          <div className={`battle-v5-move-stack h-full w-full p-2 ${isSelvatico && battaglia ? 'battle-v5-move-stack--with-actions' : ''}`}>
             <div
-              className="grid h-[100%] gap-1"
+              className="battle-v5-move-grid grid min-h-0 gap-1"
               style={{ gridTemplateColumns: `repeat(${Math.max(1, mosseA.length)}, minmax(0, 1fr))` }}
             >
               {mosseA.map(({ mossa, idx }) => (
@@ -1795,7 +1795,7 @@ export function BattagliaScene() {
             </div>
 
             {isSelvatico && battaglia && (
-              <div className="mt-3 flex justify-end gap-2">
+              <div className="battle-v5-capture-actions flex justify-end gap-2">
                 {pendingCaptureSave && (
                   <ActionButton disabled={false} onClick={() => {
                     if (completaCatturaSalvata(pendingCaptureSave.masterball)) mostraMessaggi([`${pkmnB.nome} è stato catturato!`])
