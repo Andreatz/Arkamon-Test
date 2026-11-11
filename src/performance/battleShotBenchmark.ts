@@ -1,4 +1,4 @@
-import { summarizeFrameIntervals, type FrameStatistics } from './battleProfilerModel'
+import { summarizeFrameIntervals, type FrameStatistics } from './frameStatistics'
 
 /** Public catalog IDs only. No player identifiers, instances, asset URLs or names. */
 export interface BattleShotIdentity {
