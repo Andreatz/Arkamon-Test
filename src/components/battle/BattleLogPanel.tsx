@@ -59,7 +59,7 @@ export function BattleLogDialog({ chronicle, onClose }: { chronicle: BattleChron
     anchor.click(); window.setTimeout(() => URL.revokeObjectURL(url), 0)
   }
   return createPortal(<div data-battle-log-dialog className="fixed inset-0 z-[1300] flex items-center justify-center bg-slate-950/85 p-3 sm:p-6">
-    <section ref={dialogRef} role="dialog" aria-modal="true" aria-labelledby={titleId} tabIndex={-1} className="flex max-h-[94dvh] w-full max-w-5xl flex-col overflow-hidden rounded-2xl border border-white/20 bg-slate-950 p-4 text-white shadow-2xl outline-none sm:p-6">
+    <section ref={dialogRef} role="dialog" aria-modal="true" aria-labelledby={titleId} tabIndex={-1} className="battle-v5-modal flex max-h-[94dvh] w-full max-w-5xl flex-col overflow-hidden rounded-2xl border border-white/20 bg-slate-950 p-4 text-white shadow-2xl outline-none sm:p-6">
       <header className="flex shrink-0 items-start justify-between gap-4"><div><h2 id={titleId} className="text-xl font-bold">Cronaca della battaglia</h2><p className="mt-1 text-sm text-slate-300">Rivedi i risultati già rivelati. I dadi non vengono lanciati di nuovo.</p></div><button type="button" onClick={onClose} className="rounded-lg border border-white/30 px-3 py-2 hover:bg-white/10">Chiudi</button></header>
       {chronicle.omittedEvents > 0 && <p className="mt-3 text-sm text-amber-200">Sono conservati gli ultimi {chronicle.events.length} eventi; {chronicle.omittedEvents} precedenti sono stati omessi.</p>}
       {chronicle.events.length ? <div className="mt-4 grid min-h-0 flex-1 gap-4 overflow-y-auto md:grid-cols-[minmax(180px,1fr)_2fr]">
@@ -73,5 +73,5 @@ export function BattleLogDialog({ chronicle, onClose }: { chronicle: BattleChron
 
 export function BattleLogPanel({ chronicle, busy = false }: { chronicle: BattleChronicle; busy?: boolean }) {
   const [open, setOpen] = useState(false)
-  return <><button type="button" disabled={busy} onClick={() => setOpen(true)} data-battle-chronicle-command className="absolute right-3 top-3 z-30 rounded-lg border border-white/35 bg-slate-950/90 px-3 py-2 text-sm font-bold text-white shadow-lg hover:bg-slate-800 disabled:opacity-50">Cronaca · {chronicle.events.length}</button>{open && typeof document !== 'undefined' && <BattleLogDialog chronicle={chronicle} onClose={() => setOpen(false)} />}</>
+  return <><button type="button" disabled={busy} onClick={() => setOpen(true)} data-battle-chronicle-command className="battle-v5-chronicle absolute right-3 top-3 z-30 rounded-lg border border-white/35 bg-slate-950/90 px-3 py-2 text-sm font-bold text-white shadow-lg hover:bg-slate-800 disabled:opacity-50">Cronaca · {chronicle.events.length}</button>{open && typeof document !== 'undefined' && <BattleLogDialog chronicle={chronicle} onClose={() => setOpen(false)} />}</>
 }
