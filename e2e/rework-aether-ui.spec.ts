@@ -71,7 +71,7 @@ test('new premium HUD is legible and aligned on desktop and compact 16:9 stages'
   expect(appearance.hpBackground).toContain('/ui/arcana/hp-')
   expect(appearance.moveBackground).toContain('/ui/arcana/move-card.svg')
   expect(appearance.narrative).toContain('/ui/arcana/chronicle.svg')
-  expect(appearance.moveAccent).not.toBe('rgba(0, 0, 0, 0)')
+  expect(appearance.moveAccent).toMatch(/^#[0-9a-fA-F]{6}$/)
   // SVG corners remain truly transparent; enamel is intentionally opaque inside.
   const vectorAssets = await page.evaluate(async () => {
     const names = ['hp-ally', 'hp-rival', 'move-card', 'chronicle', 'supreme', 'command', 'title-panel', 'battle-glyph']
