@@ -51,11 +51,17 @@ type Shot = {
 type Profile = { schemaVersion: number; shots: Shot[] }
 
 async function enterAdmin(page: Page) {
-  const admin = page.getByRole('button', { name: 'Admin', exact: true })
-  if (await admin.count()) await admin.click()
-  else await page.keyboard.press('Control+Shift+A')
-  await page.getByRole('button', { name: 'Prestazioni', exact: true }).click()
-  await expect(page.getByRole('heading', { name: 'Laboratorio prestazioni' })).toBeVisible()
+  const tab = page.getByRole('button', { name: 'Prestazioni', exact: true })
+  // Admin can persist as already open across a same-context navigation.
+  // Clicking its toggle unconditionally would close it and hang the test.
+  if (!(await tab.isVisible())) {
+    const admin = page.getByRole('button', { name: 'Admin', exact: true })
+    if (await admin.isVisible()) await admin.click()
+    else await page.keyboard.press('Control+Shift+A')
+  }
+  await expect(tab).toBeVisible({ timeout: 10_000 })
+  await tab.click()
+  await expect(page.getByRole('heading', { name: 'Laboratorio prestazioni' })).toBeVisible({ timeout: 10_000 })
 }
 
 async function benchmarkOne(page: Page, label: string): Promise<{ label: string; shot: Shot; report: Profile; resourceCount: number; visibleTransferBytes: number }> {
