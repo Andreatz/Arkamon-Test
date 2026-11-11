@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 260" role="img" aria-label="Arcane battle sigil">
+<defs><radialGradient id="gem"><stop stop-color="#ebfff2" stop-opacity=".94"/><stop offset=".28" stop-color="#7bcfc6" stop-opacity=".8"/><stop offset="1" stop-color="#0b4d69" stop-opacity=".1"/></radialGradient></defs>
+<g fill="none" stroke="#edd3a0" stroke-width="3">
+<circle cx="130" cy="130" r="110" stroke-dasharray="1 10" stroke-opacity=".62"/>
+<circle cx="130" cy="130" r="95" stroke-opacity=".68"/>
+<circle cx="130" cy="130" r="78" stroke="#9fdfcf" stroke-opacity=".56"/>
+<path d="M130 17L147 39L130 60L113 39Z M130 243L147 221L130 200L113 221Z M17 130L39 113L60 130L39 147Z M243 130L221 113L200 130L221 147Z" fill="#315b65" stroke="#f2d69c"/>
+<path d="M130 41V90M130 170V219M41 130H90M170 130H219M60 60l37 37M163 163l37 37M200 60l-37 37M97 163l-37 37"/>
+</g>
+<g transform="translate(130 130)" stroke="#e6d1a0" stroke-width="3" fill="none">
+<path d="M0 -63L17 -17L63 0L17 17L0 63L-17 17L-63 0L-17 -17Z"/>
+<circle r="35" stroke="#9fdccc" stroke-opacity=".66"/><circle r="22" fill="url(#gem)" stroke="#f2dbad"/>
+<path d="M0 -25L9 -9L25 0L9 9L0 25L-9 9L-25 0L-9 -9Z" fill="#bde9cf" fill-opacity=".3"/>
+</g>
+<g fill="#f5dfb4"><circle cx="130" cy="24" r="4"/><circle cx="130" cy="236" r="4"/><circle cx="24" cy="130" r="4"/><circle cx="236" cy="130" r="4"/></g>
+</svg>
