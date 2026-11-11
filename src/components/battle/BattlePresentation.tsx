@@ -1,4 +1,4 @@
-import { forwardRef, useState, useEffect, useRef, useCallback, type ReactNode } from 'react'
+import { forwardRef, useState, useEffect, useRef, useCallback, type CSSProperties, type ReactNode } from 'react'
 import { motion } from 'framer-motion'
 import { useAdminStore } from '@/store/adminStore'
 import { getPokemon } from '@/data/index'
@@ -445,7 +445,7 @@ export function HpBar({
       data-battle-hp-side={side} data-battle-hp={hp} data-battle-hp-max={hpMax}
       data-battle-hp-custom-frame={frameSource ? 'true' : 'false'}
       data-ui-skin-slot="frame" data-ui-asset-surface=""
-      style={{ ...frameStyle, '--battle-hp-tint': colore } as React.CSSProperties}
+      style={{ ...frameStyle, '--battle-hp-tint': colore } as CSSProperties}
     >
       {stato && <span className="battle-v5-hp__status"><StatusToken stato={stato} compact /></span>}
       <div className="battle-v5-hp__heading" data-ui-hp-labels="">
@@ -525,7 +525,7 @@ export function MoveButton({
       disabled={disabled} onClick={onClick} title={facts.detail}
       className="battle-move-button battle-v5-move arka-battle-font"
       data-ui-skin-slot="frame" data-ui-asset-surface="" data-move-type={mossa.tipo}
-      style={{ '--move-accent': BATTLE_MOVE_ACCENTS[mossa.tipo] } as React.CSSProperties}
+      style={{ '--move-accent': BATTLE_MOVE_ACCENTS[mossa.tipo] } as CSSProperties}
     >
       <span className="battle-command-cursor" aria-hidden="true">◆</span>
       <div data-admin-layout-text-key={`${textKeyPrefix}-name`}
