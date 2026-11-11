@@ -61,15 +61,21 @@ test('new premium HUD is legible and aligned on desktop and compact 16:9 stages'
     return {
       hpFill: hp.querySelector('[data-battle-hp-fill]') !== null,
       hpBackground: getComputedStyle(hp).backgroundImage,
+      hpBackingColor: getComputedStyle(hp).backgroundColor,
       moveBackground: getComputedStyle(move).backgroundImage,
+      moveBackingColor: getComputedStyle(move).backgroundColor,
       moveAccent: getComputedStyle(move).borderLeftColor,
       narrative: narrative ? getComputedStyle(narrative).backgroundImage : null,
+      narrativeBackingColor: narrative ? getComputedStyle(narrative).backgroundColor : null,
     }
   })
   expect(appearance.hpFill).toBe(true)
   expect(appearance.hpBackground).toContain('/ui/imagegen/v2/hp-')
   expect(appearance.moveBackground).toContain('/ui/imagegen/v2/move-')
   expect(appearance.narrative).toContain('/ui/imagegen/v2/dialogue.webp')
+  for (const color of [appearance.hpBackingColor, appearance.moveBackingColor, appearance.narrativeBackingColor]) {
+    expect(color, 'raster panels must not have opaque black CSS underlays').toBe('rgba(0, 0, 0, 0)')
+  }
   const raster = await page.evaluate(async () => {
     const names = ['hp-ally','hp-enemy','dialogue','move-arcane','move-ember','supreme-pulse']
     return Promise.all(names.map(async name => {
