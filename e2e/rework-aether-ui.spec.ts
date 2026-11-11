@@ -63,7 +63,7 @@ test('new premium HUD is legible and aligned on desktop and compact 16:9 stages'
       hpFill: hp.querySelector('[data-battle-hp-fill]') !== null,
       hpBackground: getComputedStyle(hp).backgroundImage,
       moveBackground: getComputedStyle(move).backgroundImage,
-      moveAccent: getComputedStyle(move).borderLeftColor,
+      moveAccent: getComputedStyle(move).getPropertyValue('--move-accent').trim(),
       narrative: narrative ? getComputedStyle(narrative).backgroundImage : null,
     }
   })
