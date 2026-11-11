@@ -1,0 +1,85 @@
+/* ARCANA / title — preserved background video, original logo, enriched vector engraving. */
+.rpg-title-scene[data-title-art="arcana"] {
+  --arcana-cream:#f8e9c8;
+  --arcana-gilt:#f7dbaa;
+  background:#081b26;
+}
+.rpg-title-scene[data-title-art="arcana"]::before {
+  background:linear-gradient(90deg,rgba(3,14,23,.48),transparent 27%,transparent 73%,rgba(3,14,23,.48));
+}
+.rpg-title-scene[data-title-art="arcana"]::after {
+  background:radial-gradient(ellipse 70% 60% at 50% 40%,transparent 25%,rgba(1,9,16,.58) 100%);
+}
+.rpg-title-scene[data-title-art="arcana"] .rpg-title-aether-orbit {
+  width:min(35vw,380px);height:min(35vw,380px);top:26%;aspect-ratio:1;
+  background:transparent url('/ui/arcana/battle-glyph.svg') center / contain no-repeat;
+  opacity:.35;filter:drop-shadow(0 0 29px rgba(151,233,201,.35));
+  animation:arcana-title-astrolabe 24s linear infinite;
+}
+@keyframes arcana-title-astrolabe {
+  from {transform:translate(-50%,-50%) rotate(0);opacity:.25;}
+  50% {opacity:.42;}
+  to {transform:translate(-50%,-50%) rotate(360deg);opacity:.25;}
+}
+.rpg-title-scene[data-title-art="arcana"] .rpg-title-commands {
+  width:min(510px,94vw);
+  border:0;border-radius:0;
+  background:transparent url('/ui/arcana/title-panel.svg') center / 100% 100% no-repeat;
+  box-shadow:none;backdrop-filter:none;
+  padding:clamp(29px,2.7vw,45px) clamp(24px,2.9vw,47px) clamp(27px,2.4vw,39px);
+  gap:clamp(7px,.9dvh,12px);
+  filter:drop-shadow(0 20px 30px rgba(0,0,0,.43));
+}
+.rpg-title-scene[data-title-art="arcana"] .rpg-title-commands::before {content:none;display:none;}
+.rpg-title-scene[data-title-art="arcana"] .rpg-title-aether-menu-label {
+  color:var(--arcana-gilt);
+  letter-spacing:.13em;
+  margin:0 0 clamp(4px,.45dvh,9px);
+  text-shadow:0 2px 4px #03111b;
+}
+.rpg-title-scene[data-title-art="arcana"] .rpg-title-commands .rpg-command {
+  width:100%;min-height:clamp(51px,6.5dvh,70px);
+  color:#fff2d8;
+  background:transparent url('/ui/arcana/command.svg') center / 100% 100% no-repeat;
+  border:0;border-radius:0;box-shadow:none;
+  font-size:clamp(17px,1.65vw,24px);
+  letter-spacing:.065em;
+  text-shadow:0 2px 5px #06131d;
+  transition:filter 180ms ease,transform 180ms ease;
+}
+.rpg-title-scene[data-title-art="arcana"] .rpg-title-commands .rpg-command:first-of-type,
+.rpg-title-scene[data-title-art="arcana"] .rpg-title-commands .rpg-command[data-game-button="primary"] {
+  background:transparent url('/ui/arcana/command.svg') center / 100% 100% no-repeat;
+  color:#fff2d8;
+}
+.rpg-title-scene[data-title-art="arcana"] .rpg-title-commands .rpg-command:enabled:is(:hover,:focus-visible) {
+  background-color:transparent;
+  filter:brightness(1.19) drop-shadow(0 0 9px rgba(235,207,145,.38));
+  transform:translateY(-2px);
+}
+.rpg-title-scene[data-title-art="arcana"] .rpg-title-commands .rpg-command:enabled:active {
+  filter:brightness(.82);transform:translateY(1px);
+}
+.rpg-title-scene[data-title-art="arcana"] .rpg-title-commands .rpg-command:focus-visible {
+  outline:2px solid #ffe5b7;outline-offset:2px;
+}
+.rpg-title-scene[data-title-art="arcana"] .rpg-title-aether-eyebrow {
+  color:#f7e5bb;text-shadow:0 2px 9px #010d18;
+}
+.rpg-title-scene[data-title-art="arcana"] .rpg-title-aether-subtitle {
+  color:var(--arcana-cream);text-shadow:0 2px 5px #02121b;
+}
+@media (max-width:700px) {
+  .rpg-title-scene[data-title-art="arcana"] .rpg-title-aether-orbit {width:min(74vw,300px);height:min(74vw,300px);}
+  .rpg-title-scene[data-title-art="arcana"] .rpg-title-commands {
+    width:min(100%,430px);padding:30px 24px 26px;gap:8px;
+  }
+  .rpg-title-scene[data-title-art="arcana"] .rpg-title-commands .rpg-command {min-height:51px;font-size:17px;}
+  .rpg-title-scene[data-title-art="arcana"] .rpg-title-aether-menu-label {font-size:9px;}
+}
+@media (prefers-reduced-motion:reduce) {
+  .rpg-title-scene[data-title-art="arcana"] .rpg-title-aether-orbit {animation:none;transform:translate(-50%,-50%);}
+  .rpg-title-scene[data-title-art="arcana"] .rpg-command {transition:none !important;}
+  .rpg-title-scene[data-title-art="arcana"] .rpg-command:is(:hover,:focus-visible) {transform:none !important;}
+}
+.rpg-title-scene[data-title-art="arcana"][data-title-reduced-motion="true"] .rpg-title-aether-orbit {animation:none;transform:translate(-50%,-50%);}
