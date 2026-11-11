@@ -15,7 +15,7 @@ for (const name of art) {
     throw new Error('Arcana SVG must be vector-only, without scripts, external sources or embedded text: ' + name)
   }
   if ((xml.match(/<path\b/g) || []).length < 3) throw new Error('Vector is too flat: ' + name)
-  if (!xml.includes('<defs>') || !xml.includes('<linearGradient') || !xml.includes('stroke=')) {
+  if (!xml.includes('<defs>') || !/(?:linearGradient|radialGradient)/.test(xml) || !xml.includes('stroke=')) {
     throw new Error('Illustrated material/engraving missing: ' + name)
   }
   if (!battle.includes('/ui/arcana/' + name + '.svg') && !title.includes('/ui/arcana/' + name + '.svg')) {
