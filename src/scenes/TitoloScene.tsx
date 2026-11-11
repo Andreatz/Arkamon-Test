@@ -1,6 +1,7 @@
 import { RpgCommand as GameButton } from '@/components/rpg'
 import './rpgScenes.css'
 import './titleRework.css'
+import './battleImageGenV2.css'
 import { useEffect, useRef, useState } from 'react'
 import { useGameStore } from '@store/gameStore'
 import { useAdminStore } from '@store/adminStore'
