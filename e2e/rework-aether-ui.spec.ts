@@ -79,6 +79,27 @@ test('new premium HUD is legible and aligned on desktop and compact 16:9 stages'
     }))
   })
   expect(raster.every(item => item.ok && item.size > 5000)).toBe(true)
+  const rasterAlpha = await page.evaluate(async () => {
+    const names = ['hp-ally', 'hp-enemy', 'dialogue', 'move-arcane', 'move-ember', 'supreme', 'command-idle']
+    return await Promise.all(names.map(async name => {
+      const img = new Image()
+      img.src = '/ui/imagegen/v2/' + name + '.webp'
+      await img.decode()
+      const canvas = document.createElement('canvas')
+      canvas.width = img.naturalWidth
+      canvas.height = img.naturalHeight
+      const context = canvas.getContext('2d', { willReadFrequently: true })!
+      context.drawImage(img, 0, 0)
+      const corners = [[0, 0], [canvas.width - 1, 0], [0, canvas.height - 1], [canvas.width - 1, canvas.height - 1]]
+        .map(([x, y]) => context.getImageData(x, y, 1, 1).data[3])
+      return { name, corners }
+    }))
+  })
+  expect(rasterAlpha.length).toBe(7)
+  for (const asset of rasterAlpha) {
+    expect(asset.corners, asset.name + ' must not contain a baked-in black rectangular backdrop')
+      .toEqual([0, 0, 0, 0])
+  }
   await page.screenshot({ path: resolve('output/rework-aether/battle-desktop.png'), animations: 'disabled' })
 
   await page.setViewportSize({ width: 640, height: 360 })
