@@ -3,6 +3,8 @@ export { TARGET_FRAME_MS, summarizeFrameIntervals } from './frameStatistics'
 import { battleShotCsv, type BattleShotBenchmark } from './battleShotBenchmark'
 
 export const PROFILE_SCHEMA_VERSION = 2
+export const MAX_PROFILE_SAMPLES = 1200
+export const MAX_PROFILE_EVENTS = 320
 export interface BattleProfileEvent {
   atMs: number
   phase: string
