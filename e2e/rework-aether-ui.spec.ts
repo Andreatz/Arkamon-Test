@@ -82,6 +82,20 @@ test('new premium HUD is legible and aligned on desktop and compact 16:9 stages'
   expect(compact.overflow).toBeLessThanOrEqual(2)
   expect(compact.hpWidth).toBeGreaterThan(70)
   expect(compact.moveWidth).toBeGreaterThan(40)
+  const trayBounds = await page.evaluate(() => {
+    const stage = document.querySelector('.battle-stage')!.getBoundingClientRect()
+    const capture = Array.from(document.querySelectorAll<HTMLButtonElement>('button'))
+      .find(button => button.textContent?.trim() === 'Cattura')!
+    const buttonBounds = capture.getBoundingClientRect()
+    const move = document.querySelector('.battle-v5-move')!.getBoundingClientRect()
+    const name = document.querySelector('.battle-v5-move__name')!
+    const range = document.createRange()
+    range.selectNodeContents(name)
+    return { captureBottom: buttonBounds.bottom, stageBottom: stage.bottom,
+      nameTop: range.getBoundingClientRect().top, cardTop: move.top }
+  })
+  expect(trayBounds.captureBottom).toBeLessThanOrEqual(trayBounds.stageBottom - 1)
+  expect(trayBounds.nameTop).toBeGreaterThanOrEqual(trayBounds.cardTop + 2)
   await page.screenshot({ path: resolve('output/rework-aether/battle-compact.png'), animations: 'disabled' })
   expect(errors).toEqual([])
 })
