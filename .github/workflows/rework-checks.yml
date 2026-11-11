@@ -58,6 +58,8 @@ jobs:
         run: npx playwright install --with-deps chromium
       - name: Check title rework desktop and mobile
         run: npx playwright test e2e/rework-title.spec.ts --project=chromium --workers=1 --reporter=list
+      - name: Validate ImageGen binary raster assets and their animation
+        run: node scripts/check-imagegen-v2.mjs
       - name: Check Aether battle UI desktop, compact and reduced motion
         run: npx playwright test e2e/rework-aether-ui.spec.ts --project=chromium --workers=1 --reporter=list --output=output/rework-aether-playwright
       - name: Upload Aether redesigned battle UI screenshots
