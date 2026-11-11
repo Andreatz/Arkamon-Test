@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 170" preserveAspectRatio="none" role="img" aria-label="Ornate metal and enamel HP panel"><g transform="translate(900,0) scale(-1,1)"><defs>
+ <linearGradient id="steel" x1="0" x2="0" y1="0" y2="1"><stop stop-color="#eed8a3"/><stop offset=".16" stop-color="#a77b4b"/><stop offset=".43" stop-color="#433a34"/><stop offset=".56" stop-color="#d4b67e"/><stop offset=".88" stop-color="#745439"/><stop offset="1" stop-color="#e2c795"/></linearGradient>
+ <linearGradient id="well" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#153c45" stop-opacity=".96"/><stop offset=".48" stop-color="#0a1e2e" stop-opacity=".94"/><stop offset="1" stop-color="#12343d" stop-opacity=".97"/></linearGradient>
+ <linearGradient id="glass" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#f6dfab" stop-opacity=".14"/><stop offset=".35" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#28aa9f" stop-opacity=".09"/></linearGradient>
+ <radialGradient id="jewel"><stop stop-color="#c9fff1"/><stop offset=".35" stop-color="#71c6bb"/><stop offset=".75" stop-color="#115b65"/><stop offset="1" stop-color="#081d2c"/></radialGradient>
+ <pattern id="etch" width="29" height="29" patternUnits="userSpaceOnUse"><path d="M1 28L28 1 M-9 10L10 -9 M19 38L38 19" stroke="#c4b897" opacity=".08" stroke-width="1"/><circle cx="14.5" cy="14.5" r="1" fill="#e0c8a2" opacity=".2"/></pattern>
+ </defs>
+ <path d="M39 8H840l48 37v80l-48 37H39L12 137V33Z" fill="#03111c" fill-opacity=".28"/>
+ <path d="M42 11H835l50 36v76l-50 36H42L16 134V35Z" fill="url(#steel)" stroke="#f7e2b1" stroke-opacity=".72" stroke-width="2"/>
+ <path d="M48 19H830l44 32v68l-44 32H48L24 131V39Z" fill="url(#well)" stroke="#0e131b" stroke-width="3"/>
+ <path d="M49 22H828l42 31v65l-42 30H49L28 128V42Z" fill="url(#etch)" opacity=".55"/>
+ <path d="M54 28H825l36 27v61l-36 27H54L37 124V46Z" fill="url(#glass)" stroke="#b9dfd0" stroke-opacity=".24" stroke-width="1"/>
+ <path d="M115 30H806M115 140H806" stroke="#efd4a0" stroke-opacity=".35" stroke-width="2"/>
+ <path d="M176 35H775 M176 135H775" stroke="#6bc6bc" stroke-opacity=".15" stroke-dasharray="1 8"/>
+ <path d="M838 51l20 18v30l-20 20M831 52l17 18v28l-17 20" fill="none" stroke="#f0ce96" stroke-opacity=".76" stroke-width="2"/>
+ <path d="M822 64l12 11v18l-12 12M818 67l10 10v14l-10 10" fill="none" stroke="#4dafa6" stroke-opacity=".52"/>
+ <path d="M124 13l8 10h26l9-10M124 157l8-10h26l9 10" fill="none" stroke="#ffeac0" stroke-opacity=".65" stroke-width="2"/>
+ <g transform="translate(78 85)">
+  <circle r="60" fill="#081e2a" stroke="#edcd96" stroke-width="4"/><circle r="53" fill="url(#steel)" stroke="#1b262c" stroke-width="2"/><circle r="46" fill="#091c28" stroke="#f3d8a5" stroke-opacity=".55" stroke-width="2"/>
+  <circle r="37" fill="url(#jewel)" stroke="#c8f4e6" stroke-width="2"/><circle r="31" fill="none" stroke="#dbfff2" stroke-opacity=".53"/>
+  <path d="M0 -29L12 -12L29 0L12 12L0 29L-12 12L-29 0L-12 -12Z" fill="#b7f6e6" fill-opacity=".18" stroke="#f3e1b4" stroke-width="2"/>
+  <path d="M0 -20L6 -6L20 0L6 6L0 20L-6 6L-20 0L-6 -6Z" fill="#defaf0" fill-opacity=".62"/>
+  <g stroke="#fff3c7" stroke-width="2"><path d="M0 -54v11M0 43v11M-54 0h11M43 0h11"/></g>
+ </g>
+ <g fill="#f7dfb0"><path d="M36 47l9-5 9 5-9 5zM36 123l9-5 9 5-9 5zM860 54l6-3 6 3-6 3zM860 116l6-3 6 3-6 3z"/></g></g></svg>
