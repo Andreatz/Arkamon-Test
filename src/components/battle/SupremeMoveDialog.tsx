@@ -104,7 +104,7 @@ export function SupremeMoveDialog({ moves, level, recoil, pokemonName, onChoose,
       className="absolute inset-0 z-[900] flex items-center justify-center bg-slate-950/85 p-3 outline-none"
       onKeyDown={(event) => event.stopPropagation()}
     >
-      <div className="flex max-h-full w-full max-w-lg flex-col gap-4 overflow-y-auto rounded-2xl border border-amber-300 bg-slate-900 p-4 text-center text-white shadow-2xl sm:gap-6 sm:p-8 [&>*]:shrink-0">
+      <div className="flex battle-v5-modal max-h-full w-full max-w-lg flex-col gap-4 overflow-y-auto rounded-2xl border border-amber-300 bg-slate-900 p-4 text-center text-white shadow-2xl sm:gap-6 sm:p-8 [&>*]:shrink-0">
         <h2 id={titleId} className="text-xl font-bold">Mossa Suprema</h2>
         <p id={descriptionId} className="text-sm leading-relaxed sm:text-base">
           Scegli l’attacco: danno ×2. Contraccolpo: {recoil} HP al livello attuale (50% degli HP massimi).
@@ -118,7 +118,7 @@ export function SupremeMoveDialog({ moves, level, recoil, pokemonName, onChoose,
             <button
               key={idx}
               type="button"
-              className="min-h-11 rounded-lg border border-amber-200/60 bg-amber-300 px-4 py-3 font-bold text-slate-950 transition hover:bg-amber-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+              className="battle-v5-modal__option min-h-11 rounded-lg border border-amber-200/60 bg-amber-300 px-4 py-3 font-bold text-slate-950 transition hover:bg-amber-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
               onClick={() => choose(idx)}
             >
               {mossa.nome}
@@ -128,7 +128,7 @@ export function SupremeMoveDialog({ moves, level, recoil, pokemonName, onChoose,
         </div>
         <button
           type="button"
-          className="min-h-11 rounded-lg border border-slate-500 bg-slate-800 px-4 py-3 font-bold text-white transition hover:bg-slate-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+          className="battle-v5-modal__option battle-v5-modal__cancel min-h-11 rounded-lg border border-slate-500 bg-slate-800 px-4 py-3 font-bold text-white transition hover:bg-slate-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
           onClick={dismiss}
         >
           Annulla

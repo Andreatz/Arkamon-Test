@@ -9,6 +9,7 @@ on:
       - '.github/workflows/rework-checks.yml'
       - 'src/**'
       - 'e2e/rework-title.spec.ts'
+      - 'e2e/rework-aether-ui.spec.ts'
       - 'e2e/battle-profiler-lab.spec.ts'
       - 'e2e/battle-attack-benchmark.spec.ts'
       - 'e2e/rework-cinematic-battle.spec.ts'
@@ -57,6 +58,18 @@ jobs:
         run: npx playwright install --with-deps chromium
       - name: Check title rework desktop and mobile
         run: npx playwright test e2e/rework-title.spec.ts --project=chromium --workers=1 --reporter=list
+      - name: Check Aether battle UI desktop, compact and reduced motion
+        run: npx playwright test e2e/rework-aether-ui.spec.ts --project=chromium --workers=1 --reporter=list --output=output/rework-aether-playwright
+      - name: Upload Aether redesigned battle UI screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: arkamon-aether-visual-audit
+          path: |
+            output/rework-aether/
+            output/rework-aether-playwright/
+          if-no-files-found: warn
+          retention-days: 14
       - name: Reproducible first-load and repeat-load attack benchmark
         run: npx playwright test e2e/battle-attack-benchmark.spec.ts --project=chromium --workers=1 --reporter=list --output=output/rework-benchmark-playwright
       - name: End-to-end battle KO, dice reveal and durable checkpoint

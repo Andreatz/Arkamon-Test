@@ -130,3 +130,139 @@
     transform: none;
   }
 }
+
+
+/* Aether v5 title presentation: keep the original hand-painted scene and logo. */
+.rpg-title-scene {
+  gap: clamp(10px, 2.1dvh, 23px);
+  background: radial-gradient(ellipse at 50% 32%, #18343a, #081824 66%, #030b17 100%);
+}
+.rpg-title-scene::before {
+  z-index: 1;
+  background:
+    radial-gradient(ellipse 45% 36% at 50% 42%, rgba(248,219,161,.14), transparent 88%),
+    linear-gradient(90deg, rgba(2,12,20,.66), transparent 27%, transparent 73%, rgba(2,12,20,.66));
+}
+.rpg-title-scene::after {
+  z-index: 2;
+  background:
+    linear-gradient(to bottom, rgba(5,13,21,.57), transparent 28%, transparent 68%, rgba(2,9,16,.83)),
+    radial-gradient(ellipse 70% 65% at 50% 52%, transparent 33%, rgba(2,10,20,.58));
+}
+.rpg-title-aether-orbit {
+  position: absolute;
+  z-index: 3;
+  left: 50%;
+  top: 34%;
+  width: min(82vw, 920px);
+  aspect-ratio: 2.25 / 1;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: radial-gradient(ellipse at center, rgba(226,208,157,.16), rgba(91,189,179,.08) 37%, transparent 70%);
+  filter: blur(21px);
+  animation: aether-title-breathe 12s ease-in-out infinite alternate;
+  pointer-events: none;
+}
+@keyframes aether-title-breathe {
+  from { opacity: .6; transform: translate(-50%, -50%) scale(.94); }
+  to { opacity: 1; transform: translate(-50%, -50%) scale(1.07); }
+}
+.rpg-title-aether-eyebrow {
+  position: absolute;
+  z-index: 11;
+  top: clamp(18px,6dvh,66px);
+  left: 10%;
+  right: 10%;
+  text-align: center;
+  color: rgba(241,224,186,.86);
+  font-size: clamp(9px,.91vw,14px);
+  font-family: var(--arka-font-body);
+  font-weight: 800;
+  letter-spacing: .28em;
+  text-shadow: 0 2px 9px rgba(0,0,0,.7);
+  pointer-events: none;
+}
+.rpg-title-logo {
+  position: relative;
+  z-index: 10;
+  max-height: min(37dvh, 415px);
+  filter: drop-shadow(0 9px 15px rgba(0,0,0,.7)) drop-shadow(0 0 36px rgba(238,187,106,.22));
+}
+.rpg-title-aether-subtitle {
+  position: relative;
+  z-index: 10;
+  margin: -3px 0 2px;
+  padding: 0 18px;
+  color: rgba(247,237,211,.97);
+  font-family: var(--arka-font-body);
+  font-size: clamp(12px,1.05vw,17px);
+  letter-spacing: .2em;
+  font-weight: 800;
+  text-align: center;
+  text-shadow: 0 2px 10px rgba(0,0,0,.9);
+}
+.rpg-title-aether-subtitle span { padding: 0 .4em; color: #e9c587; font-size: .75em; }
+.rpg-title-commands {
+  z-index: 10;
+  border-radius: 20px;
+  width: min(510px, 94vw);
+  gap: clamp(8px,1.1dvh,13px);
+  padding: clamp(17px,2.25vw,25px);
+  border: 1px solid rgba(237,213,170,.5);
+  background: linear-gradient(138deg, rgba(7,24,36,.92), rgba(19,50,60,.88) 55%, rgba(7,24,37,.94));
+  box-shadow: 0 29px 78px rgba(0,0,0,.53), inset 0 1px 0 rgba(255,255,255,.15), 0 0 0 5px rgba(235,206,150,.045);
+  backdrop-filter: blur(14px);
+}
+.rpg-title-commands::before {
+  width: 36%;
+  background: linear-gradient(90deg, transparent,#f5dda9,transparent);
+  margin-bottom: 0;
+}
+.rpg-title-aether-menu-label {
+  display: block;
+  color: #ecdbbc;
+  font-size: clamp(10px,.88vw,15px);
+  font-family: var(--arka-font-body);
+  text-align: center;
+  letter-spacing: .18em;
+  font-weight: 800;
+  margin-bottom: clamp(4px,.3vw,8px);
+}
+.rpg-title-commands .rpg-command {
+  position: relative;
+  min-height: clamp(53px,6.8dvh,72px);
+  border: 1px solid rgba(165,220,214,.38);
+  border-radius: 11px;
+  background: linear-gradient(120deg, rgba(17,45,59,.65), rgba(26,65,73,.58));
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.08);
+  color: #f6f0df;
+  font-size: clamp(17px,1.65vw,24px);
+  letter-spacing: .085em;
+}
+.rpg-title-commands .rpg-command[data-game-button="primary"],
+.rpg-title-commands .rpg-command:first-of-type {
+  color: #fff1cd;
+  border-color: rgba(246,211,137,.72);
+  background: linear-gradient(115deg, rgba(116,75,35,.63), rgba(46,61,61,.78));
+}
+.rpg-title-commands .rpg-command:is(:hover,:focus-visible):enabled {
+  background-color: rgba(44,89,93,.72);
+  border-color: #f2e0bb;
+  box-shadow: 0 10px 26px rgba(0,0,0,.33), 0 0 0 1px rgba(247,216,160,.18), inset 0 1px 0 rgba(255,255,255,.18);
+}
+.rpg-title-commands .rpg-command:focus-visible {
+  outline-color: #fff1b9;
+  outline-offset: 4px;
+}
+@media (max-width: 700px) {
+  .rpg-title-scene { gap: clamp(13px, 2.5dvh, 22px); padding: 28px 16px; }
+  .rpg-title-logo { width: min(90vw, 520px); max-height: 32dvh; }
+  .rpg-title-aether-eyebrow { top: 7dvh; font-size: 9px; letter-spacing: .12em; }
+  .rpg-title-aether-subtitle { font-size: 10px; letter-spacing: .08em; padding: 0 4px; }
+  .rpg-title-commands { width: min(100%,430px); padding: 17px; border-radius: 15px; }
+  .rpg-title-aether-menu-label { font-size: 10px; letter-spacing: .09em; }
+  .rpg-title-commands .rpg-command { min-height: 51px; font-size: 17px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .rpg-title-aether-orbit { animation: none; }
+}

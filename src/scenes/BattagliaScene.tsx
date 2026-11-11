@@ -4,6 +4,7 @@ import { useSettledBattleCheckpoint } from '@/components/battle/useSettledBattle
 import { BattleLayoutItem, ImpactPulseOverlay, InfoBox, ScambioModal, SquadIndicator, PokemonBattleSlot, HpBar, ActionButton, SupremeButton, MoveButton, type ImpactPulseDisplay } from '@/components/battle/BattlePresentation'
 import '@/components/ui/gameButton.css'
 import './battleCinematic.css'
+import './battleAether.css'
 import { BattleLogPanel } from '@/components/battle/BattleLogPanel'
 import { BattleResultCard } from '@/components/battle/BattleResultCard'
 import { useBattleChronicle } from '@/components/battle/useBattleChronicle'
@@ -202,6 +203,7 @@ export function BattagliaScene() {
   const [moveVfx, setMoveVfx] = useState<MoveVfxEvent | null>(null)
   const [presentationPhase, setPresentationPhase] = useState<BattleDirectorPhase | 'idle'>('idle')
   const [cinematicShot, setCinematicShot] = useState<BattleCinematicShot | null>(null)
+  const [techniqueTitle, setTechniqueTitle] = useState<{ id: number; name: string; type: TipoPokemon } | null>(null)
   // Technical catalog IDs only. No player/campaign data enter profiling output.
   const [profileShot, setProfileShot] = useState<{
     sequence: number
@@ -692,6 +694,7 @@ export function BattagliaScene() {
     const dedicatedAttack = !!attackAsset
     const dedicatedHit = !!targetAsset
     const effectId = ++moveVfxIdRef.current
+    setTechniqueTitle({ id: effectId, name: move.nome, type: move.tipo })
     const cameraProfile = resolveMoveVfxProfile(move)
     const cameraIntensity = battleCameraIntensity(cameraProfile.feedback)
     // A native clip can release on its first frame. Without a minimum visible
@@ -1530,6 +1533,9 @@ export function BattagliaScene() {
     <BattleLayoutProvider value={battleLayout}><div
       data-battle-layout-root
       className="battle-stage w-full h-full relative overflow-hidden"
+      data-battle-ui="aether"
+      data-battle-reduced-motion={reducedMotion}
+      data-battle-focus-side={cinematicShot?.target ?? cinematicShot?.attacker ?? 'none'}
       data-battle-impact-held={presentationPaused}
       data-battle-director-phase={presentationPhase}
       data-battle-profile-sequence={profileShot?.sequence ?? 0}
@@ -1542,6 +1548,20 @@ export function BattagliaScene() {
     >
       <ChallengeBanner embedded />
       <BattleLogPanel chronicle={chronicle} busy={azioneInCorso || coinOpen || !!statusRoll} />
+      <AnimatePresence>
+        {techniqueTitle && (presentationPhase === 'preparing' || presentationPhase === 'windup' || presentationPhase === 'released') && (
+          <motion.div key={techniqueTitle.id} data-battle-technique-banner=""
+            className="battle-aether-technique" aria-hidden="true"
+            style={{ '--battle-technique-accent': VFX_TYPE_COLORS[techniqueTitle.type] } as CSSProperties}
+            initial={reducedMotion ? false : { opacity: 0, x: -22, scale: 0.96 }}
+            animate={{ opacity: 1, x: 0, scale: 1 }}
+            exit={reducedMotion ? { opacity: 0 } : { opacity: 0, x: -12, scale: 0.98 }}
+            transition={{ duration: reducedMotion ? 0 : 0.24 / animationSpeed, ease: 'easeOut' }}>
+            <span className="battle-aether-technique__eyebrow">✦ TECNICA IN AZIONE</span>
+            <strong className="battle-aether-technique__name">{techniqueTitle.name}</strong>
+          </motion.div>
+        )}
+      </AnimatePresence>
       {previewView === 'dice' && <DiceRollOverlay staticPreview roll={{ id: -1, side: 'A', moveName: 'Attacco di esempio', rolls: [2, 4, 6], increment: 2, damage: 14 }} />}
       {previewView === 'bag' && <BattleItemDialog squad={squadraA} inventory={giocatore.inventario} onUse={() => ({ ok: false, message: 'Anteprima del layout: nessun oggetto usato.' })} onClose={() => {}} />}
       {!terminata && <button type="button" className="absolute bottom-3 right-3 z-30 rounded border border-violet-300 bg-slate-950 px-3 py-2 text-sm text-white" disabled={!turnoA || azioneInCorso || coinOpen || !!statusRoll || !!attesaAvversario || !!attesaPassaggio || !!scambioRichiesto || !!mostraMoseB} onClick={() => setBagOpen(true)}>Borsa</button>}
@@ -1702,6 +1722,8 @@ export function BattagliaScene() {
       </AnimatePresence>
 
       </motion.div>
+      <div className="battle-aether-atmosphere" aria-hidden="true" />
+      <div className="battle-aether-letterbox" aria-hidden="true" />
       <div
         className="battle-camera-glaze absolute inset-0 pointer-events-none"
         aria-hidden="true"
@@ -1770,9 +1792,9 @@ export function BattagliaScene() {
           editing={layoutEditing}
           onChange={updateBattleLayout}
         >
-          <div className="h-full w-full p-2">
+          <div className={`battle-v5-move-stack h-full w-full p-2 ${isSelvatico && battaglia ? 'battle-v5-move-stack--with-actions' : ''}`}>
             <div
-              className="grid h-[100%] gap-1"
+              className="battle-v5-move-grid grid min-h-0 gap-1"
               style={{ gridTemplateColumns: `repeat(${Math.max(1, mosseA.length)}, minmax(0, 1fr))` }}
             >
               {mosseA.map(({ mossa, idx }) => (
@@ -1789,7 +1811,7 @@ export function BattagliaScene() {
             </div>
 
             {isSelvatico && battaglia && (
-              <div className="mt-3 flex justify-end gap-2">
+              <div className="battle-v5-capture-actions flex justify-end gap-2">
                 {pendingCaptureSave && (
                   <ActionButton disabled={false} onClick={() => {
                     if (completaCatturaSalvata(pendingCaptureSave.masterball)) mostraMessaggi([`${pkmnB.nome} è stato catturato!`])

@@ -1,4 +1,4 @@
-import { forwardRef, useState, useEffect, useRef, useCallback, type ReactNode } from 'react'
+import { forwardRef, useState, useEffect, useRef, useCallback, type CSSProperties, type ReactNode } from 'react'
 import { motion } from 'framer-motion'
 import { useAdminStore } from '@/store/adminStore'
 import { getPokemon } from '@/data/index'
@@ -122,12 +122,10 @@ export function InfoBox({
   onOpponentTurn: () => void
 }) {
   const righe = messaggi.slice(-3)
-  const frameSrc = assetUrl('/ui/infobox.png')
-
   if (!righe.length) return showOpponentButton ? (
     <div className="flex h-full w-full items-center justify-center">
       <GameButton tone="primary" aria-label="AVVERSARIO" onClick={onOpponentTurn}
-        className="battle-opponent-command min-h-14 w-[min(92%,620px)] px-7 py-4 text-[clamp(18px,1.8vw,30px)]">
+        className="battle-opponent-command min-h-12 w-[min(92%,620px)] px-5 py-2">
         Turno dell’avversario <span aria-hidden="true">▶</span>
       </GameButton>
     </div>
@@ -136,39 +134,20 @@ export function InfoBox({
   return (
     <div
       role="status" aria-live="polite"
-      className="arka-battle-font relative h-full w-full text-slate-950 drop-shadow-2xl"
-      data-ui-skin-slot="frame"
-      data-ui-asset-surface=""
-      style={{
-        backgroundImage: `url(${frameSrc})`,
-        backgroundSize: '100% 100%',
-        backgroundRepeat: 'no-repeat',
-      }}
+      className="battle-v5-dialogue arka-battle-font relative h-full w-full text-white"
+      data-ui-skin-slot="frame" data-ui-asset-surface=""
     >
-      <div
-        className={`battle-message-lines absolute left-[8%] top-[16%] space-y-1 text-white [text-shadow:-1px_-1px_0_#111,1px_-1px_0_#111,-1px_1px_0_#111,1px_1px_0_#111,0_3px_3px_rgba(0,0,0,0.55)] ${
-          showOpponentButton ? 'right-[28%]' : 'right-[8%]'
-        }`}
-      >
+      <span className="battle-v5-dialogue__eyebrow" aria-hidden="true">◆ &nbsp; CRONACA DEL DUELLO</span>
+      <div className={`battle-message-lines battle-v5-dialogue__messages ${showOpponentButton ? 'battle-v5-dialogue__messages--compact' : ''}`}>
         {righe.map((msg, idx) => (
-          <p
-            key={`${idx}-${msg}`}
-            data-admin-layout-text-key={`message-${idx}`}
-            className="arka-layout-content whitespace-normal break-words"
-          >
-            {msg}
-          </p>
+          <p key={`${idx}-${msg}`} data-admin-layout-text-key={`message-${idx}`}
+            className="arka-layout-content whitespace-normal break-words">{msg}</p>
         ))}
       </div>
-
       {showOpponentButton && (
-        <GameButton
-          tone="primary"
-          aria-label="AVVERSARIO"
-          className="battle-opponent-command absolute bottom-[13%] right-[6%] min-h-12 w-[22%] px-4 py-3 text-[clamp(16px,1.35vw,24px)]"
-          onClick={onOpponentTurn}
-        >
-          AVVERSARIO
+        <GameButton tone="primary" aria-label="AVVERSARIO"
+          className="battle-opponent-command battle-v5-dialogue__next" onClick={onOpponentTurn}>
+          AVVERSARIO <span aria-hidden="true">→</span>
         </GameButton>
       )}
     </div>
@@ -188,7 +167,7 @@ export function ScambioModal({
 }) {
   return (
     <div className="absolute inset-0 z-50 flex items-center justify-center bg-slate-950/62 px-6 backdrop-blur-sm">
-      <div className="w-[min(760px,92vw)] rounded-lg border border-white/15 bg-slate-950/92 p-5 text-white shadow-2xl">
+      <div className="battle-v5-switch w-[min(760px,92vw)] rounded-lg border border-white/15 bg-slate-950/92 p-5 text-white shadow-2xl">
         <div className="mb-4 flex items-end justify-between gap-4">
           <div>
             <h2 className="text-xl font-extrabold">Scegli un Pokemon</h2>
@@ -211,7 +190,7 @@ export function ScambioModal({
                 key={pokemon.istanzaId}
                 disabled={disabled}
                 onClick={() => onSelect(pokemon)}
-                className="flex min-h-[116px] items-center gap-3 rounded-md border border-white/10 bg-slate-900/86 p-3 text-left shadow-lg transition-colors hover:bg-slate-800 disabled:cursor-not-allowed disabled:opacity-45"
+                className="battle-v5-switch__option flex min-h-[116px] items-center gap-3 rounded-md border border-white/10 bg-slate-900/86 p-3 text-left shadow-lg transition-colors hover:bg-slate-800 disabled:cursor-not-allowed disabled:opacity-45"
               >
                 <img
                   src={assetUrl(`/sprites/front_sprites/${pokemon.specieId}.png`)}
@@ -437,16 +416,7 @@ export function PokemonBattleSlot({
 }
 
 export function HpBar({
-  nome,
-  livello,
-  hp,
-  hpMax,
-  stato,
-  side,
-  className = '',
-  frameSource,
-  frameFit = 'fill',
-  hpColorsOverride,
+  nome, livello, hp, hpMax, stato, side, className = '', frameSource, frameFit = 'fill', hpColorsOverride,
 }: {
   nome: string
   livello: number
@@ -459,111 +429,56 @@ export function HpBar({
   frameFit?: 'fill' | 'contain' | 'cover'
   hpColorsOverride?: { hpHigh: string; hpMid: string; hpLow: string }
 }) {
-  const savedColors = useAdminStore((state) => state.theme.colors)
+  const savedColors = useAdminStore(state => state.theme.colors)
   const hpColors = hpColorsOverride ?? savedColors
-  const pct = Math.max(0, Math.min(100, (hp / hpMax) * 100))
+  const pct = Math.max(0, Math.min(100, hpMax > 0 ? (hp / hpMax) * 100 : 0))
   const colore = pct > 60 ? hpColors.hpHigh : pct > 25 ? hpColors.hpMid : hpColors.hpLow
-  const frameSrc = frameSource ?? assetUrl(`/ui/hp_bar_${side}.png`)
-  const barSrc = assetUrl('/ui/hp_bar.png')
-  const barClipId = `hp-bar-inner-${side}`
-  const fillWidth = pct === 0 ? 0 : 23 + pct * 5
-
+  const { reducedMotion } = useGameMotionPreferences()
+  const frameStyle = frameSource ? {
+    backgroundImage: `url(${assetUrl(frameSource)})`,
+    backgroundSize: frameFit === 'fill' ? '100% 100%' : frameFit,
+    backgroundPosition: 'center', backgroundRepeat: 'no-repeat',
+  } : undefined
   return (
     <div
-      className={`arka-battle-font relative z-20 h-full w-full text-white arka-letter-outline ${className}`}
-      data-battle-hp-side={side}
-      data-battle-hp={hp}
-      data-ui-skin-slot="frame"
-      data-ui-asset-surface=""
-      style={{
-        backgroundImage: `url(${frameSrc})`,
-        backgroundSize: frameSource && frameFit !== 'fill' ? frameFit : '100% 100%',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat',
-      }}
+      className={`battle-v5-hp arka-battle-font relative z-20 h-full w-full text-white ${className}`}
+      data-battle-hp-side={side} data-battle-hp={hp} data-battle-hp-max={hpMax}
+      data-battle-hp-custom-frame={frameSource ? 'true' : 'false'}
+      data-ui-skin-slot="frame" data-ui-asset-surface=""
+      style={{ ...frameStyle, '--battle-hp-tint': colore } as CSSProperties}
     >
-      {stato && <span className="absolute bottom-full left-0 z-30 -translate-x-1/4 sm:mb-1"><StatusToken stato={stato} compact /></span>}
-      <div data-ui-hp-labels="" className="absolute left-[13.5%] right-[6.5%] top-[15%] flex items-center justify-between gap-3">
-        <span
-          data-admin-layout-text-key="pokemon-name"
-          title={nome}
-          className="arka-layout-content min-w-0 truncate text-[clamp(13px,1.35vw,23px)] leading-none text-white [text-shadow:-1px_-1px_0_#111,1px_-1px_0_#111,-1px_1px_0_#111,1px_1px_0_#111,0_3px_3px_rgba(0,0,0,0.55)]"
-        >
-          {nome}
-
-        </span>
-        <span
-          data-admin-layout-text-key="pokemon-level"
-          className="arka-layout-content shrink-0 text-[clamp(11px,1.1vw,19px)] text-white [text-shadow:-1px_-1px_0_#111,1px_-1px_0_#111,-1px_1px_0_#111,1px_1px_0_#111,0_3px_3px_rgba(0,0,0,0.55)]"
-        >
-          LV. {livello}
-        </span>
+      {stato && <span className="battle-v5-hp__status"><StatusToken stato={stato} compact /></span>}
+      <div className="battle-v5-hp__heading" data-ui-hp-labels="">
+        <span className="battle-v5-hp__pip" aria-hidden="true" />
+        <span data-admin-layout-text-key="pokemon-name" title={nome}
+          className="battle-v5-hp__name arka-layout-content">{nome}</span>
+        <span data-admin-layout-text-key="pokemon-level"
+          className="battle-v5-hp__level arka-layout-content">LV {livello}</span>
       </div>
-      <div data-ui-hp-track="" className="absolute left-[10.25%] top-[66.5%] h-[33.5%] w-[59.7%]">
-        <svg
-          className="absolute inset-0 h-full w-full"
-          viewBox="0 0 507 40"
-          preserveAspectRatio="none"
-          aria-hidden="true"
-        >
-          <defs>
-            <clipPath id={barClipId}>
-              <path d="M 16 3 H 503 V 20 C 503 29 499 35 493 36 H 3 V 20 C 3 12 8 5 16 3 Z" />
-            </clipPath>
-          </defs>
-          <motion.rect
-            x="-20"
-            y="3"
-            height="33"
-            clipPath={`url(#${barClipId})`}
-            initial={false}
-            animate={{ width: fillWidth, rx: pct === 100 ? 0 : 16.5, fill: colore }}
-            transition={{ duration: getAnimationDuration(500) / 1000, ease: 'easeOut' }}
-          />
-        </svg>
-        <img
-          src={barSrc}
-          data-ui-skin-dependent="frame"
-          style={{ visibility: frameSource ? 'hidden' : undefined }}
-          data-ui-asset-decoration=""
-          alt=""
-          className="pointer-events-none absolute inset-0 h-full w-full mix-blend-multiply"
-        />
-      </div>
-      {(
-        <div
-          data-admin-layout-text-key={side === 'enemy' ? 'pokemon-enemy-hp' : 'pokemon-hp'}
-          data-ui-hp-value=""
-          className="arka-layout-content absolute left-[10.25%] top-[66.5%] flex h-[33.5%] w-[59.7%] items-center justify-center text-center text-[clamp(10px,1vw,17px)] text-white [text-shadow:-1px_-1px_0_#111,1px_-1px_0_#111,-1px_1px_0_#111,1px_1px_0_#111,0_3px_3px_rgba(0,0,0,0.55)]"
-        >
-          {hp}/{hpMax}
+      <div className="battle-v5-hp__bottom">
+        <span className="battle-v5-hp__tag" aria-hidden="true">HP</span>
+        <div className="battle-v5-hp__track" data-ui-hp-track="" role="progressbar"
+          aria-label={`Punti salute di ${nome}`} aria-valuemin={0} aria-valuemax={hpMax} aria-valuenow={Math.max(0, hp)}>
+          <motion.div data-battle-hp-fill="" className="battle-v5-hp__fill"
+            initial={false} animate={{ width: `${pct}%`, backgroundColor: colore }}
+            transition={{ duration: reducedMotion ? 0 : getAnimationDuration(510) / 1000, ease: [0.2, 0.9, 0.3, 1] }} />
+          <span className="battle-v5-hp__track-shine" aria-hidden="true" />
         </div>
-      )}
+        <span data-ui-hp-value="" data-admin-layout-text-key={side === 'enemy' ? 'pokemon-enemy-hp' : 'pokemon-hp'}
+          className="battle-v5-hp__value arka-layout-content">{hp}<span aria-hidden="true"> / </span>{hpMax}</span>
+      </div>
     </div>
   )
 }
 
-export function ActionButton({
-  children,
-  disabled,
-  onClick,
-}: {
+export function ActionButton({ children, disabled, onClick }: {
   children: ReactNode
   disabled: boolean
   onClick: () => void
 }) {
-  return (
-    <motion.button
-      whileHover={!disabled ? { y: -1, scale: 1.02 } : {}}
-      whileTap={!disabled ? { scale: 0.96 } : {}}
-      disabled={disabled}
-      onClick={onClick}
-      className="rounded-md bg-amber-400 px-5 py-2.5 text-sm font-extrabold text-slate-950 shadow-lg transition-colors hover:bg-amber-300 disabled:cursor-not-allowed disabled:opacity-45"
-      data-ui-asset-surface=""
-    >
-      {children}
-    </motion.button>
-  )
+  return <motion.button type="button" whileHover={!disabled ? { y: -2 } : undefined}
+    whileTap={!disabled ? { scale: 0.97 } : undefined} disabled={disabled} onClick={onClick}
+    className="battle-v5-action" data-ui-asset-surface="">{children}</motion.button>
 }
 
 export function SupremeButton({ disabled, recoil, onClick }: {
@@ -572,28 +487,23 @@ export function SupremeButton({ disabled, recoil, onClick }: {
   onClick: () => void
 }) {
   return (
-    <button
-      type="button"
-      aria-label="Mossa Suprema"
-      data-ui-asset-surface=""
+    <button type="button" aria-label="Mossa Suprema" data-ui-asset-surface=""
       title={`Scegli un attacco: danno doppio, contraccolpo ${recoil} HP al livello attuale; 50% degli HP massimi dopo eventuale salita di livello`}
-      disabled={disabled}
-      onClick={onClick}
-      className="flex h-full w-full min-h-0 min-w-0 flex-col items-center justify-center gap-1 overflow-hidden rounded-lg border-2 border-amber-200 bg-gradient-to-b from-amber-400 to-orange-600 px-0 text-center font-black text-slate-950 shadow-lg transition hover:brightness-110 disabled:cursor-not-allowed disabled:opacity-45 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white sm:px-1"
-    >
-      <span className="max-w-full truncate text-[clamp(9px,1.4vw,20px)] leading-tight tracking-tight"><span className="hidden sm:inline">Mossa<br /></span>Suprema</span>
-      <span className="hidden text-[clamp(9px,1vw,14px)] leading-tight sm:block">×2 · −{recoil} HP</span>
+      disabled={disabled} onClick={onClick} className="battle-v5-supreme">
+      <span className="battle-v5-supreme__burst" aria-hidden="true">✦</span>
+      <span className="battle-v5-supreme__name">SUPREMA</span>
+      <span className="battle-v5-supreme__cost">×2 <span aria-hidden="true">·</span> −{recoil} HP</span>
     </button>
   )
 }
 
+const BATTLE_MOVE_ACCENTS: Record<TipoPokemon, string> = {
+  Normale: '#d9e5ef', Fuoco: '#ff9164', Acqua: '#62d5f6', Erba: '#66dda2',
+  Elettro: '#ffe07b', Terra: '#d7b386', Psico: '#e6a4ff', Oscurità: '#a99eff',
+}
+
 export function MoveButton({
-  mossa,
-  livello,
-  textKeyPrefix,
-  disabled,
-  onClick,
-  defenderType,
+  mossa, livello, textKeyPrefix, disabled, onClick, defenderType,
 }: {
   mossa: MossaDef
   livello: number
@@ -604,52 +514,31 @@ export function MoveButton({
 }) {
   const { dadi, incremento } = getMossaAlLivello(mossa, livello)
   const facts = battleMoveFacts(mossa, livello, defenderType)
-  const frameSrc = assetUrl('/ui/move_button.png')
   const typeSrc = assetUrl(`/ui/${mossa.tipo.toLocaleLowerCase('it-IT')}.png`)
-
+  const { reducedMotion, speed } = useGameMotionPreferences()
   return (
     <motion.button
-      whileHover={!disabled ? { y: -2, scale: 1.02 } : {}}
-      whileTap={!disabled ? { scale: 0.95 } : {}}
-      disabled={disabled}
-      onClick={onClick}
-      title={facts.detail}
-      className="battle-move-button arka-battle-font relative h-full min-h-0 overflow-hidden px-[8%] py-[7%] text-slate-950 drop-shadow-lg transition-all disabled:cursor-not-allowed disabled:opacity-45"
-      data-ui-skin-slot="frame"
-      data-ui-asset-surface=""
-      style={{
-        backgroundImage: `url(${frameSrc})`,
-        backgroundSize: '100% 100%',
-        backgroundRepeat: 'no-repeat',
-      }}
+      type="button"
+      whileHover={!disabled && !reducedMotion ? { y: -3, scale: 1.015 } : undefined}
+      whileTap={!disabled && !reducedMotion ? { scale: 0.975 } : undefined}
+      transition={{ duration: 0.16 / speed }}
+      disabled={disabled} onClick={onClick} title={facts.detail}
+      className="battle-move-button battle-v5-move arka-battle-font"
+      data-ui-skin-slot="frame" data-ui-asset-surface="" data-move-type={mossa.tipo}
+      style={{ '--move-accent': BATTLE_MOVE_ACCENTS[mossa.tipo] } as CSSProperties}
     >
-      <span className="battle-command-cursor" aria-hidden="true">▶</span>
-      <div
-        data-admin-layout-text-key={`${textKeyPrefix}-name`}
-        className="arka-layout-content truncate px-[4%] text-center text-[clamp(16px,1.65vw,28px)] leading-none text-white [text-shadow:-1px_-1px_0_#111,1px_-1px_0_#111,-1px_1px_0_#111,1px_1px_0_#111,0_3px_3px_rgba(0,0,0,0.55)]"
-      >
-        {mossa.nome}
-      </div>
-      <div className="absolute bottom-[14%] left-[8%] flex w-[48%] items-center justify-start">
-        <span
-          data-admin-layout-text-key={`${textKeyPrefix}-dice`}
-          className="arka-layout-content flex items-center gap-[0.14em] whitespace-nowrap text-[clamp(15px,1.65vw,26px)] leading-none text-white [text-shadow:-1px_-1px_0_#111,1px_-1px_0_#111,-1px_1px_0_#111,1px_1px_0_#111,0_3px_3px_rgba(0,0,0,0.55)]"
-        >
-          {facts.kind !== 'attack' ? <span className="text-[0.65em]">{facts.label}</span> : <>
-            <span>{dadi}</span>
-            <span className="text-[0.78em]" aria-label="dadi D6">🎲</span>
-            {incremento !== 0 && <span>{incremento > 0 ? `+${incremento}` : incremento}</span>}
-          </>}
+      <span className="battle-command-cursor" aria-hidden="true">◆</span>
+      <div data-admin-layout-text-key={`${textKeyPrefix}-name`}
+        className="battle-v5-move__name arka-layout-content" title={mossa.nome}>{mossa.nome}</div>
+      <div className="battle-v5-move__footer">
+        <span data-admin-layout-text-key={`${textKeyPrefix}-dice`}
+          className="battle-v5-move__power arka-layout-content">
+          {facts.kind !== 'attack' ? facts.label : <>{dadi}<span aria-label="dadi D6">◆</span>{incremento !== 0 ? ` ${incremento > 0 ? '+' : ''}${incremento}` : ''}</>}
         </span>
-      </div>
-      <div className="absolute bottom-[14%] right-[9%] flex h-[22%] w-[15%] items-center justify-center">
-        <img
-          data-admin-layout-text-key={`${textKeyPrefix}-type`}
-          src={typeSrc}
-          alt={mossa.tipo}
-          title={mossa.tipo}
-          className="arka-layout-content max-h-full max-w-full object-contain drop-shadow-md"
-        />
+        <span className="battle-v5-move__type">
+          <img data-admin-layout-text-key={`${textKeyPrefix}-type`} src={typeSrc} alt={mossa.tipo}
+            title={mossa.tipo} className="arka-layout-content" />
+        </span>
       </div>
     </motion.button>
   )

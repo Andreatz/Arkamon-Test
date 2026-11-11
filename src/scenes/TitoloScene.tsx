@@ -77,6 +77,9 @@ export function TitoloScene() {
         <div className="absolute inset-0 bg-[color-mix(in_srgb,var(--arka-bg)_45%,transparent)]" />
       ) : null}
 
+      <div className="rpg-title-aether-orbit" aria-hidden="true" />
+      <p className="rpg-title-aether-eyebrow" aria-hidden="true">◆ &nbsp; UN NUOVO MONDO TI ATTENDE &nbsp; ◆</p>
+
       <motion.img
         key={logoPath}
         src={assetUrl(logoPath)}
@@ -95,6 +98,7 @@ export function TitoloScene() {
         }}
       />
       <h1 className="sr-only">ARKAMON</h1>
+      <p className="rpg-title-aether-subtitle">SCOPRI <span>✦</span> EVOLVI <span>✦</span> COMBATTI</p>
 
       <motion.div
         className="rpg-title-commands relative z-10 flex flex-col"
@@ -105,6 +109,7 @@ export function TitoloScene() {
         animate={{ y: 0, opacity: 1 }}
         transition={{ delay: reducedMotion ? 0 : .3 / speed }}
       >
+        <span className="rpg-title-aether-menu-label" aria-hidden="true">IL TUO VIAGGIO INIZIA QUI</span>
         <GameButton
           tone="primary" className="text-xl"
           onClick={() => {
