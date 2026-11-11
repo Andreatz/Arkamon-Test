@@ -37,7 +37,7 @@ async function openAetherBattle(page: Page) {
   })
   await page.goto('/')
   await expect(page.locator('[data-presented-scene="battaglia"]')).toHaveAttribute('aria-busy', 'false')
-  await expect(page.locator('.battle-stage[data-battle-ui="aether"]')).toBeVisible()
+  await expect(page.locator('.battle-stage[data-battle-ui="aether"][data-battle-art="arcana"]')).toBeVisible()
 }
 
 test('new premium HUD is legible and aligned on desktop and compact 16:9 stages', async ({ page }) => {
@@ -53,6 +53,7 @@ test('new premium HUD is legible and aligned on desktop and compact 16:9 stages'
   await expect(page.locator('.battle-v5-supreme')).toHaveAttribute('aria-label', 'Mossa Suprema')
   await expect(page.locator('.battle-aether-atmosphere')).toHaveCount(1)
   await expect(page.locator('.battle-aether-letterbox')).toHaveCount(1)
+  await expect(page.locator('.battle-arcana-glyph')).toHaveCount(1)
 
   const appearance = await page.evaluate(() => {
     const hp = document.querySelector('.battle-v5-hp')!
@@ -67,9 +68,32 @@ test('new premium HUD is legible and aligned on desktop and compact 16:9 stages'
     }
   })
   expect(appearance.hpFill).toBe(true)
-  expect(appearance.hpBackground).toContain('linear-gradient')
-  expect(appearance.moveBackground).toContain('linear-gradient')
+  expect(appearance.hpBackground).toContain('/ui/arcana/hp-')
+  expect(appearance.moveBackground).toContain('/ui/arcana/move-card.svg')
+  expect(appearance.narrative).toContain('/ui/arcana/chronicle.svg')
   expect(appearance.moveAccent).not.toBe('rgba(0, 0, 0, 0)')
+  // SVG corners remain truly transparent; enamel is intentionally opaque inside.
+  const vectorAssets = await page.evaluate(async () => {
+    const names = ['hp-ally', 'hp-rival', 'move-card', 'chronicle', 'supreme', 'command', 'title-panel', 'battle-glyph']
+    return Promise.all(names.map(async name => {
+      const image = new Image()
+      image.src = '/ui/arcana/' + name + '.svg'
+      await image.decode()
+      const canvas = document.createElement('canvas')
+      canvas.width = 120
+      canvas.height = 120
+      const context = canvas.getContext('2d', { willReadFrequently: true })!
+      context.drawImage(image, 0, 0, 120, 120)
+      const corner = context.getImageData(0, 0, 1, 1).data[3]
+      const center = context.getImageData(60, 60, 1, 1).data[3]
+      return { name, corner, center }
+    }))
+  })
+  expect(vectorAssets).toHaveLength(8)
+  for (const asset of vectorAssets) {
+    expect(asset.corner, asset.name + ' should have transparent unpainted corners').toBe(0)
+    expect(asset.center, asset.name + ' should have an illustrated center').toBeGreaterThan(60)
+  }
   await page.screenshot({ path: resolve('output/rework-aether/battle-desktop.png'), animations: 'disabled' })
 
   await page.setViewportSize({ width: 640, height: 360 })
@@ -110,5 +134,6 @@ test('reduced-motion keeps battle controls and hides decorative entrances', asyn
   }))
   expect(state.entrance).toBe('none')
   expect(state.readable).toBe(true)
+  await expect(page.locator('.battle-arcana-glyph')).toHaveCSS('transition-duration', '0s')
   await expect(page.locator('.battle-v5-supreme')).toBeEnabled()
 })
