@@ -308,6 +308,54 @@
   opacity: 0;
 }
 
+/* Tactical stack keeps optional capture commands inside the assigned rectangle. */
+.battle-stage[data-battle-ui="aether"] .battle-v5-move-stack {
+  display: flex;
+  min-height: 0;
+  min-width: 0;
+  flex-direction: column;
+  gap: clamp(3px,.52vw,8px);
+}
+.battle-stage[data-battle-ui="aether"] .battle-v5-move-grid {
+  flex: 1 1 auto;
+  min-height: 0;
+  height: auto;
+}
+.battle-stage[data-battle-ui="aether"] .battle-v5-capture-actions {
+  flex: 0 0 auto;
+  align-items: center;
+  gap: clamp(4px,.45vw,9px);
+  min-height: 0;
+  max-width: 100%;
+  margin: 0;
+}
+.battle-stage[data-battle-ui="aether"] .battle-v5-capture-actions .battle-v5-action {
+  min-height: clamp(18px,2.2vw,30px);
+  padding: clamp(2px,.36vw,6px) clamp(6px,.66vw,12px);
+}
+.battle-stage[data-battle-ui="aether"] .battle-v5-move__name {
+  padding-top: clamp(4px,.55vw,9px);
+}
+@media (max-width: 740px) {
+  .battle-stage[data-battle-ui="aether"] .battle-v5-move-stack {
+    padding: 2px !important;
+    gap: 2px;
+  }
+  .battle-stage[data-battle-ui="aether"] .battle-v5-move {
+    padding: 4px 5px;
+  }
+  .battle-stage[data-battle-ui="aether"] .battle-v5-move__name {
+    padding-top: 2px;
+  }
+  .battle-stage[data-battle-ui="aether"] .battle-v5-capture-actions .battle-v5-action {
+    min-height: 16px;
+    padding: 2px 5px;
+    font-size: 8px;
+    border-radius: 5px;
+    white-space: nowrap;
+  }
+}
+
 /* A prominent but restrained supreme command instead of a flat orange block. */
 .battle-stage[data-battle-ui="aether"] .battle-v5-supreme {
   position: relative;
