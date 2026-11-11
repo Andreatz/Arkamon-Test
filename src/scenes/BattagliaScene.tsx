@@ -1533,6 +1533,7 @@ export function BattagliaScene() {
       className="battle-stage w-full h-full relative overflow-hidden"
       data-battle-ui="aether"
       data-battle-reduced-motion={reducedMotion}
+      data-battle-focus-side={cinematicShot?.target ?? cinematicShot?.attacker ?? 'none'}
       data-battle-impact-held={presentationPaused}
       data-battle-director-phase={presentationPhase}
       data-battle-profile-sequence={profileShot?.sequence ?? 0}
