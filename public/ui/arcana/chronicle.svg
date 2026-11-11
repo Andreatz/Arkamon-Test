@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" preserveAspectRatio="none" role="img" aria-label="Ornamental battle chronicle panel">
+ <defs>
+  <linearGradient id="rim" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#f6dfab"/><stop offset=".19" stop-color="#74543c"/><stop offset=".48" stop-color="#c6a06a"/><stop offset=".75" stop-color="#443b33"/><stop offset="1" stop-color="#ecd2a0"/></linearGradient>
+  <linearGradient id="body" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#153946" stop-opacity=".97"/><stop offset=".45" stop-color="#071d2d" stop-opacity=".96"/><stop offset=".9" stop-color="#1b3a43" stop-opacity=".98"/></linearGradient>
+  <radialGradient id="glow" cx=".58" cy=".1" r=".8"><stop stop-color="#d9c09d" stop-opacity=".16"/><stop offset="1" stop-color="#4dbead" stop-opacity="0"/></radialGradient>
+  <pattern id="thread" width="39" height="39" patternUnits="userSpaceOnUse"><path d="M0 39L39 0" stroke="#e0ddc5" stroke-opacity=".055"/><path d="M0 0L39 39" stroke="#97d9cc" stroke-opacity=".035"/></pattern>
+ </defs>
+ <path d="M43 8H1155l36 34v276l-36 34H43L9 318V42Z" fill="url(#rim)" stroke="#f8e3b4" stroke-width="2"/>
+ <path d="M47 18H1150l30 30v265l-30 28H47L21 313V48Z" fill="url(#body)" stroke="#141d25" stroke-width="5"/>
+ <path d="M47 18H1150l30 30v265l-30 28H47L21 313V48Z" fill="url(#thread)"/><path d="M47 18H1150l30 30v265l-30 28H47L21 313V48Z" fill="url(#glow)"/>
+ <path d="M55 30H1138l27 29v243l-27 27H55L36 304V57Z" fill="none" stroke="#dcbf8c" stroke-opacity=".52" stroke-width="2"/>
+ <path d="M108 36H1090M108 324H1090" stroke="#d8b77e" stroke-opacity=".31" stroke-width="2"/>
+ <path d="M130 46H1070M130 314H1070" stroke="#7abeb4" stroke-opacity=".25" stroke-dasharray="2 11"/>
+ <g fill="none" stroke="#f0d6a3" stroke-opacity=".68" stroke-width="3"><path d="M39 97l24-24h38M39 262l24 24h38M1160 97l-24-24h-38M1160 262l-24 24h-38"/><path d="M58 96l17-17h22M58 264l17 17h22M1142 96l-17-17h-22M1142 264l-17 17h-22"/></g>
+ <g transform="translate(601 24)" stroke="#f2da9e" fill="none"><path d="M-49 0H-18L0 11L18 0H49M-18 0L0 -11L18 0" stroke-width="3"/><circle r="6" fill="#9adccc" stroke-width="2"/><circle r="12" stroke-opacity=".5"/></g>
+ <g transform="translate(601 336)" stroke="#f2da9e" fill="none"><path d="M-49 0H-18L0 -11L18 0H49M-18 0L0 11L18 0" stroke-width="3"/><circle r="6" fill="#9adccc" stroke-width="2"/></g>
+ <g fill="#e7c991"><path d="M23 45l11-11 11 11-11 11zM23 317l11-11 11 11-11 11zM1152 45l11-11 11 11-11 11zM1152 317l11-11 11 11-11 11z"/></g>
+ </svg>

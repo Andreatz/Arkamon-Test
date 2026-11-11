@@ -11,6 +11,7 @@ test('reworked title remains usable and unclipped at desktop and mobile sizes', 
     await page.goto('/?uiStudioPreview=1&uiConceptFluid=1&uiConcept=aurora&screen=titolo')
     const scene = page.locator('.rpg-title-scene')
     await expect(scene).toBeVisible({ timeout: 30_000 })
+    await expect(scene).toHaveAttribute('data-title-art', 'arcana')
     await expect(page.getByRole('button', { name: 'Nuova Partita' })).toBeVisible()
     await expect(page.locator('.rpg-title-logo')).toBeVisible()
     await expect(page.locator('.rpg-title-aether-subtitle')).toContainText('EVOLVI')
@@ -23,7 +24,7 @@ test('reworked title remains usable and unclipped at desktop and mobile sizes', 
       return {
         titleInView: logo.left >= -1 && logo.right <= stage.right + 1 && logo.top >= -1 && logo.bottom <= stage.bottom + 1,
         actionsInView: buttons.left >= -1 && buttons.right <= stage.right + 1 && buttons.top >= -1 && buttons.bottom <= stage.bottom + 1,
-        controlsReadable: buttons.width >= 280 && styles.backgroundImage !== 'none',
+        controlsReadable: buttons.width >= 280 && styles.backgroundImage.includes('/ui/arcana/title-panel.svg'),
         scroll: element.scrollWidth <= element.clientWidth + 1,
       }
     })

@@ -50,6 +50,8 @@ jobs:
         run: npx vitest run src/engine/__tests__ --maxWorkers=2
       - name: Presentation director and legacy cue regression tests
         run: npx vitest run src/components/battle/battlePresentationDirector.test.ts src/components/battle/battleVisualSequence.test.ts src/components/battle/battleCameraLanguage.test.ts src/components/battle/battleImpactComposition.test.ts src/components/vfx/preloadVfxAssets.test.ts src/components/vfx/spriteRenderPerformance.test.ts src/components/vfx/AnimatedSprite.pixels.test.ts src/components/battle/warmBattleMediaBounded.test.ts src/components/battle/battleMediaBudget.test.ts src/utils/spritePageCache.test.ts src/utils/prepareImageAsset.test.ts src/performance/battleProfilerModel.test.ts src/performance/battleShotBenchmark.test.ts --maxWorkers=2
+      - name: Validate Arcana illustrated SVG assets
+        run: node scripts/check-arcana-vectors.mjs
       - name: Lightweight web build
         run: npm run build
         env:

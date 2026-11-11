@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 270" preserveAspectRatio="none" role="img" aria-label="Engraved fantasy ability plate">
+ <defs>
+  <linearGradient id="bevel" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#f3dea9"/><stop offset=".12" stop-color="#a6834d"/><stop offset=".24" stop-color="#4e4238"/><stop offset=".55" stop-color="#d1ac71"/><stop offset=".81" stop-color="#62513d"/><stop offset="1" stop-color="#eed6a4"/></linearGradient>
+  <linearGradient id="enamel" x1="0" x2=".9" y1="0" y2="1"><stop stop-color="#21464b"/><stop offset=".34" stop-color="#102a37"/><stop offset=".75" stop-color="#091f2e"/><stop offset="1" stop-color="#17343d"/></linearGradient>
+  <radialGradient id="light" cx=".15" cy="0" r="1"><stop stop-color="#8fe6cd" stop-opacity=".27"/><stop offset="1" stop-color="#8fe6cd" stop-opacity="0"/></radialGradient>
+  <pattern id="scratches" width="26" height="26" patternUnits="userSpaceOnUse"><path d="M2 21l18-18 M15 27l11-11" stroke="#f0dbac" stroke-opacity=".1" stroke-width="1"/><circle cx="13" cy="13" r="1" fill="#e8d8b1" opacity=".22"/></pattern>
+ </defs>
+ <path d="M30 8H558l35 37v178l-35 39H30L7 240V31Z" fill="#030f1c" opacity=".45"/>
+ <path d="M29 8H558l35 37v178l-35 39H29L7 240V31Z" fill="url(#bevel)" stroke="#e4cf9b" stroke-width="2"/>
+ <path d="M35 18H551l32 32v170l-32 31H35L16 234V35Z" fill="url(#enamel)" stroke="#101722" stroke-width="4"/>
+ <path d="M35 18H551l32 32v170l-32 31H35L16 234V35Z" fill="url(#light)"/>
+ <path d="M35 18H551l32 32v170l-32 31H35L16 234V35Z" fill="url(#scratches)" opacity=".4"/>
+ <path d="M42 27H545l29 28v159l-29 28H42L25 229V40Z" fill="none" stroke="#f1d69c" stroke-opacity=".32" stroke-width="1.5"/>
+ <path d="M48 35H510M50 233H512" stroke="#e4c38d" stroke-opacity=".45" stroke-width="2"/>
+ <path d="M50 41H528M48 225H528" stroke="#a0e8d2" stroke-opacity=".24" stroke-dasharray="3 8"/>
+ <g fill="none" stroke="#e8cd93" stroke-width="2.5" stroke-linecap="round" opacity=".85">
+  <path d="M13 50l24-20h33l-13 15H42l-15 14v31M13 219l24 20h33l-13-15H42l-15-14v-31"/>
+  <path d="M586 62l-17-18h-21l-12-13M586 209l-17 18h-21l-12 13"/>
+  <path d="M64 52h26l-12 10-14-10zM64 218h26l-12-10-14 10z"/>
+ </g>
+ <g transform="translate(545 138)">
+  <circle r="29" fill="#102f39" stroke="#edcc93" stroke-width="2"/>
+  <circle r="21" fill="none" stroke="#87e0c5" stroke-opacity=".66"/>
+  <path d="M0 -17L9 -9L17 0L9 9L0 17L-9 9L-17 0L-9 -9Z" fill="#82d9c3" opacity=".36" stroke="#eed5a4" stroke-width="1.6"/>
+  <circle r="3" fill="#fee8b4"/>
+ </g>
+ <g stroke="#f7deb0" stroke-opacity=".75"><path d="M48 110v45M552 85v24M552 168v23"/><circle cx="48" cy="133" r="3" fill="#f3da9e"/><circle cx="552" cy="136" r="4" fill="#dbf2cd"/></g>
+ </svg>
