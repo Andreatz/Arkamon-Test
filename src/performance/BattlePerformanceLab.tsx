@@ -1,5 +1,6 @@
 import { useMemo, useSyncExternalStore } from 'react'
 import { battleProfiler } from './battleProfiler'
+import { summarizeBattleShots } from './battleShotBenchmark'
 
 const MIB = 1024 * 1024
 const number = (value: number, digits = 1) => value.toFixed(digits)
@@ -24,7 +25,8 @@ function FrameChart({ samples }: { samples: readonly { atMs: number; frames: { f
 
 export function BattlePerformanceLab() {
   const state = useSyncExternalStore(battleProfiler.subscribe, battleProfiler.getSnapshot, battleProfiler.getSnapshot)
-  const report = useMemo(() => battleProfiler.report(), [state.sampleCount, state.eventCount, state.status])
+  const report = useMemo(() => battleProfiler.report(), [state.sampleCount, state.eventCount, state.shotCount, state.status])
+  const shotSummary = useMemo(() => summarizeBattleShots(report?.shots ?? []), [report])
   const recent = report?.samples.slice(-8).reverse() ?? []
   const last = state.lastSample
   const recording = state.status === 'recording'
@@ -72,6 +74,53 @@ export function BattlePerformanceLab() {
         Canvas: {last.pagedRenderers} paginati, {last.atlasRenderers} atlanti · caricamenti nativi/VFX {last.nativeLoads}/{last.vfxPrepares} · ultimo disegno {last.lastCanvasDrawMs === null ? 'n.d.' : number(last.lastCanvasDrawMs, 2) + ' ms'} · decodifiche attive {last.nativeDecodes} · long task {last.longTasks}
       </p>}
     </div>
+    <section aria-label="Benchmark per attacco" className="space-y-2 rounded-lg border border-[var(--arka-border)] p-3">
+      <div className="flex flex-wrap items-baseline justify-between gap-2">
+        <h4 className="font-semibold">Benchmark per attacco</h4>
+        <span data-profiler-shot-count={state.shotCount} className="text-xs text-[var(--arka-text-muted)]">
+          {state.shotCount} sequenze registrate
+        </span>
+      </div>
+      <p className="text-xs text-[var(--arka-text-muted)]">
+        Misure sui singoli frame dell'attacco, dalla preparazione al completamento visivo.
+        Confronta gli stessi ID di specie e mossa; l'ordine prima/ripetizione non certifica che la cache sia fredda o calda.
+      </p>
+      {shotSummary.length === 0
+        ? <p className="text-xs">Nessun attacco completo misurato. Avvia la registrazione, chiudi Admin ed esegui una mossa.</p>
+        : <div className="overflow-x-auto">
+          <table className="w-full min-w-[390px] text-left text-xs tabular-nums" data-profiler-comparison>
+            <thead><tr>
+              <th className="p-1">Animazione</th><th className="p-1">Prove</th>
+              <th className="p-1">p95 prima</th><th className="p-1">p95 ultima</th><th className="p-1">Δ p95</th>
+            </tr></thead>
+            <tbody>{shotSummary.map(group => <tr key={group.speciesId + '-' + group.moveId + '-' + group.view + '-' + group.choreography}
+              className="border-t border-[var(--arka-border)]">
+              <td className="p-1">Specie #{group.speciesId} · Mossa #{group.moveId}
+                <small className="block text-[var(--arka-text-muted)]">{group.view} · {group.choreography}</small>
+              </td>
+              <td className="p-1">{group.attempts}</td>
+              <td className="p-1">{group.firstP95Ms === null ? 'n.d.' : number(group.firstP95Ms) + ' ms'}</td>
+              <td className="p-1">{group.latestP95Ms === null ? 'n.d.' : number(group.latestP95Ms) + ' ms'}</td>
+              <td className="p-1">{group.changeP95Ms === null ? '—' : (group.changeP95Ms > 0 ? '+' : '') + number(group.changeP95Ms) + ' ms'}</td>
+            </tr>)}</tbody>
+          </table>
+        </div>}
+      <details className="text-xs">
+        <summary className="cursor-pointer">Dettaglio sequenze, memoria e caricamenti</summary>
+        <div className="mt-2 overflow-x-auto">
+          <table className="w-full min-w-[520px] text-left tabular-nums">
+            <thead><tr><th>Specie/Mossa</th><th>Tentativo</th><th>Esito</th><th>p95</th><th>Picco cache</th><th>Caricamenti</th></tr></thead>
+            <tbody>{report?.shots.slice(-20).reverse().map(shot => <tr key={shot.sequence + '-' + shot.startedAtMs}
+              className="border-t border-[var(--arka-border)]">
+              <td>{shot.speciesId}/{shot.moveId}</td><td>{shot.attempt} ({shot.repetition})</td><td>{shot.outcome}</td>
+              <td>{shot.frames.count ? number(shot.frames.p95Ms) + ' ms' : 'n.d.'}</td>
+              <td>{mib(shot.nativePeakBytes + shot.vfxPeakBytes)} MiB</td>
+              <td>{shot.nativeLoads} native / {shot.vfxPrepares} VFX</td>
+            </tr>)}</tbody>
+          </table>
+        </div>
+      </details>
+    </section>
     <div className="space-y-2">
       <h4 className="font-semibold">Esporta la sessione</h4>
       <div className="flex flex-wrap gap-2">
@@ -79,8 +128,10 @@ export function BattlePerformanceLab() {
           className="rounded-md border border-[var(--arka-border)] px-3 py-2 font-medium disabled:opacity-40">Scarica JSON</button>
         <button type="button" disabled={!report?.samples.length} onClick={() => battleProfiler.download('csv')}
           className="rounded-md border border-[var(--arka-border)] px-3 py-2 font-medium disabled:opacity-40">Scarica CSV</button>
+        <button type="button" disabled={!report?.shots.length} onClick={() => battleProfiler.download('shots-csv')}
+          className="rounded-md border border-[var(--arka-border)] px-3 py-2 font-medium disabled:opacity-40">Scarica attacchi CSV</button>
       </div>
-      <p className="text-[11px] text-[var(--arka-text-muted)]">Nessun salvataggio, nome dei giocatori, mossa o URL degli asset nell'export. La registrazione è conservata soltanto nella memoria di questa scheda del browser, fino al suo aggiornamento.</p>
+      <p className="text-[11px] text-[var(--arka-text-muted)]">Nessun salvataggio, nome dei giocatori o URL degli asset nell'export; i soli identificativi sono ID numerici del catalogo delle specie e delle mosse. La registrazione è conservata soltanto nella memoria di questa scheda del browser, fino al suo aggiornamento.</p>
     </div>
     <details className="rounded-lg border border-[var(--arka-border)] p-3">
       <summary className="cursor-pointer font-semibold">Cronologia tecnica ({report?.events.length ?? 0} eventi)</summary>

@@ -61,6 +61,8 @@ test('Admin profiler records a real battle after panel closes and exports bounde
   await expect(page.locator('[data-profiler-status="stopped"]')).toBeVisible()
   await mkdir(resolve('output/rework-profiler'), { recursive: true })
   await page.screenshot({ path: resolve('output/rework-profiler/performance-lab.png'), animations: 'disabled' })
+  await expect(page.getByRole('heading', { name: 'Benchmark per attacco' })).toBeVisible()
+  await expect(page.locator('[data-profiler-shot-count]')).toHaveAttribute('data-profiler-shot-count', '1')
 
   const jsonDownload = page.waitForEvent('download')
   await page.getByRole('button', { name: 'Scarica JSON' }).click()
@@ -69,9 +71,12 @@ test('Admin profiler records a real battle after panel closes and exports bounde
   expect(file).not.toBeNull()
   const report = JSON.parse(await readFile(file!, 'utf8')) as {
     schemaVersion: number; metricSource: string; samples: { frames: { count: number }; nativeBytes: number; vfxBytes: number }[];
-    events: { phase: string; cameraBeat: string }[]; sampledBattleOnly: boolean
+    events: { phase: string; cameraBeat: string }[];
+    shots: { speciesId: number; moveId: number; view: string; outcome: string;
+      frames: { count: number; p95Ms: number }; nativePeakBytes: number; vfxPeakBytes: number }[];
+    sampledBattleOnly: boolean
   }
-  expect(report.schemaVersion).toBe(1)
+  expect(report.schemaVersion).toBe(2)
   expect(report.metricSource).toBe('requestAnimationFrame')
   expect(report.sampledBattleOnly).toBe(true)
   expect(report.samples.length).toBeGreaterThan(3)
@@ -79,6 +84,13 @@ test('Admin profiler records a real battle after panel closes and exports bounde
   expect(report.samples.every(sample => sample.nativeBytes >= 0 && sample.vfxBytes >= 0)).toBe(true)
   expect(report.events.map(event => event.phase)).toContain('impact')
   expect(report.events.map(event => event.phase)).toContain('visual-complete')
+  expect(report.shots).toHaveLength(1)
+  expect(report.shots[0].speciesId).toBe(1)
+  expect(report.shots[0].moveId).toBeGreaterThan(0)
+  expect(report.shots[0].view).toBe('back')
+  expect(report.shots[0].outcome).toBe('complete')
+  expect(report.shots[0].frames.count).toBeGreaterThan(0)
+  expect(report.shots[0].nativePeakBytes).toBeGreaterThanOrEqual(0)
   const payload = JSON.stringify(report)
   expect(payload).not.toMatch(/Utente test|perf-attacker|perf-defender|assetUrl|arkamon-save/)
   expect(errors).toEqual([])
@@ -87,6 +99,11 @@ test('Admin profiler records a real battle after panel closes and exports bounde
   await page.getByRole('button', { name: 'Scarica CSV' }).click()
   const csv = await csvDownload
   expect(csv.suggestedFilename()).toContain('.csv')
+  const shotCsvDownload = page.waitForEvent('download')
+  await page.getByRole('button', { name: 'Scarica attacchi CSV' }).click()
+  const shotCsv = await shotCsvDownload
+  expect(shotCsv.suggestedFilename()).toContain('attacks')
+  expect(await readFile((await shotCsv.path())!, 'utf8')).toContain('speciesId,moveId')
   await page.getByRole('button', { name: 'Azzera' }).click()
   await expect(page.locator('[data-profiler-status="idle"]')).toBeVisible()
   await expect(page.getByRole('button', { name: 'Scarica JSON' })).toBeDisabled()
