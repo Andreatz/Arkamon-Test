@@ -77,12 +77,12 @@ export function finalizeBattleShot(input: {
   const nonnegative = (n: number) => Number.isFinite(n) ? Math.max(0, n) : 0
   return {
     ...input.identity,
-    attempt: Math.max(1, Math.floor(input.attempt)),
+    attempt: Math.max(1, Math.floor(nonnegative(input.attempt))),
     repetition: input.attempt > 1 ? 'repeat' : 'first',
     outcome: input.outcome,
     startedAtMs: Math.round(nonnegative(input.startedAtMs)),
     endedAtMs: Math.round(nonnegative(input.endedAtMs)),
-    durationMs: Math.round(Math.max(0, input.endedAtMs - input.startedAtMs)),
+    durationMs: Math.round(Math.max(0, nonnegative(input.endedAtMs) - nonnegative(input.startedAtMs))),
     frames: summarizeFrameIntervals(input.intervals),
     nativePeakBytes: nonnegative(input.nativePeakBytes),
     vfxPeakBytes: nonnegative(input.vfxPeakBytes),
