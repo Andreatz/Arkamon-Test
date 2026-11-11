@@ -42,6 +42,7 @@ describe('battle profiling math and privacy', () => {
     expect(report.metricSource).toBe('requestAnimationFrame')
     expect(report.samples).toHaveLength(MAX_PROFILE_SAMPLES)
     expect(report.events).toHaveLength(MAX_PROFILE_EVENTS)
+    expect(report.shots).toEqual([])
     expect(report.durationMs).toBe(400)
     expect(report.samples[0].atMs).toBe(9 * 500)
     expect(JSON.stringify(report)).not.toMatch(/playerName|campaignSave|assetUrl|pokemonName/)
