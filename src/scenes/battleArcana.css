@@ -91,3 +91,89 @@
 .battle-stage[data-battle-art="arcana"] .battle-v5-supreme:enabled:active {filter:brightness(.85);}
 .battle-stage[data-battle-art="arcana"] .battle-v5-supreme:disabled {filter:saturate(.42);opacity:.56;}
 .battle-stage[data-battle-art="arcana"] .battle-v5-supreme:focus-visible {outline:2px solid #fff1c2;outline-offset:-4px;}
+
+/* Illuminated chronicle and forged secondary command plates. */
+.battle-stage[data-battle-art="arcana"] .battle-v5-dialogue {
+  background:transparent url('/ui/arcana/chronicle.svg') center / 100% 100% no-repeat;
+  border:0;border-radius:0;box-shadow:none;backdrop-filter:none;
+  padding:clamp(12px,1.12vw,23px) clamp(19px,1.65vw,32px);
+}
+.battle-stage[data-battle-art="arcana"] .battle-v5-dialogue__eyebrow {color:#f6dda9;text-shadow:0 1px 3px #041423;}
+.battle-stage[data-battle-art="arcana"] .battle-v5-dialogue__messages {
+  color:#f9f5e8;text-shadow:0 2px 5px rgba(0,0,0,.8);
+  font-size:clamp(10px,1.04vw,18px);
+}
+.battle-stage[data-battle-art="arcana"] :is(.battle-v5-action,[data-battle-chronicle-command],.battle-opponent-command) {
+  background:transparent url('/ui/arcana/command.svg') center / 100% 100% no-repeat;
+  border:0;border-radius:0;box-shadow:none;color:#fff4dd;
+  text-shadow:0 1px 3px #061725;transition:filter 160ms ease;
+}
+.battle-stage[data-battle-art="arcana"] :is(.battle-v5-action,[data-battle-chronicle-command],.battle-opponent-command):enabled:is(:hover,:focus-visible) {
+  filter:drop-shadow(0 0 6px rgba(208,223,185,.43)) brightness(1.12);
+}
+.battle-stage[data-battle-art="arcana"] :is(.battle-v5-action,[data-battle-chronicle-command],.battle-opponent-command):enabled:active {filter:brightness(.85);}
+.battle-stage[data-battle-art="arcana"] :is(.battle-v5-action,.battle-opponent-command):focus-visible {outline:2px solid #f8dfaa;outline-offset:2px;}
+.battle-stage[data-battle-art="arcana"] :is(.battle-dice-panel,.battle-result-card) {
+  background:#0e2934 url('/ui/arcana/chronicle.svg') center / 100% 100% no-repeat;
+  border:0;box-shadow:0 18px 48px rgba(0,0,0,.22);backdrop-filter:none;
+}
+.battle-stage[data-battle-art="arcana"] :is(.battle-dice-panel,.battle-result-card)::before {content:none;display:none;}
+.battle-v5-modal,.battle-v5-switch {
+  background:#0e2934 url('/ui/arcana/chronicle.svg') center / 100% 100% no-repeat !important;
+  border:0 !important;box-shadow:0 20px 55px rgba(0,0,0,.32);backdrop-filter:none;
+}
+.battle-v5-modal__option,.battle-v5-switch__option {
+  background:#15333a url('/ui/arcana/command.svg') center / 100% 100% no-repeat !important;
+  border:0 !important;border-radius:0;color:#fff3d5 !important;
+}
+.battle-v5-modal__option:enabled:is(:hover,:focus-visible),
+.battle-v5-switch__option:enabled:is(:hover,:focus-visible) {filter:brightness(1.18);}
+/* A small astrolabe appears only during an actual camera-directed attack. */
+.battle-stage[data-battle-art="arcana"] .battle-arcana-glyph {
+  position:absolute;width:clamp(42px,6vw,88px);height:clamp(42px,6vw,88px);
+  left:48%;top:3%;z-index:37;opacity:0;
+  transform:translateY(-5px) rotate(-16deg) scale(.92);
+  background:transparent url('/ui/arcana/battle-glyph.svg') center / contain no-repeat;
+  pointer-events:none;filter:drop-shadow(0 0 5px rgba(137,231,203,.28));
+  transition:opacity 240ms ease,transform 410ms cubic-bezier(.2,.7,.2,1);
+}
+.battle-stage[data-battle-art="arcana"]:is([data-battle-director-phase="preparing"],[data-battle-director-phase="windup"]) .battle-arcana-glyph {
+  opacity:.72;transform:translateY(0) rotate(6deg) scale(1);
+}
+.battle-stage[data-battle-art="arcana"]:is([data-battle-director-phase="released"],[data-battle-director-phase="impact"]) .battle-arcana-glyph {
+  opacity:.3;transform:translateY(-3px) rotate(32deg) scale(.86);
+}
+.battle-stage[data-battle-art="arcana"] .battle-aether-technique {
+  background:rgba(10,30,41,.83) url('/ui/arcana/command.svg') center / 100% 100% no-repeat;
+  border:0;border-radius:0;padding:clamp(9px,.86vw,17px) clamp(15px,1.14vw,24px);
+  box-shadow:none;filter:drop-shadow(0 6px 12px rgba(0,0,0,.32));
+}
+.battle-stage[data-battle-art="arcana"] .battle-aether-technique__eyebrow {color:#f1d99f;}
+.battle-stage[data-battle-art="arcana"] .battle-aether-technique__name {color:#fbf7e9;}
+@media (max-width:740px) {
+  .battle-stage[data-battle-art="arcana"] .battle-v5-hp {padding:3px 5px;gap:2px;}
+  .battle-stage[data-battle-art="arcana"] .battle-v5-hp__name {font-size:clamp(8px,2vw,12px);}
+  .battle-stage[data-battle-art="arcana"] :is(.battle-v5-hp__value,.battle-v5-hp__level) {font-size:7px;}
+  .battle-stage[data-battle-art="arcana"] .battle-v5-hp__track {height:5px;}
+  .battle-stage[data-battle-art="arcana"] .battle-v5-move {padding:4px 6px;}
+  .battle-stage[data-battle-art="arcana"] .battle-v5-move__name {font-size:8px;padding-top:2px;}
+  .battle-stage[data-battle-art="arcana"] .battle-v5-move__footer {padding-bottom:0;}
+  .battle-stage[data-battle-art="arcana"] .battle-v5-move__power {font-size:8px;}
+  .battle-stage[data-battle-art="arcana"] .battle-v5-move__type {width:18px;height:18px;}
+  .battle-stage[data-battle-art="arcana"] .battle-v5-supreme {padding:10% 5% 5%;}
+  .battle-stage[data-battle-art="arcana"] .battle-v5-supreme__name {font-size:9px;}
+  .battle-stage[data-battle-art="arcana"] .battle-v5-supreme__cost {font-size:7px;}
+  .battle-stage[data-battle-art="arcana"] .battle-v5-dialogue {padding:6px 12px;}
+  .battle-stage[data-battle-art="arcana"] .battle-v5-dialogue__messages {font-size:9px;}
+  .battle-stage[data-battle-art="arcana"] .battle-arcana-glyph {width:36px;height:36px;top:1%;}
+}
+@media (prefers-reduced-motion:reduce) {
+  .battle-stage[data-battle-art="arcana"] :is(.battle-v5-move,.battle-v5-supreme,.battle-arcana-glyph,.battle-v5-hp) {
+    animation:none !important;transition:none !important;
+  }
+  .battle-stage[data-battle-art="arcana"] .battle-v5-move::after {display:none;}
+}
+.battle-stage[data-battle-art="arcana"][data-battle-reduced-motion="true"] :is(.battle-v5-move,.battle-v5-supreme,.battle-arcana-glyph,.battle-v5-hp) {
+  animation:none !important;transition:none !important;
+}
+.battle-stage[data-battle-art="arcana"][data-battle-reduced-motion="true"] .battle-v5-move::after {display:none;}
