@@ -5,6 +5,7 @@ import { BattleLayoutItem, ImpactPulseOverlay, InfoBox, ScambioModal, SquadIndic
 import '@/components/ui/gameButton.css'
 import './battleCinematic.css'
 import './battleAether.css'
+import './battleArcana.css'
 import { BattleLogPanel } from '@/components/battle/BattleLogPanel'
 import { BattleResultCard } from '@/components/battle/BattleResultCard'
 import { useBattleChronicle } from '@/components/battle/useBattleChronicle'
@@ -1534,6 +1535,7 @@ export function BattagliaScene() {
       data-battle-layout-root
       className="battle-stage w-full h-full relative overflow-hidden"
       data-battle-ui="aether"
+      data-battle-art="arcana"
       data-battle-reduced-motion={reducedMotion}
       data-battle-focus-side={cinematicShot?.target ?? cinematicShot?.attacker ?? 'none'}
       data-battle-impact-held={presentationPaused}
@@ -1723,6 +1725,7 @@ export function BattagliaScene() {
 
       </motion.div>
       <div className="battle-aether-atmosphere" aria-hidden="true" />
+      <div className="battle-arcana-glyph" aria-hidden="true" />
       <div className="battle-aether-letterbox" aria-hidden="true" />
       <div
         className="battle-camera-glaze absolute inset-0 pointer-events-none"
