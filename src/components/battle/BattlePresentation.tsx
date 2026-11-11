@@ -167,7 +167,7 @@ export function ScambioModal({
 }) {
   return (
     <div className="absolute inset-0 z-50 flex items-center justify-center bg-slate-950/62 px-6 backdrop-blur-sm">
-      <div className="w-[min(760px,92vw)] rounded-lg border border-white/15 bg-slate-950/92 p-5 text-white shadow-2xl">
+      <div className="battle-v5-switch w-[min(760px,92vw)] rounded-lg border border-white/15 bg-slate-950/92 p-5 text-white shadow-2xl">
         <div className="mb-4 flex items-end justify-between gap-4">
           <div>
             <h2 className="text-xl font-extrabold">Scegli un Pokemon</h2>
@@ -190,7 +190,7 @@ export function ScambioModal({
                 key={pokemon.istanzaId}
                 disabled={disabled}
                 onClick={() => onSelect(pokemon)}
-                className="flex min-h-[116px] items-center gap-3 rounded-md border border-white/10 bg-slate-900/86 p-3 text-left shadow-lg transition-colors hover:bg-slate-800 disabled:cursor-not-allowed disabled:opacity-45"
+                className="battle-v5-switch__option flex min-h-[116px] items-center gap-3 rounded-md border border-white/10 bg-slate-900/86 p-3 text-left shadow-lg transition-colors hover:bg-slate-800 disabled:cursor-not-allowed disabled:opacity-45"
               >
                 <img
                   src={assetUrl(`/sprites/front_sprites/${pokemon.specieId}.png`)}
