@@ -4,6 +4,7 @@ import { useSettledBattleCheckpoint } from '@/components/battle/useSettledBattle
 import { BattleLayoutItem, ImpactPulseOverlay, InfoBox, ScambioModal, SquadIndicator, PokemonBattleSlot, HpBar, ActionButton, SupremeButton, MoveButton, type ImpactPulseDisplay } from '@/components/battle/BattlePresentation'
 import '@/components/ui/gameButton.css'
 import './battleCinematic.css'
+import './battleAether.css'
 import { BattleLogPanel } from '@/components/battle/BattleLogPanel'
 import { BattleResultCard } from '@/components/battle/BattleResultCard'
 import { useBattleChronicle } from '@/components/battle/useBattleChronicle'
@@ -1530,6 +1531,8 @@ export function BattagliaScene() {
     <BattleLayoutProvider value={battleLayout}><div
       data-battle-layout-root
       className="battle-stage w-full h-full relative overflow-hidden"
+      data-battle-ui="aether"
+      data-battle-reduced-motion={reducedMotion}
       data-battle-impact-held={presentationPaused}
       data-battle-director-phase={presentationPhase}
       data-battle-profile-sequence={profileShot?.sequence ?? 0}
@@ -1702,6 +1705,8 @@ export function BattagliaScene() {
       </AnimatePresence>
 
       </motion.div>
+      <div className="battle-aether-atmosphere" aria-hidden="true" />
+      <div className="battle-aether-letterbox" aria-hidden="true" />
       <div
         className="battle-camera-glaze absolute inset-0 pointer-events-none"
         aria-hidden="true"
