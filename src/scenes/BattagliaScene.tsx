@@ -202,6 +202,13 @@ export function BattagliaScene() {
   const [moveVfx, setMoveVfx] = useState<MoveVfxEvent | null>(null)
   const [presentationPhase, setPresentationPhase] = useState<BattleDirectorPhase | 'idle'>('idle')
   const [cinematicShot, setCinematicShot] = useState<BattleCinematicShot | null>(null)
+  // Technical catalog IDs only. No player/campaign data enter profiling output.
+  const [profileShot, setProfileShot] = useState<{
+    sequence: number
+    speciesId: number
+    moveId: number
+    view: 'front' | 'back'
+  } | null>(null)
   const moveVfxIdRef = useRef(0)
   const moveVfxCallbacksRef = useRef<{
     id: number
@@ -741,6 +748,7 @@ export function BattagliaScene() {
     activePlaybackRef.current?.cancel()
     activePlaybackRef.current = director
     setPresentationPhase('preparing')
+    setProfileShot({ sequence: effectId, speciesId: attacker.specieId, moveId: move.id, view: attackerView })
     setCinematicShot({
       attacker: side, target: targetSide, intensity: cameraIntensity,
       choreography: resolveBattleCameraChoreography(cameraProfile.archetype),
@@ -1524,6 +1532,10 @@ export function BattagliaScene() {
       className="battle-stage w-full h-full relative overflow-hidden"
       data-battle-impact-held={presentationPaused}
       data-battle-director-phase={presentationPhase}
+      data-battle-profile-sequence={profileShot?.sequence ?? 0}
+      data-battle-profile-species={profileShot?.speciesId ?? 0}
+      data-battle-profile-move={profileShot?.moveId ?? 0}
+      data-battle-profile-view={profileShot?.view ?? 'none'}
       data-battle-assets-ready={assetReadiness.ready}
       data-battle-decoded-vfx-bytes={assetReadiness.metrics.images.decodedBytes}
       data-battle-decoded-native-bytes={assetReadiness.metrics.pages.decodedBytes}
