@@ -5,6 +5,7 @@ import { BattleLayoutItem, ImpactPulseOverlay, InfoBox, ScambioModal, SquadIndic
 import '@/components/ui/gameButton.css'
 import './battleCinematic.css'
 import './battleAether.css'
+import './battleImageGenV2.css'
 import { BattleLogPanel } from '@/components/battle/BattleLogPanel'
 import { BattleResultCard } from '@/components/battle/BattleResultCard'
 import { useBattleChronicle } from '@/components/battle/useBattleChronicle'
