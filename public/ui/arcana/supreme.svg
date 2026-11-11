@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 490 380" preserveAspectRatio="none" role="img" aria-label="Ornamental engraved gold ultimate ability">
+ <defs>
+  <radialGradient id="fire" cx=".5" cy=".36" r=".7"><stop stop-color="#74512f"/><stop offset=".44" stop-color="#2b242c"/><stop offset=".8" stop-color="#141c29"/><stop offset="1" stop-color="#081522"/></radialGradient>
+  <linearGradient id="forged" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#fff0ba"/><stop offset=".2" stop-color="#b47a3d"/><stop offset=".42" stop-color="#f5ce85"/><stop offset=".7" stop-color="#6f4a30"/><stop offset="1" stop-color="#e6b86d"/></linearGradient>
+  <radialGradient id="sun"><stop stop-color="#fff6c9"/><stop offset=".27" stop-color="#f9c66a"/><stop offset=".65" stop-color="#b95531"/><stop offset="1" stop-color="#2f1a2b"/></radialGradient>
+  <pattern id="hammer" width="23" height="23" patternUnits="userSpaceOnUse"><circle cx="5" cy="4" r="1.4" fill="#fff1c0" opacity=".13"/><path d="M19 22l5-5" stroke="#fff1c0" stroke-opacity=".13"/></pattern>
+ </defs>
+ <path d="M54 11H436l42 45v260l-42 52H54L12 316V56Z" fill="url(#forged)" stroke="#f7e3af" stroke-width="5"/>
+ <path d="M59 23H429l36 39v247l-36 45H59L25 309V62Z" fill="url(#fire)" stroke="#3f2832" stroke-width="7"/>
+ <path d="M59 23H429l36 39v247l-36 45H59L25 309V62Z" fill="url(#hammer)"/>
+ <path d="M64 34H421l29 35v232l-29 39H64l-26-39V69Z" fill="none" stroke="#f5d99d" stroke-opacity=".52" stroke-width="2"/>
+ <path d="M74 48H417M74 326H417" stroke="#edbd73" stroke-opacity=".62" stroke-width="3"/>
+ <g transform="translate(245 137)">
+  <circle r="94" fill="#201d2a" stroke="url(#forged)" stroke-width="9"/>
+  <circle r="83" fill="none" stroke="#f5d891" stroke-opacity=".86" stroke-width="2.4"/>
+  <circle r="74" fill="#372b30" stroke="#a76140" stroke-width="3"/>
+  <circle r="60" fill="url(#sun)" stroke="#ffe2a2" stroke-width="5"/>
+  <path d="M0 -55L14 -18L52 -32L32 0L52 32L14 18L0 55L-14 18L-52 32L-32 0L-52 -32L-14 -18Z" fill="#ffdf9a" fill-opacity=".33" stroke="#ffe3a2" stroke-width="3"/>
+  <path d="M0 -39L11 -11L39 0L11 11L0 39L-11 11L-39 0L-11 -11Z" fill="#ffeac1" stroke="#fff5d8" stroke-width="1.6"/>
+  <circle r="9" fill="#ffe9ae"/>
+  <g stroke="#e7a858" stroke-width="3"><path d="M0 -103v16M0 87v16M-103 0h16M87 0h16M-70 -70l12 12M70 70l-12 -12M70 -70l-12 12M-70 70l12 -12"/></g>
+ </g>
+ <path d="M81 233H410M94 238H396" stroke="#f2cb89" stroke-opacity=".5" stroke-width="2"/>
+ <g fill="none" stroke="#efc783" stroke-width="3"><path d="M38 75l20-22h38l12 10M38 300l20 22h38l12-10M453 75l-20-22h-38l-12 10M453 300l-20 22h-38l-12-10"/></g>
+ <g fill="#fce8b1"><circle cx="65" cy="191" r="4"/><circle cx="426" cy="191" r="4"/><path d="M236 350l9-14 9 14-9 14z"/></g>
+</svg>
