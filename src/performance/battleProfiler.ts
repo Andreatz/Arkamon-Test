@@ -1,6 +1,10 @@
 import { getPreparedImageStats } from '@/utils/prepareImageAsset'
 import { nativeSpritePageCache } from '@/utils/spritePageCache'
 import {
+  MAX_BATTLE_SHOTS, MAX_SHOT_FRAMES, battleShotCsv, finalizeBattleShot,
+  parseBattleShotIdentity, shotIdentityKey, type BattleShotBenchmark, type BattleShotIdentity,
+} from './battleShotBenchmark'
+import {
   MAX_PROFILE_EVENTS, MAX_PROFILE_SAMPLES, battleProfileCsv, createBattleProfileReport,
   summarizeFrameIntervals, type BattleProfileEvent, type BattleProfileReport,
   type BattleProfileSample,
@@ -12,6 +16,7 @@ export interface BattleProfilerSnapshot {
   durationMs: number
   sampleCount: number
   eventCount: number
+  shotCount: number
   battlePresent: boolean
   lastSample: BattleProfileSample | null
   error: string | null
@@ -19,7 +24,21 @@ export interface BattleProfilerSnapshot {
 
 const EMPTY: BattleProfilerSnapshot = {
   status: 'idle', startedAt: null, durationMs: 0, sampleCount: 0,
-  eventCount: 0, battlePresent: false, lastSample: null, error: null,
+  eventCount: 0, shotCount: 0, battlePresent: false, lastSample: null, error: null,
+}
+
+interface ActiveShot {
+  identity: BattleShotIdentity
+  attempt: number
+  startedAtMs: number
+  intervals: number[]
+  baselineNativeLoads: number
+  baselineVfxPrepares: number
+  nativePeakBytes: number
+  vfxPeakBytes: number
+  maxCanvasDrawMs: number | null
+  longTasks: number
+  longTaskMs: number
 }
 
 class BattleProfiler {
@@ -36,6 +55,10 @@ class BattleProfiler {
   private longTaskMs = 0
   private samples: BattleProfileSample[] = []
   private events: BattleProfileEvent[] = []
+  private shots: BattleShotBenchmark[] = []
+  private activeShot: ActiveShot | null = null
+  private attemptCounts = new Map<string, number>()
+  private seenSequences = new Set<number>()
   private observedStage: Element | null = null
   private mutationObserver: MutationObserver | null = null
   private taskObserver: PerformanceObserver | null = null
@@ -55,16 +78,84 @@ class BattleProfiler {
     for (const listener of this.listeners) listener()
   }
 
+  private updateShotResources(
+    pages = nativeSpritePageCache.stats(),
+    images = getPreparedImageStats(),
+    drawMs: number | null = null,
+  ) {
+    const shot = this.activeShot
+    if (!shot) return
+    shot.nativePeakBytes = Math.max(shot.nativePeakBytes, pages.decodedBytes)
+    shot.vfxPeakBytes = Math.max(shot.vfxPeakBytes, images.decodedBytes)
+    if (drawMs !== null) shot.maxCanvasDrawMs = Math.max(shot.maxCanvasDrawMs ?? 0, drawMs)
+  }
+
+  private finishShot(outcome: BattleShotBenchmark['outcome']) {
+    const shot = this.activeShot
+    if (!shot) return
+    this.updateShotResources()
+    const pages = nativeSpritePageCache.stats()
+    const images = getPreparedImageStats()
+    this.shots.push(finalizeBattleShot({
+      identity: shot.identity,
+      attempt: shot.attempt,
+      startedAtMs: shot.startedAtMs,
+      endedAtMs: Math.max(shot.startedAtMs, performance.now() - this.startedAtMs),
+      outcome,
+      intervals: shot.intervals,
+      nativePeakBytes: shot.nativePeakBytes,
+      vfxPeakBytes: shot.vfxPeakBytes,
+      nativeLoads: pages.completedPageLoads - shot.baselineNativeLoads,
+      vfxPrepares: images.completedPrepares - shot.baselineVfxPrepares,
+      maxCanvasDrawMs: shot.maxCanvasDrawMs,
+      longTasks: shot.longTasks,
+      longTaskMs: shot.longTaskMs,
+    }))
+    if (this.shots.length > MAX_BATTLE_SHOTS) this.shots.shift()
+    this.activeShot = null
+    this.publish({ shotCount: this.shots.length })
+  }
+
+  private trackShot(stage: Element, phase: string) {
+    const identity = parseBattleShotIdentity(stage)
+    if (!identity) return
+    if (this.activeShot && this.activeShot.identity.sequence !== identity.sequence) this.finishShot('interrupted')
+    if (!this.activeShot && !this.seenSequences.has(identity.sequence)
+      && phase !== 'idle' && phase !== 'visual-complete' && phase !== 'cancelled') {
+      const key = shotIdentityKey(identity)
+      const attempt = (this.attemptCounts.get(key) ?? 0) + 1
+      this.attemptCounts.set(key, attempt)
+      this.seenSequences.add(identity.sequence)
+      const pages = nativeSpritePageCache.stats()
+      const images = getPreparedImageStats()
+      this.activeShot = {
+        identity, attempt, startedAtMs: Math.max(0, performance.now() - this.startedAtMs),
+        intervals: [], baselineNativeLoads: pages.completedPageLoads,
+        baselineVfxPrepares: images.completedPrepares,
+        nativePeakBytes: pages.decodedBytes, vfxPeakBytes: images.decodedBytes,
+        maxCanvasDrawMs: null, longTasks: 0, longTaskMs: 0,
+      }
+    }
+    if (this.activeShot?.identity.sequence === identity.sequence
+      && (phase === 'visual-complete' || phase === 'cancelled'))
+      this.finishShot(phase === 'visual-complete' ? 'complete' : 'interrupted')
+  }
+
   private recordCue() {
     if (!this.observedStage || this.state.status !== 'recording') return
+    const phase = this.observedStage.getAttribute('data-battle-director-phase') ?? 'unknown'
+    this.trackShot(this.observedStage, phase)
     const camera = this.observedStage.querySelector('[data-battle-camera]')
     const event: BattleProfileEvent = {
       atMs: Math.round(performance.now() - this.startedAtMs),
-      phase: this.observedStage.getAttribute('data-battle-director-phase') ?? 'unknown',
+      phase,
       cameraBeat: camera?.getAttribute('data-battle-camera-beat') ?? 'unknown',
       choreography: camera?.getAttribute('data-battle-camera-choreography') ?? 'none',
     }
-    const marker = [event.phase, event.cameraBeat, event.choreography].join('|')
+    const marker = [
+      this.observedStage.getAttribute('data-battle-profile-sequence') ?? '0',
+      event.phase, event.cameraBeat, event.choreography,
+    ].join('|')
     if (marker === this.currentMarker) return
     this.currentMarker = marker
     this.events.push(event)
@@ -75,13 +166,18 @@ class BattleProfiler {
     if (stage === this.observedStage) return
     this.mutationObserver?.disconnect()
     this.mutationObserver = null
+    this.finishShot('interrupted')
+    this.seenSequences.clear()
     this.observedStage = stage
     this.currentMarker = ''
     if (!stage) return
     this.mutationObserver = new MutationObserver(() => this.recordCue())
     this.mutationObserver.observe(stage, {
       attributes: true, subtree: true,
-      attributeFilter: ['data-battle-director-phase', 'data-battle-camera-beat', 'data-battle-camera-choreography'],
+      attributeFilter: [
+        'data-battle-director-phase', 'data-battle-camera-beat',
+        'data-battle-camera-choreography', 'data-battle-profile-sequence',
+      ],
     })
     this.recordCue()
   }
@@ -99,6 +195,8 @@ class BattleProfiler {
     const drawTimes = drawElements
       .map(element => Number(element.getAttribute('data-sprite-draw-ms')))
       .filter(value => Number.isFinite(value) && value >= 0)
+    this.updateShotResources(pages, images,
+      drawTimes.length ? Math.max(...drawTimes) : null)
     const sample: BattleProfileSample = {
       atMs: Math.round(atMs),
       frames: summarizeFrameIntervals(this.frameIntervals),
@@ -137,7 +235,13 @@ class BattleProfiler {
     // into fictitious missed frames or a huge spike in the FPS graph.
     if (stagePresent && !document.hidden && this.previousFrameAt) {
       const delta = timestamp - this.previousFrameAt
-      if (delta > 0 && delta <= 250) this.frameIntervals.push(delta)
+      if (delta > 0 && delta <= 250) {
+        this.frameIntervals.push(delta)
+        if (this.activeShot) {
+          this.activeShot.intervals.push(delta)
+          if (this.activeShot.intervals.length > MAX_SHOT_FRAMES) this.activeShot.intervals.shift()
+        }
+      }
     }
     this.previousFrameAt = document.hidden || !stagePresent ? 0 : timestamp
     if (timestamp - this.lastSampleAt >= 500) {
@@ -156,6 +260,10 @@ class BattleProfiler {
     }
     this.samples = []
     this.events = []
+    this.shots = []
+    this.activeShot = null
+    this.attemptCounts.clear()
+    this.seenSequences.clear()
     this.frameIntervals = []
     this.longTaskCount = 0
     this.longTaskMs = 0
@@ -176,6 +284,10 @@ class BattleProfiler {
           for (const entry of list.getEntries()) {
             this.longTaskCount++
             this.longTaskMs += entry.duration
+            if (this.activeShot) {
+              this.activeShot.longTasks++
+              this.activeShot.longTaskMs += entry.duration
+            }
           }
         })
         this.taskObserver.observe({ entryTypes: ['longtask'] })
@@ -193,6 +305,7 @@ class BattleProfiler {
     this.taskObserver = null
     const elapsed = performance.now() - this.startedAtMs
     this.capture(elapsed)
+    this.finishShot('interrupted')
     this.mutationObserver?.disconnect()
     this.mutationObserver = null
     this.observedStage = null
@@ -204,6 +317,10 @@ class BattleProfiler {
     if (this.state.status === 'recording') this.stop()
     this.samples = []
     this.events = []
+    this.shots = []
+    this.activeShot = null
+    this.attemptCounts.clear()
+    this.seenSequences.clear()
     this.startedAtUtc = null
     this.stoppedAtUtc = null
     this.publish(EMPTY)
@@ -212,18 +329,23 @@ class BattleProfiler {
   report(): BattleProfileReport | null {
     if (!this.startedAtUtc) return null
     return createBattleProfileReport(this.startedAtUtc, this.stoppedAtUtc,
-      this.state.durationMs, this.samples, this.events)
+      this.state.durationMs, this.samples, this.events, this.shots)
   }
 
-  download(format: 'json' | 'csv'): boolean {
+  download(format: 'json' | 'csv' | 'shots-csv'): boolean {
     const report = this.report()
-    if (!report || !report.samples.length || typeof document === 'undefined') return false
-    const payload = format === 'json' ? JSON.stringify(report, null, 2) + '\n' : battleProfileCsv(report.samples)
+    if (!report || (format === 'shots-csv' ? !report.shots.length : !report.samples.length)
+      || typeof document === 'undefined') return false
+    const payload = format === 'json' ? JSON.stringify(report, null, 2) + '\n'
+      : format === 'shots-csv' ? battleShotCsv(report.shots)
+      : battleProfileCsv(report.samples)
     const blob = new Blob([payload], { type: format === 'json' ? 'application/json' : 'text/csv;charset=utf-8' })
     const url = URL.createObjectURL(blob)
     const anchor = document.createElement('a')
     anchor.href = url
-    anchor.download = 'arkamon-battle-profile-' + report.startedAt.replace(/[:.]/g, '-') + '.' + format
+    anchor.download = 'arkamon-battle-' + (format === 'shots-csv' ? 'attacks' : 'profile')
+      + '-' + report.startedAt.replace(/[:.]/g, '-')
+      + '.' + (format === 'json' ? 'json' : 'csv')
     anchor.click()
     window.setTimeout(() => URL.revokeObjectURL(url), 1000)
     return true
