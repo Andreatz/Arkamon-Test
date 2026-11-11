@@ -129,14 +129,14 @@
 }
 .battle-v5-modal,.battle-v5-switch,
 .battle-stage[data-battle-ui="aether"] :is(.battle-result-card,.battle-dice-panel) {
-  background: #091826 url('/ui/imagegen/v2/dialogue.webp') center / 100% 100% no-repeat !important;
+  background: transparent url('/ui/imagegen/v2/dialogue.webp') center / 100% 100% no-repeat !important;
   border: 0 !important; box-shadow: none !important; backdrop-filter: none !important;
 }
 .battle-v5-modal::before,.battle-v5-switch::before,
 .battle-stage[data-battle-ui="aether"] .battle-result-card::before,
 .battle-stage[data-battle-ui="aether"] .battle-dice-panel::before { content: none !important; }
 .battle-v5-modal__option,.battle-v5-switch__option {
-  background: #111f2a url('/ui/imagegen/v2/command-idle.webp') center / 100% 100% no-repeat !important;
+  background: transparent url('/ui/imagegen/v2/command-idle.webp') center / 100% 100% no-repeat !important;
   border: 0 !important; color: #f7ead9 !important;
 }
 .battle-v5-modal__option:enabled:is(:hover,:focus-visible),
@@ -147,7 +147,7 @@
   display: none !important; content: none !important;
 }
 .rpg-title-commands {
-  background: rgba(8,19,29,.88) url('/ui/imagegen/v2/dialogue.webp') center / 100% 100% no-repeat !important;
+  background: transparent url('/ui/imagegen/v2/dialogue.webp') center / 100% 100% no-repeat !important;
   border: 0 !important; box-shadow: none !important; backdrop-filter: none !important;
 }
 .rpg-title-commands::before { display: none !important; content: none !important; }
