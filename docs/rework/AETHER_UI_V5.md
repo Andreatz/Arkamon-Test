@@ -15,7 +15,8 @@ Goal: replace mixed battle art and inconsistent gray/red/gold panels with a cohe
 ## Visual animation language
 
 1. Short 420ms panel reveals on entry; move cards stagger by 60ms and 110ms. Hover/keyboard focus adds an illuminated type-colored rail and a quick glint. No ambient infinite motion on the battle HUD.
-2. During windup/release/impact, move cards become slightly subdued and the target's HP panel receives a brief rim light. These rely only on the existing Battle Director markers. Damage, save and RNG are unchanged.
+2. During windup/release/impact, move cards become slightly subdued and the target's HP panel receives a brief rim light.
+   A lightweight elemental technique lower-third briefly identifies the active move during windup/release and exits before the impact; it does not affect damage or native sprite playback. These rely only on the existing Battle Director markers. Damage, save and RNG are unchanged.
 3. A small atmospheric overlay/letterbox follows anticipation, travel and impact camera beats; HUD remains a sibling of the moving camera and thus stays stable. Native clip timing and frame counts are unchanged.
 4. Title retains original video and logo but adds decorative atmospheric lighting, editorial hierarchy, and an improved navigation card; its optional slow halo is disabled for prefers-reduced-motion.
 5. Both the application's reducedMotion preference and OS prefers-reduced-motion disable decorative battle entry/impact animations; Framer Motion playback retains its existing preferences.
