@@ -67,9 +67,18 @@ test('new premium HUD is legible and aligned on desktop and compact 16:9 stages'
     }
   })
   expect(appearance.hpFill).toBe(true)
-  expect(appearance.hpBackground).toContain('linear-gradient')
-  expect(appearance.moveBackground).toContain('linear-gradient')
-  expect(appearance.moveAccent).not.toBe('rgba(0, 0, 0, 0)')
+  expect(appearance.hpBackground).toContain('/ui/imagegen/v2/hp-')
+  expect(appearance.moveBackground).toContain('/ui/imagegen/v2/move-')
+  expect(appearance.narrative).toContain('/ui/imagegen/v2/dialogue.webp')
+  const raster = await page.evaluate(async () => {
+    const names = ['hp-ally','hp-enemy','dialogue','move-arcane','move-ember','supreme-pulse']
+    return Promise.all(names.map(async name => {
+      const response = await fetch('/ui/imagegen/v2/' + name + '.webp')
+      const bytes = await response.arrayBuffer()
+      return { name, ok: response.ok, type: response.headers.get('content-type'), size: bytes.byteLength }
+    }))
+  })
+  expect(raster.every(item => item.ok && item.size > 5000)).toBe(true)
   await page.screenshot({ path: resolve('output/rework-aether/battle-desktop.png'), animations: 'disabled' })
 
   await page.setViewportSize({ width: 640, height: 360 })
@@ -110,5 +119,6 @@ test('reduced-motion keeps battle controls and hides decorative entrances', asyn
   }))
   expect(state.entrance).toBe('none')
   expect(state.readable).toBe(true)
+  await expect(page.locator('.battle-v5-supreme')).toHaveCSS('background-image', /supreme\.webp/)
   await expect(page.locator('.battle-v5-supreme')).toBeEnabled()
 })
