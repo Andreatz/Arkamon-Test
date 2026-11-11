@@ -13,6 +13,8 @@ test('reworked title remains usable and unclipped at desktop and mobile sizes', 
     await expect(scene).toBeVisible({ timeout: 30_000 })
     await expect(page.getByRole('button', { name: 'Nuova Partita' })).toBeVisible()
     await expect(page.locator('.rpg-title-logo')).toBeVisible()
+    await expect(page.locator('.rpg-title-aether-subtitle')).toContainText('EVOLVI')
+    await expect(page.locator('.rpg-title-aether-menu-label')).toBeVisible()
     const layout = await scene.evaluate(element => {
       const logo = element.querySelector('.rpg-title-logo')!.getBoundingClientRect()
       const buttons = element.querySelector('.rpg-title-commands')!.getBoundingClientRect()
