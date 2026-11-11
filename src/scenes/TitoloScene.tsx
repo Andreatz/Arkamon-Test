@@ -1,6 +1,7 @@
 import { RpgCommand as GameButton } from '@/components/rpg'
 import './rpgScenes.css'
 import './titleRework.css'
+import './titleArcana.css'
 import { useEffect, useRef, useState } from 'react'
 import { useGameStore } from '@store/gameStore'
 import { useAdminStore } from '@store/adminStore'
@@ -50,7 +51,8 @@ export function TitoloScene() {
   }, [reducedMotion, backgroundPath])
 
   return (
-    <div className="rpg-title-scene relative w-full h-full flex flex-col items-center justify-center bg-gradient-to-br from-arka-bg via-slate-900 to-purple-950">
+    <div className="rpg-title-scene relative w-full h-full flex flex-col items-center justify-center bg-gradient-to-br from-arka-bg via-slate-900 to-purple-950"
+      data-title-art="arcana" data-title-reduced-motion={reducedMotion}>
       {hasBackground && hasVideoBackground ? (
         <video
           ref={video}
