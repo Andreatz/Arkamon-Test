@@ -1,0 +1,181 @@
+/*
+ * ImageGen Raster UI v2. All ornamental UI textures are pre-rendered WebP art.
+ * CSS here only lays out those pixels and handles focus/disabled states.
+ * React retains real names, health values and command behavior.
+ */
+.battle-stage[data-battle-ui="aether"]::after,
+.battle-stage[data-battle-ui="aether"] .battle-aether-atmosphere,
+.battle-stage[data-battle-ui="aether"] .battle-aether-letterbox,
+.battle-stage[data-battle-ui="aether"] .battle-v5-hp::before,
+.battle-stage[data-battle-ui="aether"] .battle-v5-hp::after,
+.battle-stage[data-battle-ui="aether"] .battle-v5-move::before,
+.battle-stage[data-battle-ui="aether"] .battle-v5-move::after,
+.battle-stage[data-battle-ui="aether"] .battle-v5-supreme::after,
+.battle-stage[data-battle-ui="aether"] .battle-v5-dialogue::before,
+.battle-stage[data-battle-ui="aether"] .battle-v5-dialogue::after {
+  content: none !important;
+  display: none !important;
+}
+.battle-stage[data-battle-ui="aether"] .battle-v5-hp[data-battle-hp-custom-frame="false"] {
+  background: transparent url('/ui/imagegen/v2/hp-ally.webp') center / 100% 100% no-repeat !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  padding: clamp(8px,.8vw,14px) clamp(12px,1.15vw,22px) !important;
+  gap: clamp(3px,.25vw,6px);
+}
+.battle-stage[data-battle-ui="aether"] .battle-v5-hp[data-battle-hp-side="enemy"][data-battle-hp-custom-frame="false"] {
+  background-image: url('/ui/imagegen/v2/hp-enemy.webp') !important;
+}
+.battle-stage[data-battle-ui="aether"] .battle-v5-hp[data-battle-hp-side="player"] :is(.battle-v5-hp__heading,.battle-v5-hp__bottom) {
+  padding-left: 13%; padding-right: 3%;
+}
+.battle-stage[data-battle-ui="aether"] .battle-v5-hp[data-battle-hp-side="enemy"] :is(.battle-v5-hp__heading,.battle-v5-hp__bottom) {
+  padding-left: 3%; padding-right: 14%;
+}
+.battle-stage[data-battle-ui="aether"] .battle-v5-hp__pip { display: none !important; }
+.battle-stage[data-battle-ui="aether"] .battle-v5-hp__name {
+  color: #fff0d4 !important; font-size: clamp(10px,1.05vw,18px); text-shadow: 0 2px 3px #050c12;
+}
+.battle-stage[data-battle-ui="aether"] :is(.battle-v5-hp__level,.battle-v5-hp__value) {
+  color: #fff5db !important; text-shadow: 0 1px 3px #071019;
+}
+.battle-stage[data-battle-ui="aether"] .battle-v5-hp__track {
+  background: rgba(2,12,18,.12) !important; border: 0 !important;
+  box-shadow: none !important; height: clamp(5px,.6vw,10px);
+}
+.battle-stage[data-battle-ui="aether"] .battle-v5-hp__tag { color: #adf5f4; }
+.battle-stage[data-battle-ui="aether"] .battle-v5-hp__fill { box-shadow: none !important; }
+
+.battle-stage[data-battle-ui="aether"] .battle-v5-move {
+  background: transparent url('/ui/imagegen/v2/move-arcane.webp') center / 100% 100% no-repeat !important;
+  border: 0 !important; border-radius: 0 !important; box-shadow: none !important;
+  filter: none !important; padding: clamp(8px,.9vw,14px) clamp(12px,1.2vw,23px) !important;
+  overflow: hidden; transition: opacity 150ms ease !important;
+}
+.battle-stage[data-battle-ui="aether"] .battle-v5-move[data-move-type="Fuoco"] {
+  background-image: url('/ui/imagegen/v2/move-ember.webp') !important;
+}
+.battle-stage[data-battle-ui="aether"] .battle-v5-move:is(:hover,:focus-visible):not(:disabled) {
+  background-image: url('/ui/imagegen/v2/move-arcane-hover.webp') !important;
+}
+.battle-stage[data-battle-ui="aether"] .battle-v5-move[data-move-type="Fuoco"]:is(:hover,:focus-visible):not(:disabled) {
+  background-image: url('/ui/imagegen/v2/move-ember-hover.webp') !important;
+}
+.battle-stage[data-battle-ui="aether"] .battle-v5-move:active:not(:disabled) {
+  background-image: url('/ui/imagegen/v2/move-arcane-pressed.webp') !important;
+}
+.battle-stage[data-battle-ui="aether"] .battle-v5-move[data-move-type="Fuoco"]:active:not(:disabled) {
+  background-image: url('/ui/imagegen/v2/move-ember-pressed.webp') !important;
+}
+.battle-stage[data-battle-ui="aether"] .battle-v5-move:disabled { opacity: .49 !important; }
+.battle-stage[data-battle-ui="aether"] .battle-v5-move__name {
+  top: 0 !important; padding-top: clamp(2px,.3vw,6px) !important;
+  color: #f8f1de; font-size: clamp(9px,1.08vw,19px); text-shadow: 0 2px 4px #080c18;
+}
+.battle-stage[data-battle-ui="aether"] .battle-v5-move__footer { padding: 0 4% 3%; }
+.battle-stage[data-battle-ui="aether"] .battle-v5-move__power { color: #fff3d7; }
+.battle-stage[data-battle-ui="aether"] .battle-v5-move__type {
+  background: transparent !important; border: 0 !important; box-shadow: none !important;
+}
+.battle-stage[data-battle-ui="aether"] .battle-v5-move:focus-visible {
+  outline: 2px solid #ffe2a2 !important; outline-offset: -4px !important;
+}
+
+.battle-stage[data-battle-ui="aether"] .battle-v5-supreme {
+  background: transparent url('/ui/imagegen/v2/supreme-pulse.webp') center / 100% 100% no-repeat !important;
+  border: 0 !important; border-radius: 0 !important; box-shadow: none !important;
+  color: #ffefcf !important; text-shadow: 0 2px 5px #110920; padding: 23% 11% 10%;
+}
+.battle-stage[data-battle-ui="aether"] .battle-v5-supreme:disabled {
+  background-image: url('/ui/imagegen/v2/supreme.webp') !important; opacity: .5;
+}
+.battle-stage[data-battle-ui="aether"] .battle-v5-supreme__burst { display: none !important; }
+.battle-stage[data-battle-ui="aether"] .battle-v5-supreme__name { font-size: clamp(10px,1vw,17px); }
+.battle-stage[data-battle-ui="aether"] .battle-v5-supreme__cost { font-size: clamp(7px,.74vw,11px); }
+.battle-stage[data-battle-ui="aether"] .battle-v5-supreme:focus-visible { outline: 2px solid white !important; outline-offset: -4px !important; }
+
+.battle-stage[data-battle-ui="aether"] .battle-v5-dialogue {
+  background: transparent url('/ui/imagegen/v2/dialogue.webp') center / 100% 100% no-repeat !important;
+  border: 0 !important; border-radius: 0 !important; box-shadow: none !important;
+  backdrop-filter: none !important;
+  padding: clamp(15px,2vw,29px) clamp(21px,2.2vw,40px) !important; overflow: hidden;
+}
+.battle-stage[data-battle-ui="aether"] .battle-v5-dialogue__eyebrow { color: #f5ca91; }
+.battle-stage[data-battle-ui="aether"] .battle-v5-dialogue__messages { color: #f9f0de; }
+.battle-stage[data-battle-ui="aether"] :is(.battle-v5-action,[data-battle-chronicle-command],.battle-opponent-command) {
+  background: transparent url('/ui/imagegen/v2/command-idle.webp') center / 100% 100% no-repeat !important;
+  border: 0 !important; box-shadow: none !important;
+  color: #fff1d7 !important; border-radius: 0 !important;
+}
+.battle-stage[data-battle-ui="aether"] :is(.battle-v5-action,[data-battle-chronicle-command],.battle-opponent-command):enabled:is(:hover,:focus-visible) {
+  background-image: url('/ui/imagegen/v2/command-idle-hover.webp') !important;
+}
+.battle-stage[data-battle-ui="aether"] :is(.battle-v5-action,[data-battle-chronicle-command],.battle-opponent-command):enabled:active {
+  background-image: url('/ui/imagegen/v2/command-idle-pressed.webp') !important;
+}
+.battle-stage[data-battle-ui="aether"] .battle-opponent-command {
+  background-image: url('/ui/imagegen/v2/command-active.webp') !important;
+}
+.battle-stage[data-battle-ui="aether"] .battle-opponent-command:enabled:is(:hover,:focus-visible) {
+  background-image: url('/ui/imagegen/v2/command-active-hover.webp') !important;
+}
+.battle-stage[data-battle-ui="aether"] .battle-opponent-command:enabled:active {
+  background-image: url('/ui/imagegen/v2/command-active-pressed.webp') !important;
+}
+.battle-stage[data-battle-ui="aether"] :is(.battle-v5-action,.battle-opponent-command):focus-visible {
+  outline: 2px solid #ffe5a5 !important; outline-offset: 2px !important;
+}
+.battle-v5-modal,.battle-v5-switch,
+.battle-stage[data-battle-ui="aether"] :is(.battle-result-card,.battle-dice-panel) {
+  background: #091826 url('/ui/imagegen/v2/dialogue.webp') center / 100% 100% no-repeat !important;
+  border: 0 !important; box-shadow: none !important; backdrop-filter: none !important;
+}
+.battle-v5-modal::before,.battle-v5-switch::before,
+.battle-stage[data-battle-ui="aether"] .battle-result-card::before,
+.battle-stage[data-battle-ui="aether"] .battle-dice-panel::before { content: none !important; }
+.battle-v5-modal__option,.battle-v5-switch__option {
+  background: #111f2a url('/ui/imagegen/v2/command-idle.webp') center / 100% 100% no-repeat !important;
+  border: 0 !important; color: #f7ead9 !important;
+}
+.battle-v5-modal__option:enabled:is(:hover,:focus-visible),
+.battle-v5-switch__option:enabled:is(:hover,:focus-visible) {
+  background-image: url('/ui/imagegen/v2/command-idle-hover.webp') !important;
+}
+.rpg-title-scene::before,.rpg-title-scene::after,.rpg-title-aether-orbit {
+  display: none !important; content: none !important;
+}
+.rpg-title-commands {
+  background: rgba(8,19,29,.88) url('/ui/imagegen/v2/dialogue.webp') center / 100% 100% no-repeat !important;
+  border: 0 !important; box-shadow: none !important; backdrop-filter: none !important;
+}
+.rpg-title-commands::before { display: none !important; content: none !important; }
+.rpg-title-commands .rpg-command,.rpg-title-commands .rpg-command:first-of-type {
+  background: transparent url('/ui/imagegen/v2/command-idle.webp') center / 100% 100% no-repeat !important;
+  border: 0 !important; border-radius: 0 !important; box-shadow: none !important; color: #fff0d7 !important;
+}
+.rpg-title-commands .rpg-command:is(:hover,:focus-visible):enabled {
+  background-image: url('/ui/imagegen/v2/command-idle-hover.webp') !important;
+}
+.rpg-title-commands .rpg-command:active:enabled {
+  background-image: url('/ui/imagegen/v2/command-idle-pressed.webp') !important;
+}
+@media (max-width: 740px) {
+  .battle-stage[data-battle-ui="aether"] .battle-v5-hp { padding: 2px 6px !important; }
+  .battle-stage[data-battle-ui="aether"] .battle-v5-hp__name { font-size: clamp(8px,2vw,12px); }
+  .battle-stage[data-battle-ui="aether"] :is(.battle-v5-hp__level,.battle-v5-hp__value) { font-size: 8px; }
+  .battle-stage[data-battle-ui="aether"] .battle-v5-move { padding: 4px 8px !important; }
+  .battle-stage[data-battle-ui="aether"] .battle-v5-move__name { font-size: 8px; }
+  .battle-stage[data-battle-ui="aether"] .battle-v5-supreme { padding-top: 21%; }
+  .battle-stage[data-battle-ui="aether"] .battle-v5-supreme__cost { font-size: 6px; }
+  .battle-stage[data-battle-ui="aether"] .battle-v5-dialogue { padding: 9px 13px !important; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .battle-stage[data-battle-ui="aether"] .battle-v5-supreme {
+    background-image: url('/ui/imagegen/v2/supreme.webp') !important;
+  }
+}
+.battle-stage[data-battle-ui="aether"][data-battle-reduced-motion="true"] .battle-v5-supreme {
+  background-image: url('/ui/imagegen/v2/supreme.webp') !important;
+}
